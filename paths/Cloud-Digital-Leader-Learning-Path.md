@@ -3,7 +3,7 @@ id: 9
 name: 'Cloud Digital Leader Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/9
-date: 2025-01-05
+date: 2025-04-01
 datePublished: 2024-01-22
 ---
 
@@ -16,6 +16,6 @@ A Cloud Digital Leader can articulate the capabilities of core cloud products an
 - [ ] [Digital Transformation with Google Cloud (266)](../courses/Digital-Transformation-with-Google-Cloud.md)
 - [ ] [Exploring Data Transformation with Google Cloud (267)](../courses/Exploring-Data-Transformation-with-Google-Cloud.md)
 - [ ] [Innovating with Google Cloud Artificial Intelligence (946)](../courses/Innovating-with-Google-Cloud-Artificial-Intelligence.md)
-- [ ] [Modernize Infrastructure and Applications with Google Cloud (265)](../courses/Modernize-Infrastructure-and-Applications-with-Google-Cloud.md)
+- [ ] [Infrastructure and Application Modernization with Google Cloud (265)](../courses/Infrastructure-and-Application-Modernization-with-Google-Cloud.md)
 - [ ] [Trust and Security with Google Cloud (945)](../courses/Trust-and-Security-with-Google-Cloud.md)
 - [ ] [Scaling with Google Cloud Operations (271)](../courses/Scaling-with-Google-Cloud-Operations.md)
