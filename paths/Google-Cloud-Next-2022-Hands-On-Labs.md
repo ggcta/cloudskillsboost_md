@@ -3,7 +3,7 @@ id: 32
 name: 'Google Cloud Next 2022 Hands-On Labs'
 type: Path
 url: https://www.cloudskillsboost.google/paths/32
-date: 2025-01-05
+date: 2025-04-01
 datePublished: 2022-09-29
 ---
 
@@ -25,7 +25,7 @@ This learning path contains labs that provide hands-on activities related to bre
 - [ ] [[DEPRECATED] Managing Cloud Run gRPC Services with API Gateway (3692)](../courses/[DEPRECATED]-Managing-Cloud-Run-gRPC-Services-with-API-Gateway.md)
 - [ ] [Build a Serverless App with Cloud Run that Creates PDF Files (2161)](../courses/Build-a-Serverless-App-with-Cloud-Run-that-Creates-PDF-Files.md)
 - [ ] [Deploy Your Website on Cloud Run (2487)](../courses/Deploy-Your-Website-on-Cloud-Run.md)
-- [ ] [Automate Validation using the Data Validation Tool (DVT) (5090)](../courses/Automate-Validation-using-the-Data-Validation-Tool-(DVT).md)
+- [ ] [[DEPRECATED] Automate Validation using the Data Validation Tool (DVT) (5090)](../courses/[DEPRECATED]-Automate-Validation-using-the-Data-Validation-Tool-(DVT).md)
 - [ ] [BigLake: Qwik Start (4896)](../courses/BigLake-Qwik-Start.md)
 - [ ] [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API (1112)](../courses/Detect-Labels-Faces-and-Landmarks-in-Images-with-the-Cloud-Vision-API.md)
 - [ ] [Awwvision: Cloud Vision API from a Kubernetes Cluster (1041)](../courses/Awwvision-Cloud-Vision-API-from-a-Kubernetes-Cluster.md)
@@ -70,4 +70,4 @@ This learning path contains labs that provide hands-on activities related to bre
 - [ ] [Creating a De-identified Copy of Data in Cloud Storage (5167)](../courses/Creating-a-De-identified-Copy-of-Data-in-Cloud-Storage.md)
 - [ ] [[DEPRECATED] Getting Started with Gaming on Cloud Spanner (5341)](../courses/[DEPRECATED]-Getting-Started-with-Gaming-on-Cloud-Spanner.md)
 - [ ] [Using BigQuery Omni with AWS (5345)](../courses/Using-BigQuery-Omni-with-AWS.md)
-- [ ] [Cloud Functions 2nd Gen: Qwik Start (5347)](../courses/Cloud-Functions-2nd-Gen-Qwik-Start.md)
+- [ ] [Cloud Run Functions: Qwik Start (5347)](../courses/Cloud-Run-Functions-Qwik-Start.md)
