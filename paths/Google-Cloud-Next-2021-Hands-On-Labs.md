@@ -3,7 +3,7 @@ id: 26
 name: 'Google Cloud Next 2021 Hands-On Labs'
 type: Path
 url: https://www.cloudskillsboost.google/paths/26
-date: 2025-01-05
+date: 2025-04-01
 datePublished: 2021-11-08
 ---
 
@@ -16,8 +16,8 @@ This learning path contains labs that provide hands-on activities related to bre
 - [ ] [[DEPRECATED] Form Parsing Using Document AI (3308)](../courses/[DEPRECATED]-Form-Parsing-Using-Document-AI.md)
 - [ ] [Create and Test a Document AI Processor (4076)](../courses/Create-and-Test-a-Document-AI-Processor.md)
 - [ ] [Design Conversational Flows for your Agent (2695)](../courses/Design-Conversational-Flows-for-your-Agent.md)
-- [ ] [Dialogflow CX: Bot Building Basics (4008)](../courses/Dialogflow-CX-Bot-Building-Basics.md)
-- [ ] [Vertex AI: Qwik Start (3899)](../courses/Vertex-AI-Qwik-Start.md)
+- [ ] [Conversational Agents: Bot Building Basics (4008)](../courses/Conversational-Agents-Bot-Building-Basics.md)
+- [ ] [[DEPRECATED] Vertex AI: Qwik Start (3899)](../courses/[DEPRECATED]-Vertex-AI-Qwik-Start.md)
 - [ ] [Migrate to Containers: Qwik Start (2444)](../courses/Migrate-to-Containers-Qwik-Start.md)
 - [ ] [[DEPRECATED] Migrate for Compute Engine (2254)](../courses/[DEPRECATED]-Migrate-for-Compute-Engine.md)
 - [ ] [Optimizing Cost with Google Cloud Storage (2090)](../courses/Optimizing-Cost-with-Google-Cloud-Storage.md)
