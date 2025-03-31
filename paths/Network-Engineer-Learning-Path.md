@@ -3,8 +3,8 @@ id: 14
 name: 'Network Engineer Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/14
-date: 2025-01-05
-datePublished: 2024-08-21
+date: 2025-04-01
+datePublished: 2025-03-21
 ---
 
 # [Network Engineer Learning Path](https://www.cloudskillsboost.google/paths/14)
@@ -29,5 +29,4 @@ A Network Engineer configures, maintains, and troubleshoots network components o
 - [ ] [Configure Google Kubernetes Engine Networking (660)](../courses/Configure-Google-Kubernetes-Engine-Networking.md)
 - [ ] [Set Up an App Dev Environment on Google Cloud (637)](../courses/Set-Up-an-App-Dev-Environment-on-Google-Cloud.md)
 - [ ] [Build a Secure Google Cloud Network (654)](../courses/Build-a-Secure-Google-Cloud-Network.md)
-- [ ] [DEPRECATED Network Performance and Optimization (856)](../courses/DEPRECATED-Network-Performance-and-Optimization.md)
 - [ ] [Implement Cloud Security Fundamentals on Google Cloud (645)](../courses/Implement-Cloud-Security-Fundamentals-on-Google-Cloud.md)
