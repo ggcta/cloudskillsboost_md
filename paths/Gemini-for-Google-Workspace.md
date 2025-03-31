@@ -3,13 +3,13 @@ id: 249
 name: 'Gemini for Google Workspace'
 type: Path
 url: https://www.cloudskillsboost.google/paths/249
-date: 2025-01-05
-datePublished: 2025-01-02
+date: 2025-04-01
+datePublished: 2025-01-24
 ---
 
 # [Gemini for Google Workspace](https://www.cloudskillsboost.google/paths/249)
 
-Gemini for Google Workspace is an add-on that provides customers with generative AI features in Google Workspace. In this learning path, you learn about the key features of Gemini for Google Workspace and how they can be used to improve productivity and efficiency.
+Gemini for Google Workspace provides customers with generative AI features in Google Workspace. In this learning path, you learn about the key features of Gemini and how they can be used to improve productivity and efficiency in Google Workspace.
 
 ## Courses & Progress
 
