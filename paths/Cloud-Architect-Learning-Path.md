@@ -3,8 +3,8 @@ id: 12
 name: 'Cloud Architect Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/12
-date: 2025-01-05
-datePublished: 2024-12-03
+date: 2025-04-01
+datePublished: 2025-02-26
 ---
 
 # [Cloud Architect Learning Path](https://www.cloudskillsboost.google/paths/12)
@@ -21,6 +21,7 @@ A Cloud Architect designs, develops, and manages robust, secure, scalable, and d
 - [ ] [Elastic Google Cloud Infrastructure: Scaling and Automation (178)](../courses/Elastic-Google-Cloud-Infrastructure-Scaling-and-Automation.md)
 - [ ] [Reliable Google Cloud Infrastructure: Design and Process (41)](../courses/Reliable-Google-Cloud-Infrastructure-Design-and-Process.md)
 - [ ] [Getting Started with Google Kubernetes Engine (2)](../courses/Getting-Started-with-Google-Kubernetes-Engine.md)
+- [ ] [Developing Applications with Cloud Run on Google Cloud: Fundamentals (559)](../courses/Developing-Applications-with-Cloud-Run-on-Google-Cloud-Fundamentals.md)
 - [ ] [Logging and Monitoring in Google Cloud (99)](../courses/Logging-and-Monitoring-in-Google-Cloud.md)
 - [ ] [Observability in Google Cloud (864)](../courses/Observability-in-Google-Cloud.md)
 - [ ] [Implement Load Balancing on Compute Engine (648)](../courses/Implement-Load-Balancing-on-Compute-Engine.md)
