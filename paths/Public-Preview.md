@@ -3,7 +3,7 @@ id: 371
 name: 'Public Preview'
 type: Path
 url: https://www.cloudskillsboost.google/paths/371
-date: 2025-01-05
+date: 2025-04-01
 datePublished: 2024-10-21
 ---
 
@@ -21,7 +21,7 @@ For those willing to dive into this learning path, you'll be rewa...
 
 - [ ] [CCAI Insights (1123)](../courses/CCAI-Insights.md)
 - [ ] [Intro to CCAI and CCAI Engagement Framework (1108)](../courses/Intro-to-CCAI-and-CCAI-Engagement-Framework.md)
-- [ ] [CCAI Architecture (1002)](../courses/CCAI-Architecture.md)
+- [ ] [Customer Experience with Google AI Architecture (1002)](../courses/Customer-Experience-with-Google-AI-Architecture.md)
 - [ ] [Agent Summarization (Custom) (1102)](../courses/Agent-Summarization-(Custom).md)
 - [ ] [Virtual FAQ with data store agents (1101)](../courses/Virtual-FAQ-with-data-store-agents.md)
 - [ ] [Basic Performance Measurement (1121)](../courses/Basic-Performance-Measurement.md)
@@ -31,7 +31,7 @@ For those willing to dive into this learning path, you'll be rewa...
 - [ ] [Webhook fundamentals (1107)](../courses/Webhook-fundamentals.md)
 - [ ] [Incorporating Generative Features into Complex DFCX Agents (1104)](../courses/Incorporating-Generative-Features-into-Complex-DFCX-Agents.md)
 - [ ] [Building Complex End to End Self-Service Experiences in Dialogflow CX (1103)](../courses/Building-Complex-End-to-End-Self-Service-Experiences-in-Dialogflow-CX.md)
-- [ ] [CCAI Frontend Integrations (1013)](../courses/CCAI-Frontend-Integrations.md)
+- [ ] [Conversational AI telephony and chat integrations (1013)](../courses/Conversational-AI-telephony-and-chat-integrations.md)
 - [ ] [Advanced Webhook Concepts (1098)](../courses/Advanced-Webhook-Concepts.md)
 - [ ] [Advanced Performance Measurement (1099)](../courses/Advanced-Performance-Measurement.md)
 - [ ] [Generative Playbooks (1122)](../courses/Generative-Playbooks.md)
