@@ -2,6 +2,7 @@
 
 ## What is this?
 
+- To take your note.
 - Created by: [Google Cloud Skills Boost Helper & Scraping](https://github.com/samdx/cloudskillsboost-helper)
 
 How to start:
