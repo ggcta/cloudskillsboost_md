@@ -28,6 +28,12 @@ Note:
 
 - The [paths](paths.md) or [README](README.md) will not link to any course or lab or path files, to avoid a mess in Obsidian graph.
 
+### How to contribute
+
+- Generate a new file if it's MISSING, and commit/PR here.
+    - Do not commit an edited file, keep the file as it is newly generated.
+- Contribute to the tool instead: [Google Cloud Skills Boost Helper & Scraping](https://github.com/samdx/cloudskillsboost-helper)
+
 ## The Vault In Action
 
 ### A Path
