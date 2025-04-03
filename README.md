@@ -2,7 +2,8 @@
 
 ## What is this?
 
-- To take your note.
+- To take your personal notes on courses/paths/labs.
+- A source vault for your NotebookLM or similar tools.
 - Created by: [Google Cloud Skills Boost Helper & Scraping](https://github.com/samdx/cloudskillsboost-helper)
 
 How to start:
