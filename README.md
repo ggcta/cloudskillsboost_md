@@ -1,7 +1,6 @@
 # cloudskillsboost_md
 
-- Cloud Skills Boost MD Folder
-
+- A Cloud Skills Boost MD Vault.
 ## What is this?
 
 - Created by: [Google Cloud Skills Boost Helper & Scraping](https://github.com/samdx/cloudskillsboost-helper)
