@@ -44,6 +44,14 @@ Note:
 
 ![](assets/2025-04-03_09-46-29.png)
 
+#### A Quiz
+
+![](assets/2025-04-03_10-03-42.png)
+
+#### A Quiz with a different look
+
+![](assets/2025-04-03_10-04-27.png)
+
 ### A Lab
 
 ![](assets/2025-04-03_09-46-44.png)
