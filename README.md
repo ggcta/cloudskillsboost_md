@@ -28,6 +28,7 @@ Refer to:
 Note:
 
 - The [paths](paths.md) or [README](README.md) will not link to any course or lab or path files, to avoid a mess in Obsidian graph.
+- If a course comes with PDF documents/resources, you may not need to utilize videos' transcript. Instead use the course markdown file as a personal note.
 
 ### How to contribute
 
