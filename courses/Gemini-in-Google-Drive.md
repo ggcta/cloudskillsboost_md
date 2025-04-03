@@ -1,0 +1,102 @@
+---
+id: 1135
+name: 'Gemini in Google Drive'
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/1135
+date: 2025-04-03
+datePublished: 2025-03-12
+topics:
+- Search
+- Large Language Models
+---
+
+# [Gemini in Google Drive](https://www.cloudskillsboost.google/course_templates/1135)
+
+**Description:**
+
+Gemini for Google Workspace provides users with access to generative AI features. This course delves into the capabilities of Gemini in Google Drive using video lessons, hands-on activities and practical examples.
+
+By the end of this course, you'll be equipped with the knowledge and skills to confidently utilize Gemini in Google Drive to improve your workflows.
+
+**Objectives:**
+
+- Describe the high-level features of Gemini in Drive.
+- Use Gemini in Drive to search for and ask questions about an individual file.
+- Formulate broader, topic-based prompts to elicit desired responses from Gemini.
+- Synthesize relevant information across Google Workspace and Google web searches using Gemini.
+
+## Gemini in Google Drive
+
+Gemini for Google Workspace provides users with access to generative AI features. This course delves into the capabilities of Gemini in Google Drive using video lessons, hands-on activities and practical examples.  By the end of this course, you'll be equipped with the knowledge and skills to confidently utilize Gemini in Google Drive to improve your workflows.
+
+### Video - [Introduction to Gemini in Google Drive](https://www.cloudskillsboost.google/course_templates/1135/video/526712)
+
+- [YouTube: Introduction to Gemini in Google Drive](https://www.youtube.com/watch?v=w3XUCQukdIk)
+
+UFF! I can't seem to find anything I need in my Drive anymore. I'm so bad at keeping it organized. I totally understand. It's tough to manage. I actually just helped a clothing company find files and information faster with Gemini in Drive. It was pretty amazing and easy to use. That actually sounds incredible. I could use something like that. So their marketing team was overwhelmed by all of their documents, campaign briefs, project trackers, you name it. They spent too much time just trying to find stuff, which took time away from creating new campaigns. Adding Gemini into their daily workflows, helped them find their content quickly, summarize it, and generate new ideas. Really? How does it work? I can show you how it works. In short, you can search for files, ask questions about them, and even get summaries of information across your whole Drive. It can even pull in info from Google searches if you need it. As a sales representative, I have to be able to find the right information quickly. Exactly. It'll really streamline how you work. Just so you know though, you need an account with Gemini for Google Workspace. How do I know if I have it? When you log into Google Drive on your desktop, check for the Ask Gemini icon in the Drive navigation bar. If you don't see it, or if you have any questions about your Google Workspace edition, you should ask your organization's Google Workspace Administrator. Sounds great. Oh, and before I forget. Remember, Gemini is here to help. But like any generative AI tool, it's still learning. Sometimes it might suggest information that's not accurate or appropriate. That's why it's always a good idea to check things over, especially important details. Don't rely on Gemini features as medical, legal, financial, or other professional advice. Also remember, Gemini feature suggestions don't represent Google's views, and should not be attributed to Google. Yeah, totally. I get it Awesome! So are you ready to see this thing in action? Absolutely. Let's do it.
+
+### Video - [Ask Gemini about a file](https://www.cloudskillsboost.google/course_templates/1135/video/526713)
+
+- [YouTube: Ask Gemini about a file](https://www.youtube.com/watch?v=3q8YW7Uhc44)
+
+You can easily access Gemini in Google Drive by visiting drive.google.com in your browser and selecting Ask Gemini in the toolbar. You can also use Gemini by right-clicking on a file within Google Drive and selecting the Ask Gemini option. That sounds convenient! I haven't tried it yet. How do I use it? If you haven't already, open Google Drive on your computer and open the Gemini in Drive side panel. In the side panel that appears, you can select a suggested prompt or create your own. I'll teach you how to use Gemini in Drive to search for a specific file or ask a question about a file. First, you enter a prompt into the text input. What should my prompt say? The prompt should describe what you want to do. So for example, the clothing retail company was frequently searching for files that they didn't remember the title or location of. Let's say you wanted to find a presentation you remembered creating on this quarter's sustainable fashion goals. You simply type: find the most recent presentation about sustainable fashion goals And then click Enter. Gemini generates a list of results and you can click on the relevant file. To see more results, just click Show more. Clicking Show more moves the search to the main Google Drive window. If you know what file you are working with, you can also ask Gemini to summarize a file. This feature would be helpful for saving time when I don't need all the details of a full document. There are two ways to do this. If the file is currently displayed in the main Google Drive window, you can drag and drop the document into the side panel. Another way is just to enter a prompt: "summarize this document," and then include a link to the document. You can also reference the document by @ mentioning it. Simply type "@" in the prompt field and begin typing the file name. Select the desired file from the list of suggestions and press Enter to execute your prompt. Click View more to see the full generated summary. To generate a new Gemini response, you can simply click Retry. Alternatively, you can click Retry with Google Search which I'll explain in more detail later on. You might have noticed that Gemini is keeping track of your messaging history as you continue to prompt. Closing the side panel clears your messaging history.
+
+### Video - [Refine prompts with Gemini in Drive](https://www.cloudskillsboost.google/course_templates/1135/video/526714)
+
+- [YouTube: Refine prompts with Gemini in Drive](https://www.youtube.com/watch?v=R2L1inv54rA)
+
+I tried using it on my own, but I didn't quite get the result I wanted. How can I create the best prompts? As you use the tool more, you will get used to what works better or worse, but you can get started by using suggested prompts. When you first open the side panel, it'll display some suggestions like Learn about a file, Summarize a topic, and Ask a question. To view more suggested prompts, in the Gemini in Drive toolbar, select More options, and then click More suggestions. Remember, Gemini uses your history as you continue with additional prompts. If you'd like a fresh start when refining a prompt or entering a new prompt, make sure to clear your history by selecting Clear history in the More options menu. You can use Gemini to ask specific questions about a file. For example, the company I worked with, Cymbal Retail, had a file about their sustainable fashion project that mentioned various deadlines. To quickly keep abreast of the project progress, they asked Gemini questions about key dates and metrics, rather than opening the large file and searching for the information themselves. New project team members could also use Gemini to learn about other team initiatives mentioned in the file. For example, they asked "Summarize Project Green Growth" to learn about another one of Cymbal Retail's long term initiatives. Oh wow. That would be helpful even as a tenured team member. I'm frequently interacting with projects or teams I don't know much about, and reading all their documentation in Drive takes time, So I can just ask Gemini questions about the documents? Exactly. Are there any general guidelines for how to write a prompt when you aren't using a suggestion? There are many resources out there for writing generative AI prompts, and those suggestions will work in Gemini in Drive as well. But in general, the Google Workspace team recommends four quick tips for writing prompts. 1. Use natural language. Basically, just write as if you're speaking to another person and express complete thoughts in full sentences. 2. Be specific and iterate. Tell Gemini for Workspace what you need it to do. Do you need it to summarize? Write? Change the tone? Provide as much context as possible. 3. Be concise and avoid complexity. State your request in brief, but specific, language. Avoid jargon. 4. Make it a conversation with Gemini. Improve your prompts if the results don't meet your expectations or if you think there's room for improvement. Use follow-up prompts and an iterative process to enhance the results.
+
+### Video - [Synthesize information across multiple sources using Gemini in Drive](https://www.cloudskillsboost.google/course_templates/1135/video/526715)
+
+- [YouTube: Synthesize information across multiple sources using Gemini in Drive](https://www.youtube.com/watch?v=s7OmR2XzKtk)
+
+You learned how to write general prompts using Gemini in Drive, but there is another nice feature you can use for prompting in Drive that I have found super helpful. You can actually collect information across multiple documents at the same time. How would you go about doing that? I'll walk you through an example that was really relevant to my client, Cymbal Retail. A supplier manager at Cymbal Retail was responsible for finding a new sustainable packaging solution. She received several bids from various companies and saved them as files in her Drive. One company submitted theirs as a Google Docs file, another created a presentation, and the last company provided a spreadsheet. They were all quite long documents, so she wanted a way to quickly get the key points. She ended up using Gemini in Drive to analyze the information. All she had to do was reference the files in her prompt and then ask various questions about the documents. For example, she asked Gemini to: "Compare these three supplier proposals for sustainable packaging. Analyze pricing, terms, and product quality to identify the best option." She then added the files by typing @ and then the file name and selecting the file name. This is where Gemini can be really helpful! By selecting multiple files and asking Gemini to analyze the information, you'll get a concise overview of the key points across all of them. Gemini summarized the different pricing models, terms of service, and product quality, just as the prompt requested. We now have the main ideas from all those documents without having to read them in detail. This can save you tons of time and help you focus on the most important information. That's great to know. Earlier, you mentioned that Gemini in Drive can also be used for web searches. Can you tell me a little more about when that would come in handy? Sometimes, the information you need isn't in your Drive. Maybe you want the latest research on non-toxic, plant-based dyes. Instead of leaving Drive, you can simply ask Gemini to search the web for you. Just type your question or keywords, and Gemini will provide relevant information from the web within the side panel. To do this, select the Retry with Google Search icon. Alternatively, you could input a prompt such as: research non-toxic plant-based dyes utilized in the textile industry from the web. It's like having a built-in search engine that also understands the context of your work. You can stay focused and get the information you need without switching between tabs or Google products. That sounds great. I'm also curious, is there a way to integrate Gemini with Drive and other Google Workspace products? Gemini can connect the dots! If you ask a question related to something in another app, Gemini can often find the answer. For instance, you could ask, "What did Albert say about the project timeline in our last email?" This is incredibly powerful because it helps you access information across all of your Workspace files and emails without having to hunt it down manually. It's like having a personal assistant who knows everything you've worked on. I was concerned the tool would be really challenging to use, but it seems straightforward. Yeah, that's basically all there is to it. Use prompts to search for files or ask questions about your files. Refine your prompts if you aren't getting what you are looking for, clear your history if you want to start over, and use the retry with Google Search button if you'd like to include information from Google Search. I have a practice sheet I had used with my clients for training if you are interested in practicing. Remember, you are only able to follow along with the activity if you see the 'Ask Gemini' icon in your Google Drive navigation bar. If you don't see it, or if you have any questions about your Google Workspace edition, you should ask your organization's Google Workspace administrator. Amazing! Thank you!
+
+### Document - [Use the Gemini in Drive side panel](https://www.cloudskillsboost.google/course_templates/1135/documents/526716)
+
+### Quiz - [Gemini in Google Drive Quiz](https://www.cloudskillsboost.google/course_templates/1135/quizzes/526717)
+
+#### Quiz 1.
+
+> [!important]
+> **You're a tech support agent assisting a customer with a software issue. Your company has many knowledge base articles stored as Google Docs files. You'd also like to reference online documentation.Which of the following best demonstrates how you would synthesize relevant information across Google Workspace and Google web searches using Gemini?**
+>
+> - [ ] Use Gemini to gather information from the customer's support ticket in Gmail, relevant troubleshooting guides from Google Drive, and additional context from web searches.
+> - [ ] Search for error code explanations in Google Drive and web searches, then copy and paste relevant information into an email response.
+> - [ ] Search the company's knowledge base in Google Drive, then copy and paste relevant troubleshooting steps into an email to the customer.
+> - [ ] Manually search for the software's documentation in Google Drive and web searches, then draft a response in Gmail.
+
+#### Quiz 2.
+
+> [!important]
+> **You're a marketing assistant preparing a presentation on recent marketing campaigns. You have several Google Sheets, Slides, and Docs files related to sales data, customer feedback, and marketing campaign results in your Drive. You want Gemini to help you identify key takeaways and trends.Which of the following prompts would be most effective in eliciting a broader, topic-based response from Gemini, drawing upon the relevant files in your Drive?**
+>
+> - [ ] Show me the Q2 sales data
+> - [ ] Create a chart showing the expected marketing trends in the upcoming year
+> - [ ] Summarize the key takeaways from the Q2 sales data, customer feedback, and marketing campaign results in my Drive.
+> - [ ] What were the top 3 performing marketing campaigns in Q2?
+
+#### Quiz 3.
+
+> [!important]
+> **You're a financial analyst working on a collaborative project with your team. The project files are stored in Google Drive and you need to find a specific file titled "Q2 Financial Report" and quickly get information about who last modified it and when. Which of the following is the most efficient way to achieve this using Gemini in Drive?**
+>
+> - [ ] Ask Gemini in Drive about when the "Q2 Financial Report" was last modified and by whom?
+> - [ ] Ask a colleague who might have worked on the "Q2 Financial Report" file recently.
+> - [ ] Open Google Drive and manually locate the "Q2 Financial Report" spreadsheet. Right-click the file, select File information, then Details.
+> - [ ] Use the Google Drive search bar to search for the "Q2 Financial Report." Open the Google Sheets spreadsheet, and then check its revision history.
+
+#### Quiz 4.
+
+> [!important]
+> **You're a construction project manager and your company recently began using Gemini for Google Workspace. Which of the following features can you use Gemini in Google Drive for?**
+>
+> - [ ] Translating documents into different languages.
+> - [ ] Automatically organizing files and folders in Drive.
+> - [ ] Asking questions about specific files to quickly find information.
+> - [ ] Creating new presentations based on existing files in Drive.
+
+## Your Next Steps
+
+### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)

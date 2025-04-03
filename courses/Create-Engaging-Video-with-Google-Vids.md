@@ -1,0 +1,122 @@
+---
+id: 1179
+name: 'Create Engaging Video with Google Vids'
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/1179
+date: 2025-04-03
+datePublished: 2025-03-13
+topics: []
+---
+
+# [Create Engaging Video with Google Vids](https://www.cloudskillsboost.google/course_templates/1179)
+
+**Description:**
+
+In this course, you'll learn about Google Vids, an online video creation and editing app available to select Google Workspace users. Through lessons and demos, you'll learn how to build and tell compelling stories through video at work. You'll also discover how to seamlessly incorporate media, audio and video clips, customize styles, and easily share your creations.
+
+Some Vids features use generative AI to help you work more efficiently. Remember, generative AI tools including Gemini, may suggest inaccurate or inappropriate information. Don't rely on Gemini features as medical, legal, financial or other professional advice. It's also important to remember that the Gemini feature suggestions don't represent Google's views, and should not be attributed to Google. 
+
+**Objectives:**
+
+- Describe Google Vids and its benefits.
+- Generate video drafts using Help Me Create.
+- Create videos by combining different media elements.
+- Customize videos using video editing techniques and special effects.
+
+## Create Engaging Video with Google Vids
+
+In this course, you'll learn about Google Vids, an online video creation and editing app available to select Google Workspace users. Through lessons and demos, you'll learn how to build and tell compelling stories through video at work. You'll also discover how to seamlessly incorporate media, audio and video clips, customize styles, and easily share your creations.
+
+Some Vids features use generative AI to help you work more efficiently. Remember, generative AI tools including Gemini, may suggest inaccurate or inappropriate information. Don't rely on Gemini features as medical, legal, financial or other professional advice. It's also important to remember that the Gemini feature suggestions don't represent Google's views, and should not be attributed to Google. 
+
+### Video - [Introducing Google Vids](https://www.cloudskillsboost.google/course_templates/1179/video/526796)
+
+- [YouTube: Introducing Google Vids](https://www.youtube.com/watch?v=D9yucBMkVZc)
+
+SPEAKER: Welcome to the Create Engaging Video with Google Vids course. Google Vids is an AI-powered video creation app that's a part of Google Workspace. It's designed to make it easy for you to create engaging videos even if you don't have prior video editing experience. In this course, you'll discover how Google Vids can empower your organization to communicate more effectively and impactfully using video. Let's explore how Vids can enhance collaboration and streamline your workflow. From concise recaps to dynamic pitches, Google Vids helps teams communicate and collaborate using video. With AI-powered features like Help me create and AI voice-overs, Vids can help anyone create engaging videos.
+
+### Document - [Practical Uses of Google Vids for Business Teams](https://www.cloudskillsboost.google/course_templates/1179/documents/526797)
+
+### Video - [Accessing and Using Google Vids](https://www.cloudskillsboost.google/course_templates/1179/video/526798)
+
+- [YouTube: Accessing and Using Google Vids](https://www.youtube.com/watch?v=Lr9LrICKGTM)
+
+SPEAKER: There are a few ways to create a new Google Vid, but you'll need to use a computer since Vids is only available for viewing on mobile devices at this time. Perhaps the simplest way to create a new project is to type vids.new into your browser's address bar. This will also be the only way you can access the Help Me Create feature, which lets you use the power of Gemini to generate a first draft for your video. Vids is available in your Google Drive. Click Plus New and select Google Vids. You can also open Vids from the app launcher in Drive. To do this, click Google Apps and select Vids. You may need to scroll to find Vids. To see only your Vids files without other files from your drive, go to vids.google.com. To create a new video, click the Plus icon. If you haven't done so already, go ahead and create a new Vids project. On the home screen accessed on vids.new, you'll have a quick access menu with options to create a new video with AI, use templates, record video directly in the Vids recording studio, or upload your own media. You'll learn more about these options in other videos. For now, you can click Close to exit this dialog. Now that you know how to access Google Vids, let's take a quick tour of the editor. At the top, you'll find the main menu with familiar options like File, Edit, and View. Below that is the toolbar, where you can access tools for editing and enhancing your video. The right rail displays options for customizing and adding content to your scenes such as text, media, recordings, scripts, and more. Now let's look at the timeline at the bottom of the editor. This is where you'll arrange and edit the scenes in your video. Each rectangle in the timeline represents a scene similar to a slide in a presentation. You can easily reorder scenes by dragging them to a new position in the timeline. You can also adjust the duration of a scene by dragging its edge. This allows you to shorten or lengthen a scene as needed. The blue line moving across the timeline is called the playhead. It indicates the current position in the video during playback or editing. That's a quick overview of the Google Vids editor. You'll become more familiar with these features as you continue through the course and start creating your own videos. Get ready to unleash your creativity and make some amazing videos.
+
+### Video - [Generate a First Draft with Help Me Create](https://www.cloudskillsboost.google/course_templates/1179/video/526799)
+
+- [YouTube: Generate a First Draft with Help Me Create](https://www.youtube.com/watch?v=6TpVyRmZ5n8)
+
+SPEAKER: Imagine you're creating a training video for your team. You want to explain a new company policy, and you want to keep it concise and engaging. When starting a new video from scratch, you can use AI to quickly generate a first draft. To use Help Me Create, start by opening a new Vids file. Type "vids.new" in your browser. Next, provide a detailed prompt of your desired video in the prompt box. This prompt will guide the AI in generating a first draft of your video. Include specifics in your prompt, such as the target audience, who is this video for, and the type of video. Should it be an overview, an event recap with key takeaways, a demo, et cetera? When using Help Me Create, you can tag Google Docs or Slides from your drive to give the AI more context for your video outline. To do this, type "@" followed by the file name, and then select the file from the dropdown list. For example, you could say, "Create a video explaining our updated expense report policy to the sales team using @Expense report Q4." Or "Create a recap video sharing key takeaways using @Market Research Report for our fall retail campaign targeting Gen Z." You can also explore a variety of video ideas by clicking the suggested prompts or shuffle for additional inspiration. Once you're satisfied with the description, proceed by clicking Next. Gemini will generate a proposed video outline. You'll see Edit, Add, and Remove buttons that you can use to modify the outline. If the outline isn't working for you, you can revise your prompt and then click Try Again. When you're ready, click Next again, and select a sample design to define the overall look and feel of your video. Then click Next. Select the style you'd like to use, and then click Create a draft video. You might need to wait several seconds for Vids to generate your initial storyboard. Once your storyboard is generated, it will include placeholder, royalty-free media from the Vids stock library, text, suggested scripts per scene, and even an audio track to get you started. Now you can start to personalize your video, easily switching out content, adding voice-overs or recordings, and more.
+
+### Video - [Customizing and Branding Your Videos in Google Vids](https://www.cloudskillsboost.google/course_templates/1179/video/526800)
+
+- [YouTube: Customizing and Branding Your Videos in Google Vids](https://www.youtube.com/watch?v=xbjrwLVw-mg)
+
+SPEAKER: Want to create videos that more closely reflect your brand or style? Google Vids makes it easy to bring in your organization's fonts and colors with just a few clicks. Ordinarily, creating engaging video content may feel like a daunting task. Google Vids simplifies your video creation process with its diverse template gallery, which offers different options to fit your specific video needs. Templates provide a predesigned structure for your video, saving you time and effort by streamlining your video creation workflow. They're especially useful for quick video creation, maintaining consistency, or finding inspiration. Whether you need to explain a concept, tell a story, or present data, Vids has a template to suit your needs. Simply choose the template that aligns with your video's purpose. Add the predesigned scenes and customize the content with your own text and visuals. This not only saves you time and effort, but also provides creative inspiration by allowing you to explore different video formats and styles. To use a template, start by opening the template gallery by clicking the Templates icon in the right rail, or accessing them as the second option in the vids.new screen. Then you can browse through the different options. Notice each template is labeled based on its use case. For example, you can find a template for a portfolio review, internal updates, and new employee introductions. Once you found the template that meets your needs, click the template to preview its premade scenes. If you like all of them, click the Insert All Scenes button. If you'd prefer to add individual templated scenes, click the scene to insert it into your video timeline. And it'll be inserted at the end of the closest scene to your playhead. Once you've added your template to the scene or scenes to the timeline, you can customize them by replacing the placeholder text with your own. You can also enhance your scenes by dragging and dropping images from the Vids stock media library directly into your template. In addition to templates, you can easily use customized styles to help you visually align your videos with your organization's brand identity or another preferred aesthetic. To change a template to your colors and fonts in just a few clicks, click Customize Styles in the top-level menu, which essentially acts as a find and replace. Once you're in the Customize Style side panel, click on the color or text you want to update. Then add your new color hex code or change the font selection. The changes are applied across your video template. Keep in mind that Vids only supports Google Fonts. As you've now learned, Google Vids provides powerful tools like templates and customized styles that make video creation a breeze, allowing you to produce polished and engaging content that matches your needs and brand in less time than you thought.
+
+### Video - [Collaborating on Videos with Vids](https://www.cloudskillsboost.google/course_templates/1179/video/526801)
+
+- [YouTube: Collaborating on Videos with Vids](https://www.youtube.com/watch?v=wFkqjRb4e_I)
+
+Creating videos is often a team effort. With Google Vids, collaboration is built in, making it easy to work together on video projects. Sharing your project is as simple as clicking the Share button in the toolbar. Then, type the individual or Google Group email address in the input box. When sharing your video, choose the right access level for your collaborators. Depending on their needs, you can give them permission to view, comment, or edit the video. This facilitates a smooth workflow and ensures everyone is on the same page. Select the appropriate permission from the list of permissions and click Send. One unique feature of Vids is how it handles view access. Unlike Docs, Sheets, and Slides where viewers are taken to the editor, Vids viewers see a full-screen video player. This allows you to share polished, full-screen videos with wider audiences, including those without Google Workspace email addresses. Beyond managing access to your video, Google Vids makes it easy to collaborate when you're building videos by commenting your colleagues in, just like you do in Docs and Slides. Your teammates can give you accurate, contextualized feedback through comments in Google Vids. Instead of relying on general comments, reviewers can leave feedback tied to a specific scene in your storyboard. This targeted approach fosters clear communication and helps you address concerns effectively. Vids also has video placeholders for easy collaboration. Tag a colleague in a specific scene to get their feedback, or have an executive record their thoughts right in that scene using the recording studio. Google Vids also keeps a complete history of the changes you make to your videos. This means you can easily look back at earlier versions, see what's changed, and restore a previous version if needed. It's like having a rewind button for your creative process. It gives you peace of mind in case of accidental deletion, while letting you experiment and improve your work over time. To review the comprehensive view of changes to the file, go to the top level menu and select File. Then select Version History. And finally, click See Version History. Once the version history is open, you can browse through the different versions of your file. Each version will be listed with a date and timestamp, as well as the name of the person who made the changes. You can click any version to view it in detail. The More Actions option provides two ways to use older file versions. You can restore an older version directly within the current file, or create a new file with a copy of that version. If you need to quickly pinpoint a past version from a specific time, you may not want to have to search through your video's full version history. You can create a named version of your vids file when you reach a significant milestone, like a final draft or a version sent for review. This can help you preserve the specific version for future reference while continuing to edit the file. In the More Options menu, select Name this version. Enter the name you want to use. Then either press Enter on your keyboard, or click outside the text input box to save it. Once you're happy with your final version, Google Vids offers flexible options for sharing your work. You can download your video as an MP4 by selecting File, then Download as MP4 from the top-level menu. In the File menu, you also have the option to Export to Drive. You can also share a link that displays the video in playback mode by sharing view access with your collaborators or audience, providing a clean copy without any editor elements or comments.
+
+### Video - [Adding Visual Enhancements in Vids](https://www.cloudskillsboost.google/course_templates/1179/video/526802)
+
+- [YouTube: Adding Visual Enhancements in Vids](https://www.youtube.com/watch?v=1Doba7jPACU)
+
+SPEAKER: Google Vids offers a variety of features to enhance your videos. You can use animations, photo effects, transitions, and object tracking to make your videos more dynamic and engaging. These features can be incredibly helpful for emphasizing key information, introducing new elements, or simply adding visual interest to your videos. For example, you might use these tools to highlight a call to action, bring attention to a specific image, focus viewers' attention on key callouts, or create dynamic transitions between scenes. Let's start with animations. You can animate text, shapes, images, and objects in your Vids scenes. To animate an object, open your video on Google Vids and select the scene containing the object. Click on the object and choose Change animation from the dropdown menu, or right-click the object and select Animation. In the Animation side panel, you can choose from various animation styles like fade, slide, or rise. You can further customize the animation by selecting when it appears. To use the same animation for both the entrance and exit of an object, keep the separate enter and exit animations toggle off. To use different animations for each, toggle the switch on. You can also adjust the speed using the duration slider and its corresponding input field. For text animations, you can also choose to animate by character, word, paragraph, or the entire text. Beyond basic animation, Google Vids also provides tools for adding movement to still images. To add dynamic motion to static images, Google Vids offers photo effects. This can be particularly useful for creating the illusion of movement or adding a sense of energy to otherwise static scenes. For instance, you could use a slide effect to pan across a landscape photo or a zoom effect to draw attention to a particular detail. In the video timeline, select the scene with the image and click on the photo. Choose Animation from the toolbar or right-click the image and select Animation. In the Animation side panel, select the Photo Effect tab and then choose your desired photo effect. You can customize the loop duration and choose whether to reverse the effect on loop. For the slide effect, you can also customize the direction. Now let's move on to transitions. Transitions are the visual effects that occur between scenes. They can help create a smooth flow and add visual interest to your videos. To add or change a transition, click the transition icon between two scenes in the timeline. You can choose from various transitions like fade, dissolve, or slide. Finally, let's talk about object tracking. Object tracking allows you to control the movement of objects within a scene, making it easy to direct the viewer's attention to specific elements. A note to differentiate. The Animation panel allows you to adjust how the objects move while Object Tracking shows where the objects enter and exit the scene in the timeline. To use object tracking, select the object you want to track and click the Show timing button above the timeline. You can also select the scene in the timeline and right-click Show timing. This expands the timeline to show all object tracks in that scene. You can then drag the track along the timeline to adjust where the object enters or exits the scene. Shorten or lengthen its duration by pulling on the handles on the edges of the object track. Here's a tip. Adjusting the zoom with the slider above the timeline can help in adjusting objects. Note the blue bars on either side of the scene that expand. This is the transition from the preceding and proceeding scenes. If you have text in the scene, you'll want to place your object track outside of these areas so users can view them fully. Object tracking is particularly helpful when you want to highlight key points in your talk track or guide the viewer's focus to specific areas of the screen for things like product demos. Google Vids offers a variety of features to enhance your videos. By using animations, photo effects, transitions, and object tracking effectively, you can create dynamic and engaging videos that capture your audience's attention.
+
+### Video - [Course Wrap Up](https://www.cloudskillsboost.google/course_templates/1179/video/526803)
+
+- [YouTube: Course Wrap Up](https://www.youtube.com/watch?v=liI1IC06VqU)
+
+SPEAKER: Congratulations on completing the course. We hope you've enjoyed this introduction to Google Vids. You learned how to access Vids and navigate the video editor. You also explored using AI to quickly transform your ideas into an initial video draft with the Help Me Create feature. Then you discovered how to choose the right template and customize your video to reflect your brand's look and feel. Lastly, you learned about how to add animations, transitions, photo effects, and object tracking to your videos for emphasis. With Google Vids, you can create engaging videos to share with customers and colleagues, helping you communicate more effectively. We'll continue to release new videos and add them to this course. In the meantime, check out the Additional Resources document to learn more about Google Vids and our other Google Workspace courses, like Gemini and Gmail. Now it's your turn. Start creating your own videos with Google Vids and see how it can save you time, improve your communication, and enhance your creativity.
+
+### Quiz - [Google Vids Quiz](https://www.cloudskillsboost.google/course_templates/1179/quizzes/526804)
+
+#### Quiz 1.
+
+> [!important]
+> **Which of the following describes Google Vids' support for multimedia elements in videos?**
+>
+> - [ ] Google Vids projects can only contain a single media element per scene.
+> - [ ] Google Vids users can only add still images as media elements.
+> - [ ] Google Vids supports several multimedia elements like  GIFs, and videos.
+> - [ ] Video files can only be imported if they are saved as .mov files.
+
+#### Quiz 2.
+
+> [!important]
+> **What is Google Vids?**
+>
+> - [ ] A cloud-based video storage service that allows users to back up and share their video files.
+> - [ ] A social media platform where users can upload and share short-form videos.
+> - [ ] A video conferencing software that helps users conduct virtual team meetings and webinars.
+> - [ ] An AI-powered video creation tool available to eligible Google Workspace users.
+
+#### Quiz 3.
+
+> [!important]
+> **Sherrie is creating a training video for new managers. Her team has already filmed the necessary footage. Now, she wants to edit the video to make it more engaging and dynamic. Which Google Vids feature can she use to customize her videos so they're more aligned with the company's brand?**
+>
+> - [ ] Help Me Create
+> - [ ] Styles
+> - [ ] Vids recording studio
+> - [ ] Templates
+
+#### Quiz 4.
+
+> [!important]
+> **You're a marketing manager creating a video to promote a new product launch. You have a Google Doc outlining the product's features and benefits, but need to quickly generate a first draft with a proposed outline and sample content. How can the "Help Me Create" feature in Google Vids help you achieve this?**
+>
+> - [ ] Help Me Create can analyze a user's uploaded video footage and provide intelligent suggestions to improve the video's flow and pacing.
+> - [ ] Help Me Create can transcribe spoken audio into text for subtitles or captions for a video.
+> - [ ] Help Me Create can automatically generate short summaries of longer videos, making it easier to consume information quickly.
+> - [ ] Using AI, Help Me Create can generate a proposed video outline based on user-provided prompts.
+
+### Document - [Additional Resources](https://www.cloudskillsboost.google/course_templates/1179/documents/526805)
+
+## Your Next Steps
+
+### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
