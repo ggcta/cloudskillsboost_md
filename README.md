@@ -37,6 +37,12 @@ Note:
     - Do not commit an edited file, keep the file as it is newly generated.
 - Contribute to the tool instead: [Google Cloud Skills Boost Helper & Scraping](https://github.com/samdx/cloudskillsboost-helper)
 
+## An example mind map
+
+- Refer to ![PCA Learning Plan - Canvas](mindmap-PCA-learning-plan.canvas)
+
+![PCA Learning Plan](mindmap-PCA-learning-plan.png)
+
 ## The Vault In Action
 
 ### A Path
