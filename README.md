@@ -39,7 +39,7 @@ Note:
 
 ## An example mind map
 
-- Refer to ![PCA Learning Plan - Canvas](mindmap-PCA-learning-plan.canvas)
+- Refer to [PCA Learning Plan - Canvas](mindmap-PCA-learning-plan.canvas)
 
 ![PCA Learning Plan](mindmap-PCA-learning-plan.png)
 
