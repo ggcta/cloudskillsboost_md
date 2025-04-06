@@ -3,8 +3,8 @@ id: 8
 name: 'Getting Started with Google Cloud Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/8
-date: 2025-01-05
-datePublished: 2024-10-17
+date: 2025-04-06
+datePublished: 2025-02-26
 ---
 
 # [Getting Started with Google Cloud Learning Path](https://www.cloudskillsboost.google/paths/8)
@@ -19,4 +19,3 @@ Get started with Google Cloud training by completing this learning path that int
 - [ ] [Set Up an App Dev Environment on Google Cloud (637)](../courses/Set-Up-an-App-Dev-Environment-on-Google-Cloud.md)
 - [ ] [Introduction to AI and Machine Learning on Google Cloud (593)](../courses/Introduction-to-AI-and-Machine-Learning-on-Google-Cloud.md)
 - [ ] [Prepare Data for ML APIs on Google Cloud (631)](../courses/Prepare-Data-for-ML-APIs-on-Google-Cloud.md)
-- [ ] [Google Cloud Fundamentals for AWS Professionals (38)](../courses/Google-Cloud-Fundamentals-for-AWS-Professionals.md)
