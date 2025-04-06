@@ -3,7 +3,7 @@ id: 24
 name: 'Google Workspace Administrator Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/24
-date: 2025-04-01
+date: 2025-04-06
 datePublished: 2024-12-31
 ---
 
@@ -16,6 +16,6 @@ A Google Workspace Administrator uses Workspace tools for managing applications 
 - [ ] [Google Workspace User and Resource Management (90)](../courses/Google-Workspace-User-and-Resource-Management.md)
 - [ ] [Google Workspace Core Services (92)](../courses/Google-Workspace-Core-Services.md)
 - [ ] [Google Workspace Security (48)](../courses/Google-Workspace-Security.md)
-- [ ] [Google Workspace Mail Management (91)](../courses/Google-Workspace-Mail-Management.md)
+- [ ] [Google Workspace Data Governance (91)](../courses/Google-Workspace-Data-Governance.md)
 - [ ] [Planning for a Google Workspace Deployment (93)](../courses/Planning-for-a-Google-Workspace-Deployment.md)
 - [ ] [Change Management for Google Workspace (1061)](../courses/Change-Management-for-Google-Workspace.md)
