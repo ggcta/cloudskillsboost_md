@@ -3,8 +3,8 @@ id: 17
 name: 'Machine Learning Engineer Learning Path'
 type: Path
 url: https://www.cloudskillsboost.google/paths/17
-date: 2025-01-05
-datePublished: 2024-10-17
+date: 2025-04-06
+datePublished: 2025-02-18
 ---
 
 # [Machine Learning Engineer Learning Path](https://www.cloudskillsboost.google/paths/17)
@@ -29,7 +29,6 @@ A Machine Learning Engineer designs, builds,  productionizes, optimizes, operate
 - [ ] [Introduction to Large Language Models (539)](../courses/Introduction-to-Large-Language-Models.md)
 - [ ] [Machine Learning Operations (MLOps)  for Generative AI (927)](../courses/Machine-Learning-Operations-(MLOps)--for-Generative-AI.md)
 - [ ] [Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation (1080)](../courses/Machine-Learning-Operations-(MLOps)-with-Vertex-AI-Model-Evaluation.md)
-- [ ] [ML Pipelines on Google Cloud (191)](../courses/ML-Pipelines-on-Google-Cloud.md)
 - [ ] [Build and Deploy Machine Learning Solutions on Vertex AI (684)](../courses/Build-and-Deploy-Machine-Learning-Solutions-on-Vertex-AI.md)
 - [ ] [Create Generative AI Apps on Google Cloud (1120)](../courses/Create-Generative-AI-Apps-on-Google-Cloud.md)
 - [ ] [Responsible AI for Developers: Fairness & Bias (985)](../courses/Responsible-AI-for-Developers-Fairness-&-Bias.md)
