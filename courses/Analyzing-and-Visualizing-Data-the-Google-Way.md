@@ -27,7 +27,7 @@ This module details how Google Sheets engages with data in BigQuery and how data
 
 ### Link - [Asking the data question](https://www.cloudskillsboost.google/course_templates/480/documents/355347)
 
-- https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/1_asking_the_data_question/story.html
+- [Asking the data question](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/1_asking_the_data_question/story.html)
 
 ### Quiz - [Lesson 1 Quiz](https://www.cloudskillsboost.google/course_templates/480/quizzes/355348)
 
@@ -36,10 +36,10 @@ This module details how Google Sheets engages with data in BigQuery and how data
 > [!important]
 > **Siobhan has asked Kaveh to identify the top 100 counties with the highest number of people who could benefit from the new solar energy grant.  Based on the grant criteria outlined previously, who can benefit from the grant?**
 >
+> - [ ] Renters and homeowners with annual incomes below 60,000 USD
 > - [ ] All renters and homeowners in the U.S.
 > - [ ] All homeowners in the U.S.
 > - [ ] Homeowners in the U.S. with annual incomes below 60,000 USD and with homes built before 1960
-> - [ ] Renters and homeowners with annual incomes below 60,000 USD
 
 #### Quiz 2.
 
@@ -48,12 +48,12 @@ This module details how Google Sheets engages with data in BigQuery and how data
 >
 > - [ ] There is no immediate need to curate custom business intelligence or analytics experiences using that data.
 > - [ ] The datasets are not widely used by multiple teams across the organization.
-> - [ ] The data are used by too many teams across the organization.
 > - [ ] All BigQuery data must be modeled in Looker.
+> - [ ] The data are used by too many teams across the organization.
 
 ### Link - [Pulling data into Google Sheets](https://www.cloudskillsboost.google/course_templates/480/documents/355349)
 
-- https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/2_pulling_data_into_sheets/story.html
+- [Pulling data into Google Sheets](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/2_pulling_data_into_sheets/story.html)
 
 ### Quiz - [Lesson 2 Quiz](https://www.cloudskillsboost.google/course_templates/480/quizzes/355350)
 
@@ -62,9 +62,9 @@ This module details how Google Sheets engages with data in BigQuery and how data
 > [!important]
 > **What was the primary reason that you reduced the number of rows of data in the BigQuery table to 10,000?**
 >
+> - [ ] Focus on the most relevant data, while also making sure the data stays within the row limit
 > - [ ] Improve the performance of pulling data from BigQuery into Google Sheets
 > - [ ] Reduce the billing cost of pulling data from BigQuery into Google Sheets
-> - [ ] Focus on the most relevant data, while also making sure the data stays within the row limit
 > - [ ] BigQuery Connected Sheets only supports up to 10,000 rows of data
 
 #### Quiz 2.
@@ -72,10 +72,10 @@ This module details how Google Sheets engages with data in BigQuery and how data
 > [!important]
 > **When adding a BigQuery data connection to Google Sheets, which type of asset do you choose after selecting a Google Cloud project?**
 >
-> - [ ] Google Cloud subproject
-> - [ ] BigQuery dataset
 > - [ ] BigQuery table or view
 > - [ ] BigQuery schema
+> - [ ] Google Cloud subproject
+> - [ ] BigQuery dataset
 
 ### Lab - [Pulling BigQuery Data into Google Sheets using BigQuery Connected Sheets](https://www.cloudskillsboost.google/course_templates/480/labs/355351)
 
@@ -85,29 +85,29 @@ In this lab, you use the BigQuery data connector to pull data from BigQuery tabl
 
 ### Link - [Priming the data for analysis](https://www.cloudskillsboost.google/course_templates/480/documents/355352)
 
-- https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/3_priming_data_for_analysis/story.html
+- [Priming the data for analysis](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/3_priming_data_for_analysis/story.html)
 
 ### Quiz - [Lesson 3 Quiz](https://www.cloudskillsboost.google/course_templates/480/quizzes/355353)
 
 #### Quiz 1.
 
 > [!important]
-> **If the data question changes, or the inital selection of columns provides either an incorrect or incomplete answer to the data question, which next step can you take to address this?**
+> **What is the maximum number of rows that a Google Sheets data extraction supports?**
 >
-> - [ ] Modify the current extraction by adding, removing, or modifying columns using the Extract editor.
-> - [ ] Change the column sort order in the extraction.
-> - [ ] Delete the correct extraction and create a new one.
-> - [ ] Start the entire process over by recreating the data connections using BigQuery Connected Sheets in a new Google Sheets workbook.
+> - [ ] 30,000 rows
+> - [ ] 74,000 rows
+> - [ ] 25,000 rows
+> - [ ] 10,000 rows
 
 #### Quiz 2.
 
 > [!important]
-> **What is the maximum number of rows that a Google Sheets data extraction supports?**
+> **If the data question changes, or the inital selection of columns provides either an incorrect or incomplete answer to the data question, which next step can you take to address this?**
 >
-> - [ ] 74,000 rows
-> - [ ] 10,000 rows
-> - [ ] 30,000 rows
-> - [ ] 25,000 rows
+> - [ ] Modify the current extraction by adding, removing, or modifying columns using the Extract editor.
+> - [ ] Start the entire process over by recreating the data connections using BigQuery Connected Sheets in a new Google Sheets workbook.
+> - [ ] Change the column sort order in the extraction.
+> - [ ] Delete the correct extraction and create a new one.
 
 ### Lab - [Extracting and Filtering BigQuery Data using Google Sheets](https://www.cloudskillsboost.google/course_templates/480/labs/355354)
 
@@ -117,29 +117,29 @@ In this lab, you extract and filter BigQuery data in Google Sheets.
 
 ### Link - [Performing the data analysis](https://www.cloudskillsboost.google/course_templates/480/documents/355355)
 
-- https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/4_performing_data_analysis/story.html
+- [Performing the data analysis](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/4_performing_data_analysis/story.html)
 
 ### Quiz - [Lesson 4 Quiz](https://www.cloudskillsboost.google/course_templates/480/quizzes/355356)
 
 #### Quiz 1.
 
 > [!important]
-> **If you wanted to reference a specific cell, C95 from the extraction "Extract 1" in a new sheet in the workbook, which is the correct formula to achieve this?**
+> **What is the recommended configuration order when working with columns in a data extraction?**
 >
-> - [ ] "='Extract1'C95"
-> - [ ] "='Extract1'!LEFT(C95)"
-> - [ ] "=LEFT(C95,5)"
-> - [ ] "='Extract1'!REF(C95)"
+> - [ ] Add columns, Sort by columns, Filter by columns.
+> - [ ] Add columns, Filter by columns, Sort by columns.
+> - [ ] Filter by columns, Sort by columns, Add columns.
+> - [ ] Sort by columns, Add columns, Filter by columns.
 
 #### Quiz 2.
 
 > [!important]
-> **What is the recommended configuration order when working with columns in a data extraction?**
+> **If you wanted to reference a specific cell, C95 from the extraction "Extract 1" in a new sheet in the workbook, which is the correct formula to achieve this?**
 >
-> - [ ] Add columns, Filter by columns, Sort by columns.
-> - [ ] Sort by columns, Add columns, Filter by columns.
-> - [ ] Add columns, Sort by columns, Filter by columns.
-> - [ ] Filter by columns, Sort by columns, Add columns.
+> - [ ] "=LEFT(C95,5)"
+> - [ ] "='Extract1'C95"
+> - [ ] "='Extract1'!REF(C95)"
+> - [ ] "='Extract1'!LEFT(C95)"
 
 ### Lab - [Performing the Data Analysis using Google Sheets](https://www.cloudskillsboost.google/course_templates/480/labs/355357)
 
@@ -149,7 +149,7 @@ In this lab, you perform the data analysis process using various features of Goo
 
 ### Link - [Sharing insights with others](https://www.cloudskillsboost.google/course_templates/480/documents/355358)
 
-- https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/5_sharing_insights_with_others/story.html
+- [Sharing insights with others](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-GOOGAV-B/M1/5_sharing_insights_with_others/story.html)
 
 ### Quiz - [Lesson 5 Quiz](https://www.cloudskillsboost.google/course_templates/480/quizzes/355359)
 
@@ -158,20 +158,20 @@ In this lab, you perform the data analysis process using various features of Goo
 > [!important]
 > **Which are steps involved in sharing a Google Sheets workbook with someone? (Please select two choices.)**
 >
-> - [ ] Select the level of workbook access to grant to a specific person.
 > - [ ] Define an end-of-share date for the workbook to revoke access after a specific period of time.
-> - [ ] Type or search for the name or email address of the person in the XXX menu.
 > - [ ] Download a copy of the workbook and email it as an attachment.
+> - [ ] Type or search for the name or email address of the person in the XXX menu.
+> - [ ] Select the level of workbook access to grant to a specific person.
 
 #### Quiz 2.
 
 > [!important]
 > **Which section header in the Chart editor contains configuration options for assigning a new global font for the entire chart?**
 >
-> - [ ] Chart style
 > - [ ] Series
 > - [ ] Chart & axis titles
 > - [ ] Gridlines and ticks
+> - [ ] Chart style
 
 ### Lab - [Visualizing and Sharing Insights using Google Sheets](https://www.cloudskillsboost.google/course_templates/480/labs/355360)
 
