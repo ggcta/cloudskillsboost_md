@@ -1,5 +1,12 @@
 # A Cloud Skills Boost MD Vault
 
+## TL;DR - How to start?
+
+1. Optional: Install the [Iosevka](https://github.com/be5invis/Iosevka) font set.
+2. Install [Obsidian](https://obsidian.md).
+3. Clone this repo.
+4. Open Obsidian and "Open a folder as a vault" and select this repo folder.
+
 ## What is this?
 
 - To take your personal notes on courses/paths/labs.
