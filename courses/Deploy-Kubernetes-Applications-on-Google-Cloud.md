@@ -1,14 +1,13 @@
 ---
 id: 663
 name: 'Deploy Kubernetes Applications on Google Cloud'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/663
-date: 2025-04-03
 datePublished: 2024-09-26
 topics:
-- Docker
-- Google Cloud Platform
-- kubectl
+- Google Cloud Services
+- Application Deployment
+- GKE
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/663
 ---
 
 # [Deploy Kubernetes Applications on Google Cloud](https://www.cloudskillsboost.google/course_templates/663)
