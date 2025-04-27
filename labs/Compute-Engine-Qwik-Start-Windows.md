@@ -3,7 +3,6 @@ id: 759
 name: 'Compute Engine: Qwik Start - Windows'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/759
-date: 2025-04-03
 ---
 
 # [Compute Engine: Qwik Start - Windows](https://www.cloudskillsboost.google/catalog_lab/759)

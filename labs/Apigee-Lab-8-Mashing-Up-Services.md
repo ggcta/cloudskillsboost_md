@@ -3,7 +3,6 @@ id: 3598
 name: 'Apigee Lab 8: Mashing Up Services'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3598
-date: 2025-04-07
 ---
 
 # [Apigee Lab 8: Mashing Up Services](https://www.cloudskillsboost.google/catalog_lab/3598)

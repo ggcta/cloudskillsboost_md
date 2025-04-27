@@ -3,7 +3,6 @@ id: 1031
 name: 'Multiple VPC Networks'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1031
-date: 2025-04-03
 ---
 
 # [Multiple VPC Networks](https://www.cloudskillsboost.google/catalog_lab/1031)

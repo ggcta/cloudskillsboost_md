@@ -3,7 +3,6 @@ id: 4980
 name: 'Creating a Remote Backend'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4980
-date: 2025-04-03
 ---
 
 # [Creating a Remote Backend](https://www.cloudskillsboost.google/catalog_lab/4980)

@@ -3,7 +3,6 @@ id: 3585
 name: 'Apigee Lab 2: Using Target Servers'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3585
-date: 2025-04-07
 ---
 
 # [Apigee Lab 2: Using Target Servers](https://www.cloudskillsboost.google/catalog_lab/3585)

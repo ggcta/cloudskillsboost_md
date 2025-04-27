@@ -3,7 +3,6 @@ id: 3593
 name: 'Apigee Lab 7: Adding XML Support'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3593
-date: 2025-04-07
 ---
 
 # [Apigee Lab 7: Adding XML Support](https://www.cloudskillsboost.google/catalog_lab/3593)

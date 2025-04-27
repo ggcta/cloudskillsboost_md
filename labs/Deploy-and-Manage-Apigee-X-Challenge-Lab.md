@@ -3,7 +3,6 @@ id: 4068
 name: 'Deploy and Manage Apigee X: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4068
-date: 2025-04-03
 ---
 
 # [Deploy and Manage Apigee X: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/4068)

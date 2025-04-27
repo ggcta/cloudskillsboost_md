@@ -3,7 +3,6 @@ id: 700
 name: 'Cloud Storage: Qwik Start - CLI/SDK'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/700
-date: 2025-04-03
 ---
 
 # [Cloud Storage: Qwik Start - CLI/SDK](https://www.cloudskillsboost.google/catalog_lab/700)

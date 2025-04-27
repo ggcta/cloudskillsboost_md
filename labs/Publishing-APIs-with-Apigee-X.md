@@ -3,7 +3,6 @@ id: 4544
 name: 'Publishing APIs with Apigee X'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4544
-date: 2025-04-07
 ---
 
 # [Publishing APIs with Apigee X](https://www.cloudskillsboost.google/catalog_lab/4544)

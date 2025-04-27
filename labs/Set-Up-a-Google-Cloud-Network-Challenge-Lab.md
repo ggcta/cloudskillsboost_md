@@ -3,7 +3,6 @@ id: 2482
 name: 'Set Up a Google Cloud Network: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2482
-date: 2025-04-03
 ---
 
 # [Set Up a Google Cloud Network: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/2482)

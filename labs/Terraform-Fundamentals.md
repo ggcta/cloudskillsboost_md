@@ -3,7 +3,6 @@ id: 1007
 name: 'Terraform Fundamentals'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1007
-date: 2025-04-03
 ---
 
 # [Terraform Fundamentals](https://www.cloudskillsboost.google/catalog_lab/1007)

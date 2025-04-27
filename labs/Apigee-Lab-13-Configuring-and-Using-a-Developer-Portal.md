@@ -3,7 +3,6 @@ id: 3601
 name: 'Apigee Lab 13: Configuring and Using a Developer Portal'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3601
-date: 2025-04-07
 ---
 
 # [Apigee Lab 13: Configuring and Using a Developer Portal](https://www.cloudskillsboost.google/catalog_lab/3601)

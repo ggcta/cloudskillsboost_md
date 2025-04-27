@@ -3,7 +3,6 @@ id: 2046
 name: 'Automating the Deployment of Infrastructure Using Terraform'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2046
-date: 2025-04-03
 ---
 
 # [Automating the Deployment of Infrastructure Using Terraform](https://www.cloudskillsboost.google/catalog_lab/2046)

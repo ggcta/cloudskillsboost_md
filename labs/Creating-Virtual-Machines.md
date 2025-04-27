@@ -3,7 +3,6 @@ id: 1778
 name: 'Creating Virtual Machines'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1778
-date: 2025-04-03
 ---
 
 # [Creating Virtual Machines](https://www.cloudskillsboost.google/catalog_lab/1778)

@@ -3,7 +3,6 @@ id: 2294
 name: 'Deploying Google Kubernetes Engine'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2294
-date: 2025-04-03
 ---
 
 # [Deploying Google Kubernetes Engine](https://www.cloudskillsboost.google/catalog_lab/2294)

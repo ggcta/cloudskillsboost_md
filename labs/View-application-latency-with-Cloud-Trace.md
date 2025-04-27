@@ -3,7 +3,6 @@ id: 6616
 name: 'View application latency with Cloud Trace'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6616
-date: 2025-04-03
 ---
 
 # [View application latency with Cloud Trace](https://www.cloudskillsboost.google/catalog_lab/6616)

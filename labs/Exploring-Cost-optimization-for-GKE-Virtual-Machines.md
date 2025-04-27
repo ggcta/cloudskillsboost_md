@@ -3,7 +3,6 @@ id: 3200
 name: 'Exploring Cost-optimization for GKE Virtual Machines'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3200
-date: 2025-04-03
 ---
 
 # [Exploring Cost-optimization for GKE Virtual Machines](https://www.cloudskillsboost.google/catalog_lab/3200)

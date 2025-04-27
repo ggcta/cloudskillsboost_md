@@ -3,7 +3,6 @@ id: 2526
 name: 'Implement Private Google Access and Cloud NAT'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2526
-date: 2025-04-03
 ---
 
 # [Implement Private Google Access and Cloud NAT](https://www.cloudskillsboost.google/catalog_lab/2526)

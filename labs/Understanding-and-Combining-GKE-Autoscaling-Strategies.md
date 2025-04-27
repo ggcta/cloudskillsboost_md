@@ -3,7 +3,6 @@ id: 3289
 name: 'Understanding and Combining GKE Autoscaling Strategies'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3289
-date: 2025-04-03
 ---
 
 # [Understanding and Combining GKE Autoscaling Strategies](https://www.cloudskillsboost.google/catalog_lab/3289)

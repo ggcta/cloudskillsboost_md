@@ -3,7 +3,6 @@ id: 6131
 name: 'Creating a Containerized Application with Buildpacks'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6131
-date: 2025-04-02
 ---
 
 # [Creating a Containerized Application with Buildpacks](https://www.cloudskillsboost.google/catalog_lab/6131)

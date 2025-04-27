@@ -3,7 +3,6 @@ id: 911
 name: 'Google Kubernetes Engine: Qwik Start'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/911
-date: 2025-04-03
 ---
 
 # [Google Kubernetes Engine: Qwik Start](https://www.cloudskillsboost.google/catalog_lab/911)

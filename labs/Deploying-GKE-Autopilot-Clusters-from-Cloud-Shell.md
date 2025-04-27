@@ -3,7 +3,6 @@ id: 6447
 name: 'Deploying GKE Autopilot Clusters from Cloud Shell'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6447
-date: 2025-04-03
 ---
 
 # [Deploying GKE Autopilot Clusters from Cloud Shell](https://www.cloudskillsboost.google/catalog_lab/6447)

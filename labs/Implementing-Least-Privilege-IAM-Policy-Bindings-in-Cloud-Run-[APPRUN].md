@@ -3,7 +3,6 @@ id: 3820
 name: 'Implementing Least Privilege IAM Policy Bindings in Cloud Run [APPRUN]'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3820
-date: 2025-04-03
 ---
 
 # [Implementing Least Privilege IAM Policy Bindings in Cloud Run [APPRUN]](https://www.cloudskillsboost.google/catalog_lab/3820)

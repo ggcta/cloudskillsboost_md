@@ -3,7 +3,6 @@ id: 1089
 name: 'Cloud Storage: Qwik Start - Cloud Console'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1089
-date: 2025-04-03
 ---
 
 # [Cloud Storage: Qwik Start - Cloud Console](https://www.cloudskillsboost.google/catalog_lab/1089)

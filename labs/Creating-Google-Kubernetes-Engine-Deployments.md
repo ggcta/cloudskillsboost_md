@@ -3,7 +3,6 @@ id: 2297
 name: 'Creating Google Kubernetes Engine Deployments'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2297
-date: 2025-04-03
 ---
 
 # [Creating Google Kubernetes Engine Deployments](https://www.cloudskillsboost.google/catalog_lab/2297)

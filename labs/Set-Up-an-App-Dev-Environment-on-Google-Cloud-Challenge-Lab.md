@@ -3,7 +3,6 @@ id: 2467
 name: 'Set Up an App Dev Environment on Google Cloud: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2467
-date: 2025-04-03
 ---
 
 # [Set Up an App Dev Environment on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/2467)

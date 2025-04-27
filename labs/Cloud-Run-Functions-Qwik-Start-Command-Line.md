@@ -3,7 +3,6 @@ id: 924
 name: 'Cloud Run Functions: Qwik Start - Command Line'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/924
-date: 2025-04-03
 ---
 
 # [Cloud Run Functions: Qwik Start - Command Line](https://www.cloudskillsboost.google/catalog_lab/924)

@@ -3,7 +3,6 @@ id: 3390
 name: 'Hello Cloud Run'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3390
-date: 2025-04-03
 ---
 
 # [Hello Cloud Run](https://www.cloudskillsboost.google/catalog_lab/3390)

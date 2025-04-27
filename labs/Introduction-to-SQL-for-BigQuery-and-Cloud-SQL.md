@@ -3,7 +3,6 @@ id: 1282
 name: 'Introduction to SQL for BigQuery and Cloud SQL'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1282
-date: 2025-04-03
 ---
 
 # [Introduction to SQL for BigQuery and Cloud SQL](https://www.cloudskillsboost.google/catalog_lab/1282)

@@ -3,7 +3,6 @@ id: 3596
 name: 'Apigee Lab 10: Handling Faults'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3596
-date: 2025-04-07
 ---
 
 # [Apigee Lab 10: Handling Faults](https://www.cloudskillsboost.google/catalog_lab/3596)

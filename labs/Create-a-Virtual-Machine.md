@@ -3,7 +3,6 @@ id: 1427
 name: 'Create a Virtual Machine'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1427
-date: 2025-04-03
 ---
 
 # [Create a Virtual Machine](https://www.cloudskillsboost.google/catalog_lab/1427)

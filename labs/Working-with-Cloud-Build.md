@@ -3,7 +3,6 @@ id: 2293
 name: 'Working with Cloud Build'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2293
-date: 2025-04-03
 ---
 
 # [Working with Cloud Build](https://www.cloudskillsboost.google/catalog_lab/2293)

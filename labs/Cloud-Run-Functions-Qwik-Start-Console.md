@@ -3,7 +3,6 @@ id: 704
 name: 'Cloud Run Functions: Qwik Start - Console'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/704
-date: 2025-04-03
 ---
 
 # [Cloud Run Functions: Qwik Start - Console](https://www.cloudskillsboost.google/catalog_lab/704)

@@ -3,7 +3,6 @@ id: 3584
 name: 'Apigee Lab 1: Generating an API Proxy Using an OpenAPI Specification'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3584
-date: 2025-04-07
 ---
 
 # [Apigee Lab 1: Generating an API Proxy Using an OpenAPI Specification](https://www.cloudskillsboost.google/catalog_lab/3584)

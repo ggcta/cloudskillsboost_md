@@ -3,7 +3,6 @@ id: 1784
 name: 'Examining Billing data with BigQuery'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1784
-date: 2025-04-03
 ---
 
 # [Examining Billing data with BigQuery](https://www.cloudskillsboost.google/catalog_lab/1784)

@@ -3,7 +3,6 @@ id: 3589
 name: 'Apigee Lab 5: Protecting Against JSON Content Attacks'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3589
-date: 2025-04-07
 ---
 
 # [Apigee Lab 5: Protecting Against JSON Content Attacks](https://www.cloudskillsboost.google/catalog_lab/3589)

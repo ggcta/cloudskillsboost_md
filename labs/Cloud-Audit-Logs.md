@@ -3,7 +3,6 @@ id: 3422
 name: 'Cloud Audit Logs'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3422
-date: 2025-04-03
 ---
 
 # [Cloud Audit Logs](https://www.cloudskillsboost.google/catalog_lab/3422)

@@ -3,7 +3,6 @@ id: 3592
 name: 'Apigee Lab 6a: Masking Sensitive Data'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3592
-date: 2025-04-07
 ---
 
 # [Apigee Lab 6a: Masking Sensitive Data](https://www.cloudskillsboost.google/catalog_lab/3592)

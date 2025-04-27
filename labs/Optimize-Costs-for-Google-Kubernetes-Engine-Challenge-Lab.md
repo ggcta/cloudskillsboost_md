@@ -3,7 +3,6 @@ id: 3434
 name: 'Optimize Costs for Google Kubernetes Engine: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3434
-date: 2025-04-03
 ---
 
 # [Optimize Costs for Google Kubernetes Engine: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/3434)

@@ -3,7 +3,6 @@ id: 2645
 name: 'Alerting in Google Cloud'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2645
-date: 2025-04-03
 ---
 
 # [Alerting in Google Cloud](https://www.cloudskillsboost.google/catalog_lab/2645)

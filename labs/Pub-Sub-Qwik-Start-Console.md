@@ -3,7 +3,6 @@ id: 1489
 name: 'Pub/Sub: Qwik Start - Console'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1489
-date: 2025-04-03
 ---
 
 # [Pub/Sub: Qwik Start - Console](https://www.cloudskillsboost.google/catalog_lab/1489)

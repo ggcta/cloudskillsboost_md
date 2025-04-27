@@ -3,7 +3,6 @@ id: 4041
 name: 'Analyzing and Visualizing Data in Looker'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4041
-date: 2025-04-06
 ---
 
 # [Analyzing and Visualizing Data in Looker](https://www.cloudskillsboost.google/catalog_lab/4041)

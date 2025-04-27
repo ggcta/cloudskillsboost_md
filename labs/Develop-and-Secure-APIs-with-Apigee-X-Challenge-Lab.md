@@ -3,7 +3,6 @@ id: 4681
 name: 'Develop and Secure APIs with Apigee X: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4681
-date: 2025-04-07
 ---
 
 # [Develop and Secure APIs with Apigee X: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/4681)

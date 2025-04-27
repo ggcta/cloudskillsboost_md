@@ -3,7 +3,6 @@ id: 710
 name: 'Pub/Sub: Qwik Start - Python'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/710
-date: 2025-04-03
 ---
 
 # [Pub/Sub: Qwik Start - Python](https://www.cloudskillsboost.google/catalog_lab/710)

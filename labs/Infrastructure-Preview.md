@@ -3,7 +3,6 @@ id: 1775
 name: 'Infrastructure Preview'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1775
-date: 2025-04-03
 ---
 
 # [Infrastructure Preview](https://www.cloudskillsboost.google/catalog_lab/1775)

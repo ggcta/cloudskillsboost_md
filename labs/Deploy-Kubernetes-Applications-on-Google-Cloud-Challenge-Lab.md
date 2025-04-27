@@ -3,7 +3,6 @@ id: 2524
 name: 'Deploy Kubernetes Applications on Google Cloud: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2524
-date: 2025-04-03
 ---
 
 # [Deploy Kubernetes Applications on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/2524)

@@ -3,7 +3,6 @@ id: 4042
 name: 'Getting Started with Table Calculations and Offsets in Looker'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4042
-date: 2025-04-06
 ---
 
 # [Getting Started with Table Calculations and Offsets in Looker](https://www.cloudskillsboost.google/catalog_lab/4042)

@@ -3,7 +3,6 @@ id: 3202
 name: 'Managing a GKE Multi-tenant Cluster with Namespaces'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3202
-date: 2025-04-03
 ---
 
 # [Managing a GKE Multi-tenant Cluster with Namespaces](https://www.cloudskillsboost.google/catalog_lab/3202)

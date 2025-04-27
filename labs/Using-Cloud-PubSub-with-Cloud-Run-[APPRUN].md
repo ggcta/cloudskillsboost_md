@@ -3,7 +3,6 @@ id: 3813
 name: 'Using Cloud PubSub with Cloud Run [APPRUN]'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3813
-date: 2025-04-03
 ---
 
 # [Using Cloud PubSub with Cloud Run [APPRUN]](https://www.cloudskillsboost.google/catalog_lab/3813)

@@ -3,7 +3,6 @@ id: 1888
 name: 'Migrating Apache Spark Jobs to Dataproc [PWDW]'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1888
-date: 2025-04-03
 ---
 
 # [Migrating Apache Spark Jobs to Dataproc [PWDW]](https://www.cloudskillsboost.google/catalog_lab/1888)

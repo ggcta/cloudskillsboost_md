@@ -3,7 +3,6 @@ id: 686
 name: 'Cloud IAM: Qwik Start'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/686
-date: 2025-04-03
 ---
 
 # [Cloud IAM: Qwik Start](https://www.cloudskillsboost.google/catalog_lab/686)

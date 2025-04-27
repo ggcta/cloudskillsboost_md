@@ -3,7 +3,6 @@ id: 2044
 name: 'Configure an Application Load Balancer with Autoscaling'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2044
-date: 2025-04-03
 ---
 
 # [Configure an Application Load Balancer with Autoscaling](https://www.cloudskillsboost.google/catalog_lab/2044)

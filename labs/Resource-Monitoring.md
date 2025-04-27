@@ -3,7 +3,6 @@ id: 1785
 name: 'Resource Monitoring'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1785
-date: 2025-04-03
 ---
 
 # [Resource Monitoring](https://www.cloudskillsboost.google/catalog_lab/1785)

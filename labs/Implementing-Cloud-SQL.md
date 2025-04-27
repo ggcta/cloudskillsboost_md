@@ -3,7 +3,6 @@ id: 2025
 name: 'Implementing Cloud SQL'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2025
-date: 2025-04-03
 ---
 
 # [Implementing Cloud SQL](https://www.cloudskillsboost.google/catalog_lab/2025)

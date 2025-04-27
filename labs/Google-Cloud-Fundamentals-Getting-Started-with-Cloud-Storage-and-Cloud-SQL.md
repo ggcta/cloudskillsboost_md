@@ -3,7 +3,6 @@ id: 1155
 name: 'Google Cloud Fundamentals: Getting Started with Cloud Storage and Cloud SQL'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1155
-date: 2025-04-03
 ---
 
 # [Google Cloud Fundamentals: Getting Started with Cloud Storage and Cloud SQL](https://www.cloudskillsboost.google/catalog_lab/1155)

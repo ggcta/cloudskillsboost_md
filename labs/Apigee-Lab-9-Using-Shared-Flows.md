@@ -3,7 +3,6 @@ id: 3595
 name: 'Apigee Lab 9: Using Shared Flows'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3595
-date: 2025-04-07
 ---
 
 # [Apigee Lab 9: Using Shared Flows](https://www.cloudskillsboost.google/catalog_lab/3595)

@@ -3,7 +3,6 @@ id: 2462
 name: 'Deploying Apps to Google Cloud'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2462
-date: 2025-04-03
 ---
 
 # [Deploying Apps to Google Cloud](https://www.cloudskillsboost.google/catalog_lab/2462)

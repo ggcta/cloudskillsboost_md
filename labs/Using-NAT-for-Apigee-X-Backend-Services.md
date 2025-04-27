@@ -3,7 +3,6 @@ id: 4007
 name: 'Using NAT for Apigee X Backend Services'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4007
-date: 2025-04-03
 ---
 
 # [Using NAT for Apigee X Backend Services](https://www.cloudskillsboost.google/catalog_lab/4007)

@@ -3,7 +3,6 @@ id: 3588
 name: 'Apigee Lab 4: Using OAuth'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3588
-date: 2025-04-07
 ---
 
 # [Apigee Lab 4: Using OAuth](https://www.cloudskillsboost.google/catalog_lab/3588)

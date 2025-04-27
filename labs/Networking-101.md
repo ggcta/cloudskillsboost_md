@@ -3,7 +3,6 @@ id: 311
 name: 'Networking 101'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/311
-date: 2025-04-03
 ---
 
 # [Networking 101](https://www.cloudskillsboost.google/catalog_lab/311)

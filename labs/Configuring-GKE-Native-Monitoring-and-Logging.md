@@ -3,7 +3,6 @@ id: 2307
 name: 'Configuring GKE-Native Monitoring and Logging'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2307
-date: 2025-04-03
 ---
 
 # [Configuring GKE-Native Monitoring and Logging](https://www.cloudskillsboost.google/catalog_lab/2307)

@@ -3,7 +3,6 @@ id: 1781
 name: 'Cloud Storage'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1781
-date: 2025-04-03
 ---
 
 # [Cloud Storage](https://www.cloudskillsboost.google/catalog_lab/1781)

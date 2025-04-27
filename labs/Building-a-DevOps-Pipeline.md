@@ -3,7 +3,6 @@ id: 2461
 name: 'Building a DevOps Pipeline'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2461
-date: 2025-04-03
 ---
 
 # [Building a DevOps Pipeline](https://www.cloudskillsboost.google/catalog_lab/2461)

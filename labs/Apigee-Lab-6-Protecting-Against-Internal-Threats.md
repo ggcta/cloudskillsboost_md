@@ -3,7 +3,6 @@ id: 3591
 name: 'Apigee Lab 6: Protecting Against Internal Threats'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3591
-date: 2025-04-07
 ---
 
 # [Apigee Lab 6: Protecting Against Internal Threats](https://www.cloudskillsboost.google/catalog_lab/3591)

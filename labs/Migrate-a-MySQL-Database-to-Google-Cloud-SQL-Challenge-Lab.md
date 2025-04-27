@@ -3,7 +3,6 @@ id: 1083
 name: 'Migrate a MySQL Database to Google Cloud SQL: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1083
-date: 2025-04-03
 ---
 
 # [Migrate a MySQL Database to Google Cloud SQL: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1083)

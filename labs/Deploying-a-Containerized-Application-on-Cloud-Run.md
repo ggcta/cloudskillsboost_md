@@ -3,7 +3,6 @@ id: 6132
 name: 'Deploying a Containerized Application on Cloud Run'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6132
-date: 2025-04-02
 ---
 
 # [Deploying a Containerized Application on Cloud Run](https://www.cloudskillsboost.google/catalog_lab/6132)

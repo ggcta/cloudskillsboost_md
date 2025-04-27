@@ -3,7 +3,6 @@ id: 3586
 name: 'Apigee Lab 2a: Route Rules and the Debug Tool'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3586
-date: 2025-04-07
 ---
 
 # [Apigee Lab 2a: Route Rules and the Debug Tool](https://www.cloudskillsboost.google/catalog_lab/3586)

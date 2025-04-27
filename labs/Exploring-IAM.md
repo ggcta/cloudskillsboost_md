@@ -3,7 +3,6 @@ id: 1780
 name: 'Exploring IAM'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1780
-date: 2025-04-03
 ---
 
 # [Exploring IAM](https://www.cloudskillsboost.google/catalog_lab/1780)

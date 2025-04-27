@@ -3,7 +3,6 @@ id: 2303
 name: 'Configuring Persistent Storage for Google Kubernetes Engine'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2303
-date: 2025-04-03
 ---
 
 # [Configuring Persistent Storage for Google Kubernetes Engine](https://www.cloudskillsboost.google/catalog_lab/2303)

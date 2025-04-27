@@ -3,7 +3,6 @@ id: 1080
 name: 'Configure Secure RDP using a Windows Bastion Host: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1080
-date: 2025-04-03
 ---
 
 # [Configure Secure RDP using a Windows Bastion Host: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1080)

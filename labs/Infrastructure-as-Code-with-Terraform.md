@@ -1,29 +1,30 @@
 ---
-id: 3362
+id: 4981
 name: 'Infrastructure as Code with Terraform'
 type: Lab
-url: https://www.cloudskillsboost.google/catalog_lab/3362
-date: 2025-04-03
+url: https://www.cloudskillsboost.google/catalog_lab/4981
 ---
 
-# [Infrastructure as Code with Terraform](https://www.cloudskillsboost.google/catalog_lab/3362)
+# [Infrastructure as Code with Terraform](https://www.cloudskillsboost.google/catalog_lab/4981)
 
-In this hands-on lab you will build, change, provision, and destroy infrastructure using Terraform in the cloud environment.
+In this lab, you will explore how terraform can be used to create, manage, and destroy Google Cloud resources.
 
-## Step 1: GSP750
+## Step 1: Overview
 
-## Step 2: Overview
+## Step 2: Objectives
 
-## Step 3: Objectives
+## Step 3: Task 1. Sign in to the Cloud Console
 
-## Step 4: Setup and requirements
+## Step 4: Task 2. Check Terraform Installation
 
-## Step 5: Task 1. Build infrastructure
+## Step 5: Task 3. Add Google Cloud provider
 
-## Step 6: Task 2. Change infrastructure
+## Step 6: Task 4. Build the infrastructure
 
-## Step 7: Task 3. Create resource dependencies
+## Step 7: Task 5. Change the infrastructure
 
-## Step 8: Task 4. Provision infrastructure
+## Step 8: Task 6. Destroy the infrastructure
 
 ## Step 9: Congratulations!
+
+## Step 10: End your lab

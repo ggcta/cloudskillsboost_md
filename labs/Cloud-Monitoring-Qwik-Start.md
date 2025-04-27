@@ -3,7 +3,6 @@ id: 2572
 name: 'Cloud Monitoring: Qwik Start'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2572
-date: 2025-04-03
 ---
 
 # [Cloud Monitoring: Qwik Start](https://www.cloudskillsboost.google/catalog_lab/2572)

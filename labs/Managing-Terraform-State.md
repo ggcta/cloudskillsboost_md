@@ -3,7 +3,6 @@ id: 3363
 name: 'Managing Terraform State'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3363
-date: 2025-04-03
 ---
 
 # [Managing Terraform State](https://www.cloudskillsboost.google/catalog_lab/3363)

@@ -3,7 +3,6 @@ id: 1017
 name: 'Analyzing Network Traffic with VPC Flow Logs'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1017
-date: 2025-04-03
 ---
 
 # [Analyzing Network Traffic with VPC Flow Logs](https://www.cloudskillsboost.google/catalog_lab/1017)

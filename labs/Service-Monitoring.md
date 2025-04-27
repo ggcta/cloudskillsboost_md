@@ -3,7 +3,6 @@ id: 2646
 name: 'Service Monitoring'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2646
-date: 2025-04-03
 ---
 
 # [Service Monitoring](https://www.cloudskillsboost.google/catalog_lab/2646)

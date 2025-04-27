@@ -3,7 +3,6 @@ id: 3989
 name: 'Adding an Apigee X Environment and Group'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3989
-date: 2025-04-03
 ---
 
 # [Adding an Apigee X Environment and Group](https://www.cloudskillsboost.google/catalog_lab/3989)

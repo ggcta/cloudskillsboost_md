@@ -3,7 +3,6 @@ id: 2043
 name: 'VPC Networking'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2043
-date: 2025-04-03
 ---
 
 # [VPC Networking](https://www.cloudskillsboost.google/catalog_lab/2043)

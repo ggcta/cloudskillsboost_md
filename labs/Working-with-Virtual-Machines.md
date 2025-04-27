@@ -3,7 +3,6 @@ id: 1779
 name: 'Working with Virtual Machines'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1779
-date: 2025-04-03
 ---
 
 # [Working with Virtual Machines](https://www.cloudskillsboost.google/catalog_lab/1779)

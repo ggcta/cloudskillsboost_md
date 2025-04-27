@@ -3,7 +3,6 @@ id: 6469
 name: 'Monitoring a Compute Engine by using Ops Agent'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6469
-date: 2025-04-03
 ---
 
 # [Monitoring a Compute Engine by using Ops Agent](https://www.cloudskillsboost.google/catalog_lab/6469)

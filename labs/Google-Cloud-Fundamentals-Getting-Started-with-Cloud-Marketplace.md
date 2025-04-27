@@ -3,7 +3,6 @@ id: 1119
 name: 'Google Cloud Fundamentals: Getting Started with Cloud Marketplace'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1119
-date: 2025-04-03
 ---
 
 # [Google Cloud Fundamentals: Getting Started with Cloud Marketplace](https://www.cloudskillsboost.google/catalog_lab/1119)
@@ -14,7 +13,7 @@ In this lab you use Cloud Marketplace to quickly and easily deploy a LAMP stack 
 
 ## Step 2: Objectives
 
-## Step 3: Task 1. Sign in to the Google Cloud Console
+## Step 3: Task 1. Sign in to the Google Cloud console
 
 ## Step 4: Task 2. Use Cloud Marketplace to deploy a LAMP stack
 

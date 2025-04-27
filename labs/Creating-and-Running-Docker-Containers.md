@@ -3,7 +3,6 @@ id: 6130
 name: 'Creating and Running Docker Containers'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/6130
-date: 2025-04-02
 ---
 
 # [Creating and Running Docker Containers](https://www.cloudskillsboost.google/catalog_lab/6130)

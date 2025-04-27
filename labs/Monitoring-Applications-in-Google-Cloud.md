@@ -3,7 +3,6 @@ id: 2464
 name: 'Monitoring Applications in Google Cloud'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2464
-date: 2025-04-03
 ---
 
 # [Monitoring Applications in Google Cloud](https://www.cloudskillsboost.google/catalog_lab/2464)

@@ -3,7 +3,6 @@ id: 3977
 name: 'Provisioning an Apigee X Evaluation Organization'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3977
-date: 2025-04-03
 ---
 
 # [Provisioning an Apigee X Evaluation Organization](https://www.cloudskillsboost.google/catalog_lab/3977)

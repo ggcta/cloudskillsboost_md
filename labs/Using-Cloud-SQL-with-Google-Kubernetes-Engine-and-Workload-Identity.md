@@ -3,7 +3,6 @@ id: 31454
 name: 'Using Cloud SQL with Google Kubernetes Engine and Workload Identity'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/31454
-date: 2025-04-03
 ---
 
 # [Using Cloud SQL with Google Kubernetes Engine and Workload Identity](https://www.cloudskillsboost.google/catalog_lab/31454)

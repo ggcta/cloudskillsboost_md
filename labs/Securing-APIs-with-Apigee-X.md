@@ -3,7 +3,6 @@ id: 4599
 name: 'Securing APIs with Apigee X'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4599
-date: 2025-04-07
 ---
 
 # [Securing APIs with Apigee X](https://www.cloudskillsboost.google/catalog_lab/4599)

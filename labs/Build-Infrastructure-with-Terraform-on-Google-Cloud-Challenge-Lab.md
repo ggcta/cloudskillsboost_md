@@ -3,7 +3,6 @@ id: 3505
 name: 'Build Infrastructure with Terraform on Google Cloud: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3505
-date: 2025-04-03
 ---
 
 # [Build Infrastructure with Terraform on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/3505)

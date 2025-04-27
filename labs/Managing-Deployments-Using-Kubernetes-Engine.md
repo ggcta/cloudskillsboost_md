@@ -3,7 +3,6 @@ id: 572
 name: 'Managing Deployments Using Kubernetes Engine'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/572
-date: 2025-04-03
 ---
 
 # [Managing Deployments Using Kubernetes Engine](https://www.cloudskillsboost.google/catalog_lab/572)

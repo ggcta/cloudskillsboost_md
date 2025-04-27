@@ -3,7 +3,6 @@ id: 329
 name: 'Set Up Network and Application Load Balancers'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/329
-date: 2025-04-03
 ---
 
 # [Set Up Network and Application Load Balancers](https://www.cloudskillsboost.google/catalog_lab/329)

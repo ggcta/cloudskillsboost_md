@@ -3,7 +3,6 @@ id: 1078
 name: 'Deploy a Compute Instance with a Remote Startup Script: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1078
-date: 2025-04-03
 ---
 
 # [Deploy a Compute Instance with a Remote Startup Script: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1078)

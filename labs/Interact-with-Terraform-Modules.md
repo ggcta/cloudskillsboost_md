@@ -3,7 +3,6 @@ id: 3358
 name: 'Interact with Terraform Modules'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3358
-date: 2025-04-03
 ---
 
 # [Interact with Terraform Modules](https://www.cloudskillsboost.google/catalog_lab/3358)

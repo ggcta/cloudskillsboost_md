@@ -1,33 +1,38 @@
 ---
-id: 31641
+id: 5449
 name: 'Continuous Delivery with Google Cloud Deploy'
 type: Lab
-url: https://www.cloudskillsboost.google/catalog_lab/31641
-date: 2025-04-03
+url: https://www.cloudskillsboost.google/catalog_lab/5449
 ---
 
-# [Continuous Delivery with Google Cloud Deploy](https://www.cloudskillsboost.google/catalog_lab/31641)
+# [Continuous Delivery with Google Cloud Deploy](https://www.cloudskillsboost.google/catalog_lab/5449)
 
 Create a delivery pipeline using Google Cloud Deploy, create a release for a basic application, and promote the application through a series of Google Kubernetes Engine targets
 
-## Step 1: Overview
+## Step 1: GSP1079
 
-## Step 2: Lab setup
+## Step 2: Overview
 
-## Step 3: Task 1. Create three GKE clusters
+## Step 3: Objectives
 
-## Step 4: Task 2. Prepare the web application container image
+## Step 4: Setup
 
-## Step 5: Task 3. Build and deploy the container images to the Artifact Registry
+## Step 5: Task 1. Set variables
 
-## Step 6: Task 4. Create the delivery pipeline
+## Step 6: Task 2. Create three GKE clusters
 
-## Step 7: Task 5. Configure the deployment targets
+## Step 7: Task 3. Prepare the web application container image
 
-## Step 8: Task 6. Create a release
+## Step 8: Task 4. Build and deploy the container images to the Artifact Registry
 
-## Step 9: Task 7. Promote the application to staging
+## Step 9: Task 5. Create the delivery pipeline
 
-## Step 10: Task 8. Promote the application to prod
+## Step 10: Task 6. Configure the deployment targets
 
-## Step 11: Congratulations!
+## Step 11: Task 7. Create a release
+
+## Step 12: Task 8. Promote the application to staging
+
+## Step 13: Task 9. Promote the application to prod
+
+## Step 14: Congratulations!

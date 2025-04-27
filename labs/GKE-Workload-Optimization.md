@@ -3,7 +3,6 @@ id: 3312
 name: 'GKE Workload Optimization'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3312
-date: 2025-04-03
 ---
 
 # [GKE Workload Optimization](https://www.cloudskillsboost.google/catalog_lab/3312)

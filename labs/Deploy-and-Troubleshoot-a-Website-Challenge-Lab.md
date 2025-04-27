@@ -3,7 +3,6 @@ id: 1077
 name: 'Deploy and Troubleshoot a Website: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1077
-date: 2025-04-03
 ---
 
 # [Deploy and Troubleshoot a Website: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1077)

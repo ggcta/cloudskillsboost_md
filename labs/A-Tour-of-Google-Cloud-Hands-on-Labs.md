@@ -3,7 +3,6 @@ id: 1281
 name: 'A Tour of Google Cloud Hands-on Labs'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1281
-date: 2025-01-15
 ---
 
 # [A Tour of Google Cloud Hands-on Labs](https://www.cloudskillsboost.google/catalog_lab/1281)

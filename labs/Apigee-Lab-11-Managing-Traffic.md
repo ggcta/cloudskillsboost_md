@@ -3,7 +3,6 @@ id: 3599
 name: 'Apigee Lab 11: Managing Traffic'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3599
-date: 2025-04-07
 ---
 
 # [Apigee Lab 11: Managing Traffic](https://www.cloudskillsboost.google/catalog_lab/3599)

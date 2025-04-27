@@ -3,7 +3,6 @@ id: 3590
 name: 'Apigee Lab 5a: Using Regex Threat Protection'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3590
-date: 2025-04-07
 ---
 
 # [Apigee Lab 5a: Using Regex Threat Protection](https://www.cloudskillsboost.google/catalog_lab/3590)

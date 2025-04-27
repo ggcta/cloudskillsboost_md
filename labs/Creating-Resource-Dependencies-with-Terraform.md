@@ -3,7 +3,6 @@ id: 4982
 name: 'Creating Resource Dependencies with Terraform'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4982
-date: 2025-04-03
 ---
 
 # [Creating Resource Dependencies with Terraform](https://www.cloudskillsboost.google/catalog_lab/4982)

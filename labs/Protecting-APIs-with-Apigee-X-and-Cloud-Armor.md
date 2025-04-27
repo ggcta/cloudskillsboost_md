@@ -3,7 +3,6 @@ id: 4012
 name: 'Protecting APIs with Apigee X and Cloud Armor'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4012
-date: 2025-04-03
 ---
 
 # [Protecting APIs with Apigee X and Cloud Armor](https://www.cloudskillsboost.google/catalog_lab/4012)

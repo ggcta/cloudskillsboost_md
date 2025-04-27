@@ -3,7 +3,6 @@ id: 4742
 name: 'Getting Started with VPC Networking and Google Compute Engine'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4742
-date: 2025-04-03
 ---
 
 # [Getting Started with VPC Networking and Google Compute Engine](https://www.cloudskillsboost.google/catalog_lab/4742)

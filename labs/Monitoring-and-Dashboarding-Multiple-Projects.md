@@ -3,7 +3,6 @@ id: 2647
 name: 'Monitoring and Dashboarding Multiple Projects'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2647
-date: 2025-04-03
 ---
 
 # [Monitoring and Dashboarding Multiple Projects](https://www.cloudskillsboost.google/catalog_lab/2647)

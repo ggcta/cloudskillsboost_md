@@ -3,7 +3,6 @@ id: 3594
 name: 'Apigee Lab 8a: Calling Services in Parallel Using JavaScript'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3594
-date: 2025-04-07
 ---
 
 # [Apigee Lab 8a: Calling Services in Parallel Using JavaScript](https://www.cloudskillsboost.google/catalog_lab/3594)

@@ -3,7 +3,6 @@ id: 1168
 name: 'Configure an Internal Network Load Balancer'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1168
-date: 2025-04-03
 ---
 
 # [Configure an Internal Network Load Balancer](https://www.cloudskillsboost.google/catalog_lab/1168)

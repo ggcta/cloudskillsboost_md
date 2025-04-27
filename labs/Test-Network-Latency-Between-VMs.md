@@ -3,7 +3,6 @@ id: 31707
 name: 'Test Network Latency Between VMs'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/31707
-date: 2025-04-03
 ---
 
 # [Test Network Latency Between VMs](https://www.cloudskillsboost.google/catalog_lab/31707)

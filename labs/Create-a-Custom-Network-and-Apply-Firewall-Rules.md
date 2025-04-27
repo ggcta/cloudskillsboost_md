@@ -3,7 +3,6 @@ id: 31706
 name: 'Create a Custom Network and Apply Firewall Rules'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/31706
-date: 2025-04-03
 ---
 
 # [Create a Custom Network and Apply Firewall Rules](https://www.cloudskillsboost.google/catalog_lab/31706)

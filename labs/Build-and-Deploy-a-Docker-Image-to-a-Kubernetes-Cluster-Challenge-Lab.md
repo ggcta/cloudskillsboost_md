@@ -3,7 +3,6 @@ id: 1081
 name: 'Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1081
-date: 2025-04-03
 ---
 
 # [Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1081)

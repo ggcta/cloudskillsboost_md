@@ -3,7 +3,6 @@ id: 4439
 name: 'Modernizing Applications with Apigee X'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/4439
-date: 2025-04-07
 ---
 
 # [Modernizing Applications with Apigee X](https://www.cloudskillsboost.google/catalog_lab/4439)

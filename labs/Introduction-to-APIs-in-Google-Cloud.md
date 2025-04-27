@@ -3,7 +3,6 @@ id: 1342
 name: 'Introduction to APIs in Google Cloud'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1342
-date: 2025-04-07
 ---
 
 # [Introduction to APIs in Google Cloud](https://www.cloudskillsboost.google/catalog_lab/1342)

@@ -3,7 +3,6 @@ id: 3587
 name: 'Apigee Lab 3: Publishing APIs as Products'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3587
-date: 2025-04-07
 ---
 
 # [Apigee Lab 3: Publishing APIs as Products](https://www.cloudskillsboost.google/catalog_lab/3587)

@@ -3,7 +3,6 @@ id: 486
 name: 'Orchestrating the Cloud with Kubernetes'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/486
-date: 2025-04-03
 ---
 
 # [Orchestrating the Cloud with Kubernetes](https://www.cloudskillsboost.google/catalog_lab/486)

@@ -3,7 +3,6 @@ id: 1774
 name: 'Working with the Google Cloud Console and Cloud Shell'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1774
-date: 2025-04-03
 ---
 
 # [Working with the Google Cloud Console and Cloud Shell](https://www.cloudskillsboost.google/catalog_lab/1774)

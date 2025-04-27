@@ -3,7 +3,6 @@ id: 2301
 name: 'Configuring Google Kubernetes Engine (GKE) Networking'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2301
-date: 2025-04-03
 ---
 
 # [Configuring Google Kubernetes Engine (GKE) Networking](https://www.cloudskillsboost.google/catalog_lab/2301)

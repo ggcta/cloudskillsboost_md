@@ -3,7 +3,6 @@ id: 944
 name: 'Introduction to Docker'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/944
-date: 2025-04-03
 ---
 
 # [Introduction to Docker](https://www.cloudskillsboost.google/catalog_lab/944)

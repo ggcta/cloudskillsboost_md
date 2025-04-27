@@ -3,7 +3,6 @@ id: 3600
 name: 'Apigee Lab 12: Caching'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/3600
-date: 2025-04-07
 ---
 
 # [Apigee Lab 12: Caching](https://www.cloudskillsboost.google/catalog_lab/3600)

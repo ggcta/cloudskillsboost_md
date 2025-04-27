@@ -3,7 +3,6 @@ id: 1082
 name: 'Scale Out and Update a Containerized Application on a Kubernetes Cluster: Challenge Lab'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/1082
-date: 2025-04-03
 ---
 
 # [Scale Out and Update a Containerized Application on a Kubernetes Cluster: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/1082)

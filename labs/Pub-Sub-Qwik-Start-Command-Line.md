@@ -3,7 +3,6 @@ id: 711
 name: 'Pub/Sub: Qwik Start - Command Line'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/711
-date: 2025-04-03
 ---
 
 # [Pub/Sub: Qwik Start - Command Line](https://www.cloudskillsboost.google/catalog_lab/711)

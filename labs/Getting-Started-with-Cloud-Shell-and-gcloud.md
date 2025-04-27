@@ -3,7 +3,6 @@ id: 320
 name: 'Getting Started with Cloud Shell and gcloud'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/320
-date: 2025-04-03
 ---
 
 # [Getting Started with Cloud Shell and gcloud](https://www.cloudskillsboost.google/catalog_lab/320)

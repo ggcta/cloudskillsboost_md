@@ -3,7 +3,6 @@ id: 2292
 name: 'Accessing the Google Cloud Console and Cloud Shell'
 type: Lab
 url: https://www.cloudskillsboost.google/catalog_lab/2292
-date: 2025-04-03
 ---
 
 # [Accessing the Google Cloud Console and Cloud Shell](https://www.cloudskillsboost.google/catalog_lab/2292)
