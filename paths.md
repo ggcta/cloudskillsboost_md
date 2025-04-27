@@ -2,7 +2,7 @@
 type: paths
 name: 'Paths Collection'
 url: https://www.cloudskillsboost.google
-date: 2025-01-05
+date: 2025-04-19
 ---
 
 # [Paths Collection](https://www.cloudskillsboost.google)
@@ -37,6 +37,7 @@ date: 2025-01-05
 - [ ] `  249`: [(Web Link)](https://www.cloudskillsboost.google/paths/249) | Gemini for Google Workspace
 - [ ] ` 1803`: [(Web Link)](https://www.cloudskillsboost.google/paths/1803) | Gemini in BigQuery
 - [ ] ` 1284`: [(Web Link)](https://www.cloudskillsboost.google/paths/1284) | Generate Smarter Generative AI Outputs
+- [ ] ` 1951`: [(Web Link)](https://www.cloudskillsboost.google/paths/1951) | Generative AI Leader
 - [ ] `    8`: [(Web Link)](https://www.cloudskillsboost.google/paths/8) | Getting Started with Google Cloud Learning Path
 - [ ] `  280`: [(Web Link)](https://www.cloudskillsboost.google/paths/280) | Google Cloud Applied AI Summit Learning Path
 - [ ] `   36`: [(Web Link)](https://www.cloudskillsboost.google/paths/36) | Google Cloud Computing Foundations Certificate
