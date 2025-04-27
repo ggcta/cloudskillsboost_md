@@ -1,0 +1,381 @@
+---
+id: 1120
+name: 'Create Generative AI Apps on Google Cloud'
+datePublished: 2024-09-10
+topics:
+- Large Language Models
+- Generative AI
+- Machine Learning
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/1120
+---
+
+# [Create Generative AI Apps on Google Cloud](https://www.cloudskillsboost.google/course_templates/1120)
+
+**Description:**
+
+Generative AI applications can create new user experiences that were nearly impossible before the invention of large language models (LLMs). As an application developer, how can you use generative AI to build engaging, powerful apps on Google Cloud?
+
+In this course, you'll learn about generative AI applications and how you can use prompt design and retrieval augmented generation (RAG) to build powerful applications using LLMs. You'll learn about a production-ready architecture that can be used for generative AI applications and you'll build an LLM and RAG-based chat application.
+
+**Objectives:**
+
+- Describe generative-AI-based application types and use cases.
+- Describe how to build prompt templates to improve model response quality in applications.
+- Describe the subsystems of RAG-capable architectures for generative AI applications on Google Cloud.
+- Build an LLM and RAG-based chat application.
+
+## Generative AI Applications
+
+In this module, you learn about generative AI applications, and types of applications that can use the power of generative AI. You also learn about foundation models provided by Google, and challenges that exist when using generative AI in your applications.
+
+### Link - [Getting started](https://www.cloudskillsboost.google/course_templates/1120/documents/507339)
+
+- [Getting started](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/w--gZKF2IB0dgY2f_dhLE7MD4gG0QOKr)
+
+### Link - [Introduction to generative AI applications](https://www.cloudskillsboost.google/course_templates/1120/documents/507340)
+
+- [Introduction to generative AI applications](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/Phqptqavq_sxNP3yzrp6-znIOsTUL6Qw)
+
+### Link - [Foundation models](https://www.cloudskillsboost.google/course_templates/1120/documents/507341)
+
+- [Foundation models](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/-EWBmu4pWYuPp5B4L4OEjX7jzg8DLQKo)
+
+### Link - [Challenges of Gen AI for applications](https://www.cloudskillsboost.google/course_templates/1120/documents/507342)
+
+- [Challenges of Gen AI for applications](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/3KuRPydK98z-scge1PfGsVH2l_EVNAVf)
+
+### Link - [Summary](https://www.cloudskillsboost.google/course_templates/1120/documents/507343)
+
+- [Summary](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/CfUnodDmQrf1hTZSgu9iCY2TouEzIDm3)
+
+### Quiz - [Generative AI Applications Quiz](https://www.cloudskillsboost.google/course_templates/1120/quizzes/507344)
+
+#### Quiz 1.
+
+> [!important]
+> **What is the primary advantage of using a foundation model over building a custom AI model?**
+>
+> - [ ] Foundation models are guaranteed to be free of biases.
+> - [ ] Foundation models require less computational resources to train.
+> - [ ] Foundation models can be easily adapted to various tasks without extensive retraining.
+> - [ ] Foundation models are always more accurate than custom models.
+
+#### Quiz 2.
+
+> [!important]
+> **A chatbot is designed to answer customer questions using information from previous interactions. Which type of generative AI application is this an example of? Select two.**
+>
+> - [ ] Domain-based conversations
+> - [ ] Content creation
+> - [ ] Retrieval augmented generation
+> - [ ] Semantic search
+> - [ ] Text-to-image AI generation
+
+#### Quiz 3.
+
+> [!important]
+> **Which of the following Google foundation models is used to convert between speech and text?**
+>
+> - [ ] Cloud Translation
+> - [ ] Imagen
+> - [ ] Chirp
+> - [ ] Codey
+
+#### Quiz 4.
+
+> [!important]
+> **Which of the following are challenges associated with using generative AI in applications? Select two.**
+>
+> - [ ] Ensuring the completeness of data used by foundation models.
+> - [ ] The expense of building and training custom models.
+> - [ ] The potential for AI models to generate offensive or harmful content.
+> - [ ] The need for specialized hardware to run generative AI models effectively.
+> - [ ] The limited availability of pre-trained foundation models.
+
+#### Quiz 5.
+
+> [!important]
+> **What type of model is Gemini?**
+>
+> - [ ] A code generation model
+> - [ ] A text embeddings model
+> - [ ] A multimodal model
+> - [ ] A text-to-speech model
+
+#### Quiz 6.
+
+> [!important]
+> **What is the term for incorrect or misleading results generated by an AI model?**
+>
+> - [ ] Hallucination
+> - [ ] Bias
+> - [ ] Overfitting
+> - [ ] Prompt injection
+
+#### Quiz 7.
+
+> [!important]
+> **Which of the following is an example of using generative AI for content creation?**
+>
+> - [ ] An AI model summarizing a lengthy research paper.
+> - [ ] A chatbot answering customer questions based on previous interactions.
+> - [ ] An AI system generating product descriptions based on product images and manuals.
+> - [ ] An AI-powered search engine retrieving relevant documents.
+
+#### Quiz 8.
+
+> [!important]
+> **Which of the following best describes the primary function of a generative AI model?**
+>
+> - [ ] To analyze and interpret complex datasets.
+> - [ ] To create new content based on learned patterns.
+> - [ ] To store and retrieve large amounts of data.
+> - [ ] To translate text between different languages.
+
+## Prompts
+
+In this module, you learn about generative AI prompts. A prompt is a natural language request submied to a language model to request a response back. You can design your prompts to improve the results being returned from a model.
+
+### Link - [Getting started](https://www.cloudskillsboost.google/course_templates/1120/documents/507345)
+
+- [Getting started](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/BOB7XSXN9F34M2RVs-cX1zesMk3eSWhA)
+
+### Link - [Introduction to prompts](https://www.cloudskillsboost.google/course_templates/1120/documents/507346)
+
+- [Introduction to prompts](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/3VmzhbhRZ0f5C6f7qCVcCpP2Z8lfshQx)
+
+### Link - [Prompt structure](https://www.cloudskillsboost.google/course_templates/1120/documents/507347)
+
+- [Prompt structure](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/6WS5PotUW1xl7I5pe_AvQiJyIeoaA8Y7)
+
+### Link - [Prompt engineering](https://www.cloudskillsboost.google/course_templates/1120/documents/507348)
+
+- [Prompt engineering](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/r-11UeulKF4jDY9zbiQyjjGJ_w34u12j)
+
+### Link - [Summary](https://www.cloudskillsboost.google/course_templates/1120/documents/507349)
+
+- [Summary](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/1RxD2kpXepxEVMJbiCACvkH8Lj1nkqSL)
+
+### Quiz - [Prompts Quiz](https://www.cloudskillsboost.google/course_templates/1120/quizzes/507350)
+
+#### Quiz 1.
+
+> [!important]
+> **Which of the following are required components of a prompt? Select two.**
+>
+> - [ ] Tone
+> - [ ] Objective
+> - [ ] Context
+> - [ ] Instructions
+> - [ ] Examples
+
+#### Quiz 2.
+
+> [!important]
+> **What is the recommended practice for structuring context in a prompt?**
+>
+> - [ ] Place instructions before the context.
+> - [ ] Use delimiters to separate distinct documents.
+> - [ ] Avoid using context altogether to prevent bias in the model's response.
+> - [ ] Combine all context into a single paragraph.
+
+#### Quiz 3.
+
+> [!important]
+> **Which parameter in a generative AI model controls the degree of randomness in the output?**
+>
+> - [ ] Top-K
+> - [ ] Top-P
+> - [ ] Temperature
+> - [ ] Max output tokens
+
+#### Quiz 4.
+
+> [!important]
+> **Which of the following is a technique for improving the quality of responses from a generative AI model?**
+>
+> - [ ] Setting the temperature parameter to the highest possible value.
+> - [ ] Avoiding the use of examples in prompts.
+> - [ ] Using complex and elaborate instructions.
+> - [ ] Instructing the model to explain its reasoning.
+
+#### Quiz 5.
+
+> [!important]
+> **In prompt design, what is the purpose of the "System Instructions" component?**
+>
+> - [ ] To offer technical or environmental directives that influence the model's behavior.
+> - [ ] To specify the desired format of the model's response.
+> - [ ] To define the overall goal or objective of the prompt.
+> - [ ] To provide step-by-step instructions on how to complete a task.
+
+#### Quiz 6.
+
+> [!important]
+> **In prompt design, what is the purpose of the "Recap" component?**
+>
+> - [ ] To provide a concise summary of the key instructions and constraints in the prompt.
+> - [ ] To summarize the main points of a long document.
+> - [ ] To offer additional context or background information to the model.
+> - [ ] To introduce the persona of the AI model.
+
+#### Quiz 7.
+
+> [!important]
+> **What is the purpose of prompt design in generative AI?**
+>
+> - [ ] To train the AI model on a specific dataset.
+> - [ ] To translate natural language into machine-readable code.
+> - [ ] To evaluate the performance and accuracy of AI models.
+> - [ ] To guide the AI model's output and improve the quality of responses.
+
+#### Quiz 8.
+
+> [!important]
+> **What is the primary benefit of using a prompt template in a generative AI application?**
+>
+> - [ ] It guarantees the accuracy of the AI model's responses.
+> - [ ] It eliminates the need for prompt engineering.
+> - [ ] It reduces the computational resources required for generating responses.
+> - [ ] It allows for easy customization and reuse of prompts with dynamic content.
+
+## Get Started with Vertex AI Studio
+
+In this module, you experiment with Vertex AI Studio, which provides tools to rapidly prototype, tune models with your own data, and seamlessly deploy to applications. You explore multimodal capabilities of Gemini, design prompts, and generate conversations.
+
+### Lab - [Get Started with Vertex AI Studio](https://www.cloudskillsboost.google/course_templates/1120/labs/507351)
+
+In this lab, you will learn how to use Vertex AI Studio to create prompts and conversations with Gemini's multimodal capabilities.
+
+- [ ] [Get Started with Vertex AI Studio](../labs/Get-Started-with-Vertex-AI-Studio.md)
+
+## Retrieval Augmented Generation (RAG)
+
+In this module, you learn how to improve the accuracy of foundation models. You learn about retrieval augmented generation, or RAG, a technique for grounding a foundation model with external sources of knowledge. You'll also see an example RAG-capable generative AI solution architecture on Google Cloud.
+
+### Link - [Getting started](https://www.cloudskillsboost.google/course_templates/1120/documents/507352)
+
+- [Getting started](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/zAD4C-M30TP1SP1b9aM76lOfK52K1OVI)
+
+### Link - [Improving foundation model accuracy](https://www.cloudskillsboost.google/course_templates/1120/documents/507353)
+
+- [Improving foundation model accuracy](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/jH-AEy9wFNpOAtyrFy302Hfe7UnSxOmF)
+
+### Link - [Retrieval Augmented Generation (RAG)](https://www.cloudskillsboost.google/course_templates/1120/documents/507354)
+
+- [Retrieval Augmented Generation (RAG)](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/pRGn_FPA50P10G6atBzeglL9PMnNgRzs)
+
+### Link - [Retrieving relevant data](https://www.cloudskillsboost.google/course_templates/1120/documents/507355)
+
+- [Retrieving relevant data](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/r9Jb0oW0eEZLV3GYSmv3MNd95s0nlEIM)
+
+### Link - [RAG architecture using Vertex AI](https://www.cloudskillsboost.google/course_templates/1120/documents/507356)
+
+- [RAG architecture using Vertex AI](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/5nRkCOG-B1kLILwnXsvfe3hTVKy5QE9f)
+
+### Link - [Summary](https://www.cloudskillsboost.google/course_templates/1120/documents/507357)
+
+- [Summary](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-BLDGEN-I/1.1/T-BLDGEN-I/index.html#/lessons/scEsCzDmsOCbzvNoOpJ0jqerbC6S3WOM)
+
+### Quiz - [Retrieval Augmented Generation Quiz](https://www.cloudskillsboost.google/course_templates/1120/quizzes/507358)
+
+#### Quiz 1.
+
+> [!important]
+> **Which component of the RAG architecture is responsible for adding external data to the RAG process?**
+>
+> - [ ] Serving subsystem
+> - [ ] Quality evaluation subsystem
+> - [ ] Database layer
+> - [ ] Data ingestion subsystem
+
+#### Quiz 2.
+
+> [!important]
+> **In the context of RAG, what does "grounding" refer to?**
+>
+> - [ ] Connecting the model's output to verifiable sources of information.
+> - [ ] Fine-tuning the model to improve its performance on a specific task.
+> - [ ] Training the foundation model on a specific dataset.
+> - [ ] Reducing the model's reliance on external knowledge sources.
+
+#### Quiz 3.
+
+> [!important]
+> **What is the primary goal of Retrieval Augmented Generation (RAG)?**
+>
+> - [ ] To reduce the cost of training and deploying foundation models.
+> - [ ] To improve the accuracy and relevance of responses from foundation models.
+> - [ ] To replace foundation models with smaller, more efficient models.
+> - [ ] To eliminate the need for prompt engineering in generative AI applications.
+
+#### Quiz 4.
+
+> [!important]
+> **What is the purpose of using semantic search in the RAG serving subsystem?**
+>
+> - [ ] To generate creative responses that are not directly related to the query.
+> - [ ] To retrieve documents based on the meaning and intent of the query.
+> - [ ] To find exact keyword matches in the user's query.
+> - [ ] To filter out irrelevant or low-quality documents from the search results.
+
+#### Quiz 5.
+
+> [!important]
+> **Which of the following types of data should be stored in a location other than the Vertex AI Search data store?**
+>
+> - [ ] Structured data
+> - [ ] Unstructured data
+> - [ ] Website data
+> - [ ] Training data
+
+#### Quiz 6.
+
+> [!important]
+> **What is the role of vector embeddings in a RAG system?**
+>
+> - [ ] To evaluate the quality and accuracy of the model's responses.
+> - [ ] To represent text and other data types in a way that captures semantic meaning.
+> - [ ] To compress large documents into smaller, more manageable chunks.
+> - [ ] To generate human-like text responses based on a given prompt.
+
+#### Quiz 7.
+
+> [!important]
+> **Which of the following is a technique used to improve the performance of a foundation model for specific tasks?**
+>
+> - [ ] Vector search
+> - [ ] Retrieval Augmented Generation (RAG)
+> - [ ] Grounding with Google Search
+> - [ ] Supervised tuning
+
+#### Quiz 8.
+
+> [!important]
+> **What is the purpose of the pgvector extension in AlloyDB for PostgreSQL?**
+>
+> - [ ] To evaluate the quality of the responses generated by the model.
+> - [ ] To enable the storage and querying of vector embeddings.
+> - [ ] To generate natural language responses based on user queries.
+> - [ ] To improve the performance of keyword searches.
+
+## Build an LLM and RAG-based Chat Application
+
+In this module, you build a chat application that uses large language models (LLMs) and retrieval augmented generation (RAG) to create engaging and informative conversations.
+
+### Lab - [Build an LLM and RAG-based Chat Application with AlloyDB and Vertex AI](https://www.cloudskillsboost.google/course_templates/1120/labs/507359)
+
+In this lab, you create a chat application that uses Retrieval Augmented Generation, or RAG, to augment prompts with data retrieved from AlloyDB.
+
+- [ ] [Build an LLM and RAG-based Chat Application with AlloyDB and Vertex AI](../labs/Build-an-LLM-and-RAG-based-Chat-Application-with-AlloyDB-and-Vertex-AI.md)
+
+## Course Resources
+
+Link to lesson PDFs
+
+### Document - [Course resources](https://www.cloudskillsboost.google/course_templates/1120/documents/507360)
+
+## Your Next Steps
+
+### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)

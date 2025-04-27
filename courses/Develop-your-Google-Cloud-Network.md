@@ -1,14 +1,12 @@
 ---
 id: 625
 name: 'Develop your Google Cloud Network'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/625
-date: 2025-04-03
 datePublished: 2025-02-18
 topics:
-- VPC
-- IAM
-- SQL
+- Compute Engine
+- Cloud Computing
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/625
 ---
 
 # [Develop your Google Cloud Network](https://www.cloudskillsboost.google/course_templates/625)

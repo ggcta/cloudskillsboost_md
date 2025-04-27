@@ -3,9 +3,9 @@ id: 649
 name: 'Develop Serverless Apps with Firebase'
 datePublished: 2024-06-27
 topics:
-- Serverless
-- Firebase
-- Cloud Build
+- Google Assistant
+- Google Cloud Services
+- Firestore
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/649
 ---

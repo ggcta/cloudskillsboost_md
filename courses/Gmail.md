@@ -4,8 +4,8 @@ name: 'Gmail'
 datePublished: 2025-03-24
 topics:
 - Gmail
-- Email
 - Google Workspace
+- Email
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/200
 ---
@@ -103,9 +103,9 @@ person: Gmail automatically marks some messages as important using the following
 > [!important]
 > **Sherrie wants to email a very large file to her team. What is the best option?**
 >
-> - [ ] Select Attach files from her Gmail
-> - [ ] Select Insert files using Drive from Gmail
 > - [ ] Update her sharing settings to accommodate larger files
+> - [ ] Select Insert files using Drive from Gmail
+> - [ ] Select Attach files from her Gmail
 
 ## Organize your email
 
@@ -146,22 +146,22 @@ person: After you create some personal labels, you can change how they behave. I
 #### Quiz 2.
 
 > [!important]
+> **Sherrie and her team are about to send out a survey to On the Rise store employees. Sherrie wants to keep their feedback organized in her Inbox by creating a project label named "OTR Survey Feedback." How can she create this label?**
+>
+> - [ ] Rename the Starred label "OTR Survey Feedback"
+> - [ ] Drag the survey message to the label list
+> - [ ] Select More in the label list, then Create new label
+> - [ ] Perform a search using "OTR Survey Feedback"
+
+#### Quiz 3.
+
+> [!important]
 > **Sherrie is active in numerous On the Rise Google groups. She often receives notification emails. Sherrie decides to enable categories to better manage her Inbox. In which category will she now find messages from her Google groups?**
 >
 > - [ ] Updates
 > - [ ] Promotions
 > - [ ] Social
 > - [ ] Forums
-
-#### Quiz 3.
-
-> [!important]
-> **Sherrie and her team are about to send out a survey to On the Rise store employees. Sherrie wants to keep their feedback organized in her Inbox by creating a project label named "OTR Survey Feedback." How can she create this label?**
->
-> - [ ] Rename the Starred label "OTR Survey Feedback"
-> - [ ] Select More in the label list, then Create new label
-> - [ ] Drag the survey message to the label list
-> - [ ] Perform a search using "OTR Survey Feedback"
 
 ## Gmail integration
 
@@ -200,8 +200,8 @@ person: Messages often require us to complete one or more tasks. Gmail improves 
 > [!important]
 > **On the Rise store owner, Yousef Amadi, is responsible for three separate bakery locations. In order to manage his workload, he uses a task list to keep track of what needs to get done. He adds the task "Email Anthony Dylan Wastage Report." What does he need to select to make this task repeat on a weekly basis?**
 >
-> - [ ] Use the Task app
 > - [ ] Select Task, then Edit Details, then choose the time and date details
+> - [ ] Use the Task app
 > - [ ] Open Google Calendar, then select Edit Task Details
 > - [ ] Select Task, then Edit Details, then select the Weekly button
 
@@ -211,9 +211,9 @@ person: Messages often require us to complete one or more tasks. Gmail improves 
 > **Thomas Omar wants to email a confidential financial statement to his head office team. The document is stored in his personal Google Drive. Thomas wants his team to be able to read the document, but otherwise not alter it in any way. Which of the following share settings should he select?**
 >
 > - [ ] Turn on Link Sharing
+> - [ ] Comment
 > - [ ] Edit
 > - [ ] View
-> - [ ] Comment
 
 ## Protect your Inbox
 
@@ -230,23 +230,23 @@ person: Welcome to Module 4: Protect your Inbox. Gmail provides several ways to 
 #### Quiz 1.
 
 > [!important]
-> **Anthony Dylan is in negotiations with a new distributor. He sends the distributor an email using confidential mode and sets the email expiration date for one week's time. The next day, Seroja Malone asks Anthony to revoke the distributor's access to the email.
-What does Anthony need to do?**
+> **On the Rise store owner, Yousef Amadi, is piloting a new Point of Sale (POS) system at one of his locations. The system automatically sends him daily reports, yet these reports are automatically filtered as Spam. What steps can Yousef take to ensure future messages make it to his Inbox? Select TWO correct answers.**
 >
-> - [ ] He can select Confidential mode, then Remove access
-> - [ ] He can open the sent message, and select Remove access
-> - [ ] Nothing. Access to the email is fixed for one week
-> - [ ] He can open Google Calendar, select the Expiration date, then select Remove access
+> - [ ] Select Unsubscribe at the bottom of one of the emails
+> - [ ] Go into his Spam folder, select one of the messages incorrectly marked as spam, then select Not spam
+> - [ ] Set up confidential mode
+> - [ ] Add the system sender email "inventory@pos.com" to his contact list
 
 #### Quiz 2.
 
 > [!important]
-> **On the Rise store owner, Yousef Amadi, is piloting a new Point of Sale (POS) system at one of his locations. The system automatically sends him daily reports, yet these reports are automatically filtered as Spam. What steps can Yousef take to ensure future messages make it to his Inbox? Select TWO correct answers.**
+> **Anthony Dylan is in negotiations with a new distributor. He sends the distributor an email using confidential mode and sets the email expiration date for one week's time. The next day, Seroja Malone asks Anthony to revoke the distributor's access to the email.
+What does Anthony need to do?**
 >
-> - [ ] Set up confidential mode
-> - [ ] Add the system sender email "inventory@pos.com" to his contact list
-> - [ ] Go into his Spam folder, select one of the messages incorrectly marked as spam, then select Not spam
-> - [ ] Select Unsubscribe at the bottom of one of the emails
+> - [ ] He can open Google Calendar, select the Expiration date, then select Remove access
+> - [ ] Nothing. Access to the email is fixed for one week
+> - [ ] He can select Confidential mode, then Remove access
+> - [ ] He can open the sent message, and select Remove access
 
 ## Contacts
 
@@ -285,10 +285,10 @@ person: If you're switching to Google workspace from another system, you can imp
 > [!important]
 > **Sherrie West often intends to email Thomas Omar, yet when she starts to type, her "To:" field in Gmail automatically populates with the name "Thomas O'Malley". This name is only replaced by "Thomas Omar" once Sherrie reaches the fourth letter of his family name. Sherrie has accidentally sent Thomas O'Malley three emails meant for Thomas Omar. What can Sherrie do to fix this problem?**
 >
-> - [ ] Hide Thomas O'Malley from her directory contacts
-> - [ ] Export Thomas O'Malley as a contact
 > - [ ] Remove Thomas O'Malley from her directory contacts
 > - [ ] Add Thomas Omar to her personal contacts
+> - [ ] Export Thomas O'Malley as a contact
+> - [ ] Hide Thomas O'Malley from her directory contacts
 
 ## Manage Gmail settings
 
@@ -325,20 +325,20 @@ person: There are also several ways Gmail can forward your messages automaticall
 > [!important]
 > **Seroja Malone is traveling to Italy next week to meet with a new cinnamon distributor. She knows she will have limited access to her Gmail account and wants to set an Out-of-Office AutoReply while she is out of office. What does Seroja need to do?**
 >
-> - [ ] From Settings, select Out of office responder, type her subject and message, then select Out of office responder on
+> - [ ] From Settings, select Out-of-Office AutoReply, type her subject and message, then select Out of Office AutoReply on
 > - [ ] From Settings, select Vacation responder, then select Save
 > - [ ] From Settings, select Forwarding and POP/IMAP, then select Vacation responder on
-> - [ ] From Settings, select Out-of-Office AutoReply, type her subject and message, then select Out of Office AutoReply on
+> - [ ] From Settings, select Out of office responder, type her subject and message, then select Out of office responder on
 
 #### Quiz 2.
 
 > [!important]
 > **Sherrie West is creating an onboarding package for new On the Rise hires. One of the important steps is getting staff set up with their Gmail account, which includes adding a personalized signature line. Which of the following instruction lines should she include?**
 >
-> - [ ] Select the Advanced tab
+> - [ ] Create a Google Doc with the name "Gmail signature"
 > - [ ] Email your signature file to the IT help desk
 > - [ ] From Settings, scroll to Signature, select Create new, add your name and the On the Rise logo, then select Save
-> - [ ] Create a Google Doc with the name "Gmail signature"
+> - [ ] Select the Advanced tab
 
 ## Become more productive with Gmail
 
@@ -391,18 +391,18 @@ person: When you compose an email, it might not be appropriate to send it immedi
 > [!important]
 > **Kaina Gao wants to search for a message she sent to Anthony Dylan last May. She remembers the email related to a new store in Manila and included an attachment named "New Opportunities.pdf."  What are some ways she can narrow her search in order to quickly find this email?**
 >
-> - [ ] She can search for "last May"
-> - [ ] She can search for "sender: Anthony Dylan"
 > - [ ] She can search for "Manila"
 > - [ ] She can search for "New Opportunities.png"
+> - [ ] She can search for "last May"
+> - [ ] She can search for "sender: Anthony Dylan"
 
 #### Quiz 2.
 
 > [!important]
 > **Anthony Dylan occasionally receives emails from On the Rise partner owner, Seroja Malone. Anthony wants to ensure that Seroja's messages are automatically labeled as important in his Inbox. What does he need to do? Select TWO correct answers.**
 >
-> - [ ] Create a new filter and select the action <strong>Always mark it as important</strong>
 > - [ ] Add Seroja Malone as an important personal contact
+> - [ ] Create a new filter and select the action <strong>Always mark it as important</strong>
 > - [ ] Create a filter and select <strong>enable automatic forwarding</strong> to messages received from Seroja Malone
 > - [ ] Open message from Seroja Malone and click to <strong>enable the important marker</strong> to the left of the label
 

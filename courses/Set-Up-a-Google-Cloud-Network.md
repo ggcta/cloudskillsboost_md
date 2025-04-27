@@ -1,14 +1,13 @@
 ---
 id: 641
 name: 'Set Up a Google Cloud Network'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/641
-date: 2025-04-03
 datePublished: 2025-01-03
 topics:
 - Cloud Networking
+- Cloud Computing
 - Networking
-- Google Cloud Platform
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/641
 ---
 
 # [Set Up a Google Cloud Network](https://www.cloudskillsboost.google/course_templates/641)

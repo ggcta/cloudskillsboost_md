@@ -2,8 +2,7 @@
 id: 516
 name: 'Google Chat'
 datePublished: 2023-11-24
-topics:
-- Application Integration
+topics: []
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/516
 ---
@@ -69,9 +68,9 @@ There are three different ways to access Google Chat from your desktop browser. 
 > **Fernando wishes to stay as connected as possible to his teammates while he works from home. He wishes to install Google Chat on as many devices in his home as possible. Which of the following devices does NOT support Google Chat?**
 >
 > - [ ] His smart TV
+> - [ ] His smart phone
 > - [ ] His tablet
 > - [ ] His desktop computer
-> - [ ] His smart phone
 
 ## Messaging in Google Chat
 
@@ -140,50 +139,50 @@ Google Chat has many interactive features that help you to collaborate better wi
 > [!important]
 > **Sherrie is active in many direct conversations. She notes that one conversation with a colleague hasn't been active in six months and decides she wants to hide it from view. What does she need to do?**
 >
-> - [ ] Add the label Hidden to the conversation
-> - [ ] Select the name of the direct conversation, then select Hide Conversation
 > - [ ] Unfollow the conversation
+> - [ ] Select the name of the direct conversation, then select Hide Conversation
+> - [ ] Add the label Hidden to the conversation
 > - [ ] Remove the star from the conversation
 
 #### Quiz 2.
 
 > [!important]
-> **Kaina is having a long conversation with Sherrie using Google Chat. She mentions a Google Meet may be easier than typing so much, and Sherrie agrees. What can Kaina do quickly to avoid interrupting the conversation's flow?**
+> **Sherrie wishes to wish Kaina a happy birthday over chat. She wants to make the message extra special. Which of the following actions can Sherrie NOT take?**
 >
-> - [ ] Create a meeting invite in Google Calendar
-> - [ ] Select Add video meeting in the reply area of their chat
-> - [ ] Go to google.meet.com
-> - [ ] Type start meeting into the chat
+> - [ ] Add a gif to the message by selecting the gif icon
+> - [ ] Select the option to have her text animate on the screen
+> - [ ] Use the formatting options to change the text color and formatting
+> - [ ] Add emojis to her message
 
 #### Quiz 3.
 
 > [!important]
-> **Sherrie, head of HR and Employee Development sees Jaspar is currently online and wishes to message him quickly. She doesn't want to risk him not seeing his email until later. What should she do?**
+> **Anthony starts a direct Google Chat with Sherrie. She mentions some technological improvements that the Head Office intends to implement at the store level. Anthony wants to retain a few of her messages for quick reference in the future. What should he do?**
 >
-> - [ ] Click on his name in the Chat list in chat.google.com, type her message, and press Enter or click the Send message icon
-> - [ ] Start a new meeting and invite him
-> - [ ] Call his phone number, though he typically doesn't answer
-> - [ ] Send an email containing the word "URGENT" in the subject line
+> - [ ] Star the Google Chat conversation
+> - [ ] Click the message to save it in Google Chat
+> - [ ] Use Google Chat to take a screenshot
+> - [ ] Click More actions then, Forward to inbox in Google Chat
 
 #### Quiz 4.
 
 > [!important]
-> **Anthony starts a direct Google Chat with Sherrie. She mentions some technological improvements that the Head Office intends to implement at the store level. Anthony wants to retain a few of her messages for quick reference in the future. What should he do?**
+> **Sherrie, head of HR and Employee Development sees Jaspar is currently online and wishes to message him quickly. She doesn't want to risk him not seeing his email until later. What should she do?**
 >
-> - [ ] Click More actions then, Forward to inbox in Google Chat
-> - [ ] Use Google Chat to take a screenshot
-> - [ ] Click the message to save it in Google Chat
-> - [ ] Star the Google Chat conversation
+> - [ ] Call his phone number, though he typically doesn't answer
+> - [ ] Send an email containing the word "URGENT" in the subject line
+> - [ ] Start a new meeting and invite him
+> - [ ] Click on his name in the Chat list in chat.google.com, type her message, and press Enter or click the Send message icon
 
 #### Quiz 5.
 
 > [!important]
-> **Sherrie wishes to wish Kaina a happy birthday over chat. She wants to make the message extra special. Which of the following actions can Sherrie NOT take?**
+> **Kaina is having a long conversation with Sherrie using Google Chat. She mentions a Google Meet may be easier than typing so much, and Sherrie agrees. What can Kaina do quickly to avoid interrupting the conversation's flow?**
 >
-> - [ ] Add emojis to her message
-> - [ ] Use the formatting options to change the text color and formatting
-> - [ ] Add a gif to the message by selecting the gif icon
-> - [ ] Select the option to have her text animate on the screen
+> - [ ] Create a meeting invite in Google Calendar
+> - [ ] Type start meeting into the chat
+> - [ ] Select Add video meeting in the reply area of their chat
+> - [ ] Go to google.meet.com
 
 ## Spaces in Google Chat
 
@@ -258,42 +257,42 @@ Now it’s your turn. In the next activity, you will explore Google Chat search.
 #### Quiz 1.
 
 > [!important]
-> **Dao wants to strengthen the culture of On the Rise by encouraging more dialogue for shared interests amongst the team. He doesn't want to add another recurring meeting to people's agenda and doesn't want people to feel pressure to engage, this should be fun. What can he do?**
+> **Yousef is an On the Rise store owner located in Fort Lauderdale, Florida. He and other On the Rise store owners like to frequently communicate in order to share and store their collective knowledge for later reference. What is the best way for them to communicate their shared learning?**
 >
-> - [ ] Create a weekly recurring meeting and include all teammates as optional attendees
-> - [ ] Create a space entitled "Off the Clock" for teammates to discuss their passions and hobbies
-> - [ ] Create a Google Doc that people can add to at their leisure
-> - [ ] Start a mass email chain with the subject: "[Optional] Team Icebreakers, Trivia, and Activities"
+> - [ ] An email message
+> - [ ] A Google Meet video conference
+> - [ ] A Google Chat direct message
+> - [ ] A space in Google Chat
 
 #### Quiz 2.
 
 > [!important]
-> **Store owners use a space to discuss recipes. Yousef sees a thread about possible changes to cinnamon buns and wants to receive notifications whenever there is new activity. What does he need to do?**
+> **Dao wants to strengthen the culture of On the Rise by encouraging more dialogue for shared interests amongst the team. He doesn't want to add another recurring meeting to people's agenda and doesn't want people to feel pressure to engage, this should be fun. What can he do?**
 >
-> - [ ] Download the mobile app to his phone
-> - [ ] Click the thread and select Follow
-> - [ ] Click the thread and select Star
-> - [ ] Turn on notifications in Gmail settings
+> - [ ] Create a space entitled "Off the Clock" for teammates to discuss their passions and hobbies
+> - [ ] Create a Google Doc that people can add to at their leisure
+> - [ ] Start a mass email chain with the subject: "[Optional] Team Icebreakers, Trivia, and Activities"
+> - [ ] Create a weekly recurring meeting and include all teammates as optional attendees
 
 #### Quiz 3.
 
 > [!important]
-> **Kaina wants her team to be aware of current tasks being assigned amongst the group and when they finish. She would rather this be incorporated into everyone's current work tools than create a new process. How should she proceed?**
+> **Store owners use a space to discuss recipes. Yousef sees a thread about possible changes to cinnamon buns and wants to receive notifications whenever there is new activity. What does he need to do?**
 >
-> - [ ] Utilize the Tasks tab in the team Space
-> - [ ] List current business items in a daily email and hope everyone sees them
-> - [ ] Assign projects in a weekly team meeting that isn't always fully attended
-> - [ ] Send everyone a chat message individually
+> - [ ] Turn on notifications in Gmail settings
+> - [ ] Download the mobile app to his phone
+> - [ ] Click the thread and select Follow
+> - [ ] Click the thread and select Star
 
 #### Quiz 4.
 
 > [!important]
-> **Yousef is an On the Rise store owner located in Fort Lauderdale, Florida. He and other On the Rise store owners like to frequently communicate in order to share and store their collective knowledge for later reference. What is the best way for them to communicate their shared learning?**
+> **Kaina wants her team to be aware of current tasks being assigned amongst the group and when they finish. She would rather this be incorporated into everyone's current work tools than create a new process. How should she proceed?**
 >
-> - [ ] A space in Google Chat
-> - [ ] A Google Meet video conference
-> - [ ] A Google Chat direct message
-> - [ ] An email message
+> - [ ] Assign projects in a weekly team meeting that isn't always fully attended
+> - [ ] Send everyone a chat message individually
+> - [ ] Utilize the Tasks tab in the team Space
+> - [ ] List current business items in a daily email and hope everyone sees them
 
 ## Apps in Google Chat
 
@@ -338,9 +337,9 @@ Now it’s your turn. In the next activity, you’ll use the Giphy app for Googl
 > [!important]
 > **Roberto and his team at On the Rise Seattle are all members of the Cat Lovers space. He heard about an app that populates chats with cat photos via simple key commands. He wants to use it to delight his team. How can he search for the app?**
 >
+> - [ ] Type find cat app in the chat field
 > - [ ] Ask the Space Manager, Celeste, to download the Google Chat app for the group
 > - [ ] In the Start a chat submenu, search and add the app by selecting Find apps
-> - [ ] Type find cat app in the chat field
 > - [ ] Instruct everyone on his team to find and download the app
 
 ## Business Challenge

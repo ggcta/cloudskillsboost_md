@@ -3,8 +3,8 @@ id: 776
 name: 'Use Functions, Formulas, and Charts in Google Sheets'
 datePublished: 2025-01-09
 topics:
-- Google Sheets
 - Data Analysis
+- Data Visualization
 - Formulas
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/776

@@ -1,14 +1,13 @@
 ---
 id: 714
 name: 'Develop and Secure APIs with Apigee X'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/714
-date: 2025-04-07
 datePublished: 2023-09-18
 topics:
-- API Management
-- API Keys
 - API
+- Cloud Logging
+- API Development
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/714
 ---
 
 # [Develop and Secure APIs with Apigee X](https://www.cloudskillsboost.google/course_templates/714)

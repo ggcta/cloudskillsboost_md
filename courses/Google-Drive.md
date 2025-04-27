@@ -2,10 +2,7 @@
 id: 199
 name: 'Google Drive'
 datePublished: 2025-03-25
-topics:
-- Cloud Computing
-- Google Workspace
-- Google Drive
+topics: []
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/199
 ---
@@ -75,22 +72,22 @@ Now it's your turn. In this activity you'll open Google Drive and explore your M
 #### Quiz 1.
 
 > [!important]
-> **Anthony Dylan has an On the Rise folder saved in his My Drive. He decides to invite Sherrie West and Seroja Malone to access the folder. Who now owns the content found in the folder?**
+> **Sherrie West has On the Rise employee files saved in her My Drive. What can she as the owner do with these files? Select all that apply.**
 >
-> - [ ] Anthony Dylan
-> - [ ] The group
-> - [ ] Sherrie West
-> - [ ] Seroja Malone
+> - [ ] She can move the files
+> - [ ] She can share a file link
+> - [ ] She can delete the files and restore them from the trash
+> - [ ] She can add collaborators
 
 #### Quiz 2.
 
 > [!important]
-> **Sherrie West has On the Rise employee files saved in her My Drive. What can she as the owner do with these files? Select all that apply.**
+> **Anthony Dylan has an On the Rise folder saved in his My Drive. He decides to invite Sherrie West and Seroja Malone to access the folder. Who now owns the content found in the folder?**
 >
-> - [ ] She can share a file link
-> - [ ] She can move the files
-> - [ ] She can add collaborators
-> - [ ] She can delete the files and restore them from the trash
+> - [ ] Anthony Dylan
+> - [ ] Sherrie West
+> - [ ] The group
+> - [ ] Seroja Malone
 
 ## Share with Google Drive
 
@@ -117,20 +114,20 @@ Now it's your turn. In this activity you'll check your permissions to a folder.
 > [!important]
 > **Seroja Malone gives her head baker access to the "French baguette" file. She assigns the baker as an Editor. Which of the following can he do? Select all that apply.**
 >
-> - [ ] He can view the folder where the file is stored
 > - [ ] He can permanently delete the file
-> - [ ] He can edit the file
 > - [ ] He can view the file
+> - [ ] He can view the folder where the file is stored
+> - [ ] He can edit the file
 
 #### Quiz 2.
 
 > [!important]
 > **Seroja Malone has just added the file "French baguette" to her On the Rise recipes folder, stored in her My Drive. Sherrie West has Viewer permissions to the folder. What can she do to the "French baguette" file?**
 >
-> - [ ] She can change permissions to the file
-> - [ ] She can move the file
-> - [ ] She can delete the file
 > - [ ] She can view the file
+> - [ ] She can move the file
+> - [ ] She can change permissions to the file
+> - [ ] She can delete the file
 
 ## My Drive
 
@@ -189,30 +186,30 @@ Shortcuts are links to files or folders that allow content to be organized into 
 > [!important]
 > **Kaina Gao, Global Marketing and Sales recently attended an international conference about top trends in the bakery industry. She wants to create a new folder in her My Drive where she can store all the conference handouts and her personal notes. How does she do this? Select all that apply.**
 >
-> - [ ] Open Drive, select the <strong>My Drive</strong> label, then choose <strong>More</strong>, then choose <strong>New folder</strong>
-> - [ ] Open Drive, select the <strong>My Drive</strong> label, then select <strong>New</strong> and choose <strong>Folder</strong> from the menu
 > - [ ] Open Drive, select <strong>New</strong>, then choose <strong>My Drive</strong>
 > - [ ] Open Drive, select the <strong>My Drive</strong> label, right click on an open spot in the file list and select <strong>New folder</strong> from the menu
+> - [ ] Open Drive, select the <strong>My Drive</strong> label, then select <strong>New</strong> and choose <strong>Folder</strong> from the menu
+> - [ ] Open Drive, select the <strong>My Drive</strong> label, then choose <strong>More</strong>, then choose <strong>New folder</strong>
 
 #### Quiz 2.
+
+> [!important]
+> **Sherrie West needs to search for an On the Rise Google Sheet in her My Drive. Unfortunately, she can't remember the name of the file. What are some ways she can narrow her search? Select all that apply.**
+>
+> - [ ] She can manually search by content type
+> - [ ] She can select <strong>Advanced search</strong> and choose a date range
+> - [ ] She can manually search by recent collaborators
+> - [ ] She can right click on the folder where the file is stored, select <strong>Folder information</strong> and then select <strong>Search within</strong>
+
+#### Quiz 3.
 
 > [!important]
 > **Kaina Gao is working on a new file called "Bakery Trends", located in her My Drive "OTR Marketing" folder. How can she add a shortcut back to her "Conference Notes" folder in her My Drive?**
 >
 > - [ ] She can drag the file to the <strong>Conference Notes</strong> folder
 > - [ ] She can select the file and press <strong>CTRL+S</strong> to create a shortcut
-> - [ ] She can select <strong>New</strong>, then select <strong>Shortcut</strong>
 > - [ ] She can right click on the <strong>Bakery Trends</strong> file, select <strong>Organize</strong> then <strong>Add shortcut</strong>. She can select the <strong>Conference Notes</strong> folder location when prompted, then select <strong>Add</strong>.
-
-#### Quiz 3.
-
-> [!important]
-> **Sherrie West needs to search for an On the Rise Google Sheet in her My Drive. Unfortunately, she can't remember the name of the file. What are some ways she can narrow her search? Select all that apply.**
->
-> - [ ] She can manually search by content type
-> - [ ] She can manually search by recent collaborators
-> - [ ] She can right click on the folder where the file is stored, select <strong>Folder information</strong> and then select <strong>Search within</strong>
-> - [ ] She can select <strong>Advanced search</strong> and choose a date range
+> - [ ] She can select <strong>New</strong>, then select <strong>Shortcut</strong>
 
 ## Shared drives
 
@@ -249,11 +246,11 @@ person: As you might expect, you can search within Shared Drives. To limit the s
 #### Quiz 1.
 
 > [!important]
-> **There is a folder in the On the Rise shared drive called "Conference material". This folder is full of old files that are no longer used. How can Thomas Omar delete these files from the shared drive? Select all that apply.**
+> **Sherrie West is a member of many shared drives. How can she set up her Google drive to only see the ones that she uses most often?**
 >
-> - [ ] He can't delete files from a shared drive
-> - [ ] He can drag all the files to the Trash
-> - [ ] He can select the files, and then select Move to trash
+> - [ ] Select My Drive, then select Hide shared drive from the menu
+> - [ ] Select Manage Drives, then select the shared drives she wishes to hide
+> - [ ] Right click on the shared drives she does not use and select Hide shared drive from the menu
 
 #### Quiz 2.
 
@@ -261,17 +258,17 @@ person: As you might expect, you can search within Shared Drives. To limit the s
 > **Sherrie West has just created a new file named "On the Rise employee onboarding". Thomas asks Sherrie to move the file to the On the Rise shared drive as opposed to keeping it in her My Drive. Why might Thomas ask this? Select all that apply.**
 >
 > - [ ] This way the file is owned by everyone in the shared drive
-> - [ ] This way the file is available even if Sherrie leaves the company
 > - [ ] It's necessary because the file can't be shared with the team from My Drive
+> - [ ] This way the file is available even if Sherrie leaves the company
 
 #### Quiz 3.
 
 > [!important]
-> **Sherrie West is a member of many shared drives. How can she set up her Google drive to only see the ones that she uses most often?**
+> **There is a folder in the On the Rise shared drive called "Conference material". This folder is full of old files that are no longer used. How can Thomas Omar delete these files from the shared drive? Select all that apply.**
 >
-> - [ ] Select My Drive, then select Hide shared drive from the menu
-> - [ ] Right click on the shared drives she does not use and select Hide shared drive from the menu
-> - [ ] Select Manage Drives, then select the shared drives she wishes to hide
+> - [ ] He can drag all the files to the Trash
+> - [ ] He can select the files, and then select Move to trash
+> - [ ] He can't delete files from a shared drive
 
 ## Templates
 
@@ -304,19 +301,19 @@ person: To create a template, choose your Docs, Sheets, Slides, or Forms documen
 > [!important]
 > **Seroja Malone would like to use the "On the Rise' Google Docs template created by Sherrie West. What does she need to do?**
 >
-> - [ ] Select New, Google Docs, then From a Template, then choose the  On the Rise template
 > - [ ] Have Sherrie share the link to the original doc with her
-> - [ ] Type the address of the template in the browser address bar
 > - [ ] Search Google Drive for "templates" plus the name of the file Sherrie created
+> - [ ] Select New, Google Docs, then From a Template, then choose the  On the Rise template
+> - [ ] Type the address of the template in the browser address bar
 
 #### Quiz 2.
 
 > [!important]
 > **Sherrie West often needs to list On the Rise job postings. She creates these files in Google Docs and likes them to have the same style. How can she create a template that she can easily re-use?**
 >
-> - [ ] Upload the file at drive.google.com/newtemplate
-> - [ ] Create and edit a Google Doc called OTR Job Posting, then use the shared link to create a new version of the doc
 > - [ ] Email the template to the address templates@googledrive.com
+> - [ ] Create and edit a Google Doc called OTR Job Posting, then use the shared link to create a new version of the doc
+> - [ ] Upload the file at drive.google.com/newtemplate
 > - [ ] Create a Google Doc OTR Job Posting to use as the template, then open the template gallery for Google Docs, select On the Rise, then choose Submit template
 
 ## Google Drive tools and options
@@ -342,10 +339,10 @@ person: To search add-ons for Docs, Sheets, or Slides in a document, open the Ad
 > [!important]
 > **Seroja Malone is traveling and knows she won't have an active internet connection. She is working on a Google Sheet named "Ingredient list". How can she make this file available for offline viewing?**
 >
-> - [ ] She can open the file "Ingredient list", then right click and choose Available offline
-> - [ ] She can select Tools, then select Available offline
-> - [ ] She can go to her Google Drive settings, find the "Ingredient list" file and select Available offline
 > - [ ] She can right-click on "Ingredient list" from the files list and select Available offline
+> - [ ] She can select Tools, then select Available offline
+> - [ ] She can open the file "Ingredient list", then right click and choose Available offline
+> - [ ] She can go to her Google Drive settings, find the "Ingredient list" file and select Available offline
 
 ## Business challenge
 

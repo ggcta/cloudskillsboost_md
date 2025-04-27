@@ -3,8 +3,6 @@ id: 197
 name: 'Google Slides'
 datePublished: 2025-04-03
 topics:
-- Google Workspace
-- Google Slides
 - Version Control
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/197
@@ -91,10 +89,10 @@ Now it's your turn. In this activity, you will learn how to copy an existing pre
 > [!important]
 > **Yousef wants his presentation to match other On the Rise files and documents. How can he access his organization's available Google Slide templates?.**
 >
-> - [ ] He can search Google Drive for presentations and copy one
-> - [ ] Go to Google Drive, select New, then select Google Slides, then select a From a template
-> - [ ] He can do a Google Search for Slides templates
 > - [ ] He can go to docs.google.com and choose a template
+> - [ ] He can search Google Drive for presentations and copy one
+> - [ ] He can do a Google Search for Slides templates
+> - [ ] Go to Google Drive, select New, then select Google Slides, then select a From a template
 
 #### Quiz 2.
 
@@ -155,32 +153,32 @@ Now it's your turn. In this activity, you will format, resize, and align some co
 #### Quiz 1.
 
 > [!important]
-> **Kaina Gao has just inserted an image on-screen. She would now like to reposition it. What are some of the ways she can move the image? Select all that apply.**
+> **On the Rise partner owner Thomas Omar will be taking a few days off and heading out of office. He is about to shut down his work computer, but wants to ensure the changes he has made in Google Slides have been saved. Choose the best answer?**
 >
-> - [ ] She can select the Apply layout menu
-> - [ ] She can select the image and use the Arrange menu to center the image on the slide
-> - [ ] She can select the image and use the keyboard arrow keys
-> - [ ] She can select the border lines of the image and drag it with her mouse
+> - [ ] Select File > Save
+> - [ ] Select See document status
+> - [ ] Select File > Document details
+> - [ ] Turn on offline
 
 #### Quiz 2.
 
 > [!important]
 > **Kaina Gao is preparing a Google Slides presentation that she will present to the On the Rise marketing team next week. She'd like to add speaker notes so she doesn't forget key points. What does she need to do?**
 >
-> - [ ] Select Tools, then Script editor, then Add speaker notes
-> - [ ] At the bottom of the slide in "Speaker notes" section, click Click to add speaker notes
-> - [ ] Right click the slide, then select Add speaker notes
 > - [ ] Select the File menu, then Add, then Add speaker notes
+> - [ ] Right click the slide, then select Add speaker notes
+> - [ ] At the bottom of the slide in "Speaker notes" section, click Click to add speaker notes
+> - [ ] Select Tools, then Script editor, then Add speaker notes
 
 #### Quiz 3.
 
 > [!important]
-> **On the Rise partner owner Thomas Omar will be taking a few days off and heading out of office. He is about to shut down his work computer, but wants to ensure the changes he has made in Google Slides have been saved. Choose the best answer?**
+> **Kaina Gao has just inserted an image on-screen. She would now like to reposition it. What are some of the ways she can move the image? Select all that apply.**
 >
-> - [ ] Select File > Document details
-> - [ ] Select See document status
-> - [ ] Turn on offline
-> - [ ] Select File > Save
+> - [ ] She can select the image and use the keyboard arrow keys
+> - [ ] She can select the Apply layout menu
+> - [ ] She can select the border lines of the image and drag it with her mouse
+> - [ ] She can select the image and use the Arrange menu to center the image on the slide
 
 ## Enhance Google Slides
 
@@ -245,32 +243,32 @@ Now it's your turn once more. In the following activity, you will change the bac
 #### Quiz 1.
 
 > [!important]
-> **Anthony Dylan is designing a Google Slides presentation for the On the Rise head office team. He'd like to add a chart so that data dynamically changes when updates are made in Google Sheets. How does he do this?**
->
-> - [ ] Go to Insert, then Diagram, then From Sheets
-> - [ ] Go to Insert, then Chart, then From Sheets
-> - [ ] Go to Chart, then From Sheets, then Update
-> - [ ] Go to Insert, then Chart, then Dynamic Updates, then From Sheets
-
-#### Quiz 2.
-
-> [!important]
 > **Anthony is working on a slide and decides he'd like to change the slide background from the default white to an image on his desktop. How does he do this? Select all that apply.**
 >
 > - [ ] He can right-click an empty area of the slide, select Change background, and then Choose image
 > - [ ] He can select Tools, then Change background, and then Choose image
-> - [ ] He can right-click on the image from his desktop, then select Add to Google Slides
 > - [ ] He can open the Slide menu, select Change background, and then Choose image
+> - [ ] He can right-click on the image from his desktop, then select Add to Google Slides
 
-#### Quiz 3.
+#### Quiz 2.
 
 > [!important]
 > **Anthony is working on a slide that includes numerous elements, such as photos, charts, and text. He'd like to set up object animations. What are some of the customizations from which he can choose? Select all that apply.**
 >
-> - [ ] Animation speed (from slow to fast)
-> - [ ] When the animation occurs (on click, after previous, with previous)
 > - [ ] Animation per object or per group
 > - [ ] Animation order
+> - [ ] Animation speed (from slow to fast)
+> - [ ] When the animation occurs (on click, after previous, with previous)
+
+#### Quiz 3.
+
+> [!important]
+> **Anthony Dylan is designing a Google Slides presentation for the On the Rise head office team. He'd like to add a chart so that data dynamically changes when updates are made in Google Sheets. How does he do this?**
+>
+> - [ ] Go to Insert, then Chart, then Dynamic Updates, then From Sheets
+> - [ ] Go to Chart, then From Sheets, then Update
+> - [ ] Go to Insert, then Diagram, then From Sheets
+> - [ ] Go to Insert, then Chart, then From Sheets
 
 ## Organize Google Slides
 
@@ -295,31 +293,31 @@ Now it's your turn. In this activity, you will import a single slide from an exi
 #### Quiz 1.
 
 > [!important]
-> **Thomas Omar is working on a Google Slides presentation that he intends to present at the weekly On the Rise head office Google Meet. He adds a slide named "On the Rise News." in the middle of the presentation. Later, he decides he'd like to have this slide appear at the end of the presentation. What does he need to do? Select all that apply.**
+> **Thomas reviews his Google Slides presentation and determines that Slide 3 is not relevant for the head office meeting. How can he skip that slide while in presentation mode? Select all that apply.**
 >
-> - [ ] Right-click on the slide preview and select Move slide to end in the menu
-> - [ ] Select and drag the slide down in the preview panel
-> - [ ] Right-click on the last slide and select Replace this slide in the menu
+> - [ ] He can go to Slide 3, open the Slide menu, and select Skip slide
+> - [ ] He can right-click on Slide 3 in the preview panel and select Skip slide
+> - [ ] He can select Tools, then select Skip, then select Slide 3
+> - [ ] He can go to Slide 3, right-click on the slide, and select Skip in the menu
 
 #### Quiz 2.
 
 > [!important]
-> **Thomas would like to import a single slide from a previous presentation he has stored on his Google Drive. What does he need to do?**
+> **Thomas Omar is working on a Google Slides presentation that he intends to present at the weekly On the Rise head office Google Meet. He adds a slide named "On the Rise News." in the middle of the presentation. Later, he decides he'd like to have this slide appear at the end of the presentation. What does he need to do? Select all that apply.**
 >
-> - [ ] Open the File menu, select the presentation, then the specific slide, then choose Upload to import slides
-> - [ ] Open the File menu, select Import slides, select the presentation, select the specific slide, then select Import slides
-> - [ ] Open the File menu, select Upload, then the presentation, then the specific slide, then choose Upload to import slides
-> - [ ] Open the Slide menu, select the presentation, then the specific slide, then choose Upload to import slides
+> - [ ] Right-click on the last slide and select Replace this slide in the menu
+> - [ ] Right-click on the slide preview and select Move slide to end in the menu
+> - [ ] Select and drag the slide down in the preview panel
 
 #### Quiz 3.
 
 > [!important]
-> **Thomas reviews his Google Slides presentation and determines that Slide 3 is not relevant for the head office meeting. How can he skip that slide while in presentation mode? Select all that apply.**
+> **Thomas would like to import a single slide from a previous presentation he has stored on his Google Drive. What does he need to do?**
 >
-> - [ ] He can go to Slide 3, open the Slide menu, and select Skip slide
-> - [ ] He can go to Slide 3, right-click on the slide, and select Skip in the menu
-> - [ ] He can right-click on Slide 3 in the preview panel and select Skip slide
-> - [ ] He can select Tools, then select Skip, then select Slide 3
+> - [ ] Open the Slide menu, select the presentation, then the specific slide, then choose Upload to import slides
+> - [ ] Open the File menu, select Upload, then the presentation, then the specific slide, then choose Upload to import slides
+> - [ ] Open the File menu, select the presentation, then the specific slide, then choose Upload to import slides
+> - [ ] Open the File menu, select Import slides, select the presentation, select the specific slide, then select Import slides
 
 ## Share your Google Slides
 
@@ -370,23 +368,23 @@ Now it's your turn. In this activity, you will explore options for publishing yo
 #### Quiz 1.
 
 > [!important]
-> **On the Rise store owner Yousef Amadi has recently been added to a Google Slides presentation as a viewer. What can he do in View Mode? Select all that apply.**
->
-> - [ ] Respond to suggestions, as long as the owner allows it
-> - [ ] Make changes to the document, as long as the owner allows it
-> - [ ] Print and copy it, as long the owner allows it
-> - [ ] Download it, as long as the owner allows it
-
-#### Quiz 2.
-
-> [!important]
 > **Seroja assigns Sherrie West as an editor. Seroja would like Sherrie to make content updates, but does not want her to share the file with additional collaborators.
 How can she set this up?**
 >
 > - [ ] Open the Share with people settings and disable editor sharing permissions
-> - [ ] Change Sherrie to a commenter
-> - [ ] Disable link sharing
 > - [ ] Change Sherrie to a viewer
+> - [ ] Disable link sharing
+> - [ ] Change Sherrie to a commenter
+
+#### Quiz 2.
+
+> [!important]
+> **On the Rise store owner Yousef Amadi has recently been added to a Google Slides presentation as a viewer. What can he do in View Mode? Select all that apply.**
+>
+> - [ ] Download it, as long as the owner allows it
+> - [ ] Print and copy it, as long the owner allows it
+> - [ ] Respond to suggestions, as long as the owner allows it
+> - [ ] Make changes to the document, as long as the owner allows it
 
 ## Collaborate with Google Slides
 
@@ -417,32 +415,32 @@ To manage notifications for comments in the presentation, open the comment histo
 #### Quiz 1.
 
 > [!important]
-> **Anthony Dylan is working on a Google Slides presentation in which he and Seroja are both editors. He leaves a comment for @SerojaMalone, asking for her feedback. How does Seroja reply to Anthony's comment?**
+> **Seroja would like to review all the comments that have been added, edited, and resolved within the presentation. What does she need to do?**
 >
-> - [ ] She must open the Insert menu, select Reply, type her response, and hit Enter
-> - [ ] Select Open comment history, type her response, and hit Enter
-> - [ ] She can select Comment, type her response, and hit Enter
-> - [ ] Select the Comment card, type her response, and select Reply
+> - [ ] Select View, then Open comment history
+> - [ ] Select Share, then View named versions
+> - [ ] Select Open comment history
+> - [ ] Select View named versions
 
 #### Quiz 2.
 
 > [!important]
-> **Seroja would like to review all the comments that have been added, edited, and resolved within the presentation. What does she need to do?**
+> **Anthony decides he wants to edit the comment he has left for Seroja. How can he do this?**
 >
-> - [ ] Select Open comment history
-> - [ ] Select View named versions
-> - [ ] Select View, then Open comment history
-> - [ ] Select Share, then View named versions
+> - [ ] He cannot edit the comment, but he can delete it and leave the comment again
+> - [ ] He can select Comment, then Edit
+> - [ ] He must select More options, then Edit
+> - [ ] He can right click, then select Edit
 
 #### Quiz 3.
 
 > [!important]
-> **Anthony decides he wants to edit the comment he has left for Seroja. How can he do this?**
+> **Anthony Dylan is working on a Google Slides presentation in which he and Seroja are both editors. He leaves a comment for @SerojaMalone, asking for her feedback. How does Seroja reply to Anthony's comment?**
 >
-> - [ ] He can select Comment, then Edit
-> - [ ] He must select More options, then Edit
-> - [ ] He can right click, then select Edit
-> - [ ] He cannot edit the comment, but he can delete it and leave the comment again
+> - [ ] She can select Comment, type her response, and hit Enter
+> - [ ] Select the Comment card, type her response, and select Reply
+> - [ ] She must open the Insert menu, select Reply, type her response, and hit Enter
+> - [ ] Select Open comment history, type her response, and hit Enter
 
 ## Present Google Slides
 
@@ -479,12 +477,12 @@ person: What if you want to use a Google Slides presentation during a Google Mee
 #### Quiz 1.
 
 > [!important]
-> **During the presentation, Thomas wants to quickly reference his speaker notes. How can he do this?**
+> **Thomas begins his presentation, but decides the deck is advancing too quickly. How does he update his settings so that the slide deck auto-advances every minute?**
 >
-> - [ ] He can select Notes
-> - [ ] He can select Audience tools
-> - [ ] He can select Q&A
-> - [ ] He can select Transcript
+> - [ ] He can select Tips, then Auto-advance (when played), and choose Every minute
+> - [ ] He can select Presenter tools, then Auto-advance (when played), and choose Every minute
+> - [ ] He can select Options, then Auto-advance (when played), and choose Every minute
+> - [ ] He can select Q&A, then Auto-advance (when played), and choose Every minute
 
 #### Quiz 2.
 
@@ -492,19 +490,19 @@ person: What if you want to use a Google Slides presentation during a Google Mee
 > **It's Wednesday morning, and the On the Rise head office team is gathered for Thomas Omar's Google Slides presentation. Thomas wants to move his slide deck into presentation mode. What does he need to do?**
 >
 > - [ ] Right click, then select Present
-> - [ ] Select Slideshow, then select From beginning
 > - [ ] Click the Present button
 > - [ ] Select Slide, then select Present
+> - [ ] Select Slideshow, then select From beginning
 
 #### Quiz 3.
 
 > [!important]
-> **Thomas begins his presentation, but decides the deck is advancing too quickly. How does he update his settings so that the slide deck auto-advances every minute?**
+> **During the presentation, Thomas wants to quickly reference his speaker notes. How can he do this?**
 >
-> - [ ] He can select Options, then Auto-advance (when played), and choose Every minute
-> - [ ] He can select Presenter tools, then Auto-advance (when played), and choose Every minute
-> - [ ] He can select Tips, then Auto-advance (when played), and choose Every minute
-> - [ ] He can select Q&A, then Auto-advance (when played), and choose Every minute
+> - [ ] He can select Q&A
+> - [ ] He can select Audience tools
+> - [ ] He can select Notes
+> - [ ] He can select Transcript
 
 ## Business challenge
 

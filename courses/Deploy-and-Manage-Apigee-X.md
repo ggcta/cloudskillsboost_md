@@ -1,14 +1,13 @@
 ---
 id: 661
 name: 'Deploy and Manage Apigee X'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/661
-date: 2025-04-03
 datePublished: 2023-09-15
 topics:
-- Security
 - Management
-- Networking
+- Cloud Armor
+- API
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/661
 ---
 
 # [Deploy and Manage Apigee X](https://www.cloudskillsboost.google/course_templates/661)

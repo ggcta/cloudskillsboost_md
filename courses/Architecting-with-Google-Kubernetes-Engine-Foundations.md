@@ -1,13 +1,13 @@
 ---
 id: 32
 name: 'Architecting with Google Kubernetes Engine: Foundations'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/32
-date: 2025-04-03
 datePublished: 2024-01-25
 topics:
-- Deployment
 - GKE
+- Compute Instances
+- Deployment
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/32
 ---
 
 # [Architecting with Google Kubernetes Engine: Foundations](https://www.cloudskillsboost.google/course_templates/32)
@@ -57,22 +57,22 @@ Hi, I'm Evan. Welcome to introduction to Google Cloud platform. The first module
 #### Quiz 1.
 
 > [!important]
-> **Which statements are true about cloud computing? Mark all that are true (2 correct answers).**
+> **Which of these Google Cloud compute services provides environments for execution of code, in which users don't have to worry about infrastructure management? Choose all that are correct (2 correct answers).**
 >
-> - [ ] Cloud computing providers dedicate particular physical resources to particular customers.
-> - [ ] Customers pay for the resources they use or reserve.
-> - [ ] Customers who need more resources can get them rapidly
-> - [ ] Human intervention is required to stop using cloud resources once reserved, and payment continues until the change is confirmed.
+> - [ ] App Engine
+> - [ ] Compute Engine
+> - [ ] Google Kubernetes Engine
+> - [ ] Cloud Functions
 
 #### Quiz 2.
 
 > [!important]
-> **Which of these Google Cloud compute services provides environments for execution of code, in which users don't have to worry about infrastructure management? Choose all that are correct (2 correct answers).**
+> **Which statements are true about cloud computing? Mark all that are true (2 correct answers).**
 >
-> - [ ] Compute Engine
-> - [ ] Google Kubernetes Engine
-> - [ ] Cloud Functions
-> - [ ] App Engine
+> - [ ] Customers who need more resources can get them rapidly
+> - [ ] Cloud computing providers dedicate particular physical resources to particular customers.
+> - [ ] Human intervention is required to stop using cloud resources once reserved, and payment continues until the change is confirmed.
+> - [ ] Customers pay for the resources they use or reserve.
 
 ### Video - [Resource Management](https://www.cloudskillsboost.google/course_templates/32/video/450878)
 
@@ -85,58 +85,58 @@ Hi, I'm Evan. Welcome to introduction to Google Cloud platform. The first module
 #### Quiz 1.
 
 > [!important]
-> **What type of resource is a Compute Engine virtual machine?**
+> **What is the base-level organizing entity for creating and using Google Cloud resources and services?**
 >
-> - [ ] Multi-regional
-> - [ ] Regional
-> - [ ] Zonal
-> - [ ] Global
+> - [ ] Cluster
+> - [ ] Project
+> - [ ] Folder
+> - [ ] Region
 
 #### Quiz 2.
 
 > [!important]
 > **Within which of these Google Cloud geographic scopes are network latencies generally less than 1 millisecond? Choose all that are correct (2 correct answers).**
 >
-> - [ ] Global
+> - [ ] Region
 > - [ ] Multi-Region
 > - [ ] Zone
-> - [ ] Region
+> - [ ] Global
 
 #### Quiz 3.
 
 > [!important]
-> **What is the base-level organizing entity for creating and using Google Cloud resources and services?**
+> **What type of resource is a Compute Engine virtual machine?**
 >
-> - [ ] Folder
-> - [ ] Region
-> - [ ] Project
-> - [ ] Cluster
+> - [ ] Regional
+> - [ ] Global
+> - [ ] Zonal
+> - [ ] Multi-regional
 
 ### Video - [Billing](https://www.cloudskillsboost.google/course_templates/32/video/450880)
 
 - [YouTube: Billing](https://www.youtube.com/watch?v=RlCOzjhH484)
 
-Billing! It's no fun but a fact of life. Let's learn more about it. Billing in Google Cloud is set up at the project level. When you define a Google Cloud project, you link a billing account to it. This billing account is where you will configure all your billing information, including your payment option. You can link your billing account to one or more projects. Projects that you don't link to any billing account can only use free Google Cloud services. Your billing account can be charged automatically and invoiced every month, or at every threshold limit. You can separate project billings by setting up billing subaccounts. Some Google Cloud customers who resell Google Cloud services use subaccounts for each of their own clients. You're probably thinking, "How can I make sure I don't accidentally run up a big Google Cloud bill?" Google Cloud provides three tools to help: Budgets and alerts, Billing export, and, Reports. You can define budgets at the billing account level or at the project level. To be notified when costs approach your budget limit, you can create an alert. For example, with a budget limit of $20,000 and an alert set at 90%, you'll receive a notification alert when your expenses reach $18,000. You can also set up a webhook to be called in response to an alert. This webhook can control automation based on billing alerts. For example, you could trigger a script to shut down resources when a billing alert occurs. Or you could use this webhook to file a trouble ticket for your team. Cloud Billing export to BigQuery enables you to export detailed Google Cloud billing data (such as usage, cost estimates, and pricing data) automatically throughout the day to a BigQuery dataset that you specify. Then you can access your Cloud Billing data from BigQuery for detailed analysis, or use a tool like Google Data Studio to visualize your data. Note that the exporting of Cloud Billing data to a file is now deprecated and available only to existing customers using this feature. And Reports is a visual tool in the Console that allows you to monitor expenditure based on a project or services. Google Cloud also implements quotas, which limit unforeseen extra billing charges. Quotas are designed to prevent the over-consumption of resources because of an error or a malicious attack. Quotas apply at the level of the Google Cloud project. There are two types of quotas: rate quotas and allocation quotas. Rate quotas reset after a specific time. For example, by default, the GKE service implements a quota of 3,000 calls to its API from each Google Cloud project per min. This doesn't limit the rate of calls to your applications running in GKE, but, rather, calls to the administrative configuration of your GKE clusters themselves. It would be very unusual to make that many calls in such a short period of time. The quota might well catch and stop erroneous behavior. Allocation quotas govern the number of resources you can have in your projects. This count doesn't reset at intervals; instead you need to free up resources to stay within them. For example, by default, each Google Cloud project has a quota allowing it no more than 15 Virtual Private Cloud networks. These quotas are not the same for all projects. Although projects start with the same quotas, you can change some of them by requesting an increase from Google Cloud Support. Some quotas may increase automatically, based on your use of a product. And you can use the Google Cloud console to explicitly lower some of them for your own projects, say, if you want to put a more stringent cap on your consumption. Finally, some quotas are fixed for all Google Cloud customers. Regardless, in addition to their benefits to customers, Google Cloud quotas also protect the community of Google Cloud users by reducing the risk of unforeseen spikes in usage.
+Billing! It’s no fun but a fact of life. Let’s learn more about it. Billing in Google Cloud is set up at the project level. When you define a Google Cloud project, you link a billing account to it. This billing account is where you will configure all your billing information, including your payment option. You can link your billing account to one or more projects. Projects that you don’t link to any billing account can only use free Google Cloud services. Your billing account can be charged automatically and invoiced every month, or at every threshold limit. You can separate project billings by setting up billing subaccounts. Some Google Cloud customers who resell Google Cloud services use subaccounts for each of their own clients. You’re probably thinking, “How can I make sure I don’t accidentally run up a big Google Cloud bill?” Google Cloud provides three tools to help: Budgets and alerts, Billing export, and, Reports. You can define budgets at the billing account level or at the project level. To be notified when costs approach your budget limit, you can create an alert. For example, with a budget limit of $20,000 and an alert set at 90%, you’ll receive a notification alert when your expenses reach $18,000. You can also set up a webhook to be called in response to an alert. This webhook can control automation based on billing alerts. For example, you could trigger a script to shut down resources when a billing alert occurs. Or you could use this webhook to file a trouble ticket for your team. Cloud Billing export to BigQuery enables you to export detailed Google Cloud billing data (such as usage, cost estimates, and pricing data) automatically throughout the day to a BigQuery dataset that you specify. Then you can access your Cloud Billing data from BigQuery for detailed analysis, or use a tool like Google Data Studio to visualize your data. Note that the exporting of Cloud Billing data to a file is now deprecated and available only to existing customers using this feature. And Reports is a visual tool in the Console that allows you to monitor expenditure based on a project or services. Google Cloud also implements quotas, which limit unforeseen extra billing charges. Quotas are designed to prevent the over-consumption of resources because of an error or a malicious attack. Quotas apply at the level of the Google Cloud project. There are two types of quotas: rate quotas and allocation quotas. Rate quotas reset after a specific time. For example, by default, the GKE service implements a quota of 3,000 calls to its API from each Google Cloud project per min. This doesn’t limit the rate of calls to your applications running in GKE, but, rather, calls to the administrative configuration of your GKE clusters themselves. It would be very unusual to make that many calls in such a short period of time. The quota might well catch and stop erroneous behavior. Allocation quotas govern the number of resources you can have in your projects. This count doesn’t reset at intervals; instead you need to free up resources to stay within them. For example, by default, each Google Cloud project has a quota allowing it no more than 15 Virtual Private Cloud networks. These quotas are not the same for all projects. Although projects start with the same quotas, you can change some of them by requesting an increase from Google Cloud Support. Some quotas may increase automatically, based on your use of a product. And you can use the Google Cloud console to explicitly lower some of them for your own projects, say, if you want to put a more stringent cap on your consumption. Finally, some quotas are fixed for all Google Cloud customers. Regardless, in addition to their benefits to customers, Google Cloud quotas also protect the community of Google Cloud users by reducing the risk of unforeseen spikes in usage.
 
 ### Quiz - [Billing](https://www.cloudskillsboost.google/course_templates/32/quizzes/450881)
 
 #### Quiz 1.
 
 > [!important]
-> **At what level in the Google Cloud resource hierarchy is billing set up?**
+> **Which type of quota resets at regular intervals?**
 >
-> - [ ] Folder
-> - [ ] Individual users
-> - [ ] Project
-> - [ ] Organization
+> - [ ] Allocation quotas
+> - [ ] Rate quotas
 
 #### Quiz 2.
 
 > [!important]
-> **Which type of quota resets at regular intervals?**
+> **At what level in the Google Cloud resource hierarchy is billing set up?**
 >
-> - [ ] Rate quotas
-> - [ ] Allocation quotas
+> - [ ] Individual users
+> - [ ] Folder
+> - [ ] Organization
+> - [ ] Project
 
 ### Video - [Interacting with Google Cloud](https://www.cloudskillsboost.google/course_templates/32/video/450882)
 
@@ -151,10 +151,10 @@ This next video looks at how you interact with GCP. You learn about the Google t
 > [!important]
 > **Which of these ways to interact with  give you access to the gcloud and kubectl commands? Choose all that are correct (2 correct answers).**
 >
-> - [ ] Cloud Console mobile app
 > - [ ] Cloud SDK
-> - [ ] Console
 > - [ ] Cloud Shell
+> - [ ] Console
+> - [ ] Cloud Console mobile app
 
 ### Document - [Computing Options](https://www.cloudskillsboost.google/course_templates/32/documents/450884)
 
@@ -189,48 +189,48 @@ That concludes the Introduction to Google Cloud Platform module. Let me remind y
 > [!important]
 > **You need to write some automated scripts to run periodic updates to the resources in your Google Cloud environment. What tools can you install in your own computers to allow you to run those scripts?**
 >
-> - [ ] The Cloud SDK
-> - [ ] The Cloud Console Mobile app
-> - [ ] The Cloud Shell
 > - [ ] The Google Cloud Console
+> - [ ] The Cloud Console Mobile app
+> - [ ] The Cloud SDK
+> - [ ] The Cloud Shell
 
 #### Quiz 2.
 
 > [!important]
-> **You are developing a new product for a customer and need to implement control structures in Google Cloud to help manage the Google Cloud resources consumed by the product and the billing for the customer account. What steps should you take to manage costs for this product and customer?**
+> **One of the key characteristics of cloud computing is the concept of measured service. What is the primary customer benefit of the measured service aspect of cloud computing?**
 >
-> - [ ] Configure quotas and limits for the product folders.
-> - [ ] Configure the billing account at the product folder level in the resource hierarchy.
-> - [ ] Set up budgets and alerts at the project level for the product.
-> - [ ] Configure the billing account for each project associated with the product.
+> - [ ] Resources can be allocated automatically.
+> - [ ] You share resources from a large pool enabling economies of scale.
+> - [ ] You can get more resources as quickly as you need them.
+> - [ ] You pay only for the resources you consume.
 
 #### Quiz 3.
 
 > [!important]
 > **You are considering deploying a solution using containers on Google Cloud. What Google Cloud solutions are available to you that will provide a managed compute platform with native support for containers?**
 >
-> - [ ] Compute Engine Autoscaling Groups
-> - [ ] Cloud Functions
 > - [ ] Container Registry
+> - [ ] Cloud Functions
+> - [ ] Compute Engine Autoscaling Groups
 > - [ ] Google Kubernetes Engine Clusters
 
 #### Quiz 4.
 
 > [!important]
-> **One of the key characteristics of cloud computing is the concept of measured service. What is the primary customer benefit of the measured service aspect of cloud computing?**
+> **You are developing a new product for a customer and need to implement control structures in Google Cloud to help manage the Google Cloud resources consumed by the product and the billing for the customer account. What steps should you take to manage costs for this product and customer?**
 >
-> - [ ] You can get more resources as quickly as you need them.
-> - [ ] You share resources from a large pool enabling economies of scale.
-> - [ ] Resources can be allocated automatically.
-> - [ ] You pay only for the resources you consume.
+> - [ ] Configure the billing account for each project associated with the product.
+> - [ ] Configure the billing account at the product folder level in the resource hierarchy.
+> - [ ] Set up budgets and alerts at the project level for the product.
+> - [ ] Configure quotas and limits for the product folders.
 
 #### Quiz 5.
 
 > [!important]
 > **You are ready to start work building an application in Google Cloud. What IAM hierarchy should you implement for this project?**
 >
-> - [ ] Create a new folder inside your organization and create projects inside that folder for the resources.
 > - [ ] Create new projects and resources inside departmental folders for the resources needed by the component applications.
+> - [ ] Create a new folder inside your organization and create projects inside that folder for the resources.
 > - [ ] Create new projects for each of the component applications and create folders inside those for the resources.
 > - [ ] Create a new organization for the project and create all projects and resources inside the new organization.
 
@@ -266,29 +266,29 @@ Let's start by introducing containers. In this video, you'll learn about the key
 
 - [YouTube: Containers and Container Images](https://www.youtube.com/watch?v=i1Q0d-V0ILw)
 
-An application and its dependencies are called an image. A container is simply a running instance of an image. By building software into container images, developers can easily package and ship an application without worrying about the system it will be running on. You need software to build container images and to run them. Docker is one tool that does both. Docker is an open-source technology that allows you to create and run applications in containers, but it doesn't offer a way to orchestrate those containers at scale as Kubernetes does. In this course, we will use Google's Cloud Build to create Docker-formatted container images. Containers are not an intrinsic, primitive feature of Linux. Instead, their power to isolate workloads is derived from the composition of several technologies. One foundation is the Linux process. Each Linux process has its own virtual memory address space, separate from all others, and Linux processes are rapidly created and destroyed. Containers use Linux namespaces to control what an application can see: process ID numbers, directory trees, IP addresses, and more. By the way, Linux namespaces are not the same thing as Kubernetes namespaces, which you will learn about later in this course. Containers use cgroups to control what an application can use: its maximum consumption of CPU time, memory, I/O bandwidth, and other resources. Finally, containers use union file systems to efficiently encapsulate applications and their dependencies into a set of clean, minimal layers. Now let's see how this works. A container image is structured in layers. The tool you use to build the image reads instructions from a file called the "container manifest." In the case of Docker-formatted container images, that's called a Dockerfile. Each instruction in the Dockerfile specifies a layer inside the container image. Each layer is read-only. (When a container runs from this image, it will also have a writable, ephemeral topmost layer.) Let's look at a simple Dockerfile. This Dockerfile will contain four commands, each of which creates a layer. (At the end of this discussion, I'll explain why this Dockerfile is a little oversimplified for modern use.) The FROM statement starts out by creating a base layer, pulled from a public repository. This one happens to be the Ubuntu Linux runtime environment of a specific version. The COPY command adds a new layer, containing some files copied in from your build tool's current directory. The RUN command builds your application using the "make" command and puts the results of the build into a third layer. And finally, the last layer specifies what command to run within the container when it is launched. Each layer is only a set of differences from the layer before it. When you write a Dockerfile, you should organize from the layers likely to change, through to the layers most likely to change. By the way, I promised that I would explain how this Dockerfile example is oversimplified. These days, the best practice is not to build your application in the very same container that you ship and run. After all, your build tools are at best just clutter in a deployed container, and at worst they are an additional attack surface. Today, application packaging relies on a multi-stage build process, in which one container builds the final executable image, and a separate container receives only what is needed to run the application. Fortunately for us, the tools we use support this practice. When you launch a new container from an image, the container runtime adds a new writable layer on top of the underlying layers. This layer is often called the container layer. All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this thin writable container layer. And they're ephemeral: When the container is deleted, the contents of this writable layer are lost forever. The underlying container image remains unchanged. This fact about containers has an implication for your application design: whenever you want to store data permanently, you must do so somewhere other than a running container image. You will learn about several choices in this specialization. Because each container has its own writable container layer, and all changes are stored in this layer, multiple containers can share access to the same underlying image and yet have their own data state. The diagram shows multiple containers sharing the same Ubuntu image. Because each layer is only a set of differences from the layer before it, you get smaller images. For example, your base application image may be 200 MB, but the difference to the next point release might only be 200 KB. When you build a container, instead of copying the whole image, it creates a layer with just the difference. When you run a container, the container runtime pulls down the layers it needs. When you update, you only need to copy the difference. This is much faster than running a new virtual machine. It's very common to use publicly available open-source container images as the base for your own images, or for unmodified use. For example, you've already seen the "ubuntu" container image, which provides a Ubuntu Linux environment inside a container. "Alpine" is a popular Linux environment in a container, noted for being very small. The nginx web server is frequently used in its container packaging. Artifact Registry is the single place to store container images as well as language and OS packages. You can use Artifact Registry with other Google Cloud services namely IAM for access control, KMS for customer managed encryption keys, Cloud Build for CI/CD and scan for container vulnerabilities with Container Analysis. You can also find container images in other public repositories: Docker Hub Registry, GitLab, and others. The open-source docker command is a popular way to build your own container images. It's widely known and widely available. One downside of building containers with the docker command is that you must trust the computer that you do your builds on. Google provides a managed service for building containers that's integrated with IAM. This service is called Cloud Build, and we'll use it in this course. Cloud Build can retrieve the source code for your builds from many code repositories, including Cloud Source Repositories, or git-compatible repositories like GitHub and Bitbucket. To generate a build with Cloud Build, you define a series of steps. For example, you can configure build steps to fetch dependencies, compile source code, run integration tests, or use tools such as Docker, Gradle, and Maven. Each build step in Cloud Build runs in a Docker container. Then Cloud Build can deliver your newly built images to various execution environments: not only GKE, but also App Engine and Cloud Functions.
+An application and its dependencies are called an image. A container is simply a running instance of an image. By building software into container images, developers can easily package and ship an application without worrying about the system it will be running on. You need software to build container images and to run them. Docker is one tool that does both. Docker is an open-source technology that allows you to create and run applications in containers, but it doesn’t offer a way to orchestrate those containers at scale as Kubernetes does. In this course, we will use Google’s Cloud Build to create Docker-formatted container images. Containers are not an intrinsic, primitive feature of Linux. Instead, their power to isolate workloads is derived from the composition of several technologies. One foundation is the Linux process. Each Linux process has its own virtual memory address space, separate from all others, and Linux processes are rapidly created and destroyed. Containers use Linux namespaces to control what an application can see: process ID numbers, directory trees, IP addresses, and more. By the way, Linux namespaces are not the same thing as Kubernetes namespaces, which you will learn about later in this course. Containers use cgroups to control what an application can use: its maximum consumption of CPU time, memory, I/O bandwidth, and other resources. Finally, containers use union file systems to efficiently encapsulate applications and their dependencies into a set of clean, minimal layers. Now let’s see how this works. A container image is structured in layers. The tool you use to build the image reads instructions from a file called the “container manifest.” In the case of Docker-formatted container images, that’s called a Dockerfile. Each instruction in the Dockerfile specifies a layer inside the container image. Each layer is read-only. (When a container runs from this image, it will also have a writable, ephemeral topmost layer.) Let’s look at a simple Dockerfile. This Dockerfile will contain four commands, each of which creates a layer. (At the end of this discussion, I’ll explain why this Dockerfile is a little oversimplified for modern use.) The FROM statement starts out by creating a base layer, pulled from a public repository. This one happens to be the Ubuntu Linux runtime environment of a specific version. The COPY command adds a new layer, containing some files copied in from your build tool’s current directory. The RUN command builds your application using the “make” command and puts the results of the build into a third layer. And finally, the last layer specifies what command to run within the container when it is launched. Each layer is only a set of differences from the layer before it. When you write a Dockerfile, you should organize from the layers likely to change, through to the layers most likely to change. By the way, I promised that I would explain how this Dockerfile example is oversimplified. These days, the best practice is not to build your application in the very same container that you ship and run. After all, your build tools are at best just clutter in a deployed container, and at worst they are an additional attack surface. Today, application packaging relies on a multi-stage build process, in which one container builds the final executable image, and a separate container receives only what is needed to run the application. Fortunately for us, the tools we use support this practice. When you launch a new container from an image, the container runtime adds a new writable layer on top of the underlying layers. This layer is often called the container layer. All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this thin writable container layer. And they’re ephemeral: When the container is deleted, the contents of this writable layer are lost forever. The underlying container image remains unchanged. This fact about containers has an implication for your application design: whenever you want to store data permanently, you must do so somewhere other than a running container image. You will learn about several choices in this specialization. Because each container has its own writable container layer, and all changes are stored in this layer, multiple containers can share access to the same underlying image and yet have their own data state. The diagram shows multiple containers sharing the same Ubuntu image. Because each layer is only a set of differences from the layer before it, you get smaller images. For example, your base application image may be 200 MB, but the difference to the next point release might only be 200 KB. When you build a container, instead of copying the whole image, it creates a layer with just the difference. When you run a container, the container runtime pulls down the layers it needs. When you update, you only need to copy the difference. This is much faster than running a new virtual machine. It’s very common to use publicly available open-source container images as the base for your own images, or for unmodified use. For example, you’ve already seen the “ubuntu” container image, which provides a Ubuntu Linux environment inside a container. “Alpine” is a popular Linux environment in a container, noted for being very small. The nginx web server is frequently used in its container packaging. Artifact Registry is the single place to store container images as well as language and OS packages. You can use Artifact Registry with other Google Cloud services namely IAM for access control, KMS for customer managed encryption keys, Cloud Build for CI/CD and scan for container vulnerabilities with Container Analysis. You can also find container images in other public repositories: Docker Hub Registry, GitLab, and others. The open-source docker command is a popular way to build your own container images. It’s widely known and widely available. One downside of building containers with the docker command is that you must trust the computer that you do your builds on. Google provides a managed service for building containers that’s integrated with IAM. This service is called Cloud Build, and we’ll use it in this course. Cloud Build can retrieve the source code for your builds from many code repositories, including Cloud Source Repositories, or git-compatible repositories like GitHub and Bitbucket. To generate a build with Cloud Build, you define a series of steps. For example, you can configure build steps to fetch dependencies, compile source code, run integration tests, or use tools such as Docker, Gradle, and Maven. Each build step in Cloud Build runs in a Docker container. Then Cloud Build can deliver your newly built images to various execution environments: not only GKE, but also App Engine and Cloud Functions.
 
 ### Quiz - [Containers and Container Images](https://www.cloudskillsboost.google/course_templates/32/quizzes/450894)
 
 #### Quiz 1.
 
 > [!important]
-> **What is significant about the topmost layer in a container? Choose all that are true (2 correct answers).**
->
-> - [ ] An application running in a container can only modify the topmost layer.
-> - [ ] Reading from or writing to the topmost layer requires special software libraries.
-> - [ ] Reading from or writing to the topmost layer requires special privileges.
-> - [ ] The topmost layer's contents are ephemeral. When the container is deleted the contents will be lost.
-
-#### Quiz 2.
-
-> [!important]
 > **Why do Linux containers use union file systems?**
 >
 > - [ ] To give a container its own virtual memory address space
 > - [ ] To efficiently encapsulate applications and their dependencies into a set of clean, minimal layers
-> - [ ] To control an application's ability to see parts of the directory tree and IP addresses
 > - [ ] To control an application's maximum consumption of CPU time and memory
+> - [ ] To control an application's ability to see parts of the directory tree and IP addresses
+
+#### Quiz 2.
+
+> [!important]
+> **What is significant about the topmost layer in a container? Choose all that are true (2 correct answers).**
+>
+> - [ ] Reading from or writing to the topmost layer requires special software libraries.
+> - [ ] An application running in a container can only modify the topmost layer.
+> - [ ] The topmost layer's contents are ephemeral. When the container is deleted the contents will be lost.
+> - [ ] Reading from or writing to the topmost layer requires special privileges.
 
 ### Video - [Lab Intro](https://www.cloudskillsboost.google/course_templates/32/video/450895)
 
@@ -321,55 +321,55 @@ Now, let's introduce a popular container management and orchestration solution c
 > [!important]
 > **When you use Kubernetes, you describe the desired state you want, and Kubernetes's job is to make the deployed system conform to your desired state and to keep it there in spite of failures. What is the name for this management approach?**
 >
-> - [ ] Containerization
-> - [ ] Imperative configuration
 > - [ ] Declarative configuration
 > - [ ] Virtualization
+> - [ ] Containerization
+> - [ ] Imperative configuration
 
 #### Quiz 2.
 
 > [!important]
 > **What is a stateful application?**
 >
-> - [ ] A web front end
 > - [ ] An application that requires user and session data to be stored persistently
 > - [ ] An application that is not containerized
+> - [ ] A web front end
 
 ### Video - [Introduction to Google Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/32/video/450900)
 
 - [YouTube: Introduction to Google Kubernetes Engine](https://www.youtube.com/watch?v=rxLkv0F80p4)
 
-Google Cloud's managed services offering for Kubernetes is called Google Kubernetes Engine, or GKE. Why do people choose it? What if you have begun using Kubernetes in your environment, but the infrastructure has become a burden to maintain? Is there anything within Google Cloud that can help you? Absolutely yes. Google Cloud offers a managed Kubernetes solution called Google Kubernetes Engine. Google Kubernetes Engine is a managed Kubernetes service on Google infrastructure. GKE helps you to deploy, manage, and scale Kubernetes environments for your containerized applications on Google Cloud. More specifically, GKE is a component of the Google Cloud compute offerings. It makes it easy to bring your Kubernetes workloads into the cloud. GKE is fully managed, which means you don't have to provision the underlying resources. GKE uses a container-optimized operating system to run your workloads. These operating systems are maintained by Google and are optimized to scale quickly with a minimal resource footprint. The container-optimized OS is discussed later in this course. GKE Autopilot is a mode of operation in GKE in which Google manages your cluster configuration, including your nodes, scaling, security, and other preconfigured settings. The virtual machines that host your containers in a GKE cluster are called nodes. If you enable GKE's auto-repair feature, the service will repair unhealthy nodes for you. It'll make periodic health checks on each node of the cluster. If a node is determined to be unhealthy and require repair, GKE will drain the node (in other words, cause its workloads to gracefully exit) and recreate the node. When you use GKE, you start by directing the service to instantiate a Kubernetes system for you. This system is called a cluster. GKE's auto-upgrade feature can be enabled to ensure that your clusters are always automatically upgraded with the latest stable version of Kubernetes. Just as Kubernetes supports scaling workloads, GKE supports scaling the cluster itself. GKE also integrates with Google's Identity and Access Management, which allows you to control access through the use of accounts and role permissions. Google Cloud's operations suite is a system for monitoring and managing services, containers, applications, and infrastructure. GKE integrates with Cloud Monitoring to help you understand your applications' performance. GKE is integrated with Google Virtual Private Clouds and makes use of Google Cloud's networking features. GKE seamlessly integrates with Google's Cloud Build and Artifact Registry. This allows you to automate deployment using private container images that you have securely stored in Artifact Registry. And finally the Google Cloud console provides insights into GKE clusters and their resources and allows you to view, inspect and delete resources in those clusters. You might be aware that open-source Kubernetes contains a dashboard, but it takes a lot of work to set it up securely. But the Google Cloud console is a dashboard for your GKE clusters and workloads that you don't have to manage, and it's more powerful than the Kubernetes dashboard.
+Google Cloud’s managed services offering for Kubernetes is called Google Kubernetes Engine, or GKE. Why do people choose it? What if you have begun using Kubernetes in your environment, but the infrastructure has become a burden to maintain? Is there anything within Google Cloud that can help you? Absolutely yes. Google Cloud offers a managed Kubernetes solution called Google Kubernetes Engine. Google Kubernetes Engine is a managed Kubernetes service on Google infrastructure. GKE helps you to deploy, manage, and scale Kubernetes environments for your containerized applications on Google Cloud. More specifically, GKE is a component of the Google Cloud compute offerings. It makes it easy to bring your Kubernetes workloads into the cloud. GKE is fully managed, which means you don’t have to provision the underlying resources. GKE uses a container-optimized operating system to run your workloads. These operating systems are maintained by Google and are optimized to scale quickly with a minimal resource footprint. The container-optimized OS is discussed later in this course. GKE Autopilot is a mode of operation in GKE in which Google manages your cluster configuration, including your nodes, scaling, security, and other preconfigured settings. The virtual machines that host your containers in a GKE cluster are called nodes. If you enable GKE’s auto-repair feature, the service will repair unhealthy nodes for you. It’ll make periodic health checks on each node of the cluster. If a node is determined to be unhealthy and require repair, GKE will drain the node (in other words, cause its workloads to gracefully exit) and recreate the node. When you use GKE, you start by directing the service to instantiate a Kubernetes system for you. This system is called a cluster. GKE’s auto-upgrade feature can be enabled to ensure that your clusters are always automatically upgraded with the latest stable version of Kubernetes. Just as Kubernetes supports scaling workloads, GKE supports scaling the cluster itself. GKE also integrates with Google’s Identity and Access Management, which allows you to control access through the use of accounts and role permissions. Google Cloud’s operations suite is a system for monitoring and managing services, containers, applications, and infrastructure. GKE integrates with Cloud Monitoring to help you understand your applications’ performance. GKE is integrated with Google Virtual Private Clouds and makes use of Google Cloud’s networking features. GKE seamlessly integrates with Google’s Cloud Build and Artifact Registry. This allows you to automate deployment using private container images that you have securely stored in Artifact Registry. And finally the Google Cloud console provides insights into GKE clusters and their resources and allows you to view, inspect and delete resources in those clusters. You might be aware that open-source Kubernetes contains a dashboard, but it takes a lot of work to set it up securely. But the Google Cloud console is a dashboard for your GKE clusters and workloads that you don’t have to manage, and it’s more powerful than the Kubernetes dashboard.
 
 ### Quiz - [Introduction to Google Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/32/quizzes/450901)
 
 #### Quiz 1.
 
 > [!important]
-> **What is the relationship between Kubernetes and Google Kubernetes Engine?**
+> **What is the name for the computers in a Kubernetes cluster that can run your workloads?**
 >
-> - [ ] Google Kubernetes Engine is Kubernetes as a managed service.
-> - [ ] Google Kubernetes Engine is a closed-source variant of Kubernetes.
-> - [ ] Kubernetes and Google Kubernetes Engine are two names for the same thing.
+> - [ ] Container images
+> - [ ] Control Planes
+> - [ ] Nodes
+> - [ ] Containers
 
 #### Quiz 2.
 
 > [!important]
-> **What is the name for the computers in a Kubernetes cluster that can run your workloads?**
+> **What is the relationship between Kubernetes and Google Kubernetes Engine?**
 >
-> - [ ] Container images
-> - [ ] Nodes
-> - [ ] Control Planes
-> - [ ] Containers
+> - [ ] Kubernetes and Google Kubernetes Engine are two names for the same thing.
+> - [ ] Google Kubernetes Engine is a closed-source variant of Kubernetes.
+> - [ ] Google Kubernetes Engine is Kubernetes as a managed service.
 
 #### Quiz 3.
 
 > [!important]
 > **Which of the following supports scaling a Kubernetes cluster as a whole?**
 >
-> - [ ] Google Kubernetes Engine
-> - [ ] Kubernetes
 > - [ ] Compute Engine
+> - [ ] Kubernetes
+> - [ ] Google Kubernetes Engine
 
 ### Video - [Compute Options Detail](https://www.cloudskillsboost.google/course_templates/32/video/450902)
 
@@ -388,23 +388,22 @@ That concludes introduction to containers and Kubernetes. In this module, you le
 #### Quiz 1.
 
 > [!important]
-> **Google Compute Engine provides fine-grained control of costs. Which Compute Engine features provide this level of control? (2 correct responses)**
+> **You are deploying a containerized application, and you want maximum control over how containers are configured and deployed. You want to avoid the operational management overhead of managing a full container cluster environment yourself. Which Google Cloud compute solution should you choose?**
 >
-> - [ ] Billing budgets and alerts
-> - [ ] Managed instance groups
-> - [ ] Fully customizable virtual machines
-> - [ ] Autoscaling groups
-> - [ ] Per-second billing
+> - [ ] Compute Engine
+> - [ ] Cloud Functions
+> - [ ] Google Kubernetes Engine
+> - [ ] App Engine
 
 #### Quiz 2.
 
 > [!important]
 > **You are classifying a number of your applications into workload types. Select the stateful applications in this list of applications. Choose all responses that are correct (2 correct responses).**
 >
-> - [ ] Image recognition application that identifies product defects from images.
 > - [ ] A shopping application that saves user shopping cart data between sessions.
 > - [ ] A gaming application that keeps track of user state persistently.
 > - [ ] Web server front end for your inventory system.
+> - [ ] Image recognition application that identifies product defects from images.
 
 #### Quiz 3.
 
@@ -412,19 +411,20 @@ That concludes introduction to containers and Kubernetes. In this module, you le
 > **You are choosing a technology for deploying applications, and you want to deliver them in lightweight, standalone, resource-efficient, portable packages. Which choice best meets those goals?**
 >
 > - [ ] Containers
-> - [ ] Executable files
-> - [ ] Virtual Machines
 > - [ ] Hypervisors
+> - [ ] Virtual Machines
+> - [ ] Executable files
 
 #### Quiz 4.
 
 > [!important]
-> **You are deploying a containerized application, and you want maximum control over how containers are configured and deployed. You want to avoid the operational management overhead of managing a full container cluster environment yourself. Which Google Cloud compute solution should you choose?**
+> **Google Compute Engine provides fine-grained control of costs. Which Compute Engine features provide this level of control? (2 correct responses)**
 >
-> - [ ] Google Kubernetes Engine
-> - [ ] Compute Engine
-> - [ ] App Engine
-> - [ ] Cloud Functions
+> - [ ] Autoscaling groups
+> - [ ] Managed instance groups
+> - [ ] Fully customizable virtual machines
+> - [ ] Billing budgets and alerts
+> - [ ] Per-second billing
 
 ## Kubernetes Architecture
 
@@ -464,37 +464,37 @@ In the previous lesson, I mentioned the Kubernetes control plane, which is the f
 #### Quiz 1.
 
 > [!important]
-> **Which control plane component is the cluster's database?**
->
-> - [ ] kube-controller-manager
-> - [ ] etcd
-> - [ ] kube-scheduler
-> - [ ] kube-apiserver
-
-#### Quiz 2.
-
-> [!important]
 > **What is the role of the kubelet?**
 >
-> - [ ] To serve as Kubernetes's agent on each node
-> - [ ] To maintain network connectivity among the Pods in a cluster
 > - [ ] To interact with underlying cloud providers
+> - [ ] To maintain network connectivity among the Pods in a cluster
+> - [ ] To serve as Kubernetes's agent on each node
 
-#### Quiz 3.
+#### Quiz 2.
 
 > [!important]
 > **Which control plane component is the only one with which clients interact directly?**
 >
 > - [ ] kube-apiserver
-> - [ ] etcd
-> - [ ] kube-controller-manager
 > - [ ] kube-scheduler
+> - [ ] kube-controller-manager
+> - [ ] etcd
+
+#### Quiz 3.
+
+> [!important]
+> **Which control plane component is the cluster's database?**
+>
+> - [ ] kube-scheduler
+> - [ ] kube-controller-manager
+> - [ ] kube-apiserver
+> - [ ] etcd
 
 ### Video - [Google Kubernetes Engine Concepts](https://www.cloudskillsboost.google/course_templates/32/video/450910)
 
 - [YouTube: Google Kubernetes Engine Concepts](https://www.youtube.com/watch?v=tZXcgXFDDTQ)
 
-Next, we'll introduce concepts specific to Google Kubernetes Engine. That diagram of the Kubernetes control plane had a lot of components, didn't it? Setting up a Kubernetes cluster by hand is a lot of work. Fortunately, there is an open-source command called kubeadm that can automate much of the initial setup of a cluster. But if a node fails or needs maintenance, a human administrator has to respond manually. I suspect you can see why many people like the idea of a managed service for Kubernetes! GKE is available in two modes of operation, Autopilot and Standard mode. Autopilot is a new mode of operation in GKE that manages the entire cluster's infrastructure, including control plane, node-pools and nodes. By managing the entire cluster, Google monitors and manages all operational aspects of the cluster, including the control plane, worker nodes and core Kubernetes system components, ensuring your workloads always as a place to run. Autopilot is a fully managed Kubernetes cluster bringing together the best of GKE advances in scaling, security and Day 2 operations into a Google SRE managed and optimized kubernetes cluster. Standard mode has all of the same functionality as Autopilot but you are responsible for the configuration, management, and optimization of the cluster to your requirements. Google Cloud advises that unless you have a specific reason you need the level of configuration control that standard offers, you should always use Autopilot mode. Here is how our Kubernetes diagram differs for GKE. From the user's perspective, it's a lot simpler. GKE manages all the control plane components for us. It still exposes an IP address to which we send all of our Kubernetes API requests, but GKE takes responsibility for provisioning and managing all the control plane infrastructure behind it. It also abstracts away having a separate control plane. For the nodes configuration and management, it depends on the type of GKE mode that you are using. Google recommends using Autopilot mode. GKE manages the underlying infrastructure such as node configuration, autoscaling, auto-upgrades, baseline security configurations, and baseline networking configuration. If you're using Standard mode, you manage the underlying infrastructure, including configuring the individual nodes. Now let's talk about nodes. In any Kubernetes environment, nodes are created externally by cluster administrators, not by Kubernetes itself. GKE automates this process for you. It launches Compute Engine virtual machine instances and registers them as nodes. You can manage node settings directly from the Google Cloud console. You pay per hour of life of your nodes (not counting the control plane). Because nodes run on Compute Engine, you choose your node machine type when you create your cluster. By default, the node machine type is e2-medium, which provides 2vCPU, and 4 gigabytes of memory. Google Cloud offers a wide variety of Compute Engine options. At the time this course was developed, the generally available maximum was 416 vCPU cores. That's a moderately big virtual machine. You can customize your nodes' number of cores and their memory capacity. You can select a CPU platform. You can choose a baseline minimum CPU platform for the nodes or node pool. This allows you to improve node performance. GKE will never use a platform that is older than the CPU platform you specify, and if it picks a newer platform, the cost will be the same as the specified platform. You can also select multiple node machine types by creating multiple node pools. A node pool is a subset of nodes within a cluster that share a configuration, such as their amount of memory, or their CPU generation. Node pools also provide an easy way to ensure that workloads run on the right hardware within your cluster: you just label them with a desired node pool. By the way, node pools are a GKE feature rather than a Kubernetes feature. You can build an analogous mechanism within open-source Kubernetes, but you would have to maintain it yourself. You can enable automatic node upgrades, automatic node repairs, and cluster autoscaling at this node pool level. Here's a word of caution. Some of each node's CPU and memory are needed to run the GKE and Kubernetes components that let it work as part of your cluster. So, for example, if you allocate nodes with 15 gigabytes of memory, not quite all of that 15 gigabytes will be available for use by Pods. This module has a documentation link that explains how much CPU and memory are reserved. By default, a cluster launches in a single Google Cloud compute zone with three identical nodes, all in one node pool. The number of nodes can be changed during or after the creation of the cluster. Adding more nodes and deploying multiple replicas of an application will improve an application's availability. But only up to a point! What happens if the entire compute zone goes down? You can address this concern by using a GKE regional cluster. Regional clusters have a single API endpoint for the cluster. However, its control planes and nodes are spread across multiple Compute Engine zones within a region. Regional clusters ensure that the availability of the application is maintained across multiple zones in a single region. In addition, the availability of the control plane is also maintained so that both the application and management functionality can withstand the loss of one or more, but not all, zones. By default, a regional cluster is spread across 3 zones, each containing 1 control plane and 3 nodes. These numbers can be increased or decreased. For example, if you have five nodes in Zone 1, you will have exactly the same number of nodes in each of the other zones, for a total of 15 nodes. Once you build a zonal cluster, you can't convert it into a regional cluster, or vice versa. A regional or zonal GKE cluster can also be set up as a private cluster. The entire cluster (that is, the control plane and its nodes) are hidden from the public internet. Cluster control planes can be accessed by Google Cloud products, such as Cloud Logging or Cloud Monitoring, through an internal IP address. They can also be accessed by authorized networks through an external IP address. Authorized networks are basically IP address ranges that are trusted to access the control plane. In addition, nodes can have limited outbound access through Private Google Access, which allows them to communicate with other Google Cloud services. For example, nodes can pull container images from Google Container Registry without needing external IP addresses.
+Next, we’ll introduce concepts specific to Google Kubernetes Engine. That diagram of the Kubernetes control plane had a lot of components, didn’t it? Setting up a Kubernetes cluster by hand is a lot of work. Fortunately, there is an open-source command called kubeadm that can automate much of the initial setup of a cluster. But if a node fails or needs maintenance, a human administrator has to respond manually. I suspect you can see why many people like the idea of a managed service for Kubernetes! GKE is available in two modes of operation, Autopilot and Standard mode. Autopilot is a new mode of operation in GKE that manages the entire cluster’s infrastructure, including control plane, node-pools and nodes. By managing the entire cluster, Google monitors and manages all operational aspects of the cluster, including the control plane, worker nodes and core Kubernetes system components, ensuring your workloads always as a place to run. Autopilot is a fully managed Kubernetes cluster bringing together the best of GKE advances in scaling, security and Day 2 operations into a Google SRE managed and optimized kubernetes cluster. Standard mode has all of the same functionality as Autopilot but you are responsible for the configuration, management, and optimization of the cluster to your requirements. Google Cloud advises that unless you have a specific reason you need the level of configuration control that standard offers, you should always use Autopilot mode. Here is how our Kubernetes diagram differs for GKE. From the user’s perspective, it’s a lot simpler. GKE manages all the control plane components for us. It still exposes an IP address to which we send all of our Kubernetes API requests, but GKE takes responsibility for provisioning and managing all the control plane infrastructure behind it. It also abstracts away having a separate control plane. For the nodes configuration and management, it depends on the type of GKE mode that you are using. Google recommends using Autopilot mode. GKE manages the underlying infrastructure such as node configuration, autoscaling, auto-upgrades, baseline security configurations, and baseline networking configuration. If you’re using Standard mode, you manage the underlying infrastructure, including configuring the individual nodes. Now let’s talk about nodes. In any Kubernetes environment, nodes are created externally by cluster administrators, not by Kubernetes itself. GKE automates this process for you. It launches Compute Engine virtual machine instances and registers them as nodes. You can manage node settings directly from the Google Cloud console. You pay per hour of life of your nodes (not counting the control plane). Because nodes run on Compute Engine, you choose your node machine type when you create your cluster. By default, the node machine type is e2-medium, which provides 2vCPU, and 4 gigabytes of memory. Google Cloud offers a wide variety of Compute Engine options. At the time this course was developed, the generally available maximum was 416 vCPU cores. That’s a moderately big virtual machine. You can customize your nodes’ number of cores and their memory capacity. You can select a CPU platform. You can choose a baseline minimum CPU platform for the nodes or node pool. This allows you to improve node performance. GKE will never use a platform that is older than the CPU platform you specify, and if it picks a newer platform, the cost will be the same as the specified platform. You can also select multiple node machine types by creating multiple node pools. A node pool is a subset of nodes within a cluster that share a configuration, such as their amount of memory, or their CPU generation. Node pools also provide an easy way to ensure that workloads run on the right hardware within your cluster: you just label them with a desired node pool. By the way, node pools are a GKE feature rather than a Kubernetes feature. You can build an analogous mechanism within open-source Kubernetes, but you would have to maintain it yourself. You can enable automatic node upgrades, automatic node repairs, and cluster autoscaling at this node pool level. Here’s a word of caution. Some of each node's CPU and memory are needed to run the GKE and Kubernetes components that let it work as part of your cluster. So, for example, if you allocate nodes with 15 gigabytes of memory, not quite all of that 15 gigabytes will be available for use by Pods. This module has a documentation link that explains how much CPU and memory are reserved. By default, a cluster launches in a single Google Cloud compute zone with three identical nodes, all in one node pool. The number of nodes can be changed during or after the creation of the cluster. Adding more nodes and deploying multiple replicas of an application will improve an application’s availability. But only up to a point! What happens if the entire compute zone goes down? You can address this concern by using a GKE regional cluster. Regional clusters have a single API endpoint for the cluster. However, its control planes and nodes are spread across multiple Compute Engine zones within a region. Regional clusters ensure that the availability of the application is maintained across multiple zones in a single region. In addition, the availability of the control plane is also maintained so that both the application and management functionality can withstand the loss of one or more, but not all, zones. By default, a regional cluster is spread across 3 zones, each containing 1 control plane and 3 nodes. These numbers can be increased or decreased. For example, if you have five nodes in Zone 1, you will have exactly the same number of nodes in each of the other zones, for a total of 15 nodes. Once you build a zonal cluster, you can’t convert it into a regional cluster, or vice versa. A regional or zonal GKE cluster can also be set up as a private cluster. The entire cluster (that is, the control plane and its nodes) are hidden from the public internet. Cluster control planes can be accessed by Google Cloud products, such as Cloud Logging or Cloud Monitoring, through an internal IP address. They can also be accessed by authorized networks through an external IP address. Authorized networks are basically IP address ranges that are trusted to access the control plane. In addition, nodes can have limited outbound access through Private Google Access, which allows them to communicate with other Google Cloud services. For example, nodes can pull container images from Google Container Registry without needing external IP addresses.
 
 ### Quiz - [Google Kubernetes Engine Concepts](https://www.cloudskillsboost.google/course_templates/32/quizzes/450911)
 
@@ -503,21 +503,21 @@ Next, we'll introduce concepts specific to Google Kubernetes Engine. That diagra
 > [!important]
 > **What is the purpose of configuring a regional cluster in GKE?**
 >
-> - [ ] To ensure that the cluster's workloads are isolated from the public Internet
 > - [ ] To allow applications running in the cluster to withstand the loss of a zone
+> - [ ] To ensure that the cluster's workloads are isolated from the public Internet
 
 #### Quiz 2.
 
 > [!important]
-> **In GKE, how are control planes provisioned?**
+> **In GKE clusters, how are nodes provisioned?**
 >
-> - [ ] As abstract parts of the GKE service that are not exposed to Google Cloud customers
 > - [ ] As Compute Engine virtual machines
+> - [ ] As abstract parts of the GKE service that are not exposed to Google Cloud customers
 
 #### Quiz 3.
 
 > [!important]
-> **In GKE clusters, how are nodes provisioned?**
+> **In GKE, how are control planes provisioned?**
 >
 > - [ ] As abstract parts of the GKE service that are not exposed to Google Cloud customers
 > - [ ] As Compute Engine virtual machines
@@ -526,7 +526,7 @@ Next, we'll introduce concepts specific to Google Kubernetes Engine. That diagra
 
 - [YouTube: Kubernetes Object Management](https://www.youtube.com/watch?v=sA84ei7vUB8)
 
-Now we'll discuss Kubernetes Object Management. All Kubernetes objects are identified by a unique name and a unique identifier. Let's return once again to our example in which we want three nginx web servers running all the time. Well, the simplest way would be to declare three Pod objects and specify their state: for each, a Pod must be created and an nginx container image must be used. Let's see how we declare this. You define the objects you want Kubernetes to create and maintain with manifest files. These are ordinary text files. You may write them in YAML or JSON format. YAML is more human-readable and less tedious to edit, and we will use it throughout this specialization. This YAML file defines a desired state for a Pod: its name and a specific container image for it to run. Your manifest files have certain required fields. 'apiVersion' describes which Kubernetes Api version is used to create the object. The Kubernetes protocol is versioned so as to help maintain backwards compatibility. 'Kind' defines the object you want, in this case a Pod, and 'metadata' helps identify the object using name, unique ID, and an optional namespace. You can define several related objects in the same YAML file and it is a best practice to do so. One file is often easier to manage than several. Another even more important tip: You should save your YAML files in version-controlled repositories. This practice makes it easier to track and manage changes and to back-out those changes when necessary. It's also a big help when you need to recreate or restore a cluster. Many GCP customers use Cloud Source Repositories for this purpose, because that service lets them control the permissions of those files in the same way as their other GCP resources. When you create a Kubernetes object, you name it with a string. Names must be unique. Only one object of a particular kind can have a particular name at the same time in a Kubernetes namespace. However, if an object is deleted, its name can be reused. Alphanumeric characters, hyphens, and periods are allowed in the names, with a maximum character length of 253. Each object generated throughout the life of a cluster has a unique ID generated by Kubernetes. This means that no two objects will have the same UID throughout the life of a cluster. 'Labels' are key-value pairs with which you tag your objects during or after their creation. Labels help you identify and organize objects and subsets of objects. For example, you could create a label called 'app' and give as its value the application of which this object is a part. In this simple example, a Deployment object is labeled with three different key values: its application, its environment, and which stack it forms a part of. Various contexts offer ways to select Kubernetes resources by their labels. In this specialization, you will spend plenty of time with the kubectl command. Here's an example of using it to show all the Pods that contain a label called 'app' with a value of 'nginx'. Label selectors are very expressive. You can ask for all the resources that have a certain value for a label, all those that don't have a certain value, or even all those that have a value in a set you supply. So one way to bring three nginx web servers into being would be to declare three Pod objects, each with its own section of YAML. Kubernetes' default scheduling algorithm prefers to spread the workload evenly across the nodes available to it. So we'd get a situation like this one. Looks good, doesn't it? Maybe not. Suppose I want 200 more nginx instances. Managing 200 more sections of YAML sounds very inconvenient. Here's another problem. Pods don't heal or repair themselves, and they're not meant to run forever. They are designed to be ephemeral and disposable. For these reasons, there are better ways to manage what you run in Kubernetes than specifying individual Pods. You need a setup like this to maintain an application's high availability along with horizontal scaling. So, how do you tell Kubernetes to maintain the desired state of three nginx containers? We can instead declare a controller object whose job is to manage the state of the Pods. Some examples of these objects: Deployments, StatefulSets, DaemonSets, and Jobs. We'll meet all of these in our specialization. Deployments are a great choice for long-lived software components like web servers, especially when we want to manage them as a group. In our example, when kube-scheduler schedules Pods for a Deployment, it notifies the kube-APIserver. These changes are constantly monitored by controllers, especially by the Deployment controller. The Deployment controller will monitor and maintain three nginx Pods. If one of those Pods fails, the Deployment controller will recognize the difference between the current state and the desired state, and will try to fix it by launching a new Pod. Instead of using multiple YAML manifests or files for each Pod, you used a single Deployment YAML to launch three replicas of the same container. A Deployment insures that a defined set of Pods is running at any given time. Within its object spec, you specify how many replica Pods you want, how Pods should run, which containers should run within these Pods, and which Volumes should be mounted. Based on these templates, controllers maintain the Pod's desired state within a cluster. Deployments can also do a lot more than this, which you will see later in the course. When Kubernetes schedules a Pod, it's important that the containers have enough resources to actually run. If you schedule a large application on a node with limited resources, it is possible for the node to run out of memory or CPU resources and for things to stop working! It's also possible for applications to take up more resources than they should. This could be caused by a team spinning up more replicas than they need, possibly to artificially decrease latency, or to a bad configuration change that causes a program to go out of control and use 100% of the available CPU. Regardless of whether the issue is caused by a bad developer, bad code, or bad luck, what's important is that you are in control. When you specify a Pod, you can optionally specify how much of each resource a container needs. The most common resources to specify are CPU and memory (RAM); however, there are others. Let's take a look at the mechanisms Kubernetes uses to control these resources. So how do you keep everybody's work on your cluster tidy and organized? Kubernetes allows you to abstract a single physical cluster into multiple clusters known as 'namespaces'. Namespaces provide scope for naming resources such as Pods, Deployments, and controllers. As you can see in this example, there are three namespaces in this cluster: Test, Stage, and Prod. Remember that you cannot have duplicate object names in the same namespace. You can create three Pods with the same name, nginx in this case, but only if they don't share the same namespace. If you attempt to create another Pod with the same name 'nginx Pod' in namespace 'test', you won't be allowed. Object names need only be unique within a namespace, not across all namespaces. Namespaces also let you implement resource quotas across the cluster. These quotas define limits for resource consumption within a namespace. They're not the same as your GCP quotas, which we discussed in an earlier module. These quotas apply specifically to the Kubernetes cluster they're defined on. You're not required to use namespaces for your day-to-day management. You can also use labels. Still, namespaces are a valuable tool. Suppose you want to spin up a copy of a deployment as a quick test. Doing so in a new namespace makes it easy and free of name collisions. There are three initial namespaces in a cluster. The first is a default namespace, for objects with no other namespace defined. Your workload resources will use this namespace by default. Then there is the kube-system namespace for objects created by the Kubernetes system itself. We'll see more of the object kinds in this diagram elsewhere in this specialization. When you use the kubectl command, by default, items in the kube-system namespace are excluded, but you can choose to view its contents explicitly. The third namespace is the kube-public namespace for objects that are publicly readable to all users. kube-public is a tool for disseminating information to everything running in a cluster. You're not required to use it, but it can come in handy, especially when everything running in a cluster is related to the same goal and needs information in common. You can apply a resource to a namespace when creating it using a command-line namespace flag. Or, you can specify a namespace in the YAML file for the resource. Whenever possible, apply namespaces at the command line level. This practice makes your YAML files more flexible. For example, some day you might want to create two completely independent instances of one of your deployments, each in its own namespace. This is difficult if you have chosen to embed namespace names in your YAML files.
+Now we'll discuss Kubernetes Object Management. All Kubernetes objects are identified by a unique name and a unique identifier. Let's return once again to our example in which we want three nginx web servers running all the time. Well, the simplest way would be to declare three Pod objects and specify their state: for each, a Pod must be created and an nginx container image must be used. Let's see how we declare this. You define the objects you want Kubernetes to create and maintain with manifest files. These are ordinary text files. You may write them in YAML or JSON format. YAML is more human-readable and less tedious to edit, and we will use it throughout this specialization. This YAML file defines a desired state for a Pod: its name and a specific container image for it to run. Your manifest files have certain required fields. 'apiVersion' describes which Kubernetes Api version is used to create the object. The Kubernetes protocol is versioned so as to help maintain backwards compatibility. 'Kind' defines the object you want, in this case a Pod, and 'metadata' helps identify the object using name, unique ID, and an optional namespace. You can define several related objects in the same YAML file and it is a best practice to do so. One file is often easier to manage than several. Another even more important tip: You should save your YAML files in version-controlled repositories. This practice makes it easier to track and manage changes and to back-out those changes when necessary. It's also a big help when you need to recreate or restore a cluster. Many GCP customers use Cloud Source Repositories for this purpose, because that service lets them control the permissions of those files in the same way as their other GCP resources. When you create a Kubernetes object, you name it with a string. Names must be unique. Only one object of a particular kind can have a particular name at the same time in a Kubernetes namespace. However, if an object is deleted, its name can be reused. Alphanumeric characters, hyphens, and periods are allowed in the names, with a maximum character length of 253. Each object generated throughout the life of a cluster has a unique ID generated by Kubernetes. This means that no two objects will have the same UID throughout the life of a cluster. 'Labels' are key-value pairs with which you tag your objects during or after their creation. Labels help you identify and organize objects and subsets of objects. For example, you could create a label called 'app' and give as its value the application of which this object is a part. In this simple example, a Deployment object is labeled with three different key values: its application, its environment, and which stack it forms a part of. Various contexts offer ways to select Kubernetes resources by their labels. In this specialization, you will spend plenty of time with the kubectl command. Here's an example of using it to show all the Pods that contain a label called 'app' with a value of 'nginx'. Label selectors are very expressive. You can ask for all the resources that have a certain value for a label, all those that don't have a certain value, or even all those that have a value in a set you supply. So one way to bring three nginx web servers into being would be to declare three Pod objects, each with its own section of YAML. Kubernetes' default scheduling algorithm prefers to spread the workload evenly across the nodes available to it. So we'd get a situation like this one. Looks good, doesn't it? Maybe not. Suppose I want 200 more nginx instances. Managing 200 more sections of YAML sounds very inconvenient. Here's another problem. Pods don't heal or repair themselves, and they're not meant to run forever. They are designed to be ephemeral and disposable. For these reasons, there are better ways to manage what you run in Kubernetes than specifying individual Pods. You need a setup like this to maintain an application's high availability along with horizontal scaling. So, how do you tell Kubernetes to maintain the desired state of three nginx containers? We can instead declare a controller object whose job is to manage the state of the Pods. Some examples of these objects: Deployments, StatefulSets, DaemonSets, and Jobs. We'll meet all of these in our specialization. Deployments are a great choice for long-lived software components like web servers, especially when we want to manage them as a group. In our example, when kube-scheduler schedules Pods for a Deployment, it notifies the kube-APIserver. These changes are constantly monitored by controllers, especially by the Deployment controller. The Deployment controller will monitor and maintain three nginx Pods. If one of those Pods fails, the Deployment controller will recognize the difference between the current state and the desired state, and will try to fix it by launching a new Pod. Instead of using multiple YAML manifests or files for each Pod, you used a single Deployment YAML to launch three replicas of the same container. A Deployment insures that a defined set of Pods is running at any given time. Within its object spec, you specify how many replica Pods you want, how Pods should run, which containers should run within these Pods, and which Volumes should be mounted. Based on these templates, controllers maintain the Pod's desired state within a cluster. Deployments can also do a lot more than this, which you will see later in the course. When Kubernetes schedules a Pod, it’s important that the containers have enough resources to actually run. If you schedule a large application on a node with limited resources, it is possible for the node to run out of memory or CPU resources and for things to stop working! It’s also possible for applications to take up more resources than they should. This could be caused by a team spinning up more replicas than they need, possibly to artificially decrease latency, or to a bad configuration change that causes a program to go out of control and use 100% of the available CPU. Regardless of whether the issue is caused by a bad developer, bad code, or bad luck, what’s important is that you are in control. When you specify a Pod, you can optionally specify how much of each resource a container needs. The most common resources to specify are CPU and memory (RAM); however, there are others. Let's take a look at the mechanisms Kubernetes uses to control these resources. So how do you keep everybody's work on your cluster tidy and organized? Kubernetes allows you to abstract a single physical cluster into multiple clusters known as 'namespaces'. Namespaces provide scope for naming resources such as Pods, Deployments, and controllers. As you can see in this example, there are three namespaces in this cluster: Test, Stage, and Prod. Remember that you cannot have duplicate object names in the same namespace. You can create three Pods with the same name, nginx in this case, but only if they don't share the same namespace. If you attempt to create another Pod with the same name 'nginx Pod' in namespace 'test', you won't be allowed. Object names need only be unique within a namespace, not across all namespaces. Namespaces also let you implement resource quotas across the cluster. These quotas define limits for resource consumption within a namespace. They're not the same as your GCP quotas, which we discussed in an earlier module. These quotas apply specifically to the Kubernetes cluster they're defined on. You're not required to use namespaces for your day-to-day management. You can also use labels. Still, namespaces are a valuable tool. Suppose you want to spin up a copy of a deployment as a quick test. Doing so in a new namespace makes it easy and free of name collisions. There are three initial namespaces in a cluster. The first is a default namespace, for objects with no other namespace defined. Your workload resources will use this namespace by default. Then there is the kube-system namespace for objects created by the Kubernetes system itself. We'll see more of the object kinds in this diagram elsewhere in this specialization. When you use the kubectl command, by default, items in the kube-system namespace are excluded, but you can choose to view its contents explicitly. The third namespace is the kube-public namespace for objects that are publicly readable to all users. kube-public is a tool for disseminating information to everything running in a cluster. You're not required to use it, but it can come in handy, especially when everything running in a cluster is related to the same goal and needs information in common. You can apply a resource to a namespace when creating it using a command-line namespace flag. Or, you can specify a namespace in the YAML file for the resource. Whenever possible, apply namespaces at the command line level. This practice makes your YAML files more flexible. For example, some day you might want to create two completely independent instances of one of your deployments, each in its own namespace. This is difficult if you have chosen to embed namespace names in your YAML files.
 
 ### Document - [A note about Deployments and ReplicaSets](https://www.cloudskillsboost.google/course_templates/32/documents/450913)
 
@@ -535,21 +535,21 @@ Now we'll discuss Kubernetes Object Management. All Kubernetes objects are ident
 #### Quiz 1.
 
 > [!important]
-> **In a manifest file for a Pod, in which field do you define a container image for the Pod?**
+> **What is the purpose of the Deployment object?**
 >
-> - [ ] metadata
-> - [ ] kind
-> - [ ] spec
-> - [ ] apiVersion
+> - [ ] To launch one or more Pods and ensure that a specified number of them successfully run to completion and exit.
+> - [ ] To launch one or more Pods on a time-based schedule.
+> - [ ] To ensure that a defined set of Pods is running at any given time.
 
 #### Quiz 2.
 
 > [!important]
-> **What is the purpose of the Deployment object?**
+> **In a manifest file for a Pod, in which field do you define a container image for the Pod?**
 >
-> - [ ] To launch one or more Pods on a time-based schedule.
-> - [ ] To ensure that a defined set of Pods is running at any given time.
-> - [ ] To launch one or more Pods and ensure that a specified number of them successfully run to completion and exit.
+> - [ ] apiVersion
+> - [ ] kind
+> - [ ] spec
+> - [ ] metadata
 
 #### Quiz 3.
 
@@ -557,9 +557,9 @@ Now we'll discuss Kubernetes Object Management. All Kubernetes objects are ident
 > **What are Kubernetes namespaces useful for? Choose all that are correct (2 correct answers).**
 >
 > - [ ] Namespaces let you implement resource quotas across your cluster.
-> - [ ] Namespaces allow you to use object names that would otherwise be duplicates of one another.
-> - [ ] Namespaces make resources more secure,
 > - [ ] Namespaces partition Linux kernel resources.
+> - [ ] Namespaces make resources more secure,
+> - [ ] Namespaces allow you to use object names that would otherwise be duplicates of one another.
 
 ### Document - [A note about Services](https://www.cloudskillsboost.google/course_templates/32/documents/450915)
 
@@ -570,22 +570,22 @@ Now we'll discuss Kubernetes Object Management. All Kubernetes objects are ident
 #### Quiz 1.
 
 > [!important]
-> **What is the purpose of a Service? Choose all that are true (2 correct answers)**
+> **If you are deploying applications in your Pods that need persistent storage, which controller type should you use?**
 >
-> - [ ] To provide a way to inspect and diagnose code running in a Pod
-> - [ ] To allow you to choose how Pods are exposed
-> - [ ] To provide a load-balancing network endpoint for Pods
-> - [ ] To allow you to put constraints on Pods' resource consumption
+> - [ ] ReplicaSet
+> - [ ] DaemonSet
+> - [ ] StatefulSet
+> - [ ] Deployment
 
 #### Quiz 2.
 
 > [!important]
-> **If you are deploying applications in your Pods that need persistent storage, which controller type should you use?**
+> **What is the purpose of a Service? Choose all that are true (2 correct answers)**
 >
-> - [ ] DaemonSet
-> - [ ] ReplicaSet
-> - [ ] Deployment
-> - [ ] StatefulSet
+> - [ ] To allow you to choose how Pods are exposed
+> - [ ] To allow you to put constraints on Pods' resource consumption
+> - [ ] To provide a way to inspect and diagnose code running in a Pod
+> - [ ] To provide a load-balancing network endpoint for Pods
 
 ### Video - [Lab Intro](https://www.cloudskillsboost.google/course_templates/32/video/450918)
 
@@ -637,19 +637,19 @@ This concludes the Kubernetes Architecture module. In this module, you learned a
 > **You want to deploy multiple copies of your application, so that you can load balance traffic across them. How should you deploy this application's Pods to the production Namespace in your cluster?**
 >
 > - [ ] Deploy the Pod manifest multiple times until you have achieved the number of replicas required.
+> - [ ] Create a Deployment manifest that specifies the number of replicas that you want to run.
 > - [ ] Create separate named Pod manifests for each instance of the application and deploy as many as you need.
 > - [ ] Create a Service manifest for the LoadBalancer that specifies the number of replicas you want to run.
-> - [ ] Create a Deployment manifest that specifies the number of replicas that you want to run.
 
 #### Quiz 2.
 
 > [!important]
 > **When configuring storage for stateful applications, what steps must you take to provide file system storage inside your containers for data from your applications that will not be lost or deleted if your Pods fail or are deleted for any reason?**
 >
-> - [ ] You must create Volumes using network based storage to provide durable storage remote to the Pods and specify these in the Pods.
-> - [ ] You must export the data from your applications to a remote service that preserves your data.
 > - [ ] You must create Volumes using local Storage on the Nodes and mount the Volumes inside your containers to provide durable storage.
+> - [ ] You must create Volumes using network based storage to provide durable storage remote to the Pods and specify these in the Pods.
 > - [ ] You must mount NFS Volumes on each container in the Pod that requires durable storage.
+> - [ ] You must export the data from your applications to a remote service that preserves your data.
 
 #### Quiz 3.
 
@@ -657,9 +657,9 @@ This concludes the Kubernetes Architecture module. In this module, you learned a
 > **You are designing an application, and you want to ensure that the containers are located as close to each other as possible, in order to minimize latency. Which design decision helps meet this requirement?**
 >
 > - [ ] Place the containers in the same Pod.
+> - [ ] Place the containers in the same cluster.
 > - [ ] Place the containers in the same Namespace.
 > - [ ] Give the containers the same labels.
-> - [ ] Place the containers in the same cluster.
 
 #### Quiz 4.
 
@@ -667,9 +667,9 @@ This concludes the Kubernetes Architecture module. In this module, you learned a
 > **You have deployed a new Google Kubernetes Engine regional cluster with four machines in the default pool for the first zone and left the number of zones at the default. How many Compute Engine machines are deployed and billed against your account?**
 >
 > - [ ] Sixteen. (Four nodes are deployed in primary and secondary zones in two regions, for a total of 4 zones and 16 nodes. A control plane node is deployed in each zone but it is not billed to your account.)
-> - [ ] Twelve. (Four nodes are deployed in each of three zones. A control plane node is deployed in each zone which is indirectly billed against your account through the cluster management fee.)
-> - [ ] Fifteen. (Four nodes and a single control plane are deployed to each of the three zones. A control plane node is deployed in each zone and it is billed against your account.)
 > - [ ] Ten. (Four nodes are deployed in the first zone and three nodes are deployed in two other zones because you selected the defaults.)
+> - [ ] Fifteen. (Four nodes and a single control plane are deployed to each of the three zones. A control plane node is deployed in each zone and it is billed against your account.)
+> - [ ] Twelve. (Four nodes are deployed in each of three zones. A control plane node is deployed in each zone which is indirectly billed against your account through the cluster management fee.)
 
 #### Quiz 5.
 
@@ -677,9 +677,9 @@ This concludes the Kubernetes Architecture module. In this module, you learned a
 > **You need to ensure that the production applications running on your Kubernetes cluster are not impacted by test and staging deployments. Which features should you implement and configure to ensure that the resources for your production applications can be prioritized?**
 >
 > - [ ] Configure resource requests for Test, Staging and Production and configure specific Kubernetes resource quotas for the Production Namespace.
+> - [ ] Configure Namespaces for Test, Staging and Production and configure specific Kubernetes resource quotas for the Production Namespace.
 > - [ ] Configure labels for Test, Staging and Production and configure specific Kubernetes resource quotas for the Production Namespace.
 > - [ ] Configure Namespaces for Test, Staging and Production and configure specific Kubernetes resource quotas for the test and staging Namespaces.
-> - [ ] Configure Namespaces for Test, Staging and Production and configure specific Kubernetes resource quotas for the Production Namespace.
 
 #### Quiz 6.
 
@@ -687,9 +687,9 @@ This concludes the Kubernetes Architecture module. In this module, you learned a
 > **Which Kubernetes component does the kubectl command connect to in order to carry out operations on a cluster?**
 >
 > - [ ] kube-scheduler
+> - [ ] kube-apiserver
 > - [ ] kube-dns
 > - [ ] kube-controller-manager
-> - [ ] kube-apiserver
 
 ### Document - [Next steps](https://www.cloudskillsboost.google/course_templates/32/documents/450926)
 

@@ -1,14 +1,13 @@
 ---
 id: 255
 name: 'API Security on Google Cloud's Apigee API Platform'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/255
-date: 2025-04-07
 datePublished: 2024-04-05
 topics:
-- API Gateway
+- Cloud APIs
 - API
 - OAuth 2.0
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/255
 ---
 
 # [API Security on Google Cloud's Apigee API Platform](https://www.cloudskillsboost.google/course_templates/255)
@@ -143,42 +142,42 @@ Person: We've covered quite a bit about OAuth 2.0, the authorization framework u
 > [!important]
 > **Which of the following statements about the Proof Key for Code Exchange (PKCE) extension are true? Select two.**
 >
-> - [ ] PKCE is necessary because a token may be intercepted by a bad actor.
-> - [ ] PKCE uses a one-way hash to prove the identity of the app.
-> - [ ] PKCE adds an extra call to the authorization code flow that is used to validate the code verifier.
 > - [ ] The authorization code grant type with PKCE should be used instead of the implicit grant type.
 > - [ ] PKCE can be used to secure OAuth when TLS is not being used.
+> - [ ] PKCE uses a one-way hash to prove the identity of the app.
+> - [ ] PKCE adds an extra call to the authorization code flow that is used to validate the code verifier.
+> - [ ] PKCE is necessary because a token may be intercepted by a bad actor.
 
 #### Quiz 2.
 
 > [!important]
-> **Which of the following statements about JWTs are true? Select two.**
+> **Why does the client credentials grant type not use refresh tokens?**
 >
-> - [ ] JWTs are encrypted, so TLS is not required.
-> - [ ] Apigee provides policies for generating and verifying JWTs.
-> - [ ] SAML uses JWTs for passing authentication and authorization information between IdPs and service providers.
-> - [ ] The JWT payload is used to guarantee the integrity of the token.
-> - [ ] JWTs can be validated without sending them to a token server.
+> - [ ] The client credentials grant type flow cannot secure refresh tokens.
+> - [ ] An app's credentials do not change, so a refresh token is unnecessary.
+> - [ ] The authorization code grant type with PKCE should now be used instead of the client credentials grant type.
+> - [ ] Refresh tokens are only used when user credentials are necessary.
 
 #### Quiz 3.
 
 > [!important]
 > **Which OAuth grant type should be used for untrusted apps that need access to user data?**
 >
+> - [ ] Authorization code grant type
 > - [ ] Implicit grant type
 > - [ ] Client credentials grant type
 > - [ ] Resource owner password grant type
-> - [ ] Authorization code grant type
 
 #### Quiz 4.
 
 > [!important]
-> **Why does the client credentials grant type not use refresh tokens?**
+> **Which of the following statements about JWTs are true? Select two.**
 >
-> - [ ] The authorization code grant type with PKCE should now be used instead of the client credentials grant type.
-> - [ ] An app's credentials do not change, so a refresh token is unnecessary.
-> - [ ] The client credentials grant type flow cannot secure refresh tokens.
-> - [ ] Refresh tokens are only used when user credentials are necessary.
+> - [ ] JWTs are encrypted, so TLS is not required.
+> - [ ] JWTs can be validated without sending them to a token server.
+> - [ ] The JWT payload is used to guarantee the integrity of the token.
+> - [ ] SAML uses JWTs for passing authentication and authorization information between IdPs and service providers.
+> - [ ] Apigee provides policies for generating and verifying JWTs.
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/255/video/466025)
 
@@ -285,34 +284,34 @@ In this lab, you'll protect sensitive data by using data masking and private var
 #### Quiz 1.
 
 > [!important]
-> **Which of the following data stores does Apigee use when proving the proxy's identity to the backend service?**
+> **Which of the following policies are used to protect against parsing attacks? Select two.**
 >
-> - [ ] Truststore
-> - [ ] Keystore
-> - [ ] Encrypted Key Value Maps (KVM)
-> - [ ] Property sets
+> - [ ] XMLThreatProtection policy
+> - [ ] MessageValidation policy
+> - [ ] RegularExpressionThreatProtection policy
+> - [ ] AccessControl policy
+> - [ ] JSONThreatProtection policy
 
 #### Quiz 2.
 
 > [!important]
-> **Which of the following policies are used to protect against parsing attacks? Select two.**
+> **Which of the following data stores does Apigee use when proving the proxy's identity to the backend service?**
 >
-> - [ ] RegularExpressionThreatProtection policy
-> - [ ] AccessControl policy
-> - [ ] XMLThreatProtection policy
-> - [ ] MessageValidation policy
-> - [ ] JSONThreatProtection policy
+> - [ ] Property sets
+> - [ ] Truststore
+> - [ ] Keystore
+> - [ ] Encrypted Key Value Maps (KVM)
 
 #### Quiz 3.
 
 > [!important]
 > **Which of the following statements about KVMs are true? Select two.**
 >
-> - [ ] The Apigee API can be used to turn off encryption for an existing KVM.
-> - [ ] Values can be retrieved from an encrypted KVM by using the Apigee API.
-> - [ ] Keys and values must both be strings.
-> - [ ] KVMs are only scoped to a specific environment.
 > - [ ] When the KeyValueMapOperations policy is being used, values from a KVM may only be retrieved into private variables.
+> - [ ] Values can be retrieved from an encrypted KVM by using the Apigee API.
+> - [ ] KVMs are only scoped to a specific environment.
+> - [ ] The Apigee API can be used to turn off encryption for an existing KVM.
+> - [ ] Keys and values must both be strings.
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/255/video/466042)
 

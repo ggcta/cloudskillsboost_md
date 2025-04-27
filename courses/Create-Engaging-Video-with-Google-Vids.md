@@ -1,11 +1,10 @@
 ---
 id: 1179
 name: 'Create Engaging Video with Google Vids'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/1179
-date: 2025-04-03
 datePublished: 2025-03-13
 topics: []
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/1179
 ---
 
 # [Create Engaging Video with Google Vids](https://www.cloudskillsboost.google/course_templates/1179)
@@ -74,46 +73,6 @@ SPEAKER: Google Vids offers a variety of features to enhance your videos. You ca
 SPEAKER: Congratulations on completing the course. We hope you've enjoyed this introduction to Google Vids. You learned how to access Vids and navigate the video editor. You also explored using AI to quickly transform your ideas into an initial video draft with the Help Me Create feature. Then you discovered how to choose the right template and customize your video to reflect your brand's look and feel. Lastly, you learned about how to add animations, transitions, photo effects, and object tracking to your videos for emphasis. With Google Vids, you can create engaging videos to share with customers and colleagues, helping you communicate more effectively. We'll continue to release new videos and add them to this course. In the meantime, check out the Additional Resources document to learn more about Google Vids and our other Google Workspace courses, like Gemini and Gmail. Now it's your turn. Start creating your own videos with Google Vids and see how it can save you time, improve your communication, and enhance your creativity.
 
 ### Quiz - [Google Vids Quiz](https://www.cloudskillsboost.google/course_templates/1179/quizzes/526804)
-
-#### Quiz 1.
-
-> [!important]
-> **Which of the following describes Google Vids' support for multimedia elements in videos?**
->
-> - [ ] Google Vids projects can only contain a single media element per scene.
-> - [ ] Google Vids users can only add still images as media elements.
-> - [ ] Google Vids supports several multimedia elements like  GIFs, and videos.
-> - [ ] Video files can only be imported if they are saved as .mov files.
-
-#### Quiz 2.
-
-> [!important]
-> **What is Google Vids?**
->
-> - [ ] A cloud-based video storage service that allows users to back up and share their video files.
-> - [ ] A social media platform where users can upload and share short-form videos.
-> - [ ] A video conferencing software that helps users conduct virtual team meetings and webinars.
-> - [ ] An AI-powered video creation tool available to eligible Google Workspace users.
-
-#### Quiz 3.
-
-> [!important]
-> **Sherrie is creating a training video for new managers. Her team has already filmed the necessary footage. Now, she wants to edit the video to make it more engaging and dynamic. Which Google Vids feature can she use to customize her videos so they're more aligned with the company's brand?**
->
-> - [ ] Help Me Create
-> - [ ] Styles
-> - [ ] Vids recording studio
-> - [ ] Templates
-
-#### Quiz 4.
-
-> [!important]
-> **You're a marketing manager creating a video to promote a new product launch. You have a Google Doc outlining the product's features and benefits, but need to quickly generate a first draft with a proposed outline and sample content. How can the "Help Me Create" feature in Google Vids help you achieve this?**
->
-> - [ ] Help Me Create can analyze a user's uploaded video footage and provide intelligent suggestions to improve the video's flow and pacing.
-> - [ ] Help Me Create can transcribe spoken audio into text for subtitles or captions for a video.
-> - [ ] Help Me Create can automatically generate short summaries of longer videos, making it easier to consume information quickly.
-> - [ ] Using AI, Help Me Create can generate a proposed video outline based on user-provided prompts.
 
 ### Document - [Additional Resources](https://www.cloudskillsboost.google/course_templates/1179/documents/526805)
 

@@ -3,7 +3,7 @@ id: 196
 name: 'Google Sheets'
 datePublished: 2025-03-25
 topics:
-- Google Sheets
+- Data Processing
 - Data Analysis
 - Version Control
 type: Course
@@ -79,8 +79,8 @@ Now it's your turn. In this activity, you'll explore options for adding, sorting
 > [!important]
 > **Yousef has a series of spreadsheets that he has created in Microsoft Excel. Which of the following statements are true? Select all that apply.**
 >
-> - [ ] Yousef must save his Microsoft Excel spreadsheets as Google Sheets in order to edit them
 > - [ ] Yousef can upload Microsoft Excel spreadsheets to Google Drive
+> - [ ] Yousef must save his Microsoft Excel spreadsheets as Google Sheets in order to edit them
 > - [ ] Yousef can view Microsoft Excel spreadsheets using Google Sheets
 
 #### Quiz 2.
@@ -89,8 +89,8 @@ Now it's your turn. In this activity, you'll explore options for adding, sorting
 > **On the Rise store owner Yousef Amadi wants to create an inventory sheet for his employees. How does he create a new Google Sheets spreadsheet? Select all that apply.**
 >
 > - [ ] Go to Google Drive, select New, then select Google Sheets
-> - [ ] Go to googlesheets.com
 > - [ ] Type sheets.new in the browser address bar
+> - [ ] Go to googlesheets.com
 
 ## Manage data using Google Sheets
 
@@ -115,21 +115,21 @@ Now it's your turn. In this activity, you'll explore options for adding, sorting
 #### Quiz 1.
 
 > [!important]
-> **Now, Thomas wants to add some data to the Sheet. What are some of his options? Select all that apply.**
+> **On the Rise partner owner Thomas Omar is reviewing a Google Sheet named "On the Rise Monthly Sales Figures." He'd like to better analyze the data by filtering the data. What does he need to do?**
 >
-> - [ ] Import it from a Microsoft Excel file
-> - [ ] Paste it from within the same Google Sheet
-> - [ ] Copy and paste it from another spreadsheet
-> - [ ] Manually add the data
+> - [ ] Open the Data menu, select Sort cells, then select Create a filter
+> - [ ] Select the Filter  menu, choose a range of cells, then select Create a filter.
+> - [ ] Select one or more cells, open the Data menu, hover over Filter views, then select Create a new filter view
 
 #### Quiz 2.
 
 > [!important]
-> **On the Rise partner owner Thomas Omar is reviewing a Google Sheet named "On the Rise Monthly Sales Figures." He'd like to better analyze the data by filtering the data. What does he need to do?**
+> **Now, Thomas wants to add some data to the Sheet. What are some of his options? Select all that apply.**
 >
-> - [ ] Select one or more cells, open the Data menu, hover over Filter views, then select Create a new filter view
-> - [ ] Open the Data menu, select Sort cells, then select Create a filter
-> - [ ] Select the Filter  menu, choose a range of cells, then select Create a filter.
+> - [ ] Paste it from within the same Google Sheet
+> - [ ] Copy and paste it from another spreadsheet
+> - [ ] Manually add the data
+> - [ ] Import it from a Microsoft Excel file
 
 ## Format a Google Sheets spreadsheet
 
@@ -174,20 +174,20 @@ person: A Google Sheets spreadsheet can have more than one sheet in order to org
 > [!important]
 > **Anthony Dylan is working on a Google Sheet that includes many long text strings. He notices that the text keeps overflowing onto the adjacent cell. How can he format his Sheet in order to fix this issue?**
 >
-> - [ ] He can select Text wrapping
-> - [ ] He can select Rotate text
-> - [ ] He can select Text alignment
 > - [ ] He can select Merge cells
+> - [ ] He can select Rotate text
+> - [ ] He can select Text wrapping
+> - [ ] He can select Text alignment
 
 #### Quiz 2.
 
 > [!important]
 > **Seroja wants her Sheet to include a header row that does not move when viewers scroll through the spreadsheet. How does she set this up?**
 >
-> - [ ] She can select the row she wants, open the View menu, then choose Text wrapping
-> - [ ] She can select the row she wants, then select Conditional Formatting, then make a rule Except this row
 > - [ ] She can select the row she wants, open the View menu, then choose Freeze and 1 row
 > - [ ] She can select the row she wants, open the View menu, the choose Except certain cells
+> - [ ] She can select the row she wants, then select Conditional Formatting, then make a rule Except this row
+> - [ ] She can select the row she wants, open the View menu, then choose Text wrapping
 
 ## Basic formulas, functions, and charts
 
@@ -248,10 +248,10 @@ Now it's your turn. In this activity, you'll continue working with your spreadsh
 > [!important]
 > **Thomas Omar is working on a Google Sheet with sales data from On the Rise stores in the Asia Pacific region. He'd like to see an average sale price. This data is found in cells J3 through J44. Which of the following formulas should he use?**
 >
-> - [ ] AVERAGE(J3:J44)
-> - [ ] =SUM(J3:J44)
 > - [ ] =AVERAGE(J3-J44)
+> - [ ] AVERAGE(J3:J44)
 > - [ ] =AVERAGE(J3:J44)
+> - [ ] =SUM(J3:J44)
 
 ## Share your Google Sheets spreadsheets
 
@@ -278,20 +278,20 @@ Now it's your turn. In this activity, you'll apply link sharing options and chec
 > [!important]
 > **Thomas wants to share a Google Sheets spreadsheet with On the Rise store owner Yousef Amadi. He'd like him to be able to download and print the file but not make any changes. What type of collaborator role should he assign to him?**
 >
-> - [ ] Viewer
-> - [ ] Editor
-> - [ ] Owner
 > - [ ] Suggester
+> - [ ] Viewer
+> - [ ] Owner
+> - [ ] Editor
 
 #### Quiz 2.
 
 > [!important]
 > **Seroja makes some changes in "On the Rise marketing data," but later decides she'd like to return to the version shared by Kaina Gao. What does she need to do?**
 >
-> - [ ] Ask her IT person to restore a backup of the Sheet
-> - [ ] Check her email for the older version
-> - [ ] Go to Trash and restore the older version
 > - [ ] Select File, Version history, then See version history, choose the version from the correct point in time, and then select Restore this version
+> - [ ] Check her email for the older version
+> - [ ] Ask her IT person to restore a backup of the Sheet
+> - [ ] Go to Trash and restore the older version
 
 ## Collaborate with Google Sheets
 

@@ -1,14 +1,13 @@
 ---
 id: 636
 name: 'Build Infrastructure with Terraform on Google Cloud'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/636
-date: 2025-04-03
 datePublished: 2025-03-17
 topics:
-- Automation
-- Cloud Infrastructure
 - Cloud Deploy
+- Cloud Infrastructure
+- Google Cloud Services
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/636
 ---
 
 # [Build Infrastructure with Terraform on Google Cloud](https://www.cloudskillsboost.google/course_templates/636)

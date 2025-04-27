@@ -1,14 +1,13 @@
 ---
 id: 256
 name: 'API Development on Google Cloud's Apigee API Platform'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/256
-date: 2025-04-07
 datePublished: 2022-11-29
 topics:
-- API Management
-- API Development
-- Apigee API Platform
+- Cloud APIs
+- Caching
+- Apigee
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/256
 ---
 
 # [API Development on Google Cloud's Apigee API Platform](https://www.cloudskillsboost.google/course_templates/256)
@@ -160,22 +159,21 @@ In this lab, you'll learn how to handle and raise faults.
 > [!important]
 > **Which of the following conditions might cause a fault to be raised in an API proxy? Select two.**
 >
-> - [ ] A 404 Not Found status code received from a service callout
 > - [ ] A policy has invalid XML formatting
+> - [ ] A 404 Not Found status code received from a service callout
+> - [ ] Executing a RaiseFault policy
 > - [ ] Execution of a JSONThreatProtection policy when the Content-Type header is not application/json
 > - [ ] A policy failure with continueOnError set to true
-> - [ ] Executing a RaiseFault policy
 
 #### Quiz 2.
 
 > [!important]
-> **Which of the following policies can be used to call an external REST API? Select two.**
+> **Which policy can be used to validate that a request matches an approved pattern?**
 >
-> - [ ] BasicAuthentication policy
-> - [ ] JavaScript policy
-> - [ ] OAuthV2 policy
-> - [ ] AccessControl policy
-> - [ ] ServiceCallout policy
+> - [ ] FlowCallout
+> - [ ] AssignMessage
+> - [ ] RaiseFault
+> - [ ] OASValidation
 
 #### Quiz 3.
 
@@ -183,20 +181,21 @@ In this lab, you'll learn how to handle and raise faults.
 > **Which of the following statements about shared flows are true? Select two.**
 >
 > - [ ] Shared flows cannot be nested.
-> - [ ] A flow callout policy can be used to call any shared flow in an organization.
-> - [ ] A shared flow cannot be tested without calling it from an API proxy.
 > - [ ] Multiple shared flows may be attached to a flow hook.
+> - [ ] A shared flow cannot be tested without calling it from an API proxy.
 > - [ ] A shared flow attached to a flow hook will execute for all proxies in an environment.
+> - [ ] A flow callout policy can be used to call any shared flow in an organization.
 
 #### Quiz 4.
 
 > [!important]
-> **Which policy can be used to validate that a request matches an approved pattern?**
+> **Which of the following policies can be used to call an external REST API? Select two.**
 >
-> - [ ] AssignMessage
-> - [ ] OASValidation
-> - [ ] FlowCallout
-> - [ ] RaiseFault
+> - [ ] AccessControl policy
+> - [ ] ServiceCallout policy
+> - [ ] OAuthV2 policy
+> - [ ] JavaScript policy
+> - [ ] BasicAuthentication policy
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/256/video/348452)
 
@@ -291,23 +290,23 @@ In this lab, you'll learn how to use the ResponseCache policy to cache entire re
 #### Quiz 1.
 
 > [!important]
-> **Which of the following statements about the SpikeArrest policy is true?**
+> **Which of the following statements about the Quota policy are true? Select two.**
 >
-> - [ ] When a spike arrest rate is exceeded, the status code 400 Bad Request is returned.
-> - [ ] The SpikeArrest policy is primarily designed to protect services against traffic spikes.
-> - [ ] The SpikeArrest policy uses counters to keep track of traffic.
-> - [ ] The SpikeArrest rate can be specified as per second, per minute, or per hour.
+> - [ ] The Quota policy does not limit the rate at which requests can be received.
+> - [ ] For most use cases, it is recommended to use synchronous counter updates when using distributed quotas.
+> - [ ] The time unit for a Quota policy can be set to per second, minute, hour, day, week, or month.
+> - [ ] When Distributed is set to true in a Quota policy, message processors will share counts for a given identifier.
+> - [ ] Configuring the quota settings for an API product will automatically limit the number of requests to an API proxy without requiring a Quota policy.
 
 #### Quiz 2.
 
 > [!important]
-> **Which of the following statements about the Quota policy are true? Select two.**
+> **Which of the following statements about the SpikeArrest policy is true?**
 >
-> - [ ] For most use cases, it is recommended to use synchronous counter updates when using distributed quotas.
-> - [ ] When Distributed is set to true in a Quota policy, message processors will share counts for a given identifier.
-> - [ ] Configuring the quota settings for an API product will automatically limit the number of requests to an API proxy without requiring a Quota policy.
-> - [ ] The Quota policy does not limit the rate at which requests can be received.
-> - [ ] The time unit for a Quota policy can be set to per second, minute, hour, day, week, or month.
+> - [ ] The SpikeArrest policy uses counters to keep track of traffic.
+> - [ ] The SpikeArrest rate can be specified as per second, per minute, or per hour.
+> - [ ] When a spike arrest rate is exceeded, the status code 400 Bad Request is returned.
+> - [ ] The SpikeArrest policy is primarily designed to protect services against traffic spikes.
 
 #### Quiz 3.
 
@@ -315,10 +314,10 @@ In this lab, you'll learn how to use the ResponseCache policy to cache entire re
 > **Which of the following statements about the ResponseCache policy are true? Select two.**
 >
 > - [ ] If a response for a particular cache key is currently cached, making a request that results in the same cache key must always return the cached response.
-> - [ ] When the API returns user data, a unique user identifier should always be used as a cache key fragment.
-> - [ ] In the ResponseCache policy, setting UseResponseCacheHeaders to true causes the cache headers from the backend to always override the policy expiration configuration.
 > - [ ] In the ResponseCache policy, cache lookup should be skipped for requests used to update data.
 > - [ ] A ResponseCache policy must be attached at two places in the API proxy: the proxy endpoint and the target endpoint.
+> - [ ] When the API returns user data, a unique user identifier should always be used as a cache key fragment.
+> - [ ] In the ResponseCache policy, setting UseResponseCacheHeaders to true causes the cache headers from the backend to always override the policy expiration configuration.
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/256/video/348467)
 
@@ -367,21 +366,21 @@ In this lab, you'll learn how to configure the integrated developer portal and p
 > [!important]
 > **Which statements about developer portals are true? Select two.**
 >
-> - [ ] A do-it-yourself custom portal is typically the best option for use cases that require more customization than allowed by the integrated developer portal.
-> - [ ] The integrated developer portal uses API products to define the paths available when trying the API in the portal.
-> - [ ] API developers are the primary users of developer portals.
-> - [ ] Of the developer portal options, the integrated developer portal requires the least amount of effort to set up.
 > - [ ] The developer portal is typically where API keys are created.
+> - [ ] API developers are the primary users of developer portals.
+> - [ ] A do-it-yourself custom portal is typically the best option for use cases that require more customization than allowed by the integrated developer portal.
+> - [ ] Of the developer portal options, the integrated developer portal requires the least amount of effort to set up.
+> - [ ] The integrated developer portal uses API products to define the paths available when trying the API in the portal.
 
 #### Quiz 2.
 
 > [!important]
 > **When should an API's version be changed?**
 >
-> - [ ] Whenever your backend service changes its version
-> - [ ] Whenever a new required parameter is added to an existing API call
-> - [ ] Whenever you save a new proxy revision, because revision is an indicator of the API version
 > - [ ] Whenever a new API resource is added
+> - [ ] Whenever you save a new proxy revision, because revision is an indicator of the API version
+> - [ ] Whenever a new required parameter is added to an existing API call
+> - [ ] Whenever your backend service changes its version
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/256/video/348474)
 
@@ -470,29 +469,29 @@ Mike: This lecture will discuss the different deployment options available when 
 > **Which of the following is a reason to select the hybrid cloud deployment option?**
 >
 > - [ ] The customer does not have its own backend services in Google Cloud, so a hybrid deployment is not recommended.
-> - [ ] The customer has strict requirements for running API traffic and hosting data within their network boundaries.
 > - [ ] The customer does not want to manage the runtime.
 > - [ ] The customer wants the Apigee deployment option that requires the least amount of management by the customer.
+> - [ ] The customer has strict requirements for running API traffic and hosting data within their network boundaries.
 
 #### Quiz 2.
 
 > [!important]
 > **Which of the following statements about CI/CD with Apigee are correct? Select two.**
 >
-> - [ ] Enterprise teams should use the drag-and-drop graphical editor in the Apigee console for all proxy development.
-> - [ ] The Apigee API may be called from CI/CD toolchains to manage the API lifecycle.
-> - [ ] The apigee-config-maven-plugin may be used to deploy Apigee proxies.
-> - [ ] Source control is integrated into the console proxy editor.
 > - [ ] Enterprise teams should use source control for proxy development.
+> - [ ] The apigee-config-maven-plugin may be used to deploy Apigee proxies.
+> - [ ] The Apigee API may be called from CI/CD toolchains to manage the API lifecycle.
+> - [ ] Enterprise teams should use the drag-and-drop graphical editor in the Apigee console for all proxy development.
+> - [ ] Source control is integrated into the console proxy editor.
 
 #### Quiz 3.
 
 > [!important]
 > **Which of the following are features of the Apigee Adapter for Envoy?**
 >
-> - [ ] Token validation and message transformation
-> - [ ] OpenAPI spec validation and quota enforcement
 > - [ ] Token validation and quota enforcement
+> - [ ] OpenAPI spec validation and quota enforcement
+> - [ ] Token validation and message transformation
 > - [ ] API key validation and message transformation
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/256/video/348484)

@@ -1,14 +1,13 @@
 ---
 id: 640
 name: 'Cloud Architecture: Design, Implement, and Manage'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/640
-date: 2025-04-03
 datePublished: 2024-06-28
 topics:
+- Web Servers
 - Windows
-- Networking
-- Compute Engine
+- Cloud Architecture
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/640
 ---
 
 # [Cloud Architecture: Design, Implement, and Manage](https://www.cloudskillsboost.google/course_templates/640)

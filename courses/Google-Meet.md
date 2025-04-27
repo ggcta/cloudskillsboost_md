@@ -61,10 +61,10 @@ Welcome to Module 1: Introduction to Google Meet. This course familiarizes you w
 > [!important]
 > **What is the name of Google's video software tool?**
 >
-> - [ ] Google Spaces
 > - [ ] Google Meet
-> - [ ] Google View
+> - [ ] Google Spaces
 > - [ ] Google Lens
+> - [ ] Google View
 
 ## Using Google Meet
 
@@ -115,14 +115,24 @@ Now, what if you want to add a person to your Google Meet video conference while
 #### Quiz 1.
 
 > [!important]
-> **Yousef Amadi is a store owner located in Fort Lauderdale, Florida. He receives a Google Meet video invitation from Anthony, but knows he will be out of office. He decides he will still try to join by dialing in. Which option below will NOT achieve this?**
+> **While the Google Meet video conference is in progress, Thomas wants to invite his wife, Seroja. Which is NOT a way he can add her to the call?**
 >
-> - [ ] Dial in using the Google Meet phone number
-> - [ ] Open Google Calendar to see the Google Meet event information
-> - [ ] Enter the PIN
-> - [ ] In Gmail, click <strong>Join a meeting</strong>
+> - [ ] Click Add people, type her email address, and click Send email
+> - [ ] Type her email address into the Google Meet chat
+> - [ ] Click Add people, enter Seroja's phone number and click the Telephone icon
+> - [ ] Click Meeting details, copy the joining info, and email it to Seroja
 
 #### Quiz 2.
+
+> [!important]
+> **Seroja has scheduled a video conference to take place next week to check in with her team. She realizes she forgot to include Kaina. What should she do?**
+>
+> - [ ] Take notes to pass to Kaina after the meeting
+> - [ ] Type Kaina's email address into the meeting chat
+> - [ ] Cancel the meeting and create a new one that includes Kaina
+> - [ ] Edit the event in Google Calendar to add Kaina as a guest
+
+#### Quiz 3.
 
 > [!important]
 > **Kaina has decided on some recipe changes to the current menu. She needs to create a video meeting to discuss these changes with Seroja. Which option will NOT achieve this?**
@@ -132,25 +142,15 @@ Now, what if you want to add a person to your Google Meet video conference while
 > - [ ] Type go.meet in your web browser
 > - [ ] Use the <strong>New meeting</strong> button in Gmail
 
-#### Quiz 3.
-
-> [!important]
-> **While the Google Meet video conference is in progress, Thomas wants to invite his wife, Seroja. Which is NOT a way he can add her to the call?**
->
-> - [ ] Click Add people, type her email address, and click Send email
-> - [ ] Type her email address into the Google Meet chat
-> - [ ] Click Add people, enter Seroja's phone number and click the Telephone icon
-> - [ ] Click Meeting details, copy the joining info, and email it to Seroja
-
 #### Quiz 4.
 
 > [!important]
-> **Seroja has scheduled a video conference to take place next week to check in with her team. She realizes she forgot to include Kaina. What should she do?**
+> **Yousef Amadi is a store owner located in Fort Lauderdale, Florida. He receives a Google Meet video invitation from Anthony, but knows he will be out of office. He decides he will still try to join by dialing in. Which option below will NOT achieve this?**
 >
-> - [ ] Take notes to pass to Kaina after the meeting
-> - [ ] Type Kaina's email address into the meeting chat
-> - [ ] Cancel the meeting and create a new one that includes Kaina
-> - [ ] Edit the event in Google Calendar to add Kaina as a guest
+> - [ ] Open Google Calendar to see the Google Meet event information
+> - [ ] Enter the PIN
+> - [ ] In Gmail, click <strong>Join a meeting</strong>
+> - [ ] Dial in using the Google Meet phone number
 
 ## Collaborate in Google Meet
 
@@ -219,42 +219,42 @@ When you need to share documents within a Google Meet conference, you have a few
 > [!important]
 > **There are many people in the meeting and Kaina is having trouble identifying who is speaking. She wishes to modify her settings to better see the current speaker. What should she do?**
 >
-> - [ ] Turn on Captions
 > - [ ] Ask everyone to turn off their video feed when not speaking
+> - [ ] Turn on Captions
 > - [ ] Adjust the <strong>Change layout</strong> setting in the <strong>More options</strong> menu to <strong>Tiled</strong>
 > - [ ] Adjust the <strong>Change layout</strong> setting in the <strong>More options</strong> menu to <strong>Spotlight</strong>
 
 #### Quiz 2.
 
 > [!important]
-> **During the video conference, Yousef Amadi wants to access some marketing resources that are attached to the meeting's calendar event. What should he do? Select two.**
+> **Later during the meeting, Kaina wants to share a supplier's webpage to Yousef for him to review prices on his own after the meeting. How can she do this using Google Meet?**
 >
-> - [ ] Create a meeting notes document in Google Calendar
-> - [ ] Select the link in the chat panel
-> - [ ] Open the attachments in the Google Calendar invite in her Inbox
-> - [ ] Click Meeting details, to view attachments
-> - [ ] Open the Google Meet link in Google Drive
+> - [ ] Present her tab so that Yousef may see the page
+> - [ ] Email him a link
+> - [ ] Instruct Yousef to write down the name to the webpage as she spells it out
+> - [ ] Paste a link to the webpage in the meeting chat box for Yousef to retrieve
 
 #### Quiz 3.
 
 > [!important]
-> **Later during the meeting, Kaina wants to share a supplier's webpage to Yousef for him to review prices on his own after the meeting. How can she do this using Google Meet?**
+> **During the video conference, Yousef Amadi wants to access some marketing resources that are attached to the meeting's calendar event. What should he do? Select two.**
 >
-> - [ ] Instruct Yousef to write down the name to the webpage as she spells it out
-> - [ ] Paste a link to the webpage in the meeting chat box for Yousef to retrieve
-> - [ ] Email him a link
-> - [ ] Present her tab so that Yousef may see the page
+> - [ ] Open the attachments in the Google Calendar invite in her Inbox
+> - [ ] Click Meeting details, to view attachments
+> - [ ] Open the Google Meet link in Google Drive
+> - [ ] Create a meeting notes document in Google Calendar
+> - [ ] Select the link in the chat panel
 
 #### Quiz 4.
 
 > [!important]
 > **Kaina Gao is head of Global Marketing at On the Rise. She organizes a Google Meet video call but realizes her audio isn't working. What steps should she take to investigate this issue? Select two.**
 >
-> - [ ] Restart her computer
 > - [ ] Plug her phone into her computer
 > - [ ] Click <strong>More options</strong>, select <strong>Settings</strong> and check if her microphone is set to her device's defaults
-> - [ ] Speak into her microphone and ensure that three green bars appear in response to her voice
 > - [ ] Use <strong>CTRL/CMD+M</strong> to unmute her mic
+> - [ ] Restart her computer
+> - [ ] Speak into her microphone and ensure that three green bars appear in response to her voice
 
 ### Document - [Collaborate in Google Meet: Additional Resources](https://www.cloudskillsboost.google/course_templates/198/documents/519785)
 
@@ -317,32 +317,32 @@ In traditional in-person environments, teams often collaborate using whiteboards
 #### Quiz 1.
 
 > [!important]
-> **Kaina wishes to brainstorm new menu ideas with the group but is concerned that certain people will speak so much that others may stay quiet. She wishes to separate the team into small working groups momentarily, to have a better chance of everyone getting involved. What should she do?**
+> **Kaina wants to see what everyone in the call thinks about some marketing campaigns she's presented. She'd like a way to take a vote. What can she do?**
 >
-> - [ ] Create new meeting invites for the smaller groups to leave the current call and attend
-> - [ ] Create a list of names and times during the call for people to join and leave the meeting by
-> - [ ] Use the Activities function to split the call into smaller discussion groups
-> - [ ] Ask everyone to speak once
+> - [ ] Ask everyone to email her their selection
+> - [ ] Start a poll using the <strong>Activities</strong> panel
+> - [ ] Ask everyone to raise their hand when an option they like is presented
+> - [ ] Ask type to +1 in the chat when an option they like is presented
 
 #### Quiz 2.
 
 > [!important]
-> **Kaina wants to see what everyone in the call thinks about some marketing campaigns she's presented. She'd like a way to take a vote. What can she do?**
+> **Dao was invited to the meeting, but Kaina sees that he is not present and noticed he left a note in the Calendar invite saying he had a doctor appointment. Karina wants him to review important information being discussed. What should she do?**
 >
-> - [ ] Start a poll using the <strong>Activities</strong> panel
-> - [ ] Ask everyone to email her their selection
-> - [ ] Ask everyone to raise their hand when an option they like is presented
-> - [ ] Ask type to +1 in the chat when an option they like is presented
+> - [ ] Ask everyone present for their permission and select <strong>Record meeting</strong> from the <strong>More</strong> <strong>options</strong> menu. The recording will be sent to all invited.
+> - [ ] Cancel the meeting and reschedule for a date that Dao can attend
+> - [ ] Ask everyone to email their items to Dao to review at his convenience
+> - [ ] Take notes to pass to Dao later.
 
 #### Quiz 3.
 
 > [!important]
-> **Dao was invited to the meeting, but Kaina sees that he is not present and noticed he left a note in the Calendar invite saying he had a doctor appointment. Karina wants him to review important information being discussed. What should she do?**
+> **Kaina wishes to brainstorm new menu ideas with the group but is concerned that certain people will speak so much that others may stay quiet. She wishes to separate the team into small working groups momentarily, to have a better chance of everyone getting involved. What should she do?**
 >
-> - [ ] Ask everyone to email their items to Dao to review at his convenience
-> - [ ] Take notes to pass to Dao later.
-> - [ ] Ask everyone present for their permission and select <strong>Record meeting</strong> from the <strong>More</strong> <strong>options</strong> menu. The recording will be sent to all invited.
-> - [ ] Cancel the meeting and reschedule for a date that Dao can attend
+> - [ ] Create new meeting invites for the smaller groups to leave the current call and attend
+> - [ ] Create a list of names and times during the call for people to join and leave the meeting by
+> - [ ] Ask everyone to speak once
+> - [ ] Use the Activities function to split the call into smaller discussion groups
 
 ### Document - [Host Management in Google Meet: Additional Resources](https://www.cloudskillsboost.google/course_templates/198/documents/519796)
 

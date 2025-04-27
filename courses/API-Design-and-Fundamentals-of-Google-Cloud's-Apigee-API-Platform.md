@@ -1,14 +1,13 @@
 ---
 id: 254
 name: 'API Design and Fundamentals of Google Cloud's Apigee API Platform'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/254
-date: 2025-04-07
 datePublished: 2022-11-24
 topics:
-- API Development
-- API Gateway
+- API
 - Apigee
+- Google API
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/254
 ---
 
 # [API Design and Fundamentals of Google Cloud's Apigee API Platform](https://www.cloudskillsboost.google/course_templates/254)
@@ -76,42 +75,42 @@ Mike: This lecture will be a quick introduction to Apigee organizations and the 
 #### Quiz 1.
 
 > [!important]
-> **Which of the following entities is sometimes used to represent a phase of API development, such as staging or production?**
+> **When a customer uses the hybrid deployment model, which part of the deployment infrastructure is managed by Google?**
 >
-> - [ ] API Product
-> - [ ] Application
-> - [ ] Flow hook
-> - [ ] Environment
+> - [ ] Only the management plane
+> - [ ] Neither the management plane nor the runtime plane
+> - [ ] Both the management plane and the runtime plane
+> - [ ] Only the runtime plane
 
 #### Quiz 2.
 
 > [!important]
-> **When a customer uses the hybrid deployment model, which part of the deployment infrastructure is managed by Google?**
+> **Which of the following entities is sometimes used to represent a phase of API development, such as staging or production?**
 >
-> - [ ] Neither the management plane nor the runtime plane
-> - [ ] Only the management plane
-> - [ ] Both the management plane and the runtime plane
-> - [ ] Only the runtime plane
+> - [ ] Flow hook
+> - [ ] Application
+> - [ ] API Product
+> - [ ] Environment
 
 #### Quiz 3.
 
 > [!important]
-> **Which are core capabilities of the Apigee API Management Platform?**
+> **Which of the following Apigee entities are only scoped to a single environment?**
 >
-> - [ ] Database and file storage
-> - [ ] Application management and catalog
-> - [ ] Container and cluster management
-> - [ ] Mediation and analytics
+> - [ ] Key value maps
+> - [ ] API proxies
+> - [ ] Caches
+> - [ ] Environment groups
 
 #### Quiz 4.
 
 > [!important]
-> **Which of the following Apigee entities are only scoped to a single environment?**
+> **Which are core capabilities of the Apigee API Management Platform?**
 >
-> - [ ] Caches
-> - [ ] API proxies
-> - [ ] Key value maps
-> - [ ] Environment groups
+> - [ ] Mediation and analytics
+> - [ ] Database and file storage
+> - [ ] Container and cluster management
+> - [ ] Application management and catalog
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/254/video/347354)
 
@@ -158,23 +157,23 @@ Hansel: This lecture will introduce the OpenAPI specification, the preferred way
 #### Quiz 1.
 
 > [!important]
-> **API-First development specifies that APIs should be designed and documented before they are implemented. Why is API-First development a recommended practice? Select two.**
+> **For a REST API, which API request would best represent updating an existing student?**
 >
-> - [ ] It is hard to design your backend services if you don't know how your API will work.
-> - [ ] API-First development eliminates the need for an OpenAPI specification.
-> - [ ] API-First development allows issues to be found by technical and business stakeholders earlier in the API lifecycle.
-> - [ ] API-First development allows app developers to directly call backend services until the API is fully implemented.
-> - [ ] API-First development increases the ability to do parallel development.
+> - [ ] PUT /student?id=15
+> - [ ] PUT /student/15
+> - [ ] PUT /students/15
+> - [ ] POST /students/15
 
 #### Quiz 2.
 
 > [!important]
-> **For a REST API, which API request would best represent updating an existing student?**
+> **API-First development specifies that APIs should be designed and documented before they are implemented. Why is API-First development a recommended practice? Select two.**
 >
-> - [ ] PUT /student/15
-> - [ ] POST /students/15
-> - [ ] PUT /students/15
-> - [ ] PUT /student?id=15
+> - [ ] API-First development allows issues to be found by technical and business stakeholders earlier in the API lifecycle.
+> - [ ] It is hard to design your backend services if you don't know how your API will work.
+> - [ ] API-First development eliminates the need for an OpenAPI specification.
+> - [ ] API-First development allows app developers to directly call backend services until the API is fully implemented.
+> - [ ] API-First development increases the ability to do parallel development.
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/254/video/347361)
 
@@ -267,43 +266,43 @@ In this lab, you'll learn about route rules and the features of the debug tool.
 #### Quiz 1.
 
 > [!important]
-> **Which of the following combinations of proxy and target endpoints is not legal for an API proxy?**
->
-> - [ ] Zero proxy endpoints and one target endpoint
-> - [ ] One proxy endpoint and more than one target endpoint
-> - [ ] One proxy endpoint and zero target endpoints
-> - [ ] More than one proxy endpoint and one target endpoint
-
-#### Quiz 2.
-
-> [!important]
 > **Which parts of a REST API request together typically represent the operation being performed? Select two.**
 >
-> - [ ] The message body
-> - [ ] The HTTP verb
-> - [ ] The path suffix
 > - [ ] The base path
+> - [ ] The message body
+> - [ ] The path suffix
+> - [ ] The HTTP verb
 > - [ ] The headers
 
-#### Quiz 3.
-
-> [!important]
-> **Which of the following is not configured for an environment group?**
->
-> - [ ] Base path
-> - [ ] Name
-> - [ ] Hostnames
-> - [ ] Environments
-
-#### Quiz 4.
+#### Quiz 2.
 
 > [!important]
 > **Which part of a proxy determines the target endpoint that will be used?**
 >
 > - [ ] HTTPTargetConnection
+> - [ ] Route rule
 > - [ ] Post flow
 > - [ ] Target server
-> - [ ] Route rule
+
+#### Quiz 3.
+
+> [!important]
+> **Which of the following combinations of proxy and target endpoints is not legal for an API proxy?**
+>
+> - [ ] One proxy endpoint and more than one target endpoint
+> - [ ] Zero proxy endpoints and one target endpoint
+> - [ ] More than one proxy endpoint and one target endpoint
+> - [ ] One proxy endpoint and zero target endpoints
+
+#### Quiz 4.
+
+> [!important]
+> **Which of the following is not configured for an environment group?**
+>
+> - [ ] Base path
+> - [ ] Environments
+> - [ ] Name
+> - [ ] Hostnames
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/254/video/347377)
 
@@ -368,36 +367,25 @@ Hansel: Let's look at some bad responses. Look at this response. Try to figure o
 #### Quiz 1.
 
 > [!important]
-> **Which of the following statements are benefits of using a VerifyAPIKey policy in an API proxy? Select two.**
+> **Which status code range indicates an error caused by an issue with the client's request?**
 >
-> - [ ] Any custom attributes associated with the developer, app, and API products will be populated as variables and can be used to control the behavior of the API.
-> - [ ] Only apps that have been registered to use the API will be allowed access.
-> - [ ] The VerifyAPIKey policy enforces the rule that an API key should be stored in a header.
-> - [ ] API requests for a specific app will be automatically rate-limited.
-> - [ ] The caller is forced to present the consumer key and consumer secret to gain access to the API.
+> - [ ] 4XX
+> - [ ] 2XX
+> - [ ] 5XX
+> - [ ] 1XX
 
 #### Quiz 2.
 
 > [!important]
-> **Which of the following statements about API products are true? Select two.**
+> **Which of the following statements are benefits of using a VerifyAPIKey policy in an API proxy? Select two.**
 >
-> - [ ] Apps should only be associated with a single API product.
-> - [ ] API products may be used to control access or service levels for APIs.
-> - [ ] APIs bundled in one API product cannot be bundled in another API product.
-> - [ ] API products should be designed based on the needs of app developers.
-> - [ ] API products are APIs that are sold on the open market.
+> - [ ] The VerifyAPIKey policy enforces the rule that an API key should be stored in a header.
+> - [ ] Any custom attributes associated with the developer, app, and API products will be populated as variables and can be used to control the behavior of the API.
+> - [ ] Only apps that have been registered to use the API will be allowed access.
+> - [ ] API requests for a specific app will be automatically rate-limited.
+> - [ ] The caller is forced to present the consumer key and consumer secret to gain access to the API.
 
 #### Quiz 3.
-
-> [!important]
-> **Which status code range indicates an error caused by an issue with the client's request?**
->
-> - [ ] 5XX
-> - [ ] 1XX
-> - [ ] 4XX
-> - [ ] 2XX
-
-#### Quiz 4.
 
 > [!important]
 > **Which type of developer is configured in the Publish section of the Apigee console?**
@@ -406,6 +394,17 @@ Hansel: Let's look at some bad responses. Look at this response. Try to figure o
 > - [ ] App developer
 > - [ ] Backend developer
 > - [ ] API developer
+
+#### Quiz 4.
+
+> [!important]
+> **Which of the following statements about API products are true? Select two.**
+>
+> - [ ] APIs bundled in one API product cannot be bundled in another API product.
+> - [ ] API products should be designed based on the needs of app developers.
+> - [ ] API products are APIs that are sold on the open market.
+> - [ ] API products may be used to control access or service levels for APIs.
+> - [ ] Apps should only be associated with a single API product.
 
 ### Video - [Module Review](https://www.cloudskillsboost.google/course_templates/254/video/347387)
 

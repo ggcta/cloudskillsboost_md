@@ -3,9 +3,9 @@ id: 741
 name: 'Develop Serverless Applications on Cloud Run'
 datePublished: 2024-08-08
 topics:
-- Cloud Run
+- Google Cloud Services
 - Application Deployment
-- Cloud Computing
+- Cloud Run
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/741
 ---

@@ -1,14 +1,11 @@
 ---
 id: 620
 name: 'Baseline: Infrastructure'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/620
-date: 2025-04-03
 datePublished: 2024-09-26
 topics:
 - Cloud Networking
-- Google Cloud Platform
-- Cloud Storage
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/620
 ---
 
 # [Baseline: Infrastructure](https://www.cloudskillsboost.google/course_templates/620)

@@ -1,11 +1,12 @@
 ---
 id: 946
 name: 'Innovating with Google Cloud Artificial Intelligence'
+datePublished: 2024-02-06
+topics:
+- Machine Learning
+- Data Science
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/946
-date: 2025-04-03
-datePublished: 2024-02-06
-topics: []
 ---
 
 # [Innovating with Google Cloud Artificial Intelligence](https://www.cloudskillsboost.google/course_templates/946)
@@ -77,102 +78,102 @@ AI has significant potential to help solve challenging problems, including advan
 #### Quiz 1.
 
 > [!important]
-> **You're watching a video on YouTube and are shown a list of videos that YouTube thinks you are interested in. What ML solution powers this feature?**
+> **How do data analytics and business intelligence differ from AI and ML?**
 >
-> - [ ] Content moderation
-> - [ ] Personalized recommendations
-> - [ ] Clickbait detection
-> - [ ] Video transcription
+> - [ ] Data analytics and business intelligence involve advanced algorithms for predicting future trends, whereas AI and ML focus on processing historical data.
+> - [ ] Data analytics and business intelligence use automated decision-making processes, whereas AI and ML require human intervention and interpretation of data.
+> - [ ] Data analytics and business intelligence are used only in small businesses, whereas AI and ML are used exclusively by large corporations.
+> - [ ] Data analytics and business intelligence identify trends from historical data, whereas AI and ML use data to make decisions for future business.
 
 #### Quiz 2.
 
 > [!important]
-> **Artificial intelligence is best suited for replacing or simplifying rule-based systems. Which is an example of this in action?**
+> **Google applies generative AI to products like Google Workspace, but what is generative AI?**
 >
-> - [ ] Training a machine learning model to predict a search result ranking.
-> - [ ] Implementing AI to develop a new product or service that has never been seen before.
-> - [ ] Using AI to replace a human decision-maker in complex situations, such as those involving life-or-death choices.
-> - [ ] Using a reinforcement learning algorithm to train autonomous drones for package delivery.
+> - [ ] A type of artificial intelligence that can produce new content, including text, images, audio, and synthetic data.
+> - [ ] A type of artificial intelligence that can understand and respond to human emotions.
+> - [ ] A type of artificial intelligence that can make decisions and take actions.
+> - [ ] A type of artificial intelligence that can create and sustain its own consciousness.
 
 #### Quiz 3.
 
 > [!important]
-> **How do data analytics and business intelligence differ from AI and ML?**
+> **What does the consistency dimension refer to when data quality is being measured?**
 >
-> - [ ] Data analytics and business intelligence use automated decision-making processes, whereas AI and ML require human intervention and interpretation of data.
-> - [ ] Data analytics and business intelligence are used only in small businesses, whereas AI and ML are used exclusively by large corporations.
-> - [ ] Data analytics and business intelligence identify trends from historical data, whereas AI and ML use data to make decisions for future business.
-> - [ ] Data analytics and business intelligence involve advanced algorithms for predicting future trends, whereas AI and ML focus on processing historical data.
+> - [ ] Whether all the required information is present.
+> - [ ] Whether a dataset is free from duplicate values that could prevent an ML model from learning accurately.
+> - [ ] Whether the data is up-to-date and reflects the current state of the phenomenon that is being modeled.
+> - [ ] Whether the data is uniform and doesn't contain any contradictory information.
 
 #### Quiz 4.
 
 > [!important]
-> **Which technology relies on models to analyze large amounts of data, learn from the insights, and then make predictions and informed decisions?**
+> **You're watching a video on YouTube and are shown a list of videos that YouTube thinks you are interested in. What ML solution powers this feature?**
 >
-> - [ ] Expert systems
-> - [ ] Machine learning
-> - [ ] Robotics
-> - [ ] Natural language processing
+> - [ ] Video transcription
+> - [ ] Personalized recommendations
+> - [ ] Content moderation
+> - [ ] Clickbait detection
 
 #### Quiz 5.
 
 > [!important]
-> **Which dimension for measuring data quality means that the data conforms to a set of predefined standards and definitions such as type and format?**
+> **Artificial intelligence is best suited for replacing or simplifying rule-based systems. Which is an example of this in action?**
 >
-> - [ ] Accuracy
-> - [ ] Uniqueness
-> - [ ] Validity
-> - [ ] Consistency
+> - [ ] Implementing AI to develop a new product or service that has never been seen before.
+> - [ ] Using a reinforcement learning algorithm to train autonomous drones for package delivery.
+> - [ ] Using AI to replace a human decision-maker in complex situations, such as those involving life-or-death choices.
+> - [ ] Training a machine learning model to predict a search result ranking.
 
 #### Quiz 6.
 
 > [!important]
-> **What does the consistency dimension refer to when data quality is being measured?**
+> **Which option refers to the use of technologies to build machines and computers that can mimic cognitive functions associated with human intelligence?**
 >
-> - [ ] Whether a dataset is free from duplicate values that could prevent an ML model from learning accurately.
-> - [ ] Whether the data is uniform and doesn't contain any contradictory information.
-> - [ ] Whether all the required information is present.
-> - [ ] Whether the data is up-to-date and reflects the current state of the phenomenon that is being modeled.
+> - [ ] Artificial intelligence
+> - [ ] Natural language processing
+> - [ ] Machine learning
+> - [ ] Deep learning
 
 #### Quiz 7.
 
 > [!important]
 > **Google's AI principles are a set of guiding values that help develop and use artificial intelligence responsibly. Which of these is one of Google's AI principles?**
 >
-> - [ ] AI should be accountable to other machines.
 > - [ ] AI should be socially beneficial.
-> - [ ] AI should create or reinforce unfair bias.
 > - [ ] AI should be made available for any use.
+> - [ ] AI should be accountable to other machines.
+> - [ ] AI should create or reinforce unfair bias.
 
 #### Quiz 8.
 
 > [!important]
-> **Which option refers to the use of technologies to build machines and computers that can mimic cognitive functions associated with human intelligence?**
+> **Which use case demonstrates ML's ability to process natural language?**
 >
-> - [ ] Natural language processing
-> - [ ] Deep learning
-> - [ ] Artificial intelligence
-> - [ ] Machine learning
+> - [ ] Identifying the topic and sentiment of customer email messages so that they can be routed to the relevant department.
+> - [ ] Detecting people and objects in surveillance footage to use as evidence in criminal cases.
+> - [ ] Identifying the artist, title, or genre of a song to create playlists based on the user's listening habits.
+> - [ ] Segmenting images into different parts or regions to extract information, such as the text on a sign.
 
 #### Quiz 9.
 
 > [!important]
-> **Google applies generative AI to products like Google Workspace, but what is generative AI?**
+> **Which dimension for measuring data quality means that the data conforms to a set of predefined standards and definitions such as type and format?**
 >
-> - [ ] A type of artificial intelligence that can create and sustain its own consciousness.
-> - [ ] A type of artificial intelligence that can make decisions and take actions.
-> - [ ] A type of artificial intelligence that can produce new content, including text, images, audio, and synthetic data.
-> - [ ] A type of artificial intelligence that can understand and respond to human emotions.
+> - [ ] Consistency
+> - [ ] Accuracy
+> - [ ] Uniqueness
+> - [ ] Validity
 
 #### Quiz 10.
 
 > [!important]
-> **Which use case demonstrates ML's ability to process natural language?**
+> **Which technology relies on models to analyze large amounts of data, learn from the insights, and then make predictions and informed decisions?**
 >
-> - [ ] Segmenting images into different parts or regions to extract information, such as the text on a sign.
-> - [ ] Identifying the artist, title, or genre of a song to create playlists based on the user's listening habits.
-> - [ ] Identifying the topic and sentiment of customer email messages so that they can be routed to the relevant department.
-> - [ ] Detecting people and objects in surveillance footage to use as evidence in criminal cases.
+> - [ ] Natural language processing
+> - [ ] Machine learning
+> - [ ] Expert systems
+> - [ ] Robotics
 
 ## Google Cloud’s AI and ML Solutions
 
@@ -231,82 +232,82 @@ Google Cloud offers a range of AI and ML solutions and products, but there are s
 #### Quiz 1.
 
 > [!important]
-> **What's the name of Google's application-specific integrated circuit (ASIC) that is used to accelerate machine learning workloads?**
+> **An online retailer wants to help users find specific products faster on their website. One idea is to allow shoppers to upload an image of the product they're looking to purchase. Which of Google's pre-trained APIs could the retailer use to expand this functionality?**
 >
-> - [ ] Central Processing Unit (CPU)
-> - [ ] Tensor Processing Unit (TPU)
-> - [ ] Graphic Processing Unit (GPU)
-> - [ ] Vertex Processing Unit (VPU)
+> - [ ] Speech-to-Text API
+> - [ ] Natural Language API
+> - [ ] Video Intelligence API
+> - [ ] Vision API
 
 #### Quiz 2.
 
 > [!important]
-> **BigQuery ML is a machine learning service that lets users:**
+> **Which feature of Vertex AI lets users build and train end-to-end machine learning models by using a GUI (graphical user interface), without writing a line of code.**
 >
-> - [ ] Export small amounts of data to spreadsheets or other applications.
-> - [ ] Build and evaluate machine learning models in BigQuery by using SQL.
-> - [ ] Build and evaluate machine learning models in BigQuery by using Python and Java.
-> - [ ] Seamlessly connect with a data science team to create an ML model.
+> - [ ] AutoML
+> - [ ] MLOps
+> - [ ] Custom training
+> - [ ] Managed ML environment
 
 #### Quiz 3.
 
 > [!important]
-> **Which feature of Vertex AI lets users build and train end-to-end machine learning models by using a GUI (graphical user interface), without writing a line of code.**
+> **Google Cloud offers four options for building machine learning models. Which is best when a business wants to code their own machine learning environment, the training, and the deployment?**
 >
-> - [ ] MLOps
-> - [ ] Managed ML environment
 > - [ ] Custom training
+> - [ ] Pre-trained APIs
+> - [ ] BigQuery ML
 > - [ ] AutoML
 
 #### Quiz 4.
 
 > [!important]
-> **A large media company wants to improve how they moderate online content. Currently, they have a team of human moderators that review content for appropriateness, but are looking to leverage artificial intelligence to improve efficiency. Which of Google's pre-trained APIs could they use to identify and remove inappropriate content from the media company's website and social media platforms.**
+> **Which Google Cloud AI solution is designed to help businesses improve their customer service?**
 >
-> - [ ] Speech-to-Text API
-> - [ ] Natural Language API
-> - [ ] Video Intelligence API
-> - [ ] Vision API
+> - [ ] Cloud Talent Solution
+> - [ ] Document AI
+> - [ ] Discovery AI for Retail
+> - [ ] Contact Center AI
 
 #### Quiz 5.
 
 > [!important]
-> **Which Google Cloud AI solution is designed to help businesses automate document processing?**
+> **A large media company wants to improve how they moderate online content. Currently, they have a team of human moderators that review content for appropriateness, but are looking to leverage artificial intelligence to improve efficiency. Which of Google's pre-trained APIs could they use to identify and remove inappropriate content from the media company's website and social media platforms.**
 >
-> - [ ] Discovery AI for Retail
-> - [ ] Cloud Talent Solution
-> - [ ] Contact Center AI
-> - [ ] Document AI
+> - [ ] Vision API
+> - [ ] Speech-to-Text API
+> - [ ] Video Intelligence API
+> - [ ] Natural Language API
 
 #### Quiz 6.
 
 > [!important]
-> **Google Cloud offers four options for building machine learning models. Which is best when a business wants to code their own machine learning environment, the training, and the deployment?**
+> **What's the name of Google's application-specific integrated circuit (ASIC) that is used to accelerate machine learning workloads?**
 >
-> - [ ] Pre-trained APIs
-> - [ ] AutoML
-> - [ ] BigQuery ML
-> - [ ] Custom training
+> - [ ] Tensor Processing Unit (TPU)
+> - [ ] Graphic Processing Unit (GPU)
+> - [ ] Vertex Processing Unit (VPU)
+> - [ ] Central Processing Unit (CPU)
 
 #### Quiz 7.
 
 > [!important]
-> **Which Google Cloud AI solution is designed to help businesses improve their customer service?**
+> **BigQuery ML is a machine learning service that lets users:**
 >
-> - [ ] Document AI
-> - [ ] Contact Center AI
-> - [ ] Discovery AI for Retail
-> - [ ] Cloud Talent Solution
+> - [ ] Build and evaluate machine learning models in BigQuery by using SQL.
+> - [ ] Build and evaluate machine learning models in BigQuery by using Python and Java.
+> - [ ] Seamlessly connect with a data science team to create an ML model.
+> - [ ] Export small amounts of data to spreadsheets or other applications.
 
 #### Quiz 8.
 
 > [!important]
-> **An online retailer wants to help users find specific products faster on their website. One idea is to allow shoppers to upload an image of the product they're looking to purchase. Which of Google's pre-trained APIs could the retailer use to expand this functionality?**
+> **Which Google Cloud AI solution is designed to help businesses automate document processing?**
 >
-> - [ ] Video Intelligence API
-> - [ ] Speech-to-Text API
-> - [ ] Natural Language API
-> - [ ] Vision API
+> - [ ] Document AI
+> - [ ] Discovery AI for Retail
+> - [ ] Contact Center AI
+> - [ ] Cloud Talent Solution
 
 ## Course Summary
 

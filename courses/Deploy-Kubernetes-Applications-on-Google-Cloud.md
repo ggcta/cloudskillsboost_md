@@ -3,9 +3,9 @@ id: 663
 name: 'Deploy Kubernetes Applications on Google Cloud'
 datePublished: 2024-09-26
 topics:
-- Google Cloud Services
-- Application Deployment
+- Docker
 - GKE
+- Google Cloud Services
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/663
 ---
@@ -46,7 +46,7 @@ This challenge lab tests your skills and knowledge from the labs in the Deploy K
 
 ### Link - [Tell us how we did!](https://www.cloudskillsboost.google/course_templates/663/documents/509969)
 
-- https://forms.gle/6xqSd9vhwQEev2uC6
+- [Tell us how we did!](https://forms.gle/6xqSd9vhwQEev2uC6)
 
 ## Your Next Steps
 

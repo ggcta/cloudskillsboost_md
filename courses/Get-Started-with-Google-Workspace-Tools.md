@@ -3,8 +3,8 @@ id: 676
 name: 'Get Started with Google Workspace Tools'
 datePublished: 2025-03-17
 topics:
-- Google Meet
-- Google Calendar
+- Cloud Computing
+- Gmail
 - Sheets
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/676

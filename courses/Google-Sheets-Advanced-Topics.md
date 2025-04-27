@@ -3,9 +3,9 @@ id: 293
 name: 'Google Sheets - Advanced Topics'
 datePublished: 2025-04-03
 topics:
-- Google Sheets
-- Formulas
-- Google Forms
+- Data Analytics
+- Data Analysis
+- Data Collection
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/293
 ---
@@ -78,20 +78,20 @@ person: Now it's your turn. In this activity, you're going to apply conditional 
 > [!important]
 > **Yousef is reviewing his store inventory. He wants his Google Sheet to visually identify cells where the store's flour inventory fell below 100 bags. What does he need to do in order for Google Sheets to do this automatically? Select the correct response.**
 >
-> - [ ] He can highlight the range with the flour inventory, open the Format menu, then select Conditional formatting
 > - [ ] He can highlight the cells with flour inventory, open the Data menu, then select Named ranges
-> - [ ] He can highlight the cells with flour inventory, open the Format menu, then select Alternating colors
 > - [ ] He can highlight the column with flour inventory, open the Data menu, then select Create a filter
+> - [ ] He can highlight the range with the flour inventory, open the Format menu, then select Conditional formatting
+> - [ ] He can highlight the cells with flour inventory, open the Format menu, then select Alternating colors
 
 #### Quiz 2.
 
 > [!important]
 > **Seroja wants to ensure consistency when preparing sales and inventory reports. How can she automatically apply the same formatting every time she creates a new monthly reporting spreadsheet? Select the correct response.**
 >
-> - [ ] She can select the cell range, open the Data menu, then select Protected sheets and ranges. Each month, she can copy the Protect range to her new spreadsheet
 > - [ ] She can select a cell range, click the Paint format button, then select a different range in order to copy the formatting
-> - [ ] She can open the Format menu, select Theme, then choose an option from the panel. Each month, she can use the same Theme
 > - [ ] She can open the Data menu, select Data validation, then create rules that set the colors of each cell in the sheet. Each month, she can run the Data validation on her new sheet
+> - [ ] She can select the cell range, open the Data menu, then select Protected sheets and ranges. Each month, she can copy the Protect range to her new spreadsheet
+> - [ ] She can open the Format menu, select Theme, then choose an option from the panel. Each month, she can use the same Theme
 
 ## Advanced formulas and functions
 
@@ -136,33 +136,33 @@ person: Now it's your turn again. In this activity, you'll name a range for the 
 #### Quiz 1.
 
 > [!important]
-> **Thomas sends "South America forecast report" to On the Rise partner owner Seroja Malone. Seroja wants to create a data validation rule to ensure that Column C only includes sales from the month of June. What does she need to do? Select TWO.**
+> **Seroja determines that she does not want the formula in cell H30 to change from =H1+H8 when she copies it to cell I30. What does she need to do to keep the formula constant when copy pasting? Select the correct response.**
 >
-> - [ ] She can open the Insert menu, select Data validation, choose Column C, and add the criteria Text | equals | June Then, select Save
-> - [ ] She can open the Data menu, select Data validation, choose Column C, and add the criteria Text | equals | June. Then, select Save
-> - [ ] She can right click on Column C, select Data validation, and add the criteria Text | equals | June. Then, select Save
-> - [ ] She can create a custom formula that includes the range "June sales"
-> - [ ] She can ask Thomas to apply a custom filter to Column C
+> - [ ] She can make it auto update by selecting absolute reference in the reference panel
+> - [ ] She can turn it into an absolute reference by changing the formula to =$H1+$H8
+> - [ ] She can select the freeze pane
+> - [ ] You cannot copy a formula, only numeric values
 
 #### Quiz 2.
 
 > [!important]
-> **Seroja determines that she does not want the formula in cell H30 to change from =H1+H8 when she copies it to cell I30. What does she need to do to keep the formula constant when copy pasting? Select the correct response.**
+> **Seroja selects the cell H30. It contains the following formula: =H1+H8. She copies the contents from H30 to cell I30. What happens to the formula? Select the correct response.**
 >
-> - [ ] She can select the freeze pane
-> - [ ] She can turn it into an absolute reference by changing the formula to =$H1+$H8
 > - [ ] You cannot copy a formula, only numeric values
-> - [ ] She can make it auto update by selecting absolute reference in the reference panel
+> - [ ] The formula automatically updates to =I1+I8
+> - [ ] The formula automatically updates to =$H1+$H8
+> - [ ] The formula stays as =H1+H8
 
 #### Quiz 3.
 
 > [!important]
-> **Seroja selects the cell H30. It contains the following formula: =H1+H8. She copies the contents from H30 to cell I30. What happens to the formula? Select the correct response.**
+> **Thomas sends "South America forecast report" to On the Rise partner owner Seroja Malone. Seroja wants to create a data validation rule to ensure that Column C only includes sales from the month of June. What does she need to do? Select TWO.**
 >
-> - [ ] The formula automatically updates to =I1+I8
-> - [ ] The formula automatically updates to =$H1+$H8
-> - [ ] The formula stays as =H1+H8
-> - [ ] You cannot copy a formula, only numeric values
+> - [ ] She can open the Data menu, select Data validation, choose Column C, and add the criteria Text | equals | June. Then, select Save
+> - [ ] She can create a custom formula that includes the range "June sales"
+> - [ ] She can ask Thomas to apply a custom filter to Column C
+> - [ ] She can right click on Column C, select Data validation, and add the criteria Text | equals | June. Then, select Save
+> - [ ] She can open the Insert menu, select Data validation, choose Column C, and add the criteria Text | equals | June Then, select Save
 
 ## Analyze and report
 
@@ -239,63 +239,63 @@ person: Let's create a simple macro. Open the Tools menu, hover over Macros, and
 #### Quiz 1.
 
 > [!important]
-> **Yousef and Kaina are working together to update a Google Sheet that is used by the On the Rise marketing team. They want to automate repetitive tasks like bolding header texts. Which of the following should they do? Select the correct response.**
+> **Kaina Gao is reviewing a Google Sheet with thousands of cells of data from the On the Rise marketing team. It's suggested she use a pivot table to summarize the data. Why would this be beneficial? Select the correct response.**
 >
-> - [ ] Open the Format menu, click Text, and then click Bold
-> - [ ] Open the Extensions menu, hover over Macros, and click Record macro
-> - [ ] Open the Insert menu, hover over Macros, and then click Record macro
-> - [ ] Open the Format menu, click Theme, select a theme, and then click Customize
+> - [ ] The pivot table will make analysis of the data more challenging
+> - [ ] The pivot table will make it easy to display different data summaries
+> - [ ] The pivot table will make it easy to use conditional formatting
+> - [ ] The pivot table will automatically show the most important data
 
 #### Quiz 2.
 
 > [!important]
 > **On the Rise store owner Yousef Amadi is analyzing monthly sales data from his Fort Lauderdale store. He'd like to see the data visually by converting it into a bar chart. What does he need to do? Select the correct response.**
 >
+> - [ ] He needs to select the range of cells to include, open the Tables and Charts menu, select Chart, then choose Bar Chart
+> - [ ] He needs to open the Data menu, click Create Chart, and follow the instructions to select a range and configure the chart
 > - [ ] He needs to select More Options, then select Chart, then choose Bar Chart
 > - [ ] He needs to select the range of cells to include, open the Insert menu, select Chart, then choose Bar Chart
-> - [ ] He needs to open the Data menu, click Create Chart, and follow the instructions to select a range and configure the chart
-> - [ ] He needs to select the range of cells to include, open the Tables and Charts menu, select Chart, then choose Bar Chart
 
 #### Quiz 3.
-
-> [!important]
-> **Yousef wants to share the chart on a website that is accessible to the On the Rise team. What are some of his options? Select two.**
->
-> - [ ] He can email a link to the spreadsheet
-> - [ ] He can publish the chart to web
-> - [ ] He can embed the chart on a website via embed code
-> - [ ] He can link the chart to a Google Doc
-> - [ ] He can import the chart into a Google Slides presentation
-
-#### Quiz 4.
 
 > [!important]
 > **Yousef creates a bar chart. Next, he wants to move the chart to the top left of the screen. What does he need to do? Select the correct response.**
 >
 > - [ ] He cannot move the chart once it's been inserted
-> - [ ] He should click and drag the chart
-> - [ ] He should select Move chart and insert the final screen coordinates
 > - [ ] He should open the Insert menu and select Move
+> - [ ] He should select Move chart and insert the final screen coordinates
+> - [ ] He should click and drag the chart
+
+#### Quiz 4.
+
+> [!important]
+> **Yousef and Kaina are working together to update a Google Sheet that is used by the On the Rise marketing team. They want to automate repetitive tasks like bolding header texts. Which of the following should they do? Select the correct response.**
+>
+> - [ ] Open the Extensions menu, hover over Macros, and click Record macro
+> - [ ] Open the Insert menu, hover over Macros, and then click Record macro
+> - [ ] Open the Format menu, click Theme, select a theme, and then click Customize
+> - [ ] Open the Format menu, click Text, and then click Bold
 
 #### Quiz 5.
 
 > [!important]
 > **Yousef realizes there is an error in the data and wishes to edit the chart. How does he do this? Select the correct response.**
 >
+> - [ ] He should select Charts, then select Edit chart
+> - [ ] He should correct the data and the chart will update automatically
 > - [ ] He should select the More options button in the right corner of the chart, then choose Edit chart
 > - [ ] He should select Tools, then choose Edit chart
-> - [ ] He should correct the data and the chart will update automatically
-> - [ ] He should select Charts, then select Edit chart
 
 #### Quiz 6.
 
 > [!important]
-> **Kaina Gao is reviewing a Google Sheet with thousands of cells of data from the On the Rise marketing team. It's suggested she use a pivot table to summarize the data. Why would this be beneficial? Select the correct response.**
+> **Yousef wants to share the chart on a website that is accessible to the On the Rise team. What are some of his options? Select two.**
 >
-> - [ ] The pivot table will make it easy to use conditional formatting
-> - [ ] The pivot table will automatically show the most important data
-> - [ ] The pivot table will make it easy to display different data summaries
-> - [ ] The pivot table will make analysis of the data more challenging
+> - [ ] He can embed the chart on a website via embed code
+> - [ ] He can publish the chart to web
+> - [ ] He can link the chart to a Google Doc
+> - [ ] He can email a link to the spreadsheet
+> - [ ] He can import the chart into a Google Slides presentation
 
 ## Populate data using a Google Form
 
@@ -340,33 +340,33 @@ person: Once respondents have completed and submitted the form, their answers wi
 #### Quiz 1.
 
 > [!important]
-> **Sherrie is working on a Google Sheet named "On the Rise Hiring Questionnaire". She wants to turn the Sheet into a Google Form. How does she do this? Select the correct response.**
+> **Sherrie wants to distribute the form so applicants can easily respond. What are some of her options? Select two correct responses.**
 >
-> - [ ] She can download the Google Sheet, then open it in Google Forms
-> - [ ] She can open the Google Sheet "On the Rise Hiring Questionnaire", then select <strong>Export</strong>, then select <strong>to Google Sheets</strong>
-> - [ ] She can open Google Forms, select <strong>Import</strong>, then choose "On the Rise Hiring Questionnaire"
-> - [ ] She can open the Google Sheet "On the Rise Hiring Questionnaire", then open the Tools menu, then click <strong>Create a Form</strong>
+> - [ ] She can embed the form on the website
+> - [ ] She can embed the form on Twitter
+> - [ ] She can share the form by email
+> - [ ] She can use the <strong>Add editor</strong> option when sending the form to applicants
+> - [ ] She can select the <strong>Collect email addresses</strong> option in the form settings
 
 #### Quiz 2.
 
 > [!important]
-> **Sherrie wants to distribute the form so applicants can easily respond. What are some of her options? Select two correct responses.**
+> **Sherrie has converted her content into a Google Form. She would like to add a new question. What does she need to do? Select the correct response.**
 >
-> - [ ] She can share the form by email
-> - [ ] She can embed the form on the website
-> - [ ] She can select the <strong>Collect email addresses</strong> option in the form settings
-> - [ ] She can embed the form on Twitter
-> - [ ] She can use the <strong>Add editor</strong> option when sending the form to applicants
+> - [ ] Type a ? followed by the question text
+> - [ ] Choose <strong>Add question</strong> from the floating toolbar to the right of the question card
+> - [ ] Click the <strong>Options</strong> button and select <strong>Add a new question</strong>
+> - [ ] Right-click anywhere in the form and select <strong>Add question</strong>
 
 #### Quiz 3.
 
 > [!important]
-> **Sherrie has converted her content into a Google Form. She would like to add a new question. What does she need to do? Select the correct response.**
+> **Sherrie is working on a Google Sheet named "On the Rise Hiring Questionnaire". She wants to turn the Sheet into a Google Form. How does she do this? Select the correct response.**
 >
-> - [ ] Choose <strong>Add question</strong> from the floating toolbar to the right of the question card
-> - [ ] Click the <strong>Options</strong> button and select <strong>Add a new question</strong>
-> - [ ] Right-click anywhere in the form and select <strong>Add question</strong>
-> - [ ] Type a ? followed by the question text
+> - [ ] She can open Google Forms, select <strong>Import</strong>, then choose "On the Rise Hiring Questionnaire"
+> - [ ] She can download the Google Sheet, then open it in Google Forms
+> - [ ] She can open the Google Sheet "On the Rise Hiring Questionnaire", then select <strong>Export</strong>, then select <strong>to Google Sheets</strong>
+> - [ ] She can open the Google Sheet "On the Rise Hiring Questionnaire", then open the Tools menu, then click <strong>Create a Form</strong>
 
 #### Quiz 4.
 

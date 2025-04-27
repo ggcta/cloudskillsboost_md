@@ -1,14 +1,13 @@
 ---
 id: 655
 name: 'Optimize Costs for Google Kubernetes Engine'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/655
-date: 2025-04-03
 datePublished: 2024-08-28
 topics:
-- Cloud Architecture
-- Google Kubernetes Engine
+- Load Balancing
 - Autoscaling
+- Kubernetes
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/655
 ---
 
 # [Optimize Costs for Google Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/655)

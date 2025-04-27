@@ -1,14 +1,13 @@
 ---
 id: 637
 name: 'Set Up an App Dev Environment on Google Cloud'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/637
-date: 2025-04-03
 datePublished: 2025-03-11
 topics:
-- Networking
+- Security
 - Pub/Sub
-- Cloud Infrastructure
+- Cloud Storage
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/637
 ---
 
 # [Set Up an App Dev Environment on Google Cloud](https://www.cloudskillsboost.google/course_templates/637)

@@ -3,9 +3,7 @@ id: 195
 name: 'Google Docs'
 datePublished: 2025-04-02
 topics:
-- Google Docs
 - Version Control
-- Google Workspace
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/195
 ---

@@ -1,14 +1,13 @@
 ---
 id: 648
 name: 'Implement Load Balancing on Compute Engine'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/648
-date: 2025-04-03
 datePublished: 2024-05-23
 topics:
-- Networking
-- gcloud
-- Network Configuration
+- Cloud Shell
+- Compute Engine
+- Google Cloud Services
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/648
 ---
 
 # [Implement Load Balancing on Compute Engine](https://www.cloudskillsboost.google/course_templates/648)

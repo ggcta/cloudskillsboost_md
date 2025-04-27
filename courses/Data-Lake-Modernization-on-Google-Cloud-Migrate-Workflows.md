@@ -1,14 +1,13 @@
 ---
 id: 486
 name: 'Data Lake Modernization on Google Cloud: Migrate Workflows'
-type: Course
-url: https://www.cloudskillsboost.google/course_templates/486
-date: 2025-04-03
 datePublished: 2024-01-17
 topics:
-- Data Lake
-- Data Migration
 - Apache Spark
+- Data Lake
+- Data Engineering
+type: Course
+url: https://www.cloudskillsboost.google/course_templates/486
 ---
 
 # [Data Lake Modernization on Google Cloud: Migrate Workflows](https://www.cloudskillsboost.google/course_templates/486)
