@@ -1,10 +1,9 @@
 ---
 id: 236
 name: 'Gemini for Google Cloud Learning Path'
+datePublished: 2025-03-26
 type: Path
 url: https://www.cloudskillsboost.google/paths/236
-date: 2025-04-01
-datePublished: 2025-03-26
 ---
 
 # [Gemini for Google Cloud Learning Path](https://www.cloudskillsboost.google/paths/236)

@@ -1,10 +1,9 @@
 ---
 id: 708
 name: 'Contact Center AI (CCAI) Platform'
+datePublished: 2024-06-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/708
-date: 2025-01-05
-datePublished: 2024-06-18
 ---
 
 # [Contact Center AI (CCAI) Platform](https://www.cloudskillsboost.google/paths/708)

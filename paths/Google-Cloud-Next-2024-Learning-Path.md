@@ -1,10 +1,9 @@
 ---
 id: 516
 name: 'Google Cloud Next 2024 Learning Path'
+datePublished: 2024-04-17
 type: Path
 url: https://www.cloudskillsboost.google/paths/516
-date: 2025-01-05
-datePublished: 2024-04-17
 ---
 
 # [Google Cloud Next 2024 Learning Path](https://www.cloudskillsboost.google/paths/516)

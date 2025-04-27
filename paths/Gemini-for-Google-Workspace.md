@@ -1,10 +1,9 @@
 ---
 id: 249
 name: 'Gemini for Google Workspace'
+datePublished: 2025-01-24
 type: Path
 url: https://www.cloudskillsboost.google/paths/249
-date: 2025-04-01
-datePublished: 2025-01-24
 ---
 
 # [Gemini for Google Workspace](https://www.cloudskillsboost.google/paths/249)

@@ -1,10 +1,9 @@
 ---
 id: 36
 name: 'Google Cloud Computing Foundations Certificate'
+datePublished: 2024-04-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/36
-date: 2025-01-05
-datePublished: 2024-04-25
 ---
 
 # [Google Cloud Computing Foundations Certificate](https://www.cloudskillsboost.google/paths/36)

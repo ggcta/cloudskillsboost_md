@@ -1,10 +1,9 @@
 ---
 id: 18
 name: 'Data Analyst Learning Path'
+datePublished: 2024-12-17
 type: Path
 url: https://www.cloudskillsboost.google/paths/18
-date: 2025-01-05
-datePublished: 2024-12-17
 ---
 
 # [Data Analyst Learning Path](https://www.cloudskillsboost.google/paths/18)

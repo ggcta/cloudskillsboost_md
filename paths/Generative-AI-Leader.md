@@ -1,7 +1,7 @@
 ---
 id: 1951
 name: 'Generative AI Leader'
-datePublished: 2025-04-07
+datePublished: 2025-04-17
 type: Path
 url: https://www.cloudskillsboost.google/paths/1951
 ---

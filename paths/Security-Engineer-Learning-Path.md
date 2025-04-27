@@ -1,10 +1,9 @@
 ---
 id: 15
 name: 'Security Engineer Learning Path'
+datePublished: 2024-08-21
 type: Path
 url: https://www.cloudskillsboost.google/paths/15
-date: 2025-01-05
-datePublished: 2024-08-21
 ---
 
 # [Security Engineer Learning Path](https://www.cloudskillsboost.google/paths/15)

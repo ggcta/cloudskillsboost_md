@@ -1,10 +1,9 @@
 ---
 id: 19
 name: 'Cloud Developer Learning Path'
+datePublished: 2024-11-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/19
-date: 2025-01-05
-datePublished: 2024-11-25
 ---
 
 # [Cloud Developer Learning Path](https://www.cloudskillsboost.google/paths/19)

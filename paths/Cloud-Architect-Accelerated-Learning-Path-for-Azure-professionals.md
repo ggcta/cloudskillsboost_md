@@ -1,10 +1,9 @@
 ---
 id: 126
 name: 'Cloud Architect Accelerated Learning Path for Azure professionals'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/126
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [Cloud Architect Accelerated Learning Path for Azure professionals](https://www.cloudskillsboost.google/paths/126)

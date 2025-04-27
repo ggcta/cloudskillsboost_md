@@ -1,10 +1,9 @@
 ---
 id: 1281
 name: 'Integrate Generative AI Into Your Data Workflow'
+datePublished: 2024-10-15
 type: Path
 url: https://www.cloudskillsboost.google/paths/1281
-date: 2025-04-01
-datePublished: 2024-10-15
 ---
 
 # [Integrate Generative AI Into Your Data Workflow](https://www.cloudskillsboost.google/paths/1281)

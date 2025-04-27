@@ -1,10 +1,9 @@
 ---
 id: 27
 name: 'Cloud Architect/Engineer on Apigee'
+datePublished: 2024-04-19
 type: Path
 url: https://www.cloudskillsboost.google/paths/27
-date: 2025-01-05
-datePublished: 2024-04-19
 ---
 
 # [Cloud Architect/Engineer on Apigee](https://www.cloudskillsboost.google/paths/27)

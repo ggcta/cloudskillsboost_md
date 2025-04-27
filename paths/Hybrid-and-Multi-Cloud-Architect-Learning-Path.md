@@ -1,10 +1,9 @@
 ---
 id: 13
 name: 'Hybrid and Multi-Cloud Architect Learning Path'
+datePublished: 2025-01-02
 type: Path
 url: https://www.cloudskillsboost.google/paths/13
-date: 2025-01-05
-datePublished: 2025-01-02
 ---
 
 # [Hybrid and Multi-Cloud Architect Learning Path](https://www.cloudskillsboost.google/paths/13)

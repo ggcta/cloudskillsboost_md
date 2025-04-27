@@ -1,10 +1,9 @@
 ---
 id: 371
 name: 'Public Preview'
+datePublished: 2024-10-21
 type: Path
 url: https://www.cloudskillsboost.google/paths/371
-date: 2025-04-01
-datePublished: 2024-10-21
 ---
 
 # [Public Preview](https://www.cloudskillsboost.google/paths/371)

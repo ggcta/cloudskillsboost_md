@@ -1,10 +1,9 @@
 ---
 id: 1284
 name: 'Generate Smarter Generative AI Outputs'
+datePublished: 2024-10-22
 type: Path
 url: https://www.cloudskillsboost.google/paths/1284
-date: 2025-01-05
-datePublished: 2024-10-22
 ---
 
 # [Generate Smarter Generative AI Outputs](https://www.cloudskillsboost.google/paths/1284)

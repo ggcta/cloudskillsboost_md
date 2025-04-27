@@ -1,10 +1,9 @@
 ---
 id: 1803
 name: 'Gemini in BigQuery'
+datePublished: 2025-02-20
 type: Path
 url: https://www.cloudskillsboost.google/paths/1803
-date: 2025-04-01
-datePublished: 2025-02-20
 ---
 
 # [Gemini in BigQuery](https://www.cloudskillsboost.google/paths/1803)

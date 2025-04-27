@@ -1,10 +1,9 @@
 ---
 id: 118
 name: 'Beginner: Introduction to Generative AI Learning Path'
+datePublished: 2024-11-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/118
-date: 2025-01-05
-datePublished: 2024-11-18
 ---
 
 # [Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)

@@ -1,10 +1,9 @@
 ---
 id: 71
 name: 'Google Cloud Infrastructure for AWS professionals'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/71
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [Google Cloud Infrastructure for AWS professionals](https://www.cloudskillsboost.google/paths/71)

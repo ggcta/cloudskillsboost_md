@@ -1,10 +1,9 @@
 ---
 id: 21
 name: 'API Developer Learning Path'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/21
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [API Developer Learning Path](https://www.cloudskillsboost.google/paths/21)

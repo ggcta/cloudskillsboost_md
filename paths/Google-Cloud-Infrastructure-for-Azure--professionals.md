@@ -1,10 +1,9 @@
 ---
 id: 72
 name: 'Google Cloud Infrastructure for Azure  professionals'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/72
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [Google Cloud Infrastructure for Azure  professionals](https://www.cloudskillsboost.google/paths/72)

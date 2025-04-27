@@ -1,10 +1,9 @@
 ---
 id: 581
 name: 'Google Security Operations'
+datePublished: 2024-10-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/581
-date: 2025-01-05
-datePublished: 2024-10-25
 ---
 
 # [Google Security Operations](https://www.cloudskillsboost.google/paths/581)

@@ -1,10 +1,9 @@
 ---
 id: 1834
 name: 'Professional Cloud Architect Renewal Exam Learning Path'
+datePublished: 2025-03-07
 type: Path
 url: https://www.cloudskillsboost.google/paths/1834
-date: 2025-04-01
-datePublished: 2025-03-07
 ---
 
 # [Professional Cloud Architect Renewal Exam Learning Path](https://www.cloudskillsboost.google/paths/1834)

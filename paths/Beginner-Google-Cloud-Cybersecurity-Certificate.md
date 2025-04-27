@@ -1,10 +1,9 @@
 ---
 id: 419
 name: 'Beginner: Google Cloud Cybersecurity Certificate'
+datePublished: 2024-05-07
 type: Path
 url: https://www.cloudskillsboost.google/paths/419
-date: 2025-01-05
-datePublished: 2024-05-07
 ---
 
 # [Beginner: Google Cloud Cybersecurity Certificate](https://www.cloudskillsboost.google/paths/419)

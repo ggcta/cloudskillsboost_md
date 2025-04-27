@@ -1,10 +1,9 @@
 ---
 id: 655
 name: 'Vertex AI Search for Retail'
+datePublished: 2024-05-28
 type: Path
 url: https://www.cloudskillsboost.google/paths/655
-date: 2025-04-01
-datePublished: 2024-05-28
 ---
 
 # [Vertex AI Search for Retail](https://www.cloudskillsboost.google/paths/655)

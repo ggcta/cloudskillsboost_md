@@ -1,10 +1,9 @@
 ---
 id: 1839
 name: 'Network Security Learning Path'
+datePublished: 2025-02-26
 type: Path
 url: https://www.cloudskillsboost.google/paths/1839
-date: 2025-04-01
-datePublished: 2025-02-26
 ---
 
 # [Network Security Learning Path](https://www.cloudskillsboost.google/paths/1839)

@@ -1,10 +1,9 @@
 ---
 id: 8
 name: 'Getting Started with Google Cloud Learning Path'
+datePublished: 2025-02-26
 type: Path
 url: https://www.cloudskillsboost.google/paths/8
-date: 2025-04-06
-datePublished: 2025-02-26
 ---
 
 # [Getting Started with Google Cloud Learning Path](https://www.cloudskillsboost.google/paths/8)

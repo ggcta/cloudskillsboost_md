@@ -1,10 +1,9 @@
 ---
 id: 1873
 name: 'Advanced: Generative AI Labs with Gemini on Google Cloud'
+datePublished: 2025-03-20
 type: Path
 url: https://www.cloudskillsboost.google/paths/1873
-date: 2025-04-01
-datePublished: 2025-03-20
 ---
 
 # [Advanced: Generative AI Labs with Gemini on Google Cloud](https://www.cloudskillsboost.google/paths/1873)

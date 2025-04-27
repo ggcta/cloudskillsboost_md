@@ -1,10 +1,9 @@
 ---
 id: 1282
 name: 'Build and Modernize Applications With Generative AI'
+datePublished: 2024-10-15
 type: Path
 url: https://www.cloudskillsboost.google/paths/1282
-date: 2025-01-05
-datePublished: 2024-10-15
 ---
 
 # [Build and Modernize Applications With Generative AI](https://www.cloudskillsboost.google/paths/1282)

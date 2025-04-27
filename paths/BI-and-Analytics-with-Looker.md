@@ -1,10 +1,9 @@
 ---
 id: 28
 name: 'BI and Analytics with Looker'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/28
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [BI and Analytics with Looker](https://www.cloudskillsboost.google/paths/28)

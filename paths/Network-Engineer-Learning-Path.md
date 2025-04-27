@@ -1,10 +1,9 @@
 ---
 id: 14
 name: 'Network Engineer Learning Path'
+datePublished: 2025-03-21
 type: Path
 url: https://www.cloudskillsboost.google/paths/14
-date: 2025-04-01
-datePublished: 2025-03-21
 ---
 
 # [Network Engineer Learning Path](https://www.cloudskillsboost.google/paths/14)

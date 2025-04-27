@@ -1,10 +1,9 @@
 ---
 id: 76
 name: 'DevSecOps Learning Path'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/76
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [DevSecOps Learning Path](https://www.cloudskillsboost.google/paths/76)

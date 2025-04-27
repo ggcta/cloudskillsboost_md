@@ -1,10 +1,9 @@
 ---
 id: 187
 name: 'Google SIEM & SOAR Learning Path'
+datePublished: 2024-05-06
 type: Path
 url: https://www.cloudskillsboost.google/paths/187
-date: 2025-01-05
-datePublished: 2024-05-06
 ---
 
 # [Google SIEM & SOAR Learning Path](https://www.cloudskillsboost.google/paths/187)

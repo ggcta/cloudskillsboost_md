@@ -1,10 +1,9 @@
 ---
 id: 9
 name: 'Cloud Digital Leader Learning Path'
+datePublished: 2024-01-22
 type: Path
 url: https://www.cloudskillsboost.google/paths/9
-date: 2025-04-01
-datePublished: 2024-01-22
 ---
 
 # [Cloud Digital Leader Learning Path](https://www.cloudskillsboost.google/paths/9)

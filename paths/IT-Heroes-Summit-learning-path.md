@@ -1,10 +1,9 @@
 ---
 id: 108
 name: 'IT Heroes Summit learning path'
+datePublished: 2023-09-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/108
-date: 2025-01-05
-datePublished: 2023-09-25
 ---
 
 # [IT Heroes Summit learning path](https://www.cloudskillsboost.google/paths/108)

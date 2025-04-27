@@ -1,10 +1,9 @@
 ---
 id: 110
 name: 'Public Sector Learning Path'
+datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/110
-date: 2025-01-05
-datePublished: 2023-09-18
 ---
 
 # [Public Sector Learning Path](https://www.cloudskillsboost.google/paths/110)

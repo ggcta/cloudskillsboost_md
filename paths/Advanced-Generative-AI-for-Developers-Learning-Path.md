@@ -1,10 +1,9 @@
 ---
 id: 183
 name: 'Advanced: Generative AI for Developers Learning Path'
+datePublished: 2024-11-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/183
-date: 2025-01-05
-datePublished: 2024-11-18
 ---
 
 # [Advanced: Generative AI for Developers Learning Path](https://www.cloudskillsboost.google/paths/183)

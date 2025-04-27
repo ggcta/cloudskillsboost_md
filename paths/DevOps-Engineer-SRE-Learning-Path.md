@@ -1,10 +1,9 @@
 ---
 id: 20
 name: 'DevOps Engineer, SRE Learning Path'
+datePublished: 2024-04-24
 type: Path
 url: https://www.cloudskillsboost.google/paths/20
-date: 2025-01-05
-datePublished: 2024-04-24
 ---
 
 # [DevOps Engineer, SRE Learning Path](https://www.cloudskillsboost.google/paths/20)

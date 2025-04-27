@@ -1,10 +1,9 @@
 ---
 id: 31
 name: 'Startup Innovators Learning Path'
+datePublished: 2024-04-22
 type: Path
 url: https://www.cloudskillsboost.google/paths/31
-date: 2025-01-05
-datePublished: 2024-04-22
 ---
 
 # [Startup Innovators Learning Path](https://www.cloudskillsboost.google/paths/31)

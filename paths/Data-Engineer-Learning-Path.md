@@ -1,10 +1,9 @@
 ---
 id: 16
 name: 'Data Engineer Learning Path'
+datePublished: 2024-10-15
 type: Path
 url: https://www.cloudskillsboost.google/paths/16
-date: 2025-01-05
-datePublished: 2024-10-15
 ---
 
 # [Data Engineer Learning Path](https://www.cloudskillsboost.google/paths/16)

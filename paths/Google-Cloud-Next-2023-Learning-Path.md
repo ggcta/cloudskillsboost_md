@@ -1,10 +1,9 @@
 ---
 id: 184
 name: 'Google Cloud Next 2023 Learning Path'
+datePublished: 2025-01-31
 type: Path
 url: https://www.cloudskillsboost.google/paths/184
-date: 2025-04-06
-datePublished: 2025-01-31
 ---
 
 # [Google Cloud Next 2023 Learning Path](https://www.cloudskillsboost.google/paths/184)

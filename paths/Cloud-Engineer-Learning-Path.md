@@ -1,10 +1,9 @@
 ---
 id: 11
 name: 'Cloud Engineer Learning Path'
+datePublished: 2024-04-24
 type: Path
 url: https://www.cloudskillsboost.google/paths/11
-date: 2025-01-05
-datePublished: 2024-04-24
 ---
 
 # [Cloud Engineer Learning Path](https://www.cloudskillsboost.google/paths/11)

@@ -1,10 +1,9 @@
 ---
 id: 1872
 name: 'Intermediate: Generative AI Labs with Gemini on Google Cloud'
+datePublished: 2025-03-20
 type: Path
 url: https://www.cloudskillsboost.google/paths/1872
-date: 2025-04-01
-datePublished: 2025-03-20
 ---
 
 # [Intermediate: Generative AI Labs with Gemini on Google Cloud](https://www.cloudskillsboost.google/paths/1872)

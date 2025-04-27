@@ -1,10 +1,9 @@
 ---
 id: 1551
 name: 'GDC Air-Gapped Practitioner Fundamentals'
+datePublished: 2024-12-12
 type: Path
 url: https://www.cloudskillsboost.google/paths/1551
-date: 2025-04-06
-datePublished: 2024-12-12
 ---
 
 # [GDC Air-Gapped Practitioner Fundamentals](https://www.cloudskillsboost.google/paths/1551)

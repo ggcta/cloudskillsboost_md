@@ -1,10 +1,9 @@
 ---
 id: 420
 name: 'Beginner: Google Cloud Data Analytics Certificate'
+datePublished: 2024-05-07
 type: Path
 url: https://www.cloudskillsboost.google/paths/420
-date: 2025-01-05
-datePublished: 2024-05-07
 ---
 
 # [Beginner: Google Cloud Data Analytics Certificate](https://www.cloudskillsboost.google/paths/420)

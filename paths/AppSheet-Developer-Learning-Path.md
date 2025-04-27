@@ -1,10 +1,9 @@
 ---
 id: 30
 name: 'AppSheet Developer Learning Path'
+datePublished: 2023-04-14
 type: Path
 url: https://www.cloudskillsboost.google/paths/30
-date: 2025-01-05
-datePublished: 2023-04-14
 ---
 
 # [AppSheet Developer Learning Path](https://www.cloudskillsboost.google/paths/30)

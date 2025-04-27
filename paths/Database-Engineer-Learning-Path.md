@@ -1,10 +1,9 @@
 ---
 id: 22
 name: 'Database Engineer Learning Path'
+datePublished: 2023-09-13
 type: Path
 url: https://www.cloudskillsboost.google/paths/22
-date: 2025-01-05
-datePublished: 2023-09-13
 ---
 
 # [Database Engineer Learning Path](https://www.cloudskillsboost.google/paths/22)

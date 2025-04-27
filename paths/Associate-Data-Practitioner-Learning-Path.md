@@ -1,10 +1,9 @@
 ---
 id: 1336
 name: 'Associate Data Practitioner Learning Path'
+datePublished: 2024-10-11
 type: Path
 url: https://www.cloudskillsboost.google/paths/1336
-date: 2025-01-05
-datePublished: 2024-10-11
 ---
 
 # [Associate Data Practitioner Learning Path](https://www.cloudskillsboost.google/paths/1336)

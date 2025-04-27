@@ -1,10 +1,9 @@
 ---
 id: 1858
 name: 'Google Cloud Next 2025'
+datePublished: 2025-03-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/1858
-date: 2025-04-01
-datePublished: 2025-03-25
 ---
 
 # [Google Cloud Next 2025](https://www.cloudskillsboost.google/paths/1858)

@@ -1,10 +1,9 @@
 ---
 id: 26
 name: 'Google Cloud Next 2021 Hands-On Labs'
+datePublished: 2021-11-08
 type: Path
 url: https://www.cloudskillsboost.google/paths/26
-date: 2025-04-01
-datePublished: 2021-11-08
 ---
 
 # [Google Cloud Next 2021 Hands-On Labs](https://www.cloudskillsboost.google/paths/26)

@@ -1,10 +1,9 @@
 ---
 id: 1547
 name: 'GDC Air-Gapped Security Operator Fundamentals'
+datePublished: 2024-12-11
 type: Path
 url: https://www.cloudskillsboost.google/paths/1547
-date: 2025-01-05
-datePublished: 2024-12-11
 ---
 
 # [GDC Air-Gapped Security Operator Fundamentals](https://www.cloudskillsboost.google/paths/1547)

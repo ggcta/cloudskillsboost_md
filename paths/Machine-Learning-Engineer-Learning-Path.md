@@ -1,10 +1,9 @@
 ---
 id: 17
 name: 'Machine Learning Engineer Learning Path'
+datePublished: 2025-02-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/17
-date: 2025-04-06
-datePublished: 2025-02-18
 ---
 
 # [Machine Learning Engineer Learning Path](https://www.cloudskillsboost.google/paths/17)

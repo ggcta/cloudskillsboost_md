@@ -1,10 +1,9 @@
 ---
 id: 280
 name: 'Google Cloud Applied AI Summit Learning Path'
+datePublished: 2025-01-02
 type: Path
 url: https://www.cloudskillsboost.google/paths/280
-date: 2025-01-05
-datePublished: 2025-01-02
 ---
 
 # [Google Cloud Applied AI Summit Learning Path](https://www.cloudskillsboost.google/paths/280)

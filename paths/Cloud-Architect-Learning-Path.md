@@ -1,10 +1,9 @@
 ---
 id: 12
 name: 'Cloud Architect Learning Path'
+datePublished: 2025-02-26
 type: Path
 url: https://www.cloudskillsboost.google/paths/12
-date: 2025-04-01
-datePublished: 2025-02-26
 ---
 
 # [Cloud Architect Learning Path](https://www.cloudskillsboost.google/paths/12)
