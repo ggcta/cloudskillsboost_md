@@ -1,5 +1,5 @@
 ---
-type: paths
+type: Paths
 name: 'Paths Collection'
 url: https://www.cloudskillsboost.google
 date: 2025-04-19
@@ -43,6 +43,7 @@ date: 2025-04-19
 - [ ] `   36`: [(Web Link)](https://www.cloudskillsboost.google/paths/36) | Google Cloud Computing Foundations Certificate
 - [ ] `   71`: [(Web Link)](https://www.cloudskillsboost.google/paths/71) | Google Cloud Infrastructure for AWS professionals
 - [ ] `   72`: [(Web Link)](https://www.cloudskillsboost.google/paths/72) | Google Cloud Infrastructure for Azure  professionals
+- [ ] ` 2150`: [(Web Link)](https://www.cloudskillsboost.google/paths/2150) | Google Cloud Integrated Security Operations
 - [ ] `   26`: [(Web Link)](https://www.cloudskillsboost.google/paths/26) | Google Cloud Next 2021 Hands-On Labs
 - [ ] `   32`: [(Web Link)](https://www.cloudskillsboost.google/paths/32) | Google Cloud Next 2022 Hands-On Labs
 - [ ] `  184`: [(Web Link)](https://www.cloudskillsboost.google/paths/184) | Google Cloud Next 2023 Learning Path
