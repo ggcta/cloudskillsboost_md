@@ -1,9 +1,9 @@
 ---
 id: 1551
 name: 'GDC Air-Gapped Practitioner Fundamentals'
-datePublished: 2024-12-12
 type: Path
 url: https://www.cloudskillsboost.google/paths/1551
+date_published: 2024-12-12
 ---
 
 # [GDC Air-Gapped Practitioner Fundamentals](https://www.cloudskillsboost.google/paths/1551)
@@ -12,7 +12,7 @@ This course is intended for DevOps engineers and application developers.  Google
 
 ## Courses & Progress
 
-- [ ] [GDC Platform Introduction (1192)](../courses/GDC-Platform-Introduction.md)
-- [ ] [Compute, Network, and Storage Services Configuration in GDC (1198)](../courses/Compute-Network-and-Storage-Services-Configuration-in-GDC.md)
-- [ ] [AI Services and GDC Deployments and Operations (1193)](../courses/AI-Services-and-GDC-Deployments-and-Operations.md)
-- [ ] [Quiz: GDC Air-Gapped Practitioner Fundamentals (1194)](../courses/Quiz-GDC-Air-Gapped-Practitioner-Fundamentals.md)
+* [ ] [GDC Platform Introduction (1192)](../courses/GDC-Platform-Introduction.md)
+* [ ] [Compute, Network, and Storage Services Configuration in GDC (1198)](../courses/Compute-Network-and-Storage-Services-Configuration-in-GDC.md)
+* [ ] [AI Services and GDC Deployments and Operations (1193)](../courses/AI-Services-and-GDC-Deployments-and-Operations.md)
+* [ ] [Quiz: GDC Air-Gapped Practitioner Fundamentals (1194)](../courses/Quiz-GDC-Air-Gapped-Practitioner-Fundamentals.md)

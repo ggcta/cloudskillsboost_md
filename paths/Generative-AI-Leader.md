@@ -1,9 +1,9 @@
 ---
 id: 1951
 name: 'Generative AI Leader'
-datePublished: 2025-04-17
 type: Path
 url: https://www.cloudskillsboost.google/paths/1951
+date_published: 2025-04-17
 ---
 
 # [Generative AI Leader](https://www.cloudskillsboost.google/paths/1951)
@@ -12,8 +12,8 @@ A Gen AI Leader can articulate the capabilities of generative AI and understand 
 
 ## Courses & Progress
 
-- [ ] [Gen AI: Beyond the Chatbot (1268)](../courses/Gen-AI-Beyond-the-Chatbot.md)
-- [ ] [Gen AI: Unlock Foundational Concepts (1265)](../courses/Gen-AI-Unlock-Foundational-Concepts.md)
-- [ ] [Gen AI: Navigate the Landscape (1261)](../courses/Gen-AI-Navigate-the-Landscape.md)
-- [ ] [Gen AI Apps: Transform Your Work (1266)](../courses/Gen-AI-Apps-Transform-Your-Work.md)
-- [ ] [Gen AI Agents: Transform Your Organization (1267)](../courses/Gen-AI-Agents-Transform-Your-Organization.md)
+* [ ] [Gen AI: Beyond the Chatbot (1268)](../courses/Gen-AI-Beyond-the-Chatbot.md)
+* [ ] [Gen AI: Unlock Foundational Concepts (1265)](../courses/Gen-AI-Unlock-Foundational-Concepts.md)
+* [ ] [Gen AI: Navigate the Landscape (1261)](../courses/Gen-AI-Navigate-the-Landscape.md)
+* [ ] [Gen AI Apps: Transform Your Work (1266)](../courses/Gen-AI-Apps-Transform-Your-Work.md)
+* [ ] [Gen AI Agents: Transform Your Organization (1267)](../courses/Gen-AI-Agents-Transform-Your-Organization.md)

@@ -1,9 +1,9 @@
 ---
 id: 22
 name: 'Database Engineer Learning Path'
-datePublished: 2023-09-13
 type: Path
 url: https://www.cloudskillsboost.google/paths/22
+date_published: 2023-09-13
 ---
 
 # [Database Engineer Learning Path](https://www.cloudskillsboost.google/paths/22)
@@ -12,11 +12,11 @@ A Database Engineer designs, creates, manages, migrates, and troubleshoots datab
 
 ## Courses & Progress
 
-- [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
-- [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
-- [ ] [Enterprise Database Migration (145)](../courses/Enterprise-Database-Migration.md)
-- [ ] [Migrate MySQL data to Cloud SQL using Database Migration Service (629)](../courses/Migrate-MySQL-data-to-Cloud-SQL-using-Database-Migration-Service.md)
-- [ ] [Create and Manage Cloud SQL for PostgreSQL Instances (652)](../courses/Create-and-Manage-Cloud-SQL-for-PostgreSQL-Instances.md)
-- [ ] [Create and Manage Cloud Spanner Instances (643)](../courses/Create-and-Manage-Cloud-Spanner-Instances.md)
-- [ ] [Create and Manage Bigtable Instances (650)](../courses/Create-and-Manage-Bigtable-Instances.md)
-- [ ] [Create and Manage AlloyDB Instances (642)](../courses/Create-and-Manage-AlloyDB-Instances.md)
+* [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
+* [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
+* [ ] [Enterprise Database Migration (145)](../courses/Enterprise-Database-Migration.md)
+* [ ] [Migrate MySQL data to Cloud SQL using Database Migration Service (629)](../courses/Migrate-MySQL-data-to-Cloud-SQL-using-Database-Migration-Service.md)
+* [ ] [Create and Manage Cloud SQL for PostgreSQL Instances (652)](../courses/Create-and-Manage-Cloud-SQL-for-PostgreSQL-Instances.md)
+* [ ] [Create and Manage Cloud Spanner Instances (643)](../courses/Create-and-Manage-Cloud-Spanner-Instances.md)
+* [ ] [Create and Manage Bigtable Instances (650)](../courses/Create-and-Manage-Bigtable-Instances.md)
+* [ ] [Create and Manage AlloyDB Instances (642)](../courses/Create-and-Manage-AlloyDB-Instances.md)

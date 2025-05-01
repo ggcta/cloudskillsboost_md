@@ -1,9 +1,9 @@
 ---
 id: 71
 name: 'Google Cloud Infrastructure for AWS professionals'
-datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/71
+date_published: 2023-09-18
 ---
 
 # [Google Cloud Infrastructure for AWS professionals](https://www.cloudskillsboost.google/paths/71)
@@ -12,8 +12,8 @@ The Google Cloud Infrastructure for AWS professionals learning path for cloud ar
 
 ## Courses & Progress
 
-- [ ] [Google Cloud IAM and Networking for AWS Professionals (522)](../courses/Google-Cloud-IAM-and-Networking-for-AWS-Professionals.md)
-- [ ] [Google Cloud Compute and Scalability for AWS Professionals (526)](../courses/Google-Cloud-Compute-and-Scalability-for-AWS-Professionals.md)
-- [ ] [Google Cloud Storage and Containers for AWS Professionals (519)](../courses/Google-Cloud-Storage-and-Containers-for-AWS-Professionals.md)
-- [ ] [Deploy and Monitor in Google Cloud for AWS Professionals (523)](../courses/Deploy-and-Monitor-in-Google-Cloud-for-AWS-Professionals.md)
-- [ ] [Build Google Cloud Infrastructure for AWS Professionals (687)](../courses/Build-Google-Cloud-Infrastructure-for-AWS-Professionals.md)
+* [ ] [Google Cloud IAM and Networking for AWS Professionals (522)](../courses/Google-Cloud-IAM-and-Networking-for-AWS-Professionals.md)
+* [ ] [Google Cloud Compute and Scalability for AWS Professionals (526)](../courses/Google-Cloud-Compute-and-Scalability-for-AWS-Professionals.md)
+* [ ] [Google Cloud Storage and Containers for AWS Professionals (519)](../courses/Google-Cloud-Storage-and-Containers-for-AWS-Professionals.md)
+* [ ] [Deploy and Monitor in Google Cloud for AWS Professionals (523)](../courses/Deploy-and-Monitor-in-Google-Cloud-for-AWS-Professionals.md)
+* [ ] [Build Google Cloud Infrastructure for AWS Professionals (687)](../courses/Build-Google-Cloud-Infrastructure-for-AWS-Professionals.md)

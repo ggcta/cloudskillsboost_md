@@ -1,9 +1,9 @@
 ---
 id: 21
 name: 'API Developer Learning Path'
-datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/21
+date_published: 2023-09-18
 ---
 
 # [API Developer Learning Path](https://www.cloudskillsboost.google/paths/21)
@@ -12,10 +12,10 @@ An API Developer designs and develops secure and efficient application programmi
 
 ## Courses & Progress
 
-- [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
-- [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
-- [ ] [API Design and Fundamentals of Google Cloud's Apigee API Platform (254)](../courses/API-Design-and-Fundamentals-of-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [API Security on Google Cloud's Apigee API Platform (255)](../courses/API-Security-on-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [API Development on Google Cloud's Apigee API Platform (256)](../courses/API-Development-on-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [Develop and Secure APIs with Apigee X (714)](../courses/Develop-and-Secure-APIs-with-Apigee-X.md)
-- [ ] [Deploy and Manage Apigee X (661)](../courses/Deploy-and-Manage-Apigee-X.md)
+* [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
+* [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
+* [ ] [API Design and Fundamentals of Google Cloud's Apigee API Platform (254)](../courses/API-Design-and-Fundamentals-of-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [API Security on Google Cloud's Apigee API Platform (255)](../courses/API-Security-on-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [API Development on Google Cloud's Apigee API Platform (256)](../courses/API-Development-on-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [Develop and Secure APIs with Apigee X (714)](../courses/Develop-and-Secure-APIs-with-Apigee-X.md)
+* [ ] [Deploy and Manage Apigee X (661)](../courses/Deploy-and-Manage-Apigee-X.md)

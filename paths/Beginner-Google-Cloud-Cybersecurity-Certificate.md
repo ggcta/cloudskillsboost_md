@@ -1,9 +1,9 @@
 ---
 id: 419
 name: 'Beginner: Google Cloud Cybersecurity Certificate'
-datePublished: 2024-05-07
 type: Path
 url: https://www.cloudskillsboost.google/paths/419
+date_published: 2024-05-07
 ---
 
 # [Beginner: Google Cloud Cybersecurity Certificate](https://www.cloudskillsboost.google/paths/419)
@@ -12,8 +12,8 @@ Imagine yourself as a digital guardian, a cyber sentinel at the frontlines of Go
 
 ## Courses & Progress
 
-- [ ] [Introduction to Security Principles in Cloud Computing (966)](../courses/Introduction-to-Security-Principles-in-Cloud-Computing.md)
-- [ ] [Strategies for Cloud Security Risk Management (967)](../courses/Strategies-for-Cloud-Security-Risk-Management.md)
-- [ ] [Cloud Security Risks: Identify and Protect Against Threats (968)](../courses/Cloud-Security-Risks-Identify-and-Protect-Against-Threats.md)
-- [ ] [Detect, Respond, and Recover from Cloud Cybersecurity Attacks (969)](../courses/Detect-Respond-and-Recover-from-Cloud-Cybersecurity-Attacks.md)
-- [ ] [Put It All Together: Prepare for a Cloud Security Analyst Job (970)](../courses/Put-It-All-Together-Prepare-for-a-Cloud-Security-Analyst-Job.md)
+* [ ] [Introduction to Security Principles in Cloud Computing (966)](../courses/Introduction-to-Security-Principles-in-Cloud-Computing.md)
+* [ ] [Strategies for Cloud Security Risk Management (967)](../courses/Strategies-for-Cloud-Security-Risk-Management.md)
+* [ ] [Cloud Security Risks: Identify and Protect Against Threats (968)](../courses/Cloud-Security-Risks-Identify-and-Protect-Against-Threats.md)
+* [ ] [Detect, Respond, and Recover from Cloud Cybersecurity Attacks (969)](../courses/Detect-Respond-and-Recover-from-Cloud-Cybersecurity-Attacks.md)
+* [ ] [Put It All Together: Prepare for a Cloud Security Analyst Job (970)](../courses/Put-It-All-Together-Prepare-for-a-Cloud-Security-Analyst-Job.md)

@@ -1,9 +1,9 @@
 ---
 id: 708
 name: 'Contact Center AI (CCAI) Platform'
-datePublished: 2024-06-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/708
+date_published: 2024-06-18
 ---
 
 # [Contact Center AI (CCAI) Platform](https://www.cloudskillsboost.google/paths/708)
@@ -12,6 +12,6 @@ This learning path offers comprehensive training on Google Cloud's Contact Cente
 
 ## Courses & Progress
 
-- [ ] [Handle Consumer Interactions with CCAIP (944)](../courses/Handle-Consumer-Interactions-with-CCAIP.md)
-- [ ] [Manage Functions and Reporting with CCAIP (958)](../courses/Manage-Functions-and-Reporting-with-CCAIP.md)
-- [ ] [Configure and Maintain CCAIP as an Admin (1029)](../courses/Configure-and-Maintain-CCAIP-as-an-Admin.md)
+* [ ] [Handle Consumer Interactions with CCAIP (944)](../courses/Handle-Consumer-Interactions-with-CCAIP.md)
+* [ ] [Manage Functions and Reporting with CCAIP (958)](../courses/Manage-Functions-and-Reporting-with-CCAIP.md)
+* [ ] [Configure and Maintain CCAIP as an Admin (1029)](../courses/Configure-and-Maintain-CCAIP-as-an-Admin.md)

@@ -1,9 +1,9 @@
 ---
 id: 23
 name: 'Workspace End User Learning Path'
-datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/23
+date_published: 2023-09-18
 ---
 
 # [Workspace End User Learning Path](https://www.cloudskillsboost.google/paths/23)
@@ -12,14 +12,14 @@ A Workspace End User possesses the digital skills to work collaboratively and pr
 
 ## Courses & Progress
 
-- [ ] [Gmail (200)](../courses/Gmail.md)
-- [ ] [Google Calendar (201)](../courses/Google-Calendar.md)
-- [ ] [Google Drive (199)](../courses/Google-Drive.md)
-- [ ] [Google Docs (195)](../courses/Google-Docs.md)
-- [ ] [Google Sheets (196)](../courses/Google-Sheets.md)
-- [ ] [Google Slides (197)](../courses/Google-Slides.md)
-- [ ] [Google Meet (198)](../courses/Google-Meet.md)
-- [ ] [Google Chat (516)](../courses/Google-Chat.md)
-- [ ] [Google Sheets - Advanced Topics (293)](../courses/Google-Sheets-Advanced-Topics.md)
-- [ ] [Get Started with Google Workspace Tools (676)](../courses/Get-Started-with-Google-Workspace-Tools.md)
-- [ ] [Use Functions, Formulas, and Charts in Google Sheets (776)](../courses/Use-Functions-Formulas-and-Charts-in-Google-Sheets.md)
+* [ ] [Gmail (200)](../courses/Gmail.md)
+* [ ] [Google Calendar (201)](../courses/Google-Calendar.md)
+* [ ] [Google Drive (199)](../courses/Google-Drive.md)
+* [ ] [Google Docs (195)](../courses/Google-Docs.md)
+* [ ] [Google Sheets (196)](../courses/Google-Sheets.md)
+* [ ] [Google Slides (197)](../courses/Google-Slides.md)
+* [ ] [Google Meet (198)](../courses/Google-Meet.md)
+* [ ] [Google Chat (516)](../courses/Google-Chat.md)
+* [ ] [Google Sheets - Advanced Topics (293)](../courses/Google-Sheets-Advanced-Topics.md)
+* [ ] [Get Started with Google Workspace Tools (676)](../courses/Get-Started-with-Google-Workspace-Tools.md)
+* [ ] [Use Functions, Formulas, and Charts in Google Sheets (776)](../courses/Use-Functions-Formulas-and-Charts-in-Google-Sheets.md)

@@ -1,9 +1,9 @@
 ---
 id: 72
 name: 'Google Cloud Infrastructure for Azure  professionals'
-datePublished: 2023-09-18
 type: Path
 url: https://www.cloudskillsboost.google/paths/72
+date_published: 2023-09-18
 ---
 
 # [Google Cloud Infrastructure for Azure  professionals](https://www.cloudskillsboost.google/paths/72)
@@ -12,8 +12,8 @@ The Google Cloud Infrastructure for Azure professionals learning path for cloud 
 
 ## Courses & Progress
 
-- [ ] [Google Cloud IAM and Networking for Azure Professionals (520)](../courses/Google-Cloud-IAM-and-Networking-for-Azure-Professionals.md)
-- [ ] [Google Cloud Compute and Scalability for Azure Professionals (525)](../courses/Google-Cloud-Compute-and-Scalability-for-Azure-Professionals.md)
-- [ ] [Google Cloud Storage and Containers for Azure Professionals (521)](../courses/Google-Cloud-Storage-and-Containers-for-Azure-Professionals.md)
-- [ ] [Deploy and Monitor in Google Cloud for Azure Professionals (524)](../courses/Deploy-and-Monitor-in-Google-Cloud-for-Azure-Professionals.md)
-- [ ] [Build Google Cloud Infrastructure for Azure Professionals (688)](../courses/Build-Google-Cloud-Infrastructure-for-Azure-Professionals.md)
+* [ ] [Google Cloud IAM and Networking for Azure Professionals (520)](../courses/Google-Cloud-IAM-and-Networking-for-Azure-Professionals.md)
+* [ ] [Google Cloud Compute and Scalability for Azure Professionals (525)](../courses/Google-Cloud-Compute-and-Scalability-for-Azure-Professionals.md)
+* [ ] [Google Cloud Storage and Containers for Azure Professionals (521)](../courses/Google-Cloud-Storage-and-Containers-for-Azure-Professionals.md)
+* [ ] [Deploy and Monitor in Google Cloud for Azure Professionals (524)](../courses/Deploy-and-Monitor-in-Google-Cloud-for-Azure-Professionals.md)
+* [ ] [Build Google Cloud Infrastructure for Azure Professionals (688)](../courses/Build-Google-Cloud-Infrastructure-for-Azure-Professionals.md)

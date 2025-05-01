@@ -1,9 +1,9 @@
 ---
 id: 1282
 name: 'Build and Modernize Applications With Generative AI'
-datePublished: 2024-10-15
 type: Path
 url: https://www.cloudskillsboost.google/paths/1282
+date_published: 2024-10-15
 ---
 
 # [Build and Modernize Applications With Generative AI](https://www.cloudskillsboost.google/paths/1282)
@@ -12,9 +12,9 @@ This learning path is for application developers who want to enhance their proje
 
 ## Courses & Progress
 
-- [ ] [Gemini for Application Developers (881)](../courses/Gemini-for-Application-Developers.md)
-- [ ] [Gemini for end-to-end SDLC (885)](../courses/Gemini-for-end-to-end-SDLC.md)
-- [ ] [Create Generative AI Apps on Google Cloud (1120)](../courses/Create-Generative-AI-Apps-on-Google-Cloud.md)
-- [ ] [Website Modernization with Generative AI on Google Cloud (1097)](../courses/Website-Modernization-with-Generative-AI-on-Google-Cloud.md)
-- [ ] [Build Generative AI Agents with Vertex AI and Flutter (1162)](../courses/Build-Generative-AI-Agents-with-Vertex-AI-and-Flutter.md)
-- [ ] [Develop GenAI Apps with Gemini and Streamlit (978)](../courses/Develop-GenAI-Apps-with-Gemini-and-Streamlit.md)
+* [ ] [Gemini for Application Developers (881)](../courses/Gemini-for-Application-Developers.md)
+* [ ] [Gemini for end-to-end SDLC (885)](../courses/Gemini-for-end-to-end-SDLC.md)
+* [ ] [Create Generative AI Apps on Google Cloud (1120)](../courses/Create-Generative-AI-Apps-on-Google-Cloud.md)
+* [ ] [Website Modernization with Generative AI on Google Cloud (1097)](../courses/Website-Modernization-with-Generative-AI-on-Google-Cloud.md)
+* [ ] [Build Generative AI Agents with Vertex AI and Flutter (1162)](../courses/Build-Generative-AI-Agents-with-Vertex-AI-and-Flutter.md)
+* [ ] [Develop GenAI Apps with Gemini and Streamlit (978)](../courses/Develop-GenAI-Apps-with-Gemini-and-Streamlit.md)

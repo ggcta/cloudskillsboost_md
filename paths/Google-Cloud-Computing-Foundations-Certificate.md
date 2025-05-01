@@ -1,9 +1,9 @@
 ---
 id: 36
 name: 'Google Cloud Computing Foundations Certificate'
-datePublished: 2024-04-25
 type: Path
 url: https://www.cloudskillsboost.google/paths/36
+date_published: 2024-04-25
 ---
 
 # [Google Cloud Computing Foundations Certificate](https://www.cloudskillsboost.google/paths/36)
@@ -12,11 +12,11 @@ This learning path contains on-demand courses that introduces you to the fundame
 
 ## Courses & Progress
 
-- [ ] [Google Cloud Computing Foundations: Cloud Computing Fundamentals (153)](../courses/Google-Cloud-Computing-Foundations-Cloud-Computing-Fundamentals.md)
-- [ ] [Google Cloud Computing Foundations: Infrastructure in Google Cloud (154)](../courses/Google-Cloud-Computing-Foundations-Infrastructure-in-Google-Cloud.md)
-- [ ] [Google Cloud Computing Foundations: Networking & Security in Google Cloud (155)](../courses/Google-Cloud-Computing-Foundations-Networking-&-Security-in-Google-Cloud.md)
-- [ ] [Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud (156)](../courses/Google-Cloud-Computing-Foundations-Data-ML-and-AI-in-Google-Cloud.md)
-- [ ] [Implement Load Balancing on Compute Engine (648)](../courses/Implement-Load-Balancing-on-Compute-Engine.md)
-- [ ] [Set Up an App Dev Environment on Google Cloud (637)](../courses/Set-Up-an-App-Dev-Environment-on-Google-Cloud.md)
-- [ ] [Build a Secure Google Cloud Network (654)](../courses/Build-a-Secure-Google-Cloud-Network.md)
-- [ ] [Prepare Data for ML APIs on Google Cloud (631)](../courses/Prepare-Data-for-ML-APIs-on-Google-Cloud.md)
+* [ ] [Google Cloud Computing Foundations: Cloud Computing Fundamentals (153)](../courses/Google-Cloud-Computing-Foundations-Cloud-Computing-Fundamentals.md)
+* [ ] [Google Cloud Computing Foundations: Infrastructure in Google Cloud (154)](../courses/Google-Cloud-Computing-Foundations-Infrastructure-in-Google-Cloud.md)
+* [ ] [Google Cloud Computing Foundations: Networking & Security in Google Cloud (155)](../courses/Google-Cloud-Computing-Foundations-Networking-&-Security-in-Google-Cloud.md)
+* [ ] [Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud (156)](../courses/Google-Cloud-Computing-Foundations-Data-ML-and-AI-in-Google-Cloud.md)
+* [ ] [Implement Load Balancing on Compute Engine (648)](../courses/Implement-Load-Balancing-on-Compute-Engine.md)
+* [ ] [Set Up an App Dev Environment on Google Cloud (637)](../courses/Set-Up-an-App-Dev-Environment-on-Google-Cloud.md)
+* [ ] [Build a Secure Google Cloud Network (654)](../courses/Build-a-Secure-Google-Cloud-Network.md)
+* [ ] [Prepare Data for ML APIs on Google Cloud (631)](../courses/Prepare-Data-for-ML-APIs-on-Google-Cloud.md)

@@ -1,9 +1,9 @@
 ---
 id: 31
 name: 'Startup Innovators Learning Path'
-datePublished: 2024-04-22
 type: Path
 url: https://www.cloudskillsboost.google/paths/31
+date_published: 2024-04-22
 ---
 
 # [Startup Innovators Learning Path](https://www.cloudskillsboost.google/paths/31)
@@ -12,12 +12,12 @@ A Startup Cloud Engineer needs to be agile and understand how to implement solut
 
 ## Courses & Progress
 
-- [ ] [Google Cloud Computing Foundations: Cloud Computing Fundamentals (153)](../courses/Google-Cloud-Computing-Foundations-Cloud-Computing-Fundamentals.md)
-- [ ] [Reliable Google Cloud Infrastructure: Design and Process (41)](../courses/Reliable-Google-Cloud-Infrastructure-Design-and-Process.md)
-- [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
-- [ ] [Modernizing Data Lakes and Data Warehouses with Google Cloud (54)](../courses/Modernizing-Data-Lakes-and-Data-Warehouses-with-Google-Cloud.md)
-- [ ] [Introduction to AI and Machine Learning on Google Cloud (593)](../courses/Introduction-to-AI-and-Machine-Learning-on-Google-Cloud.md)
-- [ ] [Cloud IAM: Qwik Start (686)](../courses/Cloud-IAM-Qwik-Start.md)
-- [ ] [Configure Service Accounts and IAM Roles for Google Cloud (702)](../courses/Configure-Service-Accounts-and-IAM-Roles-for-Google-Cloud.md)
-- [ ] [Logging and Monitoring in Google Cloud (99)](../courses/Logging-and-Monitoring-in-Google-Cloud.md)
-- [ ] [Networking in Google Cloud: Fundamentals (35)](../courses/Networking-in-Google-Cloud-Fundamentals.md)
+* [ ] [Google Cloud Computing Foundations: Cloud Computing Fundamentals (153)](../courses/Google-Cloud-Computing-Foundations-Cloud-Computing-Fundamentals.md)
+* [ ] [Reliable Google Cloud Infrastructure: Design and Process (41)](../courses/Reliable-Google-Cloud-Infrastructure-Design-and-Process.md)
+* [ ] [Google Cloud Fundamentals: Core Infrastructure (60)](../courses/Google-Cloud-Fundamentals-Core-Infrastructure.md)
+* [ ] [Modernizing Data Lakes and Data Warehouses with Google Cloud (54)](../courses/Modernizing-Data-Lakes-and-Data-Warehouses-with-Google-Cloud.md)
+* [ ] [Introduction to AI and Machine Learning on Google Cloud (593)](../courses/Introduction-to-AI-and-Machine-Learning-on-Google-Cloud.md)
+* [ ] [Cloud IAM: Qwik Start (686)](../courses/Cloud-IAM-Qwik-Start.md)
+* [ ] [Configure Service Accounts and IAM Roles for Google Cloud (702)](../courses/Configure-Service-Accounts-and-IAM-Roles-for-Google-Cloud.md)
+* [ ] [Logging and Monitoring in Google Cloud (99)](../courses/Logging-and-Monitoring-in-Google-Cloud.md)
+* [ ] [Networking in Google Cloud: Fundamentals (35)](../courses/Networking-in-Google-Cloud-Fundamentals.md)

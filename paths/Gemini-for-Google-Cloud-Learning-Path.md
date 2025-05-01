@@ -1,9 +1,9 @@
 ---
 id: 236
 name: 'Gemini for Google Cloud Learning Path'
-datePublished: 2025-03-26
 type: Path
 url: https://www.cloudskillsboost.google/paths/236
+date_published: 2025-03-26
 ---
 
 # [Gemini for Google Cloud Learning Path](https://www.cloudskillsboost.google/paths/236)
@@ -12,11 +12,11 @@ The Gemini for Google Cloud learning path provides examples of how Gemini can he
 
 ## Courses & Progress
 
-- [ ] [Gemini for Application Developers (881)](../courses/Gemini-for-Application-Developers.md)
-- [ ] [Gemini for Cloud Architects (878)](../courses/Gemini-for-Cloud-Architects.md)
-- [ ] [Gemini for Data Scientists and Analysts (879)](../courses/Gemini-for-Data-Scientists-and-Analysts.md)
-- [ ] [Gemini for Network Engineers (884)](../courses/Gemini-for-Network-Engineers.md)
-- [ ] [Gemini for Security Engineers (886)](../courses/Gemini-for-Security-Engineers.md)
-- [ ] [Gemini for DevOps Engineers (882)](../courses/Gemini-for-DevOps-Engineers.md)
-- [ ] [Gemini for end-to-end SDLC (885)](../courses/Gemini-for-end-to-end-SDLC.md)
-- [ ] [Develop GenAI Apps with Gemini and Streamlit (978)](../courses/Develop-GenAI-Apps-with-Gemini-and-Streamlit.md)
+* [ ] [Gemini for Application Developers (881)](../courses/Gemini-for-Application-Developers.md)
+* [ ] [Gemini for Cloud Architects (878)](../courses/Gemini-for-Cloud-Architects.md)
+* [ ] [Gemini for Data Scientists and Analysts (879)](../courses/Gemini-for-Data-Scientists-and-Analysts.md)
+* [ ] [Gemini for Network Engineers (884)](../courses/Gemini-for-Network-Engineers.md)
+* [ ] [Gemini for Security Engineers (886)](../courses/Gemini-for-Security-Engineers.md)
+* [ ] [Gemini for DevOps Engineers (882)](../courses/Gemini-for-DevOps-Engineers.md)
+* [ ] [Gemini for end-to-end SDLC (885)](../courses/Gemini-for-end-to-end-SDLC.md)
+* [ ] [Develop GenAI Apps with Gemini and Streamlit (978)](../courses/Develop-GenAI-Apps-with-Gemini-and-Streamlit.md)

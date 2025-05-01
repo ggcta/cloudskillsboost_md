@@ -1,9 +1,9 @@
 ---
 id: 27
 name: 'Cloud Architect/Engineer on Apigee'
-datePublished: 2024-04-19
 type: Path
 url: https://www.cloudskillsboost.google/paths/27
+date_published: 2024-04-19
 ---
 
 # [Cloud Architect/Engineer on Apigee](https://www.cloudskillsboost.google/paths/27)
@@ -12,11 +12,11 @@ A Cloud Architect or Engineer on Apigee utilizes the Apigee API Platform to enha
 
 ## Courses & Progress
 
-- [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
-- [ ] [API Design and Fundamentals of Google Cloud's Apigee API Platform (254)](../courses/API-Design-and-Fundamentals-of-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [API Security on Google Cloud's Apigee API Platform (255)](../courses/API-Security-on-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [API Development on Google Cloud's Apigee API Platform (256)](../courses/API-Development-on-Google-Cloud's-Apigee-API-Platform.md)
-- [ ] [Architecting and Installing the Apigee Hybrid API Platform (167)](../courses/Architecting-and-Installing-the-Apigee-Hybrid-API-Platform.md)
-- [ ] [Managing and Securing the Apigee Hybrid API Platform (168)](../courses/Managing-and-Securing-the-Apigee-Hybrid-API-Platform.md)
-- [ ] [Upgrading and Monitoring the Apigee Hybrid API Platform (169)](../courses/Upgrading-and-Monitoring-the-Apigee-Hybrid-API-Platform.md)
-- [ ] [Deploy and Manage Apigee X (661)](../courses/Deploy-and-Manage-Apigee-X.md)
+* [ ] [A Tour of Google Cloud Hands-on Labs (1281)](../courses/A-Tour-of-Google-Cloud-Hands-on-Labs.md)
+* [ ] [API Design and Fundamentals of Google Cloud's Apigee API Platform (254)](../courses/API-Design-and-Fundamentals-of-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [API Security on Google Cloud's Apigee API Platform (255)](../courses/API-Security-on-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [API Development on Google Cloud's Apigee API Platform (256)](../courses/API-Development-on-Google-Cloud's-Apigee-API-Platform.md)
+* [ ] [Architecting and Installing the Apigee Hybrid API Platform (167)](../courses/Architecting-and-Installing-the-Apigee-Hybrid-API-Platform.md)
+* [ ] [Managing and Securing the Apigee Hybrid API Platform (168)](../courses/Managing-and-Securing-the-Apigee-Hybrid-API-Platform.md)
+* [ ] [Upgrading and Monitoring the Apigee Hybrid API Platform (169)](../courses/Upgrading-and-Monitoring-the-Apigee-Hybrid-API-Platform.md)
+* [ ] [Deploy and Manage Apigee X (661)](../courses/Deploy-and-Manage-Apigee-X.md)

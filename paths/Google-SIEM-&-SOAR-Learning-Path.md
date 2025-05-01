@@ -1,9 +1,9 @@
 ---
 id: 187
 name: 'Google SIEM & SOAR Learning Path'
-datePublished: 2024-05-06
 type: Path
 url: https://www.cloudskillsboost.google/paths/187
+date_published: 2024-05-06
 ---
 
 # [Google SIEM & SOAR Learning Path](https://www.cloudskillsboost.google/paths/187)
@@ -12,8 +12,8 @@ The Chronicle learning path covers the SIEM and SOAR tools available in Google C
 
 ## Courses & Progress
 
-- [ ] [Security Practices with Google Security Operations - SIEM (442)](../courses/Security-Practices-with-Google-Security-Operations-SIEM.md)
-- [ ] [SOAR Fundamentals (569)](../courses/SOAR-Fundamentals.md)
-- [ ] [Google Security Operations - SIEM Rules (690)](../courses/Google-Security-Operations-SIEM-Rules.md)
-- [ ] [Google Security Operations - SOAR Analyst (567)](../courses/Google-Security-Operations-SOAR-Analyst.md)
-- [ ] [Google Security Operations - SOAR Developer (568)](../courses/Google-Security-Operations-SOAR-Developer.md)
+* [ ] [Security Practices with Google Security Operations - SIEM (442)](../courses/Security-Practices-with-Google-Security-Operations-SIEM.md)
+* [ ] [SOAR Fundamentals (569)](../courses/SOAR-Fundamentals.md)
+* [ ] [Google Security Operations - SIEM Rules (690)](../courses/Google-Security-Operations-SIEM-Rules.md)
+* [ ] [Google Security Operations - SOAR Analyst (567)](../courses/Google-Security-Operations-SOAR-Analyst.md)
+* [ ] [Google Security Operations - SOAR Developer (568)](../courses/Google-Security-Operations-SOAR-Developer.md)
