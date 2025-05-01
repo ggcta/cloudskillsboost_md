@@ -1,13 +1,13 @@
 ---
 id: 691
 name: 'Implement CI/CD Pipelines on Google Cloud'
-datePublished: 2024-08-15
-topics:
-- Cloud Console
-- CI/CD
-- Cloud Deploy
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/691
+date_published: 2024-08-15
+topics:
+  - GKE
+  - Application Deployment
+  - CI/CD
 ---
 
 # [Implement CI/CD Pipelines on Google Cloud](https://www.cloudskillsboost.google/course_templates/691)
@@ -24,26 +24,26 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 Artifact Registry is a single place to manage container images and language packages, and is fully integrated with Google Cloud tooling and and runtimes. This makes it simple to integrate it with your CI/CD tooling to set up automated pipelines.
 
-- [ ] [Working with Artifact Registry](../labs/Working-with-Artifact-Registry.md)
+* [ ] [Working with Artifact Registry](../labs/Working-with-Artifact-Registry.md)
 
 ### Lab - [Google Kubernetes Engine Pipeline using Cloud Build](https://www.cloudskillsboost.google/course_templates/691/labs/500040)
 
 Create a CI/CD pipeline that automatically builds a container image, stores the image in Artifact Registry, updates a Kubernetes manifest in a Git repository, and deploys the application to Google Kubernetes Engine.
 
-- [ ] [Google Kubernetes Engine Pipeline using Cloud Build](../labs/Google-Kubernetes-Engine-Pipeline-using-Cloud-Build.md)
+* [ ] [Google Kubernetes Engine Pipeline using Cloud Build](../labs/Google-Kubernetes-Engine-Pipeline-using-Cloud-Build.md)
 
 ### Lab - [Continuous Delivery with Google Cloud Deploy](https://www.cloudskillsboost.google/course_templates/691/labs/500041)
 
 Create a delivery pipeline using Google Cloud Deploy, create a release for a basic application, and promote the application through a series of Google Kubernetes Engine targets
 
-- [ ] [Continuous Delivery with Google Cloud Deploy](../labs/Continuous-Delivery-with-Google-Cloud-Deploy.md)
+* [ ] [Continuous Delivery with Google Cloud Deploy](../labs/Continuous-Delivery-with-Google-Cloud-Deploy.md)
 
 ### Lab - [Implement CI/CD Pipelines on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/691/labs/500042)
 
 This lab will challenge you to create a CI/CD pipeline, deploy an application to GKE, and rollback that deployment.
 
-- [ ] [Implement CI/CD Pipelines on Google Cloud: Challenge Lab](../labs/Implement-CI-CD-Pipelines-on-Google-Cloud-Challenge-Lab.md)
+* [ ] [Implement CI/CD Pipelines on Google Cloud: Challenge Lab](../labs/Implement-CI-CD-Pipelines-on-Google-Cloud-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

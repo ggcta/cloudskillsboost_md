@@ -1,13 +1,13 @@
 ---
 id: 1144
 name: 'Networking in Google Cloud: Network Architecture'
-datePublished: 2025-01-21
-topics:
-- Network Design
-- Google Cloud Services
-- Networking
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/1144
+date_published: 2025-01-21
+topics:
+  - Network Management
+  - Network Topology
+  - Networking
 ---
 
 # [Networking in Google Cloud: Network Architecture](https://www.cloudskillsboost.google/course_templates/1144)
@@ -21,10 +21,10 @@ Then in the second module, network topologies, we'll dive into various network t
 
 **Objectives:**
 
-- Analyze the key considerations for designing a scalable, secure, performant, and cost-efficient Google Cloud network architecture.
-- Implement a hub and spoke network topology
-- Visualize, troubleshoot, and optimize Google Cloud networks.
-- Apply best practices for designing and managing Google Cloud networks in cloud-only, multi-cloud, and hybrid environments.
+* Analyze the key considerations for designing a scalable, secure, performant, and cost-efficient Google Cloud network architecture.
+* Implement a hub and spoke network topology
+* Visualize, troubleshoot, and optimize Google Cloud networks.
+* Apply best practices for designing and managing Google Cloud networks in cloud-only, multi-cloud, and hybrid environments.
 
 ## Welcome to Networking in Google Cloud
 
@@ -32,7 +32,7 @@ Welcome to the Networking in Google Cloud: Routing and Addressing course.
 
 ### Video - [Networking in Google Cloud Introduction](https://www.cloudskillsboost.google/course_templates/1144/video/521663)
 
-- [YouTube: Networking in Google Cloud Introduction](https://www.youtube.com/watch?v=sZan42G_aJk)
+* [YouTube: Networking in Google Cloud Introduction](https://www.youtube.com/watch?v=sZan42G_aJk)
 
 Welcome to the third course of the "Networking in Google Cloud" series: Network Architecture! In this course, you will explore the fundamentals of designing efficient and scalable network architectures within Google Cloud. In the first module, Introduction to Network Architecture, we'll start by introducing you to the core components and concepts of network architecture, including subnets, routes, firewalls, and load balancing. Then in the second module, network topologies, we'll dive into various network topologies commonly used in Google Cloud, discussing their strengths, and weaknesses.
 
@@ -42,25 +42,25 @@ This module covers considerations for designing a Google Cloud network.
 
 ### Video - [Module Introduction](https://www.cloudskillsboost.google/course_templates/1144/video/521664)
 
-- [YouTube: Module Introduction](https://www.youtube.com/watch?v=DIR1ycTME7Q)
+* [YouTube: Module Introduction](https://www.youtube.com/watch?v=DIR1ycTME7Q)
 
 Welcome to the Introduction to Network Architecture module. In this module, you are introduced to cloud network architecture. You will learn why good cloud network architecture is important and key points to consider when designing a network architecture for your environment. Let’s begin with a cloud network architecture overview.
 
 ### Video - [Cloud network architecture overview](https://www.cloudskillsboost.google/course_templates/1144/video/521665)
 
-- [YouTube: Cloud network architecture overview](https://www.youtube.com/watch?v=YgeWUGqz760)
+* [YouTube: Cloud network architecture overview](https://www.youtube.com/watch?v=YgeWUGqz760)
 
 Network architecture refers to the design of a virtual network in Google Cloud. It defines how virtual machines, containers, and other resources connect and communicate with each other within your cloud environment. While Google manages the underlying physical infrastructure, you are responsible for configuring the software, protocols, and Google Cloud managed services that make up your virtual network. This includes components like VPC networks, subnets, firewalls, Cloud Routers, Cloud VPNs, and access points for on-premises connections. The network design impacts the scalability, security, performance, and cost of your network. A well-designed network can support your business growth by providing the scalability, security, performance, and cost-efficiency you need. On the other hand, a poorly designed network can lead to a number of problems, such as outages, security breaches, and slow performance. These problems can disrupt your business operations and damage your reputation. Not all network designs are suitable for all situations. You select network components and protocols based on your organization’s needs and priorities. Tailoring your network architecture to your organization's specific needs is paramount. Start by thoroughly assessing your current and future requirements, considering factors like the number of users, applications, traffic volume, and security considerations. Once you have a clear understanding of your needs, define quantifiable metrics for scalability, security, performance, and cost efficiency. These metrics can serve as a benchmark for evaluating your design choices. Google Cloud offers a comprehensive suite of networking services and tools. Google Cloud offers a comprehensive suite of networking services and tools. Identify the ones that best suit your requirements and leverage them to craft a secure, scalable, and cost-effective network architecture. Google Cloud provides a powerful arsenal of networking services that enable you to build robust and optimized VPC networks. Each service plays a crucial role in achieving essential network characteristics like scalability, security, performance, and cost-efficiency. A VPC network enables secure resource grouping by segmenting your network into distinct subnets based on functionality, security considerations, or project boundaries. You have granular control over access lists and security policies within each VPC network. Cloud VPN establishes secure tunnels for encrypted data communication between your on-premises network and Google Cloud. Cloud Interconnect directly provides high-bandwidth, low-latency connections between your on-premises network and Google Cloud. If needed, you can deploy Cloud VPN over Cloud Interconnect to provide encrypted data communication. Cloud Router dynamically exchanges routes between Virtual Private Cloud Networks and on-premises networks. A Cloud Router also serves as the control plane for Cloud NAT. You have multiple configuration options, including policy-based routing and BGP peering. Cloud Router provides BGP services for the following Google Cloud products: Cloud Interconnect, Cloud VPN, and Router appliance. Load balancers play a vital role in cloud networks by intelligently distributing incoming traffic across multiple backend servers or instances. This optimization prevents overload on individual servers, enhancing performance, scalability, and ensuring high availability for your cloud-based applications. Firewall rules provide granular access control, which is critical in protecting your VPC network. Grouping firewall rules into firewall policies helps you protect your Google Cloud infrastructure more easily. The firewall provides more specific control over traffic entering or leaving individual virtual machine instances. Cloud CDN caches content using Google's global edge network, accelerating web applications. By selecting the most appropriate Network Service Tier, you can optimize network performance and cost based on your specific traffic requirements. Choose Standard Tier for general workloads when speed is not a primary concern. Choose Premium Tier for demanding applications that require higher throughput and lower latency. Let’s take a look at an example: Cymbal Bank acquired a small subsidiary with a banking application on three VMs in one subnet. One VM will host the web server, another VM will host the business logic, and another VM will host the database. This approach was fine but now Cymbal Bank wants to roll out this a banking application to a global audience, with clients in Asia, North America, and Europe. Cymbal Bank wants to avoid bottlenecks. As shown, this network design is better for the following reasons: There are more servers to spread out the processing. Here, we see two sets of VMs that run the web server, the business logic, and the database. Probably, you would use more than two sets of VMs, but only two sets are shown here to make the slide simpler to read to simply the example. A load balancer handles routing client requests to the least busy set of VMs. This way, you reduce the likelihood of a bottleneck. Each VM is in a separate subnet. This approach allows you to apply different security—such as firewall rules and IAM permissions—to each subnet. Therefore, to each VM. For example, using this approach, you can lock down the database to only accept messages from the business logic VM. Depending on the application—and on the clients that use it—there may be other design changes that would be appropriate. For now, it’s important to note that a good network design can help make an application run faster and more securely. In this course, you will learn some common network design approaches.
 
 ### Video - [Getting started](https://www.cloudskillsboost.google/course_templates/1144/video/521666)
 
-- [YouTube: Getting started](https://www.youtube.com/watch?v=jUl9oCQG_VY)
+* [YouTube: Getting started](https://www.youtube.com/watch?v=jUl9oCQG_VY)
 
 Next, let’s briefly discuss some key considerations to design network architecture. When designing a network architecture, there are a number of key considerations. These include scalability, security, performance, and cost efficiency. Scalability refers to the ability of your network to accommodate increasing demands, whether it's adding more resources or handling growing traffic volume. Security refers to protecting your network from unauthorized access and attacks. Implementing robust security measures like firewalls, access controls, and encryption is are crucial to safeguarding your network from unauthorized access, data breaches, and cyberattacks. Compliance refers to observing guidelines, rules, and restrictions of your organization, industry, and pertinent government bodies. Performance refers to the speed and responsiveness of your network. Optimizing network performance translates to faster data transfer, improved application responsiveness, and a smooth user experience for your applications and services. Cost efficiency refers to the cost of designing, implementing, and operating your network. Striking a balance between achieving your network goals and staying within budget is essential. Google Cloud offers various cost-optimization strategies and tools to help you build a cost-effective network architecture. As a first step in your VPC network design, identify the decision makers and stakeholders that you must satisfy. Stakeholders might include application owners, security architects, solution architects, and operations managers. The stakeholders themselves might change depending on whether you are planning your VPC network for a project, a line of business, or the entire organization. Gather requirements. Engage with stakeholders to understand their specific needs regarding security, performance, scalability, compliance, and budget. This also includes the operational expenditure. This work might involve conducting interviews, workshops, or reviewing existing documentation. You also must identify the people within your organization that can make decisions to approve your network design. For example, engineering managers and accounting personnel. With a clear understanding of the requirements, we can now begin to translate them into a tangible network design. The high-level design outlines the overall structure of the network, including the major components and their relationships. The low-level design provides a more granular view, specifying device configurations, IP addressing schemes, and security protocols. This phase also involves making critical decisions about cloud infrastructure, geographic locations, and connectivity options. Finally, build a BoM (Bill of Materials) and calculate the cost. This comprehensive list includes all hardware, software, licenses, and services required to implement the network. It serves as the basis for calculating the total cost of the project, both in terms of upfront capital expenditures (CapEx) and ongoing operational expenditures (OpEx). This detailed cost analysis allows stakeholders to make informed decisions about the network design and implementation. Let’s now talk through best practices for understanding the overall project and environment. Clearly define the project's objectives and timeline to guide network design decisions. This helps determine resource allocation, architecture complexity, and implementation phases. Assess any existing on-premises or cloud infrastructure that the VPC network needs to integrate with. This includes identifying existing VPCs, subnets, , security configurations, and network policies. 3:47 Lastly, let’s talk through technical considerations and constraints you should consider. Research and understand any relevant security or data privacy regulations your organization needs to follow. This might influence aspects like data segregation, access control, and logging. Consider cost-saving strategies like right-sizing resources, utilizing committed use discounts, and exploring managed services where feasible. Plan for ongoing network management, monitoring, and incident response procedures. This might involve defining roles and responsibilities, automation practices, and logging configurations.
 
 ### Video - [Debrief](https://www.cloudskillsboost.google/course_templates/1144/video/521667)
 
-- [YouTube: Debrief](https://www.youtube.com/watch?v=vk7nXUnKK7A)
+* [YouTube: Debrief](https://www.youtube.com/watch?v=vk7nXUnKK7A)
 
 Let’s take a look at an example of how you can use Gemini to help you learn more about network architecture. . You can explore your options by asking Gemini: “What does serverless architecture mean in Google Cloud”? In this module, you were introduced to the concept of network architecture and why it is important for optimal functioning of your Google Cloud environments. You learned about some important design concerns, core design components, and how to get started planning a network architecture.
 
@@ -69,22 +69,22 @@ Let’s take a look at an example of how you can use Gemini to help you learn mo
 #### Quiz 1.
 
 > [!important]
-> **Which of the following practices is LEAST likely to improve network security in Google Cloud?**
+> **You are designing a new network infrastructure in Google Cloud to support a global e-commerce application. Which two of the following are key considerations you should prioritize in your network design?**
 >
-> - [ ] Regularly reviewing and updating IAM (Identity and Access Management) permissions.
-> - [ ] Enabling VPC flow logs to monitor network traffic.
-> - [ ] Implementing network firewall rules to control traffic.
-> - [ ] Assigning public IP addresses to all virtual machines in a VPC.
+> * [ ] To justify the need for a new network.
+> * [ ] To ensure high availability and disaster recovery capabilities for the network.
+> * [ ] To inform and guide design choices, ensuring the network aligns with organizational goals and constraints.
+> * [ ] To create a detailed project timeline.
 
 #### Quiz 2.
 
 > [!important]
-> **You are designing a new network infrastructure in Google Cloud to support a global e-commerce application. Which two of the following are key considerations you should prioritize in your network design?**
+> **Which of the following practices is LEAST likely to improve network security in Google Cloud?**
 >
-> - [ ] To create a detailed project timeline.
-> - [ ] To inform and guide design choices, ensuring the network aligns with organizational goals and constraints.
-> - [ ] To ensure high availability and disaster recovery capabilities for the network.
-> - [ ] To justify the need for a new network.
+> * [ ] Assigning public IP addresses to all virtual machines in a VPC.
+> * [ ] Implementing network firewall rules to control traffic.
+> * [ ] Enabling VPC flow logs to monitor network traffic.
+> * [ ] Regularly reviewing and updating IAM (Identity and Access Management) permissions.
 
 ## Network Topologies
 
@@ -92,19 +92,19 @@ This module covers the major network topologies used in Google Cloud network des
 
 ### Video - [Module Introduction](https://www.cloudskillsboost.google/course_templates/1144/video/521669)
 
-- [YouTube: Module Introduction](https://www.youtube.com/watch?v=yfUKr2BQPA8)
+* [YouTube: Module Introduction](https://www.youtube.com/watch?v=yfUKr2BQPA8)
 
 Welcome to the Network Topologies module of the Networking in Google Cloud: Network Architecture course. This module introduces you to network topologies. We'll start with the hub and spoke model, exploring its structure and applications. Additionally, we'll cover alternative topologies like mesh, mirrored, and gated. Through a hands-on lab, you will explore how to implement a hub and spoke using Network Connectivity Center.
 
 ### Video - [Hub-and-spoke topology](https://www.cloudskillsboost.google/course_templates/1144/video/521670)
 
-- [YouTube: Hub-and-spoke topology](https://www.youtube.com/watch?v=Ug9LJbYbIbY)
+* [YouTube: Hub-and-spoke topology](https://www.youtube.com/watch?v=Ug9LJbYbIbY)
 
 Let’s start with a use case scenario. Nur, a network engineer at Cymbal Corporation, is tasked with managing the company's expanding network infrastructure, which encompasses a growing number of remote offices and cloud-based applications. To ensure centralized control and efficient data management, Nur wants a simple network topology that can be centrally managed with simple network administration. Nur decides to use a hub-and-spoke topology. The hub-and-spoke topology is shaped like a star, with the central hub at the center and all the other devices connected to it like spokes on a wheel. Instead of managing each device individually, Nur can configure and monitor everything from the hub, saving Nur time and effort. This topology is a common approach for managing network traffic in Google Cloud environments. One Virtual Private Cloud (VPC) network (represented by the hub) acts as a transit point for the other VPC networks (represented by the spokes). Additionally, spoke devices can be diverse, including remote offices, cloud instances, and on-premises data centers. A hub-and-spoke topology features: A centralized point of control: Nur can easily configure, monitor, and troubleshoot the entire network from the central hub. This eliminates the need to log in to individual devices for management tasks. Simplified network administration. There is no need for complex routing configurations between individual devices. The hub automatically routes traffic between spokes based on predefined rules. Scalability: The hub-and-spoke topology can easily accommodate future network growth by adding more spokes. New devices can be quickly connected to the hub without impacting existing network configurations. Improved security: Centralized security policies can be enforced at the hub, enhancing overall network security. This simplifies security management and ensures consistent protection across all connected devices. A hub-and-spoke network topology is a versatile approach for managing network traffic, but there are different ways to implement it. Here are three common methods: VPC Network Peering allows direct connections between VPCs, enabling efficient communication with low latency. Cloud VPN creates a secure tunnel over the public internet to connect VPCs across regions or even to on-premises networks. While offering flexibility, Cloud VPN may introduce higher latency and require additional configuration compared to VPC peering. Network Connectivity Center (NCC) simplifies building and managing complex network topologies, including hub-and-spoke. It provides centralized configuration, automated provisioning, and integrated security features. However, Network Connectivity Center may come with additional costs compared to basic VPC peering or Cloud VPN setups. In this course, we will cover the NCC implementation. Network Connectivity Center simplifies network management by supporting two types of spokes. VPC spokes connect Virtual Private Clouds, while hybrid spokes connect on-premises networks, using HA VPN tunnels or Cloud Interconnect VLAN attachments with router appliance VMs. You can configure a router appliance instance by installing an image on a Compute Engine VM. You can use an image provided by a supported Network Connectivity Center partner. You can also use a custom image, such as an image that you created. You can then take advantage of logic specific to the router appliance instance to control connectivity between the spoke and the hub. Before you create the hub-and-spoke topology using Network Connectivity Center, here are additional considerations to keep in mind: ensure that IP address spaces between the hub and spoke VPC networks don’t overlap. IPv6 addressing isn’t supported. Privately-used public IP addresses are not supported either. If you need to use either of these two features, consider using VPC Network Peering to create a hub-and-spoke topology. You can’t attach hybrid spokes and VPC spokes to the same hub. For more information, refer to the Considerations section of the Network Connectivity Center Overview in the Google Cloud documentation.
 
 ### Video - [Lab Intro: Implement a Hub-and-Spoke Network Using Network Connectivity Center](https://www.cloudskillsboost.google/course_templates/1144/video/521671)
 
-- [YouTube: Lab Intro: Implement a Hub-and-Spoke Network Using Network Connectivity Center](https://www.youtube.com/watch?v=IM8SH6V0cM0)
+* [YouTube: Lab Intro: Implement a Hub-and-Spoke Network Using Network Connectivity Center](https://www.youtube.com/watch?v=IM8SH6V0cM0)
 
 Next, let’s try out what you’ve learned. In this lab, you design and implement a classic hub-and-spoke network topology. Your pre-configured environment includes three VPC networks—a central hub and two branches (spoke1 and spoke2). Create virtual machines (VMs) on each network to test connectivity. Begin by verifying connectivity between the VMs within and across VPCs. Then, use NCC to implement a hub and spoke. Retest connectivity to confirm that your hub-and-spoke architecture is fully functional.
 
@@ -112,23 +112,23 @@ Next, let’s try out what you’ve learned. In this lab, you design and impleme
 
 In this lab, you create a hub and spoke topology using NCC. In this hands-on exercise, you'll design and implement a classic hub-and-spoke network topology. Your pre-configured environment includes three VPC networks—a central hub and two branches (spoke1 and spoke2).
 
-- [ ] [Implementing a Hub and Spoke using NCC](../labs/Implementing-a-Hub-and-Spoke-using-NCC.md)
+* [ ] [Implementing a Hub and Spoke using NCC](../labs/Implementing-a-Hub-and-Spoke-using-NCC.md)
 
 ### Video - [Other topologies](https://www.cloudskillsboost.google/course_templates/1144/video/521673)
 
-- [YouTube: Other topologies](https://www.youtube.com/watch?v=oJfYhnfiid8)
+* [YouTube: Other topologies](https://www.youtube.com/watch?v=oJfYhnfiid8)
 
 We covered hub and spoke in the previous section. Now, let's explore other topologies. In a mesh topology, devices or network nodes have multiple interconnected links. This contrasts with a hub-and-spoke topology, where devices connect through a central point, that is, the hub. There are two main types of mesh topology. In a full mesh, every node is connected to every other node. This topology can be useful for GKE Enterprise applications, where the microservices are all internally connected. In a partial mesh, only select, strategic nodes are connected. For example, for some failover scenarios, a partial mesh is helpful. You create a partial mesh between VPCs in different regions or zones. You can configure routing rules that direct traffic to the active region or zone normally but also configure automatic failover. If a primary region experiences issues, automatic failover to a nearby region or zone using the mesh links keeps your workloads working normally from a client perspective. Let’s consider some of the benefits of a mesh topology. Mesh topologies provide high availability and resilience. The multiple paths between nodes in a mesh network ensure that if one connection fails, traffic can be rerouted. This makes mesh networks ideal for mission-critical applications that require high uptime. The Google Cloud infrastructure is designed for scalability. Mesh topologies can easily expand with your cloud environment as you add new nodes or Google Cloud regions. A mesh topology can offer the potential for improved performance. The multiple pathways in a mesh can facilitate better load balancing and reduce network congestion, potentially leading to improved application performance. The lack of a single central point of failure also aids in security. By distributing traffic across multiple paths, mesh topology can make it harder for attackers to compromise the entire network. In Google Cloud, mirrored topology means creating a replica of your network infrastructure in another environment or region. Let’s consider some use cases For disaster recovery, an identical standby environment is ready to take over in case of failure. For testing and development, an isolated but otherwise identical configuration as a production environment is available for testing and experimentation. Here are two examples shown. Any actions taken in the testing and development environment will have no effect on production. Finally, by distributing traffic across regions, your workloads can take advantage of having an identical environment available nearby, resulting in improved workload performance. Shown here is an example of a type of gating topology. Gating topologies are essential for managing and securing network traffic flows in cloud environments, particularly in hybrid and multi-cloud scenarios. By implementing these gating mechanisms, you gain fine-grained control over data movement between your cloud and external resources, ensuring security and compliance. There are three types of topologies that restrict access: There are three types of topologies that restrict access: Gated egress: Controls outbound traffic from the cloud. Gated ingress: Controls inbound traffic to the cloud. This is the gating topology type shown here. Gated ingress and egress: Controls inbound and outbound traffic between hybrid and multi-cloud environments. More information about each of these topologies can be found in Gated patterns, in the Google Cloud documentation.
 
 ### Video - [Getting topology data](https://www.cloudskillsboost.google/course_templates/1144/video/521674)
 
-- [YouTube: Getting topology data](https://www.youtube.com/watch?v=reORI4k010E)
+* [YouTube: Getting topology data](https://www.youtube.com/watch?v=reORI4k010E)
 
 So far you have learned about various different topologies. If you are wondering if there is a way to visualize the topology of the network, the answer is yes. Network Topology does exactly that. Let’s learn about getting topology data in this section. Network Topology is a visualization tool that shows the topology of the network infrastructure. It serves as a map, illustrating the complex relationships between various components and how they interact. Network Topology offers an "infrastructure view" showcasing elements like VPC networks, hybrid connectivity, and connections to Google-managed services. It goes beyond static configurations by incorporating real-time operational data, revealing traffic paths, throughput, and the current state of connections between various workloads. By presenting this information in a graph format, where nodes and lines represent entities and connections, Network Topology simplifies the understanding of complex networking relationships. This visual representation aids in identifying bottlenecks, optimizing traffic flows, and troubleshooting network issues more effectively. Network Topology actively gathers real-time telemetry and configuration data from Google's infrastructure to create a visual representation of your network resources. It captures various elements like configuration details, performance metrics, and logs to deduce the relationships between resources within a single project or across multiple projects. By consolidating this information, Network Topology generates a comprehensive graph that accurately depicts your entire network deployment. Network Topology maintains a historical record spanning six weeks, offering valuable insights into past network configurations and interactions. This history is organized into hourly snapshots, commencing at the beginning of each hour. Each snapshot captures the fundamental entities and their communication patterns within that specific hour. Even if resources, like instances, are created and deleted within an hour, they are still documented in the snapshot for that duration. This ensures a comprehensive historical representation of your network's evolution. At the lowest level of each hierarchy are base entities, which represent individual resources capable of direct network communication, such as VM instances or GKE pods. When dealing with complex networks containing numerous base entities, a flat view can be overwhelming. To address this, Network Topology aggregates base entities into higher-level hierarchical entities that can be expanded or collapsed. Initially, the graph displays all base entities aggregated into their top-level hierarchy. For example, VM instances are aggregated into instance groups, then into zones. Meanwhile, GKE pods are aggregated into workloads, then namespaces, and finally into clusters. Each entity, whether base or hierarchical, is represented as a circular node in the graph, and each base entity has its own unique hierarchy. For example, load balancers are organized differently than VM instances within the graph. To simplify the view, Network Topology aggregates related resources into hierarchical entities, with each resource type having its own distinct hierarchy. Network Topology visually represents traffic between entities as lines, connecting entities if at least one side is sending traffic. It displays connections across various hierarchy levels, as long as the base entities communicate. For instance, a connection between two regions is shown if at least one VM instance in each region is communicating. The tool supports various traffic protocols (TCP, UDP, ICMP, ICMPV6, ESP, GRE) for specific paths, visualizing traffic within and across VPC networks, between Google Cloud and the internet, and to/from VPN gateways, Interconnect connections, and router appliances. In the GKE view, Network Topology shows traffic within a cluster (between pods on different nodes), and between pods on the same node if intranode visibility is enabled, and between clusters and external IPs. Let’s explore a use case. Charlie, a network administrator, is responsible for a network that includes several load-balanced applications. Charlie has been alerted to a latency issue causing the organization's mobile application to intermittently slow down and time out. Multiple users are experiencing this problem, and Charlie has confirmed that no recent application deployments have occurred. The issue is likely due to a change in the network environment rather than a problem with the application itself. Charlie needs to use the Network Topology tool to get a comprehensive visibility into the cloud network infrastructure. They do this because the graphical representation of the network topologies enables the engineers to quickly understand the connections between resources, identify potential bottlenecks, and to troubleshoot network issues efficiently. Beginning with the external clients in the Americas, Charlie selects the traffic metrics between that region and the shopping-site-lb load balancer. Network Topology then displays charts in the details pane, providing information such as ingress and egress traffic between the selected entities, along with key metrics like queries per second (QPS) and HTTP request latency. Upon reviewing the request latency chart, Charlie notices that the 50th, 95th, and 99th percentile values are all higher than expected. To gain a broader perspective on this latency issue, Charlie extends the time series charts to cover the past 6 weeks for further analysis. After expanding the timeframe, Charlie observes a significant jump in latency that occurred approximately two hours ago, coinciding with the initial reports of the issue. This confirms their suspicion that the increased latency is related to the load balancer. To investigate further, Charlie navigates to the Load balancing page in the Google Cloud console. Their analysis reveals that one of the instances in the load balancer's backend service was taking longer than usual to respond. By removing this problematic instance from service, Charlie successfully resolved the latency issue and restored normal application performance.
 
 ### Video - [Best practices](https://www.cloudskillsboost.google/course_templates/1144/video/521675)
 
-- [YouTube: Best practices](https://www.youtube.com/watch?v=dTZHruRryD8)
+* [YouTube: Best practices](https://www.youtube.com/watch?v=dTZHruRryD8)
 
 Now that you’ve learned how to gather topology data, let's next explore some best practices to consider when exploring the right connectivity options. Selecting the right network connectivity solution for hybrid or multicloud environments requires careful consideration of several key factors. These include ensuring the solution meets the required service-level agreements (SLAs) for performance and uptime. For organizations aiming to expand a hub-and-spoke network architecture across multiple VPC networks, establishing centralized hybrid connectivity within a dedicated VPC network, then peering with other projects using custom advertised routes, can be an effective strategy. This approach enables the seamless sharing of both static and dynamically learned routes with peered VPC networks, fostering a centralized configuration that simplifies management and facilitates scalability in your VPC network design. To enhance application accessibility and management, it's recommended to expose applications through APIs using an API gateway or load balancer. A comprehensive API platform, such as Apigee, can be utilized to simplify this process. This type of platform acts as an intermediary for your backend service APIs, providing features like enhanced security, rate limiting, quotas, and analytics for better control and monitoring of your API usage. When leveraging Cloud Load Balancing, utilize the application capacity optimization features whenever possible. These capabilities can be valuable in mitigating capacity challenges that often arise in globally distributed applications, ensuring smoother operation and better user experiences. When deciding where DNS resolution should be performed in a hybrid setup, it is recommended to use two authoritative DNS systems for your private Google Cloud environment and for your on-premises resources that are hosted by existing DNS servers in your on-premises environment. Before we wrap up, here is a quick preview of some prompts you can use with Gemini related to network topology. You can use a prompt such as “Describe a scenario where a  would be the best choice.” Or “What are the advantages and disadvantages of a mesh topology.”
 
@@ -137,26 +137,26 @@ Now that you’ve learned how to gather topology data, let's next explore some b
 #### Quiz 1.
 
 > [!important]
-> **You are designing a Google Cloud network for a large financial services company with strict security requirements. The network needs to isolate sensitive customer data from other resources and limit communication between specific network segments. Which of the following network topologies would be most suitable for this scenario?**
+> **You are migrating a large ecommerce company's existing on-premises data center to Google Cloud. The on-premises network consists of geographically dispersed regional offices, each with its own network segment requiring secure isolation. However, central management and communication between all regional offices are critical for business operations. Which network topology would most effectively address these requirements in Google Cloud?**
 >
-> - [ ] Hub-and-spoke
-> - [ ] Mirrored
-> - [ ] Mesh
-> - [ ] Gated ingress and egress
+> * [ ] Gated ingress and egress
+> * [ ] Mirrored
+> * [ ] Mesh
+> * [ ] Hub-and-spoke
 
 #### Quiz 2.
 
 > [!important]
-> **You are migrating a large ecommerce company's existing on-premises data center to Google Cloud. The on-premises network consists of geographically dispersed regional offices, each with its own network segment requiring secure isolation. However, central management and communication between all regional offices are critical for business operations. Which network topology would most effectively address these requirements in Google Cloud?**
+> **You are designing a Google Cloud network for a large financial services company with strict security requirements. The network needs to isolate sensitive customer data from other resources and limit communication between specific network segments. Which of the following network topologies would be most suitable for this scenario?**
 >
-> - [ ] Mesh
-> - [ ] Mirrored
-> - [ ] Gated ingress and egress
-> - [ ] Hub-and-spoke
+> * [ ] Mirrored
+> * [ ] Gated ingress and egress
+> * [ ] Hub-and-spoke
+> * [ ] Mesh
 
 ### Video - [Debrief](https://www.cloudskillsboost.google/course_templates/1144/video/521677)
 
-- [YouTube: Debrief](https://www.youtube.com/watch?v=H44OwBguHSA)
+* [YouTube: Debrief](https://www.youtube.com/watch?v=H44OwBguHSA)
 
 In this module, you learned all about network topologies. We started with the popular hub and spoke model, exploring its structure and applications. Additionally, we covered alternative topologies like mesh, mirrored, and gated. Through a hands-on lab, you explored how to implement a hub and spoke using Network Connectivity Center.
 
@@ -168,4 +168,4 @@ Student PDF links to all modules
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

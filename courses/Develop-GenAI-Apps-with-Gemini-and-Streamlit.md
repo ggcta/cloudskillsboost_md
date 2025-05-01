@@ -1,13 +1,13 @@
 ---
 id: 978
 name: 'Develop GenAI Apps with Gemini and Streamlit'
-datePublished: 2024-06-20
-topics:
-- Machine Learning
-- API
-- Gemini
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/978
+date_published: 2024-06-20
+topics:
+  - Vertex Gemini API
+  - Application Deployment
+  - Machine Learning
 ---
 
 # [Develop GenAI Apps with Gemini and Streamlit](https://www.cloudskillsboost.google/course_templates/978)
@@ -20,10 +20,10 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 **Objectives:**
 
-- Test Gemini prompt with cURL.
-- Leverage Gemini Pro for advanced text generation tasks.
-- Integrate Vertex AI Gemini API into a Streamlit application.
-- Deploy a Streamlit Application with Cloud Run.
+* Test Gemini prompt with cURL.
+* Leverage Gemini Pro for advanced text generation tasks.
+* Integrate Vertex AI Gemini API into a Streamlit application.
+* Deploy a Streamlit Application with Cloud Run.
 
 ## Develop GenAI Apps with Gemini and Streamlit
 
@@ -31,32 +31,32 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 In this lab, you will learn how to use the Gemini API in Vertex AI with cURL commands to interact with the Gemini Flash model.
 
-- [ ] [Getting Started with the Gemini API in Vertex AI with cURL](../labs/Getting-Started-with-the-Gemini-API-in-Vertex-AI-with-cURL.md)
+* [ ] [Getting Started with the Gemini API in Vertex AI with cURL](../labs/Getting-Started-with-the-Gemini-API-in-Vertex-AI-with-cURL.md)
 
 ### Lab - [Introduction to Function Calling with Gemini](https://www.cloudskillsboost.google/course_templates/978/labs/488165)
 
 In this lab, you learn how to use the Vertex AI Gemini API with the Vertex AI SDK for Python to make function calls via the Gemini Pro (gemini-pro) model.
 
-- [ ] [Introduction to Function Calling with Gemini](../labs/Introduction-to-Function-Calling-with-Gemini.md)
+* [ ] [Introduction to Function Calling with Gemini](../labs/Introduction-to-Function-Calling-with-Gemini.md)
 
 ### Lab - [Getting Started with the Gemini API in Vertex AI](https://www.cloudskillsboost.google/course_templates/978/labs/488166)
 
 In this lab, you will learn how to use the Gemini API in Vertex AI.
 
-- [ ] [Getting Started with the Gemini API in Vertex AI](../labs/Getting-Started-with-the-Gemini-API-in-Vertex-AI.md)
+* [ ] [Getting Started with the Gemini API in Vertex AI](../labs/Getting-Started-with-the-Gemini-API-in-Vertex-AI.md)
 
 ### Lab - [Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI](https://www.cloudskillsboost.google/course_templates/978/labs/488167)
 
 In this lab, you will learn how to deploy a Streamlit app integrated with Gemini Pro on Cloud Run. 
 
-- [ ] [Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI](../labs/Utilize-the-Streamlit-Framework-with-Cloud-Run-and-the-Gemini-API-in-Vertex-AI.md)
+* [ ] [Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI](../labs/Utilize-the-Streamlit-Framework-with-Cloud-Run-and-the-Gemini-API-in-Vertex-AI.md)
 
 ### Lab - [Develop GenAI Apps with Gemini and Streamlit: Challenge Lab](https://www.cloudskillsboost.google/course_templates/978/labs/488168)
 
 In this challenge lab, you will act as an Application Developer and/or DevOps Engineer for a Healthy Living oriented company. The company hires you to build, test and deploy a proof of concept for an AI-based chef application built on the Gemini pro model, Streamlit framework and Cloud Run.
 
-- [ ] [Develop GenAI Apps with Gemini and Streamlit: Challenge Lab](../labs/Develop-GenAI-Apps-with-Gemini-and-Streamlit-Challenge-Lab.md)
+* [ ] [Develop GenAI Apps with Gemini and Streamlit: Challenge Lab](../labs/Develop-GenAI-Apps-with-Gemini-and-Streamlit-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

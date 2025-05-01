@@ -1,11 +1,11 @@
 ---
 id: 1097
 name: 'Website Modernization with Generative AI on Google Cloud'
-datePublished: 2025-04-15
-topics:
-- Search
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/1097
+date_published: 2025-04-15
+topics:
+  - Search
 ---
 
 # [Website Modernization with Generative AI on Google Cloud](https://www.cloudskillsboost.google/course_templates/1097)
@@ -16,9 +16,9 @@ Enhance the navigation experience of your website by using generative AI to prov
 
 **Objectives:**
 
-- Enhance the search and navigation experience of your website by incorporating generative AI features using Vertex AI.
-- Edit website content with generative AI tools to enhance text and images.
-- Review the tools to analyze and improve website content.
+* Enhance the search and navigation experience of your website by incorporating generative AI features using Vertex AI.
+* Edit website content with generative AI tools to enhance text and images.
+* Review the tools to analyze and improve website content.
 
 ## Website Modernization
 
@@ -26,60 +26,60 @@ In this module, you'll learn about website modernization, and how you can implem
 
 ### Link - [What's in It for Me?](https://www.cloudskillsboost.google/course_templates/1097/documents/530393)
 
-- [What's in It for Me?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/-uXlObizQQy_HEYZSB3ewX7ozS1u5UN7)
+* [What's in It for Me?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/-uXlObizQQy_HEYZSB3ewX7ozS1u5UN7)
 
 ### Link - [What is Website Modernization?](https://www.cloudskillsboost.google/course_templates/1097/documents/530394)
 
-- [What is Website Modernization?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/JNZI5G6wam4gC6MzD1flMQ1yEUlPoP-0)
+* [What is Website Modernization?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/JNZI5G6wam4gC6MzD1flMQ1yEUlPoP-0)
 
 ### Link - [Areas of Website Transformation with Gen AI](https://www.cloudskillsboost.google/course_templates/1097/documents/530395)
 
-- [Areas of Website Transformation with Gen AI](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/xGwfA3fsAbtwEHQoBnb8pjznrQM2LubR)
+* [Areas of Website Transformation with Gen AI](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/xGwfA3fsAbtwEHQoBnb8pjznrQM2LubR)
 
 ### Link - [Tools to Analyze Website Content and Performance](https://www.cloudskillsboost.google/course_templates/1097/documents/530396)
 
-- [Tools to Analyze Website Content and Performance](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4KT7aZjIlQuu6llcZDZ2H_-B1MOnubA-)
+* [Tools to Analyze Website Content and Performance](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4KT7aZjIlQuu6llcZDZ2H_-B1MOnubA-)
 
 ### Link - [What Did I Walk Away With?](https://www.cloudskillsboost.google/course_templates/1097/documents/530397)
 
-- [What Did I Walk Away With?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/Nr5uJHp4cjUf-K9g_bsN2fFvkuYQknIy)
+* [What Did I Walk Away With?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/Nr5uJHp4cjUf-K9g_bsN2fFvkuYQknIy)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/1097/quizzes/530398)
 
 #### Quiz 1.
 
 > [!important]
-> **When creating, managing, and consuming website content, which persona should you consider? Select four.**
+> **What are some areas of a website consumer journey where generative AI can play a role? Select four.**
 >
-> - [ ] End user
-> - [ ] Content creator
-> - [ ] Database administrator
-> - [ ] Operations manager
-> - [ ] Content performance analyst
-> - [ ] Content manager
+> * [ ] Engagement
+> * [ ] Website maintenance
+> * [ ] Conversion
+> * [ ] Website development
+> * [ ] Retention
+> * [ ] Product discovery
 
 #### Quiz 2.
 
 > [!important]
 > **What are the three areas where you can embed generative AI to modernize a website?**
 >
-> - [ ] Report generation
-> - [ ] Enhance website navigation
-> - [ ] Implement authentication
-> - [ ] Streamline content generation
-> - [ ] Improve self-service
+> * [ ] Improve self-service
+> * [ ] Streamline content generation
+> * [ ] Implement authentication
+> * [ ] Report generation
+> * [ ] Enhance website navigation
 
 #### Quiz 3.
 
 > [!important]
-> **What are some areas of a website consumer journey where generative AI can play a role? Select four.**
+> **When creating, managing, and consuming website content, which persona should you consider? Select four.**
 >
-> - [ ] Website development
-> - [ ] Conversion
-> - [ ] Product discovery
-> - [ ] Engagement
-> - [ ] Retention
-> - [ ] Website maintenance
+> * [ ] Database administrator
+> * [ ] Content manager
+> * [ ] End user
+> * [ ] Content performance analyst
+> * [ ] Content creator
+> * [ ] Operations manager
 
 ## Transform the search and navigation experience of your website
 
@@ -87,74 +87,74 @@ In this module, you learn how to transform the user experience of your website t
 
 ### Link - [What's in It for Me?](https://www.cloudskillsboost.google/course_templates/1097/documents/530399)
 
-- [What's in It for Me?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/yuPxasC9bzeGk55hvq9JKxpKUaxfJA3a)
+* [What's in It for Me?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/yuPxasC9bzeGk55hvq9JKxpKUaxfJA3a)
 
 ### Link - [Vertex AI Search](https://www.cloudskillsboost.google/course_templates/1097/documents/530400)
 
-- [Vertex AI Search](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4ZH2LF8nq3C1Um19AKtOFfNqBvb530d0)
+* [Vertex AI Search](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4ZH2LF8nq3C1Um19AKtOFfNqBvb530d0)
 
 ### Link - [Implement Vertex AI Search](https://www.cloudskillsboost.google/course_templates/1097/documents/530401)
 
-- [Implement Vertex AI Search](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/c2yiK3fCdGOBRs848tzqTDmA8x8fwP8f)
+* [Implement Vertex AI Search](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/c2yiK3fCdGOBRs848tzqTDmA8x8fwP8f)
 
 ### Link - [Enhance Website Navigation with Vertex AI](https://www.cloudskillsboost.google/course_templates/1097/documents/530402)
 
-- [Enhance Website Navigation with Vertex AI](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/QNaAjQSfnb3woKS7u4wkWUcYMwFt87GO)
+* [Enhance Website Navigation with Vertex AI](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/QNaAjQSfnb3woKS7u4wkWUcYMwFt87GO)
 
 ### Link - [What Did I Walk Away With?](https://www.cloudskillsboost.google/course_templates/1097/documents/530403)
 
-- [What Did I Walk Away With?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4LSDnkINIiUZ5g6ZeBqZbvxTGzJFVo_8)
+* [What Did I Walk Away With?](https://storage.googleapis.com/cloud-training/cls-html5-courses/T-WEBMOD-B/v1.1.1/content/index.html#/lessons/4LSDnkINIiUZ5g6ZeBqZbvxTGzJFVo_8)
 
 ### Lab - [Modernize your Website with Generative AI on Google Cloud](https://www.cloudskillsboost.google/course_templates/1097/labs/530404)
 
 In this lab, you use generative AI on Google Cloud to modernize a website with search and recommendation capabilities.
 
-- [ ] [Modernize your Website with Generative AI on Google Cloud](../labs/Modernize-your-Website-with-Generative-AI-on-Google-Cloud.md)
+* [ ] [Modernize your Website with Generative AI on Google Cloud](../labs/Modernize-your-Website-with-Generative-AI-on-Google-Cloud.md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/1097/quizzes/530405)
 
 #### Quiz 1.
 
 > [!important]
-> **What are the correct relationships between search, recommendation apps, and data stores? Select three.**
+> **Which statements about data stores used for search and recommendation apps are correct? Select three.**
 >
-> - [ ] Media apps have a many-to-one relationship with data stores.
-> - [ ] Generic search apps and data stores have a many-to-many relationship.
-> - [ ] Generic recommendation apps and data stores have a many-to-many relationship.
-> - [ ] Healthcare search apps have a many-to-one relationship with data stores.
+> * [ ] You can use website URLs to create a data store with website data.
+> * [ ] A given data store has one or more data records called documents.
+> * [ ] Data stores with structured data can only be imported from BigQuery tables.
+> * [ ] A given data store can contain different types of data or documents.
+> * [ ] You can use healthcare FIHR data from the Cloud Healthcare API.
 
 #### Quiz 2.
 
 > [!important]
 > **What are the three types of search apps that you can create in Vertex AI Agent Builder?**
 >
-> - [ ] Generic search apps
-> - [ ] Website search apps
-> - [ ] Healthcare search apps
-> - [ ] Media search apps
-> - [ ] Generative AI search apps
+> * [ ] Generative AI search apps
+> * [ ] Website search apps
+> * [ ] Media search apps
+> * [ ] Generic search apps
+> * [ ] Healthcare search apps
 
 #### Quiz 3.
 
 > [!important]
-> **Which statements about data stores used for search and recommendation apps are correct? Select three.**
+> **To create search apps in Vertex AI Agent Builder, what are the different types of data that can be used? Select four.**
 >
-> - [ ] A given data store has one or more data records called documents.
-> - [ ] A given data store can contain different types of data or documents.
-> - [ ] You can use website URLs to create a data store with website data.
-> - [ ] You can use healthcare FIHR data from the Cloud Healthcare API.
-> - [ ] Data stores with structured data can only be imported from BigQuery tables.
+> * [ ] Pub/Sub messages
+> * [ ] Healthcare FHIR data
+> * [ ] Structured data
+> * [ ] Unstructured data
+> * [ ] Data from website URLs
 
 #### Quiz 4.
 
 > [!important]
-> **To create search apps in Vertex AI Agent Builder, what are the different types of data that can be used? Select four.**
+> **What are the correct relationships between search, recommendation apps, and data stores? Select three.**
 >
-> - [ ] Healthcare FHIR data
-> - [ ] Unstructured data
-> - [ ] Pub/Sub messages
-> - [ ] Data from website URLs
-> - [ ] Structured data
+> * [ ] Healthcare search apps have a many-to-one relationship with data stores.
+> * [ ] Generic search apps and data stores have a many-to-many relationship.
+> * [ ] Generic recommendation apps and data stores have a many-to-many relationship.
+> * [ ] Media apps have a many-to-one relationship with data stores.
 
 ## Course Resources
 
@@ -164,4 +164,4 @@ Student PDF links to all modules
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

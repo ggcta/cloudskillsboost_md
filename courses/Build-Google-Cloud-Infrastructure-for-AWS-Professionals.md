@@ -1,13 +1,13 @@
 ---
 id: 687
 name: 'Build Google Cloud Infrastructure for AWS Professionals'
-datePublished: 2025-01-14
-topics:
-- Cloud Infrastructure
-- Google Cloud Services
-- Cloud Computing
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/687
+date_published: 2025-01-14
+topics:
+  - Cloud Computing
+  - IAM
+  - Security
 ---
 
 # [Build Google Cloud Infrastructure for AWS Professionals](https://www.cloudskillsboost.google/course_templates/687)
@@ -24,26 +24,26 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 In this lab, you use the gcloud CLI tool to set up and configure command features of Cloud Identity and Access Management.
 
-- [ ] [Configuring IAM Permissions with gcloud - AWS](../labs/Configuring-IAM-Permissions-with-gcloud-AWS.md)
+* [ ] [Configuring IAM Permissions with gcloud - AWS](../labs/Configuring-IAM-Permissions-with-gcloud-AWS.md)
 
 ### Lab - [Orchestrating the Cloud with Kubernetes (AWS)](https://www.cloudskillsboost.google/course_templates/687/labs/520651)
 
 In this lab you will learn how to provision a complete Kubernetes cluster using Google Kubernetes Engine; deploy and manage Docker containers using kubectl; and break an application into microservices using Kubernetes Deployments and Services.
 
-- [ ] [Orchestrating the Cloud with Kubernetes (AWS)](../labs/Orchestrating-the-Cloud-with-Kubernetes-(AWS).md)
+* [ ] [Orchestrating the Cloud with Kubernetes (AWS)](../labs/Orchestrating-the-Cloud-with-Kubernetes-(AWS).md)
 
 ### Lab - [Hosting a Web App on Google Cloud Using Compute Engine (AWS)](https://www.cloudskillsboost.google/course_templates/687/labs/520652)
 
 In this lab you'll deploy and scale a Web App on Google Compute Engine.
 
-- [ ] [Hosting a Web App on Google Cloud Using Compute Engine (AWS)](../labs/Hosting-a-Web-App-on-Google-Cloud-Using-Compute-Engine-(AWS).md)
+* [ ] [Hosting a Web App on Google Cloud Using Compute Engine (AWS)](../labs/Hosting-a-Web-App-on-Google-Cloud-Using-Compute-Engine-(AWS).md)
 
 ### Lab - [Build Google Cloud Infrastructure for AWS Professionals: Challenge Lab](https://www.cloudskillsboost.google/course_templates/687/labs/520653)
 
 This challenge lab tests your skills and knowledge from the labs in the Build Google Cloud Infrastructure for AWS Professionals course. You should be familiar with the content of the labs before attempting this lab.
 
-- [ ] [Build Google Cloud Infrastructure for AWS Professionals: Challenge Lab](../labs/Build-Google-Cloud-Infrastructure-for-AWS-Professionals-Challenge-Lab.md)
+* [ ] [Build Google Cloud Infrastructure for AWS Professionals: Challenge Lab](../labs/Build-Google-Cloud-Infrastructure-for-AWS-Professionals-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

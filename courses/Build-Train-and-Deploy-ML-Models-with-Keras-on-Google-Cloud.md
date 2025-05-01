@@ -1,13 +1,13 @@
 ---
 id: 12
 name: 'Build, Train and Deploy ML Models with Keras on Google Cloud'
-datePublished: 2024-10-22
-topics:
-- Data Pipelines
-- Machine Learning
-- Machine Learning Model Training
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/12
+date_published: 2024-10-22
+topics:
+  - Machine Learning
+  - TensorFlow
+  - Machine Learning Model Training
 ---
 
 # [Build, Train and Deploy ML Models with Keras on Google Cloud](https://www.cloudskillsboost.google/course_templates/12)
@@ -18,10 +18,10 @@ This course covers building ML models with TensorFlow and Keras, improving the a
 
 **Objectives:**
 
-- Design and build a TensorFlow input data pipeline.
-- Use the tf.data library to manipulate data in large datasets.
-- Use the Keras Sequential and Functional APIs for simple and advanced model creation.
-- Train, deploy, and productionalize ML models at scale with Vertex AI.
+* Design and build a TensorFlow input data pipeline.
+* Use the tf.data library to manipulate data in large datasets.
+* Use the Keras Sequential and Functional APIs for simple and advanced model creation.
+* Train, deploy, and productionalize ML models at scale with Vertex AI.
 
 ## Introduction to the Course
 
@@ -29,7 +29,7 @@ This module provides an overview of the course and its objectives.
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/12/video/512755)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=lEqeR9OJHC4)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=lEqeR9OJHC4)
 
 Welcome to Build, Train, and Deploy ML Models with Keras on Google Cloud. This course covers building ML models with TensorFlow and Keras, improving the accuracy of ML models, and writing ML models for scaled use. In this course, you learn to design and build a TensorFlow input data pipeline. Use the tf.data library to manipulate data in large datasets. Use the Keras Sequential and Functional APIs for simple and advanced model creation. And train, deploy, and productionalize ML models at scale with Vertex AI.
 
@@ -39,25 +39,25 @@ This module introduces the TensorFlow framework and previews its main components
 
 ### Video - [Introduction to the TensorFlow ecosystem](https://www.cloudskillsboost.google/course_templates/12/video/512756)
 
-- [YouTube: Introduction to the TensorFlow ecosystem](https://www.youtube.com/watch?v=Pz8WGSUrcuI)
+* [YouTube: Introduction to the TensorFlow ecosystem](https://www.youtube.com/watch?v=Pz8WGSUrcuI)
 
 PERSON: Welcome to the Introduction to the TensorFlow Ecosystem module. In this module, you'll learn about the TensorFlow API hierarchy, the building blocks of tensors and operations, and learn how to write low-level TensorFlow programs.
 
 ### Video - [Introduction to Tensorflow](https://www.cloudskillsboost.google/course_templates/12/video/512757)
 
-- [YouTube: Introduction to Tensorflow](https://www.youtube.com/watch?v=nykQEHp-fYg)
+* [YouTube: Introduction to Tensorflow](https://www.youtube.com/watch?v=nykQEHp-fYg)
 
 Person: TensorFlow is an open-source, high-performance library for numerical computation, any numerical computation, not just for machine learning. In fact, people have used TensorFlow for all kinds of GPU computing. For example, did you know you could use TensorFlow to solve partial differential equations which is super useful in physics fields, like fluid dynamics? TensorFlow as a numeric programming library is appealing because you can write your own computation code in a high-level language like Python and have it be executed in a very fast way at run time. The way TensorFlow works is that you create a directed graph, or a DAG, to represent the computation that you want to do. In the schematic that you see here, the nodes, like those light green circles, represent mathematical operations, things like adding, subtracting and multiplying. You'll see some more complex math functions, like softmax and matrix multiplication, which are great for machine learning. Connecting all those nodes together are the edges, which are the input and the output of those mathematical operations. The edges represent arrays of data flowing towards the output. Starting from the bottom are the arrays of raw input data. Sometimes we'll need to reshape your data before fitting it into the layers of a neural network, like the ReLU layer you see here. More on ReLU later. Once inside that ReLU layer, the weight is then multiplied across that array of data in a matmul, or matrix multiplication operation. And a bias term is added, and the data flows through to the activation function. All right, I know what you're thinking. ReLU? Activation functions? Don't worry. Let's start with the basics. I kept mentioning that array of data that's flowing around. What exactly does that mean? That's actually where TensorFlow gets its name from. Starting on the far left, the simplest piece of data that you can have is called scalar. That's a number like three or five. It's what we call zero-dimensional, or rank zero. Now we're not going to get very far passing around single numbers in our flow so let's upgrade. Rank one. Where a one-dimensional array is called a vector. And in physics, a vector is something with magnitude and direction, but in computer science you use the word vector to mean 1D arrays like a series of numbers in a list. Let's keep going. A two-dimensional array is a matrix, a three-dimensional array? Well, we'll call it a 3D tensor. Scalar, vector, matrix, 3D tensor, 4D tensor, et cetera. So a tensor is an n-dimensional array of data. Your data in TensorFlow are tensors. They flow through the graph, hence the name TensorFlow. So why does TensorFlow use directed graphs to represent computation? And the answer is portability. The directed graph is a language independent representation of the code in your model. You can build a DAG in Python, store it in a saved model, restore it in C++ program for low latency predictions, you can use this same Python code and execute it both on CPUs, GPUs, and TPUs. This provides language and hardware portability. In a lot of ways this is similar to how the Java virtual machine or JVM, and its bytecode representation helps with the portability of Java code. As a developer, you write the code in a high-level language like Java, have it executed in different platforms by the JVM. Now the JVM is itself very efficient and targeted to the exact OS and hardware written in C or C++. Similar deal with TensorFlow. As a developer you write your code in a high level language like Python. And have it executed in different platforms. By the TensorFlow execution engine. Now the TensorFlow execution engine is very efficient and targeted toward the exact hardware chip and its capabilities. And it's written in C++. Portability between devices enables a lot of power and flexibility. For example, here's a common pattern. You train a TensorFlow model on the cloud. On lots and lots and lots of powerful hardware. Then you take the train model and put it on a device out on the edge, perhaps a mobile phone or even an embedded chip. Then you can do predictions with the model right on the device itself offline. Have you had a chance to use the Google Translate app on an Android phone? The app can work completely offline because the train translation model is stored on the phone and is available for offline translation. Now I know what you're thinking. Due to the limitations of processing power on your phones the edge model tends to be a little bit smaller which means they're generally less powerful than what's on the cloud. However the fact that TensorFlow allows for models to run on the edge means a much faster response during predictions. So TensorFlow is this portable, powerful, production-ready software to do numeric computing. It's particularly popular for machine learning. It's the number one repository for machine learning on github. Why is that? Well, it's popular among deep learning researchers because of the community around it and the ability to extend it to do some pretty cool new things. It's popular among machine-learning engineers because the ability to productionalize models, to do things at scale.
 
 ### Video - [TensorFlow API hierarchy](https://www.cloudskillsboost.google/course_templates/12/video/512758)
 
-- [YouTube: TensorFlow API hierarchy](https://www.youtube.com/watch?v=tl7j0ISsZjU)
+* [YouTube: TensorFlow API hierarchy](https://www.youtube.com/watch?v=tl7j0ISsZjU)
 
 Person: Let's take a look at the API hierarchy, which will consist of a spectrum of low-level APIs for hardware all the way up to very abstract high-level APIs for super powerful tasks like creating an 128-layer neural network with just a few lines of code written with the Keras API. Let's start at the bottom. The lowest layer of abstraction is the layer that's implemented to target the different hardware platforms. And unless your company makes hardware, it's unlikely that you'll do much at this level, but it does exist. The next level is the TensorFlow C++ API. This is how you can write a custom TensorFlow operation. You would implement the function that you want in C++, register it as a TensorFlow operation. You can find more details on the TensorFlow documentation on extending an op. I'll provide the link. TensorFlow will give you a Python wrapper that you can use just like you would use an existing function. Assuming you're not an ML researcher, you don't normally have to do this. But if you ever needed to implement your own custom op, you would do it in C++, and it's not too hard. TensorFlow is extensible in that way. Now, the core Python API is what contains much of the numeric processing code, add, subtract, divide, matrix multiply, et cetera. Creating variables, tensors, getting the right shape or dimension of your tensors and vectors, all of that is contained in the Python API. Then there are sets of Python modules that have high-level representation of useful neural network components. Let's say, for example, that you're interested in creating a new layer of hidden neurons within a ReLU activation function. You can do that just by using TF layers, just architect and construct it. If you want to compute the RMSE, or root means squared error, as the data comes in, you can use tf.metrics. To compute cross entropy with logics, for example, which is common in loss metric and classification problems, you can use tf.losses. These modules provide components that are useful when building custom neural network models. Why are custom neural network models emphasized? Because you often don't need a custom neural network model. Many times you're quite happy to go with the relatively standard way of training, evaluating and serving models. You don't need to customize the way you train. You're going to use one of the family of gradient descent-based optimizers, and you're going to back-propagate the weights and do this iteratively. In that case, don't write the low-level session loop. Just use an estimator or a high-level API such as Keras. Speaking of which, the high-level APIs allow you to easily do distributed training, data preprocessing, the model definition, compilation and overall training. It knows how to evaluate, how to create a checkpoint, how to save a model, how to set it up for TensorFlow serving and more. And it comes with everything done in a sensible way that will fit most of your ML models in production. Now, if you see an example of TensorFlow code on the Internet that does not use the estimator API, ignore that code. Walk away. It's not worth it. You'll have to write a lot of code to do device placement, memory management and distribution. Let the high-level API handle all of that for you. So those are the TensorFlow levels of abstraction. On the side here, Cloud AI platform is orthogonal where it cuts across to this hierarchy. That means it goes from low-level to high-level APIs. Regardless of the abstraction level you're writing your TensorFlow code, using Cloud AI Platform, or CAIP, gives you that managed service. It's fully hosted TensorFlow, so you can run TensorFlow on the cloud on a cluster of machines without having to install any software or manage any servers. For the rest of this module, we'll be largely working with these top three APIs listed here. But before we start writing any API code, in showing you the syntax for building machine learning models we first really need to understand the pieces of data that we're working with. Much like in regular computer science classes where you start with variables and their definitions before moving onto advanced topics like classes and methods and functions, that's exactly how we're going to start learning with TensorFlow components next.
 
 ### Video - [Components of Tensorflow: Tensors and variables](https://www.cloudskillsboost.google/course_templates/12/video/512759)
 
-- [YouTube: Components of Tensorflow: Tensors and variables](https://www.youtube.com/watch?v=G-dypHB2xfw)
+* [YouTube: Components of Tensorflow: Tensors and variables](https://www.youtube.com/watch?v=G-dypHB2xfw)
 
 Person: Now let's go over tensors and variables in TensorFlow. It's time to see some code. How can we bring life to each dimension of a tensor that we learned about earlier? Recall that a tensor is an N-dimensional array of data. When you create a tensor, you'll specify its shape. Occasionally, you'll not specify the shape completely. For example, the first element of the shape could be a variable, but that special case will be ignored for now. Understanding the shape of your data, or oftentimes the shape that it should be, is the first essential part of your machine-learning flow. Here, for example, you're going to create a tf.constant(3). This is a zero-rank tensor. It's just a number, three, scalar. The shape when you look at the tensor-debug output is simply an open parenthesis, close parenthesis. It's zero rank. To better understand why there isn't a number in this parentheses, let's upgrade to the next level. If you've passed in a bracket list, like three, five, seven to tf.constant instead, you would now be the proud owner of a one-dimensional tensor, otherwise known as a vector. Now that you have that one-dimensional tensor, let's think about that. It'll grow horizontally, like things on the x axis, by three units. Nothing on the y axis yet, so we're still in one dimension. That's where the shape is three, one, two, three, comma, nothing. All right. Let's level up. Now we have a matrix of numbers or a 2-D array. Take a look at the shape, two, comma three. That means we have two rows and three columns of data, the first row being that original vector of three, five, seven, which also has three elements in length. That's where the three columns of data comes from. You can think of a matrix as essentially a stack of 1-D tensors. The first tensor in the vector is three, five, seven. The second 1-D tensor that's being stacked is the vector four, six, eight. Okay, so we've got height, and we've got width. Let's get more complex. What does 3-D look like? Well, it's a 2-D tensor with another 2-D tensor on top of it. Here you can see that we're stacking the three, five, seven matrix on the one, two, three matrix. We started with two two-by-three matrices, so our resulting shape of the 3-D tensor is now two, comma, two, comma, three. Of course, you can do the stacking in code itself instead of just counting parentheses. Take the example here. Our x1 variable is a tf.constant constructed from a simple list, two, three, four. That makes it a vector with a length of three. x2 is constructed by stacking x1 on top of x1. That makes it a two-by-three matrix. x3 is constructed by stacking four x2s on top of each other, and since each x2 is a two-by-three matrix, that makes x3 a 3-D tensor with a shape of four, dot, two, dot, three. x4 is constructed by stacking x3 on top of x3. That makes it two four-by-two-by-three tensors, for the final shape of a 4-D tensor. Phew! If you've worked with arrays of data before, like numpy, they're similar except for two points. tf.constant will produce tensors with constant values whereas tf.variable produces tensors with variable values or ones that can be modified. Now, this will prove super useful later when we need to adjust those model weights during our training phase of our ML project. The weights can simply by a modifiable tensor array. Let's take a look at the syntax for each, as you'll become a ninja with combining, slicing and reshaping tensors as you see fit. Here is a constant tensor produced, well, by tf.constant, of course. Remember that three, five, seven in a 1-D vector? It's just stacked here to be that 2-D matrix. Pop quiz: What's the shape of x? How many rows or stacks to you see, and then how many columns do you see? If you said two by three or two rows and three columns, awesome. When you're coding it, you can also invoke tf.shape, which is quite handy in debugging. Okay, much like you can stack tensors to get high-level dimensions, you can also slice them down, too. Let's look at the code for this for why. It's slicing x. Is it slicing rows, columns or both? The syntax is let y be the result of taking x and take all rows, that's the colon, in just the first column. Keep in mind that Python is zero index when it comes to arrays. What would the result be? Remember, we're going from 3-D to 2-D, so your answer should only be a single bracket list of numbers. If you said five, comma, six, awesome. Again, take all rows, only the first index column. Don't worry. You'll get plenty of practice with this coming up in your lab. So we've seen stacking and slicing. Let's talk about reshaping with tf.reshape. Let's use the same 2-D tensor or matrix of values that is x. What's the shape, again? Think rows and columns. If you said two by three, awesome. Now, what if I reshaped x as three by two or three rows, two columns? What would happen? Well, essentially Python would read the input by row by row and put numbers into the output tensor. It'll pick the first two values, put them in the first row so you get three and five, and the next two values, seven and four, into the second value, and the last two values, six and eight, into the third row. Again, two columns, three rows. That's what reshaping does. Well, that's it for constants. Not too bad, right? Next up are variable tensors. The variable constructor requires an initial value for the variable which can be a tensor of any shape and type. This initial value defines the type and the shape of the variable. After construction, the type and shape of the variable are fixed. The value can be changed using one of the assigned methods: assign, assign_add or assign_sub. As we mentioned before, tf.variables are generally used for values that are modified during training. Such as, as you might guess, the model weights. Just like any tensor, variables created with variable can be used as inputs to your operations. Additionally, all the operators are overloaded for the tensor class, are carried over to variables, and TensorFlow has the ability to calculate the partial derivative of any function with respect to any variable. We know that during training weights are updated by using the partial derivative of the loss with respect to each individual weight. To differentiate automatically, TensorFlow needs to remember what operations happened in what order during that forward pass. Then during the backward pass, TensorFlow traverses this list of operations in reverse order to compute those gradients. GradientTape is a context manager in which those partial differentiations aren't calculated. The functions have to be expressed within TensorFlow operations only, but since most basic operations like addition, multiplication and subtraction are overloaded by TensorFlow ops, these happen seamlessly. Let's say we want to compute a loss gradient. TensorFlow records all operations executed inside the context of tf. GradientTape onto a tape. Then it uses that tape and the gradients associated with each recorded operation to compute the gradients of a recorded computation using that reverse-mode differentiation like we mentioned. There are cases where you may want to control exactly how gradients are calculated rather than using the default. These cases can be when the default calculations are numerically unstable or you wish to cache an expensive computation from the forward pass among other things. For such scenarios, you can use custom-gradient functions to write a new operation or to modify the calculation of the differentiation.
 
@@ -66,62 +66,62 @@ Person: Now let's go over tensors and variables in TensorFlow. It's time to see 
 #### Quiz 1.
 
 > [!important]
-> **Which are useful components when building custom Neural Network models?**
+> **Which of the following statements is true of TensorFlow?**
 >
-> - [ ] tf.optimizers
-> - [ ] tf.losses
-> - [ ] All of the options are correct.
-> - [ ] tf.metrics
+> * [ ] Although able to run on other processing platforms, TensorFlow 2.0 is not yet able to run on Tensor Processing Units (or TPU's).
+> * [ ] Although able to run on other processing platforms, TensorFlow 2.0 is not yet able to run on Graphical Processing Units (or GPU's).
+> * [ ] TensorFlow is a scalable and multi platform programming interface for implementing and running machine learning algorithms, including convenience wrappers for deep learning.
+> * [ ] TensorFlowis a scalable and single-platform programming interface for implementing and running machine learning algorithms, including convenience wrappers for deep learning.
 
 #### Quiz 2.
 
 > [!important]
 > **How does TensorFlow represent numeric computations?**
 >
-> - [ ] None of the options are correct
-> - [ ] Using a Directed Acyclic Graph (or DAG)
-> - [ ] Both Using a Directed Acyclic Graph (or DAG) and Flow chart
-> - [ ] Flow chart
+> * [ ] None of the options are correct
+> * [ ] Using a Directed Acyclic Graph (or DAG)
+> * [ ] Flow chart
+> * [ ] Both Using a Directed Acyclic Graph (or DAG) and Flow chart
 
 #### Quiz 3.
 
 > [!important]
-> **Which of the following is true when we compute a loss gradient?**
+> **Which API is used to build performant, complex input pipelines from simple, re-usable pieces that will feed your model's training or evaluation loops.**
 >
-> - [ ] All options are correct.
-> - [ ] TensorFlow records all operations executed inside the context of a tf.GradientTape onto a tape.
-> - [ ] The computed gradient of a recorded computation will be used in reverse mode differentiation.
-> - [ ] It uses tape and the gradients associated with each recorded operation to compute the gradients.
+> * [ ] tf.Tensor
+> * [ ] All of the options are correct.
+> * [ ] tf.device
+> * [ ] tf.data.Dataset
 
 #### Quiz 4.
 
 > [!important]
-> **Which of the following statements is true of TensorFlow?**
+> **Which of the following is true when we compute a loss gradient?**
 >
-> - [ ] Although able to run on other processing platforms, TensorFlow 2.0 is not yet able to run on Graphical Processing Units (or GPU's).
-> - [ ] TensorFlowis a scalable and single-platform programming interface for implementing and running machine learning algorithms, including convenience wrappers for deep learning.
-> - [ ] TensorFlow is a scalable and multi platform programming interface for implementing and running machine learning algorithms, including convenience wrappers for deep learning.
-> - [ ] Although able to run on other processing platforms, TensorFlow 2.0 is not yet able to run on Tensor Processing Units (or TPU's).
+> * [ ] TensorFlow records all operations executed inside the context of a tf.GradientTape onto a tape.
+> * [ ] All options are correct.
+> * [ ] It uses tape and the gradients associated with each recorded operation to compute the gradients.
+> * [ ] The computed gradient of a recorded computation will be used in reverse mode differentiation.
 
 #### Quiz 5.
 
 > [!important]
-> **What operations can be performed on tensors?**
+> **Which are useful components when building custom Neural Network models?**
 >
-> - [ ] They can be both reshaped and sliced
-> - [ ] They can be reshaped
-> - [ ] They can be sliced
-> - [ ] None of the options are correct.
+> * [ ] tf.optimizers
+> * [ ] tf.losses
+> * [ ] tf.metrics
+> * [ ] All of the options are correct.
 
 #### Quiz 6.
 
 > [!important]
-> **Which API is used to build performant, complex input pipelines from simple, re-usable pieces that will feed your model's training or evaluation loops.**
+> **What operations can be performed on tensors?**
 >
-> - [ ] tf.Tensor
-> - [ ] tf.data.Dataset
-> - [ ] tf.device
-> - [ ] All of the options are correct.
+> * [ ] They can be sliced
+> * [ ] They can be both reshaped and sliced
+> * [ ] None of the options are correct.
+> * [ ] They can be reshaped
 
 ### Document - [Resources: Introduction to the TensorFlow Ecosystem](https://www.cloudskillsboost.google/course_templates/12/documents/512761)
 
@@ -131,43 +131,43 @@ Data is the a crucial component of a machine learning model. Collecting the righ
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/12/video/512762)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=h-Zw1M-vlmo)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=h-Zw1M-vlmo)
 
 PERSON: Welcome to the Design and Build an Input Data Pipeline module. In this module, you'll learn to train on Large Datasets with tf.data, work with in-memory files, get the data ready for training, describe embeddings, and understand scaling data with tf. Keras preprocessing layers.
 
 ### Video - [An ML recap](https://www.cloudskillsboost.google/course_templates/12/video/512763)
 
-- [YouTube: An ML recap](https://www.youtube.com/watch?v=aXAZAa2zbKg)
+* [YouTube: An ML recap](https://www.youtube.com/watch?v=aXAZAa2zbKg)
 
 Person: Let's start with a recap. In any ML project, after you define the business use case and establish the success criteria, the process of delivering an ML model to production involves the following steps. These steps can be completed manually or can be completed by an automated pipeline: Data extraction, data analysis, data preparation, model training, model evaluation, model validation, model serving and model monitoring. We saw that there are two phases in machine learning, a training phase and an inference phase. We learned that an ML problem can be thought of as being all about data. From a practical perspective, many machine learning models must represent the data or features as real numbered vectors because the feature values must be multiplied by the model weights. In some cases, the data is raw and must be transformed to feature vectors. Features, the columns of your data frame, are key in assisting machine learning models to learn. Better features result in faster training and more accurate predictions. As the diagram shows, feature columns are input into the model, not as raw data but as feature columns. Having efficient data pipelines is of paramount importance for any machine learning model because performing a training involves steps. One, opening a file if it has not been opened. Two, fetching a data entry from the file, and three, using the data for training. After you complete steps one and two, how do you use the data for training? TensorFlow's data set module, tf.data is one way to help build efficient data pipelines and data pipelines are really just a series of data processing steps. The tf.data API enables you to build complex input pipelines from simple reusable pieces. For example, the pipeline for an image model might aggregate data from files in a distributed file system, apply random perturbations to each image and merge randomly selected images into a batch for training. The pipeline for a text model might involve extracting symbols from raw text data, converting them to embedding identifiers with a look-up table and batching together sequences of different lengths. The tf.data API makes it possible to handle large amounts of data, read from different data formats and perform complex transformations. We'll use the tf.data API quite a bit in this lesson. There are multiple ways to feed TensorFlow models with data, and you will see those in the next videos. So let's get started.
 
 ### Video - [Training on large datasets with tf.data API](https://www.cloudskillsboost.google/course_templates/12/video/512764)
 
-- [YouTube: Training on large datasets with tf.data API](https://www.youtube.com/watch?v=M47U1DRZ-LM)
+* [YouTube: Training on large datasets with tf.data API](https://www.youtube.com/watch?v=M47U1DRZ-LM)
 
 Person: The tf.data API introduces the tf.data. Dataset abstraction that represents a sequence of elements, in which each element consists of one or more components. For example, in an image pipeline an element might be a single training example with a pair of Tensor components representing the image and it's label. There are two distinct ways to create a dataset, a data source constructs a dataset from data stored in memory or in one or more files. Or a data transformation constructs a dataset from one or more tf.dataset objects. Large datasets tend to be sharded or broken apart into multiple files, which can be loaded progressively. Remember that you train on many batches of data, you don't need to have the entire dataset in memory. One mini batch is all you need for one training step. The dataset API will help you create input functions for your model that load data in progressively, throttling it. There are specialized dataset classes that can read data from text files like CSVs, TensorFlow records or fixed length record files. Datasets can be created from many different file formats. Use TextLineDataset to instantiate a dataset object which is comprised of, as you might guess, one or more text files. TFRecordDataset, TFRecord files, FixedLengthRecordDataset is a dataset object from FixedLengthRecords or one or more binary files. For anything else, you can use the generic dataset class and add your own decoding code. Okay, let's walk through an example of TFRecordDataset, at the beginning a TFRecord op is created and executed. It produces a variant Tensor, representing a dataset which is stored in the corresponding Python object. Next the shuffle op is executed, using the output of a TFRecord op and it's input, connecting the two stages of our input pipeline so far. Next, the user define function is traced and passed as attributes to the map operation, along withe the shuffled dataset variant input. Finally, the batch op is created and executed, creating the final stage of our input pipeline. When the four loop mechanism is used for numerating the elements of the dataset, the iter interval method is invoked on the dataset. Which triggers the creation and execution of two ops, first an anonymous iterator loop is created and executed, which results in the creation of an iterator resource. Subsequently, this resource along with the batch dataset variant is passed into the [Indistinct] iterator op, initializing the state of the iterator resource with the dataset. When the next method is called, it triggers creation execution of the iterator get next op, passing in the iterator resource as the import. Note that the iterator op is created only once but executed as many times as there are elements in the input pipeline. Finally, when the Python iterator object goes out of scope, the delete iterator ops is executed to make sure that the iterator resource is properly disposed of. Or to state the obvious, properly disposing of the iterator resource is essential as it is not uncommon for your iterator resources to allocate, say hundreds of megabytes to gigabytes of memory because of internal buffering.
 
 ### Video - [Working in-memory and with files](https://www.cloudskillsboost.google/course_templates/12/video/512765)
 
-- [YouTube: Working in-memory and with files](https://www.youtube.com/watch?v=ddG8JqcHvwk)
+* [YouTube: Working in-memory and with files](https://www.youtube.com/watch?v=ddG8JqcHvwk)
 
 Person: When data used to train a model sits in-memory, we can create an input pipeline by constructing a dataset using tf.data. Dataset.from_tensors or tf.data. Dataset.from_tensor_slices. From_tensors combines the input and returns a dataset with a single element, while from_tensor_slices creates a dataset with a separate element for each row of the input tensor. Here is an example where we'll use TextLineDataset to load in data from a CSV file. This is a dataset comprising of lines from one or more text files. The TextLineDataset instantiation expects a file name, and it has optional arguments, for example, like the type of compression of the files or the number of parallel reads. The map function is responsible for parsing each row of the CSV file. It returns a dictionary from the file content. Once that's done, shuffling, and batching and prefetching are steps that can be applied to the dataset to allow the data to be fed into the training loop iteratively. Please note that it's recommended that we only shuffle the training data. So for the shuffle operation, you may want to add a condition before applying the operation to the dataset to ensure that it's training. Finally, we have to address our initial concern, loading a large dataset from a set of sharded files. An extra line of code will do. We'll first scan a disk and load a dataset of file names using a Dataset.list_files functions. It supports a glob-like syntax with stars to match file names with a common pattern. It's pretty useful. Then we'll use a TextLineDataset to load the files and turn each file name into a dataset of text lines. We flat map all of them together into a single dataset, and then we map each line of text. We'll use that map to apply the CSV parsing algorithm, and finally obtain a dataset of features and labels. You might wonder, why are there two functions for mapping, map and flat_map. Well, one of them is to simple do a one-for-one transformation and the other one is one-to-many transformations. Parsing a line of text is a one-to-one transformation, so we use map. When loading a file with TextLineDataset, one file name becomes a collection of text files, so that's a one-to-many transformation and it's applied with flat_map to flatten all the resulting TextLineDatasets into one. Dataset allows for data to be prefetched. Let's say that we have a cluster with a GPU on it. Without prefetching, the CPU will be repairing the first batch while the GPU is just hanging around doing nothing. Once that's done, the GPU can then run the computations on that batch. When it's finished, the CPU will start prepreparing the next batch and so forth. And you can see that this is not very efficient. Prefetching allows for subsequent batches to be prepared as soon as their previous batches have been sent away for computation. By combining prefetching and multi-threaded loading and preprocessing, you can achieve a very good performance by making sure that each of your GPUs or CPUs are constantly busy. Now that you know how to use datasets to generate proper input functions for your models and to get them training on large out of memory datasets. But datasets offer a rich API for working on and transforming your data, so let's take advantage of it.
 
 ### Video - [Getting the data ready for model training](https://www.cloudskillsboost.google/course_templates/12/video/512766)
 
-- [YouTube: Getting the data ready for model training](https://www.youtube.com/watch?v=K1cQnuLCelI)
+* [YouTube: Getting the data ready for model training](https://www.youtube.com/watch?v=K1cQnuLCelI)
 
 Person: As we think about modeling a real problem with machine learning, we first need to think about what input signals we can use to train that model. In this next section, let's use a common example. Why not real estate? Can you predict the price of a property? As you think about that problem, you must first choose your features, that is the data that we'll be basing your predictions on. Why not try and build a model that predicts the price of a area of a house or an apartment? And your features could be the square footage -- That's numeric -- and the category. Is it a house or an apartment? So, so far, square footage, that's numeric. Numbers can be fed directly into a neural network for training, but we're going to come back to that later and how that's done. The type of the property, though, that's not numeric. This piece of information may be represented in a database by a string value, like house or apartment, and strings need to be transformed into numbers before being fed into a neural network. Here's how you implement this in code. Use the feature column API to determine the features. First a numeric column for square footage, then a categorical column for the property type. Two possible categories in this very simple model: house or apartment. You probably notice that the categorical column is called categorical_column_with_vocabulary_list. Use this when your inputs are in a string or integer format and you have an in-memory vocabulary mapping to each value to an integer ID. By default, out-of-vocabulary values are ignored. As a quick sidenote, other variations of this are categorical column with a vocabulary file when inputs are in a string or integer format but there's a vocabulary file that maps each value to an integer ID; a categorical column with identity, and that's used when inputs are integers in a range of zero to the number of buckets, and you want to use the input value itself as the categorical ID; and, finally, categorical column with a hash bucket. That's used when features are sparse in the string or integer format, and you want to distribute your inputs into a finite number of buckets by hashing them. In this example, after the raw input is modified by feature column transformations, you can then instantiate a linear regressor to train on these features. A regressor is a model that outputs a number, in our example, the predicted sale price of the property. That's a number. But why do you need feature columns in the context of model building? Do you remember how they get used? Let's break it down for this model type. A linear regressor is a model that works on a vector of data. It computes a weighted sum of all input data elements and can be trained to adjust the weights for your problem. Here we're predicting the sales price. But how can you pack your data into a single input vector that the linear regressor expects? Well, the answer is in various ways depending upon what data that you're packing and in what area that your feature columns are using the APIs. That really comes in handy. It implements various standard ways, the API, of helping you pack that data into those vectorized elements. Let's look at a few. Here values in your numeric column, they're just numbers. They can get copied as they are into a single element of the input vector. On the other hand, those categorical columns, they need to get one-hot encoded. You have two categories: house or apartment. House will be 1, 0 and apartment will be 0, 1. A third category would be 0, 0, 1 and so on. Now the linear regressor knows how to take those features that you care about, pack them into an input vector and apply whatever the linear regressor does. Besides the categorical ones that we've seen, there are many other mode feature column types to choose from: columns for continuous values that you want to bucketize, word embedding, column crosses and so on. The transformations they apply are clearly described in the TensorFlow documentation, so you always have an idea of what's going on, and we're going to take a look at quite a few them here in code. A bucketized column helps with discretizing continuous feature values. In this example, if we were to consider the latitude and longitude -- highly granular, right? -- of the house or apartment that we're training or predicting on, we wouldn't want to feed in the raw latitude and longitude values. Instead, we would create buckets that could group the ranges of values for latitude and longitude. It's kind of like zooming out if you're looking at just, like, a zip code. If you're thinking this sounds familiar and just, like, building a vocabulary list for categorical columns, you're absolutely right. Categorical columns are represented in TensorFlow as sparse tensors. So categorical columns are an example of something that's sparse. TensorFlow can do math operations on sparse tensors without having to convert them into dense values first, and this saves memory and optimizes compute time. But as the number of categories of a feature grow large, it becomes infeasible to train a neural network using those one-hot encodings. Imagine that, 0, 0, a million zeroes, 1. Recall that we can use an embedding column. Embeddings overcome this limitation. Instead of representing the data as a one-hot vector of many dimensions, an embedding column represents that data at a lower dimensional level or a dense vector in which each cell can contain any number, not just a zero or a one. We'll get back to our real estate example shortly, but first, let's take a quick detour into the wild world of embeddings.
 
 ### Video - [Embeddings](https://www.cloudskillsboost.google/course_templates/12/video/512767)
 
-- [YouTube: Embeddings](https://www.youtube.com/watch?v=GXcn3schIeo)
+* [YouTube: Embeddings](https://www.youtube.com/watch?v=GXcn3schIeo)
 
 Person: As the number of categories of a feature grow large, it becomes infeasible to train a neural network using one-hot encodings. Recall that we can use an embedding column to overcome this limitation. Instead of representing the data as a one-hot vector of many dimensions, an embedding column represents that data as a lower-dimensional dense vector in which each cell can contain any number, not just zero or one. We'll get back to our real estate example shortly but first, let's take a quick detour into the world of embeddings. Generally, neural network embeddings have three primary purposes. One, finding nearest neighbors in the embedding space. These can be used to make recommendations based on user interests or cluster categories. Two, as input into a machine learning model for a supervised task. Three, for visualization of concepts and relations between categories. Let's take a look at an example using the popular handwritten digits data set MNIST. Here, I visualized in TensorBoard all 10,000 points of data where each colored cluster corresponds to a handwritten digit from zero to nine. You can start to look for insights and even misclassifications by just exploring the data set in 3D space. If you take a look at the clusters while they spin, you'll see me clicking on the grey cluster which are handwritten fives. It would seem in this data set that people write fives in many different ways, hence the visual distance between the gray squares as compared to something like a one or a six. If you take a sparse vector encoding and pass it through an embedding column and then use that embedding column as the input to a DNN and train the DNN, then the trained embeddings will have this similar property as long as you have enough data and your training achieved good accuracy. Next let's look at embeddings in the context of movie recommendations. Let's say that we want to recommend movies to customers and that our business has a million users and 500,000 movies. Remember that number which is actually quite small. YouTube and eight other Google properties have a billion users. For every user, our task is to recommend five to 10 movies. We want to pick movies that they will watch and will rate highly. We need to do this for a million users and for each user select from 500,000 movies. So what's our input data set? Our input data set, if we represent it as a matrix, is one million rows and 500,000 columns. The numbers in the diagram denote movies that customers have watched and rated. What we need to do is figure out the rest of the matrix. To solve this problem, some method is needed to determine which movies are similar to each other. One approach is to organize movies by similarity using some attributes of the movies. For example, we might look at the average age of the audience and put the movies on a line. So the cartoons and animated movies show up on the left-hand side, and the darker, adult-oriented movies show up to the right. Then we can say that if you liked "The Incredibles," perhaps you are a child, or you have a young child, and so we can recommend "Shrek" to you. But "Bleu" and "Memento" are arthouse movies, whereas "Star Wars" and "The Dark Knight Rises" are both blockbusters. If someone watched and liked "Bleu," they are more likely to like "Memento" than a movie about Batman. Similarly, someone who watched and liked "Star Wars" is more likely to like "The Dark Knight Rises" than some arthouse movie. How do we solve this problem? What if we add a second dimension? Perhaps the second dimension is the total number of tickets sold for that movie when it was released in theaters. Now we see that "Star Wars" and "The Dark Knight Rises" are close to each other, and "Bleu" and "Memento" are close to each other. "Shrek" and "The Incredibles" are close to each other too. "Harry Potter" is in between the cartoons and "Star Wars" in that kids watch it, some adults watch it, and it's a blockbuster. Notice how adding a second dimension has helped bring movies that are good recommendations closer together. It conforms much better to our intuition. Do we have to stop at two dimensions? Of course not. By adding even more dimensions, we can create finer distinctions and sometimes, these finer distinctions can translate into better recommendations. Not always, though. The danger of overfitting exists here too. So the idea is that we have an input that has N dimensions. What is N in the case that we looked at? 500,000, right? Remember that the movie ID is a categorical feature, and we'd normally be one-hot encoding it, so N equals 500,000. In our case, we represented all movies in a two-dimensional space, so D equals two. The key point is that D is much, much less than N, and the assumption is that user interest in movies can be represented by some D aspects. In all our examples, we used three for the number of embeddings. You can use different numbers, of course, but what number should you use before you train? This is a hyperparameter to your machine learning model. Hyperparameter means you set it before training. You'll have to try different numbers of embedding dimensions because there's a trade-off. Higher-dimensional embeddings can more accurately represent the relationships between input values. However, at the more dimensions you have, the greater chance of overfitting. Also, the model gets larger and leads to slower training. A good starting point is to go with the fourth root of the total number of possible values. For example, if you are embedding movie ID, and you have 500,000 movies in your catalog, a good starting point might be the fourth root of 500,000. The square root of 500,000 is about 700, and the square root of 700 is about 26, so I'd probably start at around 25. In the hyperparameter tuning, I would specify a search space of perhaps 15 to 35, but this is only a rule of thumb, of course. Another really cool thing you can do with features besides embeddings is actually combine the features into a new synthetic feature. Combining features into a single feature, better known as feature crosses, enables a model to learn separate weights for each combination of features. A synthetic feature is formed by crossing, or taking a Cartesian product of, individual binary features obtained from categorical data or from continuous features via bucketing. Feature crosses help represent nonlinear relationships. Crossed column does not build the full table of all possible combinations which could be very large. Instead, it is backed by a hashed column, so you can choose how large the table is. Back to our real estate example now. To train the column, you simply need to write an input function that returns the features named as in the features column. Since you are training, you also need the correct answers called labels, and now you can call the trained function from the Keras API or from the custom model build which will train the model by repeating this data set 100 times, for example. You will see how batching works later, but for those of you who already know about the concepts of batching, the code as written here trains on a single batch of data at each step, and this batch contains the entire data set. When passing data to the built-in training loops of a model, you should either use NumPy arrays if your data is small and fits in memory or tf.data data set objects. Once you have defined the feature columns, you can use a dense features layer to input them to the Keras model. This layer is simply a layer that produces a dense tensor based on the given feature columns. After your data set is created, passing it into the Keras model for training is simple, model.fit. You will learn and practice this later after first mastering data set manipulation.
 
 ### Video - [Lab intro: TensorFlow Dataset API](https://www.cloudskillsboost.google/course_templates/12/video/512768)
 
-- [YouTube: Lab intro: TensorFlow Dataset API](https://www.youtube.com/watch?v=jB_ReoKPWGI)
+* [YouTube: Lab intro: TensorFlow Dataset API](https://www.youtube.com/watch?v=jB_ReoKPWGI)
 
 PERSON: In this lab, you'll learn how to train on large data sets that aren't going to fit in memory. TensorFlow has that API called "Datasets" that can handle this and feed your model while loading the data progressively from disk. Practice with the lab yourself by reading through the notebook comments and executing the code cells. Note that you have more than one attempt to try this lab, so don't worry if you run out of time on your first attempt. Good luck.
 
@@ -175,17 +175,17 @@ PERSON: In this lab, you'll learn how to train on large data sets that aren't go
 
 In this lab, you will start by refactoring an existing linear regression model so that is takes its data from a tf.data.Dataset.
 
-- [ ] [TensorFlow Dataset API](../labs/TensorFlow-Dataset-API.md)
+* [ ] [TensorFlow Dataset API](../labs/TensorFlow-Dataset-API.md)
 
 ### Video - [Scaling data processing with tf.data and Keras preprocessing layers](https://www.cloudskillsboost.google/course_templates/12/video/512770)
 
-- [YouTube: Scaling data processing with tf.data and Keras preprocessing layers](https://www.youtube.com/watch?v=LnWBrv6z3j4)
+* [YouTube: Scaling data processing with tf.data and Keras preprocessing layers](https://www.youtube.com/watch?v=LnWBrv6z3j4)
 
 Person: Data is a crucial component of a machine learning model. Collecting the right data is not enough. You also need to make sure you put the right processes in place to clean, analyze, and transform the data as needed so that the model can take the most signal of it as possible. In this lesson we examine scaling data pre-processing with tf.data and Keras preprocessing layers. Combined with TensorFlow, the Keras preprocessing layers API allows TensorFlow developers to build Keras native input processing pipelines. With Keras preprocessing layers, you can build and export models that are truly end-to-end. Models that accept raw images or raw structured data as input and models that handle feature normalization or feature value indexing on their own. The available preprocessing layers include text preprocessing, numerical features preprocessing, categorical features preprocessing, image preprocessing, and image data augmentation. Let's describe a few of them beginning with text features preprocessing. The tf.keras.layers. TextVectorization layer has basic options for managing text in a Keras model. It transforms a batch of strings, where one example equals one string into one of two things, either a list of token indices, where one example equals one detensor of integer token indices, or a dense representation with one example equal to one detensor of float values representing data about the examples tokens. Essentially, the TextVectorization layer turns raw strings into an encoded representation that can be read by an Embedding layer or Dense layer. If desired you can call this data layer's adapt method on a data set. When this layer is adapted, adapt will analyze the data set, determine the frequency of individual string values, and create a vocabulary from them. This vocabulary can have unlimited size. Or be capped, depending on the configuration options for the layer. If there are more unique values in the input than the maximum vocabulary size, the most frequent terms will be used to create the vocabulary. The numerical features preprocessing layer will coerce its inputs into a distribution centered around zero with standard deviation one. It accomplishes this by pre-computing the mean and variance of the data and calling input mean divided by the square root of a variable at run time. Essentially, the Normalization layer performs feature-wise normalization of input features. The tf.keras Discretization layer will place each element of its input data into one of several contiguous ranges, and output an integer index that indicates which range each element is placed in. Essentially, this layer turns continuous numerical features into bucket data, with discrete ranges. You can use a variety of different layers to preprocess categorical features. Tf.keras.layers. CategoryEncoding turns integer categorical features into one-hot, multi-hot, or count-dense representations. Tf.keras.layers. Hashing performs categorical feature hashing, also known as "the hashing trick." Tf.keras.layers. StringLookup turns string categorical values into an encoded representation that can be read by an Embedding layer or a Dense layer. Tf.keras.layers. IntegerLookup turns integer categorical values into an encoded representation that can be read by an Embedding layer or a Dense layer. Some preprocessing layers support multiple states that are computed based on the dataset at the given time. These stateful layers include TextVectorization, which holds a map between string tokens and integer indices; StringLookup and IntegerLookup, which holds a mapping between input values and integer indices; Normalization, which holds the mean and standard deviation of the features; Discretization, which holds information about the value bucket boundaries. Note that these layers are nontrainable. Their state is not set during training. It must be set before training, either by initializing them, from a precomputed constant, or by adapting them on data. Thus the use of the adapt method. To demonstrate the use of preprocessing layers, we'll use a simplified version of the PetFinder data set available as a ready to use TensorFlow data set. These are several thousand rows in the CSV. Each row describes a pet, and each column describes an attribute. You will use this information to predict whether the pet will be adopted. The feature types include categorical, numerical, text, and classification. To get start you'll need to import the Keras preprocessing layer. In this data set, pet type is represented as a string, such as Dog or Cat. You cannot feed strings directly to a model. The preprocessing layer takes care of representing strings, as a one-hot vector. Recall that the get category in coding layer function returns a layer that maps values from a vocabulary to integer indices, and one-hot encodes the features. Tf.keras.layers. StringLookup turns string categorical values into an encoded representation that can be read by an Embedding layer or a Dense layer. By mapping strings from a vocabulary to integer indices, StringLookup turns string categorical values into integer indices. The tf.keras.layers. IntegerLookup also turns integer categorical values into an encoded representation that can be read by an Embedding layer or a Dense layer. Simply, IntegerLookup maps integers from a vocabulary to integer indices. For each of the numeric features, you'll use a normalization() layer to make sure the mean of each feature is zero and its standard deviation is one. Recall that the get_normalization_layer function returns a layer that applies feature-wise normalization to numerical features. The normalization preprocessing layer has an internal state that can be computed based on a sample of the training data. In this case, Normalizer.adapt holds the mean and standard deviation of the feature. Although preprocessing.normalization normalizes features with the feature means and the variances of the training data set, these parameters are not part of the trainable parameters. Instead, you adapt the normalization layer to the training samples for data. This method will calculate the means and variances automatically. Note that the adapt method takes either a NumPy array, or a tf.data data set object. Let's examine a simple pipeline that uses the Normalization layer. Here, the normalizer has substantiated its internal state. Which is set using the adapt method. Remember that although preprocessing Normalization normalizes features with the feature means and the variances of the training data set these parameters are not part of the trainable parameters. Instead, you need to adapt the normalization layer to the training samples or the data. In order to calculate the means and the variances automatically. Here, you simply need to create a model that includes the normalization layer. Keras preprocessing provides two different options in applying the data transformation. In option one, the preprocessing layer is part of the model. It is part of the model computational graph that can be optimized and executed on a device like a GPU. This is the best option for the normalization layer and all image preprocessing and data augmentation layers, if GPUs are available. With this option, preprocessing will happen on the device synchronously with the rest of the model execution, which means that it will benefit from GPU acceleration. Option two uses dataset.map to convert data in the data set. Data augmentation will happen asynchronously on the CPU and is non-blocking. Its key focus is to take advantage of multiple threading in the CPU. With this option, your preprocessing will happen on the CPU asynchronously and will be buffered before going into the model. In addition if you call dataset prefix tf.data. AUTOTUNE on your data set, the preprocessing will happen efficiently in parallel with training. Apply it to your tf.data data set, to obtain a data set that yields batches of pre-processed data. When running pre-processing on a TPU, you should always place preprocessing layers in the tf.data pipeline with the exception of normalization and rescaling, which run fine on TPU, and are commonly used as the first layer in an image model. Even if you choose option two, you may later want to export an inference only, end to end model that will include the preprocessing layers. As a key benefit, this makes your model portable and helps reduce the training/serving skew. When all data preprocessing is part of the model, others can load and use your model without having to be aware of how each feature is expected to be encoded and normalized. Your inference model can process raw images, or raw structured data, and will not require users of the model to be aware of details such as tokenization scheme used for text. The indexing scheme used for categorical features, and whether image pixel values are normalized to negative one plus one or to zero one. This is especially powerful if you're exporting your model to another run time, such as TensorFlow.js. You won't have to re-implement your preprocessing pipeline in JavaScript.
 
 ### Video - [Lab intro: Classifying structured data using Keras preprocessing layers](https://www.cloudskillsboost.google/course_templates/12/video/512771)
 
-- [YouTube: Lab intro: Classifying structured data using Keras preprocessing layers](https://www.youtube.com/watch?v=ByHNUJ05ncM)
+* [YouTube: Lab intro: Classifying structured data using Keras preprocessing layers](https://www.youtube.com/watch?v=ByHNUJ05ncM)
 
 PERSON: This lab provides a hands-on introduction on how to classify structured data using Keras Preprocessing Layers. You'll begin by loading a CSV file using Pandas. Next, you'll build an input pipeline to batch and shuffle the rows using tf.data. Next, you'll map from columns in the CSV to features used to train the model using Keras Preprocessing Layers. Finally, you'll build, train, and evaluate a model using Keras.
 
@@ -193,89 +193,89 @@ PERSON: This lab provides a hands-on introduction on how to classify structured 
 
 In this lab, you learn how to classify structured data (e.g. tabular data in a CSV). You will use Keras to define the model, and preprocessing layers as a bridge to map from columns in a CSV to features used to train the model.
 
-- [ ] [Classifying Structured Data using Keras Preprocessing Layers](../labs/Classifying-Structured-Data-using-Keras-Preprocessing-Layers.md)
+* [ ] [Classifying Structured Data using Keras Preprocessing Layers](../labs/Classifying-Structured-Data-using-Keras-Preprocessing-Layers.md)
 
 ### Quiz - [Quiz: Design and Build Input Data Pipeline](https://www.cloudskillsboost.google/course_templates/12/quizzes/512773)
 
 #### Quiz 1.
 
 > [!important]
-> **Which of the following is a part of Keras preprocessing layers?**
+> **Which is true regarding feature columns?**
 >
-> - [ ] All of the options are correct.
-> - [ ] Numerical features preprocessing
-> - [ ] Image preprocessing
-> - [ ] Image data augmentation
+> * [ ] Feature columns describe how the model should use raw input data from your features dictionary.
+> * [ ] Feature columns describe how the model should use raw output data from your features dictionary.
+> * [ ] Feature columns describe how the model should use a graph to plot a line.
+> * [ ] Feature columns describe how the model should use raw output data from your TPU's.
 
 #### Quiz 2.
 
 > [!important]
 > **What are distinct ways to create a dataset?**
 >
-> - [ ] A data transformation constructs a dataset from one or more tf.data.Dataset objects.
-> - [ ] A data source constructs a Dataset from data stored in memory or in one or more files.
-> - [ ] A data source constructs a Dataset from data stored in memory or in one or more files and a data transformation constructs a dataset from one or more tf.data.Dataset objects.
-> - [ ] None of the options are correct.
+> * [ ] None of the options are correct.
+> * [ ] A data source constructs a Dataset from data stored in memory or in one or more files and a data transformation constructs a dataset from one or more tf.data.Dataset objects.
+> * [ ] A data transformation constructs a dataset from one or more tf.data.Dataset objects.
+> * [ ] A data source constructs a Dataset from data stored in memory or in one or more files.
 
 #### Quiz 3.
 
 > [!important]
-> **Which of the following is not a part of Categorical features preprocessing?**
+> **Which of the following is true about embedding?**
 >
-> - [ ] tf.keras.layers.Hashing
-> - [ ] tf.keras.layers.CategoryEncoding
-> - [ ] tf.keras.layers.IntegerLookup
-> - [ ] tf.keras.layers.Discretization
+> * [ ] Embedding is a handy adapter that allows a network to incorporate sparse or categorical data.
+> * [ ] An embedding is a weighted sum of the feature crossed values.
+> * [ ] All options are correct.
+> * [ ] The number of embeddings is the hyperparameter to your machine learning model.
 
 #### Quiz 4.
 
 > [!important]
-> **When should you avoid using the Keras function adapt()?**
+> **Which of the following layers is not non-trainable?**
 >
-> - [ ] When working with lookup layers with very small vocabularies
-> - [ ] When using TextVectorization while training on a TPU pod
-> - [ ] When working with lookup layers with very large vocabularies
-> - [ ] When using StringLookup while training on multiple machines via ParameterServerStrategy
+> * [ ] Normalization
+> * [ ] Discretization
+> * [ ] StringLookup
+> * [ ] Hashing
 
 #### Quiz 5.
 
 > [!important]
-> **Which of the following is true about embedding?**
+> **What is the use of tf.keras.layers.TextVectorization?**
 >
-> - [ ] All options are correct.
-> - [ ] Embedding is a handy adapter that allows a network to incorporate sparse or categorical data.
-> - [ ] An embedding is a weighted sum of the feature crossed values.
-> - [ ] The number of embeddings is the hyperparameter to your machine learning model.
+> * [ ] It turns raw strings into an encoded representation that can be read by an Embedding layer or Dense layer.
+> * [ ] It turns string categorical values into encoded representations that can be read by an Embedding layer or Dense layer.
+> * [ ] It turns continuous numerical features into bucket data with discrete ranges.
+> * [ ] It performs feature-wise normalization of input features.
 
 #### Quiz 6.
 
 > [!important]
-> **Which of the following layers is not non-trainable?**
+> **When should you avoid using the Keras function adapt()?**
 >
-> - [ ] Hashing
-> - [ ] Normalization
-> - [ ] Discretization
-> - [ ] StringLookup
+> * [ ] When using TextVectorization while training on a TPU pod
+> * [ ] When working with lookup layers with very large vocabularies
+> * [ ] When working with lookup layers with very small vocabularies
+> * [ ] When using StringLookup while training on multiple machines via ParameterServerStrategy
 
 #### Quiz 7.
 
 > [!important]
-> **What is the use of tf.keras.layers.TextVectorization?**
+> **Which of the following is not a part of Categorical features preprocessing?**
 >
-> - [ ] It turns string categorical values into encoded representations that can be read by an Embedding layer or Dense layer.
-> - [ ] It turns raw strings into an encoded representation that can be read by an Embedding layer or Dense layer.
-> - [ ] It turns continuous numerical features into bucket data with discrete ranges.
-> - [ ] It performs feature-wise normalization of input features.
+> * [ ] tf.keras.layers.Discretization
+> * [ ] tf.keras.layers.IntegerLookup
+> * [ ] tf.keras.layers.Hashing
+> * [ ] tf.keras.layers.CategoryEncoding
 
 #### Quiz 8.
 
 > [!important]
-> **Which is true regarding feature columns?**
+> **Which of the following is a part of Keras preprocessing layers?**
 >
-> - [ ] Feature columns describe how the model should use raw input data from your features dictionary.
-> - [ ] Feature columns describe how the model should use raw output data from your TPU's.
-> - [ ] Feature columns describe how the model should use raw output data from your features dictionary.
-> - [ ] Feature columns describe how the model should use a graph to plot a line.
+> * [ ] Numerical features preprocessing
+> * [ ] All of the options are correct.
+> * [ ] Image preprocessing
+> * [ ] Image data augmentation
 
 ### Document - [Resources: Design and Build a TensorFlow Input Data Pipeline](https://www.cloudskillsboost.google/course_templates/12/documents/512774)
 
@@ -285,31 +285,31 @@ In this module, we discuss activation functions and how they are needed to allow
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/12/video/512775)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=OqbxZOWIK98)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=OqbxZOWIK98)
 
 Person: Welcome to the Building Neural Networks with TensorFlow and Keras API module. In this module, you'll learn to describe how activation functions, loss and optimizers work, build a DNN model using Keras Sequential and Functional APIs, use feature columns and Keras preprocessing layers in a Keras model, save or load and deploy a Keras model on Vertex AI and describe model subclassing.
 
 ### Video - [Activation functions](https://www.cloudskillsboost.google/course_templates/12/video/512776)
 
-- [YouTube: Activation functions](https://www.youtube.com/watch?v=TeoeanLgzt0)
+* [YouTube: Activation functions](https://www.youtube.com/watch?v=TeoeanLgzt0)
 
 Person: Next, let's take a look at activation functions and how they help training deep neural network models. Here's a good example. This is a graphical representation of a linear model. We have three inputs on the bottom: X1, X2 and X3, shown by those blue circles. They're combined with some weight, W, given to them on each of those edges. Those are the arrows that are pointing, and that produces an output, which is the green circle there at the top. There's often an extra bias term that's added in, but for simplicity, that isn't going to be shown here. This is a linear model since it's of the form Y equals W1 times X1 plus W-2 times X2 plus W3 times X3. Now, we can substitute each group of weights for a similar new weight. Does this look familiar? It's exactly the same linear model as before despite adding a hidden layer of neurons. How is that so? What happens? Well, the first neuron in the hidden layer that's on the left takes the weights from all the three input nodes. Those are all the red arrows that you see here. And you can see that's w1, w4 and w7, all combining, respectively, as you see clearly highlighted. Now, as you take the new weight, that's the output of the first neuron, which, in our case, is w10 now, as one of those three weights going into the final output. You'll see that we do this two more times for the other two yellow neurons and their inputs respectively from X1, X2 and X3. And you can see that there's a ton of matrix multiplication going on behind the scenes. Honestly, in my experience, machine learning is basically taking arrays of various dimensionality like 1D, 2D or 3D, and then smashing them and multiplying them against each other where one array or a tensor could be a randomized array of starting weights of the model, and the other is the input data set, and yet a third is the output array or tensor of the hidden layer. You'll see behind the scenes it's honestly just a lot of simple math, depending upon your algorithm, but a lot of it is done really, really, really quickly. That's the power of machine learning. Here, though, we still have a linear model. How can we change that? Let's go deeper. I know what you're thinking: What if we just add another hidden layer? Does that make it a deeper neural network? Well, unfortunately this once again collapses all the way back down into a single weight matrix multiplied by each of those three inputs. It's the same linear model. We can continue this process in adding more and more and more hidden neuron layers, but it would be the same result, albeit it would be a lot more costly computationally for training and for prediction or predicting because it's a much more complicated architecture than we actually need. So here's an interesting question: How do you escape from having just a linear model? Well, by adding nonlinearity, of course. That's the key. The solution is adding a nonlinear transformation layer, which is facilitated by a nonlinear activation function such as a sigmoid, tan H or ReLU. In thinking of the terms of the graph that's created by TensorFlow, you can imagine each neuron actually having two nodes, the first node being the result of the weighted sum, W times X plus B, and the second node is the result of that being passed through the activation function. In other words, there are the inputs to the activation function followed by the outputs of the activation function, so the activation function acts as a transition point between layers, and so you get that nonlinearity. Adding in this nonlinear transformation is the only way to stop the neural network from condensing back down into a shallow network. Even if you have a layer with nonlinear activation functions in your network, if elsewhere in your network you have two or more layers with linear activation functions, those can all still be collapsed down into just one network. So usually neural networks have all layers nonlinear for the first and minus-one layers and then have the final layer transformation be linear for regression or sigmoid or a softmax for classification. It all depends on what you want that final output to be. Now, you might be thinking, "What nonlinear activation function do I use? There's many of them," right? You've go sigmoid. You've got scaled and shifted sigmoid. You have the tan-H of the hyperbolic tangent being some of those earlies. However, as we're going to talk about, these kind of have a saturation, which leads to what we call the vanishing gradient problem where, where there's zero gradients, the models' weights don't update anything times zero, right? And training halts. So the rectified linear unit, or ReLU, for short, is one of our favorites because it's simple, and it works really well. Let's talk about it a bit. In the positive domain, it's linear, as you see here, so we don't have that saturation, whereas in the negative domain, the function is zero. Networks with ReLU hidden activations often have 10 times the speed of training than networks with sigmoid hidden activations. However, due to the negative domain's function always being zero, we can end up with ReLU layers dying. Now, what I mean by that is, you'll start getting inputs in the negative domain. Then, the output of the activation will be zero, negative times zero, zero, which doesn't help in the next layer getting the inputs back into the positive domain. It's still going to be zero. This compounds and creates a lot of zero activations. During back propagation, when updating the weights, since we have to multiply our error's derivative by the activation, we end up with a gradient of zero, thus a weight update of zero, thus, as you can imagine, with a lot of zeros the weights aren't going to change, and the training fails for that layer. Fortunately this problem has been encountered a lot in the past, and there's a lot of really cool, clever methods that have developed to slightly modify the ReLU to avoid the dying ReLU effect and ensure training doesn't stall but still with much of the benefits you would get from a normal ReLU. So here is the normal ReLU again. The maximum operator can also be represented by a piecewise linear equation where less than zero, the function is zero, and greater than zero, the function is X. Some extensions to ReLU meant to relax the nonlinear output of the function and to allow small negative values, let's take a look at some of those. Softplus, or a smooth ReLU function, this function has its derivative as the logistic function. The logistics sigmoid function is a smooth approximation of the derivative of the rectifier. Here is another one. The Leaky ReLU function, I love that name, is modified to allow those small negative values when the input is less than zero. Its rectifier allows for a small nonzero gradient when the unit is saturated and not active. The parametric ReLU learns parameters that control the leakiness and shape of the function. It adaptively learns the parameters of the rectifiers. Here's another good one. The exponential linear unit, or ELU, or ELU, is a generalization of the ReLU that uses a parameterized exponential function to transform from positive to small negative values. Its negative values push the mean of the activations closer to zero. That means that activations are closer to zero, enable faster learning as they bring the gradient closer to a natural gradient. Here's another good one. The Gaussian error linear unit, or GELU, that's another high-performing neural network activation function like the ReLU, but its nonlinearity results in the expected transformation of a stochastic regularizer, which randomly applies the identity or zero map to that neuron's input. I know what you're thinking: "That's a lot of different activation functions." I'm a very much a visual person. Here's the quick overlay of a lot of those on that same XY plane.
 
 ### Video - [Training neural networks with TensorFlow 2 and the Keras Sequential API](https://www.cloudskillsboost.google/course_templates/12/video/512777)
 
-- [YouTube: Training neural networks with TensorFlow 2 and the Keras Sequential API](https://www.youtube.com/watch?v=ivVjqJhTLY8)
+* [YouTube: Training neural networks with TensorFlow 2 and the Keras Sequential API](https://www.youtube.com/watch?v=ivVjqJhTLY8)
 
 Person: TF.Keras, again, that's TensorFlow's high level API for building and training your deep learning models. It's also really useful for fast prototyping, state-of-the-art research and productionalizing these models, and it has a couple key advantages that you should be familiar with. It's user-friendly. Keras has a simple, consistent interface optimized for your common ML use cases. It provides clear and actionable feedback for user errors which makes it kind of fun to write ML with. Its modular and composable Keras models are made together by connecting configurable building blocks together with just a few restrictions. Also, it's really easy to extend and write your own cost and building blocks, to express new ideas on the leading edge of machine learning research. You can create new layers, create new metrics, loss functions and develop your whole new state-of-the-art machine learning model should you wish. Here's an example: A sequential model, like you see here in code, is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor. Sequential models, not really advisable if the model that you're building has multiple inputs or multiple outputs. Any of the layers in the model have multiple inputs and multiple outputs that, that model needs to do layer sharing or the model has a nonlinear topology such as a residual connection or if it multi-branches. Let's look at some more code! In this example, you'll see that there's one single dense layer being defined. That layer has 10 nodes or neurons, and the activation is a softmax, and the activation being softmax tells us we're probably doing classification. With a single layer, the model is linear. This example is able to perform logistic progression and classify examples across 10 classes. With the addition of another dense layer, the model now becomes a neural network with one hidden layer, but it's possible to map nonlinearities through that ReLU activation we talked about before. Once more, you can add one layer onto the network. Now it's becoming a deeper neural network. Each additional layer makes it deeper and deeper and deeper. Now let's try that again. Here's another deeper neural network architecture. Needless to say, the deeper neural net gets, generally the more powerful it becomes in learning patterns from your data, but one thing you really have to watch out for is this can cause the model to overfit as it may almost learn all the patterns in the data by memorizing it and not generalize to unseen data. Now, there are mechanisms to avoid that, like regularization, and we'll talk about those later. Once we define the model object, we compile it. During model compilation, a set of additional parameters are passed to the method. These parameters will determine the optimizer that should be used, the loss function and the evaluation metrics. Other parameter options could be the lost weight, the sample weight mode and the weighted metrics if you get really advanced in this. What is a loss function? Well, that's your guide to the terrain. Tell the optimizer when it's moving in the right or wrong direction for reducing the loss. Optimizers tie together that loss function and the model parameters by actually doing the updating of the model in response to the output of the loss function. In plain terms, optimizers shape and mold your model into its most accurate possible form by playing around with those weights. An optimizer that's generally used in machine learning is SGD, or Stochastic Gradient Descent. SGD is an algorithm that descends the slope, hence the name, to reach the lowest point on that loss surface. A useful way to think of this is think of that surface as a graphical representation of the data, and the lowest point in that graph is where the error is, at a minimum. Optimizers aim to take the model there through successive training runs. In this example, the optimizer that we're using is called Adam. Adam is an optimization algorithm that can be used instead of the classical Stochastic Gradient Descent procedure to update network weights iteratively based on training data. The algorithm is straightforward to implement, and besides being computationally efficient and having little memory requirements, another advantage of Adam is its invariability due to the diagonal rescaling of the gradients. Adam is well-suited for models that have large and large and large data sets or if you have a lot of parameters that you're adjusting. The method is also very appropriate for problems with very noisy or sparse gradients and nonstationary objectives. In case you're wondering, besides Adam, some additional optimizers are momentum, which reduces learning rate when the gradient values are small, AdaGrad, which gives frequently occurring features low learning rates, Adadelta, which improves AdaGrad by avoiding and reducing LR to zero, and the last one, which is a pretty cool name, FTRL, or follow the regularized leader. I love that name. It works well on wide models. At this time, Adam and FTRL make really good defaults for deep neural nets as well as linear models that you're building. Now is the moment that we've all been waiting for. It's time to train the model that we just defined. We'll train models in Keras by calling the fit method. You can pass parameters to fit that define the number of epochs. Again, an epoch is a complete pass on the entire training data set, steps for epoch, which is the number of batch iterations before a training epoch is considered finished, validation data, validation steps, batch size, which determines the number of samples in each mini batch, its maximum is the number of all samples, and others such as callbacks. Callbacks are utilities called at certain points during model training for activities such as logging and visualization using tools such as TensorBoard. Saving the training iterations to a variable allows for plotting of all your chosen evaluation metrics like mean absolute error, root mean squared error, accuracy, et cetera, versus the epochs, for example, like you see here. Here's a code snippet with all of the steps put together: the model definition, compilation, fitting and evaluation. Once trained, the model can now be used for predictions or inferences. You'll need an input function that provides data for the prediction, so back to our example of the housing price model. We can predict the house prices of examples of a 1,500 square foot house and an 1,800 square foot apartment for example. The predict function in the tf. Keras API returns a NumPy array or arrays of the predictions. The steps parameter determines the total number of steps before declaring the prediction round finished. Here, since we have just one example, we set steps equal to one. Setting steps equal to none would also work here. Note, however, that at the input samples in the tf.data data set or a data set iterator if steps is set to none, predict will run until the input data set is exhausted.
 
 ### Video - [Serving models in the cloud](https://www.cloudskillsboost.google/course_templates/12/video/512778)
 
-- [YouTube: Serving models in the cloud](https://www.youtube.com/watch?v=7C7nYqo2D2E)
+* [YouTube: Serving models in the cloud](https://www.youtube.com/watch?v=7C7nYqo2D2E)
 
 Person: ... Once you've selected the features, transform them as needed, chosen your model architecture, applied any regularization as necessary to ensure good performance, trained your model and [Indistinct] through this process a couple of times. It's time to serve the model for a prediction. Of course, making individual predictions is not really realistic because you can't expect client code to have our model objective in memory. For others to use our trained model, we'll have to save or export our model to a file and then expect [Indistinct] code to instantiate the model from that exported file. We'll export the model to a TensorFlow SavedModel format. Once we have a model in this format, we have lots of ways to serve the model, web application, code like JavaScript, from a mobile application, etcetera. Let's learn a little bit more about saved model. SavedModel is a universal serialization format for TensorFlow models. SavedModel provides a language neutral format to save your machine learning models that is both recoverable and hermetic. It enables higher level systems and tools to produce, consume and transform your TensorFlow models. The resulted SavedModel is then servable. Models saved in this format can be restored using the tf. [Indistinct]. models.loadmodel and their compatible with TensorFlow serving. One of the ways that we can serve the model is to utilize the Cloud AI platform managed service. The AI platform service also performs scaled training but for now, we're going to be focusing on just serving a train model. You can start by creating a model object in AI platform. Let's give our a creative name, I just decided to call it property price, again with the house price prediction example here. Next and this is really important, we need to create a version for our model. We'll call this model version DNN, this is going to be a deep neural network. You can also utilize a time stamp or another differentiator in case you have multiple versions of the same model type. Now once the version and the model are created, you can just run this command to push the model into the Cloud. Remember to point to the output directory in which the SavedModel was actually saved to. The command to push the model also takes other flags, such as Python and TensorFlow runtime versions. The framework, in case you're using something like psychic learn or [Indistinct], the flag here defaults to TensorFlow. And a bucket in which to save this staging training archives. A staging bucket is only required if a file upload is necessary, that is, other flags include local paths. Once the model is created and then pushed to AI platform, you can just use this command gcloud ai-platform predict and that will actually do the performing your prediction. Make sure that the flags include the model name, it's version and the path to a file contain the examples that you wanted to get predictions on.
 
 ### Video - [Lab intro: Introducing the Keras Sequential API on Vertex AI Platform](https://www.cloudskillsboost.google/course_templates/12/video/512779)
 
-- [YouTube: Lab intro: Introducing the Keras Sequential API on Vertex AI Platform](https://www.youtube.com/watch?v=BsWIgsgZ8Gk)
+* [YouTube: Lab intro: Introducing the Keras Sequential API on Vertex AI Platform](https://www.youtube.com/watch?v=BsWIgsgZ8Gk)
 
 PERSON: The Keras Sequential API allows you to create TensorFlow models layer by layer. This is useful for building most kinds of machine-learning models, but it does not allow you to create models that share layers, reuse layers, or have multiple inputs or outputs. In this lab, we'll see how to build a simple deep neural network model using the Keras Sequential API and feature columns. Once we have trained our model, we will deploy it using Vertex AI and see how to call our model for online prediction.
 
@@ -317,17 +317,17 @@ PERSON: The Keras Sequential API allows you to create TensorFlow models layer by
 
 In this lab, you will see how to build a simple deep neural network model using the Keras Sequential API and Feature Columns. Once you have trained your model, you will deploy it using AI Platform and see how to call the model for online prediciton.
 
-- [ ] [Introducing the Keras Sequential API on Vertex AI Platform](../labs/Introducing-the-Keras-Sequential-API-on-Vertex-AI-Platform.md)
+* [ ] [Introducing the Keras Sequential API on Vertex AI Platform](../labs/Introducing-the-Keras-Sequential-API-on-Vertex-AI-Platform.md)
 
 ### Video - [Training neural networks with TensorFlow 2 and the Keras Functional API](https://www.cloudskillsboost.google/course_templates/12/video/512781)
 
-- [YouTube: Training neural networks with TensorFlow 2 and the Keras Functional API](https://www.youtube.com/watch?v=YIJFBxDfM_Q)
+* [YouTube: Training neural networks with TensorFlow 2 and the Keras Functional API](https://www.youtube.com/watch?v=YIJFBxDfM_Q)
 
 Person: No, this section is not about ornithology, or the study of birds. We all know that seagulls can fly, right? Well, we also know that pigeons can fly as well. It's intuitive that animals with wings can fly, just like we learned growing up, so making that generalization or that leap feels kind of natural. Ooh, what about penguins? Or I guess you could say ostriches, for that matter. It's not an easy question to answer but by jointly training a wide linear model for memorization alongside a deep neural network for generalization one can combine the strengths of both to bring us one step closer to human-like intuition. At Google, we call it wide and deep learning. It's useful for generic large scale regression and classification problems with sparse inputs. And again, that's categorical features with a large number of possible feature values, like high dimensionality. Such as recommender systems, search, and ranking problems. Those are some of the most common scenarios. Now your human brain is a very sophisticated learning machine formed by rules, by memorizing everyday events, like "hey, that seagull can fly. Pigeons can fly." But also to generalize those learnings to things we haven't seen before. "Well, okay, I think animals with wings can fly." Perhaps more powerfully, memorization also allows us to further refine our generalized rules with exceptions. Like "penguins can't fly." As we're exploring how to advance machine intelligence, we asked ourselves the question can we teach computers to learn like humans do? By combining both the power of memorization with generalization, making that leap from training to inference. This is what a sparse matrix looks like. Super super wide, with lots and lots of features. You want to use linear models to minimize the number of free parameters, and if the columns are independent, linear models may suffice. Nearby pixels, however, tend to be highly correlated so putting them through a neural network or a deep neural network, we have the possibility that the inputs get decorrelated and mapped to a lower dimension. Intuitively, this is what happens when your input layer takes each pixel value and the number of hidden nodes is much less than the number of input nodes. A wide and deep model architecture is an example of a complex model that can be built rather easily using a Keras Functional API. The Functional API gives your model the ability to have multiple inputs and outputs. It also allows for models to share layers and actually it's a little bit more than that. It allows you to define ad hoc network graphs, should you need. With that functional API, models are defined by creating instances of layers and then connecting them directly to each other in pairs, then defining a model that specifies the layers act as the input and the output to the model when stringing everything together. The functional API, it's a way for you to create models that are more flexible than the sequential API. It can handle models with nonlinear topology, models with shared layers, and models with multiple inputs or outputs, so consider that functional API in those use cases. The API also makes it easy to manipulate multiple inputs and outputs. This can't be done with the sequential API. Here's a very simple example. Let's say you're building a system for ranking custom issued tickets by priority and then routing them to the right department. Your model could have these four inputs, the title of the ticket, that's a text input, the text body of the ticket, also a text input; any tags added by the user, categorical input; an image representing different logos that can appear on the ticket. It'll then have two outputs, a department that should handle the ticket, can use the classification activation function like softmax. Output over the [Indistinct] departments. And a text sequence, with a summary of the text body. In the functional API, models are created by specifying their inputs and outputs in a graph of layers. That means a single graph of layers can be used to generate multiple models. You can treat any model as if it were a layer by calling it on an input or an output of another layer [Indistinct] that's kind of cool. Note that by calling a model, you're not just reusing the architecture of the model. You're also reusing its weights. This is an example of what code for an autoencoder might look like. Notice how the operations are treated like functions with the outputs serving as the inputs in subsequent layers. Another really good use for the functional API are models that share layers. Shared layers or layer instances that get reused multiple times in the same model. They learn features that correspond to multiple paths in the graph of layers. Shared layers are often used to encode inputs that come from, say, similar places. Like two different pictures of text that feature relatively the same vocabulary. Since they enable the sharing of the information across these different inputs and they make it possible to train a model on much less data. If a given word is seen in one of those inputs that won't benefit the processing of all inputs that go in through that shared layer. To share a layer in the functional API, just call the same layer instance multiple times. Okay, now for the fun part. How do you actually create one of these wide and deep models? Okay. So we're going to start by setting up the input layer for the model. Using the features of the model data. For this example, we'll be using the pickup and dropoff latitude and longitude as well as the number of passengers to try to predict the taxicab fare for a given ride. These inputs will be fed to the wide and deep portions of the model. Using the inputs above we can then create the deep portion of the model. Layers.dense is a densely-connected neural network layer. By stacking multiple layers, we can make it deep. We can also create the wide portion of the model, for example using dense features, which produces a dense tensor based on a given amount of feature columns that you define. Lastly, how do you bring them both together? You combine the wide and deep portions and compile the model as you see here. Training, evaluation, and inference work exactly the same way for models built with the sequential API method or the functional API like you saw with these examples. Okay, so let's talk about some strengths and weaknesses. Strengths. It's less verbose than using keras. Model subclasses. It validates your model while you're defining it. In the functional API, your input specification, that's your shape and your [Indistinct] is created in advance through the input. And every time you call a layer, the layer checks that the specification passed to its matches, its assumptions, and it'll raise a super helpful error message if not. This guarantees that any model that you built with a functional API will run. All debugging other than conversions related to debugging will happen statically during the model construction and not at execution time. This is similar to type checking in a compiler. Your functional model is plottable and inspectable. You can plot the model as a graph. And you can easily access intermediate nodes in this graph. For example, to extract and reuse the activations of intermediate layers. Your functional model can be serialized or cloned. Because a functional model is a data structure rather than a piece of code, it's safe to serialize and can be saved as a single file that allows you to recreate the exact same model without having access to any of the original code. See our [Indistinct] serialization guide for more details I'll provide. Here's some weaknesses. It does not support dynamic architectures. The functional API treats models as DAGs, or directed acyclic graphs, of those layers. This is true for most deep-learning architectures, but not all. For instance, recursive networks or Tree-RNNs, do not follow this assumption and cannot be implemented in the functional API. Sometimes you just need to write everything from scratch. When writing advanced architectures, you may want to do things that are outside the scope of defining a DAG of layers, for instance, you may want to expose multiple custom training and inference methods to your model instance. This would require subclassing.
 
 ### Video - [Lab intro: Build a DNN using the Keras Functional API on Vertex AI Platform](https://www.cloudskillsboost.google/course_templates/12/video/512782)
 
-- [YouTube: Lab intro: Build a DNN using the Keras Functional API on Vertex AI Platform](https://www.youtube.com/watch?v=QMhomW3q2LE)
+* [YouTube: Lab intro: Build a DNN using the Keras Functional API on Vertex AI Platform](https://www.youtube.com/watch?v=QMhomW3q2LE)
 
 PERSON: In this lab, you will export BigQuery data to Google Cloud Storage to train a Keras model. First, you'll review how to read in CSV file data using tf.data. Then, you'll specify input, hidden, and output layers in the DNN architecture. After that, you'll train the model locally and visualize the loss curves. Finally, you'll deploy and predict with the model using Vertex AI.
 
@@ -335,23 +335,23 @@ PERSON: In this lab, you will export BigQuery data to Google Cloud Storage to tr
 
 In this lab, we will build a Keras DNN to predict the fare amount for NYC taxi cab rides.
 
-- [ ] [Build a DNN using the Keras Functional API](../labs/Build-a-DNN-using-the-Keras-Functional-API.md)
+* [ ] [Build a DNN using the Keras Functional API](../labs/Build-a-DNN-using-the-Keras-Functional-API.md)
 
 ### Video - [Model subclassing](https://www.cloudskillsboost.google/course_templates/12/video/512784)
 
-- [YouTube: Model subclassing](https://www.youtube.com/watch?v=e6CrqPG6mFk)
+* [YouTube: Model subclassing](https://www.youtube.com/watch?v=e6CrqPG6mFk)
 
 Person: Let's start with where model subclassing fits in the spectrum of model building. We've already looked at the two Keras models. The sequential model is very straightforward and consists of a simple list of layers but is limited to single-input, single-output stacks of layers as the name suggests. The functional API is an easy-to-use, fully featured API that supports arbitrary model architectures. Most people in most use cases should use the functional API, which is the Keras industry strength model. The third way to create a Keras model is model subclassing where you implement everything from scratch on your own. You should use this if you have complex, out-of-the-box research use cases. Choosing a model depends on the amount of customization you need. The sequential model does not allow you much flexibility in creating your own models. Although more flexible than the sequential model, the functional API also has limits on customization. With model subclassing, you can create your own fully customizable models in Keras. This is done by subclassing the model class and implementing a call method. Let's consider some examples. Previously we saw how in the functional API you start from the input and chain layer called to specify the model's forward pass, and then you create your model from inputs and outputs. By subclassing the model class, you define your layers in init or the initializer, and you implement the models' forward pass in the call method. So when you use model subclassing, you have a constructor method which defines the layers to use. In this example, a pair of dense layers. You also have the call method which orders the layers. In our example, the call method feeds the inputs through the dense layers and then feeds that result through the second dense layer. The model is subclassed directly where my model inherits from the tf.keras model. Indeed, model subclassing is fully customizable. Let's consider another way you can use model subclassing to further customize its example. One way is to define the number of classes, which is an extra argument in the constructor, so the user can set the number of classes the model is predicting. This argument is used in the second dense layer to determine the number of neurons in this layer. For complete flexibility, consider a customer training loop. The sequential, functional and model subclass model types can be compiled and trained using the simple compile and fit command, or you can write your own custom training loop for complete control. For example, you can use the training keyword argument to determine the behavior of the model at training time and at test time. This keyword argument should be a Boolean, either true or false. A really common use of this keyword argument is in batch normalization and Dropout layers because some neural network layers behave differently during training and inference. For example, during training, Dropout will randomly drop out units and correspondingly scale up activations of the remaining units. During inference, it does nothing since you usually don't want the randomness of dropping out units here. Model subclassing is at the of the spectrum in Keras. Although you can use the sequential API for ease of use or the functional API for more customization, use model subclassing for complete flexibility and control.
 
 ### Video - [Regularization basics](https://www.cloudskillsboost.google/course_templates/12/video/512785)
 
-- [YouTube: Regularization basics](https://www.youtube.com/watch?v=lBp5DRHnOVY)
+* [YouTube: Regularization basics](https://www.youtube.com/watch?v=lBp5DRHnOVY)
 
 Person: Remember our ultimate goal while model training is to minimize that loss value. It's now time to talk about how you do that at scale with regularization. If you graph the loss curve both on a training and test dataset, it may look something like this. The graph shows the loss on the y-axis versus the time on the x-axis. Do you notice anything wrong here? Yeah, the loss value is nicely trending down on the training data, but, whoa, shoots upward at some point in the test data. That's not good, right? Clearly, there's some amount of memorization or overfitting that's going on here. It seems to be correlated with the number of training iterations. How could we address this? We could reduce the number of training iterations and stop earlier. Early stopping is definitely an option, but there's got to be some more better examples. Well, here's where that regularization key word comes into the picture. Let's test our intuition using TensorFlow Playground. TensorFlow Playground, if you haven't seen it yet, it's a handy little tool for visualizing how neural networks learn. We use it extensively to intuitively grasp the concepts visually, especially if you're a visual person. Let's draw your attention to the screen. There's something odd going on here. Notice that the region in the bottom left that's looking like blue or blue-ish, there's nothing in the data suggesting blue. The model's decision boundary is kind of arbitrary or crazy. Why do you think that is? Notice the relative thickness of the five lines running from input to output. These lines or edges show the relative weight of those five features. The lines emanating from X1 and X2 are much thicker than those coming from the feature crosses. So the feature crosses are contributing far less to the model than the normal or uncrossed features. Removing all the feature crosses gives us a saner model. I'll provide a link for you to try this yourself, and you can see how a curved boundary is suggestive of overfitting that'll disappear, and that test loss will actually converge. After a thousand iterations, the test loss should be a slightly lower value than when the feature crosses were in play, although your results may vary a bit depending on the dataset. The data in this exercise is basically a linear model, plus a little bit of noise. If we use a model that's too complicated, such as the ones with too many of those synthetic features or feature crosses, we give the model an opportunity to squeeze and overfit itself to the training data at the cost of making the model perform badly on test data. Clearly, early stopping can't help us here. It's the model's complexity that we need to bring under control or penalize. But how can we measure model complexity and avoid making it too complex? There's a whole field around this called generalization theory, or G theory, that goes about defining the statistical framework. The easiest way to think about it, though -- I love this -- is by your own intuition. Based on the 14th-century principle laid out by William Ockham -- sounds familiar, right? -- when training a model, we apply Occam's razor, that principle, as our basic heuristic guide in favoring those simpler models, which make less assumptions about your training data. Let's look into some of the most common regularization techniques to help us apply this principle in practice and punish complex models. The idea is to penalize that model complexity. So far in our training process, we've been trying to minimalize loss of the data. Given the model, we need to balance that against the complexity of the model. Before we talk too much about how to measure model complexity, let's pause and understand why we said balance complexity against loss. The truth is that oversimplified models are useless. Like taxi cab always going to be $5? Useless. If we take it to the extreme, you could end up with a null model. We need to find the right balance between simplicity and actually accurate fitting of the training data. Later, you'll see that the complexity measure is multiplied by a lambda coefficient, which will allow us to control our emphasis on model simplicity. This makes it yet another hyperparameter that requires your expertise and tuning before the model training starts. Gets fun, right? Your optimal lambda value for any given problem is really data-dependent, which means that we almost need to spend time tuning this either manually or automated search. I hope that by now this is why this approach is a little bit more principled than just cutting the model off after a certain amount of iterations or early stopping.
 
 ### Video - [How can we measure model complexity:  L1 vs. L2 Regularization](https://www.cloudskillsboost.google/course_templates/12/video/512786)
 
-- [YouTube: How can we measure model complexity:  L1 vs. L2 Regularization](https://www.youtube.com/watch?v=fX1ZMBCnoPI)
+* [YouTube: How can we measure model complexity:  L1 vs. L2 Regularization](https://www.youtube.com/watch?v=fX1ZMBCnoPI)
 
 Person: Regularization is one of the major fields of research within machine learning. There are many published techniques and more to come. We already mentioned early stopping. We also started exploring the group of methods under the umbrella of parameter norm penalties. There's also dataset augmentation methods, noise robustness, sparse representations and many more. In this module, we will have a closer look at L1 and L2 regularization methods from the parameter norm penalties group of techniques. But before we do that, let's quickly remind ourselves what problem regularization is solving for us. Regularization refers to any technique that helps generalize a model. A generalized model performs well not just on training data, but also on never-seen test data. We know we are going to use regularization methods that penalize model complexity. Now, the question is how to measure model complexity. Both L1 and L2 regularization methods represent model complexity as the magnitude of the weight vector and try to keep that in check. From linear algebra, you should remember that the magnitude of a vector is represented by the norm function. Let's quickly review L1 and L2 norm functions. The weight vector can be any number of dimensions, but it's easier to visualize in two-dimensional space. So a vector with w0 = a and w1 = b will look like this blue arrow. Now, what's the magnitude of this vector? You may instantly think c because you're applying the most common way that we learned in high school, the Euclidean distance from the origin. C would be the square root of the sum of a-squared plus b-squared. In linear algebra, this is called the L2 norm denoted by the double bars and the subscript of two, or no subscript at all because two is the known default. The L2 norm is calculated as the square root of the sum of the squared values of all vector components, but that's not the only way the magnitude of a vector can be calculated. Another common method is L1 norm. L1 measures the absolute value of a plus absolute value of b, basically the red path highlighted here. Now remember, we were looking for a way to define model complexity. We used L1 and L2 as regularization methods where model complexity is measured in the form of magnitude of the weight vector. In other words, if we keep the magnitude of our weight vector smaller than a certain value, we've achieved our goal. Now, let's visualize what it means for the L2 norm of our weight vector to be under a certain value, let's say one. Since L2 is the Euclidean distance from the origin, our desired vector would be bound within this circle with a radius of one centered on the origin. When trying to keep L1 norm under a certain value, the area in which our weight vector can reside will take the shape of this red diamond. The most important takeaway here is that when applying L1 regularization, the optimal value of certain weights can end up being zero and that is because of the extreme diamond shape of the optimal region that we're interested in. That is as opposed to the smooth circular shape in L2 regularization. Let's go back to the problem at hand, how to regularize our model using vector norm. This is how we apply L2 regularization, also known as weight decay. Remember, we try to keep the weight values close to the origin. In 2D space, the weight vector would be confined within a circle. You can easily expand the concept to 3D space, but beyond 3D is hard to visualize, so don't try. To be perfectly honest, in machine learning we cheat a little in the math department. We use the square of L2 norm to simplify calculation of derivatives. Notice there's a new parameter here, Lambda. This is a simple scaler value that allows us to control how much emphasis we want to put on model simplicity over minimizing training error. It is another tuning parameter which must be explicitly set. Unfortunately, the best value for any given problem is data dependent, so we'll need to do some tuning either manually or automatically using a tool like hyperparameter tuning, which we'll cover in the next module. To apply L1 regularization, we simply swap L2 norm with L1 norm. Careful though, the outcome could be very different. L1 regularization results in a solution that is more sparse. Sparsity in this context refers to the fact that some of the weights end up having an optimal value of zero. Remember the diamond shape of the optimal area? This property of L1 regularization is extensively used as a feature selection mechanism. Feature selection simplifies the ML problem by causing a subset of the weights to become zero. Zero weights then highlight the subset of features that can be safely discarded.
 
@@ -360,90 +360,90 @@ Person: Regularization is one of the major fields of research within machine lea
 #### Quiz 1.
 
 > [!important]
-> **How does regularization help build generalizable models ?**
+> **The L2 regularization provides which of the following?**
 >
-> - [ ] None of the options are correct.
-> - [ ] By using image processing APIS to find out accuracy
-> - [ ] By adding dropout layers to our neural networks and by using image processing APIS to find out accuracy
-> - [ ] By adding dropout layers to our neural networks
+> * [ ] It adds a sum of the squared parameter weights term to the loss function.
+> * [ ] It subtracts a sum of the squared parameter weights term to the loss function.
+> * [ ] None of the options are correct.
+> * [ ] It multiplies a sum of the squared parameter weights term to the loss function.
 
 #### Quiz 2.
 
 > [!important]
-> **The L2 regularization provides which of the following?**
+> **How does regularization help build generalizable models ?**
 >
-> - [ ] It adds a sum of the squared parameter weights term to the loss function.
-> - [ ] It subtracts a sum of the squared parameter weights term to the loss function.
-> - [ ] None of the options are correct.
-> - [ ] It multiplies a sum of the squared parameter weights term to the loss function.
+> * [ ] By adding dropout layers to our neural networks
+> * [ ] By using image processing APIS to find out accuracy
+> * [ ] By adding dropout layers to our neural networks and by using image processing APIS to find out accuracy
+> * [ ] None of the options are correct.
 
 #### Quiz 3.
 
 > [!important]
-> **The predict function in the tf.keras API returns what?**
+> **What is the significance of the Fit method while training a Keras model?**
 >
-> - [ ] Both numpy array(s) of predictions & input_samples of predictions
-> - [ ] Input_samples of predictions
-> - [ ] None of the options are correct.
-> - [ ] Numpy array(s) of predictions
+> * [ ] Defines the number of steps per epochs
+> * [ ] Defines the number of epochs
+> * [ ] Defines the batch size
+> * [ ] Defines the validation steps
 
 #### Quiz 4.
 
 > [!important]
-> **The Keras Functional API can be characterized by having:**
+> **Non-linearity helps in training your model at a much faster rate and with more accuracy without the loss of your important information?**
 >
-> - [ ] Multiple inputs and outputs and models with shared layers.
-> - [ ] Multiple inputs and outputs and models with non-shared layers.
-> - [ ] None of the options are correct.
-> - [ ] Single inputs and outputs and models with shared layers.
+> * [ ] True
+> * [ ] False
 
 #### Quiz 5.
 
 > [!important]
-> **Select the correct statement regarding the Keras Functional API.**
+> **During the training process, each additional layer in your network can successively reduce signal vs. noise. How can we fix this?**
 >
-> - [ ] The Keras Functional API does not provide a more flexible way for defining models.
-> - [ ] None of the options are correct.
-> - [ ] Unlike the Keras Sequential API, we do not have to provide the shape of the input to the model.
-> - [ ] Unlike the Keras Sequential API, we have to provide the shape of the input to the model.
+> * [ ] Use sigmoid or tanh activation functions.
+> * [ ] Use non-saturating, linear activation functions.
+> * [ ] None of the options are correct.
+> * [ ] Use non-saturating, nonlinear activation functions such as ReLUs.
 
 #### Quiz 6.
 
 > [!important]
-> **How does Adam (optimization algorithm) help in compiling the Keras model?**
+> **Select the correct statement regarding the Keras Functional API.**
 >
-> - [ ] By updating network weights iteratively based on training data
-> - [ ] Both by updating network weights iteratively based on training data by diagonal rescaling of the gradients
-> - [ ] None of the options are correct.
-> - [ ] By diagonal rescaling of the gradients
+> * [ ] The Keras Functional API does not provide a more flexible way for defining models.
+> * [ ] Unlike the Keras Sequential API, we do not have to provide the shape of the input to the model.
+> * [ ] None of the options are correct.
+> * [ ] Unlike the Keras Sequential API, we have to provide the shape of the input to the model.
 
 #### Quiz 7.
 
 > [!important]
-> **Non-linearity helps in training your model at a much faster rate and with more accuracy without the loss of your important information?**
+> **How does Adam (optimization algorithm) help in compiling the Keras model?**
 >
-> - [ ] False
-> - [ ] True
+> * [ ] By diagonal rescaling of the gradients
+> * [ ] None of the options are correct.
+> * [ ] By updating network weights iteratively based on training data
+> * [ ] Both by updating network weights iteratively based on training data by diagonal rescaling of the gradients
 
 #### Quiz 8.
 
 > [!important]
-> **During the training process, each additional layer in your network can successively reduce signal vs. noise. How can we fix this?**
+> **The predict function in the tf.keras API returns what?**
 >
-> - [ ] Use sigmoid or tanh activation functions.
-> - [ ] None of the options are correct.
-> - [ ] Use non-saturating, linear activation functions.
-> - [ ] Use non-saturating, nonlinear activation functions such as ReLUs.
+> * [ ] Numpy array(s) of predictions
+> * [ ] None of the options are correct.
+> * [ ] Input_samples of predictions
+> * [ ] Both numpy array(s) of predictions & input_samples of predictions
 
 #### Quiz 9.
 
 > [!important]
-> **What is the significance of the Fit method while training a Keras model?**
+> **The Keras Functional API can be characterized by having:**
 >
-> - [ ] Defines the batch size
-> - [ ] Defines the number of epochs
-> - [ ] Defines the validation steps
-> - [ ] Defines the number of steps per epochs
+> * [ ] Single inputs and outputs and models with shared layers.
+> * [ ] None of the options are correct.
+> * [ ] Multiple inputs and outputs and models with shared layers.
+> * [ ] Multiple inputs and outputs and models with non-shared layers.
 
 ### Document - [Resources: Building Neural Networks with the TensorFlow and Keras API](https://www.cloudskillsboost.google/course_templates/12/documents/512788)
 
@@ -453,19 +453,19 @@ In this module, we describe how to train TensorFlow models at scale using Vertex
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/12/video/512789)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=AZmAgFKKFzA)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=AZmAgFKKFzA)
 
 Person: Welcome to the Training at Scale with Vertex AI module. In this module you'll learn to use TensorFlow to create your training job, package up a TensorFlow model as a Python package and configure, start and monitor a Vertex AI training job.
 
 ### Video - [Training at scale with Vertex AI](https://www.cloudskillsboost.google/course_templates/12/video/512790)
 
-- [YouTube: Training at scale with Vertex AI](https://www.youtube.com/watch?v=uHVUWF5pT3U)
+* [YouTube: Training at scale with Vertex AI](https://www.youtube.com/watch?v=uHVUWF5pT3U)
 
 Person: Now, this diagram you've already seen before. Recall that TensorFlow can run on different hardware. You could program it in the low-level C++ API, but more likely, you'll use the Python API as we practice in this course. And you've already started to see the different abstraction layers for distributed training. But how do you actually run distributed TF at scale in production? We will use distributed TensorFlow on Vertex AI. Before you begin training, though, be sure to, one, gather and prepare your training data and, two, put that training data in an online source that Vertex AI can access, like Cloud Storage. When sending training jobs to Vertex AI, it's common to split most of the logic into a task.py file and a model.py file. Task.py is the entry point to your code that Vertex AI will start and knows job-level details like how to parse the command line arguments, how to long run, where to write the outputs, how to interface with the hyperparameter tuning and so on. To do core ML, task.py will invoke model.py. Sharing code between computers always involves some type of packaging. Sending your model to Vertex AI platform for training is no different. TensorFlow and Python in particular require a very specific but standardized packaging structure shown here. This example shows the code to test your code locally, which is the first step. To make the code compatible with Vertex AI, upload the data to Google Cloud Storage, move the code into a trainer Python package, submit the training job with gcloud to train on Vertex AI. To move code to a trainer Python package, we package our code as a source distribution using setup.py and setup tools. Use the sdist command to create a source distribution, then copy that Python package to your GCS bucket. There are two general configurations: with a prebuilt container and without. When you create a custom job, you specify settings that Vertex AI needs to run your training code, including location; the region where the container or Python package will be run; job name, which is required -- It's a display name for the custom job -- and Python package URIs, which is a comma-separated list of Cloud Storage URIs specifying the Python package files, which are the training program and its dependent packages. The maximum number of package URIs is 100. One worker pool for single node training or worker pool spec; machine type, which is the type of machine; replica count, which is the number of worker replicas to use -- In most cases, this is set to one for your first worker pool -- Python package executor image URI, which is the URI of the container image that runs the provided Python package; Python module, which is the Python module name to run after installing the packages. If you want to perform distributed training, then you can specify the worker pool spec flag multiple times, once for each worker pool. We'll talk later about modifications to your code to accommodate distributed training. Let's talk through these various components for our taxi fare model. For our taxi fare model, we'll specify the following components: region, display-name, python-package, worker-pool and any arguments. Note that we're using a prebuilt container that will run in a specific region. The python-package is held in a Google Cloud Storage bucket. The spec of the worker pools includes machine type and Docker image. Arguments include output directory, the training data path, batch size and the number of examples to train. If you want to specify configuration options that are not available in the preceding examples, you can use the config flag to specify the path to a config yaml file in your local environment that contains the fields of custom job spec. For example, if an option is specified both in the configuration file and via the command line arguments, the command line arguments override the configuration file. Just a pro tip here: To get the best performance for ML jobs, make sure you select a single region bucket in Google Cloud Storage. The default is multi-region, which is better suited for web serving than ML training. You can monitor training jobs with the Google Cloud Console. The GCP web console has a great UI for monitoring your jobs. You can see exactly how they were invoked, check out their logs and see how much CPU and memory they are consuming. While inspecting log entries may help you debug technical issues like an exception, it's really not the right tool to investigate the ML performance. TensorBoard, however, is a great tool. To use it, make sure your job saves summary data to Google Cloud Storage location, and then when you start TensorBoard, simply provide that directory. It can even handle multiple jobs per folder. Once your training job is complete, you'll have a TensorFlow model ready to serve for predictions. Vertex AI provides a great infrastructure for this. Vertex AI will build you a production-ready web app out of your trained model and offer a batch service for your less-latency-sensitive predictions. Since these are both REST APIs, you'll be able to make scalable, secure inferences from whatever language you want to write the client in.
 
 ### Video - [Lab intro: Training at Scale with Vertex AI Training Service](https://www.cloudskillsboost.google/course_templates/12/video/512791)
 
-- [YouTube: Lab intro: Training at Scale with Vertex AI Training Service](https://www.youtube.com/watch?v=ue_RArO_sv0)
+* [YouTube: Lab intro: Training at Scale with Vertex AI Training Service](https://www.youtube.com/watch?v=ue_RArO_sv0)
 
 PERSON: In this lab, we'll make the jump from training locally to training in the cloud. We'll take advantage of Google Cloud's Vertex AI Training Service. Vertex AI Training Service is a managed service that allows the training and deployment of ML models without having to provision or maintain servers. The infrastructure is handled seamlessly by the managed service for us. In this lab, you'll organize your training code into a Python package, train your model using cloud Infrastructure via Vertex AI Training Service, and run your training package using Docker containers and push training Docker images on a Docker registry.
 
@@ -473,7 +473,7 @@ PERSON: In this lab, we'll make the jump from training locally to training in th
 
 In this notebook you'll make the jump from training locally, to do training in the cloud. You'll take advantage of <a href="https://cloud.google.com/vertex-ai/">Google Cloud's Vertex AI Training Service</a>.
 
-- [ ] [Training at Scale with Vertex AI Training Service](../labs/Training-at-Scale-with-Vertex-AI-Training-Service.md)
+* [ ] [Training at Scale with Vertex AI Training Service](../labs/Training-at-Scale-with-Vertex-AI-Training-Service.md)
 
 ### Quiz - [Quiz: Training at Scale with Vertex AI](https://www.cloudskillsboost.google/course_templates/12/quizzes/512793)
 
@@ -482,50 +482,50 @@ In this notebook you'll make the jump from training locally, to do training in t
 > [!important]
 > **Fill in the blanks. You can use either pre-built containers or custom containers to run training jobs. Both containers require you specify settings that Vertex AI needs to run your training code, including __________, ____________, and ________.**
 >
-> - [ ] Region, display-name, worker-pool-spec
-> - [ ] Cloud storage bucket name, display-name, worker-pool-spec
-> - [ ] Source distribution name, job name, worker pool
-> - [ ] Region, source distribution, custom URI
+> * [ ] Region, source distribution, custom URI
+> * [ ] Region, display-name, worker-pool-spec
+> * [ ] Cloud storage bucket name, display-name, worker-pool-spec
+> * [ ] Source distribution name, job name, worker pool
 
 #### Quiz 2.
 
 > [!important]
-> **Fill in the blanks.  When sending training jobs to Vertex AI, it is common to split most of the logic into a _________ and a ___________ file.**
+> **To make your code compatible with Vertex AI, there are three basic steps that must be completed in a specific order. Choose the answer that best describes those steps.**
 >
-> - [ ] task.avro, model.avro
-> - [ ] task.xml, model.xml
-> - [ ] task.py, model.py
-> - [ ] task.json, model.json
+> * [ ] First, upload data to Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI. Next, move code into a trainer Python package.
+> * [ ] First, upload data to Google Cloud Storage. Next, move code into a trainer Python package. Then submit your training job with gcloud to train on Vertex AI.
+> * [ ] First, download data from Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI. Next, move code into a trainer Python package.
+> * [ ] First, move code into a trainer Python package. Next, upload data to Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI.
 
 #### Quiz 3.
 
 > [!important]
-> **When you package up a TensorFlow model as a Python Package, what statement should every Python module contain in every folder?**
+> **Which file is the entry point to your code that Vertex AI will start and contains details such as "how to parse command-line arguments and where to write model outputs?**
 >
-> - [ ] an init_.py
-> - [ ] model.py
-> - [ ] tmodel.json
-> - [ ] tmodel.avro
+> * [ ] tmodel.json
+> * [ ] task.py
+> * [ ] tmodel.avro
+> * [ ] model.py
 
 #### Quiz 4.
 
 > [!important]
-> **To make your code compatible with Vertex AI, there are three basic steps that must be completed in a specific order. Choose the answer that best describes those steps.**
+> **Fill in the blanks.  When sending training jobs to Vertex AI, it is common to split most of the logic into a _________ and a ___________ file.**
 >
-> - [ ] First, upload data to Google Cloud Storage. Next, move code into a trainer Python package. Then submit your training job with gcloud to train on Vertex AI.
-> - [ ] First, upload data to Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI. Next, move code into a trainer Python package.
-> - [ ] First, download data from Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI. Next, move code into a trainer Python package.
-> - [ ] First, move code into a trainer Python package. Next, upload data to Google Cloud Storage. Then submit your training job with gcloud to train on Vertex AI.
+> * [ ] task.json, model.json
+> * [ ] task.avro, model.avro
+> * [ ] task.xml, model.xml
+> * [ ] task.py, model.py
 
 #### Quiz 5.
 
 > [!important]
-> **Which file is the entry point to your code that Vertex AI will start and contains details such as "how to parse command-line arguments and where to write model outputs?**
+> **When you package up a TensorFlow model as a Python Package, what statement should every Python module contain in every folder?**
 >
-> - [ ] model.py
-> - [ ] tmodel.json
-> - [ ] task.py
-> - [ ] tmodel.avro
+> * [ ] an init_.py
+> * [ ] tmodel.avro
+> * [ ] model.py
+> * [ ] tmodel.json
 
 ### Document - [Resources: Training at Scale with Vertex AI](https://www.cloudskillsboost.google/course_templates/12/documents/512794)
 
@@ -543,4 +543,4 @@ This module is a summary of the Build, Train, and Deploy ML Models with Keras on
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

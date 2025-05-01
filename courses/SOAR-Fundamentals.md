@@ -1,13 +1,12 @@
 ---
 id: 569
 name: 'SOAR Fundamentals'
-datePublished: 2024-05-07
-topics:
-- SOAR
-- Data Management
-- Automation
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/569
+date_published: 2024-05-07
+topics:
+  - SOAR
+  - Anthos Config Management
 ---
 
 # [SOAR Fundamentals](https://www.cloudskillsboost.google/course_templates/569)
@@ -18,9 +17,9 @@ This course will familiarize you with the core functionality of Chronicle, inclu
 
 **Objectives:**
 
-- Explore and navigate the user interface
-- Apply security using roles based access control
-- Manage events and deploy remote agents
+* Explore and navigate the user interface
+* Apply security using roles based access control
+* Manage events and deploy remote agents
 
 ## Introduction
 
@@ -28,7 +27,7 @@ This module will provide a short introduction to Chronicle SOAR Fundamentals
 
 ### Video - [Intro and Architecture](https://www.cloudskillsboost.google/course_templates/569/video/472735)
 
-- [YouTube: Intro and Architecture](https://www.youtube.com/watch?v=mtKbuf0SAIA)
+* [YouTube: Intro and Architecture](https://www.youtube.com/watch?v=mtKbuf0SAIA)
 
 Hello and welcome to the Google Chronicle SOAR platform fundamentals training course This course has been developed to introduce you to the Chronicles or platform and provide an overview of its features and functionality We'll review each section of the platform get familiar with SOAR Concepts and provide guidance on best practices Without further delay let's get started What is SOAR SOAR stands for Security Orchestration Automation and Response SOAR is the collection of disparate technologies that enable businesses to gather data and security alerts from different sources SOAR combines three previously known technology sectors together Orchestration and automation threat intelligence and incident response A SOAR platform allows for more seamless combination of people, processes and rechnologies allowing all to work more closely together and for more efficient alert processing and decision making So how does chronicle SOAR address SOAR it provides a single workbench for the entire security operations center Our alert grouping capabilities are quite powerful allowing an analyst to see the full incident and not just a single alert Ontology and mapping makes it much easier to visualize entities Playbooks allow for powerful automation and as a single pane of glass for the sock Chronicle SOAR provides rich reporting Let's familiarize ourselves with some key Chronicle SOAR terms Alerts or correlated events received by Chronicle SOAR correlated because depending on the type of alert it can be compromised of one or more base events Integrations are packages of actions connectors and jobs developed to interact with specific third-party products or services Connectors, one of the components of an integration are used by Chronicle SOAR to ingest events into the platform Actions are also part of integrations An action is a specific API call to a third-party product or endpoint examples would be a quarantine host action for carbon block or update ticket for ServiceNow Playbooks are built using actions A case is essentially a container for one or more related alerts Entities are an alerts main objects of interest often closely associated with what some would call IOCs These can be IPs, host names, users or similar Entities will often be the targets of various actions in a Playbook such as scoping a virus total enrichment to only external IPs Artifacts are similar to entities except they would be your alert secondary objects of interest Examples would be URLs, hashes and file names An event is data ingested by the connector which is aggregated into alerts Chronicles or jobs are essentially scheduled cron jobs that allow for things such as health checks and synchronization A playbook is a workflow of actions which are executed following a trigger and which is attached to an alert A block is a sub Playbook able to be reused across multiple playbooks you can modify the block once and all playbooks which utilize it will automatically inherit the change and finally triggers are the first action in every playbook that specify the criteria under which the playbook will auto attach to an alert Now we'll look at a high level diagram of the chronicle SOAR architecture On the left hand side we start with our various data sources From here connectors ingest events and process them through a data processing pipeline We can see here the ontology processing, alert clustering and case prioritization that takes place within the pipeline From here we'll create an alert and a case within the chronicle SOAR UI Once we have an alert we're able to begin attaching playbooks as well as executing actions We can create insights to display information to the analysts as well as allowing them to collaborate on case management for deep investigations Throughout the process we continue to measure KPIs allowing for rich dashboarding and reporting Next we'll take a look at the data ingestion workflow within Chronicle SOAR this begins on the left hand side of the ingestion layer with the various connectors that we provisioned within the platform this can include any custom developed connectors Through the connectors we're able to ingest events through the data processing layer enabling the creation of alerts and cases within the platform Through the playbook layer we are then able to attach any workflow engines that we've created to the alerts within the platform All of the accumulated data is then stored in the storage layer and the backend database and index for full searchability Any connectors or actions which need to execute within isolated environments that the chronicle SOAR server does not natively have access to can be executed through the remote agent allowing interoperability within devices located within those isolated environments Through the cases at the application layer an analyst is able to continue their investigation documenting their findings and allowing that information to be richly reported through the dash dashboards and reports Chronicles SOAR is a SaaS solution you can rest assured that a cloud native solution built upon kubernetes in GCP will ensure your environment is available to you each customer is fully isolated from a single tenant approach to enable maximum security The Chronicle SOAR cloud service data layer uses the dedicated GCP RDS database instance and database runs on multiple GCP availability zones for high availability of customer data Your data is private and secure hosted on a platform built for availability that's ready to scale when you are Chronicle SOAR understands the sensitive nature of sock data and we implement numerous controls and policies to keep your environments safe We certify our efforts through compliance with leading industry standards and seek to get a little better each day now that we've concluded our introduction let's take a look at the platform see you in the next video
 
@@ -38,67 +37,67 @@ This module will cover the core functionality of Chronicle, including the user i
 
 ### Video - [Platform Overview](https://www.cloudskillsboost.google/course_templates/569/video/472736)
 
-- [YouTube: Platform Overview](https://www.youtube.com/watch?v=8DZRdLgbE4M)
+* [YouTube: Platform Overview](https://www.youtube.com/watch?v=8DZRdLgbE4M)
 
 Hi and welcome back in this module we will briefly review the main sections of the Chronicles SOAR platform starting with the analytics homepage and the my cases tab On this page an analyst can see those cases assigned to them or their role in cases where they or their role are mentioned Using the filtering options at the top it can further refine their case queue as well as use the links on the side to view the details of the alert and jump directly to the case in question From here the pending actions tab showcases the new collaboration workflow available in the Chronicle SOAR version 6 This is one page dedicated to all the questions for running playbooks then an analyst can answer to facilitate and continue the execution of that workflow From here the analyst can choose to view the case or they can respond directly to the question enabling the workflow to continue execution Next we have the my tasks tab on this page an analyst can keep track of those tasks that they've both created and which have been assigned to them allowing for viewing task details and marking them as complete when done Next we have the requests tab this enables any user on the platform to fill out a template of request For specific task execution upon submission of this request this alert is generated in the platform allowing the attachment of a playbook to execute and fulfill the task requested automatically Next we have the workspace tab On this page an analyst can store links, files and contact information relevant to their investigation and notes for continuing and follow-up activities they wish to monitor And finally we have the announcements tab This is a shared RSS feed among all users in the platform allowing a sock manager to share information with their team quickly Next we'll look at dashboards Dashboards in Chronicle SOAR showcase real-time high-level metrics regarding sock operations This is done in a fully widgetized view allowing for complete customization of existing dashboards and widgets and creating new dashboards Several dashboards are provided out of the box showcasing various metrics and the ability to share these dashboards with others export and save them as report templates for scheduling reports These dashboards can be further filtered based on time range and either all environments within the platform or only specific environments allowing for easy comparison of metrics between environments Next we'll look at the case management tab This is the tab where the analysts will spend most of their time triaging alerts and managing cases we can see that a big focus in version 6 is the new widgetized UI allowing for more granular control over the page layout and the styling available within each of the individual widgets On the left hand side we have a case queue along with filtering options allowing analysts to see just those cases that are relevant to them and their role On the main page we have a dedicated tab for the case overview highlighting information from all the alerts grouped into the case and providing access to the case wall the audit trail for all the activity each alert grouped into the case receives a dedicated tab allowing showcasing of the information just relevant to that one alert we will discuss case management more in an upcoming module Next we will look at Chronicle SOAR built-in playbook designer analysts can manage existing playbooks and blocks within the platform on this page and create them from scratch Designing a playbook is as easy as opening the step selection choosing the required action and dragging it over into the playbook From here we can continue building advanced workflows using prior actions results On this page we also will allow you to monitor the execution of the playbook to understand its utility in your environment over time We also make available from here the ability to add views associated with this playbook allowing you to dictate the way the information surface through the execution of the playbook is displayed to the analyst We have a dedicated module later diving into those features a little bit more Next we'll look at Chronicle SOAR search tab on this page the user can surface all cases and alerts within the platform both open and closed we provide the ability to scope a search using some parameters at the top as well as provide additional filtering using a variety of options on the left hand side From here a user can multi-select various cases and perform bulk operations across those cases once filtered to just the appropriate results we also give the ability to export those results to a CSV next we'll look at Chronicle SOAR reports Reports are split between regular reports and advanced reports regular reports can be efficiently designed using the editor on the right hand side and present a report that closely mimics the dashboard view we saw earlier these reports can be generated on demand and can be scheduled to be sent out via email we also make available within the platform our embedded looker reports these are very rich granular reports that allow showcasing the various metrics collected during the case management playbook execution Next we will examine incident manager Chronicle SOAR crisis and incident management module while investigating alerts and cases we can open that alert within incident manager when one is deemed more severe than the others and needs to be handled as an incident requiring additional collaborators From here we can invite collaborators to participate in the incident resolution we provide a dashboard view surfacing high-level metrics regarding what's already been completed concerning the incident resolution and the steps still awaiting execution the workstation wall provides a complete audit trail of all the comments, decisions and facts that surface through the incident resolution we provide filtering capabilities at the top along with the ability to assign user tasks and reminders for check-in there is chat functionality available within incident manager once the incident has been resolved we can close the incident and generate a report encompassing the entire audit trail of all the steps taken in the incident resolution We will continue our Chronicles SOAR journey by looking at the icons available at the top right hand side of the screen From here the first icon is the Chronicle SOAR IDE All the code from all the actions and Integrations is available to the end user within the development environment these can be extended further and new integration development can be started on this page From here we make available a testing tab so that test alerts within the platform can be used to simulate the execution of the code Moving on to the SOAR platform marketplace this is where we make the various integrations available within the integrations tab for download These integrations are for all the third-party products within the cloud and on-prem that you seek to have Chronicles SOAR interact with we also make available the use case marketplace For those looking for opinionated workflows and playbooks the use case marketplace provides templated use cases available from download that include the test alerts and sample playbooks that can then be extended further The SOAR platform marketplace provides third-party helper utilities often useful for Playbook development On the right edge of the screen we have a help tab which gives access to the learning portal, integrations portal community website, detailed product documentation and a robust search function Moving on to the final icons the configuration icon gives access to the settings screen allowing for much of the back-end configuration The integrations configuration screen configuring the integrations and all the various tenets within the platform The connector screen for configuring connectors allows the ingestion of alerts into the platform the configuring of jobs and default views and finally web hooks from here we make a notifications icon available so that users and administrators can receive relevant notifications and finally we have the user icon allowing changing the default theme localization and password I hope you enjoyed our high level overview of the platform we'll explore these sections in a little bit more detail in the upcoming modules thank you and we'll see you in the next video
 
 ### Video - [Case Management](https://www.cloudskillsboost.google/course_templates/569/video/472737)
 
-- [YouTube: Case Management](https://www.youtube.com/watch?v=-LGpwLLVTTw)
+* [YouTube: Case Management](https://www.youtube.com/watch?v=-LGpwLLVTTw)
 
 Hi and welcome back In this module we're going to review case management To quickly recap from the last video The Chronicle SOAR marketplace is where you can download integrations for third-party products you would like to integrate with Chronicle SOAR many of these integrations contain connectors which are the main method by which alerts are ingested into the platform As alerts are ingested by the connector they pass through a data ingested pipeline and eventually end up in a case displayed here Let's begin by taking a look at the case queue on the left hand side as we look down through the list of cases we can see that there are already some visual elements that have been called out Using our C2 traffic case as an example, we're able to see that this has already been assigned to a specific analyst as well as the fact that there are three alerts that have been grouped into this case The analyst has deemed this case to be an incident as well as marked it important and we can see that there are currently one or more playbooks pending a user interaction as well as some of the IOCs having been deemed suspicious through those playbook actions that have already run As we move to the top of this window you'll see that we can refresh the contents we can then expand the individual case cards to display yet more information and we can bulk select cases in order to close those directly from here Using the add a case button we have the ability to create manual cases by following the wizard presented here as well as the ability to simulate those test cases that have already been added to the platform now let's take a look at one of those cases in a bit more detail We see down here in our C2 traffic cases that we do have three alerts that have been grouped together An alert regarding a login out of working hours, an outbound IRC connection as well as a virus detonation All these alerts were surfaced and ingested by the platform they went through a data normalization pipeline which created entities from which those IOCs within the alert that we think are important Using that information at the end of the ingestion pipeline, the platform attempts to make a determination with regards to whether or not a new incoming alert should be grouped into an open existing case with other alerts because we believe that they are related to the same intrusion Under those circumstances we will get alert grouping and we believe that this provides an analyst's context with regard to the depth of the intrusion within their organization In the new widgetized interface of version 6 we have the ability to see those entities extracted from each alert as well as the relationship between those entities in our entities graph widget I will come up here clicking on the blue Explore button to open this up in a full page investigation view We can see here our same three alerts along the left hand side as well as the timeline of when those alerts were ingested down at the bottom As we click on each of the individual alerts we can see that only those entities related to that alert are highlighted on the graph in front of us As we click through the different alerts we are able to see the relationship and the commonalities between those entities in the individual alerts This information provides context to the analyst regarding why these alerts were grouped together and allows them to investigate a single case focusing on those cases at a permeated most deeply into the organization and those are typically deemed the most severe Now let's go ahead and jump back and take a look at one of those cases in depth Let's begin by taking a look at the case top bar Here we're able to see the current name assigned to the case as well as its current severity rating We can see the current case ID the environment that this case resides in the case time and the current case stage Down below we're able to see all of the various tags that have been added to this case as part of the investigation workflow Over on the right we're able to see the currently assigned analyst and reassigned between any of the existing roles and analysts within the platform Within this chat area analysts can go ahead and collaborate with their colleagues The information shared here is not automatically added to the audit trails of the case nor is it included in the default report which can be generated on the case Should any important information surface here you can pin this information to the case wall at any time Continuing on we have our close case button which allows us to supply a reason and a root cause before closing out any case should you choose to close out the case all included alerts will be automatically closed You do have the option of closing individual alerts as well The hamburger menu over here allows us to mark individual cases as important or incidents as well as modify the current stage and priority generate report and promote this case to an incident in incident manager We have our refresh button over here and we've already taken a look at the investigation view As we move further down the page we see that along with the three alert tabs we have our case overview tab Here is where we can present information regarding the aggregate of all the alerts grouped into this case Next to the case overview tab, we have the case wall This is Chronicle SOAR audit trail of all of the activity that's been performed with regards to the resolutions of this case and the included alerts Next to the case overview tab there will be an individual tab for every alert that has been grouped into this case Clicking on that tab we're presented with the overview screen where we can see a lot of information that has been accumulated through the running of the playbook on this alert More on that in just a moment we can see here that there's an event tab detailing all of the events that have contributed to the firing of this alert Many times this will be a one-to-one relationship with the alert indicating that the alert is representative of a single event that was triggered within the security solution Many products these days will also surface what we call threshold or aggregation alerts where the alert isn't triggered until a number of different events have taken place Should the platform ingest one of those alerts, we would see here all of the individual events that led to the triggering of that alert We also have here a dedicated page in order to see the playbook workflows that have been attached to the specific alert We can use icons over here in order to refresh The view in order to jump directly to the case wall or add additional playbooks to this alert Just above here we can see the drop down allowing us to jump to any of the included alerts as well as two icons one allowing us to execute a manual action against any of the entities in this alert at any time and one for the ability to provision tasks either to oneself or to other users of the platform Or this specific alert there are some additional alert options we can re-ingest this alert into the platform as a test case essentially making a duplicate of the alert allowing us to use this in conjunction with simulation mode on the playbook design page We also have the ability to move the alert from this case if it was not meant to be grouped with this case Change the alert priority add new entities and close an individual alert Moving back to the overview page for this specific alert we're going to take a moment to discuss the views that are now available within version 6 What we see here is Chronicle SOAR's new widgetized interface allowing the analyst and engineer to control the layout and styling of information as it's displayed on the page Under configuration there is a views section that allows us to curate the default cases and alert views that are presented at the time of alert ingestion until a more granular or more appropriate view is applied to that specific alert We can add new widgets by dragging them over as well as optionally styling the contest within the widget by choosing the configuration button and using the built-in editors to stylize the information displayed within the specific widget Not all widgets have the ability to allow the user to style the way the information is displayed but many do Coming back to our case management page we can see the layout of certain information and our first out of working hours alert We can see here our entity highlights, the various IOCs that have been extracted specifically from this alert an example of a user enrichment some major information as well as the results of some correspondence that have already taken place Clicking on the second alert, we can see that different information is presented as is the case with the third alert based on these individual alerts we can curate individual views ensuring that only the relevant information based on the alert type is presented to an analyst As we continue down the page we'll quickly take a look at our entity highlights widget these are the various IOCs that have been extracted from the specific alert The entities that we extract are typically the targets of the actions that are executed as part of the playbook workflow While these entities can be targets of those playbook workflows we can also execute manual actions against them directly from this page using the manual actions icon Clicking this icon will allow us to go ahead and select an action on the left hand side The scope of that action is already set to the individual entity that we'd like to execute the action against Moving down to the bottom of the page we see a selection where an analyst can add more notes at any time We provide a full rich text editor that allows the addition of text and images As we see here an analyst can also attach files at any time Within the same text editor, an analyst can also tag other users and roles within the platform surfacing a notification to those users This concludes our review of the case management and case overview features within the Chronicles SOAR platform Thank you and see you in the next video
 
 ### Video - [User and Environment Management](https://www.cloudskillsboost.google/course_templates/569/video/472738)
 
-- [YouTube: User and Environment Management](https://www.youtube.com/watch?v=J3rUr4JLm8Q)
+* [YouTube: User and Environment Management](https://www.youtube.com/watch?v=J3rUr4JLm8Q)
 
 Hi and welcome back in this module we're going to discuss users, roles, permissions and environments Environments is how Chronicle SOAR refers to multi-tenancy Environments provides a way to segment alerts for access control, reporting and integration configuration as an MSSP this allows for separation of client alerts For enterprises, this allows the platform to differentiate by subsidiary department or business unit as appropriate Environments also allow playbooks to target the appropriate instance configuration when executing an action If we go to configuration, then integrations we can see an example of that here with the environments configured on the left hand side Within Cymbal Insurance we see one instance of the active directory integration Clicking on the little cog, we're able to see the IP address of the domain controller targeted within this environment Clicking on the second environment, we also see the active directory integration installed here Clicking on this configuration shows us a different IP address for the domain controller within the second environment Through this mechanism when actions execute within alerts in the individual environments the actions are correctly targeted towards the endpoints based on the configuration of the integrations within each individual environment Returning to the environments page we're able to see on the main page the various environments configured within the platform From here, we can highlight an environment and choose the edit button or we're able to hit the plus to add a new environment Within the new environment configuration we see a few mandatory fields are required the name, the environment, a description, a contact name, email address and phone number Below the phone number, we see an entry for aliases Chronicle SOAR is able to account for differences at the time of alert ingestion in the environment name The platform does require an exact match in order to route the alerts into the correct environments that match being with the name provided up top, however down in the aliases parameter, you are able to provide alternate spellings of that name that might also appear within the environment fields in the various alerts being ingested List those aliases here and those alerts will be routed to the proper environment We see a checkbox indicating that we would like this environment added to all of the users and API keys configured for access to all environments We see below a configuration option for the data retention period This is the maximum amount of time cases and alerts will be retained within the platform before they are automatically removed The maximum date of retention period is supplied in the license applied to your Chronicle SOAR server From here, you're able to choose either that maximum or a lesser period of time configurable per environment Below this field, we see two additional fields for service level and ticketing system These are not default fields that you'll see in your platform These are dynamic environment parameters that have been added to the Chronicle SOAR server We'll discuss dynamic environment parameters next Going to the hamburger menu in the top right We see that we can add new dynamic parameters as well as modifying existing, export or importing existing values Clicking on Add Dynamic Parameters brings us to this screen allowing us to modify or add new parameters There are additional parameters for which new value can be configured per environment Couble-clicking on ticketing system we see this is provided as a list drop down with the pre-configured options available here As I hit cancel and we go look at modifying an existing environment we see here that we have the ability to change to any of those entries provided within the list All of the parameters, we see here for each environment are usable as placeholder values within the Chronicles SOAR platform That means that for any of the additional dynamic environment parameters which are added we're able to reference those placeholder values within a conditional in a playbook in order to branch off one execution branch or another This provides a mechanism for targeting playbooks across all environments while still accounting for differences within those environments and branching off of the playbooks appropriately Next, we'll discuss role management Roles within Chronicle SOAR govern who can see which cases within each environment Users are only able to see cases assigned to their role or one of the roles deemed to be an additional role to their role Roles can be created for all of the various tiers, departments, or teams within an organization up to a maximum of 20 We have the ability to assign a default role This will be the role automatically assigned to new alerts as they're ingested into the platform Down below, I've chosen to create a new role with the name enrichment which I will now assign as the default role This means that the new incoming alerts will be automatically assigned the enrichment role at the time the playbooks being processed through the playbook execution I'm able to reassign the role assignment of the case for example a tier 1 analyst Through the filtering and scoping options available in the case queue on the case management page An analyst is able to ensure that their only viewing cases assigned to the tier 1 role thereby ensuring that all of the enrichment has been completed before the role changes set to tier 1 thereby causing the case to show up within the case queue Next, we'll look at permissions From the permissions page an administrator is able to modify existing permission groups as well as create new groups When clicking on Add Permission Group we're able to supply a new group name as well as the license type that is appropriate for the group Choosing a license type will change the available permissions for the group Then, we can specify the appropriate landing page There are certain default groups included within the platform that cannot be removed as well as an admins group that cannot be modified However, it can be duplicated and assigned to additional users within the platform Scrolling down through the list of permissions, we can see that permissions can be configured per page with additional more granular configuration options on many of the pages Toward the bottom, we see a section to restrict actions Here, we're able to list individual actions for the integrations installed on the server thereby restricting users of this group from executing those actions Below, this we see a configuration for active directory groups here, we can list out the various groups within an active directory that contain the users that will be using ldap to log into the platform We are able to associate their user account and active directory group to this permission group at the time of login Next, we'll look at user management From the user management page an administrator can add modify and disable users Using the plus button in the top right we're able to provision a new user account We see that this user will be internal rather than using an external authentication source Below that are fields for first name last name and login which will be their email address The license field type applies the appropriate license to the user A standard license is considered a full user license within the platform Within the appropriate permission set a standard user is able to access all pages and resources within the platform A view-only user is a read-only user that can only see information on certain pages within the platform A collaborator is the new licensed user within Chronicle SOAR with the ability to interact within the platform in a limited capacity A collaborator can respond to questions posed during playbook execution as well as participate in approval workflows within the platform The managed user is similar to the collaborator but with full case management permissions Finally, the managed-plus user has the same permissions as the managed user with the additional ability to build and execute playbooks more on this in a later module, moving down we will assign the SOC rules and permission group we can also give access to specific environments and disable the account should that be needed Once the account has been created we're able to add a photo if desired This concludes our review of user and environment management within the Chronicle SOAR platform Thank you and see you in the next video
 
 ### Video - [Integrations Connectors and Ontology](https://www.cloudskillsboost.google/course_templates/569/video/472739)
 
-- [YouTube: Integrations Connectors and Ontology](https://www.youtube.com/watch?v=RPGY51KiIgY)
+* [YouTube: Integrations Connectors and Ontology](https://www.youtube.com/watch?v=RPGY51KiIgY)
 
 Hi and welcome back. In this module we're going to talk about Integrations which includes connectors, jobs and actions as well as mapping and modeling often referred to as Chronicle SOAR ontology. We begin here in the SOAR Platform Marketplace, which can be accessed from this button at the top navigation toolbar and over to the integrations tab. Integrations are code developed for Chronicle SOAR to target the APIs exposed by these third-party applications. Integrations allow Chronicle SOAR to interact with these applications by sending requests and processing the response they receive back. Which often contains additional data related to an entity or the target of the action. These responses can then be accessed as placeholder values, which we discuss further in the Playbook module. All Integrations can be downloaded installed and configured right here within the platform. After configuration integration, actions can then be added to the respective playbooks. Let's look at one integration in particular. The Google Chronicle integration as we click on the readme for the integration, we can see the internal components. At the top we have actions an action is python code that targets a specific API endpoint exposed by a third-party product and usually accomplishes a single task. Often, this involves receiving a response with additional information an analyst might find useful. Examples can be enriching an IP, blocking a hash, sending an email, locking out a user or any of the actions that we see listed here before us. Where relevant within certain Integrations we also have connectors. Connectors are Python code that allows for the creation of alerts within Chronicle SOAR. Sometimes more than one connector is provided per integration, as seen here. Specifically within Google Chronicle we have two Alert Connectors and one IoCs Connector. Connectors provide automatic alert ingestion usually on a scheduled basis and connectors also ensure that ingested alerts are routed to the appropriate environment if multi-tenancy is utilized. Within certain Integrations we have jobs. Jobs are integration dependent and run in the background not attached to any specific alert or case. Jobs are meant to add health check or synchronization capabilities to the platform. As seen here the Google Chronicle Integration contains one job to ensure ongoing synchronization. Now let's take a look at configuring instances of an integration configuring connectors and configuring jobs. All of which can be accessed underneath the configuration menu on the top right corner of the screen. We'll start here with Integrations. We can provision configured instances of each integration per environment deployed within the Chronicles or platform. Allowing us to target the relevant configuration during the execution of a Playbook. Let's take a look. We'll come over here to simple health and click on the plus sign to add a new instance of the active directory integration. Then we'll configure the relevant parameters. This will be for a user in domain X. Through this configuration, we can target the relevant domain controller. Allowing us to execute those actions within the active directory integration. In this specific environment. Now we'll move down to symbol insurance, which has a different active directory domain. Which we'd like to account for within Chronicle SOAR, within that environment we will also provision an instance of the active directory integration. This time we'll provision a different configuration relevant to the environment. This is going to be for a user in domain "y" by configuring different instances of the same integration. We're able to run the actions within those Integrations allowing us to target the appropriate endpoint for those API calls. This allows us to design playbooks that are relevant and useful across all the environments provisioned within Chronicle SOAR. While still retaining the ability to target the individual actions to the correct configuration within each specific environment. Now let's look at provisioning a connector. From the connectors page, we can review existing connectors as well as provision new connectors. Let's provision a new connector now. We'll begin by selecting the appropriate connector from the list of available connectors in the drop down. In this case, we'll select the SentinelOne Threads Connector. Every connector exposes different parameters, but will review some of the most common parameters here today. We'll start by selecting from the available drop down the environment to which to Route alerts ingested by this connector. We'll next configure how often we wish the connector to run and we can see here that the API route has already been filled in. Allowing us to fill in the token, we see here additional parameters allowing us to go ahead and specify how far back in time we should reach for the first run of the connector. As well as how many alerts should be ingested per iteration of this connector below, we have additional options allowing us to extract the environment field name directly from the ingested alerts. This allows us to dynamically route alerts into their appropriate environment by using a field contained within the alert to make that determination. Once all the relevant parameters have been filled in, we'll be sure to save our connector. And then move to the testing tab. From here, we'll select run connector once for a test run. We can see here that a sample alert has indeed been found. You can hit the preview icon in order to see some of the information that will be ingested as part of the alert creation. From here, check the box next to the sample alert and select load the system. This will enable you to begin the mapping and modeling once one iteration of this alert has been seen by the platform. From here, we'll move on to mapping and modeling. In this section, we will briefly review the mapping and modeling process that allows Chronicle SOAR to create normalized entities. From the field, names and different alerts ingested by the platform. This allows an analyst to visualize the objects of interest from an alert as well as the relationship between entities of grouped alerts. We begin here on the visual families page under settings. A visual family defines the entities of interest per use case as well as the relationship between those entities. Double-clicking on one of these visual families opens up in a new tab and exposes the relationship defined between the entities within that visual family. The visual families that we see here cannot be edited directly, but we do have the option of duplicating them at any time. The duplicated entries can be found at the bottom. And are able to open them up for editing. From here we can define new relationships between any of the additional entities within the platform. Next, we'll look at the ontology page. The ontology status page shows us all of the product and event combinations that have been seen by the platform in the past. As we scroll down, we see recent entries for alerts ingested into the platform. From here, we're able to click the configuration Cog icon in order to be taken to the event configuration page. Chronicle SOAR allows the mapping and modeling process to be defined via a hierarchy. This allows a minimal amount of configuration while providing a lot of flexibility for any of the deviations from the standard configuration. We can see the hierarchy over on the top left corner this begins at the connector level. Followed by the product, followed by the event type. Because the majority of products that Chronicle SOAR ingests from adhere to some sort of common schema. The majority of the mapping and modeling can usually be configured at the connector level. From here, we can move down to the mapping page. In order to specify the specific entities which should be extracted from this type of alert. We can begin by clicking the icon for Raw event properties in the top right hand corner. This shows us all the key value pairs that have been extracted from the ingested alert. These are all of the field names available to us during the mapping and modeling. As we review the list, let's filter for some specific entity types. For instance, let's type in the word name. We see a source username field as well as a destination username field. Let's go ahead and create entities out of both of these fields. We'll open source username and we'll select the field which should be used for the value of this entity. We don't use a delimiter with regard to this field name, so we'll select none here and we'll leave it as a string. Selecting save allows us to see that the field is colored green, indicating the value was successfully extracted and as we mouse over it we see an example of the value. Now let's move down to destination username and perform the same process. Using the same process, we can create any of the entities defined on this page from values contained within the ingested alert. Should any modifications to this field mapping be needed for any of the different alert types ingested by the platform, we would be able to move to the different levels in the hierarchy in order to specify a more granular configuration. That should apply to either the specific product type from this connector or, at the most granular level, the specific event type. If no more granular definitions are defined, all of these levels will just inherit what we defined at the connector level. This is as far as we'll go into this module with Integrations connectors and ontology. Thank you and see you in the next video.
 
 ### Video - [Playbooks Views](https://www.cloudskillsboost.google/course_templates/569/video/472740)
 
-- [YouTube: Playbooks Views](https://www.youtube.com/watch?v=-ltcRdU93Pc)
+* [YouTube: Playbooks Views](https://www.youtube.com/watch?v=-ltcRdU93Pc)
 
 Hi and welcome back In this module we'll walk through the features of the playbook designer and build out a small sample playbook We'll also introduce the new views available in version 6 and their association to playbooks A Chronicle SOAR Playbook is a linear workflow of actions and blocks that are executed from a specific trigger These workflows can be as generic or use case specific as you like As a playbook orchestrates the execution of API calls to third-party systems There is often a JSON response returned containing additional data This information is fully available to later actions in the Playbook This allows for advanced decision making based on evaluation of the responses from the tools available in your organization Let's build a block and a playbook together to see the process end to end Blocks and playbooks are managed together in the left hand column sorted by folder A block can simply be thought of as a mini playbook You design a workflow in the same way as a Playbook but since blocks can be nested into playbooks this allows you to reuse that workflow over and over in as many playbooks as you wish When you make a change to the workflow in the block those changes are inherited by every Playbook that uses the block We'll be designing a threat intelligence enrichment block and then we'll use that block in a new playbook that we create We begin by selecting the plus in the top left hand corner From here, we can select whether we'd like to create a new playbook or a new block We'll select block then choose the folder and the environment we can select specific environments in which to expose this block or we can click on all environments and make this block available in any future environments as well The first thing to notice about a block is that it doesn't have a trigger This is because a block will never be automatically attached to an alert at the time of an alert ingestion A block can be nested inside of a playbook that will be auto attached or a block can be attached manually by an analysts but never automatically From here, we have available to us on the left hand side the various integrations and actions that we've selected to install from the marketplace In this example, I'll begin by using VirusTotal and specifically the enrich IP action We'll drag that action over and add it as part of the block Double clicking on this action exposes some additional configuration parameters Under settings, we can set the action type to automatic or manual If set to manual, the playbook will pause waiting for the analyst to hit the execute button If step fails, we can select how we'd like this playbook action to respond If set to stop action and there's a Python exception or an API call times out the playbook will expose an error to the analysts If set to skip step because for instance, we may be enriching from several different sources The playbook will continue executing while still indicating that a specific step failed Moving on to parameters, the next two options of choose instance and fallback instance refers to the multi-tenancy within Chronicle SOAR Under choose instance, we can choose a specifically configured instance of this integration or leave it set to dynamic mode If set to dynamic mode the platform will go check within the specific environment where this playbook is running to see if there's a configured instance of this integration within that environment If yes, it will use that one otherwise it will refer back to the fallback instance The fallback instance allows us to optionally configure a specific instance of this integration to be used under all circumstances the dynamic mode selection should fail We can also see at the bottom The entities scoping selector as well as optional parameters for this specific integration Here we can select which entities from our alert will be passed to this action for enrichment In this case, I know that I'm looking to enrich the external IP addresses using the virus total service so I'll scope this action to those external IP addresses present within my alert Here we'll set the engine threshold that we need to meet before the match occurs I will set that to 50 Next, we can continue building out the workflow with additional actions Let's scroll down and select the enrich hash action Double clicking here exposes additional parameters as well We'll click on settings and set this to skip step, we'll then click parameters and set an engine threshold of 40 and I won't configure any of the optional parameters underneath Before clicking save however, I will click the entities drop down and scope this action to external IP addresses as well Before saving this block, we'll come up to the top left and give it a new name SPF enrichment Next, we'll click save here we can also look at the version control that is built into the playbook designer We'll save this new version and then view the version history Should I accidentally save any unintended changes in the future I'm always able to roll back to that snapshotted version Now let's create a new playbook we'll come back to the plus in the top left this time selecting playbook and leaving the folder as default As with the block we created earlier we will select all environments which will make this playbook available to future environments as well As we start creating our playbook, we'll begin by selecting the appropriate trigger that defines to exactly which type of alerts this playbook will automatically attach at the time of an alert ingestion We have many different triggers available on the left hand side My preference is to use the custom trigger as it is the most versatile trigger available After adding the trigger, we double click on it to specify the parameters dictating the conditions under which this playbook will attach automatically to an alert Here is where we'll first be introduced to the placeholder values that are available from this icon Clicking it brings us to the placeholder selector A placeholder can simply be thought of as a variable that is filled in with an actual value whenever this playbook runs on an alert that we've ingested into the platform We make several of these variables available under several different categories I'll begin at the top by searching for name and we see that Alert. Name is one of our available placeholders I'm going to perform an evaluation and specify that whenever the alert name contains the word data exfiltration This playbook will be automatically attached Next, we'll hit save I can now move over to actions then drag and drop additional actions into this playbook However, since I've already done so within a block I'm going to add my block instead I'll click on blocks and select my SPF enrichment block then drag it over When this playbook executes and it reaches this block it'll step into the block and execute the workflow defined inside All of the properties returned from all of those API calls all of that enrichment data is fully available to all of the later actions within the playbook Next, we'll come over here under flow and we'll evaluate a condition after our enrichment block runs We'll double click on the conditional and we'll go ahead and modify the first condition We'll see here that it's currently scoped to all entities We're going to click the placeholder selector which will then allow us to select an entity property for evaluation In this case, that entity property is the IsSuspicious property after the enrichments occur, if any of the IOCs or entities are deemed malicious they will have the Is. Suspicious property set to True this is the condition that we're going to evaluate within the conditional I will fill in that placeholder and specify that if that's equal to True again for any of the entities that we've enriched, we'll take branch one otherwise, we'll take the bottom branch Now because we don't want to leave our branches empty we'll add in a case common at the end of these We'll click on actions in the upper left and search for comment then drag case comment over to the two branches We will add the comment suspicious entities to case 1 and no suspicious densities to case 2 Now that we've created our playbook we'll close out the step selection we'll give it a new name and we'll hit save Now that we've saved our Playbook before placing into production mode we'd most likely like to test out the various components ensuring they adhere to the workflow as we intend To do so, I'll begin by turning off our playbook this will ensure that it's not going to be automatically attached to any new incoming alerts while I'm still testing From here, we will go choose the SPF enrichment block specifically this will be the block that we will begin testing In order to test out this block we'll place it into simulation mode Once in simulation mode we have an additional option down at the bottom allowing us to select a test case from our case queue we can watch the execution unfold against that test case by hitting the Run button As we see on the screen both of the actions included within our block successfully executed From here, we can hit the view results button to see the results of the analysis From here, as we continue our testing it's possible that this is not an API call that we wish to execute numerous times For instance, if this opens a new ticket in our help desk ticketing system we don't want a number of additional tickets created due to the testing practices To that end, we're able to take the results that were generated during this live execution and pin them to the individual actions As we then continue our testing this ensures that only the pinned results are returned to us and no actual outbound API call is made as part of the simulated testing We'll do so now for the VirusTotal enrich hash action we'll click on the blue pin results button and this opens up that action with simulation mode enabled as we can see up here in the top right Once simulation mode is enabled we merely provide the outcome of a run of the action as well as optionally the JSON result that we'd like to present to the remaining actions within this workflow We'll click save and our enrich hash action is now colored light gray indicating that is now in simulation mode As we continue testing our workflow whenever we come to this action we'll get back to JSON result that we've pinned We'll make those JSON results available to the latter actions of this playbook because these were collected from a live execution of this action within your environment as this playbook comes out of simulation mode and is placed into production we can expect that the workflow will continue to execute as it is anticipated This is because it was based on live results from within your unique environment to begin with Once we're happy with the workflow within the block we'll simply come into the enrich hash action and take it out of the simulation mode then take the entire block out of simulation mode Our block is now ready to use in production As a final topic for this video lesson we'll introduce you to the concept of views Views have been introduced in Chronicles SOAR version 6 in order to give you control over how the information collected is presented to an analyst Let's take a look the default case and alert views can be found under the configuration cog under views On this page, you can customize the default case and alert view This is the view presented to the analyst when a more granular view has not been used for that alert type On this page, we can see the various widgets available on the left hand side Adding a new widget to the pages simply a matter of dragging it over Once a widget has been added we can click the configuration cog for some additional parameters Within the key value widget we can specify a number of key value pairs of information that we'd like to present to the analyst While this page allows you to create the default views that the case and alert level you can also define a more granular view for each alert within Chronicle SOAR To do so, we'll come back to the playbook tab selecting the playbook that we just created we then see the workflow which we'll execute Going out and aggregating this information for us Now we can choose how to present this information by associating a specific view with this playbook We can do so by going to the add view button over here on the right hand side We'll give this view a name selecting which roles that we provisioned have access to this view In this case, we will use this as our internal SOC View and how we present information internally We can optionally craft additional views assigning them to other roles in the platform if we'd like to present information differently to those personnel Once we have our view, we can begin adding additional widgets to the view We'll start by adding pending actions here at the top Perhaps we'd like to view an events table then we see the entity highlights extracted from this alert We can modify the layout as well as optionally drag these widgets around Changing the way the information is presented This was a brief introduction to views within Chronicles SOAR version 6. In upcoming videos, we'll dive into this concept in more depth Thank you and we'll see you in the next video
 
 ### Video - [Settings](https://www.cloudskillsboost.google/course_templates/569/video/472741)
 
-- [YouTube: Settings](https://www.youtube.com/watch?v=px-dck5DB54)
+* [YouTube: Settings](https://www.youtube.com/watch?v=px-dck5DB54)
 
 Hi and welcome back In this module, we will be reviewing the settings available to you by navigating to the top right hand corner of the screen clicking on the configuration cog and choosing Settings We'll be starting with the organization grouping and the user management page Many of these pages available to us under organization have been covered in earlier modules So we'll quickly recap here From the user management page you can provision new user accounts by selecting the plus in the top right hand corner and filling out the designated fields From here, we can also click on existing user accounts disabling those that have already been logged in and optionally deleting accounts Moving on to the environments tab we can provision additional environments as well as configure existing environments We can hit the plus in the top right hand side to fill in the required parameters to provision a new environment or select any existing environment and hit the pencil icon in order to modify that environment's properties Moving on we have the permissions page as reviewed in another module allowing us to designate permission groups with custom permission settings that we can then assign to users From the license management page, we can see important information about the license applied to your Chronicle SOAR server including the number of days remaining within the license as well as the current platform version and your unique customer ID We're able to see the current limitations imposed by the existing license as well as which modules are enabled here at the bottom of the page Moving on to the roles page from here we can provision new roles within the platform as well as modify existing roles Clicking the plus on the top right hand corner allows us to provision a new role as well as grant additional access based on existing roles within the platform that are inherited by this new role A user within any individual role is able to see cases assigned to that role as well as to the roles under the additional role access determined here on the right hand side And finally under organization, we have our rebranding page From here, you can upload a new graphic which will be used optionally as both the header available here in the top left corner of the Chronicle SOAR server as well as optionally to rebrand reports within the platform Next we'll look at the case data configuration options Here we see the first page available to us is tags from the tags page we can define the rule under which a specific tag will be added to an alert at the time of alert ingestion this optionally gives us the ability to use the tag as either the case name or in conjunction with the case tag trigger on the playbook design page From here we can start by navigating to the top right hand side of the page and clicking the plus in order to add a new tag we can define the tag name as well as specify the criteria and the conditions under which this tag will automatically be assigned to an alert If you do wish to use this tag as a case name please be sure to check the box on the bottom right hand corner As we move on we see the next page available to us in case stages As an analyst conducts an investigation within the Chronicles SOAR platform they will want to either manually or through an automated workflow change the relevant stage of the case as the investigation progresses Given that each stock will utilize different stages relevant to their environment We give you the ability to define those custom stages on this case stages page From this page, you can select any existing entry and click the pencil icon to modify it or delete it From here we can also reorder and assign new case stages as appropriate Once a stage has been added to this page it will then become available for use throughout the platform Moving on to the next page, we have case closure root causes Whenever an analyst seeks to close a case or an alert within the Chronicle SOAR platform the closer root cause and reason must be supplied the reason can be selected from the four provided within the drop down and the root causes associated with those reasons are definable by the end user We can select a current pair and click the little edit icon on the top right From here, we're able to select from the four predetermined case closure reasons and type in our own root cause as needed These options then become available to every analyst within the platform as they close out alerts and cases Moving on to the final page, within this section we can define how cases within the Chronicle SOAR platform inherit their names There's an order of operations starting at the top and working its way down until the appropriate rule matches and a value is extracted We can see here by default that if any tag rules are defined on the tag page and those are available for assignments as the case name We will use that tag as the case name Should no rule be defined well then go ahead and fall back to the second and optionally the third options defined here on this page Should you wish to change the parameter upon which the case inherits its name, simply come in here Remove the current entry and select a new value from the placeholder selection screen Next we'll move to the next section labeled Advanced Under Advanced, we start with the ability to provision API keys In order to use any of the API endpoints within the Chronicle SOAR platform exposed by the Swagger framework you'll often need an API key in order to authenticate to those endpoints From this page, you can click the plus sign to find the name of the application as well as the permission group relevant environments and SOC role permissions that will be applicable to the API key provided here at the top Please be sure to copy this API key before saving and closing out this screen as that is the only time that it will be visible to you Moving on to the audit tab, we have a full audit log of all the activity that has been performed on this server available to us on this screen We see a summary of some of that activity at the top as well as a more detailed view here on the main page We can filter the activity by user as well as by count or by group while also giving you the ability to export the activity listed on this page into a CSV On the general settings screen, we have a number of options available to us At the top you can select how analysts are able to assign cases across environments Below that, we can specify the data retention policy the maximum data retention will be defined by the license applied to the Chronicle SOAR server From this screen, you can click the drop down to select any value less than maximum as well as define whether or not this value should be relevant to all environments or configurable on a per environment basis On the localization page an administrator can set the global time zone along with the date and time format for the platform It is important to note that by clicking on their user icon individual users can set their own time zone and preferences for date and time format Setting the options available here on this page under settings will override any currently configured individual options set by any current analysts On the alerts grouping page we manage our preferences regarding how alerts will be grouped into cases Starting at the top, we can define the maximum number of alerts grouped into a case We see here the default is 20 and within the appropriate backend database change this value can be increased to 100 Below we have the time frame for grouping This is a value in hours that indicates how long after an alert is grouped into a case that case remains open and available for additional alert grouping Here we see the default as two hours with the ability to extend this to 24 hours Below we have a toggle switch allowing us to define whether or not entities should be used as a backup grouping mechanism whenever the source grouping identifier parameter is present in the new alert Source grouping identifier is an optional parameter usually seen through API alert ingestion By enabling this switch, we can specify that if no alert grouping has occurred based on the provided source grouping identifier We'd like to use the extracted entities as the backup grouping mechanism Below this we can define the rules according to which alert grouping will occur We can see here the default catch-all rule indicating that all alert categories, all alert values should utilize all entities for alert grouping Clicking the little plus icon allows us to specify more granular alert grouping rules We can select individual product types indicate that we would like grouping to occur by entities, by source grouping identifier or not at all and then defining individual entities that are open to consideration for alert grouping We see here that those new entries are added at the top above the default catch-all On the right hand side of the page we see two additional configuration options available to us for overflow cases Overflow cases are created when a new alert is ingested into the platform that would normally result in it being grouped into an open existing case However, the current defined maximum number of alerts over on the left hand side has already been reached So this is now a new additional alert that is unable to be grouped into that existing case Under those circumstances that alert is placed into what's referred to as an overflow case Over here, the parameters available to us for both time and alert maximum relate to those overflow cases that are created Moving on to external authentication On this page, we're able to configure the SAML identity providers to be used in conjunction with a Chronicle SOAR platform for SSO login There are a few options available to us and if we click the plus on the top left we will see default options as well as selecting the custom SAML provider and input the additional details as required Here on the remote agents page we can provision new remote agent within the Chronicle SOAR platform We have another module dedicated to remote agent deployment and architecture where we discuss this concept at length On the email settings page we can define the parameters for the email server and account that will be used for system related notifications When various monitors and jobs within the Chronicle SOAR platform find a condition to which they need to alert an administrator It is through this mail server that the administrator will be notified As we move on to the next section for data configuration we see that the first page available to us refers to properties metadata From this page, we can further define and refine any of their properties that have been extracted from all the API calls that have been made by the platform To demonstrate this, I'm going to quickly open the new cases tab in order to explore one of the existing cases within the platform As I click on the events tab, I'm able to view more details regarding this specific event On this page, I see the various key value pairs that have been extracted from the creation of this alert We see some of them are exemplified here under default and the rest of them are displayed down here in their various subgroupings It is from this properties metadata page that we're able to select those individual properties in order to modify how they will appear on the event overview tab Moving down to statistics, we are further able to take any of those individual properties and call them out so that we can see the statistics related to the current case which is being investigated As an example of that we see here at CategoryOutcome Perhaps if we have four alerts grouped into one case three of them have a CategoryOutcome of failed but one of them has a CategoryOutcome of successful As we conduct our investigation it might be worthwhile to call out to the analyst that only one of those four related alerts and actions was in fact, successful that will perhaps give the analysts an additional piece of information regarding where to start conducting their current investigation In our next section, ontology we can view the current ontology status as well as the currently defined visual families there's a current separate module dedicated to exploring mapping and modeling within the Chronicles SOAR platform where we discuss these concepts further Under environments we have various options configurable per environment or tenant Starting at the top with networks On the networks page, we're able to configure subnet ranges configurable per environment that indicate which IP ranges should be considered internal for that specific environment Here we're able to provide the network name CIDR range, priority as well as designate which environments this network range is appropriate to Over on the top right, we can download a template which can be filled out and then uploaded in order to overwrite the current entities listed here We see here the icons for import, export as well as the ability to go ahead and remove all configured entries Moving over to domains, we have the same options available to us giving us the ability to list out domains and subdomains configurable per environment allowing the platform to understand whether or not users and host names associated with those domain names should be considered internal to each respective environment Under custom lists, we can maintain various identifiers assigned to categories that are queryable from playbook workflows We see here an example of one such entry allowing us to define a unique identifier the category to which it should belong as well as assigning this entry to specific environments or making it available across all environments Here we can manage all of the custom list entries We also have the ability to add and remove entries from this list through playbook actions Again, at the top right hand corner, we make available a template as well as the ability to import the template replacing the previously recorded entries The email templates and email HTML template sections allow us to pre-populate responses to be utilized within a playbook workflow as the body of the email message From these screens, we can either add a new entry or select an existing entry providing a name and modifying the default HTML provided with the message that you wish to include From here, we're also able to select whether or not this response will be available across all environments or only within specific environments Under blocklist, we have the ability to modify the system behavior with regards to specific entities which have been extracted from alerts Here we can add a new entry by clicking the plus on the top right indicating the specific entity whose behavior we wish to modify selecting the entity type and then specifying whether or not we wish for grouping to not occur based on this entity or whether we wish to not have the entity created at all We then select the appropriate environment and click add Under SLA, we have the ability to define when a new SLA will be triggered either for specific alerts at the time of ingestion or during a case stage change Selecting the plus in the top right hand corner gives us the ability to provision a new SLA definition choosing whether or not this should be based on alert type, all alerts or specific alerts or choosing to have the SLA applied at the time of case stage change We define the maximum SLA and then a critical time period we see here in the SLA that has been added The time period is 15 minutes and the critical time period is 5 minutes 10 minutes after this SLA is triggered the critical time period will be hit and the color of the SLA countdown timer on this cases page will turn red on the top right hand side You can also download a template in order to bulk add any SLA definitions Moving on to requests, requests are a new feature introduced in version 6.0 The request gives the analysts the ability to define a template which can then be filled out in order to submit a new alert in the platform We see here one such example a new request named IOC Hunt double-clicking this request shows us that we're able to change the name assign the appropriate environments as well as define the visual family which will dictate which entities can be created as part of this request down below We have the ability to add additional event fields soliciting additional information from the request store which is necessary for the completion of this alert This then results on the analyst's homepage under a new section titled requests the ability to have the platform user select any specifically defined requests from the drop down Fill out the information requested submit in order to have this request introduced as a new alert into the Chronicle SOAR platform Our final section under settings is specifically for incident manager As you may remember incident manager is Chronicle SOAR add-on module for crisis and incident management Under the incident manager configuration settings we have the ability first to define the departments which are available for assignment when inviting a new participant to an incident We can hit the plus button on the top right hand side, provide the department name initials, set a specific icon and then indicate whether or not we'd like this to be the default department for all newly added users Under auditors, we can specify which Chronicle SOAR platform users should be automatically included with the creation of every new incident Additionally, these named auditors have the ability to reopen past incidents as well Finally, in our last section under environments, we can decide which environment should or should not have the ability to have their cases promoted into new incidents under incident manager Modifying an existing entry is as easy as double-clicking it, checking the box for authorized and saving your changes Thank you and see you in the next video
 
 ### Video - [Dashboards Reports](https://www.cloudskillsboost.google/course_templates/569/video/472742)
 
-- [YouTube: Dashboards Reports](https://www.youtube.com/watch?v=KP12RJofEiU)
+* [YouTube: Dashboards Reports](https://www.youtube.com/watch?v=KP12RJofEiU)
 
 Hi and welcome back In this module, we will be reviewing dashboards and reporting in Chronicle SOAR starting with dashboards Dashboards provide a real-time high-level overview of current SOC operations Dashboards are customizable and are presented via widgets that further contain different parameters and filters Dashboards are easy to build and can be rearranged on screen by dragging and dropping them to their desired position Certain values and dashboards can be clicked on, opening up a new tab on a search page showing the selected cases and alerts Before building a dashboard, let's take a look at the options available to us in the UI Starting on the top left, we're able to see the currently selected dashboard as well as selecting additional dashboards configured within the platform It is important to note that Chronicle SOAR does come with a number of dashboards pre-configured From this drop down we're also able to create new dashboards Moving over to the top right we see scoping and filtering options available to us allowing us to select the time range as well as whether or not we'd like to display metrics across all environments or a specific environment or a subset of environments Moving across the top to the hamburger menu we have available to us here the ability to select those users and roles within the platform to which we'd like to share access to the current dashboard We have the ability to export the current dashboard Selecting whether we'd like to export it JSON formatted for the purpose of backing up and re-importing perhaps on a different system or as a PDF representing the values currently displayed within the dashboard We can further choose to select this dashboard as a template for a new report We will see these templates a little bit later on within this module but from here, we're able to give this template a name as well as assign a category Finally, we have the ability to delete the dashboard in its entirety Additional icons are provided allowing for manual refresh of the screen allowing for importing of JSON formatted backups of dashboards as well as adding new widgets to the current dashboard Now, we'll look at adding a new widget to the SOC status dashboard We'll do so by clicking the plus in the top right hand corner and we'll start by giving this widget a title Choosing to display critical cases by analyst We'll keep the representation as a pie chart Choosing to display the number of cases by count grouped by analyst top 10 in descending order We'll move over to the filtering options selecting open cases and only those with a critical priority We'll click the create button to add this widget to our dashboard The data represented in the Chronicle SOAR dashboard will continue to change as new alerts are ingested into the system In order to keep point in time metrics of the data represented here it's important that we look at reports Reports are accessed by selecting reports from the top menu bar Here we see two tabs are available to us the reports tab and optionally advanced reports Should your license support it advanced reports will be available to you in order to display the embedded looker report, more on that later We see here on the main page a list of the current reports within the platform the reports are broken down by category and by name certain reports, those with the little lock icon are not modifiable by the end user they can however be duplicated Clicking on an individual report shows us the report modules on the right hand side Clicking the generate button allows us to manually generate the report After filling in the selected environments relevant time frame as well as the file type desired Looking quickly at the options available at the top of the page, we see here that we have the ability to export existing reports as JSON files Duplicate existing reports as well as delete non-locked templates We're able to manually refresh the page as well as import any previously backed up report templates New reports can be created by clicking the plus button Moving to the right, we see here that we have the ability to edit the currently selected report Starting at the top, we have the ability to change the report category Selecting the plus sign allows us to add a new element to the report Existing elements can be rearranged as well as deleted and further configuration provided In the case of the widget, we provide a text editor providing the text necessary at the beginning of the report Different widgets expose different options very similar to the options available on the dashboard page Each report comes with the option to provide a schedule Allowing for the automated emailing of the report at predetermined times Be sure to have your email settings properly configured before attempting to configure this option choose the relevant environments provide the time frame select the file type add recipients, provide an optional message and specify the schedule upon which the report should automatically be emailed out Now let's take a look at advanced reports, an embedded looker reports within Chronicle SOAR Chronicle SOAR is a centralized platform of playbooks and case related metrics allowing reports to be created showcasing any variety of SOC-related KPIs As previously seen Chronicle SOAR provides default reports available for download from the analytics marketplace allowing you to generate those reports and your environments immediately Furthermore with the right looker software, you can design your own reports where Chronicle SOAR can work with you to design any necessary custom reports from daily sock reports, monthly sisal reports or any compliance related reporting Looker reports are able to show you the hard work that the SOC puts into securing their organizations Let's take a look at the advanced reports UI Reports can be built with optional drop downs and sliders allowing filtering options to be exposed but looker reports are also interactive allowing you to select the criteria important to you As we see here, we can gain insight to these alerts including alert type and severity Additionally, we can explore further to customize the visualization and filter this case download the specific data expand our view as well as clear and refresh any selected filters As we look at the bar across the top additional looker specific options may or may not be exposed depending on the permissions given to the connection between the two platforms These options are outside of the scope of this video At the top right of the screen, you are able to update the page with newly selected filters as well as hide your selected filters Additionally, by clicking the ellipses we can manually refresh the page download the current report into various specified formats and reset any selected filters returning to the original report as well as the ability to duplicate this report Clicking on the share button allows us to share this report with other users to determine which environment within Chronicle SOAR should have access to the specified report and whether or not, view only users should also be given access As we look at an additional sample report, we're able to see a variety of display options available within looker to showcase the different metrics and KPIs that we wish to expose Hopefully this video is showing you that Chronicle SOAR reports and dashboards are straightforward and easy to build and as always we're here to assist you with any custom reports or dashboards you're looking to create Thank you and see you in the next video
 
 ### Video - [IDE](https://www.cloudskillsboost.google/course_templates/569/video/472743)
 
-- [YouTube: IDE](https://www.youtube.com/watch?v=AxLD4TFx9x0)
+* [YouTube: IDE](https://www.youtube.com/watch?v=AxLD4TFx9x0)
 
 Hi and welcome back In this module, we'll review the integrated development environment built into Chronicle SOAR The IDE is accessed by clicking this button in the top right hand corner From within this IDE you'll be able to inspect, modify and create new connectors, actions and jobs The IDE provides you the flexibility to customize and extend integrations if you wish to do so On the left hand side, we see a list of currently installed integrations, manager files, actions, jobs and connectors within each integration Here we have the IDE sorted by name we also have the ability to select types from the drop down to see them organized by type As we move along the top of the bar we see here the hamburger menu allowing us to export packages, import packages as well as import items The import item wizard allows you to import specific integrations from a drop down menu Simply select the integration and hit the import button From here, we're also able to import packages as well as export any current integrations in the platform These are saved to disk as zip files Importing a package would be how you would be able to transfer custom code from one Chronicle SOAR server to another Exporting any commercial integration and then re-importing, it will take that integration from commercial to custom As we look at an example of one of our integrations we can see here that certain of the elements have little lock icons next to them whereas others will not The lock icon indicates that this was provided through the commercial Chronicle SOAR Marketplace and is not currently able to be edited You do have the option of duplicating any of these elements in order to make them custom or you'll be able to export and import the entire integration in order to make all the elements inside customizable as we continue across the top We see here a toggle button allowing us to hide any inactive elements we see here that for every action and connector we have the ability to decide whether it should be enabled or disabled and this toggle button would allow us to go ahead and hide those that are currently disabled Next, we have the plus allowing for the creation of new items Clicking this allows you to select whether you'd like to create a new connector, action job, integration or manager If creating a new integration you would begin by selecting integration and giving it a name You would then create a new item probably a manager file Choose your new integration from here and give the manager file a name From here, you can begin developing actions and connectors for that integration Any custom integrations created will show up within the menu With the little cog icon indicating that it is custom and can be further customized Clicking this icon allows you to specify the current Python version for this integration Provide a short description, some icons as well as import any necessary libraries that are required by the integration Additional integration parameters can also be defined within this page As we continue to move across the page just above the main code editor we have again the toggle button to enable or disable the action the name of the current action as well as the integration in which it resides and the description Selecting for a moment one of our custom actions and moving over to the right hand side of the page We're able to see that we can provide the name of the output to choose whether or not we'd like to include a sample JSON result as well as the current script timeout We see here that no default return value has been provided below Here we're able to specify any additional parameters that can be used as input to this action From here, we can select the plus button give the parameter a name, a description whether or not it's mandatory as well as the type and default value Within the drop down, we can see that there are many options to choose from As we move to the top of the page we can see that next to details there is also a testing and debug tab At any time from within the IDE we're able to test the execution of the code against any test cases that we'll have on our case overview page We can choose the scope of the action to run the test case we wish to select as well as the deployed version of the integration that we wish to test against It is important that after you create an integration you also go under a configuration integrations and configure an instance of it that you're able to use from this page Once all of the required parameters have been filled in you're able to go to the top of the page in order to hit the play items button causing your code to execute Any results from the output of the code execution will be displayed under results and any debug information will be printed on the debug output page As we continue exploring the remaining icons on this page right next to the play item button, we have the JSON sample icon Clicking this icon allows us to see the current JSON sample they've been uploaded to this action In actions that return JSON results The JSON sample is an example of results seen from testing this action in the Chronicle SOAR lab These are the placeholder value in the playbook designer for this action due to different schemas product versions and customizations the action field returned from the same API call in your environment might return different results These live results can be seen by going to the case overview page selecting a case and going to the case wall From here, we're able to scroll down to one of the API calls which I've executed In this case, a MITRE attack framework and click view more Below, we're able to see additional details including the script result As we move back to the IDE and select a custom action we're able to see that the next icon allows this to version Control the code changes For this action, we have the ability to save a new version provide a short description and save it from here then we're able to view the various versions as snapshots that we've created of this code and restore any as needed As we move on to the final items we see that from this menu, we're able to both duplicate items as well as delete any items Selecting duplicate allows us to then change the name of the current action as well as the integration folder in which this action will reside After doing so, we are able to hit save in order to save our changes From here, should we decide to now delete the item, we can choose delete from the menu and answer yes to the prompt This concludes our high level overview of The Chronicles SOAR IDE Thank you and see you in the next video
 
 ### Video - [Collaborator](https://www.cloudskillsboost.google/course_templates/569/video/472744)
 
-- [YouTube: Collaborator](https://www.youtube.com/watch?v=PETQ1XIoX_A)
+* [YouTube: Collaborator](https://www.youtube.com/watch?v=PETQ1XIoX_A)
 
 Hi and welcome back In today's module we'll review the new collaboration workflow and licensed user introduced in version 6 Collaborator licenses for those users that need to interact with the platform in a limited fashion Common uses of a collaborator could be the customer of an MSSP using Chronicle SOAR Allowing that customer to collaborate with the MSSP SOC team in the triage of alerts in their environment soliciting their deep understanding of their environment as appropriate Similar approval or collaboration workflows can also benefit enterprises bringing in branch resources designated contacts and subsidiaries or SOC managers as part of the triage process As we see in today's example through an aside action in a playbook we'll reach out to a collaborator requesting the ability to contain an endpoint in their environment First, we'll begin by examining the permissions of a licensed collaborator user navigating to settings, we see here the user management screen focusing on these two users, we have Andy Smith who is a designated collaborator within the platform We can see the license type is set to collaborator he's a member of a role name collaborator and is part of the collaborator's permissions group Andy is only allowed to see the alerts specifically from the Cymbal Health environment Moving to roles, we can see that the collaborator role has been given permission to see tier 1, tier 2 and tier 3 assigned alerts Moving to permissions, we're able to compare the various licensed user roles within the platform Here we can see a standard user in all of the different settings that apply to their licensed user type Giving them the ability to access all of the different parts of the platform Next, we see a view-only user this user has read-only capabilities and is limited in the sections of the platform that they're able to access Then, we see the permissions for a collaborator user this is a subset of all of the full permissions available to a standard user however, by assigning this collaborator permissions using the toggle buttons presented here this user would be able to visit each of these pages and interact in some limited fashion with the content exposed on those pages Now, we'll move over to a playbook design screen to see how a collaborator can be incorporated as part of the playbook workflow As we take a moment to examine the data exfiltration playbook that we've attached to our data exfiltration alert We'll focus specifically towards the end of the playbook at the multi-choice questions that I've added Double clicking on this question shows us its current configuration navigating to the settings tab, we can see that it's a manual action therefore it will stop here awaiting analysis feedback We can also see in this case, it's been assigned to the collaborator role within the platform meaning that this role will receive a notification that the action is pending a user interaction Below we can see the combination of static text and placeholder values that we've used in order to craft a message to the assignee Moving back to the parameters tab we can see the questions we're asking and the options that we're exposing Now let's take a look and see what this looks like to the individual participants we'll begin by first viewing our alert from the context of Jack, our tier 3 analyst we can see here that Jack is the current owner of this case and we can also see that a playbook has already attached and ran and is currently stopped at this current step Coming back to overview, we see here the view that has been curated in order to present the information to Jack We see here that quite a bit of information has already been accumulated including the fact that this alert has been deemed as malicious through the VirusTotal enrichment We see here at the top, a pending action widget which has been added to this view the purpose of this widget is to expose to the analyst, the current question being asked at the current playbook step We see here that the question being asked is whether or not an endpoint should be contained Clicking respond allows us to go ahead and respond to the question directly from here Clicking view playbook takes us back to the playbook step currently awaiting response Next, we'll take a look at this alert from the point of view of the collaborator that has been assigned the current question Over here in an incognito tab we can see that I'm currently logged in as Andy Smith, the assigned collaborator for this environment Because Andy is only able to see the alerts for his environment he only sees the current open 4 alerts for Cymbal Health At the top is the same alert that was just being viewed in the context of Jack only now it's being seen by Andy and as such Andy has a different view A more simplistic view with less information that's been created for him We see the results of that view here including the same VirusTotal enrichment insight at the bottom indicating that the detection was malicious When initially assigned to this task Andy would have received a notification within the platform Here we would see that alert regarding endpoint containment in case ID 156 Now perhaps the path forward is clear for Andy in which case, he'll be able to respond directly to this question at any time by clicking the respond button However, perhaps Andy would also like to chat with the assigned analyst asking any questions or making any comments He's also able to do so directly from his screen and he can go ahead and tag Jack and let him know that he'll be checking with the IT department Moving back over to the other tab we see here that Jack will have received Andy's message and he's able to respond back as well as the notification he receives Now, after taking some time to make his decision and checking with IT Andy is ready to go ahead and answer He'll come back to respond In this case, the threat level was high and he will respond accordingly he's not going to proceed with the endpoint containment and will instead escalate this action We now see that the action has been approved by Andy and we see the notification as such on the screen as we move back to Jack's view of the case We can see that the pending actions widget is no longer present at the top of a screen and as we move over to the playbook screen We can see that this playbook has in fact completed execution That concludes our walkthrough of the collaborator user Thank you and see you in the next video
 
 ### Video - [Incident Manager](https://www.cloudskillsboost.google/course_templates/569/video/472745)
 
-- [YouTube: Incident Manager](https://www.youtube.com/watch?v=PXfabu2oDVk)
+* [YouTube: Incident Manager](https://www.youtube.com/watch?v=PXfabu2oDVk)
 
 Hi and welcome back in today's module. We'll be reviewing Incident Manager Chronicle SOAR add-in module for Crisis and Incident Management. From Incident Manager, your sock team can collaborate with parties internal and external to the organization. From the case overview screen, we have the ability of taking an open existing case and choosing to promote this to an incident in Incident Manager. Using the following wizard, we're able to provide an incident name an optional description as well as any indicators of current critical impact or identified risks. Following through the wizard, we're able to select certain comments currently on the case wall to be synchronized over the incident in Incident Manager as well as any attachments we'd like to select and tasks. From here we have a new incident that has been opened in Incident Manager and is now editable. From the main Incident Manager screen, we are also able to open new manual incidents by selecting the plus button at the top of the left hand column. From here, we select the appropriate environment for the incident and hit open. This gives us a new incident to which we're able to change the current name as well as provide any additional details. Looking at an incident with some information filled in, we see here the main incident dashboard. This page is meant to convey a high-level summary to all of the incident participants of what has currently been done, what remains to be done and a current trend with regard to the incident resolution. We're able to hit the blue edit button on the right hand side to update any of the current widget fields. Throughout the course of an incident resolution, this page will be frequently updated in order to convey the high level relevant information to all incident participants. And to provide a one-page status dashboard for any new participants with regard to this incident. Moving on from the dashboard tab, we see the workstation tab. This is the audit trail of everything that has been performed and documented with regard to the incident resolution. New information can be added through the text input at the bottom of the screen as well as new files attached. From here, participants can add comments, facts and decisions. In order to review all of the information which has been added to the workstation wall, there are some rich filtering icons available at the top of the page. We see here the ability to filter comments, decisions, facts, tasks assessments as well as any items which have been starred. Additionally, we can see drop down filters for department, collaborator name as well as time frame. As we seek to invite additional participants to collaborate on this incident, we can do so through the manage collaboration button at the top of the page. Clicking the button allows us to see a list of currently invited participants and clicking the plus button on the right hand side allows us to add additional collaborators. From here, we will first select whether this account is internal to the Chronicle SOAR server or an external party. If selecting an internal account will select the appropriate user as well as provide some additional information if selecting an external party. We'll also provide the required information of first name, last name email, selecting a department as well as typing in a role for the participant, and providing them either standard or administrative access. Please note that it is important that you have the email settings under the configuration menu appropriately set in order for these invitations to be sent out. To coordinate activities among participants, we have a few options at our disposal. Using the new task icon, we're able to choose tasks either for ourselves or for other incident participants. Provide a due date and time as well as a task description. Next to the new task button, we have the assessment button. Clicking this button allows us to fill in a point in time assessment of what's currently been completed. We're able to optionally provide an updated severity score as well as a list out to the participants. From here, we add assessment information add any decisions which have been taken as well as assign any new tasks. All of the information from the assessment is added to the end of the workstation wall continuing on we see on the right hand side the ability to provision additional reminders clicking the plus button allows us to provide a name for the additional reminder as well as assign a due date. From here, two reminders can be pinned so that their status shows at the top of the page. Continuing on, we have here the chat button allowing all participants of the incident an informal chat section where they're able to collaborate. Next, we have a refresh button, and in the menu towards the end of the page, the ability to close out the incident as well as generate a report. Closing the incident allows you to provide additional comments. That brings us to the end of our Incident Manager review. Thank you and we'll see you in the next video.
 
 ### Video - [Remote Agents](https://www.cloudskillsboost.google/course_templates/569/video/472746)
 
-- [YouTube: Remote Agents](https://www.youtube.com/watch?v=-dS_pxWc5d4)
+* [YouTube: Remote Agents](https://www.youtube.com/watch?v=-dS_pxWc5d4)
 
 Hi and welcome back In this module, we'll discuss how Chronicle SOAR's remote agents allow your server to communicate with products and equipment that it's unable to reach directly either due to firewalls or other security measures in place A specific use case would be your SaaS deployed Chronicle SOAR instance enriching a user from a domain controller in your on-premise active directory A remote agent can be installed on-prem either manually on a Linux server or provisioned as a Docker container and associated with one of the environments you have provisioned in your Chronicles SOAR server Integrations in that environment that are configured as being remote will cue their requests making them available when the remote agent checks in A remote agent will only ever communicate outbound on Port 443 which usually means no additional configuration is necessary for it to reach the parent server Upon checking in the agent will pull down any waiting tasks and execute the necessary API requests to the on-premise equipment When a response is received, it will push that response back to the parent server Let's take a look at deploying an agent and configuring a remote integration The remote agents page is located under settings > advanced > remote agents From here we can see currently deployed agents as well as provision new agents Looking first at an existing agent we see the agent name as well as the associated environment Under the agent installer access, we have the ability to click the send now button and send an email directly from here containing a download link to the manual installer This requires the email settings to be configured beforehand Upon receiving the link, the user will have access to a page allowing them to download the manual installer as well as giving them access to the user guide Moving across the page, we see the next agent status indicating that the agent is currently up and successfully checking in Next we see the currently configured log level as well as the ability to manually download logs Selecting this agent and clicking the pencil edit agent button we see that some of these parameters are modifiable after the time of agent deployment whereas others are not We also see here that we have a direct link to the manual installer as well Should any additional components need to be changed after the time of agent install we would need to de-provision this agent and deploy a new agent So let's look at deploying a new agent On the top right hand side of the page we'll click the add agent button and select the docker deployment From here we'll provide the agent name as well as the associated environment In this case, I'll select Cymbal health When we click next, we'll be given the docker command that we need to issue locally on our docker server in order to provision this agent I'll copy the command from here and paste it within my docker server Once the agent is deployed we'll come back and click next You should be prompted with the following screen indicating a successful deployment and check-in of the remote agent Clicking done will allow us to see this agent configured within our panel Now we'll look at provisioning and integration that takes advantage of the remote agent Under configuration we'll select integrations and I'll navigate to the Cymbal health environment that's configured with a remote agent From here I'll choose to deploy a new instance of an integration Select an active directory integration Now we see that along with the usual parameters required by this integration There's a new option available at the bottom that says run remotely Checking this box will allow us to select the appropriate agent to proxy this command When you first click save the server takes care of provisioning the code required by the integration down to the remote agent Upon successful completion, you'll receive a pop-up and will be able to exit the window As we're able to see here, the instance is now configured for remote execution As you've seen in this module either through direct API calls or proxied through the remote agents the Chronicle SOAR platform makes it easy to integrate with your entire product suite wherever it may reside Thank you and see you in the next video
 
@@ -111,430 +110,430 @@ This will be a quiz focusing on the topics covered in throughout the course
 #### Quiz 1.
 
 > [!important]
-> **Can a user have restrictions to view certain environments within platform?**
+> **In case of multiple matches for an Alert, which Playbook priority determines precedence?**
 >
-> - [ ] False
-> - [ ] True
+> * [ ] First
+> * [ ] Second
+> * [ ] None of the above
+> * [ ] Third
 
 #### Quiz 2.
 
 > [!important]
-> **What module should be used within Chronicle SOAR to monitor health checks and synchronization tasks?**
+> **What is available under Configuration tab? (Select all that apply)**
 >
-> - [ ] Integrations
-> - [ ] Connectors
-> - [ ] Jobs
-> - [ ] Insights
+> * [ ] Settings
+> * [ ] Playbooks
+> * [ ] Jobs
+> * [ ] Connectors
 
 #### Quiz 3.
 
 > [!important]
-> **Who typically has sufficient rights to turn off the "simulator" mode? (select all that apply)**
+> **What module should be used within Chronicle SOAR to monitor health checks and synchronization tasks?**
 >
-> - [ ] None of these roles
-> - [ ] Admin
-> - [ ] SOC Manager
-> - [ ] SOC Analyst
+> * [ ] Integrations
+> * [ ] Connectors
+> * [ ] Insights
+> * [ ] Jobs
 
 #### Quiz 4.
 
 > [!important]
-> **You need to configure an integrations before using it with the downloaded use cases**
+> **A case tag can be added to high priority alerts only?**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] True
+> * [ ] False
 
 #### Quiz 5.
 
 > [!important]
-> **A case tag can be added to high priority alerts only?**
+> **A manual action within a playbook can be identified by**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] The purple color
+> * [ ] Hand symbol
+> * [ ] "MAN" letters
+> * [ ] "M" letter
 
 #### Quiz 6.
 
 > [!important]
-> **Which of the following fields are displayed under "Entities Highlights" section? (select all that apply)**
+> **It is possible to import or export a Dashboard**
 >
-> - [ ] User Name
-> - [ ] Email Subject
-> - [ ] File Name
-> - [ ] IP Address
+> * [ ] True
+> * [ ] False
 
 #### Quiz 7.
 
 > [!important]
-> **In Command Center, when creating a new status assessment, can you add a severity above 100?**
+> **By specifying a particular ______ field or general output of an action, you can create condition within a playbook.**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] HTTP
+> * [ ] Visualization
+> * [ ] Actions
+> * [ ] JSON
 
 #### Quiz 8.
 
 > [!important]
-> **Conditions are built based on case data such as the following**
+> **Green text within Chronicle SOAR Mapping represents**
 >
-> - [ ] Entities
-> - [ ] Cases
-> - [ ] Alerts
-> - [ ] Events
-> - [ ] All of the above
-> - [ ] Environment
+> * [ ] Field mapped and no data in event
+> * [ ] Field not mapped
+> * [ ] Field mapped and Event has data
 
 #### Quiz 9.
 
 > [!important]
-> **When installing an integration (select all that apply)**
+> **Which hierarchy is correct for Ontology?**
 >
-> - [ ] To download community edition you need permission from the creator.
-> - [ ] Simply click the download button for your selected integration.
-> - [ ] Ensure the integration is compatible for your Chronicle SOAR version before downloading.
-> - [ ] Check if you require subscription for the integration to work optimally within Chronicle SOAR.
+> * [ ] Event->Product->Source
+> * [ ] Source->Event-> Product
+> * [ ] Event->Source->Product
+> * [ ] Source->Product->Event
 
 #### Quiz 10.
 
 > [!important]
-> **Which widget includes a visual graph of the Case Entities?**
+> **You can uninstall an integration that has a dependable playbook**
 >
-> - [ ] Alert Graph
-> - [ ] MITRE Graph Widget
-> - [ ] Case Graph Widget
-> - [ ] Entities Graph Widget
+> * [ ] True
+> * [ ] False
 
 #### Quiz 11.
 
 > [!important]
-> **Red text within Chronicle SOAR Mapping represents**
+> **In playbook designer when you toggle the "Simulator" button what is the expected behavior?**
 >
-> - [ ] Field mapped and no data in event
-> - [ ] Field not mapped
-> - [ ] Field mapped and Event has data
+> * [ ] It can only be enabled in a test environment.
+> * [ ] To enable the simulator option the playbook requires Admin privileges.
+> * [ ] The playbook will simulate an attack on target device.
+> * [ ] The playbook can now be tested with simulated alerts.
 
 #### Quiz 12.
 
 > [!important]
-> **Playbook actions can be configured to be executed automatically or manually.**
+> **Where can you find an execution log of an Alert?**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Action
+> * [ ] Case
+> * [ ] Chronicle SOAR blog
+> * [ ] Problem
 
 #### Quiz 13.
 
 > [!important]
-> **______ allows you to ingest raw source data into the platform?**
+> **When selecting an active incident within Command Center, what filters can be applied under Workstation tab?**
 >
-> - [ ] Ontology Mapping
-> - [ ] Connector
-> - [ ] IDE
-> - [ ] Jobs
+> * [ ] All of the above
+> * [ ] Department
+> * [ ] Time
+> * [ ] Collaborator
 
 #### Quiz 14.
 
 > [!important]
-> **You can uninstall an integration that has a dependable playbook**
+> **Can report templates be downloaded form the Chronicle SOAR Marketplace?**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] True
+> * [ ] False
 
 #### Quiz 15.
 
 > [!important]
-> **Green text within Chronicle SOAR Mapping represents**
+> **Multiple incidents can be transferred into the Command Center from a single or multiple Environments**
 >
-> - [ ] Field mapped and Event has data
-> - [ ] Field not mapped
-> - [ ] Field mapped and no data in event
+> * [ ] True
+> * [ ] False
 
 #### Quiz 16.
 
 > [!important]
-> **Analysts can communicate with any internal Chronicle SOAR user as part of the platform**
+> **You need to configure an integrations before using it with the downloaded use cases**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] True
+> * [ ] False
 
 #### Quiz 17.
 
 > [!important]
-> **Which hierarchy is correct for Ontology?**
+> **Can PowerUp integration help you enhance your playbook capabilities?**
 >
-> - [ ] Event->Source->Product
-> - [ ] Source->Product->Event
-> - [ ] Event->Product->Source
-> - [ ] Source->Event-> Product
+> * [ ] True
+> * [ ] False
 
 #### Quiz 18.
 
 > [!important]
-> **What is available under Configuration tab? (Select all that apply)**
+> **Where can you check all Active System Modules?**
 >
-> - [ ] Connectors
-> - [ ] Playbooks
-> - [ ] Jobs
-> - [ ] Settings
+> * [ ] Integrations
+> * [ ] License Management
+> * [ ] Permissions
+> * [ ] Ontology
 
 #### Quiz 19.
 
 > [!important]
-> **Do you require multiple dashboards in order to configure data widgets that show results from multiple Environments?**
+> **Blocks can be used for**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Condition features
+> * [ ] Insight features
+> * [ ] Repeatable actions
 
 #### Quiz 20.
 
 > [!important]
-> **Where can you check all Active System Modules?**
+> **A playbook can be attached to all Environments within the platform**
 >
-> - [ ] Permissions
-> - [ ] Integrations
-> - [ ] Ontology
-> - [ ] License Management
+> * [ ] True
+> * [ ] False
 
 #### Quiz 21.
 
 > [!important]
-> **When selecting an active incident within Command Center, what filters can be applied under Workstation tab?**
+> **Which widget includes a visual graph of the Case Entities?**
 >
-> - [ ] Time
-> - [ ] All of the above
-> - [ ] Collaborator
-> - [ ] Department
+> * [ ] MITRE Graph Widget
+> * [ ] Alert Graph
+> * [ ] Case Graph Widget
+> * [ ] Entities Graph Widget
 
 #### Quiz 22.
 
 > [!important]
-> **When a playbook is activated, the toggle next to a playbook name appears green**
+> **You are limited to inviting internal users to the Command Center when collaborating on incidents**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] True
+> * [ ] False
 
 #### Quiz 23.
 
 > [!important]
-> **A playbook can be attached to all Environments within the platform**
+> **What can you find within the Chronicle SOAR Marketplace? (select all that apply)**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Vendors
+> * [ ] Integrations
+> * [ ] Analytics
+> * [ ] Phishing Alert Tips
+> * [ ] Power Ups
 
 #### Quiz 24.
 
 > [!important]
-> **A playbook will only run if its priority is defined within the logic**
+> **Conditions are built based on case data such as the following**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Environment
+> * [ ] Events
+> * [ ] Cases
+> * [ ] All of the above
+> * [ ] Alerts
+> * [ ] Entities
 
 #### Quiz 25.
 
 > [!important]
-> **In playbook designer when you toggle the "Simulator" button what is the expected behavior?**
+> **What are the mandatory checks required for installing a Use Case? (Select all that apply)**
 >
-> - [ ] It can only be enabled in a test environment.
-> - [ ] To enable the simulator option the playbook requires Admin privileges.
-> - [ ] The playbook will simulate an attack on target device.
-> - [ ] The playbook can now be tested with simulated alerts.
+> * [ ] Selection of integrations
+> * [ ] Configuration of integrations
+> * [ ] Ensuring a test environment exists before downloading the use case.
+> * [ ] Enabling simulations before downloading the integration.
 
 #### Quiz 26.
 
 > [!important]
-> **What tabs are available within Homepage? (select all that apply)**
+> **______ alloWhen a playbook is activated, the toggle**
 >
-> - [ ] Workspace
-> - [ ] My Tasks
-> - [ ] Completed Actions
-> - [ ] Announcements
-> - [ ] Your Cases
-> - [ ] Pending Actions
-> - [ ] My Cases
+> * [ ] Blocks
+> * [ ] Actions
+> * [ ] Events
+> * [ ] Playbooks
 
 #### Quiz 27.
 
 > [!important]
-> **Can report templates be downloaded form the Chronicle SOAR Marketplace?**
+> **When creating a playbook if you select "All Environments" button, what does such scope mean?**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] The function will run on all future Environments.
+> * [ ] The function will run on all current Environments.
+> * [ ] The function will run all the time regardless of the playbook selection.
+> * [ ] This function created within playbook will run on all current environments as well as on all future environments.
 
 #### Quiz 28.
 
 > [!important]
-> **By specifying a particular ______ field or general output of an action, you can create condition within a playbook.**
+> **______ allows you to ingest raw source data into the platform?**
 >
-> - [ ] HTTP
-> - [ ] Actions
-> - [ ] Visualization
-> - [ ] JSON
+> * [ ] Ontology Mapping
+> * [ ] Connector
+> * [ ] Jobs
+> * [ ] IDE
 
 #### Quiz 29.
 
 > [!important]
-> **It is possible to import or export a Dashboard**
+> **What tabs are available within Homepage? (select all that apply)**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Completed Actions
+> * [ ] My Tasks
+> * [ ] Announcements
+> * [ ] Your Cases
+> * [ ] Workspace
+> * [ ] My Cases
+> * [ ] Pending Actions
 
 #### Quiz 30.
 
 > [!important]
-> **You are limited to inviting internal users to the Command Center when collaborating on incidents**
+> **White text within Chronicle SOAR Mapping represents**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] Field mapped and Event has data
+> * [ ] Field mapped and no data in event
+> * [ ] Field not mapped
 
 #### Quiz 31.
 
 > [!important]
-> **Blocks can be used for**
+> **Analysts can communicate with any internal Chronicle SOAR user as part of the platform**
 >
-> - [ ] Repeatable actions
-> - [ ] Condition features
-> - [ ] Insight features
+> * [ ] True
+> * [ ] False
 
 #### Quiz 32.
 
 > [!important]
-> **A "Trigger" is the very first step in each playbook**
+> **Which Flow step requires an analyst to manually answer a question?**
 >
-> - [ ] False
-> - [ ] True
+> * [ ] Previous Actions Conditions
+> * [ ] Condition
+> * [ ] MultiChoiceQuestion
 
 #### Quiz 33.
 
 > [!important]
-> **______ alloWhen a playbook is activated, the toggle**
+> **A playbook will only run if its priority is defined within the logic**
 >
-> - [ ] Playbooks
-> - [ ] Blocks
-> - [ ] Actions
-> - [ ] Events
+> * [ ] True
+> * [ ] False
 
 #### Quiz 34.
 
 > [!important]
-> **Multiple incidents can be transferred into the Command Center from a single or multiple Environments**
+> **A "Playbook" can only be attached to a specific Environment**
 >
-> - [ ] False
-> - [ ] True
+> * [ ] True
+> * [ ] False
 
 #### Quiz 35.
 
 > [!important]
-> **What type of activities can be added by collaborators to the Command Center workstation?**
+> **When a playbook is activated, the toggle next to a playbook name appears green**
 >
-> - [ ] Fact
-> - [ ] Task
-> - [ ] Key Items
-> - [ ] Fact
-> - [ ] Assessment
-> - [ ] All of the above
+> * [ ] True
+> * [ ] False
 
 #### Quiz 36.
 
 > [!important]
-> **Which Flow step requires an analyst to manually answer a question?**
+> **What type of activities can be added by collaborators to the Command Center workstation?**
 >
-> - [ ] Previous Actions Conditions
-> - [ ] Condition
-> - [ ] MultiChoiceQuestion
+> * [ ] Task
+> * [ ] Fact
+> * [ ] Fact
+> * [ ] Key Items
+> * [ ] All of the above
+> * [ ] Assessment
 
 #### Quiz 37.
 
 > [!important]
-> **What can you find within the Chronicle SOAR Marketplace? (select all that apply)**
+> **In Command Center, when creating a new status assessment, can you add a severity above 100?**
 >
-> - [ ] Analytics
-> - [ ] Integrations
-> - [ ] Phishing Alert Tips
-> - [ ] Vendors
-> - [ ] Power Ups
+> * [ ] True
+> * [ ] False
 
 #### Quiz 38.
 
 > [!important]
-> **What are the mandatory checks required for installing a Use Case? (Select all that apply)**
+> **Who typically has sufficient rights to turn off the "simulator" mode? (select all that apply)**
 >
-> - [ ] Enabling simulations before downloading the integration.
-> - [ ] Configuration of integrations
-> - [ ] Ensuring a test environment exists before downloading the use case.
-> - [ ] Selection of integrations
+> * [ ] SOC Analyst
+> * [ ] Admin
+> * [ ] SOC Manager
+> * [ ] None of these roles
 
 #### Quiz 39.
 
 > [!important]
-> **A "Playbook" can only be attached to a specific Environment**
+> **A "Trigger" is the very first step in each playbook**
 >
-> - [ ] False
-> - [ ] True
+> * [ ] True
+> * [ ] False
 
 #### Quiz 40.
 
 > [!important]
-> **Can PowerUp integration help you enhance your playbook capabilities?**
+> **Do you require multiple dashboards in order to configure data widgets that show results from multiple Environments?**
 >
-> - [ ] True
-> - [ ] False
+> * [ ] True
+> * [ ] False
 
 #### Quiz 41.
 
 > [!important]
-> **When creating a playbook if you select "All Environments" button, what does such scope mean?**
+> **Playbook actions can be configured to be executed automatically or manually.**
 >
-> - [ ] The function will run on all future Environments.
-> - [ ] The function will run all the time regardless of the playbook selection.
-> - [ ] This function created within playbook will run on all current environments as well as on all future environments.
-> - [ ] The function will run on all current Environments.
+> * [ ] True
+> * [ ] False
 
 #### Quiz 42.
 
 > [!important]
-> **A manual action within a playbook can be identified by**
+> **Which of the following fields are displayed under "Entities Highlights" section? (select all that apply)**
 >
-> - [ ] "M" letter
-> - [ ] Hand symbol
-> - [ ] "MAN" letters
-> - [ ] The purple color
+> * [ ] User Name
+> * [ ] IP Address
+> * [ ] Email Subject
+> * [ ] File Name
 
 #### Quiz 43.
 
 > [!important]
-> **In case of multiple matches for an Alert, which Playbook priority determines precedence?**
+> **Red text within Chronicle SOAR Mapping represents**
 >
-> - [ ] Second
-> - [ ] None of the above
-> - [ ] Third
-> - [ ] First
+> * [ ] Field mapped and no data in event
+> * [ ] Field mapped and Event has data
+> * [ ] Field not mapped
 
 #### Quiz 44.
 
 > [!important]
-> **Where can you find an execution log of an Alert?**
+> **All playbook triggers except "All" can be scoped with the following parameters: (select all that apply)**
 >
-> - [ ] Problem
-> - [ ] Case
-> - [ ] Chronicle SOAR blog
-> - [ ] Action
+> * [ ] "*_Starts With"
+> * [ ] "=> More than or Equal to"
+> * [ ] "= Equal"
+> * [ ] "() Contains"
 
 #### Quiz 45.
 
 > [!important]
-> **All playbook triggers except "All" can be scoped with the following parameters: (select all that apply)**
+> **When installing an integration (select all that apply)**
 >
-> - [ ] "*_Starts With"
-> - [ ] "=> More than or Equal to"
-> - [ ] "= Equal"
-> - [ ] "() Contains"
+> * [ ] To download community edition you need permission from the creator.
+> * [ ] Check if you require subscription for the integration to work optimally within Chronicle SOAR.
+> * [ ] Simply click the download button for your selected integration.
+> * [ ] Ensure the integration is compatible for your Chronicle SOAR version before downloading.
 
 #### Quiz 46.
 
 > [!important]
-> **White text within Chronicle SOAR Mapping represents**
+> **Can a user have restrictions to view certain environments within platform?**
 >
-> - [ ] Field mapped and Event has data
-> - [ ] Field mapped and no data in event
-> - [ ] Field not mapped
+> * [ ] True
+> * [ ] False
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

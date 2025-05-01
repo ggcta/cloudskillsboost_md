@@ -1,13 +1,13 @@
 ---
 id: 1133
 name: 'Work with Gemini Models in BigQuery'
-datePublished: 2024-09-12
-topics:
-- Data Science
-- Machine Learning
-- SQL
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/1133
+date_published: 2024-09-12
+topics:
+  - Machine Learning
+  - Python
+  - SQL
 ---
 
 # [Work with Gemini Models in BigQuery](https://www.cloudskillsboost.google/course_templates/1133)
@@ -20,10 +20,10 @@ you learn the workflow of solving a business problem with Gemini models. To faci
 
 **Objectives:**
 
-- Recognize the AI capabilities of BigQuery.
-- Explain the workflow of using AI/ML models for predictive and generative tasks in BigQuery.
-- Create a solution for leveraging Gemini models in BigQuery with SQL queries.
-- Create a solution for leveraging Gemini models in BigQuery with Python notebooks.
+* Recognize the AI capabilities of BigQuery.
+* Explain the workflow of using AI/ML models for predictive and generative tasks in BigQuery.
+* Create a solution for leveraging Gemini models in BigQuery with SQL queries.
+* Create a solution for leveraging Gemini models in BigQuery with Python notebooks.
 
 ## Work with Gemini Models in BigQuery
 
@@ -31,19 +31,19 @@ This course demonstrates how to use AI/ML models for generative AI tasks in BigQ
 
 ### Video - [CRM Use Case: Social Media Sentiment Analysis](https://www.cloudskillsboost.google/course_templates/1133/video/507930)
 
-- [YouTube: CRM Use Case: Social Media Sentiment Analysis](https://www.youtube.com/watch?v=JiQnl1z4wzY)
+* [YouTube: CRM Use Case: Social Media Sentiment Analysis](https://www.youtube.com/watch?v=JiQnl1z4wzY)
 
 Have you ever wished you could instantly understand the true sentiments of your customers and use that feedback to create a recipe for success? Are you eager to leverage cutting-edge generative AI technologies like Gemini models to uncover hidden trends, optimize your marketing strategies, and ultimately brew up a more profitable business? If so, you're in the right place. This course starts with a use case involving social media sentiment analysis, highlighting the common challenges faced in everyday work. It then introduces the fundamental concepts and workflow for leveraging AI/ML models like Gemini to tackle these challenges. The course concludes by showcasing solutions using Gemini models in BigQuery with both SQL and Python notebooks. This caters to different user profiles, including data analysts and data scientists. Let's embark on this learning journey! Diane is a data analyst, while Tate is a data scientist. They both work for Data Beans, a digital native company, which leverages data and AI technologies to solve business challenges for its clients. They have a new client called Coffee on Wheels, which sells coffee on food trucks. It is an international company operating in metropolitan cities like London, New York, San Francisco, and Tokyo. As a modern food provider, Coffee on Wheels relies heavily on the internet, particularly on social media, to grow its customer base, gain insights into consumer preferences, and customize marketing campaigns. However, the abundance and fast-paced nature of data from diverse sources makes this process complex and time-intensive. The company is facing a big challenge on how to manage customer relationships in an efficient and scalable way. To begin with, Diane and Tate need to understand the business requirements. They met with Bea, the manager at Coffee on Wheels. The trio collaboratively analyzed the overarching challenge and broke it down into smaller, manageable subtasks, forming a streamlined workflow. First is data ingestion: Gather customer reviews across social media platforms, and process data in multiple modalities like text and images. Second is model creation: Locate and connect pre-trained AI models that are right for the job. Third is data analysis: Extract keywords, analyze sentiment, and examine images and audio from feedback. Summarize results to inform business decisions. Last is actions: Generate suitable responses to customer reviews and develop a marketing campaign based on the insights. With a clearly defined target, the next step is to find the right tool. Diane and Tate outlined several critical features that the development platform must support: Cloud-based infrastructure Seamless data-to-AI integration Generative AI capabilities Multimodal data handling SQL and Python support for both users After exploring various data and AI development platforms, Diana and Tate became interested in Google Cloud's tools, particularly BigQuery and the Gemini models. BigQuery is Google’s data warehouse providing two services in one. It’s a fully managed storage facility to ingest, store, and optimize data, and a fast SQL-based analytical engine. And Gemini is Google's most intelligent AI. It understands and creates text, code, images, audios, and videos. Gemini models were first introduced in May 2023, and now Gemini has a family of models coming in different sizes for different needs, from small and efficient like Gemini Nano, to large and powerful like Gemini Pro and Gemini Ultra. Gemini Flash is the newest member of the family, characterized by its low latency and cost-effectiveness. To stay up-to-date on the latest Google models and their versions, check out the Google Models list in the reading material. How can you leverage the combined power of BigQuery and Gemini models to drive your data and AI applications? Beyond its robust data analytics capabilities, BigQuery extends its reach to artificial intelligence (AI) and machine learning through a built-in feature called BigQuery Machine Learning (BQML). This tool enables users to train and run AI/ML models within BigQuery. It also allows access to the remote generative AI (Gen AI) models on Vertex AI, Google's AI platform. This means you can perform Gen AI tasks in BigQuery by using pre-trained foundation models like Gemini, which is capable of processing multimodal data and generating content. You can also leverage Google Cloud AI services through APIs such as Cloud Natural Language, Cloud Translation, and Document AI. They assist in solving tasks related to language understanding, translation, and document analysis. An additional benefit is that BigQuery offers both SQL and Python development environments, allowing Diane and Tate to use their preferred programming languages. Having checked all the boxes and identified BigQuery and Gemini as suitable tools for development, Diane and Tate worked together to create a demo. Now, it's showtime! In London, business is booming with exceptional revenue figures and solid truck performance. However, customer loyalty needs attention. Let's dive deeper. Powered by Gen AI technologies and Gemini models, this app is a game-changer. Real-time positive and negative reviews appear on the left, sourced from various social media platforms. Approximately 10% of the reviews are negative, so let's focus on those to understand customer pain points. "Bad service" and "long wait time" are common complaints. Ouch! That stings! The app extracts keywords like "bad service" and "long wait time," providing suggested responses to address these concerns. If not thrilled, simply refresh for alternatives till you're happy with it. But that's not all. Curious about the performance of individual trucks? Click on a truck to reveal its menu. If you spot an underperforming coffee item like "Mocha Magic," you can replace it with something new with just a few clicks. And now for the most exciting part: the app can even create a marketing campaign and post it to your target audience. Isn't that incredible? Want to know how Diane and Tate built such a data-to-AI solution with Gemini and BigQuery? Find out the details in the lessons that follow.
 
 ### Video - [Work with AI/ML Models in BigQuery](https://www.cloudskillsboost.google/course_templates/1133/video/507931)
 
-- [YouTube: Work with AI/ML Models in BigQuery](https://www.youtube.com/watch?v=N0QFv7UXuHU)
+* [YouTube: Work with AI/ML Models in BigQuery](https://www.youtube.com/watch?v=N0QFv7UXuHU)
 
 To get ready for creating an AI project, let's join Diane and Tate for an enlightening conceptual exploration. They first wonder what specific AI tasks can be solved with BigQuery. As mentioned in the previous lesson, BigQuery enables AI capabilities through a built-in feature called BigQuery ML. It allows you to create and run AI models by using either Structured Query Language (SQL) queries or Python code. It supports predictive AI tasks like sales forecasting and product classification, Gen AI tasks like feedback generation and marketing campaign automation, and a hybrid approach that combines both. Depending on the tasks, you can choose from various models. For prediction AI tasks: Regression model for housing price prediction Classification model for spam or non-spam email Clustering models for customer segmentation Time series model like ARIMA_PLUS for sales or stock market forecasting For generative AI tasks: Gemini for various content generation tasks, article summarization, text and image analysis, and translation. Note that Gemini is Google’s most advanced Gen AI model. It’s a family of models that can handle multimodal data including text, image, audio, video, and code. Cloud AI services like Natural Language API for specific language understanding and Translation API for machine translation. That sounds exciting! It appears the major issues encountered by Diane and Tate could be solved by combining forces with BigQuery ML and Gemini. The next significant question is how. The workflow to build an AI/ML model in BigQuery can be split into two primary stages: create and use. Model creation Construct an AI/ML model according to specific tasks. Model use Serve the model to solve tasks. To create a model, you use the SQL statement CREATE MODEL. This stage comprises three iterative steps: Data preparation: perform feature preprocessing, including both structured data like those in tables and unstructured data like texts and images. Model creation: either train a BigQuery built-in ML model or refer to remote Gen AI models. Model evaluation: assess how the model performs by using the function ML.EVALUATE. When the evaluation falls below expectation, you can retrain or tune the model with new training data, thus restarting the iterative process. In terms of deployment, BigQuery ML supports three main types of models based on their hosting location: Local models: reside within BigQuery and can be trained either internally in BigQuery or externally in Vertex AI. These built-in models mainly focus on predictive AI tasks. These include classification, like a logistic regression model, regression like a linear regression model, and time series forecasting, like an ARIMA_PLUS model. You are recommended to start with simple options such as logistic regression and linear regression, and use the results as a benchmark to compare against more complex models such as deep neural networks (DNN), which take more time and computing resources to train and deploy. Remote models: hosted in Vertex AI and referenced by BigQuery. These include pre-trained Gen AI models like Gemini and Cloud AI services like Natural Language APIs. Imported models: trained anywhere and imported into BigQuery from Cloud Storage. For example, Open Neural Network Exchange (ONNX), Tensorflow, and XGBoost. Depending on the model type, the CREATE MODEL statement differs slightly. Local models: specify the model type such as “LINEAR_REG” in the Options section. Remote models (pre-trained Gen AI foundation models): Set up the connection. Refer to the endpoint. An endpoint is a way to interact with a deployed ML model. It's essentially a URL or API that allows you to send input data (e.g., text, images, numerical features) to the model and receive predictions or results in return. Remote models (Cloud AI APIs): similarly, you need to Establish a connection to Vertex AI. Specify the service type, such as Cloud AI Vision. Imported models: in addition to describing the model type like TensorFlow, you must provide the path where the model is stored on Cloud Storage. You’ll explore the coding examples to create a remote model using both SQL and Python in the following labs. Once the model is created, it's time to unleash its potential. The use stage unfolds in three iterative steps: Model serving Model explanation (optional) And model monitoring Get ready for the thrilling climax—model serving! Simply run a BigQuery ML function against different models, and you're all set. For predictive AI tasks like prediction, classification, and clustering, use the ML.PREDICT function. For time series forecasting, use ML.FORECAST(). For generative AI tasks like content generation, summarization, and rephrasing, use ML.GENERATE_TEXT(). ML.understand_text() is available for language analysis, and ML.translate() handles machine translation. Next is model explanation, which aims to understand how each feature contributes to the predicted result. It’s optional and only applicable to predictive AI models. You can use: ML.explanation_predict for non-time-series models, particularly supervised models such as regression models and DNN. While ML.explanation_forecast is for time-series models. Finally is model monitoring. Model monitoring in BigQuery ML focuses on data to monitor model performance. This involves: comparing a model's serving data with its training data to prevent data skew, and comparing new serving data with previously used serving data to prevent data drift. Commonly used functions for data monitoring include ML.DESCRIBE_DATA, ML.VALIDATE_DATA_SKEW, and ML.VALIDATE_DATA_DRIFT. Link the dots. Now, you have a full workflow to create and use an AI model with BigQuery ML. Quiz time! Let's put your knowledge to the test before diving into the code. In terms of deployment, what are the major AI/ML model types in BigQuery (you can choose more than one)? Local models Remote models Imported models Exported models A, B and C are correct. Did you get it? Take a moment to consider the difference between the models, and how the SQL statement CREATE MODEL can be used to create them differently. All right, buckle up and get ready! Next, Diana and Tate will showcase their skills to build a customer relationship management application using BigQuery and Gemini.
 
 ### Video - [Gemini in Action: Analyze Customer Reviews with SQL](https://www.cloudskillsboost.google/course_templates/1133/video/507932)
 
-- [YouTube: Gemini in Action: Analyze Customer Reviews with SQL](https://www.youtube.com/watch?v=7ZpHUcMGo1U)
+* [YouTube: Gemini in Action: Analyze Customer Reviews with SQL](https://www.youtube.com/watch?v=7ZpHUcMGo1U)
 
 In the previous lesson, you explored the workflow for building an AI project in BigQuery, along with the key technologies and concepts involved in the process. Now Diane, the data analyst, is excited to show you how to analyze customer reviews with Gemini using pure SQL in BigQuery. Get ready for some SQL magic! Let's first take a quick tour of your workspace, BigQuery Studio! This nifty graphic user interface, GUI, will be your playground for discovering, exploring, analyzing, and predicting data in BigQuery like a pro. On the left, you'll find the menu, acting as your command center. In the middle, meet the explorer—your project folder and organizational guru for queries, notebooks, external connections, models, and tables. It's like a filing cabinet, but way cooler! And on the right, behold your real workspace—the place where the magic happens. Start a SQL query, whip up a Python notebook, or unleash your creativity with data canvas. The possibilities are endless. Remember Diane, Tate, and Bea, the fantastic trio who’re about to conquer the challenge of customer relationship management for Coffee on Wheels. Their quest began with data ingestion, model creation, data analysis, and finally actions. Ready to conquer the coffee world. From a technical perspective, the workflow can be broken down into a five-step pipeline: Establish a connection to the generative AI remote models hosted on Vertex AI. Construct a dataset for multimodal data using an object table that stores unstructured data such as text and images. Create a remote model to reference the endpoint of the Gemini model. Analyze customer reviews by extracting keywords, determining sentiment, and producing a report. Take action by formulating responses to customer feedback and planning marketing campaigns. Let’s delve into each of these steps in greater detail. In the previous lesson, you learned that you can create three main types of AI models in BigQuery: local, remote, and imported. The type of model you create depends on where the model is hosted. Which category do Gemini models fall into? Yes, Gemini models, like other large foundation models, are remote models trained and deployed in Vertex AI, Google's AI development platform. To use them in BigQuery, you must first establish the connection. This can be done either through the UI or code. Create the connection: In the Google Cloud console, click Add. Choose Connections to external data sources. Select Vertex AI remote models. No coding is required. 2. Grant permission: Specify IAM permissions to grant access. Choose a Vertex AI user to allow access to all resources in Vertex AI. For more information on roles, refer to "Vertex AI access control with IAM" in the reading list. Ready to build the multimodal dataset? If you have unstructured data like text and image, most likely your data is saved on Cloud Storage. Use the SQL statement LOAD DATA...FROM FILES. You need to specify the file name; each column; the data format, which in this case is the csv file that includes customer feedback in text; and the file location on Cloud Storage. You then upload the image data using an object table. Object tables provide a structured way to access and analyze unstructured data stored in Cloud Storage. Think of them as a magical bridge that connects BigQuery with your messy data, such as images, songs, and movies. It's like giving BigQuery superpowers to handle all kinds of unstructured multimodal data, not just structured data like the numbers in tables. What does an object table do? It stores the references to data objects in Cloud Storage. Each row represents an object. And columns contain metadata such as Uniform Resource Identifier (URI), content type, and size. One more thing to note: Object tables use access delegation, so users can access the object table without directly accessing Cloud Storage, which adds an additional layer of security. Let's examine the coding. Use the SQL statement CREATE EXTERNAL TABLE with the connection you created in the previous step. Set the following options: Object metadata: specify how BigQuery should handle metadata associated with the unstructured data objects you're accessing. URIs: specify the Cloud Storage paths (URIs) where your unstructured data files are located. What happens next to the unstructured data in an object table? Well, through a technology called embeddings, that data is converted to numeric vectors that represent semantic meanings. Combined with structured data, these vectors form the input for AI/ML models, enabling further tasks such as prediction or generation. Want to dive deeper into embeddings? Check out our Vector Search and Embeddings course in the reading list. Once the data is prepared, you proceed to create the Gemini models. Currently, the widely used gemini models include gemini-pro and gemini-flash. You get a chance to try both in the labs. As you have learned from the previous lesson, in addition to a regular CREATE MODEL statement, you must specify the remote connection and the endpoint that refers to the Gemini model you want to use. Diane also needs to create a Gemini vision model to process image data. Once the model is created, use it to analyze customer reviews. The ML.GENERATE_TEXT () function enables you to perform generative natural language tasks using data from BigQuery standard tables or object tables. This function works by sending requests to a remote BigQuery ML model like Gemini and then returning the model's response. You need to specify the model you want to use and the object table for unstructured data if any. Use STRUCT() to define the parameters for the generation tasks. For example, prompt the instruction to the model. Customize the model's response by adjusting parameters such as top-p and temperature. Top-p controls the range of words considered for output, while temperature influences the randomness within that range. For more information about parameter tuning, refer to the Introduction to Vertex AI Studio course in the reading list. Let’s explore the coding examples. ML.GENERATE_TEXT (), this is where the magic happens. Specify the model you want to use, which is the Gemini model you created earlier. Create a prompt to tell the model to extract the keywords, and set the parameters. Follow the same syntax for the sentiment analysis, only with a different prompt. This time, you tell the Gemini model to classify a review as either positive or negative. You can also prompt to analyze the images, for example, providing a caption and generating keywords. Note that, here, you refer to the gemini_pro_vision model and draft a prompt to explain the instructions as specifically as possible. After thoroughly analyzing customer reviews, the next step involves taking appropriate actions. Using the Gemini model, you can create responses to customer reviews automatically. To personalize the response according to your preferences, you can train the model by providing it with some examples. This process is known as prompt tuning. Three primary methods are available: Zero-shot prompting: give instructions to the model without any examples. For instance, you could simply prompt Gemini to "Generate a response to the customer review." One-shot prompting: provide a single example of the task. You can illustrate to Gemini if a customer says that the coffee tastes fresh, the response can be "Thank you for choosing us. We're delighted you enjoyed our service." Few-shot prompting: provide numerous examples. For instance, you can guide Gemini's responses to different customer reviews including both positive and negative comments. You’ll practice prompt tuning in the lab. Last but not least, prompts can be utilized to strategize marketing campaigns. Quiz time: unleash your knowledge! In BigQuery, which function can be used to perform language tasks by leveraging remote Gen AI models? ML.generate_text ML.create _model ML.generate_prompt ML.create_table Did you get it right? Time for a hands-on practice! Join a lab session to analyze customer reviews and uncover valuable insights with Gemini in BigQuery using SQL. Get ready for a journey of discovery!
 
@@ -51,11 +51,11 @@ In the previous lesson, you explored the workflow for building an AI project in 
 
 Learn how to use BigQuery Machine Learning with remote models (Gemini) to analyze customer reviews using SQL.
 
-- [ ] [Analyze Customer Reviews with Gemini Using SQL](../labs/Analyze-Customer-Reviews-with-Gemini-Using-SQL.md)
+* [ ] [Analyze Customer Reviews with Gemini Using SQL](../labs/Analyze-Customer-Reviews-with-Gemini-Using-SQL.md)
 
 ### Video - [Gemini in Action: Analyze Customer Reviews with Python Notebooks](https://www.cloudskillsboost.google/course_templates/1133/video/507934)
 
-- [YouTube: Gemini in Action: Analyze Customer Reviews with Python Notebooks](https://www.youtube.com/watch?v=N8-ofVFPJmE)
+* [YouTube: Gemini in Action: Analyze Customer Reviews with Python Notebooks](https://www.youtube.com/watch?v=N8-ofVFPJmE)
 
 In the previous lesson, you learned how to use Gemini in BigQuery with SQL. In this lesson, Tate wants to demonstrate how to write Python to perform the similar tasks. BigQuery integrates Colab Enterprise notebooks, enabling developers to use Python directly within BigQuery, without switching to a separate development environment. How do you decide between using SQL queries or Python notebooks, besides personal preferences? Similarities: Both methods can accomplish similar tasks in BigQuery. They both have the features offered by Google Cloud and BigQuery, such as code assistance with Gemini, autocomplete, and code management. Despite their similarities, each tool has its own unique advantages. Skillset: SQL queries: SQL-only users. Python notebook: Python users can also code in SQL with the imported BigQuery library. Flexibility: Python offers greater flexibility with extensive libraries. Workflow automation: Python has more control for end-to-end workflow automation. Performance: SQL is highly optimized for large-scale data processing. Recommendation: SQL for straightforward data analysis. Python for complex tasks and pipeline automation. Combine both in a Python notebook for data analysis and pipeline automation. Let’s dive into the code. After installing the required packages, the first step is to import the Python libraries you use. from google.cloud import bigquery for querying data. from google.cloud import storage for uploading, downloading, and managing files in Google Cloud Storage. from vertexai.generative_models import GenerativeModel for interacting with Gen AI models, and import Part for accessing a section of the input or output for a Gen AI model. import other libraries if needed, like matplotlib.pyplot as plt for data visualization. You can use similar SQL code from the previous lab to build a dataset, create remote models, and analyze sentiment in the Python notebook. Tate wants to demonstrate a new task, audio analysis, by trying Gemini Flash, a new member of the Gemini family. First, create the model of Gemini Flash. Second, prompt to convert audio to scripts, summarize, decide sentiment, and generate a response. And yes, you can do all these in one prompt. Make sure to draft the prompt as specific, clear, and concise as possible. Finally, use the function mode.generate_content() to get the results and save them in a JSON file. The result contains the transcript, summary, sentiment, and response as key-value pairs in a JSON file. Recap time! In this course, you joined Diane, Tate, and Bea on their journey to solve a business challenge. They showed you how to manage customer relationships efficiently and at scale. They unlocked the secret workflow and chose Gemini models and BigQuery on Google Cloud as their development tools. They followed a two-stage journey, model creation, and model use when they developed the AI application in BigQuery. To create a model, they used the SQL statement CREATE MODEL. The specific syntax of this statement varies depending on the type of model being created, such as local, remote, or imported models. When it comes to using a generative AI model, they had several options, with ML.generate_text being the primary one. They specified the prompt and adjusted a few hyperparameters to tune the results as needed. It’s time for an exciting Python adventure in BigQuery! Let’s dive into a hands-on lab, using the Gemini models to analyze customer reviews and gain valuable insights. We hope you enjoyed this course! Be sure to check out other Google Cloud courses for continued learning.
 
@@ -63,82 +63,82 @@ In the previous lesson, you learned how to use Gemini in BigQuery with SQL. In t
 
 Learn how to use BigQuery Machine Learning with remote models (Gemini AI) to analyze customer reviews using Python Notebooks.
 
-- [ ] [Analyze Customer Reviews with Gemini Using Python Notebooks](../labs/Analyze-Customer-Reviews-with-Gemini-Using-Python-Notebooks.md)
+* [ ] [Analyze Customer Reviews with Gemini Using Python Notebooks](../labs/Analyze-Customer-Reviews-with-Gemini-Using-Python-Notebooks.md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/1133/quizzes/507936)
 
 #### Quiz 1.
 
 > [!important]
-> **You're a data scientist working on a project that requires you to leverage AI/ML capabilities within BigQuery. You're evaluating different deployment options for your models. In terms of deployment, what are the major AI/ML model types in BigQuery?**
+> **What is the primary purpose of an object table in BigQuery?**
 >
-> - [ ] Local models, remote models, embedded models
-> - [ ] In-memory models, remote models, imported models
-> - [ ] Local models, cloud models, imported models
-> - [ ] Local models, remote models, imported models
+> * [ ] To replace traditional tables in BigQuery for storing structured data.
+> * [ ] To directly store and manage unstructured data, such as images and videos, within BigQuery.
+> * [ ] To automatically convert unstructured data into structured data formats.
+> * [ ] To provide a structured interface for accessing and analyzing unstructured data stored in Cloud Storage.
 
 #### Quiz 2.
 
 > [!important]
-> **When creating a remote model in BigQuery that utilizes a pre-trained Gen AI foundation model, which specification is required in the CREATE MODEL statement?**
+> **Which type of prompt allows a generative AI model to perform a task by providing a few examples or demonstrations of the desired output?**
 >
-> - [ ] Set up a connection to Vertex AI and refer to the endpoint of the deployed model.
-> - [ ] Specify the model type as linear regression and logistic regression model.
-> - [ ] Provide the path where the model is stored on Cloud Storage.
-> - [ ] Provide the path to the training data located on Cloud Storage.
+> * [ ] Unsupervised prompt. For example, providing an AI with a large dataset of text and asking it to identify common themes without specific guidance.
+> * [ ] Few-shot prompt. For example, showing an AI a few examples of poems with a specific style and asking it to generate a new poem in that style.
+> * [ ] One-shot prompt. For example, giving an AI one example of a product description and asking it to generate a description for a new product.
+> * [ ] Zero-shot prompt. For example, asking an AI to translate a phrase into Spanish without providing any prior translation examples.
 
 #### Quiz 3.
 
 > [!important]
 > **In BigQuery, the workflow to develop an AI/ML project can be divided into two main phases. Which option accurately represents these two phases?**
 >
-> - [ ] Create and use
-> - [ ] Train and evaluate
-> - [ ] Extract and transform
-> - [ ] Design and deploy
+> * [ ] Train and evaluate
+> * [ ] Extract and transform
+> * [ ] Create and use
+> * [ ] Design and deploy
 
 #### Quiz 4.
 
 > [!important]
-> **Which type of prompt allows a generative AI model to perform a task by providing a few examples or demonstrations of the desired output?**
+> **If you would like to leverage a Gemini model in BigQuery to perform generative AI tasks such as keywords extraction, what type of model would you use?**
 >
-> - [ ] Zero-shot prompt. For example, asking an AI to translate a phrase into Spanish without providing any prior translation examples.
-> - [ ] Unsupervised prompt. For example, providing an AI with a large dataset of text and asking it to identify common themes without specific guidance.
-> - [ ] One-shot prompt. For example, giving an AI one example of a product description and asking it to generate a description for a new product.
-> - [ ] Few-shot prompt. For example, showing an AI a few examples of poems with a specific style and asking it to generate a new poem in that style.
+> * [ ] Embedded models
+> * [ ] Local models
+> * [ ] Imported models
+> * [ ] Remote models
 
 #### Quiz 5.
 
 > [!important]
-> **If you would like to leverage a Gemini model in BigQuery to perform generative AI tasks such as keywords extraction, what type of model would you use?**
+> **You are a data scientist working with a vast dataset of customer reviews in BigQuery. You want to use the power of generative AI models to analyze the sentiment of these reviews and generate summaries. Which BigQuery ML function allows you to directly utilize remote Gen AI models for language tasks such as sentiment analysis and summarization?**
 >
-> - [ ] Imported models
-> - [ ] Embedded models
-> - [ ] Local models
-> - [ ] Remote models
+> * [ ] ML.CREATE_TEXT
+> * [ ] ML.DETECT_ANOMALIES
+> * [ ] ML.FORECAST
+> * [ ] ML.PREDICT
 
 #### Quiz 6.
 
 > [!important]
-> **You are a data scientist working with a vast dataset of customer reviews in BigQuery. You want to use the power of generative AI models to analyze the sentiment of these reviews and generate summaries. Which BigQuery ML function allows you to directly utilize remote Gen AI models for language tasks such as sentiment analysis and summarization?**
+> **You're a data scientist working on a project that requires you to leverage AI/ML capabilities within BigQuery. You're evaluating different deployment options for your models. In terms of deployment, what are the major AI/ML model types in BigQuery?**
 >
-> - [ ] ML.FORECAST
-> - [ ] ML.CREATE_TEXT
-> - [ ] ML.DETECT_ANOMALIES
-> - [ ] ML.PREDICT
+> * [ ] Local models, remote models, imported models
+> * [ ] Local models, cloud models, imported models
+> * [ ] Local models, remote models, embedded models
+> * [ ] In-memory models, remote models, imported models
 
 #### Quiz 7.
 
 > [!important]
-> **What is the primary purpose of an object table in BigQuery?**
+> **When creating a remote model in BigQuery that utilizes a pre-trained Gen AI foundation model, which specification is required in the CREATE MODEL statement?**
 >
-> - [ ] To automatically convert unstructured data into structured data formats.
-> - [ ] To replace traditional tables in BigQuery for storing structured data.
-> - [ ] To directly store and manage unstructured data, such as images and videos, within BigQuery.
-> - [ ] To provide a structured interface for accessing and analyzing unstructured data stored in Cloud Storage.
+> * [ ] Provide the path to the training data located on Cloud Storage.
+> * [ ] Set up a connection to Vertex AI and refer to the endpoint of the deployed model.
+> * [ ] Provide the path where the model is stored on Cloud Storage.
+> * [ ] Specify the model type as linear regression and logistic regression model.
 
 ### Document - [Reading](https://www.cloudskillsboost.google/course_templates/1133/documents/507937)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

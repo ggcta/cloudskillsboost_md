@@ -1,12 +1,13 @@
 ---
 id: 625
 name: 'Develop your Google Cloud Network'
-datePublished: 2025-02-18
-topics:
-- Compute Engine
-- Cloud Computing
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/625
+date_published: 2025-02-18
+topics:
+  - Kubernetes
+  - Compute Engine
+  - Cloud Computing
 ---
 
 # [Develop your Google Cloud Network](https://www.cloudskillsboost.google/course_templates/625)
@@ -23,38 +24,38 @@ A skill badge is an exclusivedigital badge issued by Google Cloud in recognition
 
 Google Cloud IAM unifies access  control for Cloud Platform services into a single system to present a consistent set of operations. Watch the short video <A HREF="https://youtu.be/PqMGmRhKsnM">Manage Access Control with Google Cloud IAM</A>.
 
-- [ ] [Cloud IAM: Qwik Start](../labs/Cloud-IAM-Qwik-Start.md)
+* [ ] [Cloud IAM: Qwik Start](../labs/Cloud-IAM-Qwik-Start.md)
 
 ### Lab - [Introduction to SQL for BigQuery and Cloud SQL](https://www.cloudskillsboost.google/course_templates/625/labs/525535)
 
 In this lab, you learn fundamental SQL clauses and get hands-on practice running structured queries on BigQuery and Cloud SQL.
 
-- [ ] [Introduction to SQL for BigQuery and Cloud SQL](../labs/Introduction-to-SQL-for-BigQuery-and-Cloud-SQL.md)
+* [ ] [Introduction to SQL for BigQuery and Cloud SQL](../labs/Introduction-to-SQL-for-BigQuery-and-Cloud-SQL.md)
 
 ### Lab - [Multiple VPC Networks](https://www.cloudskillsboost.google/course_templates/625/labs/525536)
 
 In this lab, you create several VPC networks and VM instances, then test connectivity across networks.
 
-- [ ] [Multiple VPC Networks](../labs/Multiple-VPC-Networks.md)
+* [ ] [Multiple VPC Networks](../labs/Multiple-VPC-Networks.md)
 
 ### Lab - [Cloud Monitoring: Qwik Start](https://www.cloudskillsboost.google/course_templates/625/labs/525537)
 
 This lab shows you how to monitor a Compute Engine virtual machine (VM) instance with Cloud Monitoring.
 
-- [ ] [Cloud Monitoring: Qwik Start](../labs/Cloud-Monitoring-Qwik-Start.md)
+* [ ] [Cloud Monitoring: Qwik Start](../labs/Cloud-Monitoring-Qwik-Start.md)
 
 ### Lab - [Managing Deployments Using Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/625/labs/525538)
 
 Dev Ops best practices make use of multiple deployments to manage application deployment scenarios. This lab provides practice in scaling and managing containers to accomplish common scenarios where multiple heterogeneous deployments are used.
 
-- [ ] [Managing Deployments Using Kubernetes Engine](../labs/Managing-Deployments-Using-Kubernetes-Engine.md)
+* [ ] [Managing Deployments Using Kubernetes Engine](../labs/Managing-Deployments-Using-Kubernetes-Engine.md)
 
 ### Lab - [Develop your Google Cloud Network: Challenge Lab](https://www.cloudskillsboost.google/course_templates/625/labs/525539)
 
 This challenge lab tests your skills and knowledge from the labs in the Develop your Google Cloud Network skill badge.  You should be familiar with the content of the labs before attempting this lab.
 
-- [ ] [Develop your Google Cloud Network: Challenge Lab](../labs/Develop-your-Google-Cloud-Network-Challenge-Lab.md)
+* [ ] [Develop your Google Cloud Network: Challenge Lab](../labs/Develop-your-Google-Cloud-Network-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

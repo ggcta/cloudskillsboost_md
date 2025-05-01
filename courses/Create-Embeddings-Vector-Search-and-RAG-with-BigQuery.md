@@ -1,11 +1,12 @@
 ---
 id: 1210
 name: 'Create Embeddings, Vector Search, and RAG with BigQuery'
-datePublished: 2025-04-08
-topics:
-- Vector Search
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/1210
+date_published: 2025-04-08
+topics:
+  - Vector Search
+  - SQL
 ---
 
 # [Create Embeddings, Vector Search, and RAG with BigQuery](https://www.cloudskillsboost.google/course_templates/1210)
@@ -16,9 +17,9 @@ This course explores a Retrieval Augmented Generation (RAG) solution in BigQuery
 
 **Objectives:**
 
-- Generate embeddings using the embedding models with BigQuery.
-- Perform vector search in BigQuery and understand its process.
-- Create a RAG (Retrieval Augmented Generation) pipeline with BigQuery.
+* Generate embeddings using the embedding models with BigQuery.
+* Perform vector search in BigQuery and understand its process.
+* Create a RAG (Retrieval Augmented Generation) pipeline with BigQuery.
 
 ## Create Embeddings, Vector Search, and RAG with BigQuery
 
@@ -26,31 +27,31 @@ This course explores a Retrieval Augmented Generation (RAG) solution in BigQuery
 
 ### Video - [Why RAG](https://www.cloudskillsboost.google/course_templates/1210/video/529943)
 
-- [YouTube: Why RAG](https://www.youtube.com/watch?v=9YWLeGJhRwQ)
+* [YouTube: Why RAG](https://www.youtube.com/watch?v=9YWLeGJhRwQ)
 
 Have you ever worried about AI hallucinations? You rely on AI as trusted experts, but they may provide inaccurate, outdated, or overly generalized responses. This concerns Diane, a data analyst, and Tate, a data scientist, as well. If you have taken our previous courses, Boost Productivity with Gemini in BigQuery, scan the QR code to access it, where you learn how Gemini assists with coding and data preparation, and Work with Gemini Models in BigQuery, feel free to scan the QR code. Where you learn how to use Gemini models to create generative AI, Gen AI, applications, you might already be familiar with Diane and Tate. They leveraged the combined power of BigQuery and Gemini and built a cutting-edge, Gen AI-enabled application for Coffee on Wheels, a pioneering mobile coffee vendor. This application has multiple capabilities, helping Coffee on Wheels accelerate its journey toward becoming the food truck of the future. It enhances sales by identifying top and underperforming menu items and suggesting proper marketing campaigns. Manage customer relationships by identifying recurring issues and areas of concern and generating proper feedback. And optimize truck logistics by determining truck locations with real-time information like traffic, weather, and events, and modify logistics if performance is poor. These features require Gen AI models, like Gemini, to continuously incorporate the latest information and enable the most accurate, up-to-date decision making. But how? Gemini, the same as many other Gen AI models, relies on pre-trained knowledge. Gen AI models don't know your specific business data. They are typically trained on publicly available, online information, not private data relevant to individual use cases. They're not up-to-the-minute. They have a knowledge cut-off date and may not always reflect the latest updates. They can't always show sources of information. Enterprises need to know where the answers are coming from, and Gen AI models can struggle with that. So, what's the solution? That's easy. Why don't we just retrain the model constantly with new data and fine-tune the parameters? Model providers like Google periodically update their models. However, for users, constantly retraining a Gen AI model is impractical, requiring excessive time and money. Depending on the model's size, data set, and training methods, full retraining can take weeks or even months and is extremely costly. If retraining the entire model is not feasible, how about we feed a Gen AI model relevant context and information at query time? Wow, that's brilliant! You're suggesting that, instead of modifying the pre-trained AI models, we provide them with a smaller data set of current and relevant information when they generate the results. That way, the AI can leverage the latest data and provide more accurate responses while remaining cost-effective and efficient. This is essentially the idea of RAG, Retrieval Augmented Generation. It lets AI models access and use external information to improve their responses. Awesome. So how can you actually implement RAG using BigQuery? It's a three-step process. First, create embeddings. This converts your data into a format that Gen AI models can understand, while still preserving the meaning. The output of this step is vector embeddings in a vector database. Then, perform vector search, where you search this vector space and retrieve the closest answer to the queried item. Finally, you augment the Gen AI model with retrieved contextual information and generate improved answers. That's exciting! Join us to explore embeddings, vector search, and RAG in this mini-course. By the end, you would be able to build a RAG pipeline to solve your own AI hallucination use case. Ready to take on the challenge?
 
 ### Video - [Embeddings](https://www.cloudskillsboost.google/course_templates/1210/video/529944)
 
-- [YouTube: Embeddings](https://www.youtube.com/watch?v=zbunSHEjLL8)
+* [YouTube: Embeddings](https://www.youtube.com/watch?v=zbunSHEjLL8)
 
 We talked about why we use RAG in the previous lesson. It helps solve AI hallucinations, and provides tailored answers with your non-public data. But how exactly? The story starts from embeddings, which is the first step of the RAG pipeline. What are embeddings? Well, as you know, the input data of a Gen-AI model comes in all sorts of formats, text, images, audio, video. These are called multimodal data. How to represent multimodal data numerically, while preserving its meaning is the real challenge. Take text data as an example. Text representation techniques progress dramatically in the past two decades, starting from basic vectorization, which refers to some intuitive ideas to encode the text to numbers. For example, one-hot encoding, where you first index the entire vocabulary, which can easily be tens of thousands. You then place a one to the position that corresponds to the word, and zeros to the rest of the positions. You can turn the sentence, a dog is chasing a person, into a matrix consisting of vectors, which represents keywords. That sounds intuitive and easy to implement. True, but what do you think about efficiency? Good call. It might not be that efficient. I can imagine a gigantic matrix with 99.99% of elements being zero. This sparse matrix can lead to computational waste and model overfitting. Yes, low efficiency is one big con. Any other disadvantages you can think of? Hmm, what about semantic meanings? This simple representation of yes or no as zero and one in the vocabulary doesn't reveal any relationships between words and sentences. For example, a dog is chasing a person, and a person is chasing a dog would have the same representation with the basic vectorization technique, despite their opposite meanings. Brilliant. Thanks. I learned it from the Natural Language Processing on Google Cloud course. It has an in-depth explanation about the text representation techniques and various NLP models and algorithms. Feel free to scan the QR code here, or check the link in the reading list. Perfect. Thank you, Tate. So how can you solve these problems? Let's explore a new approach called word embeddings. Let me ask you something that may seem completely out of the blue. How would you describe a dog? What? Well, a big fluffy German shepherd? He looks exactly like my puppy, who loves to play fetch. Exactly. You actually describe the dog with multiple dimensions. Their breed, size, coat color, relationship to you, and their behaviors. How about a word? How do you describe, say, Paris? Oh, I get what you mean. Similarly, I can describe a word based on different properties, like its nature, capital city, location, Europe, origin, and even the memories and emotions I associate with it. Imagine you create such a multidimensional space. Each dimension represents a property of words. You can project the word to this space with quantitative values. You then get your vectors that hold semantic meanings in a vector space. Not only that, since the position of the word in this vector carries meaning, the distance between the words indicates the semantic similarities between them. Similar words are located closer together, while different words are farther apart. For example, Paris and Tokyo are close to each other, but far from Apple. You can even capture the analogy between words. For example, the distance between Paris and France is similar to the distance between Tokyo and Japan. Now you have Paris minus France plus Tokyo equals Japan. Wow, that's amazing. Now I can play with words in the same way I play with numbers. Exactly. Word embedding, or text embedding in a broader sense, is a technique to encode text into meaningful vectors. Compared to basic vectorization techniques like one-hot encoding, text embedding converts text into low-dimensional, dense vectors that retain semantic meaning. Now I understand the idea of embeddings, but how can I develop such an encoding system to turn text to vectors? Instead of manually specifying the values for the embedding, you train a neural network to learn those numbers. You can extend the same approach to convert multimodal data, such as images, audio, or video, to embeddings. These are called multimodal embedding. These embeddings share the same embedding space. This way, you can find that the text dog and the image of a dog are located near each other. That sounds fantastic, but do I have to train such neural networks myself? As training on a large corpus typically requires a great deal of computational resources. The good news is no. Instead, you can use pre-trained embedding models through APIs. For example, you call models like text embedding and multimodal embedding on Google Cloud. These models translate multimodal data into embeddings for you. Perfect. How can you create embeddings with BigQuery then? It's as simple as three steps. Note, with BigQuery, you can either use SQL queries or a Python notebook. The code is similar between the two, so choose whichever coding tool you're more comfortable with. You first need to connect the remote embedding models like text embedding on Vertex AI, assuming you've already created the resource connections and granted the necessary IAM permissions. You then upload the data. For example, you can import text data from Google Cloud Storage if you haven't already uploaded it to BigQuery. Third, generate embeddings by using a function called ml.generate underscore embedding. This function sends a request to the embedding model and receives embedded vectors within BigQuery queries. You can find more coding examples in the following demo and the hands-on lab. You save the results to a table. You can then use these embeddings for various tasks. For example, semantic search, similarity analysis, and recommendations. Fantastic. Thanks, Professor Diane. I learned a lot. Up for a challenge? Sure. What does multimodal embedding do? A, it creates a vector space. B, it uses one-hot encoding to code text into numbers. C, it identifies the sentiment expressed in a picture. D, it converts multimodal data to a numeric representation while retaining its meaning. Definitely D. The rest are either incorrect or partially correct. Awesome. Let's move forward to the next step along the RAG pipeline, vector search, in the next lesson.
 
 ### Video - [Vector search](https://www.cloudskillsboost.google/course_templates/1210/video/529945)
 
-- [YouTube: Vector search](https://www.youtube.com/watch?v=1FP-5M5nhkw)
+* [YouTube: Vector search](https://www.youtube.com/watch?v=1FP-5M5nhkw)
 
 In the previous lesson, we covered how embeddings can transform multimodal data like text and images into numerical representations that preserve their semantic meanings. What comes next? The embedded data can be used as the input for a variety of applications like clustering analysis and recommendations. One of the primary usages is vector search. It's the next step in the RAG pipeline. What does vector search do? Picture this. You've got a ton of data in this vector space. Each point in that space is a vector representing a word or an image. The question is, how do you navigate this vector space and find the closest vectors to the query item, represented by Q, quickly and efficiently? This process of finding semantically similar items within a vector space is called vector search. Step 1, encode multimodal data into vectors by using embedding models, which you already did in the previous lesson. Step 2, create an index and build a vector search space to enable fast and scalable retrieval. Step 3, search the vector space to retrieve the data that is semantically similar to your input. This could be text, images, or other data types. Cool. If I understand this right, encode is to turn the multimodal data into vectors. Index is to build a vector search space. Search is to navigate and find information in this vector search space. That's exactly right, Diane. This indexing and searching process comes with technical challenges. Two major obstacles, among others. First, how can you measure the distance between vectors in a space? And second, how can you search vectors in a fast and scalable way? When building vector search on Google Cloud, you can choose from different metrics to measure the distance between vectors. The selection depends on various factors, with the embedding model being one of the primary considerations. The first two metrics, Manhattan and Euclidean distance, measure the distance between the endpoints of the vectors. The third metric, cosine distance, measures the angle between two vectors. It defines the vector similarity in terms of the direction alignment. The fourth metric, dot product distance, considers the similarity in terms of both the alignment and magnitude of two vectors. Imagine two arrows. Cosine distance is like measuring the angle between them regardless of how long the arrows are. Dot product distance is like measuring both the angle and the combined strength length of the arrows. If you're interested in the math details of these metrics, check out the Google Cloud course Vector Search and Embeddings. Feel free to scan the QR code here or check the link in the reading list. Once you know how to measure the distance between two vectors, the next challenge is to efficiently find the similar vectors in this vast vector space. Two common search algorithms include brute force and tria. Brute force is based on an accurate exhaustive search approach and tria relies on an approximate tree search algorithm. Tria stands for shallow tree and asymmetric hashing. It is widely used in a production environment. The brute force algorithm typically consists of three steps. Step one, calculate the distances from the query to the other vectors in the vector space. Step two, sort all distances. Step three, find the top k nearest vectors. Because the size of the database can easily be in the millions or even billions, exhaustive search is impractical and the brute force algorithm becomes a computational bottleneck. The tria algorithm accelerates search by using an approximate search technique called ANN or approximate nearest neighbor. ANN enables fast and scalable search with billions of embeddings in three ways. Dividing the search space into multiple spaces, indexing the spaces using a tree structure, and trading some accuracy for a significant speed up over brute force search. On top of tria, in 2022 Google Research introduced scan, scalable approximate nearest neighbor, a new ANN algorithm. Scan is the foundation for many Google services including Google search, YouTube, and its recommendation system. It is considered one of the best ANN algorithms in the industry both in terms of accuracy and speed. The current Google Cloud vector search is built on a similar more advanced version of scan which combines the advantages of the above techniques. How exactly does scan enable fast and scalable vector search? The technology is comprehensive. You can uncover the secrets of Google search in the course vector search and embeddings. Wow that's a lot of information to absorb. Let's put it into practice. How can you run vector search with BigQuery? Well it's as simple as three steps. The encode step is to generate embeddings. I assume you already finished this step in the previous lesson and save the result to a table. You then create a vector index and create this vector search space by specifying a few options. Remember we talked about the metrics to measure the distance between vectors and the search algorithms. Third, search vectors by using a function called vector search. You define the search item. In this specific case you would like to find the most recent customer feedback about service. Additionally you specify the search options. For example top five items that match with service. Finally retrieve and save the search results. That makes total sense. Can't wait to try it in the lab. A challenge before that? Absolutely. What is the general vector search process? A. Encode, index, and search. B. Connect, upload, and embed. C. Search, retrieve, and generate. D. Retrieve, evaluate, and generate. I think it's A. B is the process for creating embeddings. C and D are more for the entire RAG process. Smart. The results of vector search can be used in a ton of different ways. Think personalization, more targeted ads and recommendations, analytics, finding defects in manufacturing, or even drug discovery in health care. And really important, we can build RAG pipelines to fix those hallucination problems in generative AI. Can't wait to finally see RAG in action in the next lesson.
 
 ### Video - [RAG in action](https://www.cloudskillsboost.google/course_templates/1210/video/529946)
 
-- [YouTube: RAG in action](https://www.youtube.com/watch?v=EEmihbhJnGY)
+* [YouTube: RAG in action](https://www.youtube.com/watch?v=EEmihbhJnGY)
 
 We talked about vector search in the previous lesson and walked through three steps in code, index, and search. How can search results help with AI hallucinations? That's the final rag stage. Generating improved results by using retrieved info with generative AI. Let's use a large language model, or LLM, the most common type of Gen-AI models, to explain this process. Google Cloud's LLM is called Gemini. Think of a standalone LLM before RAG. One, you ask a question. Two, the LLM generates a response based on what it already knows. And three, you get the answer. For example, you might wonder how customers perceive our services recently. The LLM answers based on the pre-trained knowledge, which can be already outdated. Now let's add RAG to the mix. First, encode new information into vector embeddings. Think of the embeddings as a mathematical representation of the multimodal data which keeps the semantic meaning. Then, index vectors to form a vector database for efficient searching. Convert questions into embeddings as well. Search the vector database for items that are similar to the query. Retrieve the top k results by semantic similarity. Finally, pass your question to the LLM along with the retrieved results, allowing it to generate a better answer that incorporates updated information. Awesome! Now I feel like I have a pretty strong understanding. Time to put RAG in action. Let's have a hands-on lab to apply our knowledge and practice. Remember Coffee on Wheels? Management seeks to analyze recent customer feedback on services, but Gemini does not appear to be generating responses based on the latest information. This is a perfect use case for RAG. Exactly! You'll build a RAG application with BigQuery by following these steps. First, create a connection to the remote GenAI models on VertexAI, so you would be able to use the text embedding model to provide embeddings, and the large language model Gemini to generate answers. Then, create embeddings and turn the text into vectors. After that, search the vector space using an embedding derived from your input question and retrieve results. Finally, generate improved answers with Gemini. By the end of this lab, you are ready to create a RAG pipeline for your own use cases. We went through the first few steps like embeddings and vector search. Can you explain how to use Gemini to generate improved answers at the very end? Certainly! BigQuery has this really handy function called ML.GenerateUnderscoreText. It calls the Gemini model to create responses. The key is in the prompt you give Gemini. You basically tell Gemini exactly what you need it to do. For example, you could ask it to summarize what customers think about the services, considering the results from your vector search. There are also some options you can tweak to control how Gemini gives you the answers. I can show the Google Docs in the reading list with the details if you'd like. Now it's time to uncover the result. Gemini will provide a response similar to this, which summarizes the recent customer feedback on services. In this case, you augment the LLM, Gemini, with the business's latest data for a better answer. Can't wait to try the lab!
 
 ### Video - [Summary](https://www.cloudskillsboost.google/course_templates/1210/video/529947)
 
-- [YouTube: Summary](https://www.youtube.com/watch?v=Dg-0ceJEczQ)
+* [YouTube: Summary](https://www.youtube.com/watch?v=Dg-0ceJEczQ)
 
 AI hallucination, where AI provides inaccurate, outdated, or over-generalized information, is a critical concern. Learners, thank you for joining us to explore solving this with Retrieval Augmented Generation, or RAG. RAG offers a cost-effective alternative to retraining and fine-tuning entire generative AI models. Instead, relevant context and information are fed to the model at query time. How can this be implemented, specifically with BigQuery? Let's review the RAG pipeline. It starts with embeddings, turning multimodal data like text into mathematical representations or vectors, in a vector space, while preserving semantic meaning. Pre-trained embedding models, like multimodal embedding, typically handle this. In BigQuery, use the ml.generate underscore embedding function. This embedded data then enables vector search. Vectors are indexed to create a search space, allowing finding items similar to the query in milliseconds. Vector search involves complex technical challenges, such as distance metrics and search algorithms. Fortunately, BigQuery's vector search function offers the latest advancements in Google vector search technology. Putting it all together, a RAG pipeline with BigQuery involves embedding the inputs, searching and retrieving similar items, and then sending them to a large language model, or LLM, to generate improved answers. BigQuery provides the ml.generate underscore text function for creating these responses. That's perfectly clear. I also had the opportunity to apply this knowledge in a hands-on lab. This course, the final one in the Gemini in BigQuery learning path, targets data scientists and analysts who want to apply generative AI and use models like Gemini in BigQuery. This path includes three courses, Boost Productivity with Gemini in BigQuery, using generative AI for coding and design assistance, Work with Gemini Models in BigQuery, using Gemini for generative AI applications, and this course, Create Embeddings, Vector Search, and RAG with BigQuery, solving AI hallucinations with RAG. There's also an exit lab for earning a skill badge. If you haven't explored this series, now's the time. We hope you enjoyed this course as much as we did. We'll see you in future Google Cloud training courses.
 
@@ -58,7 +59,7 @@ AI hallucination, where AI provides inaccurate, outdated, or over-generalized in
 
 In this lab, you learn how to create a RAG pipeline from embeddings, vector search, to generation with Gemini in BigQuery.
 
-- [ ] [Create a RAG Application with BigQuery](../labs/Create-a-RAG-Application-with-BigQuery.md)
+* [ ] [Create a RAG Application with BigQuery](../labs/Create-a-RAG-Application-with-BigQuery.md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/1210/quizzes/529949)
 
@@ -67,53 +68,53 @@ In this lab, you learn how to create a RAG pipeline from embeddings, vector sear
 > [!important]
 > **What function in BigQuery can you use to generate embeddings?**
 >
-> - [ ] GENERATE_EMBEDDING
-> - [ ] ML.GENERATE_TEXT
-> - [ ] GENERATE_MULTIMODAL
-> - [ ] ML.GENERATE_EMBEDDING
+> * [ ] ML.GENERATE_EMBEDDING
+> * [ ] GENERATE_MULTIMODAL
+> * [ ] GENERATE_EMBEDDING
+> * [ ] ML.GENERATE_TEXT
 
 #### Quiz 2.
 
 > [!important]
 > **You're building a Retrieval Augmented Generation (RAG) pipeline to synthesize up-to-date customer feedback for your company's products. What are the major steps in the correct order? 1. Retrain the LLM like Gemini with updated information.  2. Use embedding models to convert multimodal data (text reviews, customer photos, and review videos) into embedded vectors.  3. Fine-tune the embedding model for more accurate embeddings.  4. Search the vector space to retrieve recent product-related reviews.  5. Augment a large language model (LLM) like Gemini with the retrieved information to generate an improved answer.**
 >
-> - [ ] 1 → 3 → 5
-> - [ ] 1 → 2 → 3
-> - [ ] 2 → 4 → 5
-> - [ ] 2 → 3 → 4
+> * [ ] 2 → 4 → 5
+> * [ ] 1 → 3 → 5
+> * [ ] 2 → 3 → 4
+> * [ ] 1 → 2 → 3
 
 #### Quiz 3.
 
 > [!important]
 > **What function in BigQuery can you use to perform vector search?**
 >
-> - [ ] GENAI_SEARCH
-> - [ ] HYBRID_SEARCH
-> - [ ] MULTIMODAL_SEARCH
-> - [ ] VECTOR_SEARCH
+> * [ ] MULTIMODAL_SEARCH
+> * [ ] GENAI_SEARCH
+> * [ ] VECTOR_SEARCH
+> * [ ] HYBRID_SEARCH
 
 #### Quiz 4.
 
 > [!important]
 > **What is the purpose of multimodal embedding?**
 >
-> - [ ] It converts multimodal data to a numeric representation while retaining its meaning.
-> - [ ] It identifies the sentiment expressed in a picture.
-> - [ ] It creates a vector space.
-> - [ ] It uses one-hot encoding to code text into numbers.
+> * [ ] It creates a vector space.
+> * [ ] It converts multimodal data to a numeric representation while retaining its meaning.
+> * [ ] It identifies the sentiment expressed in a picture.
+> * [ ] It uses one-hot encoding to code text into numbers.
 
 #### Quiz 5.
 
 > [!important]
 > **What is the general process to perform vector search?**
 >
-> - [ ] Connect, upload, and embed.
-> - [ ] Encode, index, and search.
-> - [ ] Search, retrieve, and generate.
-> - [ ] Retrieve, evaluate, and generate.
+> * [ ] Encode, index, and search.
+> * [ ] Connect, upload, and embed.
+> * [ ] Retrieve, evaluate, and generate.
+> * [ ] Search, retrieve, and generate.
 
 ### Document - [Reading](https://www.cloudskillsboost.google/course_templates/1210/documents/529950)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

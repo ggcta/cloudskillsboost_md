@@ -1,13 +1,13 @@
 ---
 id: 663
 name: 'Deploy Kubernetes Applications on Google Cloud'
-datePublished: 2024-09-26
-topics:
-- Docker
-- GKE
-- Google Cloud Services
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/663
+date_published: 2024-09-26
+topics:
+  - GKE
+  - Kubernetes
+  - Application Deployment
 ---
 
 # [Deploy Kubernetes Applications on Google Cloud](https://www.cloudskillsboost.google/course_templates/663)
@@ -24,30 +24,30 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 In this lab you will familiarize yourself with the basic Docker container environment commands.  You will create, run, and debug containers, and learn to pull and push images to and from Google Artifact Registry.
 
-- [ ] [Introduction to Docker](../labs/Introduction-to-Docker.md)
+* [ ] [Introduction to Docker](../labs/Introduction-to-Docker.md)
 
 ### Lab - [Google Kubernetes Engine: Qwik Start](https://www.cloudskillsboost.google/course_templates/663/labs/509966)
 
 Google Kubernetes Engine provides a managed environment for deploying, managing, and scaling your containerized applications using Google infrastructure.  This hands-on lab shows you how deploy a containerized application with Kubernetes Engine.
 
-- [ ] [Google Kubernetes Engine: Qwik Start](../labs/Google-Kubernetes-Engine-Qwik-Start.md)
+* [ ] [Google Kubernetes Engine: Qwik Start](../labs/Google-Kubernetes-Engine-Qwik-Start.md)
 
 ### Lab - [Orchestrating the Cloud with Kubernetes](https://www.cloudskillsboost.google/course_templates/663/labs/509967)
 
 In this lab, you learn how to provision a complete Kubernetes cluster using Google Kubernetes Engine, deploy and manage Docker containers using kubectl, and break an application into microservices using Kubernetes' Deployments and Services.
 
-- [ ] [Orchestrating the Cloud with Kubernetes](../labs/Orchestrating-the-Cloud-with-Kubernetes.md)
+* [ ] [Orchestrating the Cloud with Kubernetes](../labs/Orchestrating-the-Cloud-with-Kubernetes.md)
 
 ### Lab - [Deploy Kubernetes Applications on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/663/labs/509968)
 
 This challenge lab tests your skills and knowledge from the labs in the Deploy Kubernetes Applications on Google Cloud course. You should be familiar with the content of the labs before attempting this lab.
 
-- [ ] [Deploy Kubernetes Applications on Google Cloud: Challenge Lab](../labs/Deploy-Kubernetes-Applications-on-Google-Cloud-Challenge-Lab.md)
+* [ ] [Deploy Kubernetes Applications on Google Cloud: Challenge Lab](../labs/Deploy-Kubernetes-Applications-on-Google-Cloud-Challenge-Lab.md)
 
 ### Link - [Tell us how we did!](https://www.cloudskillsboost.google/course_templates/663/documents/509969)
 
-- [Tell us how we did!](https://forms.gle/6xqSd9vhwQEev2uC6)
+* [Tell us how we did!](https://forms.gle/6xqSd9vhwQEev2uC6)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

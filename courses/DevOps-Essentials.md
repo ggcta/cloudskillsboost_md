@@ -1,13 +1,13 @@
 ---
 id: 717
 name: 'DevOps Essentials'
-datePublished: 2023-09-18
-topics:
-- Software Delivery
-- DevOps
-- Software Reliability
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/717
+date_published: 2023-09-18
+topics:
+  - Software Reliability
+  - Software Delivery
+  - DevOps
 ---
 
 # [DevOps Essentials](https://www.cloudskillsboost.google/course_templates/717)
@@ -22,7 +22,7 @@ competitive advantage through DevOps. DevOps is an organizational and cultural m
 
 ### Video - [Accelerate the State of DevOps 2019](https://www.cloudskillsboost.google/course_templates/717/video/408159)
 
-- [YouTube: Accelerate the State of DevOps 2019](https://www.youtube.com/watch?v=8M3WibXvC84)
+* [YouTube: Accelerate the State of DevOps 2019](https://www.youtube.com/watch?v=8M3WibXvC84)
 
 
 
@@ -30,26 +30,26 @@ competitive advantage through DevOps. DevOps is an organizational and cultural m
 
 In this lab you will create a local Git repository that contains files for a sample App Engine application, add a GCP repository as a remote, and push the contents of the local repository.
 
-- [ ] [[DEPRECATED] Cloud Source Repositories: Qwik Start](../labs/[DEPRECATED]-Cloud-Source-Repositories-Qwik-Start.md)
+* [ ] [[DEPRECATED] Cloud Source Repositories: Qwik Start](../labs/[DEPRECATED]-Cloud-Source-Repositories-Qwik-Start.md)
 
 ### Lab - [Managing Deployments Using Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/717/labs/408161)
 
 Dev Ops best practices make use of multiple deployments to manage application deployment scenarios. This lab provides practice in scaling and managing containers to accomplish common scenarios where multiple heterogeneous deployments are used.
 
-- [ ] [Managing Deployments Using Kubernetes Engine](../labs/Managing-Deployments-Using-Kubernetes-Engine.md)
+* [ ] [Managing Deployments Using Kubernetes Engine](../labs/Managing-Deployments-Using-Kubernetes-Engine.md)
 
 ### Lab - [Deploy Kubernetes Load Balancer Service with Terraform](https://www.cloudskillsboost.google/course_templates/717/labs/408162)
 
 In Terraform, a Provider is the logical abstraction of an upstream API. This lab will show you how to setup a Kubernetes cluster and deploy Load Balancer type Nginx service on it.
 
-- [ ] [Deploy Kubernetes Load Balancer Service with Terraform](../labs/Deploy-Kubernetes-Load-Balancer-Service-with-Terraform.md)
+* [ ] [Deploy Kubernetes Load Balancer Service with Terraform](../labs/Deploy-Kubernetes-Load-Balancer-Service-with-Terraform.md)
 
 ### Lab - [Continuous Delivery with Jenkins in Kubernetes Engine](https://www.cloudskillsboost.google/course_templates/717/labs/408163)
 
 In this lab you will deploy and completely configure a continuous delivery pipeline using Jenkins running on Kubernetes Engine and go through the dev - deploy process.
 
-- [ ] [Continuous Delivery with Jenkins in Kubernetes Engine](../labs/Continuous-Delivery-with-Jenkins-in-Kubernetes-Engine.md)
+* [ ] [Continuous Delivery with Jenkins in Kubernetes Engine](../labs/Continuous-Delivery-with-Jenkins-in-Kubernetes-Engine.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

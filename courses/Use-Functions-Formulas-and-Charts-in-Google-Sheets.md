@@ -1,13 +1,13 @@
 ---
 id: 776
 name: 'Use Functions, Formulas, and Charts in Google Sheets'
-datePublished: 2025-01-09
-topics:
-- Data Analysis
-- Data Visualization
-- Formulas
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/776
+date_published: 2025-01-09
+topics:
+  - Charts
+  - Formulas
+  - Google Cloud Services
 ---
 
 # [Use Functions, Formulas, and Charts in Google Sheets](https://www.cloudskillsboost.google/course_templates/776)
@@ -24,38 +24,38 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 Create charts using Google Sheets to share your data in interesting ways.
 
-- [ ] [Use Charts in Google Sheets](../labs/Use-Charts-in-Google-Sheets.md)
+* [ ] [Use Charts in Google Sheets](../labs/Use-Charts-in-Google-Sheets.md)
 
 ### Lab - [Validate Data in Google Sheets](https://www.cloudskillsboost.google/course_templates/776/labs/520265)
 
 Ensure that your data is valid and prepared for analysis using Google Sheets features and functions to organize, standardize, and clean data.
 
-- [ ] [Validate Data in Google Sheets](../labs/Validate-Data-in-Google-Sheets.md)
+* [ ] [Validate Data in Google Sheets](../labs/Validate-Data-in-Google-Sheets.md)
 
 ### Lab - [Finding Data in Google Sheets](https://www.cloudskillsboost.google/course_templates/776/labs/520266)
 
 Finding specific content in large spreadsheets can be tricky. Learn to manipulate, search and substitute values in Google Sheets.
 
-- [ ] [Finding Data in Google Sheets](../labs/Finding-Data-in-Google-Sheets.md)
+* [ ] [Finding Data in Google Sheets](../labs/Finding-Data-in-Google-Sheets.md)
 
 ### Lab - [Use Google Forms with Google Sheets](https://www.cloudskillsboost.google/course_templates/776/labs/520267)
 
 With Google Forms, you can create a survey, validate responses, and add custom logic that shows questions based on answers.
 
-- [ ] [Use Google Forms with Google Sheets](../labs/Use-Google-Forms-with-Google-Sheets.md)
+* [ ] [Use Google Forms with Google Sheets](../labs/Use-Google-Forms-with-Google-Sheets.md)
 
 ### Lab - [Pivot Tables in Google Sheets](https://www.cloudskillsboost.google/course_templates/776/labs/520268)
 
 Create pivot tables to quickly summarize large amounts of data and reference data using named ranges. Use functions and formulas to calculate descriptive statistics.
 
-- [ ] [Pivot Tables in Google Sheets](../labs/Pivot-Tables-in-Google-Sheets.md)
+* [ ] [Pivot Tables in Google Sheets](../labs/Pivot-Tables-in-Google-Sheets.md)
 
 ### Lab - [Use Functions, Formulas, and Charts in Google Sheets: Challenge Lab](https://www.cloudskillsboost.google/course_templates/776/labs/520269)
 
 In this challenge lab you demonstrate your knowledge of Google Sheets.
 
-- [ ] [Use Functions, Formulas, and Charts in Google Sheets: Challenge Lab](../labs/Use-Functions-Formulas-and-Charts-in-Google-Sheets-Challenge-Lab.md)
+* [ ] [Use Functions, Formulas, and Charts in Google Sheets: Challenge Lab](../labs/Use-Functions-Formulas-and-Charts-in-Google-Sheets-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

@@ -1,12 +1,12 @@
 ---
 id: 88
 name: 'Mitigating Security Vulnerabilities on Google Cloud'
-datePublished: 2024-11-12
-topics:
-- Networking
-- Security
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/88
+date_published: 2024-11-12
+topics:
+  - Logging
+  - Google Cloud Services
 ---
 
 # [Mitigating Security Vulnerabilities on Google Cloud](https://www.cloudskillsboost.google/course_templates/88)
@@ -17,10 +17,10 @@ In this self-paced training course, participants learn mitigations for attacks a
 
 **Objectives:**
 
-- Manage protection against distributed denial of service attacks (DDoS).
-- Manage content-related vulnerabilities.
-- Implement Google Cloud monitoring, logging, auditing, and scanning solutions.
-- null
+* Manage protection against distributed denial of service attacks (DDoS).
+* Manage content-related vulnerabilities.
+* Implement Google Cloud monitoring, logging, auditing, and scanning solutions.
+* null
 
 ## Welcome to Mitigating Security Vulnerabilities on Google Cloud
 
@@ -34,37 +34,37 @@ Distributed Denial of Service Attacks are a major concern today and can have a h
 
 ### Video - [Module overview](https://www.cloudskillsboost.google/course_templates/88/video/514000)
 
-- [YouTube: Module overview](https://www.youtube.com/watch?v=hkfG4EURpDo)
+* [YouTube: Module overview](https://www.youtube.com/watch?v=hkfG4EURpDo)
 
 Welcome to the Protecting against Distributed Denial of Service Attacks (or DDoS): Techniques and Best Practices module. Distributed Denial of Service Attacks are a major concern today. They can have a huge - and potentially fatal - impact on businesses if the business is not adequately prepared. We will start this module with a quick discussion on how DDoS attacks work. And then we will review some DDoS mitigation techniques that are provided by Google Cloud. Then we will finish up with a review of complementary partner products and a lab where you will get a chance to see some DDoS mitigations in action.
 
 ### Video - [How DDoS attacks work](https://www.cloudskillsboost.google/course_templates/88/video/514001)
 
-- [YouTube: How DDoS attacks work](https://www.youtube.com/watch?v=iblyiB0Wm6Q)
+* [YouTube: How DDoS attacks work](https://www.youtube.com/watch?v=iblyiB0Wm6Q)
 
 OK, let's get started with how DDoS attacks work. A distributed denial-of-service (or DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic from multiple sources. Essentially, it is an attempt to make an online service unavailable by overwhelming it with traffic from multiple sources. DDoS attacks can come from individuals, cybercriminal groups, or can even be state-sponsored. In the diagram, attackers build networks of infected computers, known as 'botnets', by spreading malicious software through emails, websites and social media. Once infected, these machines can be controlled remotely, without their owners' knowledge and they are then used like an army to launch an attack against any target. Some botnets are millions of machines strong. For context, a large attack in 2017 had a strength of around one terabit per second. For reference, the whole internet has a bisection bandwidth of 200 terabits per second. Now when you compare this to a single Google Data Center, which has a bisection bandwidth of 1,300 terabits per second, you can see, we have internal capacity many times that of any traffic load we can anticipate. This means that when there is an attack, we have time to isolate it and address it. Over the past few years, Google has observed that distributed denial-of-service (DDoS) attacks are increasing in frequency and growing in size exponentially. On June 1, 2022, a Google Cloud Armor customer was targeted with a series of HTTPS DDoS attacks which peaked at 46 million requests per second. This is the largest Layer 7 DDoS attack reported to date—at least 76% larger than the previously reported record. To give a sense of the scale of the attack, that is like receiving all the daily requests to Wikipedia (one of the top 10 trafficked websites in the world) in just 10 seconds. Cloud Armor blocked the attack ensuring the customer's service stayed online and continued serving their end-users. For more details of this attack, a blog article link is included in this module’s course resources.
 
 ### Video - [DDoS mitigation and prevention on Google Cloud](https://www.cloudskillsboost.google/course_templates/88/video/514002)
 
-- [YouTube: DDoS mitigation and prevention on Google Cloud](https://www.youtube.com/watch?v=-HEt2pQHbqw)
+* [YouTube: DDoS mitigation and prevention on Google Cloud](https://www.youtube.com/watch?v=-HEt2pQHbqw)
 
 Now let's review some DDoS mitigation techniques that are provided by Google Cloud. When you build an application on your on-premises infrastructure, you’re responsible for the entire stack’s security: from the physical security of the hardware and the premises in which they are housed, through the encryption of the data on the disk, the integrity of your network, and all the way up to securing the content stored in those applications. When you move an application to Google Cloud, Google handles many of the lower layers of security. Because of its scale, Google can deliver a higher level of security at these layers than most of our customers could afford to do on their own. Creating secure applications requires a multi-faceted approach which has been customized to fit your business’ needs, vulnerabilities, and resources. Properly understanding the different options available when facing a DDoS attack can help your organization create a plan to minimize the impact. Let’s look at these generalized strategies in more detail and discuss how Google Cloud helps you implement them. In this lesson, you will learn more about: Leveraging Google’s load balancer, Reducing the network attack surface, Isolating internal traffic, Using Cloud CDN, Using API management and monitoring, And leveraging the Google Cloud Armor defense service. Google Cloud’s load balancer provides built-in defense against infrastructure DDoS attacks - and no additional configuration is needed. Placing a load balancer in front of your services will filter known-bad traffic streams before they reach your resources. Google Cloud offers load balancing at layer 4 (the transport layer, such as TCP or UDP) and layer 7 (the application layer, generally HTTP or HTTPS.) The layer 4 load balancers automatically protect against things like UDP floods and TCP SYN floods. The layer 7 load balancers provide layer 4 protections plus protection from connection-based attacks like Slowloris. Google Cloud load balancers leverage Google’s global DoS mitigation service. If the system detects an attack, it will automatically configure the load balancers to drop or throttle traffic. An attack surface of a software environment is the sum of the different points where an unauthorized user can try to enter data to or extract data from an environment. Keeping the attack surface as small as possible is a basic security measure. Reduce attack surface means reducing how much exposure your VMs have to the Internet. You should host Compute Engine resources that require network communication on the same VPC network. If the resources aren’t related and don’t require network communication among themselves, consider hosting them on different VPC networks. For most applications implemented in Google Cloud, Google also recommends creating separate subnets within a network for each tier of an application (for example, web front end, services layer, and database back end.) That is because subnetting is a convenient way to implement inter-network firewall restrictions. You can control individual ingress and egress traffic for compute resources using firewall rules. Be sure you are blocking both unused ports as well as unwanted sources. Remember, you can use firewall tags and service accounts to help control which targets to use for firewall rules. It is also important to ensure you restrict external traffic within your VPCs. Virtual machines should not be given public IP addresses unnecessarily. Even if you need to connect to the VM from the internet, leveraging solutions like bastion hosts can help restrict the internal traffic. You can also connect your on-premise network with your VPC network using VPN IPsec Tunnels or Dedicated Interconnect. Google’s Cloud Content Delivery Network (or CDN) is used to cache web content at over 90 edge locations, or points of presence (POPs), around the globe. Cloud CDN provides very similar protection as Google’s load balancers. In addition, requests for your content are routed to Google’s POPs (points of presence) rather than directly to your resources. Thus, Google Cloud’s resilient network infrastructure absorbs the brunt of attacks. This also naturally reduces the load on your resources even when there are no attacks. For IT, network and DevOps teams, allowing access to backend services is often required to facilitate interactions between applications, services, customers and business partners. This access can also introduce vulnerabilities and challenges. Putting an API gateway, or API management, in front of your backend services can help prevent denial of service attacks by: Throttling requests to limit the number of requests per client, Controlling access to API from a single centralized location, And adding the ability to monitor and track all API usage. In Google Cloud, there are two options for implementing API management: Cloud Endpoints or Apigee.
 
 ### Video - [Using Google Cloud Armor](https://www.cloudskillsboost.google/course_templates/88/video/514003)
 
-- [YouTube: Using Google Cloud Armor](https://www.youtube.com/watch?v=TZcPf3zDJi8)
+* [YouTube: Using Google Cloud Armor](https://www.youtube.com/watch?v=TZcPf3zDJi8)
 
 Google Cloud Armor is a DDoS and application defense service. It delivers defense at scale against infrastructure and web application Distributed Denial of Service (DDoS) attacks using Google’s global infrastructure and security systems. Similar to CDNs, Google Cloud Armor protection is delivered at the edge of Google’s network and can block attacks close to their source, before they have a chance of affecting your applications. Google Cloud Armor works with the Global HTTP(S) Load Balancer to provide built-in defenses against infrastructure DDoS Attacks. Additionally, Google Cloud Armor enables you to customize your defenses and mitigate multivector attacks, such as enforcing access control to allow or restrict user traffic based on IPv4 and IPv6 addresses or CIDRs. Google Cloud Armor also works with security offerings from security partners, enabling you to build a comprehensive security model for your services. Google Cloud Armor defense is customized using a security policy which can contain one or more rules. Rules tell your security policy what to do (the action), when to do it (the condition) and where to apply the rule (the target). Google Cloud Armor also provides several predefined rules to defend against cross-site scripting (or XSS) and SQL injection (or SQLi) application-aware attacks. Google Cloud Armor also provides the following features: Variety of load balancer support. Google Cloud Armor now supports TCP Proxy load balancers and SSL proxy load balancers in General Availability, in addition to Global external HTTP(S) and Global external HTTP(S) (classic) load balancers. Rate-based rules help you protect your applications from a large volume of requests that flood your instances and block access for legitimate users. Adaptive protection helps you protect your Google Cloud applications, websites, and services against L7 distributed denial-of-service attacks such as HTTP floods and other high-frequency layer 7 (application-level) malicious activity. Cloud Armor bot management with reCAPTCHA Enterprise helps you evaluate and act on incoming requests that might be from automated clients. Custom rules language enables you to define prioritized rules with configurable match conditions and actions in a security policy. Refer to the release notes for the latest Google Cloud Armor updates. To explore Google Cloud Armor features further, check out the quest Securing your Network with Cloud Armor. Links to the release notes and the quest are provided in this module’s course resources.
 
 ### Video - [Types of complementary partner products](https://www.cloudskillsboost.google/course_templates/88/video/514004)
 
-- [YouTube: Types of complementary partner products](https://www.youtube.com/watch?v=a0PMMFECwK0)
+* [YouTube: Types of complementary partner products](https://www.youtube.com/watch?v=a0PMMFECwK0)
 
 As you have seen, here at Google we offer some of the best in class platform security, but we did not stop there. Google also partners with a number of security-centric firms. In this section, we will review some of the complementary partner products. There are several different categories of security in our ecosystem: Data protection - which includes things like Governance, Data Loss Prevention, Data-Centric Audit and Protection, Encryption, And hardware security modules. Infrastructure protection - which includes: DDoS protection, Network and application firewalls, Intrusion detection and prevention, And container security. Scanning, logging and monitoring, which includes a vulnerability scanner and security and information management tools. And identify and user protection, which includes: Single sign on, Identity and access management, Anti-malware, Mobile device and application management, And Cloud Access Security Brokers Configuration, vulnerability, risk, and compliance protection, across all areas of your infrastructure. Infrastructure Protection helps protect your cloud infrastructure and applications from cyber-attacks. There are many industry leaders that provide services that can be leveraged from Google Cloud covering a wide range of solutions, including: Next generation firewalls Web application firewalls Web proxies and cloud gateways Server Endpoint protection Distributed Denial of Service And Container Security Data protection partners can help protect your data from unauthorized access, as well as internal and external threats through encryption, key management, and policy-driven data loss prevention controls. Logging and monitoring partners help enable visibility and auditability of user and system activities in your infrastructure, while providing policy-driven alerting and reporting. Configuration, vulnerability, risk and compliance partners can facilitate the visualization and inspection of your network and application deployments for vulnerabilities, security and compliance risks, and be able to assist with remediation. Refer to the link in this module’s course resources for a list of security partners.
 
 ### Video - [Lab Intro: Configuring Traffic Blocklisting with Google Cloud Armor](https://www.cloudskillsboost.google/course_templates/88/video/514005)
 
-- [YouTube: Lab Intro: Configuring Traffic Blocklisting with Google Cloud Armor](https://www.youtube.com/watch?v=nJmY1dDTtqs)
+* [YouTube: Lab Intro: Configuring Traffic Blocklisting with Google Cloud Armor](https://www.youtube.com/watch?v=nJmY1dDTtqs)
 
 Next, you will see Google Cloud Armor in action. In this lab, you will perform the following tasks: Configure an HTTP Load Balancer for a simple web application, And use Google Cloud Armor to blocklist an IP address and restrict access to an HTTP Load Balancer
 
@@ -72,11 +72,11 @@ Next, you will see Google Cloud Armor in action. In this lab, you will perform t
 
 Configuring Traffic Blocklisting with Google Cloud Armor
 
-- [ ] [Configuring Traffic Blocklisting with Google Cloud Armor](../labs/Configuring-Traffic-Blocklisting-with-Google-Cloud-Armor.md)
+* [ ] [Configuring Traffic Blocklisting with Google Cloud Armor](../labs/Configuring-Traffic-Blocklisting-with-Google-Cloud-Armor.md)
 
 ### Video - [Module review](https://www.cloudskillsboost.google/course_templates/88/video/514007)
 
-- [YouTube: Module review](https://www.youtube.com/watch?v=8zo98uDhQ0U)
+* [YouTube: Module review](https://www.youtube.com/watch?v=8zo98uDhQ0U)
 
 This module covered definitions and mitigations for a very serious threat to businesses: DDoS attacks. Here’s an overview of what was discussed: A distributed denial-of-service, or DDoS, attack is a malicious attempt to disrupt normal traffic of a targeted server, service or network. These attacks work by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic from multiple sources - most often using ‘zombie computers’ that have been compromised. Armies of infected computers, known as “botnets”, can be huge and can include millions of computers. DDoS mitigation requires a multi-layered set of strategies. These include: load balancing, reducing attack surface, isolating internal traffic, monitoring APIs to detect and throttle malicious traffic, using CDNs to isolate and serve content, and finally, the use of third-party resources for specific needs. Google Cloud provides tools to execute these strategies, including load balancing, VPCs for isolation, Cloud Endpoint or Apigee to create API management gateways, Cloud CDN for serving content from the edge to the outside, and Google Cloud Armor for at-scale defense of your applications and operations. Third-party options are also available that complement Google Cloud products. Different categories of third-party security in the ecosystem include infrastructure protection partners, data protection partners, monitoring and logging partners and vulnerability, risk and compliance partners. Refer to the link in this module’s course resources for a more detailed, current list of partners. The next module covers another important security topic: content-related vulnerabilities.
 
@@ -85,35 +85,35 @@ This module covered definitions and mitigations for a very serious threat to bus
 #### Quiz 1.
 
 > [!important]
-> **Which TWO of the following statements is TRUE about Google Cloud Armor?**
+> **Choose the FOUR correct DDoS Mitigation Layers from the list below.**
 >
-> - [ ] Google Cloud Armor is a Ransomware defense service.
-> - [ ] Google Cloud Armor enforces access control based on IPv4 and IPv6 addresses or CIDRs.
-> - [ ] Google Cloud Armor protection is delivered at the edge of Google's network.
-> - [ ] Google Cloud Armor currently is not compatible with any third-party partner security products.
+> * [ ] Ping Report
+> * [ ] CDN Offloading
+> * [ ] Attack Surface
+> * [ ] Google Cloud Blocklist
+> * [ ] Botnet Detection API
+> * [ ] Internal Traffic
+> * [ ] Load Balancing
 
 #### Quiz 2.
 
 > [!important]
-> **Choose from the list below which way Google Cloud helps mitigate the risk of DDoS for its customers.**
+> **Which TWO of the following statements is TRUE about Google Cloud Armor?**
 >
-> - [ ] Isolation servers are available with no external or internal access.
-> - [ ] Google Blocklist API is automatically included within each project.
-> - [ ] Google Cloud firewall rules rate limit the number of requests sent to VMs.
-> - [ ] Internal capacity many times that of any traffic load we can anticipate.
+> * [ ] Google Cloud Armor currently is not compatible with any third-party partner security products.
+> * [ ] Google Cloud Armor enforces access control based on IPv4 and IPv6 addresses or CIDRs.
+> * [ ] Google Cloud Armor is a Ransomware defense service.
+> * [ ] Google Cloud Armor protection is delivered at the edge of Google's network.
 
 #### Quiz 3.
 
 > [!important]
-> **Choose the FOUR correct DDoS Mitigation Layers from the list below.**
+> **Choose from the list below which way Google Cloud helps mitigate the risk of DDoS for its customers.**
 >
-> - [ ] Internal Traffic
-> - [ ] Ping Report
-> - [ ] Botnet Detection API
-> - [ ] Attack Surface
-> - [ ] Load Balancing
-> - [ ] CDN Offloading
-> - [ ] Google Cloud Blocklist
+> * [ ] Google Blocklist API is automatically included within each project.
+> * [ ] Isolation servers are available with no external or internal access.
+> * [ ] Internal capacity many times that of any traffic load we can anticipate.
+> * [ ] Google Cloud firewall rules rate limit the number of requests sent to VMs.
 
 ## Content-Related Vulnerabilities: Techniques and Best Practices
 
@@ -121,37 +121,37 @@ In this module we will discuss threats to your content. First, we review the thr
 
 ### Video - [Module overview](https://www.cloudskillsboost.google/course_templates/88/video/514009)
 
-- [YouTube: Module overview](https://www.youtube.com/watch?v=y-Tc2mumlpk)
+* [YouTube: Module overview](https://www.youtube.com/watch?v=y-Tc2mumlpk)
 
 Welcome to the Content-Related Vulnerabilities: Techniques and Best Practices module. In this module we will cover two main themes: content related threats and some mitigations. We will start with a review of the ransomware threat, and some of the mitigations you can utilize to help protect your systems from ransomware. Then we will move to a discussion of threats related to data misuse and privacy violations related to sensitive, restricted, or unacceptable content. We will also discuss a few mitigation strategies that can be utilized to protect applications and systems from data misuse and privacy violations, then we will end this module with a hands-on lab where you will use the Data Loss Prevention API to redact sensitive data from files.
 
 ### Video - [Threat: Ransomware](https://www.cloudskillsboost.google/course_templates/88/video/514010)
 
-- [YouTube: Threat: Ransomware](https://www.youtube.com/watch?v=V-qeq1VcI84)
+* [YouTube: Threat: Ransomware](https://www.youtube.com/watch?v=V-qeq1VcI84)
 
 Let’s begin by examining and defining ransomware threats. Ransomware is a very prominent content-related threat targeting enterprise networks today. It’s a type of malicious software exploit that threatens to publish the victim's data or perpetually block access to their data unless a ransom is paid. Recent Google research shows cyber thieves have made at least 25 million dollars from ransomware in the last two years and this figure is expected to grow. Ransomware commonly uses a technique called “cryptoviral extortion” which encrypts the victim's data, making the data inaccessible without the encryption key. The perpetrator will then demand a ransom payment before they will agree to decrypt the files. Digital currencies, such as a cryptocurrency, are used for the ransoms, making tracing and prosecuting the perpetrators very difficult. This diagram summarizes the typical ransomware attack sequence. Ransomware attacks can start as mass campaigns looking for potential vulnerabilities or as directed campaigns. A directed campaign starts with identification and reconnaissance, where an attacker determines which organizations are vulnerable and what attack vector to use. There are many ransomware attack vectors. The most common are phishing emails with malicious URLs or exploiting an exposed software vulnerability. This software vulnerability can be in the software that your organization uses, or a vulnerability that exists in your software supply chain. Ransomware attackers target organizations, their supply chain, and their customers. When the initial attack is successful, the ransomware installs itself and contacts the command and control server to retrieve the encryption keys. As ransomware spreads throughout the network, it can infect resources, encrypt data using the keys that it retrieved, and exfiltrate data. Attackers demand a ransom, typically in cryptocoins, from the organization so that they can get the decryption key.
 
 ### Video - [Ransomware mitigations](https://www.cloudskillsboost.google/course_templates/88/video/514011)
 
-- [YouTube: Ransomware mitigations](https://www.youtube.com/watch?v=r6lV09IdZyU)
+* [YouTube: Ransomware mitigations](https://www.youtube.com/watch?v=r6lV09IdZyU)
 
 Next, let’s have a look at some ways you can mitigate the threat of ransomware. Google Cloud provides multiple layers of protection against ransomware. Many of these layers of protection are fully automated and available by default, with nothing for you to configure or enable. For example, Google has global visibility into malicious sites and content. Every minute of the day, Google finds and labels another malware site, and warns incoming users of suspected malware. This makes detecting malware attacks very effective, and there is nothing for you to monitor or configure. Google also provides many end-user protections to help prevent ransomware from spreading to your resources. If you're a Gmail user, our security and filtering layers will prevent thousands of malicious attachments from ever reaching your organization’s inboxes. If something does reach your Inbox, Google Safe Browsing and our Chrome browser protects users by identifying potentially dangerous links in email and showing warnings if users do click on them. In Google Drive, all files will undergo a malware scan prior to any file download or file sharing attempt. There are also a few things you can do to help mitigate against ransomware and reduce the ramifications of an attack. These steps include: making regular backups, using IAM best practices, and leveraging the Cloud Data Loss Prevention API. How can you use regular backups to lower risk to your data? The bad news is ransomware often targets backups and destroys them as well to prevent data recovery. Therefore, you need to keep your backups safe by conducting regular data backups of your system and then storing the backups securely, in multiple, isolated repositories. Having durable, secure backups not attached to or accessible by your main systems, which will then not be affected should a ransomware attack occur, will allow you to have a mechanism to recover the data if it is destroyed or held hostage. Think of it as insurance. Restricting administrative and system access is always a best practice, and is especially helpful for lowering the risk of ransomware attacks. Some strains of ransomware are designed to use a system administrator account to perform their operations. With this type of ransomware, decreasing the number and scope of user accounts and closing all default system administrator accounts can create an extra roadblock. It is very common for ransomware to be designed to execute from temporary and data folders. If it cannot access these folders due to access control on service accounts, this could constitute a successful roadblock to data encryption. In the past, sensitive data has been accidentally exposed to the public by organizations via screenshots or other published documents. This data is often used by attackers to help gain the initial access to your systems. Preventing this exposure can help provide a roadblock to a ransomware attack before it ever happens. The Cloud Data Loss Prevention API (DLP API) can be used to scan all documents for sensitive data before publication, and can even automatically redact any sensitive data found.
 
 ### Video - [Threats: Data misuse, privacy violations, sensitive content](https://www.cloudskillsboost.google/course_templates/88/video/514012)
 
-- [YouTube: Threats: Data misuse, privacy violations, sensitive content](https://www.youtube.com/watch?v=Uy8LkOgkRW0)
+* [YouTube: Threats: Data misuse, privacy violations, sensitive content](https://www.youtube.com/watch?v=Uy8LkOgkRW0)
 
 Let’s now consider threats involving the threat of data misuse, privacy violations, and the exposure of sensitive content. These have serious business implications, not least of which is the high monetary cost associated with data recovery and possible litigation, criminal prosecution and fines when user privacy rights have been breached. Reducing the risk of this type of threat is therefore highly important, but difficult to manage and often resource-intensive for many organizations. Data misuse is the inappropriate use of any type of data (especially user data). The consequences can be as serious as to cause legal or regulatory violations, or it can result in using the data in a way that was not intended when originally collected. Data misuse can happen in many ways. One example is exposing sensitive content when an application accidentally displays an entire credit card number instead of just the last four digits. Another example is when screenshots that contain sensitive data are accidentally created, and then made public, without redaction. Allowing access to restricted content is another type of data misuse. This occurs when a user is able to access sensitive or restricted data, due to faulty permissions or inadequate server security. Inadvertently making unacceptable content public is something that may happen when users are allowed to provide public-facing content, such as reviews, images, or videos, without any additional oversight. Accidentally exposing sensitive data, even when the data loss appears to be restricted to just a small violation, can still have huge additional ramifications. the end result may still be a loss of credibility for the organization, identity theft for its users and customers, and… legal or regulatory action and fines.
 
 ### Video - [Content-related mitigation](https://www.cloudskillsboost.google/course_templates/88/video/514013)
 
-- [YouTube: Content-related mitigation](https://www.youtube.com/watch?v=25WhEJJUj6s)
+* [YouTube: Content-related mitigation](https://www.youtube.com/watch?v=25WhEJJUj6s)
 
 Let’s talk about some content-related threat mitigation strategies. Mitigating data misuse, privacy violations, and handling sensitive, restricted, or unacceptable content is accomplished by following a three step process. First, classify the content to ensure your security controls align with the value of the data. Second, scan content and redact sensitive data. And third, detect unacceptable content before the item is published. It is important to classify data to ensure your security controls align with required protection protocols for different types of data. Some data is easy to detect, classify, and isolate, such as credit card numbers. Other times it may be more difficult to identify different classifications of data within a large sea of content. The Cloud Natural Language API could be used to help quickly identify different categories of content. To prevent the possibility of inadvertently incorporating inappropriate content into your system, you need to monitor and scan files and data that are coming into your applications. There are several APIs that can help automate this process. The Vision API can easily detect different types of inappropriate content in images, with an ability to flag both “adult” as well as violent content. The Video Intelligence API can provide similar monitoring and scanning for videos. And the Cloud Data Loss Prevention API can also be used to detect sensitive data content before it is accidentally exposed to the public. Sensitive data can accidentally be exposed when organizations accidentally publish documents, screenshots or other images that inadvertently were created to contain or show sensitive data. In addition, sometimes a user may provide unsolicited private/sensitive data for storage within a system that was not designed to protect that data. The DLP API is a machine learning model that can be used to scan various document formats and images for various types of sensitive data and then redact it, even from images. Look at this screenshot, taken from an application that allows the user to provide unrestricted feedback. The system was not designed to store this feedback as if it were sensitive data. Therefore, all of the data is stored unencrypted and without other effective security controls. The screenshot on the right shows this data after leveraging the power of the DLP API. You can see that all of the sensitive data has been detected and then redacted from the image.
 
 ### Video - [Lab Intro: Redacting Sensitive Data with the DLP API](https://www.cloudskillsboost.google/course_templates/88/video/514014)
 
-- [YouTube: Lab Intro: Redacting Sensitive Data with the DLP API](https://www.youtube.com/watch?v=cXTvTc5RZMw)
+* [YouTube: Lab Intro: Redacting Sensitive Data with the DLP API](https://www.youtube.com/watch?v=cXTvTc5RZMw)
 
 In this lab exercise, you will detect and redact some sensitive data with the DLP API. You will learn how to perform the following tasks: Enable the DLP API, Install the Node JS DLP API and a sample script, Inspect string data for sensitive data, And redact sensitive data from string data and images
 
@@ -159,11 +159,11 @@ In this lab exercise, you will detect and redact some sensitive data with the DL
 
 Redacting Sensitive Data with the DLP API
 
-- [ ] [Redacting Sensitive Data with the DLP API](../labs/Redacting-Sensitive-Data-with-the-DLP-API.md)
+* [ ] [Redacting Sensitive Data with the DLP API](../labs/Redacting-Sensitive-Data-with-the-DLP-API.md)
 
 ### Video - [Module review](https://www.cloudskillsboost.google/course_templates/88/video/514016)
 
-- [YouTube: Module review](https://www.youtube.com/watch?v=MBTb2FNEDk0)
+* [YouTube: Module review](https://www.youtube.com/watch?v=MBTb2FNEDk0)
 
 In this module, we covered problems associated with ransomware. Ransomware is a type of malicious software exploit that threatens to publish the victim's data or perpetually block access to their data unless a ransom is paid. Digital currencies, such as a cryptocurrency, are used for the ransoms, making tracing and prosecuting the perpetrators very difficult. Google Cloud provides multiple layers of protection against ransomware by default, with nothing for you to configure or enable. If you're a Gmail user, our security and filtering layers will prevent thousands of malicious attachments from ever reaching your organization’s inboxes. In Google Drive, all files will undergo a malware scan prior to any file download or file sharing attempt. There are also a few things you can do to help mitigate against ransomware including making regular backups, using IAM best practices, and leveraging the Cloud Data Loss Prevention API. Data misuse is the inappropriate use of any type of data (especially user data) and the consequences to business can be severe. Strategies for mitigation include: Classifying content, Scanning and redacting content, As well as removing inappropriate content before it is published. The Cloud Natural Language API can help quickly identify different categories of textual content so it can be classified. Google’s Vision API, Video Intelligence API and Cloud Data Loss Prevention API allow you to find sensitive and redact sensitive content, even when it is contained in images.
 
@@ -172,31 +172,31 @@ In this module, we covered problems associated with ransomware. Ransomware is a 
 #### Quiz 1.
 
 > [!important]
-> **Which TWO of the following statements are TRUE when speaking about content-related security threats?**
+> **Which TWO of the following options are ways that Google Cloud automates for customers the mitigation of many content threats?**
 >
-> - [ ] Screenshots or other images that are made public without redaction can trigger a content-related cyber attack threat.
-> - [ ] Ransomware is a type of malicious software exploit that threatens to publish or perpetually block access to data unless money is paid.
-> - [ ] Public, user-supplied reviews, images, or videos are considered "safe content" and generally do not require additional security oversight.
-> - [ ] Tracking and unmasking ransomware attackers, via incoming ransom payments, is usually not very difficult with today's modern banking systems.
+> * [ ] Google has global visibility into malicious sites and content, and is able to warn incoming users of suspected malware.
+> * [ ] In Google Drive, all files will undergo a malware scan prior to any file download or file sharing attempt.
+> * [ ] In Compute Engine, all files are scanned for ransomware type security breaches before uploading,
 
 #### Quiz 2.
 
 > [!important]
-> **Which TWO of the following options are ways that Google Cloud automates for customers the mitigation of many content threats?**
+> **Which TWO of the following statements are TRUE when speaking about content-related security threats?**
 >
-> - [ ] Google has global visibility into malicious sites and content, and is able to warn incoming users of suspected malware.
-> - [ ] In Compute Engine, all files are scanned for ransomware type security breaches before uploading,
-> - [ ] In Google Drive, all files will undergo a malware scan prior to any file download or file sharing attempt.
+> * [ ] Ransomware is a type of malicious software exploit that threatens to publish or perpetually block access to data unless money is paid.
+> * [ ] Screenshots or other images that are made public without redaction can trigger a content-related cyber attack threat.
+> * [ ] Public, user-supplied reviews, images, or videos are considered "safe content" and generally do not require additional security oversight.
+> * [ ] Tracking and unmasking ransomware attackers, via incoming ransom payments, is usually not very difficult with today's modern banking systems.
 
 #### Quiz 3.
 
 > [!important]
 > **Which TWO of the following tools does Google Cloud make available to customers for the mitigation of content-related security threats?**
 >
-> - [ ] Cloud Natural Language API
-> - [ ] Cloud Data Loss Prevention API
-> - [ ] Text Redaction API
-> - [ ] Clean Data API
+> * [ ] Cloud Data Loss Prevention API
+> * [ ] Cloud Natural Language API
+> * [ ] Text Redaction API
+> * [ ] Clean Data API
 
 ## Monitoring, Logging, Auditing and Scanning
 
@@ -204,37 +204,37 @@ Collecting, processing, aggregating, and displaying real-time quantitative data 
 
 ### Video - [Module overview](https://www.cloudskillsboost.google/course_templates/88/video/514018)
 
-- [YouTube: Module overview](https://www.youtube.com/watch?v=CY8itR617B4)
+* [YouTube: Module overview](https://www.youtube.com/watch?v=CY8itR617B4)
 
 Welcome to the Monitoring, Logging, Auditing, and Scanning module. In this module we will investigate the Security Command Center, then move into Cloud Monitoring and Cloud Logging, Cloud Audit logs, and then dive into cloud security automation concepts. We will also give you a chance to practice these concepts.
 
 ### Video - [Security Command Center](https://www.cloudskillsboost.google/course_templates/88/video/514019)
 
-- [YouTube: Security Command Center](https://www.youtube.com/watch?v=KycyBZUgiqQ)
+* [YouTube: Security Command Center](https://www.youtube.com/watch?v=KycyBZUgiqQ)
 
 Now, let’s learn about the Google Cloud Security Command Center and what it can do to help you discover, mitigate, and prevent attacks on your applications and data. Security Command Center provides a single, centralized dashboard so you can view and monitor an inventory of your cloud assets. Security Command Center gives enterprises consolidated visibility into their Google Cloud assets across their organization. Using Security Command Center, you can quickly see: The number of projects you have, What resources are deployed, Where sensitive data is located, And how firewalls rules are configured. With ongoing discovery scans, enterprises can view asset history to understand exactly what changed in their environment and act on unauthorized modifications. Anomaly detection from Google, which is integrated with Security Command Center, identifies threats like botnets, cryptocurrency mining, anomalous reboots, and suspicious network traffic. When a threat is detected, Event Threat Detection (also integrated with Security Command Center) surfaces that information so you can quickly take corrective action. Security Command Center also integrates with Google Cloud security tools like Web Security Scanner and Cloud Data Loss Prevention (Cloud DLP), and even third-party security solutions like: Chef, Cloudflare, CloudQuest, McAfee, Qualys, Reblaze, Redlock by Palo Alto Networks, StackRox, Tenable.io, and several others. Google Cloud security accepts feeds from these third-party security solutions so you can include them into your existing systems and workflows. To help meet compliance requirements, use the Cloud Data Loss Prevention API, integrated with Security Command Center. It scans and reports on which storage buckets contain vulnerable data, such as personally identifiable information (PII). Whenever threats are found, you can get real time alerts triggered by Pub/Sub, which sends pertinent information to Gmail or SMS so quick action can be taken to protect your information. Assets are resources like organization, projects, instances, data, services, and applications. Security Command Center discovers your assets across your organization so you can view them in one place. You can even review historical discovery scans to identify new, modified, or deleted assets. Findings can be viewed by type, by resource, or by findings changed - that is, findings whose status or properties have changed during the selected time period. Finding “freshness” in the Security Command Center dashboard is usually less than one minute after ingestion from the finding source. Assets that haven't been discovered and indexed in an automatic or manual scan will usually appear in the findings inventory within 1 minute after discovery. Security Command Center can display findings from third-party security sources that have registered as a Google Cloud Marketplace partner. If your third-party security source isn’t on the partner list, you can request that they complete onboarding as a Security Command Center partner. To add a new third-party security source to Security Command Center, you will first need to set up the security source, and then enable it in the Security Command Center dashboard. You will also need to enable the Security Command Center dashboard, asset discovery, and the security scanners you're using as security sources.
 
 ### Video - [Tiers and pricing](https://www.cloudskillsboost.google/course_templates/88/video/514020)
 
-- [YouTube: Tiers and pricing](https://www.youtube.com/watch?v=z-ACTM9JfbI)
+* [YouTube: Tiers and pricing](https://www.youtube.com/watch?v=z-ACTM9JfbI)
 
 Security Command Center offers two different tiers: standard and premium. The standard version offers: Security Health Analytics: which provides managed vulnerability assessment scanning for Google Cloud that can automatically detect the highest severity vulnerabilities and misconfigurations for your Google Cloud assets. Web Security Scanner custom scans: in the standard tier, Web Security Scanner supports custom scans of deployed applications with public URLs and IP addresses that aren't behind a firewall. Security Command Center errors: Security Command Center provides detection and remediation guidance for configuration errors that prevent Security Command Center and its services from functioning properly. Support for granting users Identity and Access Management (IAM) roles at the organization level. Access to integrated Google Cloud services: including Cloud Data Loss Prevention, Google Cloud Armor, and Anomaly Detection. Integration with BigQuery: which exports findings to BigQuery for analysis. And integration with Forseti Security: the open source security toolkit for Google Cloud, and third-party security information and event management (SIEM) applications. The premium tier includes all Standard tier features and adds: Event Threat Detection: which monitors your organization's Cloud Logging and Google Workspace. Container Threat Detection: which detects the container runtime attacks. Virtual Machine Threat Detection which detects cryptocurrency mining applications running inside VM instances. Security Health Analytics: which in the premium tier includes managed vulnerability scans for all Security Health Analytics detectors (140+) and provides monitoring for many industry best practices, and compliance monitoring across your Google Cloud assets. Web Security Scanner: which in the premium tier includes all standard tier features and additional detectors that support categories in the OWASP Top Ten. And the continuous Exports feature: which automatically manages the export of new findings to Pub/Sub. Refer to the documentation link in this module’s course resources for more information on the difference between the two tiers. When you use Security Command Center Premium or Standard tier, you might be charged for the following: Any costs associated with the Security Command Center tier you select. Any costs associated with additional paid scanners like Cloud Data Loss Prevention (Cloud DLP) or a third-party partner scanner to add data to Security Command Center. You will be billed by the scanner provider based on their usage fees. Any App Engine costs associated with using Web Security Scanner.
 
 ### Video - [Demo: Using Security Command Center](https://www.cloudskillsboost.google/course_templates/88/video/514021)
 
-- [YouTube: Demo: Using Security Command Center](https://www.youtube.com/watch?v=-lD8wr4F5hA)
+* [YouTube: Demo: Using Security Command Center](https://www.youtube.com/watch?v=-lD8wr4F5hA)
 
 As you deploy your workloads into Google Cloud, you need a tool that provides features with centralized dashboard for discovering vulnerabilities. Misconfigurations, maintaining compliance, detecting threats, helping you mitigate and remediate risk before they damage your business. That is what the Google Cloud Security Command Center offers to access security Command center navigate to the top left hand corner menu. Look at a security section. Click on Overviews Menu. You can activate security command center for an entire organization or for individual projects you use in roles to control who can do what with assets, findings and security sources in a security command center environment. If you are activating Security Command center at the organization level, here is a list of I am permissions needed. However, if you are activating Security Command center, add a project label. Here is the list of IAM permissions needed to provide vulnerabilities and threat findings to the Security Command center. Configure security services through them. Settings menu can be found on the top right hand side corner. Once you click on the settings menu, you'll be presented with built in security services that you can enable or disable them accordingly. First one is the Security Health analytics. It finds and report Misconfigurations of resources Web Security scanner scan publicly available web applications and checks for all top ten vulnerabilities such as cross-site scripting, even threat detections. It is a lock based threat analysis is capable to scan for potential threats such as false sage attack. And of course we have container threat detection, rapid vulnerability detections, as well as virtual machine threat detection. On top of this, if you have activated security command center at the organization level, you are able to at Google Cloud integrate its services into party security services. Let's take a quick look at the documentation pitch of what services support it. First is the Google Cloud integrated services. So you are able to see this are the services that you are able to add. And then if you look at the security services, here are the list of third party services that you are able to consider. So let's take a look at some of the menus can be found on the left hand side panel below security command center section. So the first one is the overview page. So this page provides a quick view of both the new threats and the total number of active vulnerabilities in your Google environment. So it can look at the threat to report that over time. You can also filter based on the time range. If you scroll down, you are able to see vulnerabilities for resource type. Looking at the Active Vulnerabilities report that based on findings by category, findings, by resource type findings by project, you can also look at the identity and access finding sections where you are able to look into some of the findings report that exemplar user may need to service account key. So to see more details about these finding, you can click on the link. You'll be directed to the findings page in case if the findings query result is returning a massive output, you can make use of the quick Filters feature to fill out the output. If you would like to dive into, understand each of the finding, click on the name you'll be present that the summary page, which is summarized by using the AI technology. Then you can look at a state which resources are affected as well as should. You want to mitigate what at a step that you could pick. Next, let's take a look at Threats page. So this page helps you review potentially harmful events in your Google Cloud Resources over time period. An example of a threat can be a search key being added to your compute engine instances. At a same time, you are also able to filter the result based on time range vulnerabilities. Page this page list all of the categories of vulnerabilities that various security command center threat prevention services can detect. In your environment, you are able to make use of the filter feature to filter the result based on properties. Value compliance page helps you assess and take actions on your complying with common security standards or benchmarks. If you want to see details about each of the compliance standard, click on the View details. Link. You'll be presented with a page by showing the rules available severity levels for each of the rule findings and the controls information. If you look at the assets page, this page provides a detailed display of all Google Cloud resources currently running in your environment. It could be at a project level or organization as a whole. If you want to filter the output, you can make use of the quick filters feature S40 High value Resource set tab. These particular type provide a path simulation. Identify the path that a potential attacker could take to access your Google cloud environment. However, in order to make use of this feature, it has to be configured at the organization level. A set query is letting you to supply obscure query Spackman to query against the assets that you want to see. If not, you can make use of query library by identifying which library query you want to use and click on the apply query button and hit the run button to execute a statement source page. It basically will be able to show the information provided by the source security information that you have enabled, and then the output will be presented in a summarization view by identifying the type of categories as well as the counters. And the list is the posture. This is a feature that lets you define and manage the security status of your client assets, but it required organization level security command center activation.
 
 ### Video - [Cloud Monitoring and Cloud Logging](https://www.cloudskillsboost.google/course_templates/88/video/514022)
 
-- [YouTube: Cloud Monitoring and Cloud Logging](https://www.youtube.com/watch?v=--RduZi5lrc)
+* [YouTube: Cloud Monitoring and Cloud Logging](https://www.youtube.com/watch?v=--RduZi5lrc)
 
 Now, let’s learn about Cloud Monitoring and Cloud Logging - formerly Stackdriver Monitoring and Stackdriver Logging - to see how you can monitor, troubleshoot, and improve application performance on your Google Cloud environment. Google Cloud's operations suite consists of multi-cloud monitoring and management products that aggregate metrics, logs, and events. It provides developers, operators, and security professionals a rich set of observable signals that speed root-cause analysis and reduce mean time to resolution. An effective incident response requires effective tools, such as monitoring dashboards, robust alerting mechanisms, and plans and tools for responding to actual events and issues when they occur. By default, a Google Cloud project has visibility only to the metrics it stores. However, you can expand the set of metrics that a project can access by adding other Google Cloud projects to the project's metrics scope. The metrics scope defines the set of Google Cloud projects whose metrics the current Google Cloud project can access. A scoping project hosts a metrics scope. Because every Google Cloud project hosts a metrics scope, every project is also a scoping project. The scoping project stores information about its metrics scope. It also stores the alerts, uptime checks, dashboards, and monitoring groups that you configure for the metrics scope. You can identify the scoping project for a metrics scope as the project selected by the console project picker. Google Cloud’s operations suite provides performance and diagnostics data, in the form of monitoring, logging, tracing, error reporting, and alerting. This suite of products comprises Cloud Monitoring, Cloud Debugger, Cloud Logging, Cloud Trace, Cloud Profiler, and Error Reporting. These diagnostics features are well-integrated with each other. This helps you connect and correlate diagnostics data easily. Cloud Monitoring helps increase reliability by giving users the ability to monitor Google Cloud and multi-cloud environments and identify trends to prevent issues. With Cloud Monitoring, you can reduce monitoring overhead and noise to fix problems faster. Cloud Monitoring enables you to monitor your platform, system, and application metrics. You ingest data into Cloud Logging and you can create different metrics, custom events, monitor for specific metadata changes. You can also monitor and measure uptime and health checks, build custom dashboards, and create alerts to perform notifications. Google Cloud’s operations suite includes monitoring for App Engine flexible environment and App Engine standard environment, as well as Google Kubernetes Engine, and Istio. Istio is an open source independent service mesh. It reduces complexity of managing microservice deployments by providing a uniform way to secure, connect, and monitor microservices. It optimizes the communication between microservices within a deployment. After a Cloud Workspace is created, you can immediately head to the Metrics Explorer and start visualizing those metrics from Istio. For other services without Cloud Monitoring built in, such as Compute Engine, there is an agent that can be installed. The Ops Agent is the primary agent for collecting telemetry from your Compute Engine instances. Combining logging and metrics into a single agent, the Ops Agent allows you to: Monitor your VM instances without the need for any additional configuration after the install, Gain visibility into CPU, disk, and network performance, And unify the gathering of metrics and logs into a single agent. This replaces the legacy Logging and Monitoring agents Google Cloud offered. The monitoring agents can be configured to monitor popular third-party applications, which are highlighted on this slide. Monitoring agents on VM instances can transmit data for various metric types for these applications. These metrics can be used in charting or alerting within the workspace. Cloud Trace provides latency sampling and reporting for Google App Engine, including per-URL statistics and latency distributions. Error Reporting analyzes and aggregates the errors in your cloud applications and notifies you when new errors are detected. Cloud Profiler provides continuous profiling of resource consumption in your production applications, helping you identify and eliminate potential performance issues. Cloud Logging lets you manage and analyze log data from Google Cloud as well as AWS in one place. You can combine the power of Cloud Logging with Google Cloud’s data and analytics products for advanced, real-time log analysis. For example, you can create powerful real-time metrics from the log data and analyze log data in real time in BigQuery. Most Google Cloud services have Cloud Logging built in, such as App Engine Flexible and Standard Environments, Kubernetes, Istio, Cloud Functions, and Dataflow. Using Cloud Logging in a preconfigured environment is very straightforward. For example, to emit a log line from a Cloud Function, write to standard output or standard error. There is no special logging framework or API required. Cloud Logging retains the logs for a limited number days. The number of days depends on the type of log. For example, Admin Activity audit logs are kept for 400 days while Data Access audit logs are only kept for 30 days. For longer storage or analysis, logs can be exported to Cloud Storage, Pub/Sub, or BigQuery and then stored indefinitely. When you export logs to a BigQuery dataset, Cloud Logging creates dated tables to hold the exported log entries. Log entries are placed in tables whose names are based on the entries' log names.
 
 ### Video - [Lab Intro: Configuring and Using Cloud Logging and Cloud Monitoring](https://www.cloudskillsboost.google/course_templates/88/video/514023)
 
-- [YouTube: Lab Intro: Configuring and Using Cloud Logging and Cloud Monitoring](https://www.youtube.com/watch?v=9mQBkX8T2rM)
+* [YouTube: Lab Intro: Configuring and Using Cloud Logging and Cloud Monitoring](https://www.youtube.com/watch?v=9mQBkX8T2rM)
 
 In this lab, you learn how to view logs using a variety of filtering mechanisms, exclude log entries and disable log ingestion, and export logs and run reports against exported logs. You also learn to create and report on logging metrics, create an account used to monitor several Google Cloud projects, create a metrics dashboard, and to create and use an alerting policy.
 
@@ -242,17 +242,17 @@ In this lab, you learn how to view logs using a variety of filtering mechanisms,
 
 Configuring and Using Cloud Logging and Cloud Monitoring.
 
-- [ ] [Configuring and Using Cloud Logging and Cloud Monitoring](../labs/Configuring-and-Using-Cloud-Logging-and-Cloud-Monitoring.md)
+* [ ] [Configuring and Using Cloud Logging and Cloud Monitoring](../labs/Configuring-and-Using-Cloud-Logging-and-Cloud-Monitoring.md)
 
 ### Video - [Cloud Audit Logs](https://www.cloudskillsboost.google/course_templates/88/video/514025)
 
-- [YouTube: Cloud Audit Logs](https://www.youtube.com/watch?v=IBxrTh7cmbQ)
+* [YouTube: Cloud Audit Logs](https://www.youtube.com/watch?v=IBxrTh7cmbQ)
 
 Cloud Audit Logs maintains audit logs for each project, folder, and organization. Having an audit trail of all operations performed within your environment is very important. In this section, we will explore how to use Cloud Audit Logs. Cloud Audit Logs records Google Cloud account activity, including actions performed with the Google Cloud console, command line tools, APIs, and AWS services. Cloud Audit Logs helps you answer the questions of: Who did what, where, and when within your Google Cloud projects. Cloud Audit Logs maintains four audit logs for each project, folder, and organization, which are Admin Activity logs, System Events, Data Access logs, and Policy Denied logs. Admin Activity audit logs contain log entries for API calls or other administrative actions that modify the configuration or metadata of resources. For example, the logs record when VM instances and App Engine applications are created and when permissions are changed. Admin Activity audit logs are always enabled by default and there is no charge for your Admin Activity audit logs. System Event audit logs contain log entries for when Compute Engine performs a system event. For example, each live migration is recorded as a system event. System Event audit logs are always enabled and there is no charge for your System Event audit logs. Data Access audit logs record API calls that create, modify, or read user-provided data. These logs are disabled by default because they can be quite large. Enabling the logs might result in your project being charged for the additional logs usage. Note that Data Access audit logs do not record data-access operations on resources that are publicly shared. Policy Denied audit logs are recorded when a Google Cloud service denies access to a user or service account because of a security policy violation. Policy Denied audit logs are generated by default and your Cloud project is charged for the logs storage. You can't disable Policy Denied audit logs, but you can use exclusion filters to prevent Policy Denied audit logs from being ingested and stored in Cloud Logging. BigQuery Data Access audit logs are handled differently from other Data Access logs. BigQuery logs are enabled by default and cannot be disabled. You can view audit log entries in your project's Activity page, in the Logs Explorer, in the Cloud Logging API, and in the Cloud SDK. You can also export audit log entries to Cloud Logging, Pub/Sub, or Cloud Storage. To view the logs, you must have the IAM roles Logs Viewer for Admin Activity logs and Private Logs Viewer for Data Access logs. For more information on Cloud Logging roles, see Access Control. Individual audit log entries are kept for a specified length of time and are then deleted. Admin activity and system events are kept for 400 days, while data access logs are kept for 30 days. For longer retention, you can export audit log entries from Cloud Logging and keep them for as long as you wish. Just like other logs, you can also export audit log entries to Cloud Storage, Pub/Sub, or BigQuery. When exporting logs, log filters can be defined to limit which log events are exported. This can help reduce the amount of data exported and reduce the scope of the data. When you export to BigQuery datasets, Cloud Logging creates dated tables to hold the exported log entries. The data can then be analyzed using BigQuery. Log files can also be exported to Pub/Sub and to storage buckets, which facilitates analyzing the data with third-party tools.
 
 ### Video - [Lab Intro: Configuring and Viewing Cloud Audit Logs](https://www.cloudskillsboost.google/course_templates/88/video/514026)
 
-- [YouTube: Lab Intro: Configuring and Viewing Cloud Audit Logs](https://www.youtube.com/watch?v=-sj3zdv8uzk)
+* [YouTube: Lab Intro: Configuring and Viewing Cloud Audit Logs](https://www.youtube.com/watch?v=-sj3zdv8uzk)
 
 In this lab, you learn how to view Cloud Audit Logs in the Activity page, view and filter audit logs, retrieve log entries using the gcloud command, and export Cloud Audit Logs.
 
@@ -260,17 +260,17 @@ In this lab, you learn how to view Cloud Audit Logs in the Activity page, view a
 
 Configuring and Viewing Audit Logs in Cloud Logging
 
-- [ ] [Configuring and Viewing Cloud Audit Logs](../labs/Configuring-and-Viewing-Cloud-Audit-Logs.md)
+* [ ] [Configuring and Viewing Cloud Audit Logs](../labs/Configuring-and-Viewing-Cloud-Audit-Logs.md)
 
 ### Video - [Cloud security automation](https://www.cloudskillsboost.google/course_templates/88/video/514028)
 
-- [YouTube: Cloud security automation](https://www.youtube.com/watch?v=f0d_G953h0k)
+* [YouTube: Cloud security automation](https://www.youtube.com/watch?v=f0d_G953h0k)
 
 Now, let’s go over some Security automation techniques and best practices. Whether you’re a security engineer, an analyst, an incident responder, or an architect – creative ways to automate operations (starting with the mundane tasks first) can be a force multiplier that can reduce the burden of operations on your team. The key benefits of automating security operations revolves around factors of consistency, quickness, and reliability. Another benefit that is sometimes overlooked is that once you have encapsulated some task in automation, anyone can execute the task. This again gives us a chance to scale faster than the growth of threats and assets. There are a few risks in security automation to be aware of. Automated responses can sometimes result in disastrous outcomes, if not planned correctly. This can happen in both IT operations and Security. There are many examples where production systems at a major technology companies were deleted by automation. This is a possibility with automation, so it is important to have peer reviews, QA & testing, highly descriptive playbooks, and other processes in place when developing automated responses. You may not realize it, but you have already been exposed to security automation throughout this course. Many of the services we have covered have security automation built in. Just a few examples are: Security Command Center, which automates the discovery of misconfigurations and vulnerabilities and detects threats targeting your Google Cloud assets. Web Security Scanner, automates the testing of security vulnerabilities in your web applications by following links and exercising as many user inputs and event handlers as possible. And Artifact Registry, which ensures only approved container images can be deployed. Configure this automatic checkpoint to keep risky images from being deployed to Google Kubernetes Engine. Can you think of other services you’ve learned about throughout this course that automate many of the tasks a Cloud Security Architect or Engineer are tasked with?
 
 ### Video - [Module review](https://www.cloudskillsboost.google/course_templates/88/video/514029)
 
-- [YouTube: Module review](https://www.youtube.com/watch?v=VzUXQzQq2hs)
+* [YouTube: Module review](https://www.youtube.com/watch?v=VzUXQzQq2hs)
 
 These are the main points covered in this module: Security Command Center provides a single, centralized dashboard for cloud resources. By generating ‘findings’ associated with assets, it helps you prevent, detect, and respond to threats. Google Cloud’s operations suite has many integrated products that will help you monitor, troubleshoot, and improve application performance on your Google Cloud environment. Cloud Monitoring and Cloud Logging specifically, will help you strengthen user’s trust. Cloud Audit Logs maintains audit logs for each project, folder, and organization. Having an audit trail of all operations performed within your environment is very important.
 
@@ -279,42 +279,42 @@ These are the main points covered in this module: Security Command Center provid
 #### Quiz 1.
 
 > [!important]
-> **Which one of the following is NOT a benefit for automating security in Google Cloud environments?**
+> **Which TWO of the following statements about Cloud Monitoring and Cloud Logging are TRUE?**
 >
-> - [ ] Security automation allows scaling faster than the growth of threats and assets.
-> - [ ] While beneficial in some situations, the time invested in automating certain tasks is not worth it due to a lack of Google Cloud services that support this framework.
-> - [ ] Once you have encapsulated some task in automation, anyone can execute the task.
-> - [ ] Security automation Improves consistency, quickness, and reliability.
+> * [ ] Cloud Monitoring and Cloud Logging retain logs for an indefinite period of time.
+> * [ ] While Cloud Logging is not built-in to most Google Cloud services, you can easily add it for a reasonable fee.
+> * [ ] You can analyze log data in BigQuery.
+> * [ ] The Cloud Logging Agent can be installed on both Compute Engine and AWS EC2 instances.
 
 #### Quiz 2.
 
 > [!important]
 > **Which TWO of the following statements about Cloud Audit Logs are TRUE?**
 >
-> - [ ] Cloud Audit Logs maintains four audit logs for each project, folder, and organization.
-> - [ ] Unlike Cloud Logging logs, you cannot export Cloud Audit Logs entries to BigQuery.
-> - [ ] Data Access audit logs record data-access operations on resources that are publicly shared.
-> - [ ] Enabling Data Access audit logs might result in your project being charged for the additional logs usage.
+> * [ ] Cloud Audit Logs maintains four audit logs for each project, folder, and organization.
+> * [ ] Enabling Data Access audit logs might result in your project being charged for the additional logs usage.
+> * [ ] Data Access audit logs record data-access operations on resources that are publicly shared.
+> * [ ] Unlike Cloud Logging logs, you cannot export Cloud Audit Logs entries to BigQuery.
 
 #### Quiz 3.
 
 > [!important]
-> **Which TWO of the following statements about Cloud Monitoring and Cloud Logging are TRUE?**
+> **Which one of the following is NOT a benefit for automating security in Google Cloud environments?**
 >
-> - [ ] While Cloud Logging is not built-in to most Google Cloud services, you can easily add it for a reasonable fee.
-> - [ ] You can analyze log data in BigQuery.
-> - [ ] The Cloud Logging Agent can be installed on both Compute Engine and AWS EC2 instances.
-> - [ ] Cloud Monitoring and Cloud Logging retain logs for an indefinite period of time.
+> * [ ] Once you have encapsulated some task in automation, anyone can execute the task.
+> * [ ] Security automation Improves consistency, quickness, and reliability.
+> * [ ] While beneficial in some situations, the time invested in automating certain tasks is not worth it due to a lack of Google Cloud services that support this framework.
+> * [ ] Security automation allows scaling faster than the growth of threats and assets.
 
 #### Quiz 4.
 
 > [!important]
 > **Which one of the following statements about Security Command Center is NOT true?**
 >
-> - [ ] Security Command Center helps you prevent, detect, and respond to threats.
-> - [ ] Security Command Center works by generating "findings" associated with assets.
-> - [ ] Security Command Center requires three IAM administrative permissions to set up
-> - [ ] Security Command Center provides a centralized view for cloud resources.
+> * [ ] Security Command Center works by generating "findings" associated with assets.
+> * [ ] Security Command Center requires three IAM administrative permissions to set up
+> * [ ] Security Command Center provides a centralized view for cloud resources.
+> * [ ] Security Command Center helps you prevent, detect, and respond to threats.
 
 ## Course Resources
 
@@ -324,4 +324,4 @@ PDF links to all modules
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

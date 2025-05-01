@@ -1,13 +1,13 @@
 ---
 id: 681
 name: 'Build a Data Mesh with Dataplex'
-datePublished: 2024-04-05
-topics:
-- Data Governance
-- Data Quality
-- IAM
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/681
+date_published: 2024-04-05
+topics:
+  - IAM Roles
+  - Data Management
+  - Data Mesh
 ---
 
 # [Build a Data Mesh with Dataplex](https://www.cloudskillsboost.google/course_templates/681)
@@ -24,32 +24,32 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 This lab shows you how to get started with Dataplex in the Google Cloud console by walking you through creating a lake, adding a zone, attaching and detaching assets, and deleting zones and lakes.
 
-- [ ] [Dataplex: Qwik Start - Console](../labs/Dataplex-Qwik-Start-Console.md)
+* [ ] [Dataplex: Qwik Start - Console](../labs/Dataplex-Qwik-Start-Console.md)
 
 ### Lab - [Tagging Dataplex Assets](https://www.cloudskillsboost.google/course_templates/681/labs/466053)
 
 This lab shows you how to get started with tagging Dataplex assets to support data governance and discovery.
 
-- [ ] [Tagging Dataplex Assets](../labs/Tagging-Dataplex-Assets.md)
+* [ ] [Tagging Dataplex Assets](../labs/Tagging-Dataplex-Assets.md)
 
 ### Lab - [Implementing Security in Dataplex](https://www.cloudskillsboost.google/course_templates/681/labs/466054)
 
 This lab shows you how to implement security in Dataplex.
 
-- [ ] [Implementing Security in Dataplex](../labs/Implementing-Security-in-Dataplex.md)
+* [ ] [Implementing Security in Dataplex](../labs/Implementing-Security-in-Dataplex.md)
 
 ### Lab - [Assessing Data Quality with Dataplex](https://www.cloudskillsboost.google/course_templates/681/labs/466055)
 
 This lab shows you how to assess data quality using Dataplex.
 
-- [ ] [Assessing Data Quality with Dataplex](../labs/Assessing-Data-Quality-with-Dataplex.md)
+* [ ] [Assessing Data Quality with Dataplex](../labs/Assessing-Data-Quality-with-Dataplex.md)
 
 ### Lab - [Build a Data Mesh with Dataplex: Challenge Lab](https://www.cloudskillsboost.google/course_templates/681/labs/466056)
 
 This challenge lab tests your skills and knowledge from the labs in the <b>Build a Data Mesh with Dataplex<b> skill badge. You should be familiar with the content of the labs before attempting this lab.
 
-- [ ] [Build a Data Mesh with Dataplex: Challenge Lab](../labs/Build-a-Data-Mesh-with-Dataplex-Challenge-Lab.md)
+* [ ] [Build a Data Mesh with Dataplex: Challenge Lab](../labs/Build-a-Data-Mesh-with-Dataplex-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

@@ -1,13 +1,13 @@
 ---
 id: 156
 name: 'Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud'
-datePublished: 2025-03-19
-topics:
-- Machine Learning Models
-- Machine Learning
-- Google Cloud Services
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/156
+date_published: 2025-03-19
+topics:
+  - Machine Learning Models
+  - Data
+  - Machine Learning
 ---
 
 # [Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud](https://www.cloudskillsboost.google/course_templates/156)
@@ -32,8 +32,8 @@ This final course in the series reviews managed big data services, machine learn
 
 **Objectives:**
 
-- Discover a variety of managed big data services in the cloud.
-- Explain what machine learning is, the terminology used, and its value proposition.
+* Discover a variety of managed big data services in the cloud.
+* Explain what machine learning is, the terminology used, and its value proposition.
 
 ## You have the data, but what are you doing with it?
 
@@ -41,25 +41,25 @@ Big data: Discover a variety of managed big data services in the cloud
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/156/video/527049)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=L9F1TUuZ-XI)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=L9F1TUuZ-XI)
 
 
 
 ### Video - [Introduction to big data managed services in the cloud](https://www.cloudskillsboost.google/course_templates/156/video/527050)
 
-- [YouTube: Introduction to big data managed services in the cloud](https://www.youtube.com/watch?v=FLseuBbADMs)
+* [YouTube: Introduction to big data managed services in the cloud](https://www.youtube.com/watch?v=FLseuBbADMs)
 
 In this first section, we'll discuss big data managed services in the cloud. Before we explore this in detail, let's take a moment to conceptualize big data. Enterprise storage systems are leaving the terabyte behind as a measure of data size, with petabytes becoming the norm. We know that one petabyte is 1,000,000 GB or 1,000 TB. But how big is that? From one perspective, a petabyte of data might seem like more than you'll ever need. For example, you need a stack of floppy disks higher than 12 Empire State buildings to store one petabyte. If you wanted to download one petabyte over a 4G network, you'd have to sit and wait for 27 years. You'd also need one petabyte of storage for every tweet ever tweeted, multiplied by 50. So one petabyte is pretty big. If we look at it from a different perspective, though, one petabyte is only enough to store two micrograms of DNA or one day's worth of video uploaded to YouTube. So for some industries, a petabyte of data might not be much at all. Every company stores data in some way, and now they're trying to use that data to gain some insight into their business operations. This is where big data comes in. Big data architectures allow companies to analyze their stored data to learn about their business. In this module, we'll focus on three managed services that Google offers for the processing of data. For companies that have already invested in Apache Hadoop and Apache Spark and want to continue using these tools. Dataproc provides a great way to run open source software in Google Cloud. However, companies looking for a streaming data solution might be more interested in Dataflow as a managed service. Dataflow is optimized for large scale batch processing or long-running streaming, processing of structured and unstructured data. The third managed service that we'll look at is BigQuery, which provides a data analytics solution optimized for getting answers rapidly over petabyte scale datasets. BigQuery allows for fast SQL unstructured data.
 
 ### Video - [Leverage big data operations with Dataproc](https://www.cloudskillsboost.google/course_templates/156/video/527051)
 
-- [YouTube: Leverage big data operations with Dataproc](https://www.youtube.com/watch?v=hIAJ9XOEVkI)
+* [YouTube: Leverage big data operations with Dataproc](https://www.youtube.com/watch?v=hIAJ9XOEVkI)
 
 In this section, you’ll learn how Dataproc provides a fast, easy, cost-effective way to run Apache Hadoop and Apache Spark. Apache Hadoop and Apache Spark are open source technologies that often are the foundation of big data processing. Apache Hadoop is a set of tools and technologies which enables a cluster of computers to store and process large volumes of data. It intelligently ties individual computers together in a cluster to distribute the storage and processing of data. Apache Spark is a unified analytics engine for large-scale data processing and achieves high performance for both batch and stream data. Dataproc is a managed Spark and Hadoop service that lets you use open source data tools for batch processing, querying, streaming, and machine learning. Dataproc automation helps you create clusters quickly, manage them easily, and because clusters are typically run ephemerally, you save money as they are turned off when you don't need them. Let’s look at the key features of Dataproc. Cost effective. Dataproc is priced at 1 cent per virtual CPU per cluster per hour, on top of any other Google Cloud resources you use. In addition, Dataproc clusters can include preemptible instances that have lower compute prices. You use and pay for things only when you need them. Fast and scalable. Dataproc clusters are quick to start, scale, and shut down, and each of these operations takes 90 seconds or less, on average. Clusters can be created and scaled quickly with many virtual machine types, disk sizes, number of nodes, and networking options. Open source ecosystem. You can use Spark and Hadoop tools, libraries, and documentation with Dataproc. Dataproc provides frequent updates to native versions of Spark, Hadoop, Pig, and Hive, so learning new tools or APIs is not necessary, and you can move existing projects or ETL pipelines without redevelopment. Fully managed. You can easily interact with clusters and Spark or Hadoop jobs, without the assistance of an administrator or special software, through the Google Cloud console, the Google Cloud SDK, or the Dataproc REST API. When you're done with a cluster, simply turn it off, so money isn’t spent on an idle cluster. Image versioning. Dataproc’s image versioning feature lets you switch between different versions of Apache Spark, Apache Hadoop, and other tools. Built-in integration. The built-in integration with Cloud Storage, BigQuery, and Bigtable ensures that data will not be lost. This, together with Cloud Logging and Cloud Monitoring, provides a complete data platform and not just a Spark or Hadoop cluster. For example, you can use Dataproc to effortlessly extract, transform, and load terabytes of raw log data directly into BigQuery for business reporting. Let’s look at a few Dataproc use cases. In this first example, a customer processes 50 gigabytes of text log data per day from several sources. The objective is to produce aggregated data that is then loaded into databases from which metrics are gathered for daily reporting, management dashboards, and analysis. Until now, they have used a dedicated on-premises cluster to store and process the logs with MapReduce. So what’s the solution? First, Cloud Storage can act as a landing zone for the log data at a low cost. A Dataproc cluster can then be created in less than 2 minutes to process this data with their existing MapReduce. Once completed, the Dataproc cluster can be removed immediately. In terms of value, instead of running all the time and incurring costs even when not used, Dataproc only runs to process the logs, which reduces cost and complexity. Now, let’s analyze a second example. In this organization, analysts rely on—and are comfortable using—Spark Shell. However, their IT department is concerned about the increase in usage, and how to scale their cluster, which is running in standalone mode. The solution is for Dataproc to create clusters that scale for speed and mitigate any single point of failure. Since Dataproc supports Spark, Spark SQL, and PySpark, they could use the web interface, Cloud SDK, or the native Spark Shell through SSH. The value is Dataproc’s ability to quickly unlock the power of the cloud for anyone without added technical complexity. Running complex computations would take seconds instead of minutes or hours. In this third example, a customer uses the Spark machine learning libraries (MLlib) to run classification algorithms on very large datasets. They rely on cloud-based machines where they install and customize Spark. Because Spark and the MLlib can be installed on any Dataproc cluster, the customer can save time by quickly creating Dataproc clusters. Any additional customizations can be applied easily to the entire cluster through initialization actions. To monitor workflows, they can use the built-in Cloud Logging and Cloud Monitoring. In terms of value, resources can be focused on the data with Dataproc, not spent on cluster creation and management. Integrations with new Google Cloud products also unlock new features for Spark clusters.
 
 ### Video - [Lab Intro: Dataproc: Qwik Start - Console](https://www.cloudskillsboost.google/course_templates/156/video/527052)
 
-- [YouTube: Lab Intro: Dataproc: Qwik Start - Console](https://www.youtube.com/watch?v=QxAsMp4Qtp4)
+* [YouTube: Lab Intro: Dataproc: Qwik Start - Console](https://www.youtube.com/watch?v=QxAsMp4Qtp4)
 
 This is the first of two labs where we’ll work with Dataproc. In this lab, we’ll use the Google Cloud console. In this lab titled “Dataproc: Qwik Start - Console,”, you’ll create a Dataproc cluster, run a simple Apache Spark job in the cluster, and modify the number of workers in the cluster by using the Google Cloud console. During this lab you’ll create a cluster, submit a job, and then view the job output.
 
@@ -67,11 +67,11 @@ This is the first of two labs where we’ll work with Dataproc. In this lab, we�
 
 This lab shows you how to create a Dataproc cluster, run a simple Apache Spark job in the cluster, and then modify the number of workers in the cluster using the Google Cloud console. Watch these short videos, <A HREF="https://youtu.be/h1LvACJWjKc">Dataproc: Qwik Start - Qwiklabs Preview</A> and <A HREF="https://youtu.be/UOX9G6ArJRc">Run Spark and Hadoop Faster with Cloud Dataproc</A>.
 
-- [ ] [Dataproc: Qwik Start - Console](../labs/Dataproc-Qwik-Start-Console.md)
+* [ ] [Dataproc: Qwik Start - Console](../labs/Dataproc-Qwik-Start-Console.md)
 
 ### Video - [Lab Intro: Dataproc: Qwik Start - Command Line](https://www.cloudskillsboost.google/course_templates/156/video/527054)
 
-- [YouTube: Lab Intro: Dataproc: Qwik Start - Command Line](https://www.youtube.com/watch?v=jMW4cgTo39w)
+* [YouTube: Lab Intro: Dataproc: Qwik Start - Command Line](https://www.youtube.com/watch?v=jMW4cgTo39w)
 
 This next lab is similar to the previous one, except this time we'll use the gcloud CLI for Google Cloud. We'll create another Dataproc cluster and run another simple Apache Spark job in the cluster. This time though, will modify the number of workers in the cluster by using the gcloud CLI. During this lab, you'll create a cluster, submit a job, and update a cluster.
 
@@ -79,17 +79,17 @@ This next lab is similar to the previous one, except this time we'll use the gcl
 
 This lab shows you how to create a Dataproc cluster, run a simple Apache Spark job in the cluster, and then modify the number of workers in the cluster using the command line. Watch these short videos, <A HREF="https://youtu.be/h1LvACJWjKc">Dataproc: Qwik Start - Qwiklabs Preview</A> and <A HREF="https://youtu.be/UOX9G6ArJRc">Run Spark and Hadoop Faster with Cloud Dataproc</A>.
 
-- [ ] [Dataproc: Qwik Start - Command Line](../labs/Dataproc-Qwik-Start-Command-Line.md)
+* [ ] [Dataproc: Qwik Start - Command Line](../labs/Dataproc-Qwik-Start-Command-Line.md)
 
 ### Video - [Build extract, transform, and load pipelines using Dataflow](https://www.cloudskillsboost.google/course_templates/156/video/527056)
 
-- [YouTube: Build extract, transform, and load pipelines using Dataflow](https://www.youtube.com/watch?v=nP_HBBvdI2s)
+* [YouTube: Build extract, transform, and load pipelines using Dataflow](https://www.youtube.com/watch?v=nP_HBBvdI2s)
 
 In this section, we’ll learn how you can use Dataflow to perform extract, transform, and load operations. With Dataproc, you can migrate your original big data deployment with Apache Hadoop and Apache Spark to a fully-managed service provided by Google Cloud. But how do you process both batch and streaming data if it's not Hadoop dependent? This is where Dataflow comes in. Dataflow is a managed service offered by Google that’s optimized for large-scale batch processing or long-running stream processing. Dataflow creates a pipeline to process both streaming data and batch data. “Process” in this case refers to the steps to extract, transform, and load data (ETL). When building a data pipeline, data engineers often encounter challenges related to coding the pipeline design and implementing and serving the pipeline at scale. During the pipeline design phase, you should consider a few questions: Will the pipeline code be compatible with both batch and streaming data, or will it need to be refactored? Will the pipeline code software development kit, or SDK, that’s being used have all the transformations, mid-flight aggregations, and windowing? Will it be able to handle late data? And are there existing templates or solutions that should be referenced? Dataflow fully automates operational tasks like resource management and performance optimization. All resources are provided on demand, and scale to meet requirements. Dataflow provides built-in support for fault-tolerant execution that’s consistent and correct regardless of data size, cluster size, processing pattern or pipeline complexity. Through its integration with the Google Cloud console, Dataflow provides statistics such as pipeline throughput and lag and consolidated worker log inspection in near-real time. It also integrates with Cloud Storage, Pub/Sub, Datastore, Bigtable, and BigQuery for seamless data processing between platforms.
 
 ### Video - [Lab Intro: Dataflow: Qwik Start - Templates](https://www.cloudskillsboost.google/course_templates/156/video/527057)
 
-- [YouTube: Lab Intro: Dataflow: Qwik Start - Templates](https://www.youtube.com/watch?v=KUqVCAfLSwY)
+* [YouTube: Lab Intro: Dataflow: Qwik Start - Templates](https://www.youtube.com/watch?v=KUqVCAfLSwY)
 
 Now let's work through a Dataflow lab that uses templates. You'll use the Pub/Sub to BigQuery template that Google provides to create a streaming pipeline in Dataflow. Note that you'll have the option to use the Cloud Shell command line or the Google Cloud console if you want experience using both methods, run through this lab a second time. So during this lab, you'll learn how to create a BigQuery dataset and table by using Cloud Shell and/or the Google Cloud console. Run the pipeline and submit a query.
 
@@ -97,11 +97,11 @@ Now let's work through a Dataflow lab that uses templates. You'll use the Pub/Su
 
 In this lab, you learn how to create a streaming pipeline using a Google-provided Dataflow template.
 
-- [ ] [Dataflow: Qwik Start - Templates](../labs/Dataflow-Qwik-Start-Templates.md)
+* [ ] [Dataflow: Qwik Start - Templates](../labs/Dataflow-Qwik-Start-Templates.md)
 
 ### Video - [Lab Intro: Dataflow: Qwik Start - Python](https://www.cloudskillsboost.google/course_templates/156/video/527059)
 
-- [YouTube: Lab Intro: Dataflow: Qwik Start - Python](https://www.youtube.com/watch?v=97tmyvrIXdU)
+* [YouTube: Lab Intro: Dataflow: Qwik Start - Python](https://www.youtube.com/watch?v=97tmyvrIXdU)
 
 In this next lab, we'll use the Dataflow SDK for Python to run an example pipeline. You'll learn how to set up a Python development environment, get the Dataflow SDK for Python, and run an example pipeline by using the Google Cloud console.
 
@@ -109,17 +109,17 @@ In this next lab, we'll use the Dataflow SDK for Python to run an example pipeli
 
 In this lab, you set up your Python development environment for Dataflow (using the Apache Beam SDK for Python) and run an example Dataflow pipeline.
 
-- [ ] [Dataflow: Qwik Start - Python](../labs/Dataflow-Qwik-Start-Python.md)
+* [ ] [Dataflow: Qwik Start - Python](../labs/Dataflow-Qwik-Start-Python.md)
 
 ### Video - [BigQuery, Google’s Enterprise Data Warehouse](https://www.cloudskillsboost.google/course_templates/156/video/527061)
 
-- [YouTube: BigQuery, Google’s Enterprise Data Warehouse](https://www.youtube.com/watch?v=qxyyi2ItJnA)
+* [YouTube: BigQuery, Google’s Enterprise Data Warehouse](https://www.youtube.com/watch?v=qxyyi2ItJnA)
 
 In this last section, we’ll learn about BigQuery, which is Google's fully managed, petabyte-scale, low-cost analytics data warehouse. BigQuery is a fully-managed, serverless data warehouse. A data warehouse is a large store that contains terabytes and petabytes of data gathered from a wide range of sources within an organization, and it’s used to guide management decisions. Being fully managed means that BigQuery takes care of the underlying infrastructure, so you can focus on using SQL queries to answer business questions without worrying about deployment, scalability, and security. Let’s look at some key features of BigQuery. 1. BigQuery provides two services in one: storage plus analytics. It’s a place to store petabytes of data. For reference, 1 petabyte is equivalent to 11,000 movies at 4k quality. BigQuery is also a place to analyze data, with built-in features like machine learning, geospatial analysis, and business intelligence, which we’ll explore a bit later on. 2. BigQuery is a fully managed serverless solution, which means that you use SQL queries to answer your organization's biggest questions in the frontend without worrying about infrastructure in the backend. If you’ve never written SQL before, don’t worry. This course provides resources and labs to help. 3. BigQuery has a flexible pay-as-you-go pricing model where you pay for the number of bytes of data your query processes and for any permanent table storage. If you prefer to have a fixed bill every month, you can also subscribe to flat-rate pricing where you have a reserved amount of resources for use. 4. Data in BigQuery is encrypted at rest by default without any action required from a customer. By encryption at rest, we mean that encryption is used to protect data that is stored on a disk, including solid-state drives or backup media. 5. BigQuery has built-in machine learning features, so you can write ML models directly in BigQuery by using SQL. Also, if you use other professional tools—such as Vertex AI from Google Cloud—to train your ML models, you can export datasets from BigQuery directly into Vertex AI for a seamless integration across the data-to-AI lifecycle. So what does the typical architecture of a data warehouse solution look like? The input data can be either real-time or batch data. If it's streaming data, which can be either structured or unstructured, high speed, and large volume, Pub/Sub is needed to digest the data. If it’s batch data, it can be directly uploaded to Cloud Storage. After that, both pipelines lead to Dataflow to process the data. Dataflow is where we extract, transform, and load the data if needed. BigQuery sits in the middle to link data processes by using Dataflow and data access through analytics, AI, and ML tools. The job of the analytics engine of BigQuery at the end of a data pipeline is to ingest all the processed data after ETL, store and analyze it, and then possibly output it for further use such as data visualization and machine learning. BigQuery outputs usually feed into two buckets: business intelligence tools and AI/ML tools. If you’re a business analyst or data analyst, you can connect to visualization tools like Looker, Looker Studio, Tableau, and other BI tools. If you prefer to work in spreadsheets, you can query both small or large BigQuery datasets directly from Google Sheets and even perform common operations like pivot tables. Alternatively if you’re a data scientist or machine learning engineer, you can directly call the data from BigQuery through AutoML or Vertex AI Workbench. These AI/ML tools are part of Vertex AI, Google's unified ML platform. BigQuery is like a common staging area for data analytics workloads. When your data is there, business analysts, BI developers, data scientists, and machine learning engineers can be granted access to your data for their own insights. BigQuery can ingest datasets from various sources, including: * Internal data, which is data saved directly in BigQuery, * External data. BigQuery also offers the option to query external data sources–like data stored in other Google Cloud storage services such as Cloud Storage, or in other Google Cloud database services, such as Spanner or Cloud SQL–and bypass BigQuery managed storage. This means that a raw CSV file in Cloud Storage or a Google Sheet can be used to write a query without being ingested by BigQuery first. * Multi-cloud data, which is data stored in multiple cloud services, such as AWS or Azure. and * Public datasets. If you don't have data of your own, you can analyze any of the public datasets available in the Cloud Marketplace. After the data is stored in BigQuery, it’s fully managed and is automatically replicated, backed up, and set up to autoscale. You can use three basic patterns to load data into BigQuery: The first is a batch load, where source data is loaded into a BigQuery table in a single batch operation. This can be a one-time operation or it can be automated to occur on a schedule. A batch load operation can create a new table or append data into an existing table. The second is streaming, where smaller batches of data are streamed continuously so that the data is available for querying in near-real time. And the third is generated data, where SQL statements are used to insert rows into an existing table or to write the results of a query to a table. Of course, the purpose of BigQuery is not to just store data; it’s for analyzing data and helping to make business decisions. BigQuery is optimized for running analytic queries over large datasets. It can perform queries on terabytes of data in seconds and petabytes in minutes. This performance lets you analyze large datasets efficiently and get insights in near real time. Looker, Looker Studio, and many integrated partner tools can be used to draw analytics from BigQuery and build sophisticated interactive data visualizations. BigQuery also has built-in capabilities for building machine learning models. An ML model lets you solve certain kinds of problems at scale by using data examples, but without the need for custom code. Machine learning on large datasets requires extensive programming and knowledge of ML frameworks. These requirements restrict solution development to a small set of people within each company, and they exclude data analysts who understand the data but have limited machine learning knowledge and programming expertise. BigQuery ML empowers data analysts to use machine learning through existing SQL tools and skills. Analysts can use BigQuery ML to build and evaluate ML models in BigQuery. Analysts no longer need to export small amounts of data to spreadsheets or other applications, and they no longer need to wait for limited resources from a data science team. BigQuery ML functionality is available by using: * The BigQuery web UI * The bq command-line tool * The BigQuery REST API * An external tool such as a Jupyter notebook or business intelligence platform
 
 ### Video - [Lab Intro: Dataprep: Qwik Start](https://www.cloudskillsboost.google/course_templates/156/video/527062)
 
-- [YouTube: Lab Intro: Dataprep: Qwik Start](https://www.youtube.com/watch?v=RVJrPjeYbNU)
+* [YouTube: Lab Intro: Dataprep: Qwik Start](https://www.youtube.com/watch?v=RVJrPjeYbNU)
 
 In this next lab, you'll use Dataprep to manipulate a dataset. You'll use Dataprep to import a dataset and create recipes to interpret the data into meaningful results.
 
@@ -127,7 +127,7 @@ In this next lab, you'll use Dataprep to manipulate a dataset. You'll use Datapr
 
 Google Cloud Dataprep is an intelligent data service for visually exploring, cleaning, and preparing data for analysis. Watch the short video <A HREF="https://youtu.be/K3K9X9VaThE">Dataprep: Qwik Start - Qwiklabs Preview</A>.
 
-- [ ] [Dataprep: Qwik Start](../labs/Dataprep-Qwik-Start.md)
+* [ ] [Dataprep: Qwik Start](../labs/Dataprep-Qwik-Start.md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/156/quizzes/527064)
 
@@ -136,43 +136,43 @@ Google Cloud Dataprep is an intelligent data service for visually exploring, cle
 > [!important]
 > **Which of Google Cloud's big data managed services is optimized for large-scale batch processing or long-running stream processing of structured and unstructured data?**
 >
-> - [ ] Pub/Sub
-> - [ ] Dataproc
-> - [ ] Dataflow
-> - [ ] BigQuery
+> * [ ] BigQuery
+> * [ ] Dataproc
+> * [ ] Pub/Sub
+> * [ ] Dataflow
 
 #### Quiz 2.
 
 > [!important]
-> **Which of these is a managed Spark and Hadoop service that lets you benefit from open source data tools for batch processing, querying, streaming, and machine learning?**
+> **You can use three basic patterns to load data into BigQuery. Which one involves using SQL statements to insert rows into an existing table or to write the results of a query to a table?**
 >
-> - [ ] Pub/Sub
-> - [ ] BigQuery
-> - [ ] Dataproc
-> - [ ] Dataflow
+> * [ ] Batch load
+> * [ ] Streaming
+> * [ ] Generated data
 
 #### Quiz 3.
 
 > [!important]
 > **Which of these is not a feature of BigQuery?**
 >
-> - [ ] BigQuery offers both data storage and analytics.
-> - [ ] BigQuery runs on your on-premises server.
-> - [ ] BigQuery offers a flexible pay-as-you-go pricing model.
-> - [ ] BigQuery provides built-in machine learning features.
+> * [ ] BigQuery offers both data storage and analytics.
+> * [ ] BigQuery provides built-in machine learning features.
+> * [ ] BigQuery runs on your on-premises server.
+> * [ ] BigQuery offers a flexible pay-as-you-go pricing model.
 
 #### Quiz 4.
 
 > [!important]
-> **You can use three basic patterns to load data into BigQuery. Which one involves using SQL statements to insert rows into an existing table or to write the results of a query to a table?**
+> **Which of these is a managed Spark and Hadoop service that lets you benefit from open source data tools for batch processing, querying, streaming, and machine learning?**
 >
-> - [ ] Generated data
-> - [ ] Batch load
-> - [ ] Streaming
+> * [ ] Dataflow
+> * [ ] Pub/Sub
+> * [ ] Dataproc
+> * [ ] BigQuery
 
 ### Video - [Summary](https://www.cloudskillsboost.google/course_templates/156/video/527065)
 
-- [YouTube: Summary](https://www.youtube.com/watch?v=Zsbx0AZzMvw)
+* [YouTube: Summary](https://www.youtube.com/watch?v=Zsbx0AZzMvw)
 
 This brings us to the end of the ninth module of the Google Cloud Computing Foundations course. Let's do a quick summary. First, you explored big data managed services in the cloud. Next, you examined using Dataproc to run Hadoop, spark and other big data technologies as a managed service in the cloud. Then you learned about building ETL pipelines as a managed service by using Dataflow. And finally, you explored BigQuery, which is a managed data warehouse and analytics engine.
 
@@ -182,43 +182,43 @@ Machine learning: Explain what machine learning is, the terminology used, and it
 
 ### Video - [Introduction](https://www.cloudskillsboost.google/course_templates/156/video/527066)
 
-- [YouTube: Introduction](https://www.youtube.com/watch?v=dR8eJvjvvK0)
+* [YouTube: Introduction](https://www.youtube.com/watch?v=dR8eJvjvvK0)
 
 Welcome to the final module of the Google Cloud Computing Foundations course. Let machines do the work. In this section of the course, you'll explore the world of machine learning and the role of machine learning in putting your data to work. This means that you'll define machine learning ML, understand the terminology used, and identify the value proposition. Explore Vertex AI Google's unified AI platform, and use Google APIs to apply a range of pre-trained ML models. The module agenda follows the objectives. It begins with an introduction to what machine learning is and how it works. Next, you'll explore the complexities behind developing ML models, but also how Vertex AI, Google's unified AI platform, makes it easier to take ML projects from ideation to production and deployment. After that, you'll get hands on practice in using Vertex AI. Then you'll learn how AutoML can be used to train high quality custom machine learning models with minimal effort or machine learning expertise. Next, you'll see how custom training allows you to have the control over the entire ML development process. From there, you'll explore different pre-trained ML APIs that Google has made available for common applications. After that, you'll complete three further hands-on labs on the Cloud Natural Language API, the Google Cloud Speech API, and on Nvidia Intelligence. Finally, the module concludes with a short quiz and a recap of the topics covered. Let's get started.
 
 ### Video - [Machine learning in the cloud](https://www.cloudskillsboost.google/course_templates/156/video/527067)
 
-- [YouTube: Machine learning in the cloud](https://www.youtube.com/watch?v=gWPmHp8zLvg)
+* [YouTube: Machine learning in the cloud](https://www.youtube.com/watch?v=gWPmHp8zLvg)
 
 The world is filled with things that most of us can understand and react to without much thought. For example, a stop sign partially covered by snow is still a stop sign, and a chair that's five times bigger than usual is still a place to sit. But for computers, which don't have the benefits of growing up and learning the nuances of these objects, the world is often messy and complicated. In this first section, you'll start by watching a video called Making Sense of a Messy World, where Google engineers and researchers discuss how machine learning is improving computers and many of the things we use them for, such as maps, search, recommending videos and translations. Let's watch this short video now. You ready? Oh, yeah. Right. Yeah. Thank you. There have been a number of shifts in the way we think about computing over the past few decades. The terminology artificial intelligence has come in and out of favor in the scientific community. Sometimes it's called machine learning. We tend to call it machine intelligence. These days, I just call it intelligence. And sometimes it's just the effort to build machines that are better. So in the early days, everything was built on logic. Doing mathematical integration problems, playing chess. But we realized that what the real challenges were, where the things that people can do every day. The real world is actually very messy. Hard, logical rules are not the way to solve really interesting real world problems. You have to have a system that will learn to get the knowledge, and you can't just program it all. Artificial intelligence is an effort to build machines that can learn from their environments, from mistakes, and from people. And we're still at a stage where we don't know what is the right path and the right breakthrough. So, I mean, there's certainly a whole raft of different approaches. One of the subfields we call pattern recognition artificial neural network reinforcement learning, for example, statistical inference and probabilistic machine learning, supervised learning, unsupervised learning. And we're not quite sure what technique is going to lead to better systems. And in fact, it's probably not one technique for everything. It's probably a bunch of different techniques and combinations of those techniques. Any progress we make in building truly intelligent systems is going to depend on progress in technology generally. And until recently, we didn't have computers that were fast enough or datasets that were big enough to do that. And so being able to take a particular problem and spread it out over lots of lots of machines is a very important approach because it makes our research faster. So there's applications of artificial intelligence around us, all the time when it begins to work or it does work, it's all of a sudden given another name. We're all already using it and very comfortable with it. Things that now we regard as routine, 30 years ago would have been regarded as amazing examples of artificial intelligence. Anti-lock braking. Auto pilot systems for planes. Search recommendations. Maps to decide whether or not this particular email is spam or not. Spam. The ability to translate one language to another with your phone. Ten years ago, if you tried to talk to your computer or to your phone, you know that would just be hopeless. We are seeing a steady torrent of these tricks, one after the other, getting figured out right now. And I think a lot of people that are close to the field have this, do have that kind of breathless sense that things are moving quickly. It's a progressive thing. It's about building things that are slightly better, slightly better, slightly better. Intelligence is really not going to be something that we ever succeed in defining. In a succinct and singular way. It's really this whole constellation of different capabilities that, you know, all kind of are beautifully orchestrated and working together. Predicting the long-term future is very difficult, and nobody can really do it. And the bad thing to do is take whatever's working best. Now and assume the future is going to be like that forever. In that video, you heard a few different definitions of artificial intelligence and machine learning. Let's explore the differences together. Artificial intelligence, or AI, is an umbrella term that includes anything related to computers mimicking human intelligence. For example, in an online word processor, robots perform human actions for spelling and grammar checks. Machine learning is a toolset like Newton's Laws of mechanics. Just as you can use Newton's Laws to learn how long it will take a ball to fall to the ground. If you drop it off a cliff. You can use machine learning to solve certain kinds of problems at scale by using data examples, but without the need for custom code. You might have also heard the term deep learning or deep neural networks. Deep learning is a subset of machine learning that adds layers in between input data and output results. To make a machine learn at more depth. It's a type of machine learning that works even when the data is unstructured, like images, speech, video, natural language, text, and so on. Image classification is a type of deep learning. A machine can learn how to classify images into categories when it's shown. Lots of examples. The basic difference between machine learning and other techniques in AI is that in machine learning, machines learn. They don't start out intelligent. They become intelligent. So how do machines become intelligent? Intelligence requires training to train a machine learning model. Examples are required, for example, to train a model to estimate how much your own taxes, you must show the model. Many, many examples of tax returns. Or if you want to train a model to estimate trip time between one location and another, you need to show it many examples of previous journeys. The first stage of ML is to train an ML model with examples. An example consists of an input and the correct answer for that input. This is called the label. In the case of structured data, that's rows and columns. An input can simply be a single row of data. In unstructured data, like images, an input could be a single image of a cloud that you want to classify as a rain cloud or not. Imagine you work for a manufacturing company, and you want to train a machine learning model to detect defects in the parts before they are assembled into products. You'd start by creating a data set of images of parts. Some of those images would be good and some parts would be defective. For each image, you'll assign a corresponding label and use that set of examples to train the model. An important detail to emphasize is that a machine learning model is only as good as the data used to train it, and a good model requires a lot of training data. Of historical examples of rejected parts and parts in good condition. With these elements, you can train a model to categorize parts as defective or not. The basic reason why ML models need high quality data is because they don't have human general knowledge. Data is the only thing they have access to after the model has been trained. It can be used to make predictions on data it's never seen before data. In this example, the input for the trained model is an image of a part. Because the model has been trained on specific examples of good and defective parts, it can correctly predict that this part is in good condition. Algorithms or ML models are standard data. That means that they exist independently of the use case. Although detecting manufacturing defects in images and detecting disease leaves in images are two different use cases, the same algorithm, which is an image classification network, works for both. Similarly, standard algorithms predict the future value of a time series or to transcribe human speech to text. ResNet, for example, is a standard algorithm for image classification. It's not essential to understand how an image classification algorithm works, only that it's the algorithm we should use. If we want to classify images of automotive parts. When we use the same algorithm on different datasets, different features or inputs are relevant for different use cases, and we can see them represented visually. Here. You might be wondering, isn't the logic different? You can't possibly use the same rules to identify defects in manufacturing that you use to identify leaves. The logic is different, but machine learning doesn't use logical rules. The image classification network isn't a set of basic. If this, then that rules, but rather a function that learns how to differentiate between categories of images. So although you start with the same standard algorithm after training, the trained model that classifies leaves is different from the train model that classifies parts, and you can actually reuse the same code for other use cases that are focused on the same kind of task. In our example, you identified manufacturing defects, but the high-level task classified images. This means you can reuse the same code for another image classification problem, like finding examples of products in photos posted on social media. However, you still have to train it separately for each use case. Much of the excitement around ML is because the barriers to entry have fallen. You don't need to be an astrophysicist to do machine learning. This is because of the convergence of several factors the increasing availability of data, the increasing maturity and sophistication of ML algorithms, and the increasing power and availability of computing hardware and software. Google Cloud offers four options for building machine learning models. The first option is BigQuery ML. You'll remember from the previous module of this course that BigQuery ML is a tool for using SQL queries to create and execute machine learning models in BigQuery. If you already have your data in BigQuery and your problems fit the predefined ML models, this could be your best choice. The second option is AutoML, which is a no code solution, so you can build your own machine learning models on Vertex AI through a point-and-click interface. The third option is custom training, through which you can code your own machine learning environment. The training and the deployment, which provides you with flexibility and control over the ML pipeline. And finally, there are pre-built APIs which are application programing interfaces. This option lets you use machine learning models that have already been built and trained by Google, so you don't have to build your own machine learning models if you don't have enough training data or sufficient machine learning expertise in-house. Let's play a quick game where we'll see how a neural network can learn how to recognize doodling during the process will help to teach it by adding our drawings to the world's largest doodling dataset and help with machine learning research. Pause the video now and in a different browser, tab or window, head to quickdraw.withgoogle.com. When you're done, head back here to continue the video. Here's the model behind the game we just played. It's called a deep neural network, or DNN. The layers are meant to mimic our own human brains in the way we perceive stimuli. With each layer, the model learns more about the image of this dog that's hiding in a laundry basket. Starting from basic edges and colors to a final decision of cat or dog, you'll build your own image recognition model later in the course. Spoiler alert you don't need to write any code, but if you want additional information about how these model types work, see the TensorFlow Neural Network Playground. The TensorFlow Neural Network Playground at playground.tensorflow.org is a great interactive learning tool for understanding how computers think, and shows how far ML has come that we can build these models at scale, like in Google Photos.
 
 ### Video - [Building ML models with Vertex AI](https://www.cloudskillsboost.google/course_templates/156/video/527068)
 
-- [YouTube: Building ML models with Vertex AI](https://www.youtube.com/watch?v=U23XcgEEKdU)
+* [YouTube: Building ML models with Vertex AI](https://www.youtube.com/watch?v=U23XcgEEKdU)
 
 Now that you've got a better understanding of what machine learning is, let's explore what it takes to build a machine learning model and how Vertex AI can make that process easier for ML developers, data scientists, and data engineers. For years now, Google has invested time and resources into developing big data and AI. Google has developed key technologies and products from its roots in the development of Scikit Learn back in 2007, to Vertex AI today. As an AI first company, Google has applied AI technologies to many of its products and services like Gmail, Google Maps, Google Photos, and Google Translate. But developing these technologies doesn't come without challenges, especially when it involves developing machine learning models and putting them into production. Some traditional challenges include determining how to handle large quantities of data, determining the right machine learning model to train the data, and harnessing the required amounts of computing power. Then there are challenges around getting ML models into production. Production challenges require scalability, monitoring and continuous integration and continuous delivery or deployment. In fact, according to the technological research and consulting firm Gartner, only half of enterprise ML projects get past a pilot phase. And finally, there are ease-of-use challenges. Many tools in the market require advanced coding skills, which can take a data scientist’s focus away from model configuration. And without a unified workflow, data scientists often have difficulties finding tools. Google’s solutions for many of the production and ease-of-use challenges is Vertex AI, a unified platform that brings all the components of the machine learning ecosystem and workflow together? So what exactly does a unified platform mean? In the case of Vertex AI, it means having one digital experience to create, manage and deploy models over time and at scale. For example, during the data readiness stage, users can upload data from wherever it's stored - Cloud Storage, BigQuery, or a local machine. Then, during the feature readiness stage, users can create features which are the process data that will be put into the model and then share them with others by using the feature store. After that, it's time for training and hyperparameter tuning. This means that when the data is ready, users can experiment with different models and adjust hyperparameters. And finally, during deployment and model monitoring, users can set up the pipeline to transform the model into production by automatically monitoring and performing continuous improvements. And to refer back to the different options that we explored earlier, Vertex AI allows users to build machine learning models with either AutoML, a no-code solution, or custom training, a code-based solution. AutoML is easy to use and lets data scientists spend more time turning business problems into ML solutions. While custom training enables data scientists to have full control over the development environment and process. Being able to perform such a wide range of tasks in one unified platform has many benefits. This can be summarized with four S's. It's seamless. Vertex AI provides a smooth user experience from uploading preparing data all the way to model training and production. It's scalable. The machine learning operations, MLOps, provided by Vertex AI helps to monitor and manage the ML production, and therefore scale the storage and computing power automatically. It's sustainable. All of the artifacts and features created with Vertex AI can be reused and shared. And it's speedy. Vertex AI produces models that have 80% fewer lines of code than competitors.
 
 ### Video - [AutoML](https://www.cloudskillsboost.google/course_templates/156/video/527069)
 
-- [YouTube: AutoML](https://www.youtube.com/watch?v=IDSCuPE6_qI)
+* [YouTube: AutoML](https://www.youtube.com/watch?v=IDSCuPE6_qI)
 
 Now let’s shift our focus to one of the machine learning options mentioned earlier: AutoML. AutoML is a no-code solution to build ML models through Vertex AI. It allows users to train high-quality custom machine learning models with minimal effort or machine learning expertise. To understand AutoML, which is short for automated machine learning, let’s briefly look at how it was built. If you've worked with ML models before, you know that training and deploying ML models can be incredibly time consuming, because you need to repeatedly add new data and features, try different models, and tune parameters to achieve the best result. To solve this problem, when AutoML was first announced in January of 2018, the goal was to automate machine learning pipelines to save data scientists from manual work, such as tuning hyperparameters and comparing against multiple models. But how could this be done? Well, machine learning is similar to human learning. It all starts with gathering the right information. For AutoML, two technologies are critical. The first is known as transfer learning. With transfer learning, you build a knowledge base in the field. You can think of this like gathering many books to create a library. Transfer learning is a powerful technique that lets people with smaller datasets, or less computational power, achieve state-of-the-art results by using pre-trained models that have been trained on similar, larger datasets. Because the model learns through transfer learning, it doesn’t have to learn from the beginning, so it can generally reach higher accuracy with much less data and computation time than models that don’t use transfer learning. The second technology is neural architect search. The goal of neural architect search is to find the optimal model for the relevant project. Think of this like finding the best book in the library to help you learn what you need to. ​​AutoML is powered by the latest machine-learning research, so although a model performs training, the AutoML platform actually trains and evaluates multiple models and compares them to each other. This neural architecture search produces an ensemble of ML models and chooses the best one. Using these technologies has produced a tool that can significantly benefit data scientists. One of the biggest benefits is that it’s a no-code solution. That means it can train high-quality custom machine learning models with minimal effort and requires little machine learning expertise. This allows data scientists to focus their time on tasks like defining business problems or evaluating and improving model results. Others might find AutoML useful to quickly prototype models and explore new datasets before investing in development. This might involve using it to identify the best features in a dataset, for example. So, how does AutoML work exactly? AutoML supports four types of data: image, tabular, text, and video. For each data type, AutoML solves different types of problems, called objectives. To get started, upload your data into AutoML. It can come from Cloud Storage, BigQuery, or even your local machine. From there, inform AutoML of the problems you want to solve. Some problems might sound similar to those mentioned in pre-built APIs. However, the major difference is that pre-built APIs use pre-built machine learning models, but AutoML uses custom-built models. In AutoML, you use your own data to train the machine learning model and then apply the trained model to predict your goal. But in pre-built APIs, the models are already trained with Google’s datasets. You use the training results to predict your data. In reality, you may not be restricted to just one data type and one objective but rather need to combine different objectives to solve a business problem. AutoML is a powerful tool that can help across these different data types and objectives.
 
 ### Video - [Custom training](https://www.cloudskillsboost.google/course_templates/156/video/527070)
 
-- [YouTube: Custom training](https://www.youtube.com/watch?v=Nho3ZyBS0UU)
+* [YouTube: Custom training](https://www.youtube.com/watch?v=Nho3ZyBS0UU)
 
 Now let's explore custom training. Custom training lets you code your own ML environment to control the entire ML development process, starting from data preparation to model deployment. If you want to code your machine learning model, you can use this option by building a custom training solution with Vertex AI Workbench. Workbench is a single development environment for the entire data science workflow. From exploring, to training, and then deploying a machine learning model with code. Before any coding begins, you must determine what environment you want your ML training code to use. There are two options. A pre-built container or a custom container. Imagine that a container is a kitchen. A pre-built container would represent a fully-furnished room with cabinets and appliances, which represent the dependencies. This includes all the cookware, which represents the libraries, you need to make a meal. So if your ML training needs a platform like TensorFlow, PyTorch, Scikit Learn, or XGBoost and Python code to work with the platform, a pre-built container is probably your best solution. A custom container, alternatively, is like an empty room with no cabinets, appliances, or cookware. You define the exact tools that you need to complete the job.
 
 ### Video - [Pre-built APIs](https://www.cloudskillsboost.google/course_templates/156/video/527071)
 
-- [YouTube: Pre-built APIs](https://www.youtube.com/watch?v=E4xY_1OSvzg)
+* [YouTube: Pre-built APIs](https://www.youtube.com/watch?v=E4xY_1OSvzg)
 
 When using AutoML, you define a domain-specific labeled training dataset that's used to create the custom ML model you require. However, if you don't need a domain-specific dataset, Google's suite of pre-built ML APIs might meet your needs. In this section, you'll explore some of those APIs. Good machine learning models require lots of high-quality training data. You should aim for hundreds of thousands of records to train a custom model. If you don't have that kind of data, pre-built APIs are a great place to start. Pre-built APIs are offered as services. Often, they can act as building blocks to create the application you want, without the expense or complexity of creating your own models. They save the time and effort of building, curating, and training a new dataset so you can directly deal with predictions. So what are some of the pre-built APIs? Let's explore a short list. The Speech to Text API converts audio to text for data processing. The Cloud Natural Language API recognizes parts of speech called entities and sentiment. The Cloud Translation API converts text from one language to another. The Text-to-Speech API converts text into high-quality voice audio. The Vision API works with and recognizes content in static images, and the Video Intelligence API recognizes motion and action in video. And Google has already done a lot of work to train these models by using Google datasets. For example, the Vision API is based on Google's image datasets. The Speech-to-Text API is trained on YouTube captions, and the Translation API is built on Google Translate. You'll recall that how well a model is trained depends on how much data is available to train it. As you might expect, Google has many images, text, and ML researchers to train its pre-built models. This means less work for you. Let's take a minute and explore the Vision API in a browser. Start by navigating in a new Chrome tab or window to cloud.google.com/vision. Then you can scroll down and try the API by uploading an image. You can actually experiment with each of the ML APIs in a browser. When you're ready to build a production model, you'll need to pass a JSON object request to the API and parse what it returns. Here's a real example of how Bloomberg, a US-based financial software, data and media company, benefits from the Cloud Translation API. In financial markets, getting information quickly is the name of the game, and our 5000 engineers work on the systems that do this at scale. You'll typically see a headline from a news event come out, and sometimes seconds later, the entire market move can be over. Bloomberg is a truly global company. Not only are clients all over the world, but our employees are also all over the world. More and more news and information that was critical for financial markets was breaking in local language, in other countries. Within our news product, we aggregate news from hundreds of thousands of different sources and making that information available accessible to our customers at a moment's notice in a language that they understand and that they can interpret, was really critical for us. Translation and automated translation could make that information accessible to a much broader universe. We deal and operate in 40 languages. More than 170 countries. We needed something that was much better and much wider and broader. So in contracting with Google and approaching them, we said, what is your product? What can translation do for us? And in this case it was an existing product. It had easy connectivity. So our engineers were able to integrate it into our platform seamlessly. We were able to actually see translation happening in real time. So it was a pretty seamless, pretty easy process. It's extremely important for our customers to be able to access information wherever they are. We decided that we wanted to add the ability for people across the world to see that news translated in the language that was most useful to them. We wanted to add the ability for people across the world to access hundreds of thousands of news stories a day in the language that was most useful to them. It just worked almost like magic. Going to see customers and see them using the product is really exciting. They're just like, that is fantastic.
 
 ### Video - [Lab Intro: Cloud Natural Language API: Qwik Start](https://www.cloudskillsboost.google/course_templates/156/video/527072)
 
-- [YouTube: Lab Intro: Cloud Natural Language API: Qwik Start](https://www.youtube.com/watch?v=sNG5_JImxdg)
+* [YouTube: Lab Intro: Cloud Natural Language API: Qwik Start](https://www.youtube.com/watch?v=sNG5_JImxdg)
 
 It's time for hands-on practice with some of the pre-built APIs. In the three final labs of this course, you'll explore a few of the pre-trained machine learning APIs, starting with the Cloud Natural Language API. In the lab, titled Cloud Natural Language API: Qwik Start, you'll apply the Analyze Entities method to ask the Cloud Natural Language API to extract entities for example, people, places, and events from a snippet of text. During this lab, you'll create an API key and make an entity analysis request.
 
@@ -226,11 +226,11 @@ It's time for hands-on practice with some of the pre-built APIs. In the three fi
 
 The Cloud Natural Language API lets you extract entities and perform sentiment and syntactic analysis on text. Watch these short videos <A HREF="https://youtu.be/3iOtK0sRNMI">Gain Valuable Insights from Text with Cloud Natural Language</A> and <A HREF="https://youtu.be/Bl96IyJqKQQ">Cloud Natural Language: Qwik Start - Qwiklabs Preview</A>.
 
-- [ ] [Cloud Natural Language API: Qwik Start](../labs/Cloud-Natural-Language-API-Qwik-Start.md)
+* [ ] [Cloud Natural Language API: Qwik Start](../labs/Cloud-Natural-Language-API-Qwik-Start.md)
 
 ### Video - [Lab Intro: Google Cloud Speech API: Qwik Start](https://www.cloudskillsboost.google/course_templates/156/video/527074)
 
-- [YouTube: Lab Intro: Google Cloud Speech API: Qwik Start](https://www.youtube.com/watch?v=NHXsP3lqvHw)
+* [YouTube: Lab Intro: Google Cloud Speech API: Qwik Start](https://www.youtube.com/watch?v=NHXsP3lqvHw)
 
 Next, you'll find the Speech-to-Text API. In the lab titled Google Cloud Speech API: Quick Start, you'll use a pre-recorded file to create and call a Speech-to-Text API request. During this lab, you'll create an API key, create a Speech API request, and call the Speech API request.
 
@@ -238,11 +238,11 @@ Next, you'll find the Speech-to-Text API. In the lab titled Google Cloud Speech 
 
 The Speech-to-Text API integrates speech recognition into dev apps; you can now send audio and receive a text transcription. Watch these short videos <A HREF="https://youtu.be/k9xLdXNriEo"> Powerful Speech Recognition Using Google Machine Learning</A> and <A HREF="https://youtu.be/7_f7XKbUjK4"> Google Cloud Speech: Qwik Start - Qwiklabs Preview</A>
 
-- [ ] [Speech-to-Text API: Qwik Start](../labs/Speech-to-Text-API-Qwik-Start.md)
+* [ ] [Speech-to-Text API: Qwik Start](../labs/Speech-to-Text-API-Qwik-Start.md)
 
 ### Video - [Lab Intro: Video Intelligence: Qwik Start](https://www.cloudskillsboost.google/course_templates/156/video/527076)
 
-- [YouTube: Lab Intro: Video Intelligence: Qwik Start](https://www.youtube.com/watch?v=zGLp2DXlwNk)
+* [YouTube: Lab Intro: Video Intelligence: Qwik Start](https://www.youtube.com/watch?v=zGLp2DXlwNk)
 
 Let's finish this module with the Video Intelligence API. In the lab titled Video Intelligence: Quick Start, you'll make an annotated video request by using the Video Intelligence API. During this lab, you'll enable the Video Intelligence API set up authorization, and make an annotated video request.
 
@@ -250,43 +250,43 @@ Let's finish this module with the Video Intelligence API. In the lab titled Vide
 
 In this lab, you use the Google Cloud Video Intelligence API to extract metadata from a sample video file. Watch the short video <a HREF="https://youtu.be/Z2eOfK2rzbs">Google Cloud Video Intelligence - Search every moment of every video in your catalog</a>.
 
-- [ ] [Video Intelligence: Qwik Start](../labs/Video-Intelligence-Qwik-Start.md)
+* [ ] [Video Intelligence: Qwik Start](../labs/Video-Intelligence-Qwik-Start.md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/156/quizzes/527078)
 
 #### Quiz 1.
 
 > [!important]
-> **What Google machine learning API can be used to convert audio to text for data processing?**
+> **What is the name of Google's unified AI platform that brings all the components of the machine learning ecosystem and workflow together?**
 >
-> - [ ] Cloud Natural Language API
-> - [ ] Vision API
-> - [ ] Video Intelligence API
-> - [ ] Speech-to-Text API
+> * [ ] AutoML
+> * [ ] Vertex AI
+> * [ ] Cloud AI
+> * [ ] TensorFlow
 
 #### Quiz 2.
 
 > [!important]
 > **Which of these is a no-code solution that lets you build your own machine learning models on Vertex AI through a point-and-click interface?**
 >
-> - [ ] Custom training
-> - [ ] Pre-built APIs
-> - [ ] AutoML
-> - [ ] BigQuery ML
+> * [ ] Custom training
+> * [ ] BigQuery ML
+> * [ ] AutoML
+> * [ ] Pre-built APIs
 
 #### Quiz 3.
 
 > [!important]
-> **What is the name of Google's unified AI platform that brings all the components of the machine learning ecosystem and workflow together?**
+> **What Google machine learning API can be used to convert audio to text for data processing?**
 >
-> - [ ] TensorFlow
-> - [ ] AutoML
-> - [ ] Cloud AI
-> - [ ] Vertex AI
+> * [ ] Speech-to-Text API
+> * [ ] Vision API
+> * [ ] Video Intelligence API
+> * [ ] Cloud Natural Language API
 
 ### Video - [Summary](https://www.cloudskillsboost.google/course_templates/156/video/527079)
 
-- [YouTube: Summary](https://www.youtube.com/watch?v=ZOrjOQF4klw)
+* [YouTube: Summary](https://www.youtube.com/watch?v=ZOrjOQF4klw)
 
 This brings us to the end of the 10th and final module of the Google Cloud Computing Foundations course. Let's do a quick summary. You started by exploring machine learning. You defined machine learning as a term, explored the terminology used, and identified the value proposition. After that, you explored Vertex AI, Google's unified AI platform. You saw the options available to you with AutoML, Google's no-code solution to build ML models, and also custom training, which lets you code your own ML environment to have the control over the entire ML development process, starting from data preparation to model deployment. And finally, you learned about Google APIs to apply a range of pre-trained ML models.
 
@@ -298,10 +298,10 @@ The course closes with a review of the key points covered in each section.
 
 ### Video - [Course review](https://www.cloudskillsboost.google/course_templates/156/video/527081)
 
-- [YouTube: Course review](https://www.youtube.com/watch?v=lSiwksk3T7k)
+* [YouTube: Course review](https://www.youtube.com/watch?v=lSiwksk3T7k)
 
 Congratulations on completing the Google Cloud Computing Foundations course! The goal of this course was to provide an overview of, and hands-on practice with, the concepts related to cloud basics, big data, and machine learning, and help you understand where and how Google Cloud fits into this environment. Let’s quickly review the modules we covered in the course. In module 1, you began by exploring what the cloud is, and why it’s a technological and business game changer. In module 2, you examined the different ways a user can interact with Google Cloud. Module 3 introduced how to use Google Cloud resources and serverless managed services to build applications, followed by module 4 that addressed how to implement various structured and unstructured storage models. In module 5, you learned about different application-managed service options that exist in the cloud, and then in module 6 you learned how security is administered in Google Cloud. In module 7, you explored how secure networks are built in the cloud, and in module 8, you identified the different tools that support cloud automation and management. In module 9, you examined various managed big data services in the cloud, and in module 10, the course ended with an introduction to machine learning, some terminology used, and its value proposition. You can demonstrate your knowledge of the concepts covered in this course by completing a knowledge-based assessment. Also, you have the opportunity to demonstrate your skills and earn four digital Google Cloud skill badges. Implement Load Balancing on Compute Engine, Set Up an App Dev Environment on Google Cloud, Build a Secure Google Cloud Network, and Prepare Data for ML APIs on Google Cloud. Fortunately, you’ve already made great progress with each skill badge by completing the hands-on labs during the course. However, these labs were only stepping stones to prepare you for the final challenge lab of each skill badge! The first step to completing the skill badges is to ensure that you’ve enrolled for each one. The skill badge outline will list all of the labs to be completed. You should have completed the hands-on labs during the course, but if you haven’t, please complete these first. The final lab in the skill badge outline is the Challenge Lab, which will test your skills and knowledge from the other labs in the skill badge. After you’ve completed the Challenge Lab, and if all the other labs are complete, you’ll be awarded a skill badge. Feel free to share this achievement on social media and be sure to add it to your resume! After you’ve completed the knowledge assessment and earned your Google Cloud skill badges, you should be in a position to access the enterprise-level Google Cloud content that’s available on Google Cloud Skills Boost to continue your development. If this is part of your plans, you should also be well placed to enroll into Career Readiness Programs to prepare for Associate Cloud Engineer certifications. Good luck!
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

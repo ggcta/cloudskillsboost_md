@@ -1,12 +1,13 @@
 ---
 id: 559
 name: 'Developing Applications with Cloud Run on Google Cloud: Fundamentals'
-datePublished: 2024-07-26
-topics:
-- IAM
-- Autoscaling
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/559
+date_published: 2024-07-26
+topics:
+  - IAM
+  - Deployment
+  - Autoscaling
 ---
 
 # [Developing Applications with Cloud Run on Google Cloud: Fundamentals](https://www.cloudskillsboost.google/course_templates/559)
@@ -25,10 +26,10 @@ with other services on Google Cloud so you can build full-featured applications.
 
 **Objectives:**
 
-- Understand the fundamentals of Cloud Run that include the resource model,  container lifecycle, and autoscaling.
-- Develop and test applications locally before deploying to Cloud Run.
-- Use service identity and IAM with Cloud Run.
-- Integrate Cloud Run applications with Google Cloud services.
+* Understand the fundamentals of Cloud Run that include the resource model,  container lifecycle, and autoscaling.
+* Develop and test applications locally before deploying to Cloud Run.
+* Use service identity and IAM with Cloud Run.
+* Integrate Cloud Run applications with Google Cloud services.
 
 ## Course Introduction
 
@@ -59,53 +60,53 @@ lifecycle. Learn how autoscaling works and how to control access to your Cloud R
 > [!important]
 > **What are some characteristics of Cloud Run services? Select three.**
 >
-> - [ ] Each deployment of your application container image to Cloud Run creates a service revision.
-> - [ ] Cloud Run automatically scales a service revision.
-> - [ ] Cloud Run services are regional Google Cloud resources.
-> - [ ] You must manually route requests to the latest revision of your Cloud Run service.
-> - [ ] A service revision can be modified or updated.
+> * [ ] Each deployment of your application container image to Cloud Run creates a service revision.
+> * [ ] Cloud Run automatically scales a service revision.
+> * [ ] You must manually route requests to the latest revision of your Cloud Run service.
+> * [ ] A service revision can be modified or updated.
+> * [ ] Cloud Run services are regional Google Cloud resources.
 
 #### Quiz 2.
 
 > [!important]
-> **How can you make a Cloud Run service publicly accessible and invokable without authentication?**
+> **Which of these statements about Cloud Run are correct? Select three.**
 >
-> - [ ] Use the –-allow-unauthenticated option when you deploy the service to Cloud Run.
-> - [ ] A Cloud Run service is publicly accessible and can be invoked without authentication by default.
-> - [ ] A Cloud Run service cannot be invoked publicly.
+> * [ ] You cannot access internal Google Cloud resources in your network from Cloud Run.
+> * [ ] On Cloud Run, your code can either run continuously as a service, or as a job.
+> * [ ] Cloud Run integrates with other Google Cloud services.
+> * [ ] Cloud Run is serverless.
+> * [ ] To access a service on Cloud Run, you must manually provision an HTTP endpoint.
 
 #### Quiz 3.
 
 > [!important]
-> **What are some characteristics of an idle container? Select four.**
+> **Which of these statements about autoscaling in Cloud Run are correct? Select three.**
 >
-> - [ ] An idle container does not incur charges by default.
-> - [ ] An idle container has its CPU throttled.
-> - [ ] An idle container can be shut down at any time.
-> - [ ] An idle container can reliably perform background tasks.
-> - [ ] An idle container does not service requests.
+> * [ ] Cloud Run automatically increases the number of container instances of a service revision when necessary.
+> * [ ] When the number of requests to a service decreases, Cloud Run reduces the number of container instances.
+> * [ ] If there are no incoming requests to your service, by default even the last remaining container instance will be shut down.
+> * [ ] In Cloud Run, a container instance can receive and process only a single request at a time.
+> * [ ] As your service receives requests, the number of active instances might decrease and the number of idle instances increase.
 
 #### Quiz 4.
 
 > [!important]
-> **Which of these statements about autoscaling in Cloud Run are correct? Select three.**
+> **What are some characteristics of an idle container? Select four.**
 >
-> - [ ] In Cloud Run, a container instance can receive and process only a single request at a time.
-> - [ ] Cloud Run automatically increases the number of container instances of a service revision when necessary.
-> - [ ] If there are no incoming requests to your service, by default even the last remaining container instance will be shut down.
-> - [ ] When the number of requests to a service decreases, Cloud Run reduces the number of container instances.
-> - [ ] As your service receives requests, the number of active instances might decrease and the number of idle instances increase.
+> * [ ] An idle container does not incur charges by default.
+> * [ ] An idle container has its CPU throttled.
+> * [ ] An idle container can reliably perform background tasks.
+> * [ ] An idle container can be shut down at any time.
+> * [ ] An idle container does not service requests.
 
 #### Quiz 5.
 
 > [!important]
-> **Which of these statements about Cloud Run are correct? Select three.**
+> **How can you make a Cloud Run service publicly accessible and invokable without authentication?**
 >
-> - [ ] You cannot access internal Google Cloud resources in your network from Cloud Run.
-> - [ ] To access a service on Cloud Run, you must manually provision an HTTP endpoint.
-> - [ ] Cloud Run integrates with other Google Cloud services.
-> - [ ] On Cloud Run, your code can either run continuously as a service, or as a job.
-> - [ ] Cloud Run is serverless.
+> * [ ] Use the –-allow-unauthenticated option when you deploy the service to Cloud Run.
+> * [ ] A Cloud Run service is publicly accessible and can be invoked without authentication by default.
+> * [ ] A Cloud Run service cannot be invoked publicly.
 
 ### Document - [Module review](https://www.cloudskillsboost.google/course_templates/559/documents/496744)
 
@@ -127,7 +128,7 @@ environment variables in your applications that run on Cloud Run.
 
 This lab teaches you how to implement IAM policy bindings in Cloud Run to adhere to the security principle of least privilege.
 
-- [ ] [Implementing Least Privilege IAM Policy Bindings in Cloud Run [APPRUN]](../labs/Implementing-Least-Privilege-IAM-Policy-Bindings-in-Cloud-Run-[APPRUN].md)
+* [ ] [Implementing Least Privilege IAM Policy Bindings in Cloud Run [APPRUN]](../labs/Implementing-Least-Privilege-IAM-Policy-Bindings-in-Cloud-Run-[APPRUN].md)
 
 ### Document - [Secrets and environment variables](https://www.cloudskillsboost.google/course_templates/559/documents/496749)
 
@@ -136,53 +137,53 @@ This lab teaches you how to implement IAM policy bindings in Cloud Run to adhere
 #### Quiz 1.
 
 > [!important]
-> **What are some characteristics of an IAM policy? Select three.**
+> **Every Cloud Run service is linked to a service account by default. What role is given to this service account?**
 >
-> - [ ] An IAM policy consists of a list of policy bindings that binds members to roles.
-> - [ ] You can attach only one IAM policy to a resource.
-> - [ ] An IAM policy consists of at most one policy binding that binds a member to one or more roles.
-> - [ ] An IAM policy is attached to a Google Cloud resource.
-> - [ ] A member can only have a single role in an IAM policy.
+> * [ ] Viewer
+> * [ ] Editor
+> * [ ] Billing Admin
+> * [ ] Owner
 
 #### Quiz 2.
 
 > [!important]
-> **What are two methods of making a secret available to a Cloud Run service?**
+> **Which statements about using environment variables with Cloud Run are correct? Select two.**
 >
-> - [ ] Secrets cannot be accessed from a Cloud Run service.
-> - [ ] Mount the secret as a volume so that the service can access the secret from a file.
-> - [ ] Provide the secret name and value as query parameters in the request to the service.
-> - [ ] Provide the secret as an environment variable when deploying the service.
+> * [ ] Environment variables are key-value pairs that can be set when deploying a Cloud Run service or job.
+> * [ ] Environment variables are injected into your application container and accessed by your code at runtime.
+> * [ ] Once set, the value of an environment variable cannot be updated.
+> * [ ] Environment variables set in the container with the ENV statement in a Dockerfile take precedence over variables with the same name set on a Cloud Run service or job.
 
 #### Quiz 3.
 
 > [!important]
-> **Which statements about using environment variables with Cloud Run are correct? Select two.**
+> **How can you implement the principle of least privilege for a Cloud Run service?**
 >
-> - [ ] Environment variables are key-value pairs that can be set when deploying a Cloud Run service or job.
-> - [ ] Once set, the value of an environment variable cannot be updated.
-> - [ ] Environment variables are injected into your application container and accessed by your code at runtime.
-> - [ ] Environment variables set in the container with the ENV statement in a Dockerfile take precedence over variables with the same name set on a Cloud Run service or job.
+> * [ ] Create a new service account and configure it as the Cloud Run service's identity. Grant minimal permissions to the account on the resources that the service needs to access.
+> * [ ] Use only Google client libraries to access Google Cloud APIs and services.
+> * [ ] Remove the Editor role on the default service account that is used by Cloud Run.
+> * [ ] Use secrets to store data that is needed by the Cloud Run service.
 
 #### Quiz 4.
 
 > [!important]
-> **Every Cloud Run service is linked to a service account by default. What role is given to this service account?**
+> **What are two methods of making a secret available to a Cloud Run service?**
 >
-> - [ ] Billing Admin
-> - [ ] Editor
-> - [ ] Owner
-> - [ ] Viewer
+> * [ ] Provide the secret as an environment variable when deploying the service.
+> * [ ] Secrets cannot be accessed from a Cloud Run service.
+> * [ ] Provide the secret name and value as query parameters in the request to the service.
+> * [ ] Mount the secret as a volume so that the service can access the secret from a file.
 
 #### Quiz 5.
 
 > [!important]
-> **How can you implement the principle of least privilege for a Cloud Run service?**
+> **What are some characteristics of an IAM policy? Select three.**
 >
-> - [ ] Create a new service account and configure it as the Cloud Run service's identity. Grant minimal permissions to the account on the resources that the service needs to access.
-> - [ ] Use only Google client libraries to access Google Cloud APIs and services.
-> - [ ] Use secrets to store data that is needed by the Cloud Run service.
-> - [ ] Remove the Editor role on the default service account that is used by Cloud Run.
+> * [ ] An IAM policy is attached to a Google Cloud resource.
+> * [ ] You can attach only one IAM policy to a resource.
+> * [ ] A member can only have a single role in an IAM policy.
+> * [ ] An IAM policy consists of at most one policy binding that binds a member to one or more roles.
+> * [ ] An IAM policy consists of a list of policy bindings that binds members to roles.
 
 ### Document - [Module review](https://www.cloudskillsboost.google/course_templates/559/documents/496751)
 
@@ -202,49 +203,49 @@ and learn how to integrate your Cloud Run service with other services in Google 
 
 In this lab you will learn how Cloud Pub/Sub can be used with Cloud Run.
 
-- [ ] [Using Cloud PubSub with Cloud Run [APPRUN]](../labs/Using-Cloud-PubSub-with-Cloud-Run-[APPRUN].md)
+* [ ] [Using Cloud PubSub with Cloud Run [APPRUN]](../labs/Using-Cloud-PubSub-with-Cloud-Run-[APPRUN].md)
 
 ### Quiz - [Quiz](https://www.cloudskillsboost.google/course_templates/559/quizzes/496756)
 
 #### Quiz 1.
 
 > [!important]
-> **Which of these statements regarding service revisions in Cloud Run are correct? Select two.**
+> **To integrate a Cloud Run service with other Google Cloud APIs and resources, what are some steps you should take? Select three.**
 >
-> - [ ] A revision is created when you update the configuration of a service in Cloud Run.
-> - [ ] A revision is created when you deploy a container image to a service in Cloud Run.
-> - [ ] In Cloud Run, only the newest or latest service revision can receive and process requests to the service.
-> - [ ] You cannot control the amount of request traffic received by a service revision.
+> * [ ] To connect to internal cloud resources from your Cloud Run service, use Serverless VPC Access.
+> * [ ] Use the default runtime service account to access Google Cloud APIs and resources from a Cloud Run service.
+> * [ ] Connect to Google Cloud services from your Cloud Run service using client libraries.
+> * [ ] Use Secret Manager to store credentials required by downstream database services.
 
 #### Quiz 2.
 
 > [!important]
-> **What are some characteristics of applications that are a good fit for Cloud Run? Select three.**
+> **What are some products or services that you can use to build containers? Select three.**
 >
-> - [ ] The application depends on a local persistent file system.
-> - [ ] The application is containerized.
-> - [ ] When run as a service, the application listens for HTTP requests on a specified port.
-> - [ ] When run as a service, the application responds to a request within a specified time.
+> * [ ] Cloud Build
+> * [ ] Artifact Registry
+> * [ ] Cloud Run
+> * [ ] Docker
 
 #### Quiz 3.
 
 > [!important]
-> **What are some products or services that you can use to build containers? Select three.**
+> **What are some characteristics of applications that are a good fit for Cloud Run? Select three.**
 >
-> - [ ] Artifact Registry
-> - [ ] Cloud Build
-> - [ ] Cloud Run
-> - [ ] Docker
+> * [ ] When run as a service, the application listens for HTTP requests on a specified port.
+> * [ ] The application is containerized.
+> * [ ] The application depends on a local persistent file system.
+> * [ ] When run as a service, the application responds to a request within a specified time.
 
 #### Quiz 4.
 
 > [!important]
-> **To integrate a Cloud Run service with other Google Cloud APIs and resources, what are some steps you should take? Select three.**
+> **Which of these statements regarding service revisions in Cloud Run are correct? Select two.**
 >
-> - [ ] Connect to Google Cloud services from your Cloud Run service using client libraries.
-> - [ ] To connect to internal cloud resources from your Cloud Run service, use Serverless VPC Access.
-> - [ ] Use Secret Manager to store credentials required by downstream database services.
-> - [ ] Use the default runtime service account to access Google Cloud APIs and resources from a Cloud Run service.
+> * [ ] In Cloud Run, only the newest or latest service revision can receive and process requests to the service.
+> * [ ] A revision is created when you deploy a container image to a service in Cloud Run.
+> * [ ] A revision is created when you update the configuration of a service in Cloud Run.
+> * [ ] You cannot control the amount of request traffic received by a service revision.
 
 ### Document - [Module review](https://www.cloudskillsboost.google/course_templates/559/documents/496757)
 
@@ -256,4 +257,4 @@ Review the topics discussed in the course.
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

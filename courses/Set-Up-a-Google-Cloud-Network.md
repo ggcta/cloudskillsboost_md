@@ -1,13 +1,13 @@
 ---
 id: 641
 name: 'Set Up a Google Cloud Network'
-datePublished: 2025-01-03
-topics:
-- Cloud Networking
-- Cloud Computing
-- Networking
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/641
+date_published: 2025-01-03
+topics:
+  - Networking
+  - Network Configuration
+  - Network Design
 ---
 
 # [Set Up a Google Cloud Network](https://www.cloudskillsboost.google/course_templates/641)
@@ -24,26 +24,26 @@ A skill badge is an exclusive digital badge issued by Google Cloud in recognitio
 
 Learn how to set up a network, add 3 subnetworks, then apply firewall rules.
 
-- [ ] [Networking 101](../labs/Networking-101.md)
+* [ ] [Networking 101](../labs/Networking-101.md)
 
 ### Lab - [Create a Custom Network and Apply Firewall Rules](https://www.cloudskillsboost.google/course_templates/641/labs/519960)
 
 Use the gcloud command line to set up a VPN and 3 subnetworks, then apply firewalls.
 
-- [ ] [Create a Custom Network and Apply Firewall Rules](../labs/Create-a-Custom-Network-and-Apply-Firewall-Rules.md)
+* [ ] [Create a Custom Network and Apply Firewall Rules](../labs/Create-a-Custom-Network-and-Apply-Firewall-Rules.md)
 
 ### Lab - [Test Network Latency Between VMs](https://www.cloudskillsboost.google/course_templates/641/labs/519961)
 
 Use the gcloud CLI to add VMs to your network, then test the latency between the VMs
 
-- [ ] [Test Network Latency Between VMs](../labs/Test-Network-Latency-Between-VMs.md)
+* [ ] [Test Network Latency Between VMs](../labs/Test-Network-Latency-Between-VMs.md)
 
 ### Lab - [Set Up a Google Cloud Network: Challenge Lab](https://www.cloudskillsboost.google/course_templates/641/labs/519962)
 
 This challenge lab tests your skills and knowledge from the <b>Set Up a Google Cloud Network</b> skill badge. Are you ready for the challenge?
 
-- [ ] [Set Up a Google Cloud Network: Challenge Lab](../labs/Set-Up-a-Google-Cloud-Network-Challenge-Lab.md)
+* [ ] [Set Up a Google Cloud Network: Challenge Lab](../labs/Set-Up-a-Google-Cloud-Network-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

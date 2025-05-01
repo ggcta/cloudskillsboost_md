@@ -1,13 +1,13 @@
 ---
 id: 542
 name: 'Create Image Captioning Models'
-datePublished: 2024-06-24
-topics:
-- Image Processing
-- Machine Learning
-- Machine Learning Model Training
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/542
+date_published: 2024-06-24
+topics:
+  - Computer Vision
+  - Python
+  - Artificial Intelligence
 ---
 
 # [Create Image Captioning Models](https://www.cloudskillsboost.google/course_templates/542)
@@ -18,10 +18,10 @@ This course teaches you how to create an image captioning model by using deep le
 
 **Objectives:**
 
-- Understand the different components of an image captioning model.
-- Learn how to train and evaluate an image captioning model.
-- Create your own image captioning models.
-- Use your image captioning models to generate captions for images.
+* Understand the different components of an image captioning model.
+* Learn how to train and evaluate an image captioning model.
+* Create your own image captioning models.
+* Use your image captioning models to generate captions for images.
 
 ## Create Image Captioning Models: Overview
 
@@ -29,13 +29,13 @@ This module teaches you how to create an image captioning model by using deep le
 
 ### Video - [Create Image Captioning Models: Overview](https://www.cloudskillsboost.google/course_templates/542/video/489029)
 
-- [YouTube: Create Image Captioning Models: Overview](https://www.youtube.com/watch?v=7a5SMSCzTg8)
+* [YouTube: Create Image Captioning Models: Overview](https://www.youtube.com/watch?v=7a5SMSCzTg8)
 
 Hi everyone, I am Takumi, machine learning engineer at the Google Advanced Solutions Lab. Currently, a lot of people are talking about Generative AI and its new advancement. And as some of you may know, Google and Google Cloud also released so many Generative AI related new products and features. But in this video series, our goal is not to create a State of Art Generative AIs, nor to introduce Google Cloud new products. Instead, we will explain what kind of technology is working behind them. And especially in this video, I am going to talk about How to actually create a very simple generative model, Image Captioing Model, by using the technologies like encoder-decoder, Attention mechanism, and a bit Transformer. If you are not familiar with these concepts, I recommend checking other video talking about them before this. Alright, if you are ready, let's talk about image captioing task and dataset at first. We are gonna use this kind of dataset. As you can see, there are a lot of pairs of images and text data. And our goal is to build and train a model that can generate these kinds of text captions based on images. And we'll make it happen by building this kind of model. As you can see, it is an encoder-decoder model. But in this case, encoder and decoder handle different modality of data, image and text. We pass images to encoder, and it extract information from the images, and create some feature vectors. And then the vectors are passed to the decoder which actually build caption ,by generating words one by one. And we'll make it happen by building this kind of model. As you can see, it is an encoder-decoder model. But in this case, encoder and decoder handle different modality of data, image and text. We pass images to encoder, and it extract information from the images, and create some feature vectors. And then the vectors are passed to the decoder which actually build caption ,by generating words one by one. So code is very simple too. In terms of the code, we are gonna see the entire notebook in the next video, so here let's just focus on some important lines. As you can see, we are using classical InceptionResNetV2 in this case from keras applications. But again, this can be any image backbones Next part, the decoder is a bit complex. So let's take a look very carefully. This is the architecture of the decoder. It gets words one by one, mix the information of words and images which comes from the encoder output, and try to predict the next words. This decoder itself is an iterative operation. So by calling it again and again autoregressively, we can eventually generate text. There are so many variations for this decoder design, but here we build Transformer-like architecture, although we still use RNN, or GRU. Let's zoom in to each componet. The first Embedding layer creates word embeddings, which was discussed in other videos. And we are passing it to GRU layer. If you forgot what GRU is, it's a variation of the recurrent neural network, or you can call RNN. RNN takes input, and update its internal state, and generate output. So by passing sequential data like text, it keeps the sequential dependencies from previous input like previous word. The GRU output goes to Attention layer, which mixes the information of text and image. In TensorFlow Keras, we can use predefined layers in the same way as other layers. There are multiple implementations, but here we simply use tf.keras.layers. Attention. But if you want to use more Transformer-like architecture, you can also pick up tf.keras.layers. MultiHeadAttention which uses multiple attention heads. You can simply switch and use it in almost the same way. Inside the attention layer, it looks like thi, as you may have already seen in another video about Attention Mechanism, but unique thing here is, it pays attention to image feature, from text data. By doing so, it can calculate the attention score by mixing both information. Going back to code, you can see this Attention layer takes two inputs, gru_output and encoder_output. Internally, gru_output is used as attention query and key, and encoder_output as value. The last components are Add layer and Layer Normalization layer. Add layer just adds two same shaped vectors. As you can see, GRU output is passed to Attention layer as we discussed, and to this Add layer directly. These two flows are eventually merged in this Add layer. This kind of architecture is called skip-connection, which has been a very popular deep neural network design pattern since ResNet. So it is also called Residual connection. This skip connection is useful especially when you want to design a very deep neural network. and it is also used in the Transformer. With this, now we could build the entire decoder. So we are ready to train the encoder-decoder image captioning model using the captioing dataset. We will see how it works in the next video. But before moving on to the next video, I want to explain a bit more about inference phase where we can actually generate captions for arbitrary images, because this process may look a bit complex. Here you can see three steps, and we are gonna implement these steps in a custom inference function. The number 1 "generate the GRU initial state, and create a  token. In training phase, TensorFlow Keras can automatically handles GRU state for each sequence, but in this inference phase, since we design our own custom loop, we need to write a logic to deal with it. So at the beginning of each captioning, we explicitly initialize the GRU state with some value. And at the same time, remember our decoder is an autoregressive function, but since we haven't get any word predictions at the beginning of the inference, we pass token which is a special token that mean the beginning of a sentence. Number 2, Pass an input image to the encoder and extract a feature vector, as we discussed, and number 3, ... , and in this for loop we define all the procedures of caption generation by calling the decoder autregressively. token is a special token too, which means the end of the sentence. So when our decoder generates this token, we can finish this for loop. Or you can go out of the loop when the length of the caption reaches some number. Let's take a look at the code one by one. In the first step, we initialize two things: GRU state and  token. In this case, GRU state is simply initialized with 0 vectors. And we set  as the first input word for the decoder. In terms of the word_to_index function used here, I am gonna explain in the next video, but basically it just tokenize words to word tokens which is the standard text processing technique. In the next step, we preprocess the input image a bit, and pass it to the encoder we trained. In terms of the image preprocessing, it reads and decodes jpeg, resizing it from any arbitrary resolution to specific resolution, and change the scale from 0 to 255, to 0 to 1. And the last phase, decode for loop, it is a bit complex so I will explain in the next video more in detail with the actual code, but the main thing here is to call the decoder by passing 3 things. dec_input means decoder input, which should have a word token predicted in the previous iteration. And as we talked, if it is the first iteration,this would be the  token. gru_state is the current gru state we discussed. And plase note that the decoder also outputs the updated gru_state. And last but not least, features, this is the image feature we extracted with encoder. By passing them, we can get a actual next word prediction. This is a very simple text geration model from images, but this kind of iteration is very similar even in very large language generation models, like Google Bard. They basically predict the next word autoregressively one by one based on some infomation, and learned knowledge embeded in a huge number of parameters. In the next video, I will walk you through the entire notebook. And then, we will check what kind capitions this model can generate. Thank you so much for watching, see you in the next video.
 
 ### Video - [Create Image Captioning Models: Lab Walkthrough](https://www.cloudskillsboost.google/course_templates/542/video/489030)
 
-- [YouTube: Create Image Captioning Models: Lab Walkthrough](https://www.youtube.com/watch?v=c8VO_Lf1cjA)
+* [YouTube: Create Image Captioning Models: Lab Walkthrough](https://www.youtube.com/watch?v=c8VO_Lf1cjA)
 
 Hi, everyone. I'm Takumi, machine Learning engineer at Google Advanced Solutions Lab This is the second half of the image captioning session. If you haven't seen the first half, I recommend checking it out first. And in this video, I'm going to walk you through the entire code notebook to help you understand how to create a very simple generative model. All the setup information is written in the ASL GitHub repository. You can find the link in the slide or in the description below this video. After setting up the Vertex AI I work bench environment and clone in the repo. Following the instruction you can find the image captioning notebook under asl-ml-immersion notebooks and multimodal solutions. Here you go. You can find image captioning dot i Python notebook. So please open this file and here you can see all the process and instructions to build and use an image captioning model which we discussed in the previous video. Let's take a look from the first cell. In the first cell. Of course we install all the dependencies, including tensorflow keras and here we can find TensorFlow keras layers and installing order layers we need for image captioning model including GRU, add layer, attention layer or dense layer embedding layer now layer normalization layer. So let's run one by one and in the next cell we define some hyper parameters, including vocabulary size, which means how many vocabularies we're going to use for image captioning. Or you can find a feature extractor, which means what kind of model we want to use in encoder model. So in this case, as we discussed in the previous video, we are specifying inception resnet v2, which is very classical CNN based model and all the definitions below image, height, width channel and the feature shape is coming from the definition of the inception, resnet v2 and especially this feature shape. 8, 8, 1536 is the shape this inception resnet v2 produce. So let's define in this way cool. So in the next cell we're going to load the data from tfds, which means TensorFlow datasets. So TensorFlow datasets host this caption data set in this name “coco captions” so we can specify this name and the loading data. And after loading data we can pass some preprocessing function, get image level which is defined here, get the image level, and here we can find some preprocessing, very basic preprocessing, including changing the size of the image or the change in the scale of the image and returning image tensor and the caption at the same time. So let's run in the same way and let's take a look at some of the example. Here we can see, for example, a random example and each pair of image and text makes sense to me. So wide plate with a toasted sandwich, chips and fries for this image. And another caption for another image. And we have a lot of image. So if you want to see another example, you can run this cell again and you will see another example. So let's move on. So since we have text data, we need to preprocess that text data in kind of standard way. So in this cell we add start and end special tokens, which we discussed in the slide as well. So by adding this so we can handle this token as a kind of special sign, this start talking means the special token, that means the beginning of the sentence. And in the same way, the end token means the, the end of the sentence. So we can add these things in the same way trends stood map and pass this function. They let's move on. And this is a very important preprocessing. So now we have text data, caption data. So we're going to create tokenizer. So by creating tokenizer, we can tokenize word like start token or cat or dog to some index. In TensorFlow, it is very easy. You can just use this text vectoralization module and you can call by passing all the data or the caption data to this text vectoralization layer so it takes some time around 5 minutes in my environments. So let's wait until it finishes. Now it's finished. Now let's try this tokenizer either by passing some sample sentence, start token This is a sentence end token. So now you can see it is tokenized in this way. And so the here you can find a lot of paddings by changing this max caption lengths you can control the lengths of this padding here. But in this case we are specifying 64. So the order of the captions will be padded in this way until this max caption lengths. And in the same way you can see the behavior of this tokenizer This is very useful. Once you create you can apply this tokenizer in different captions and convert text data to the token at the white tokens. And it's nice to create converters at this point. So here we can find string lookup layer, string look up layer, and the creating converter the from want to index and also index to want. So we're going to use these modules later. So this is quite useful and then we can create a final data set. So this is a very important part. So we have trainds. We're going to add additional create_ds function, this function and as you can see, it returns image tensor caption that this is the tuple image tensor will go to encoder and caption will go to the decoder. And also we are creating Target, which is label. And in this function you can find this target is created from caption by the is shifting just caption in the in one word. Okay. By doing so, we are creating we're going to create a shifted caption, which means the next word A and we're going to utilize this for target. So let's define and apply this function and create a batch in specified batch size and everything is ready. So let's take a look at some of the data set. Here you go. So you can find the image in this shape and caption in the shape and level in the same shape as caption because we are just shifting. And no. So we are padding the shifted part with zero value looks nice. So the next part is model. Most of the model code has already explained in the previous video, so I'm going to go through very quickly. But if you are not very familiar with that very confident with that, then you can go back to the the previous slide and check what is going on inside encoder and decoder. So here in this video. So let's quickly run these things. So this is the encoder and as you can see we are just in the applying inception resnet V2 to image data. And please note that in this case we are freezing the most of the parts of this cnn because we don't need to be trained. This model, basically this kind of the the backbone is pre-trained by using huge dataset in this case image net data set. So of course if you want to the train, fine tune again, it is possible, but in this case we want to you just to preserve the weights Pre-trained. So next let's move on to the decoder. It is a bit complex as we discussed, and here you can find a lot of instruction about the attention layer and also the steps of the decoder, which we discussed in the previous video. And here we can find a definitions so you can find embedding layer to create what embedding and first GRU layer and attention layer add layer layer normalization and final dense layer. So let's define in this way. So model looks like this embedding layer GRU attention add layer normalization, then this. And it has so many parameters after defining decoder and also encoder, we can create final model TF Keras model and define inputs and output. And as you can see, it has two inputs, image inputs go to encoder and word inputs go to the goes to the decoder and output should be decoder output. Now model is ready, but before running training we need to define lost function as usual. So in terms of the loss, our model is basically a classification model since the decoder generate a lot of probabilities for each class, each word class, each of vocabularies. So we can use sparse categorical course entropy as usual for the classification problem. But in this case our data is padded, so it has a lot of that zero values and a lot of the there meaningless values. So we want to remove that part. So in order to do so, we are defining this custom loss function and then everything is ready. So let's compile the model and we can run training. And in terms of the training, it takes 15 minutes, to 20 minutes with one GPU, one T4 GPUs to train one epoch. So if you want to add additional epochs, it's okay. You can do that and I think you can get the slightly better result. But epoch one epoch is the enough to just to check the how it works. So let's just keep it as one and run training and let's wait 15 to 20 minutes until it finished that training. Now training is done, so let's use it for captioning, but before that we need to rebuild the decoder for inference in order to control the growth state manually. As we talked in the previous video. So in this cell, by re-using the trained layers, we are creating a model for inference. So here you can find train decoder GRU train decoder attention and so on. And compared to the train training model, we are adding GRU state to its Io's. For inputs, we are adding GRU state inputs and for output we are adding Jerry's state as output. So by doing so we can control the GRU state in the inference group. Okay, so let's generate text with this custom inference loop function. We already discussed the what kind of the component it should have in the previous video, but let's review very briefly. So first we initialize GRU state, in this case just the initialize with zero vector simply. And then here we get image and then pre process to image and pass it to encoder. Of course, the train encoder and we can get the feature image features and before passing it to our decoder. So we also initialize this, this start token as the first word and then we are going to repeat this whole loop again and again and generate text one by one. So a step that looks like this coding decoder, of course, and then it returns a lot of predictions out of the word of the probabilities. So there are so many ways to pick up the actual word the final word, final selection from the list of a lot of ward probabilities. But in this case we are pulling the word kind of stochastically to introduce some randomness. So it is the these lines of code are doing doing that and eventually picking up some words and the the bringing it back to the brink bring it back to the word from the word token by using the tokenizer and appending to the list. So eventually we should get some captions. So let's take a look at the result. So defined this function and let's call it so here you can see a caption samples for this image. So this sample image is located in this directly. Just passing this for the JPEG and the it returns five captions. It looks like this a baseball player standing next to the bat a catcher in a field playing baseball or something like that. It is not grammatically perfect, but still the you can see it is generating the text, generating multiple text and generating the meaningful text. And also we can see our model is capturing important informations like baseball or catcher or a man standing next to another man or baseball field or something like that. So still, it's not very it's not perfect, but it is generating very meaningful text. It's very surprising, isn't it? So the model is very simple. We are just stacking encoder and decoder and then passing the image cap image data to encoder and the decoder generate captions one by one in auto regressive way. So just by stacking this so we can create this kind of the very small generative model. Okay. Currently there are so many generative large language models out there. Of course they have more complex and larger network and train a much larger dataset. But the architecture may look similar to this simple model. Thank you so much for watching this video. I hope you enjoyed. If you like this presentation, you'll find more in our ASL Github repository with 90 plus immersion regarding notebooks if you find it useful. Please don't forget to star the repository.
 
@@ -44,67 +44,67 @@ Hi, everyone. I'm Takumi, machine Learning engineer at Google Advanced Solutions
 #### Quiz 1.
 
 > [!important]
-> **What is the purpose of the encoder in an encoder-decoder model?**
+> **What is the name of the dataset the video uses to train the encoder-decoder model?**
 >
-> - [ ] To generate text captions for the image.
-> - [ ] To answer your questions in an informative way, even if they are open ended, challenging, or strange.
-> - [ ] To extract information from the image.
-> - [ ] To translate text from one language to another.
+> * [ ] COCO dataset
+> * [ ] Fashion-MNIST dataset
+> * [ ] ImageNet dataset
+> * [ ] MNIST dataset
 
 #### Quiz 2.
 
 > [!important]
-> **What is the purpose of the decoder in an encoder-decoder model?**
+> **What is the purpose of the encoder in an encoder-decoder model?**
 >
-> - [ ] To generate output data from the information extracted by the encoder
-> - [ ] To learn the relationship between the input and output data
-> - [ ] To extract information from the input data
-> - [ ] To store the output data
+> * [ ] To translate text from one language to another.
+> * [ ] To answer your questions in an informative way, even if they are open ended, challenging, or strange.
+> * [ ] To extract information from the image.
+> * [ ] To generate text captions for the image.
 
 #### Quiz 3.
 
 > [!important]
-> **What is the name of the model that is used to generate text captions for images?**
+> **What is the purpose of the decoder in an encoder-decoder model?**
 >
-> - [ ] Image classification model
-> - [ ] Encoder-decoder model
-> - [ ] Image generation model
-> - [ ] Bidirectional Encoder Representations from Transformers (BERT) model
+> * [ ] To learn the relationship between the input and output data
+> * [ ] To extract information from the input data
+> * [ ] To store the output data
+> * [ ] To generate output data from the information extracted by the encoder
 
 #### Quiz 4.
 
 > [!important]
-> **What is the goal of the image captioning task?**
+> **What is the name of the model that is used to generate text captions for images?**
 >
-> - [ ] To generate text captions for images
-> - [ ] To write different creative text formats, like poems, code, scripts, musical pieces, email, letters, etc.
-> - [ ] To translate text from one language to another
-> - [ ] To answer your questions in an informative way, even if they are open ended, challenging, or strange.
+> * [ ] Encoder-decoder model
+> * [ ] Image generation model
+> * [ ] Bidirectional Encoder Representations from Transformers (BERT) model
+> * [ ] Image classification model
 
 #### Quiz 5.
 
 > [!important]
 > **What is the purpose of the attention mechanism in an encoder-decoder model?**
 >
-> - [ ] To generate text captions for the image.
-> - [ ] To translate text from one language to another.
-> - [ ] To extract information from the image.
-> - [ ] To allow the decoder to focus on specific parts of the image when generating text captions.
+> * [ ] To extract information from the image.
+> * [ ] To generate text captions for the image.
+> * [ ] To allow the decoder to focus on specific parts of the image when generating text captions.
+> * [ ] To translate text from one language to another.
 
 #### Quiz 6.
 
 > [!important]
-> **What is the name of the dataset the video uses to train the encoder-decoder model?**
+> **What is the goal of the image captioning task?**
 >
-> - [ ] MNIST dataset
-> - [ ] COCO dataset
-> - [ ] Fashion-MNIST dataset
-> - [ ] ImageNet dataset
+> * [ ] To write different creative text formats, like poems, code, scripts, musical pieces, email, letters, etc.
+> * [ ] To translate text from one language to another
+> * [ ] To answer your questions in an informative way, even if they are open ended, challenging, or strange.
+> * [ ] To generate text captions for images
 
 ### Link - [Create Image Captioning Models: Lab Resources](https://www.cloudskillsboost.google/course_templates/542/documents/489032)
 
-- [Create Image Captioning Models: Lab Resources](https://github.com/GoogleCloudPlatform/asl-ml-immersion/blob/master/notebooks/multi_modal/solutions/image_captioning.ipynb)
+* [Create Image Captioning Models: Lab Resources](https://github.com/GoogleCloudPlatform/asl-ml-immersion/blob/master/notebooks/multi_modal/solutions/image_captioning.ipynb)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

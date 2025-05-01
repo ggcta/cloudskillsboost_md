@@ -1,13 +1,13 @@
 ---
 id: 741
 name: 'Develop Serverless Applications on Cloud Run'
-datePublished: 2024-08-08
-topics:
-- Google Cloud Services
-- Application Deployment
-- Cloud Run
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/741
+date_published: 2024-08-08
+topics:
+  - Pub/Sub
+  - Data Management
+  - Rest API
 ---
 
 # [Develop Serverless Applications on Cloud Run](https://www.cloudskillsboost.google/course_templates/741)
@@ -26,32 +26,32 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics, and h
 
 In this lab you will build a PDF converter web app on Cloud Run, a serverless service, that automatically converts files stored in Cloud Storage into PDFs stored in segregated folders.
 
-- [ ] [Build a Serverless App with Cloud Run that Creates PDF Files](../labs/Build-a-Serverless-App-with-Cloud-Run-that-Creates-PDF-Files.md)
+* [ ] [Build a Serverless App with Cloud Run that Creates PDF Files](../labs/Build-a-Serverless-App-with-Cloud-Run-that-Creates-PDF-Files.md)
 
 ### Lab - [Build a Resilient, Asynchronous System with Cloud Run and Pub/Sub](https://www.cloudskillsboost.google/course_templates/741/labs/499437)
 
 Use Cloud Run and Pub/Sub to run a service that manages communication through HTTP POST, email, and SMS.
 
-- [ ] [Build a Resilient, Asynchronous System with Cloud Run and Pub/Sub](../labs/Build-a-Resilient-Asynchronous-System-with-Cloud-Run-and-Pub-Sub.md)
+* [ ] [Build a Resilient, Asynchronous System with Cloud Run and Pub/Sub](../labs/Build-a-Resilient-Asynchronous-System-with-Cloud-Run-and-Pub-Sub.md)
 
 ### Lab - [Developing a REST API with Go and Cloud Run](https://www.cloudskillsboost.google/course_templates/741/labs/499438)
 
 Demonstrate how to build a REST API with Go and Cloud Run
 
-- [ ] [Developing a REST API with Go and Cloud Run](../labs/Developing-a-REST-API-with-Go-and-Cloud-Run.md)
+* [ ] [Developing a REST API with Go and Cloud Run](../labs/Developing-a-REST-API-with-Go-and-Cloud-Run.md)
 
 ### Lab - [Creating PDFs with Go and Cloud Run](https://www.cloudskillsboost.google/course_templates/741/labs/499439)
 
 Learn how to develop an application to create PDFs on Google Cloud using Serverless technologies and Go.
 
-- [ ] [Creating PDFs with Go and Cloud Run](../labs/Creating-PDFs-with-Go-and-Cloud-Run.md)
+* [ ] [Creating PDFs with Go and Cloud Run](../labs/Creating-PDFs-with-Go-and-Cloud-Run.md)
 
 ### Lab - [Develop Serverless Applications on Cloud Run: Challenge Lab](https://www.cloudskillsboost.google/course_templates/741/labs/499440)
 
 In this challenge lab, you will be tested on serverless development using Cloud Run and Cloud Build.
 
-- [ ] [Develop Serverless Applications on Cloud Run: Challenge Lab](../labs/Develop-Serverless-Applications-on-Cloud-Run-Challenge-Lab.md)
+* [ ] [Develop Serverless Applications on Cloud Run: Challenge Lab](../labs/Develop-Serverless-Applications-on-Cloud-Run-Challenge-Lab.md)
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)

@@ -1,13 +1,13 @@
 ---
 id: 539
 name: 'Introduction to Large Language Models'
-datePublished: 2024-12-18
-topics:
-- Machine Learning
-- NLP
-- Machine Learning Models
 type: Course
 url: https://www.cloudskillsboost.google/course_templates/539
+date_published: 2024-12-18
+topics:
+  - Large Language Models
+  - Data Science
+  - Machine Learning Models
 ---
 
 # [Introduction to Large Language Models](https://www.cloudskillsboost.google/course_templates/539)
@@ -18,10 +18,10 @@ This is an introductory level micro-learning course that explores what large lan
 
 **Objectives:**
 
-- Define Large Language Models (LLMs)
-- Describe LLM use cases
-- Explain prompt tuning
-- Describe Google’s Gen AI Development tools
+* Define Large Language Models (LLMs)
+* Describe LLM use cases
+* Explain prompt tuning
+* Describe Google’s Gen AI Development tools
 
 ## Introduction to Large Language Models
 
@@ -29,7 +29,7 @@ This module explores what large language models (LLM) are, the use cases where t
 
 ### Video - [Introduction to Large Language Models](https://www.cloudskillsboost.google/course_templates/539/video/518194)
 
-- [YouTube: Introduction to Large Language Models](https://www.youtube.com/watch?v=RBzXsQHjptQ)
+* [YouTube: Introduction to Large Language Models](https://www.youtube.com/watch?v=RBzXsQHjptQ)
 
 
 
@@ -39,4 +39,4 @@ This module explores what large language models (LLM) are, the use cases where t
 
 ## Your Next Steps
 
-### Badge - [Course Badge](https://www.cloudskillsboost.googleNone)
+### Badge - [Course Badge](https://www.cloudskillsboost.google)
