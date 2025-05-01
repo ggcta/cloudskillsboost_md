@@ -13,8 +13,12 @@ In this lab you add SQL statements to the previously written Beam pipeline that 
 
 ## Step 2: Setup and requirements
 
-## Step 3: Task 1. Aggregating site traffic by user with SQL
+## Step 3: Task 1. Prepare environment
 
-## Step 4: Task 2. Aggregating site traffic by minute with SQL
+## Step 4: Task 2. Add SQL dependencies to the pipeline
 
-## Step 5: End your lab
+## Step 5: Task 3. Write a SQL statement to aggregate site traffic by user
+
+## Step 6: Task 4. Execute the pipeline
+
+## Step 7: End your lab

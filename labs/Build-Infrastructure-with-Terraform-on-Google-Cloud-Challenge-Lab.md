@@ -7,7 +7,7 @@ url: https://www.cloudskillsboost.google/catalog_lab/3505
 
 # [Build Infrastructure with Terraform on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/catalog_lab/3505)
 
-In this challenge lab, you will be tested on your knowledge to import, create, reprovision, destroy, and update infrastructure using Terraform.
+In this challenge lab, you will be tested on your knowledge to import, create, destroy, and update infrastructure using Terraform.
 
 ## Step 1: GSP345
 

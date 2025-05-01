@@ -17,28 +17,24 @@ In this lab, you'll develop an app and use services on Google Cloud with assista
 
 ## Step 4: Task 1. Configure your environment and account
 
-## Step 5: Task 2. Create and launch a Cloud workstation
+## Step 5: Task 2. Build the web app
 
-## Step 6: Task 3. Update the Google Cloud Code extension to enable Gemini
+## Step 6: Task 3. Modify the web app backend
 
-## Step 7: Task 4. Build the web app
+## Step 7: Task 4. Test the app locally
 
-## Step 8: Task 5. Modify the web app backend
+## Step 8: Task 5. Fix the backend with help from Gemini Code Assist
 
-## Step 9: Task 6. Test the app locally
+## Step 9: Task 6. Test the frontend
 
-## Step 10: Task 7. Fix the backend with help from Gemini
+## Step 10: Task 7. Develop tests with help from Gemini
 
-## Step 11: Task 8. Test the frontend
+## Step 11: Task 8. Use Gemini with BigQuery
 
-## Step 12: Task 9. Develop tests with help from Gemini
+## Step 12: Task 9. Use Gemini with Spanner
 
-## Step 13: Task 10. Use Gemini with BigQuery
+## Step 13: Task 10. View logs with help from Gemini
 
-## Step 14: Task 11. Use Gemini with Spanner
+## Step 14: Congratulations!
 
-## Step 15: Task 12. View logs with help from Gemini
-
-## Step 16: Congratulations!
-
-## Step 17: End your lab
+## Step 15: End your lab
